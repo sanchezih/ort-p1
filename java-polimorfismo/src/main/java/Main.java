@@ -1,11 +1,10 @@
-package Main;
 
 import java.util.ArrayList;
 
-import PolimorfismoInterface.Entrenador;
-import PolimorfismoInterface.Futbolista;
-import PolimorfismoInterface.Masajista;
-import PolimorfismoInterface.SeleccionFutbol;
+import Polimorfismo.Entrenador;
+import Polimorfismo.Futbolista;
+import Polimorfismo.Masajista;
+import Polimorfismo.SeleccionFutbol;
 
 public class Main {
 
@@ -42,7 +41,7 @@ public class Main {
 				"\nEntrenamiento: Todos los integrantes tienen su función en un entrenamiento (Especialización)");
 		for (SeleccionFutbol integrante : integrantes) {
 			System.out.print(integrante.getNombre() + " " + integrante.getApellidos() + " -> ");
-			integrante.entrenar();
+			integrante.entrenamiento();
 		}
 
 		// PARTIDO DE FUTBOL
@@ -50,7 +49,7 @@ public class Main {
 				"\nPartido de Fútbol: Todos los integrantes tienen su función en un partido (Especialización)");
 		for (SeleccionFutbol integrante : integrantes) {
 			System.out.print(integrante.getNombre() + " " + integrante.getApellidos() + " -> ");
-			integrante.jugarPartido();
+			integrante.partidoFutbol();
 		}
 
 		// PLANIFICAR ENTRENAMIENTO

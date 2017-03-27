@@ -56,7 +56,7 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 	public void viajar() {
 		System.out.println("Viajar (Clase Padre)");
 	}
-	
+
 	public void entrenar() {
 		System.out.println("Entrenar (Clase Padre)");
 	}
