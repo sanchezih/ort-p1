@@ -1,31 +1,25 @@
 package herencia.src.Seleccion;
 
-/**
- * 
- * @author Richard
- *
- */
-public class Masajista extends SeleccionFutbol {
+public class Masajista extends IntegranteDeSeleccion {
 
-	private String titulacion;
-
+	private String titulo;
 	private int aniosExperiencia;
 
 	public Masajista() {
 	}
 
-	public Masajista(int id, String nombre, String apellidos, int edad, String titulacion, int aniosExperiencia) {
-		super(id, nombre, apellidos, edad);
-		this.titulacion = titulacion;
+	public Masajista(int id, String nombre, String apellido, int edad, String titulo, int aniosExperiencia) {
+		super(id, nombre, apellido, edad);
+		this.titulo = titulo;
 		this.aniosExperiencia = aniosExperiencia;
 	}
 
 	public String getTitulacion() {
-		return titulacion;
+		return titulo;
 	}
 
 	public void setTitulacion(String titulacion) {
-		this.titulacion = titulacion;
+		this.titulo = titulacion;
 	}
 
 	public int getAniosExperiencia() {
@@ -37,7 +31,7 @@ public class Masajista extends SeleccionFutbol {
 	}
 
 	public void darMasaje() {
-		System.out.println("Da un masaje");
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje...");
 	}
 
 }

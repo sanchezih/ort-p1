@@ -1,11 +1,6 @@
 package herencia.src.Seleccion;
 
-/**
- * 
- * @author Richard
- * 
- */
-public class Entrenador extends SeleccionFutbol {
+public class Entrenador extends IntegranteDeSeleccion {
 
 	private String idFederacion;
 
@@ -13,8 +8,8 @@ public class Entrenador extends SeleccionFutbol {
 		super();
 	}
 
-	public Entrenador(int id, String nombre, String apellidos, int edad, String idFederacion) {
-		super(id, nombre, apellidos, edad);
+	public Entrenador(int id, String nombre, String apellido, int edad, String idFederacion) {
+		super(id, nombre, apellido, edad);
 		this.idFederacion = idFederacion;
 	}
 
@@ -27,11 +22,12 @@ public class Entrenador extends SeleccionFutbol {
 	}
 
 	public void dirigirPartido() {
-		System.out.println("Dirige un partido");
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dirigiendo un partido...");
 	}
 
 	public void dirigirEntrenamiento() {
-		System.out.println("Dirige un entrenamiento");
+		System.out.println(
+				"Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dirigiendo un entrenamiento...");
 	}
 
 }

@@ -1,4 +1,4 @@
-package holamundo;
+package holamundo.src;
 
 public class HolaMundo {
 
