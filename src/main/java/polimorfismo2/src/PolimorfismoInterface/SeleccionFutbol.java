@@ -1,19 +1,19 @@
 package polimorfismo2.src.PolimorfismoInterface;
 
-public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
+public abstract class SeleccionFutbol implements IntegranteDeSeleccionDeFutbol {
 
 	protected int id;
 	protected String nombre;
-	protected String apellidos;
+	protected String apellido;
 	protected int edad;
 
 	public SeleccionFutbol() {
 	}
 
-	public SeleccionFutbol(int id, String nombre, String apellidos, int edad) {
+	public SeleccionFutbol(int id, String nombre, String apellido, int edad) {
 		this.id = id;
 		this.nombre = nombre;
-		this.apellidos = apellidos;
+		this.apellido = apellido;
 		this.edad = edad;
 	}
 
@@ -33,12 +33,12 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 		this.nombre = nombre;
 	}
 
-	public String getApellidos() {
-		return apellidos;
+	public String getApellido() {
+		return apellido;
 	}
 
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
 	}
 
 	public int getEdad() {

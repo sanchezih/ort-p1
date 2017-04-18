@@ -1,6 +1,6 @@
 package polimorfismo2.src.PolimorfismoInterface;
 
-public interface IntegranteSeleccionFutbol {
+public interface IntegranteDeSeleccionDeFutbol {
 
 	void concentrarse();
 

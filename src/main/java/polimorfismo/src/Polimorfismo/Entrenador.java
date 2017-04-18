@@ -1,6 +1,6 @@
 package polimorfismo.src.Polimorfismo;
 
-public class Entrenador extends SeleccionFutbol {
+public class Entrenador extends IntegranteDeSeleccion {
 
 	private int idFederacion;
 
@@ -8,8 +8,8 @@ public class Entrenador extends SeleccionFutbol {
 		super();
 	}
 
-	public Entrenador(int id, String nombre, String apellidos, int edad, int idFederacion) {
-		super(id, nombre, apellidos, edad);
+	public Entrenador(int id, String nombre, String apellido, int edad, int idFederacion) {
+		super(id, nombre, apellido, edad);
 		this.setIdFederacion(idFederacion);
 	}
 
@@ -20,15 +20,16 @@ public class Entrenador extends SeleccionFutbol {
 	public void setIdFederacion(int idFederacion) {
 		this.idFederacion = idFederacion;
 	}
-	
+
 	@Override
-	public void entrenamiento() {
+	public void participarEnEntrenamiento() {
 		System.out.println("Dirige un entrenamiento (Clase Entrenador)");
 	}
 
 	@Override
-	public void partidoFutbol() {
-		System.out.println("Dirige un Partido (Clase Entrenador)");
+	public void participarEnPartido() {
+		System.out.println(
+				"Soy " + this.getNombre() + " " + this.getApellido() + " -> Dirige un Partido (Clase Entrenador)");
 	}
 
 	public void planificarEntrenamiento() {

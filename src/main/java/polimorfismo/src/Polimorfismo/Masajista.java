@@ -1,26 +1,26 @@
 package polimorfismo.src.Polimorfismo;
 
-public class Masajista extends SeleccionFutbol {
+public class Masajista extends IntegranteDeSeleccion {
 
-	private String titulacion;
+	private String posicion;
 	private int aniosExperiencia;
 
 	public Masajista() {
 		super();
 	}
 
-	public Masajista(int id, String nombre, String apellidos, int edad, String titulacion, int aniosExperiencia) {
+	public Masajista(int id, String nombre, String apellidos, int edad, String posicion, int aniosExperiencia) {
 		super(id, nombre, apellidos, edad);
-		this.titulacion = titulacion;
+		this.posicion = posicion;
 		this.aniosExperiencia = aniosExperiencia;
 	}
 
-	public String getTitulacion() {
-		return titulacion;
+	public String getPosicion() {
+		return posicion;
 	}
 
-	public void setTitulacion(String titulacion) {
-		this.titulacion = titulacion;
+	public void setPosicion(String posicion) {
+		this.posicion = posicion;
 	}
 
 	public int getAniosExperiencia() {
@@ -30,14 +30,15 @@ public class Masajista extends SeleccionFutbol {
 	public void setAniosExperiencia(int aniosExperiencia) {
 		this.aniosExperiencia = aniosExperiencia;
 	}
-	
+
 	@Override
-	public void entrenamiento() {
-		System.out.println("Da asistencia en el entrenamiento (Clase Masajista)");
+	public void participarEnEntrenamiento() {
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+				+ " y estoy dando asistencia en el entrenamiento (Clase Masajista)");
 	}
 
 	public void darMasaje() {
-		System.out.println("Da un Masaje");
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje");
 	}
 
 }

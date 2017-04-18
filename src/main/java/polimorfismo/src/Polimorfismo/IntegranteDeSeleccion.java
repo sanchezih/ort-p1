@@ -1,19 +1,19 @@
 package polimorfismo.src.Polimorfismo;
 
-public abstract class SeleccionFutbol {
+public abstract class IntegranteDeSeleccion {
 
 	protected int id;
 	protected String nombre;
-	protected String apellidos;
+	protected String apellido;
 	protected int edad;
 
-	public SeleccionFutbol() {
+	public IntegranteDeSeleccion() {
 	}
 
-	public SeleccionFutbol(int id, String nombre, String apellidos, int edad) {
+	public IntegranteDeSeleccion(int id, String nombre, String apellido, int edad) {
 		this.id = id;
 		this.nombre = nombre;
-		this.apellidos = apellidos;
+		this.apellido = apellido;
 		this.edad = edad;
 	}
 
@@ -33,12 +33,12 @@ public abstract class SeleccionFutbol {
 		this.nombre = nombre;
 	}
 
-	public String getApellidos() {
-		return apellidos;
+	public String getApellido() {
+		return apellido;
 	}
 
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
 	}
 
 	public int getEdad() {
@@ -50,19 +50,21 @@ public abstract class SeleccionFutbol {
 	}
 
 	public void viajar() {
-		System.out.println("Viajar (Clase Padre)");
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy vianajdno (Clase Padre)");
 	}
 
 	public void concentrarse() {
-		System.out.println("Concentrarse (Clase Padre)");
+		System.out.println(
+				"Soy " + this.getNombre() + " " + this.getApellido() + " y estoy concentrandome (Clase Padre)");
 	}
 
-	// IMPORTANTE -> METODO ABSTRACTO => no se implementa
-	// en la clase abstracta pero si en la clases hijas
-	public abstract void entrenamiento();
-
-	public void partidoFutbol() {
-		System.out.println("Asiste al Partido de Fútbol (Clase Padre)");
+	public void participarEnPartido() {
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+				+ " y estoy asistiendo al Partido de Fútbol (Clase Padre)");
 	}
+
+	// IMPORTANTE -> METODO ABSTRACTO => no se implementa en la clase abstracta
+	// pero si en la clases hijas
+	public abstract void participarEnEntrenamiento();
 
 }

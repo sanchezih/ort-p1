@@ -1,6 +1,6 @@
 package holamundo.src;
 
-public class HolaMundo {
+public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Hola mundo en Java");

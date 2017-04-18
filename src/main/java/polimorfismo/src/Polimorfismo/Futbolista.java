@@ -1,6 +1,6 @@
 package polimorfismo.src.Polimorfismo;
 
-public class Futbolista extends SeleccionFutbol {
+public class Futbolista extends IntegranteDeSeleccion {
 
 	private int dorsal;
 	private String demarcacion;
@@ -32,13 +32,15 @@ public class Futbolista extends SeleccionFutbol {
 	}
 
 	@Override
-	public void entrenamiento() {
-		System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+	public void participarEnEntrenamiento() {
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+				+ " y estoy entrenando (Clase Futbolista - Override)");
 	}
 
 	@Override
-	public void partidoFutbol() {
-		System.out.println("Juega un Partido (Clase Futbolista)");
+	public void participarEnPartido() {
+		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+				+ " -> Juega un Partido (Clase Futbolista - Override)");
 	}
 
 	public void entrevista() {
