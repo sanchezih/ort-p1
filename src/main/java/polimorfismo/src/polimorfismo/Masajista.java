@@ -1,4 +1,4 @@
-package polimorfismo.src.Polimorfismo;
+package polimorfismo.src.polimorfismo;
 
 public class Masajista extends IntegranteDeSeleccion {
 

@@ -2,10 +2,10 @@ package polimorfismo.src;
 
 import java.util.ArrayList;
 
-import polimorfismo.src.Polimorfismo.Entrenador;
-import polimorfismo.src.Polimorfismo.Futbolista;
-import polimorfismo.src.Polimorfismo.Masajista;
-import polimorfismo.src.Polimorfismo.IntegranteDeSeleccion;
+import polimorfismo.src.polimorfismo.Entrenador;
+import polimorfismo.src.polimorfismo.Futbolista;
+import polimorfismo.src.polimorfismo.IntegranteDeSeleccion;
+import polimorfismo.src.polimorfismo.Masajista;
 
 public class Main {
 
@@ -15,6 +15,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		// El polimorfismo consiste en declarar un objeto de una clase, pero
+		// instanciarlo como un descendiente de dicha clase.
 		IntegranteDeSeleccion gallardo = new Entrenador(1, "Marcelo", "Gallardo", 41, 52418);
 		IntegranteDeSeleccion ponzio = new Futbolista(2, "Leonardo", "Ponzio", 34, 5, "Volante");
 		IntegranteDeSeleccion perez = new Masajista(3, "Juan", "Perez", 47, "Licenciado en Fisioterapia", 23);

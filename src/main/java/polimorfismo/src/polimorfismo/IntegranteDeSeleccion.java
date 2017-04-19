@@ -1,4 +1,4 @@
-package polimorfismo.src.Polimorfismo;
+package polimorfismo.src.polimorfismo;
 
 public abstract class IntegranteDeSeleccion {
 
