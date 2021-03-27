@@ -1,4 +1,4 @@
-package herencia.src.Seleccion;
+package herencia.src.seleccion;
 
 public class Entrenador extends IntegranteDeSeleccion {
 

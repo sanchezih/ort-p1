@@ -1,10 +1,12 @@
 package herencia.src;
 
 import java.util.ArrayList;
-import herencia.src.Seleccion.Entrenador;
-import herencia.src.Seleccion.Futbolista;
-import herencia.src.Seleccion.Masajista;
-import herencia.src.Seleccion.IntegranteDeSeleccion;
+
+import herencia.src.seleccion.Entrenador;
+import herencia.src.seleccion.Futbolista;
+import herencia.src.seleccion.IntegranteDeSeleccion;
+import herencia.src.seleccion.Masajista;
+
 
 public class Main {
 
