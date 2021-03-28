@@ -1,4 +1,4 @@
-package herencia.src.seleccion;
+package herenciaSeleccionEsp.src.seleccion;
 
 public class Futbolista extends IntegranteDeSeleccion {
 
