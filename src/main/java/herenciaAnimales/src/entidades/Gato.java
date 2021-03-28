@@ -18,6 +18,7 @@ public class Gato extends Animal {
 	}
 
 	public void mostrar() {
-		System.out.println(getNombre() + "-" + getTipo_alimentacion() + "-" + getEdad() + "-" + getRaza());
+		System.out.println("Nombre: " + getNombre() + " | " + "Tipo de alimentacion: " + getTipo_alimentacion() + " | "
+				+ "Edad: " + getEdad() + " | " + "Raza: " + getRaza());
 	}
 }

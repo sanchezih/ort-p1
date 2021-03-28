@@ -14,9 +14,9 @@ public class Main {
 
 		// -->Nos muestra los detalles del objeto
 		perro.mostrar();
-		System.out.println("--------------------------------------------------");
+		System.out.println("\n----------------------------------------------------------------------------\n");
 		gato.mostrar();
-		System.out.println("--------------------------------------------------");
+		System.out.println("\n----------------------------------------------------------------------------\n");
 		caballo.mostrar();
 
 	}
