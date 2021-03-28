@@ -25,13 +25,13 @@ public class Main {
 		integrantes.add(raulMartinez);
 
 		// CONCENTRACION
-		System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo método)");
+		System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.concentrarse();
 		}
 
 		// VIAJE
-		System.out.println("\nTodos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo método)");
+		System.out.println("\nTodos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.viajar();
 		}
@@ -47,7 +47,7 @@ public class Main {
 
 		// PARTIDO DE FUTBOL
 		System.out.println(
-				"\nPartido de Futbol: Solamente el entrenador y el futbolista tiene metodos para el partido de fútbol:");
+				"\nPartido de Futbol: Solamente el entrenador y el futbolista tiene metodos para el partido de futbol:");
 		delBosque.dirigirPartido();
 		iniesta.jugarPartido();
 	}
