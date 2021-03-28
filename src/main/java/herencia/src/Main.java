@@ -7,11 +7,10 @@ import herencia.src.seleccion.Futbolista;
 import herencia.src.seleccion.IntegranteDeSeleccion;
 import herencia.src.seleccion.Masajista;
 
-
 public class Main {
 
-	// ArrayList de objetos IntegranteDeSeleccion. Idenpendientemente de la
-	// clase hija a la que pertenezca el objeto
+	// ArrayList de objetos IntegranteDeSeleccion.
+	// Idenpendientemente de la clase hija a la que pertenezca el objeto
 	public static ArrayList<IntegranteDeSeleccion> integrantes = new ArrayList<IntegranteDeSeleccion>();
 
 	public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class Main {
 		// CREO EL EQUIPO
 		Entrenador delBosque = new Entrenador(1, "Vicente", "Del Bosque", 60, "284EZ89");
 		Futbolista iniesta = new Futbolista(2, "Andres", "Iniesta", 29, 6, "Interior Derecho");
-		Masajista raulMartinez = new Masajista(3, "Raúl", "Martinez", 41, "Licenciado en Fisioterapia", 18);
+		Masajista raulMartinez = new Masajista(3, "Raul", "Martinez", 41, "Licenciado en Fisioterapia", 18);
 
 		integrantes.add(delBosque);
 		integrantes.add(iniesta);
@@ -48,7 +47,7 @@ public class Main {
 
 		// PARTIDO DE FUTBOL
 		System.out.println(
-				"\nPartido de Fútbol: Solamente el entrenador y el futbolista tiene metodos para el partido de fútbol:");
+				"\nPartido de Futbol: Solamente el entrenador y el futbolista tiene metodos para el partido de fútbol:");
 		delBosque.dirigirPartido();
 		iniesta.jugarPartido();
 	}
