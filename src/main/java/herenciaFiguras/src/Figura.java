@@ -1,4 +1,4 @@
-package herenciaFiguras;
+package herenciaFiguras.src;
 
 
 /**

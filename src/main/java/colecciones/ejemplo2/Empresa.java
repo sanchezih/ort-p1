@@ -7,8 +7,7 @@ import java.util.List;
 public class Empresa {
 
 	public static void main(String[] args) {
-		Collection<Empleado> colleccionEmpleados = new ArrayList<Empleado>(5);// tamanio
-																				// inicial
+		Collection<Empleado> colleccionEmpleados = new ArrayList<Empleado>(5);// tamanio inicial
 
 		List<Empleado> empleados = new ArrayList<Empleado>(10);
 
@@ -65,10 +64,10 @@ public class Empresa {
 		}
 		// ver la diferencia usando Iterator o foreach
 		for (Empleado empleado : empleados) {
-			System.out.println("forach" + empleado);
+			System.out.println("foreach " + empleado);
 		}
 		for (Empleado empleado : colleccionEmpleados) {
-			System.out.println("otro foreach" + empleado);
+			System.out.println("otro foreach " + empleado);
 		}
 	}
 

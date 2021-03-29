@@ -1,4 +1,4 @@
-package herenciaFiguras;
+package herenciaFiguras.src;
 
 /**
  * Write a description of class Triangulo here.
