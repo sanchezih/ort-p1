@@ -1,4 +1,4 @@
-package modificadoresDeAcceso.src._1_private.p1.ok;
+package modificadoresDeAcceso.src._1_private.ok.p1;
 
 public class EjemploPrivate {
 

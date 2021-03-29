@@ -18,7 +18,7 @@
   </package>  
   <class id="3" language="java" name="herenciaSeleccionEsp.src.seleccion.Entrenador" project="ort-p1" 
     file="/ort-p1/src/main/java/herenciaSeleccionEsp/src/seleccion/Entrenador.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="177" y="481"/>    
+    <position height="-1" width="-1" x="172" y="545"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
   </class>  
   <class id="4" language="java" name="herenciaSeleccionEsp.src.Main" project="ort-p1" 
     file="/ort-p1/src/main/java/herenciaSeleccionEsp/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="176" x="751" y="83"/>    
+    <position height="189" width="176" x="914" y="61"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -45,33 +45,33 @@
   </class>  
   <class id="6" language="java" name="herenciaSeleccionEsp.src.seleccion.Masajista" project="ort-p1" 
     file="/ort-p1/src/main/java/herenciaSeleccionEsp/src/seleccion/Masajista.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="767" y="510"/>    
+    <position height="-1" width="-1" x="764" y="553"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="7">    
+  <generalization id="7">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="9">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="8" name="integrantes">        
+      <attribute id="10" name="integrantes">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="9" minimum="0" maximum="2147483647">        
+      <multiplicity id="11" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
   <generalization id="12">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="1"/>  
