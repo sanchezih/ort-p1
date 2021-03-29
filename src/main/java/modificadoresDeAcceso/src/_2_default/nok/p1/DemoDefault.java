@@ -1,5 +1,5 @@
 //Programa Java para ilustrar el modificador default
-package modificadoresDeAcceso.src._default.p1;
+package modificadoresDeAcceso.src._2_default.nok.p1;
 
 //La clase DemoDefault tiene modificador de acceso default
 class DemoDefault {

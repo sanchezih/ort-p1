@@ -1,4 +1,4 @@
-package modificadoresDeAcceso.src._private.p1;
+package modificadoresDeAcceso.src._1_private.nok.p1;
 
 class A {
 	private void mostrar() { // <-- private da error

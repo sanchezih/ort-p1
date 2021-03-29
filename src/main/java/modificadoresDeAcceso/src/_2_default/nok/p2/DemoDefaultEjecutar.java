@@ -1,9 +1,9 @@
 //Programa Java para ilustrar el error
 //al usar la clase de un paquete diferente con
 //modificador default
-package modificadoresDeAcceso.src._default.p2;
+package modificadoresDeAcceso.src._2_default.nok.p2;
 
-import modificadoresDeAcceso.src._default.p1.*;
+import modificadoresDeAcceso.src._2_default.nok.p1.*;
 
 //Esta clase tiene un modificador de acceso predeterminado
 public class DemoDefaultEjecutar {

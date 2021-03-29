@@ -1,8 +1,7 @@
 //Programa Java para ilustrar el modificador protected
-package modificadoresDeAcceso.src._public.p2;
+package modificadoresDeAcceso.src._4_public.ok.ejemplo1.p2;
 
-//importar todas las clases en el paquete p1
-import modificadoresDeAcceso.src._public.p1.*;
+import modificadoresDeAcceso.src._4_public.ok.ejemplo1.p1.*;
 
 public class B extends A {
 	public static void main(String[] args) {

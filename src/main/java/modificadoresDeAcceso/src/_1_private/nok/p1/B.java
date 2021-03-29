@@ -1,5 +1,5 @@
 //Programa Java para ilustrar el error al usar la clase desde un mismo paquete con modificador private
-package modificadoresDeAcceso.src._private.p1;
+package modificadoresDeAcceso.src._1_private.nok.p1;
 
 class B {
 	public static void main(String[] args) {
