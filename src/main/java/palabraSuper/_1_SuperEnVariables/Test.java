@@ -17,7 +17,6 @@ class Car extends Vehicle {
 }
 
 /*--------------------------------------------------------------------------*/
-// Programa de controlador Test 
 class Test {
 	public static void main(String[] args) {
 		Car small = new Car();

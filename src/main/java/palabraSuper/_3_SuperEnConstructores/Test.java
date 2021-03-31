@@ -1,20 +1,16 @@
 package palabraSuper._3_SuperEnConstructores;
 
-// superclase Person
 class Person {
 	Person() {
-		System.out.println("Constructor de la clase Person");
+		System.out.println("Soy el constructor de la clase Person");
 	}
 }
 
 /*--------------------------------------------------------------------------*/
-// subclase Student extiende de la clase Person
 class Student extends Person {
 	Student() {
-		// invoca o llama al constructor de la clase padre
-		super();
-
-		System.out.println("Constructor de la clase Student");
+		super(); // invoca al constructor de la clase padre
+		System.out.println("Soy el constructor de la clase Student");
 	}
 }
 
@@ -26,6 +22,6 @@ class Test {
 }
 
 /*
- * En el ejemplo anterior hemos llamado al constructor de la superclase usando
- * la palabra clave ‘super‘ a través del constructor de la subclase.
+ * En el ejemplo hemos llamado al constructor de la superclase usando la palabra
+ * clave 'super' a través del constructor de la subclase.
  */

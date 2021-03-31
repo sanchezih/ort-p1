@@ -16,16 +16,15 @@ class Student extends Person {
 
 	// display() solo está en la clase Student
 	void display() {
-		// invocará o llamará al método message() de la clase actual
+		// llamará al método message() de la clase actual
 		message();
 
-		// invocará o llamará al método message() de la clase padre
+		// llamará al método message() de la clase padre
 		super.message();
 	}
 }
 
 /*--------------------------------------------------------------------------*/
-/* Programa Controlador Test */
 class Test {
 	public static void main(String args[]) {
 		Student s = new Student();

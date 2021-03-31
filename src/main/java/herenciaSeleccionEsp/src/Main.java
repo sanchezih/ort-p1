@@ -9,8 +9,8 @@ import herenciaSeleccionEsp.src.seleccion.Masajista;
 
 public class Main {
 
-	// ArrayList de objetos IntegranteDeSeleccion.
-	// Idenpendientemente de la clase hija a la que pertenezca el objeto
+	// ArrayList de objetos IntegranteDeSeleccion. Idenpendientemente de la clase
+	// hija a la que pertenezca el objeto
 	public static ArrayList<IntegranteDeSeleccion> integrantes = new ArrayList<IntegranteDeSeleccion>();
 
 	public static void main(String[] args) {
