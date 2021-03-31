@@ -1,6 +1,6 @@
 package palabraSuper._3_SuperEnConstructores;
 
-/* superclase Person */
+// superclase Person
 class Person {
 	Person() {
 		System.out.println("Constructor de la clase Person");
@@ -8,7 +8,7 @@ class Person {
 }
 
 /*--------------------------------------------------------------------------*/
-/* subclase Student extiende de la clase Person */
+// subclase Student extiende de la clase Person
 class Student extends Person {
 	Student() {
 		// invoca o llama al constructor de la clase padre
@@ -19,7 +19,6 @@ class Student extends Person {
 }
 
 /*--------------------------------------------------------------------------*/
-/* Programa Controlador Test */
 class Test {
 	public static void main(String[] args) {
 		Student s = new Student();
