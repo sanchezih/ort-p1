@@ -22,3 +22,9 @@ class Test {
 		small.display();
 	}
 }
+
+/*
+ * Tanto la clase base como la subclase tienen un miembro maxSpeed. Podriamos
+ * acceder a maxSpeed de la clase base en la sublcase usando la palabra clave
+ * super
+ */

@@ -32,3 +32,9 @@ class Test {
 		s.display();
 	}
 }
+
+/*
+ * Si solo llamamos al método message(), entonces se invoca el message() de la
+ * clase actual, pero con el uso de la palabra clave super, también se puede
+ * invocar a message() de la superclase.
+ */

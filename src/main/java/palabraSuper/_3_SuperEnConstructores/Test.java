@@ -23,3 +23,8 @@ class Test {
 		Student s = new Student();
 	}
 }
+
+/*
+ * En el ejemplo anterior hemos llamado al constructor de la superclase usando
+ * la palabra clave ‘super‘ a través del constructor de la subclase.
+ */
