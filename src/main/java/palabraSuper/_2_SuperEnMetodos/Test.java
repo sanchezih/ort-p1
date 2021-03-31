@@ -1,19 +1,20 @@
 package palabraSuper._2_SuperEnMetodos;
 
-/* Clase Base Person */
+// Clase Base Person 
 class Person {
 	void message() {
 		System.out.println("Esta es una clase persona");
 	}
 }
 
-/* Subclase Student */
+/*--------------------------------------------------------------------------*/
+// Subclase Student 
 class Student extends Person {
 	void message() {
 		System.out.println("Esta es una clase estudiante");
 	}
 
-	// Tenga en cuenta que display() solo está en la clase Student
+	// display() solo está en la clase Student
 	void display() {
 		// invocará o llamará al método message() de la clase actual
 		message();
@@ -23,6 +24,7 @@ class Student extends Person {
 	}
 }
 
+/*--------------------------------------------------------------------------*/
 /* Programa Controlador Test */
 class Test {
 	public static void main(String args[]) {

@@ -7,6 +7,7 @@ class Person {
 	}
 }
 
+/*--------------------------------------------------------------------------*/
 /* subclase Student extiende de la clase Person */
 class Student extends Person {
 	Student() {
@@ -17,6 +18,7 @@ class Student extends Person {
 	}
 }
 
+/*--------------------------------------------------------------------------*/
 /* Programa Controlador Test */
 class Test {
 	public static void main(String[] args) {
