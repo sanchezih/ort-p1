@@ -1,4 +1,4 @@
-package ejInstanceof.ejemplo01;
+package ejemplo_instanceof.ejemplo01;
 
 public class Main {
 
