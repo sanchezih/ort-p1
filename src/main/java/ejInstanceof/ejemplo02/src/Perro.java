@@ -1,4 +1,4 @@
-package ejInstanceof.src.ejemplo02.src;
+package ejInstanceof.ejemplo02.src;
 
 class Animal {
 }
