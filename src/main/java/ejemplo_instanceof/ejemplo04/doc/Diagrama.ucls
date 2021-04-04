@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ejemplo_instanceof.ejemplo02.src.Main" project="ort-p1" 
-    file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo02/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="135" y="220"/>    
+  <class id="1" language="java" name="ejemplo_instanceof.ejemplo04.src.Main" project="ort-p1" 
+    file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo04/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="152" x="131" y="224"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ejemplo_instanceof.ejemplo02.src.Animal" project="ort-p1" 
-    file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo02/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="135" y="72"/>    
+  <interface id="2" language="java" name="ejemplo_instanceof.ejemplo04.src.Animal" project="ort-p1" 
+    file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo04/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="152" x="323" y="363"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="ejemplo_instanceof.ejemplo04.src.Dog" project="ort-p1" 
+    file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo04/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="152" x="323" y="224"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="3">    
-    <end type="SOURCE" refId="1"/>    
+  <realization id="4">    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
-  </generalization>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

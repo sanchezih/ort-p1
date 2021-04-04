@@ -1,4 +1,4 @@
-package ejemplo_instanceof.ejemplo01;
+package ejemplo_instanceof.ejemplo01.src;
 
 public class Main {
 
