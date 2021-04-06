@@ -7,7 +7,10 @@ public class ProfesorTitular extends Profesor {
 		super(nombre, apellidos, edad, id);
 	}
 
-	public float importeNomina() {
+	// Metodo abstracto sobreescrito
+	@Override
+	public float importeSalario() {
 		return 30f * 43.20f;
 	}
+
 }

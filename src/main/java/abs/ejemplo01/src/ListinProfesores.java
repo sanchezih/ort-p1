@@ -17,20 +17,20 @@ public class ListinProfesores {
 	}
 
 	public void imprimirListin() {
-		String tmpStr1 = ""; // String temporal que usamos como auxiliar
+		String tempString = "";
 
-		System.out.println("*** Se muestran los datos de los profesores en el listin ***\n");
+		System.out.println("*** Se muestra el listado de profesores en el listin ***\n");
 
 		for (Profesor tmp : listinProfesores) {
 			System.out.println(tmp.toString());
 
 			if (tmp instanceof ProfesorInterino) {
-				tmpStr1 = "Interino";
+				tempString = "Interino";
 			} else {
-				tmpStr1 = "Titular";
+				tempString = "Titular";
 			}
 
-			System.out.println("-Tipo: " + tmpStr1 + "\n-Nomina de este profesor: " + (tmp.importeNomina()) + "\n");
+			System.out.println("Tipo: " + tempString + "\nSalario: " + (tmp.importeSalario()) + "\n");
 		}
 	}
 
@@ -38,7 +38,7 @@ public class ListinProfesores {
 		float importeTotal = 0f;
 		Iterator<Profesor> it = listinProfesores.iterator();
 		while (it.hasNext()) {
-			importeTotal = importeTotal + it.next().importeNomina();
+			importeTotal = importeTotal + it.next().importeSalario();
 		}
 		return importeTotal;
 	}

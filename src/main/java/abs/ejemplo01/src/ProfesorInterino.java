@@ -28,7 +28,9 @@ public class ProfesorInterino extends Profesor {
 				.concat(fechaComienzoInterinidad.getTime().toString());
 	}
 
-	public float importeNomina() {
+	// Metodo abstracto sobreescrito
+	@Override
+	public float importeSalario() {
 		return 30f * 35.60f;
-	} // Metodo abstracto sobreescrito en esta clase
+	}
 }

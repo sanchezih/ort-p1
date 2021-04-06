@@ -30,8 +30,8 @@ public abstract class Profesor extends Persona {
 	}
 
 	public String toString() {
-		return super.toString().concat("\n-IdProfesor: ").concat(IdProfesor);
+		return super.toString().concat("\nID: ").concat(IdProfesor);
 	}
 
-	public abstract float importeNomina(); // Metodo abstracto
+	public abstract float importeSalario(); // Metodo abstracto
 }

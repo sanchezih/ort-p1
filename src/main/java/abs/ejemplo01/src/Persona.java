@@ -34,7 +34,7 @@ public class Persona {
 
 	public String toString() {
 		Integer datoEdad = edad;
-		return "-Nombre: ".concat(nombre).concat("\n-Apellido: ").concat(apellido).concat("\n-Edad: ")
+		return "Nombre completo: ".concat(nombre).concat(" ").concat(apellido).concat("\nEdad: ")
 				.concat(datoEdad.toString());
 	}
 }
