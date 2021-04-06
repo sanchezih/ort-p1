@@ -24,7 +24,7 @@ public class ProfesorInterino extends Profesor {
 	}
 
 	public String toString() { // Sobreescritura del metodo
-		return super.toString().concat(" Fecha comienzo interinidad: ")
+		return super.toString().concat("\nFecha comienzo interinidad: ")
 				.concat(fechaComienzoInterinidad.getTime().toString());
 	}
 

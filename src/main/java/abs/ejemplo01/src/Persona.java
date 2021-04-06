@@ -3,19 +3,19 @@ package abs.ejemplo01.src;
 public class Persona {
 
 	private String nombre;
-	private String apellidos;
+	private String apellido;
 	private int edad;
 
 	// Constructores
 	public Persona() {
 		nombre = "";
-		apellidos = "";
+		apellido = "";
 		edad = 0;
 	}
 
-	public Persona(String nombre, String apellidos, int edad) {
+	public Persona(String nombre, String apellido, int edad) {
 		this.nombre = nombre;
-		this.apellidos = apellidos;
+		this.apellido = apellido;
 		this.edad = edad;
 	}
 
@@ -24,8 +24,8 @@ public class Persona {
 		return nombre;
 	}
 
-	public String getApellidos() {
-		return apellidos;
+	public String getApellido() {
+		return apellido;
 	}
 
 	public int getEdad() {
@@ -34,8 +34,7 @@ public class Persona {
 
 	public String toString() {
 		Integer datoEdad = edad;
-
-		return "-Nombre: ".concat(nombre).concat(" -Apellidos: ").concat(apellidos).concat(" -Edad: ")
+		return "-Nombre: ".concat(nombre).concat("\n-Apellido: ").concat(apellido).concat("\n-Edad: ")
 				.concat(datoEdad.toString());
 	}
 }

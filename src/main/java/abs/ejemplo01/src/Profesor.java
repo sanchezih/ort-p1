@@ -10,8 +10,8 @@ public abstract class Profesor extends Persona {
 		IdProfesor = "Unknown";
 	}
 
-	public Profesor(String nombre, String apellidos, int edad, String id) {
-		super(nombre, apellidos, edad);
+	public Profesor(String nombre, String apellido, int edad, String id) {
+		super(nombre, apellido, edad);
 		IdProfesor = id;
 	}
 
@@ -25,12 +25,12 @@ public abstract class Profesor extends Persona {
 	}
 
 	public void mostrarDatos() {
-		System.out.println("Datos Profesor. Profesor de nombre: " + getNombre() + " " + getApellidos()
+		System.out.println("Datos Profesor. Profesor de nombre: " + getNombre() + " " + getApellido()
 				+ " con Id de profesor: " + getIdProfesor());
 	}
 
 	public String toString() {
-		return super.toString().concat(" -IdProfesor: ").concat(IdProfesor);
+		return super.toString().concat("\n-IdProfesor: ").concat(IdProfesor);
 	}
 
 	public abstract float importeNomina(); // Metodo abstracto

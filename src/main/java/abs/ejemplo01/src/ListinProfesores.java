@@ -18,7 +18,9 @@ public class ListinProfesores {
 
 	public void imprimirListin() {
 		String tmpStr1 = ""; // String temporal que usamos como auxiliar
-		System.out.println("Se procede a mostrar los datos de los profesores existentes en el listín \n");
+
+		System.out.println("*** Se muestran los datos de los profesores en el listin ***\n");
+
 		for (Profesor tmp : listinProfesores) {
 			System.out.println(tmp.toString());
 
@@ -28,8 +30,7 @@ public class ListinProfesores {
 				tmpStr1 = "Titular";
 			}
 
-			System.out.println(
-					"-Tipo de este profesor:" + tmpStr1 + " -Nómina de este profesor: " + (tmp.importeNomina()) + "\n");
+			System.out.println("-Tipo: " + tmpStr1 + "\n-Nomina de este profesor: " + (tmp.importeNomina()) + "\n");
 		}
 	}
 
