@@ -6,6 +6,7 @@ public class Persona {
 	private String apellidos;
 	private int edad;
 
+	// Constructores
 	public Persona() {
 		nombre = "";
 		apellidos = "";
@@ -18,6 +19,7 @@ public class Persona {
 		this.edad = edad;
 	}
 
+	// Metodos
 	public String getNombre() {
 		return nombre;
 	}
@@ -36,5 +38,4 @@ public class Persona {
 		return "-Nombre: ".concat(nombre).concat(" -Apellidos: ").concat(apellidos).concat(" -Edad: ")
 				.concat(datoEdad.toString());
 	}
-
 }

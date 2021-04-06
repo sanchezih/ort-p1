@@ -9,6 +9,5 @@ public class ProfesorTitular extends Profesor {
 
 	public float importeNomina() {
 		return 30f * 43.20f;
-	} // Metodo abstracto sobreescrito en esta clase
-
+	}
 }

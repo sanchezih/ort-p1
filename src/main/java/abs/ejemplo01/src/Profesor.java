@@ -1,6 +1,7 @@
 package abs.ejemplo01.src;
 
 public abstract class Profesor extends Persona {
+
 	private String IdProfesor;
 
 	// Constructores
@@ -24,10 +25,8 @@ public abstract class Profesor extends Persona {
 	}
 
 	public void mostrarDatos() {
-
-		System.out.println("Datos Profesor. Profesor de nombre: " + getNombre() + " " +
-
-				getApellidos() + " con Id de profesor: " + getIdProfesor());
+		System.out.println("Datos Profesor. Profesor de nombre: " + getNombre() + " " + getApellidos()
+				+ " con Id de profesor: " + getIdProfesor());
 	}
 
 	public String toString() {
@@ -35,5 +34,4 @@ public abstract class Profesor extends Persona {
 	}
 
 	public abstract float importeNomina(); // Metodo abstracto
-
 }
