@@ -19,12 +19,10 @@ public class ListinProfesores {
 	public void imprimirListin() {
 		String tempString = "";
 
-		System.out.println("*** Se muestra el listado de profesores en el listin ***\n");
-
 		for (Profesor tmp : listinProfesores) {
 			System.out.println(tmp.toString());
 
-			if (tmp instanceof ProfesorInterino) {
+			if (tmp instanceof ProfesorSuplente) {
 				tempString = "Interino";
 			} else {
 				tempString = "Titular";
@@ -34,7 +32,7 @@ public class ListinProfesores {
 		}
 	}
 
-	public float importeTotalNominaProfesorado() {
+	public float importeTotalSalariosProfesorado() {
 		float importeTotal = 0f;
 		Iterator<Profesor> it = listinProfesores.iterator();
 		while (it.hasNext()) {

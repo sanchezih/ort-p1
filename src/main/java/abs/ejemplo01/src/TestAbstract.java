@@ -5,16 +5,13 @@ import java.util.Calendar;
 public class TestAbstract {
 	public static void main(String[] Args) {
 
-		Calendar fecha1 = Calendar.getInstance();
-		fecha1.set(2019, 10, 22); // Los meses van de 0 a 11, luego 10 representa noviembre
+		ProfesorSuplente pi1 = new ProfesorSuplente("Maria",	"Hernandez",	38, "S-001", Calendar.getInstance());
+		ProfesorSuplente pi2 = new ProfesorSuplente("Andres",	"Molto",		41, "S-002", Calendar.getInstance());
+		ProfesorSuplente pi3 = new ProfesorSuplente("Rosa",		"Rios",			31, "S-003", Calendar.getInstance());
 
-		ProfesorInterino pi1 = new ProfesorInterino("Maria", "Hernandez", 45, "I-001", fecha1);
-		ProfesorInterino pi2 = new ProfesorInterino("Andres", "Molto", 87, "I-002", fecha1);
-		ProfesorInterino pi3 = new ProfesorInterino("Rosa", "Rios", 76, "I-003", fecha1);
-
-		ProfesorTitular pt1 = new ProfesorTitular("Adriana", "Perez", 23, "T-001");
-		ProfesorTitular pt2 = new ProfesorTitular("Alberto", "Centa", 49, "T-002");
-		ProfesorTitular pt3 = new ProfesorTitular("Alberto", "Centa", 49, "T-003");
+		ProfesorTitular pt1 = new ProfesorTitular("Adriana",	"Perez",		43, "T-001");
+		ProfesorTitular pt2 = new ProfesorTitular("Alberto",	"Centa",		36, "T-002");
+		ProfesorTitular pt3 = new ProfesorTitular("Rosana",		"Garcia",		29, "T-003");
 
 		ListinProfesores listinProfesorado = new ListinProfesores();
 		listinProfesorado.addProfesor(pi1);
@@ -25,7 +22,7 @@ public class TestAbstract {
 		listinProfesorado.addProfesor(pt3);
 
 		listinProfesorado.imprimirListin();
-		System.out.println(
-				"El importe de las nominas del profesorado es " + listinProfesorado.importeTotalNominaProfesorado());
+		System.out.println("===> La suma de los salarios del profesorado es "
+				+ listinProfesorado.importeTotalSalariosProfesorado());
 	}
 }
