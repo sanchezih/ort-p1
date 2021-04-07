@@ -23,7 +23,7 @@ public class ListinProfesores {
 			System.out.println(profeTemp.toString());
 
 			if (profeTemp instanceof ProfesorSuplente) { // 2
-				tempString = "Interino";
+				tempString = "Suplente";
 			} else {
 				tempString = "Titular";
 			}

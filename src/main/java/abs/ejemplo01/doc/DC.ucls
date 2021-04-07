@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="abs.ejemplo01.src.ProfesorTitular" project="ort-p1" 
     file="/ort-p1/src/main/java/abs/ejemplo01/src/ProfesorTitular.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="209" x="171" y="541"/>    
+    <position height="-1" width="-1" x="221" y="610"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="abs.ejemplo01.src.TestAbstract" project="ort-p1" 
     file="/ort-p1/src/main/java/abs/ejemplo01/src/TestAbstract.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="131" y="29"/>    
+    <position height="-1" width="-1" x="144" y="158"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -28,52 +28,56 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="abs.ejemplo01.src.ProfesorInterino" project="ort-p1" 
-    file="/ort-p1/src/main/java/abs/ejemplo01/src/ProfesorInterino.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="261" x="420" y="541"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="abs.ejemplo01.src.ListinProfesores" project="ort-p1" 
+  <class id="4" language="java" name="abs.ejemplo01.src.ListinProfesores" project="ort-p1" 
     file="/ort-p1/src/main/java/abs/ejemplo01/src/ListinProfesores.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="210" x="471" y="29"/>    
+    <position height="-1" width="-1" x="623" y="288"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="abs.ejemplo01.src.Profesor" project="ort-p1" 
+  <class id="5" language="java" name="abs.ejemplo01.src.Profesor" project="ort-p1" 
     file="/ort-p1/src/main/java/abs/ejemplo01/src/Profesor.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="180" x="336" y="294"/>    
+    <position height="-1" width="-1" x="319" y="399"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="7">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="8" name="listinProfesores"/>      
-      <multiplicity id="9" minimum="0" maximum="2147483647"/>    
+  <class id="6" language="java" name="abs.ejemplo01.src.ProfesorSuplente" project="ort-p1" 
+    file="/ort-p1/src/main/java/abs/ejemplo01/src/ProfesorSuplente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="595" y="599"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="8">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="9" name="listinProfesores">        
+        <position height="0" width="0" x="-107" y="2"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-107" y="2"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="6"/>    
+  <generalization id="11">    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
   <generalization id="12">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="6"/>  
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

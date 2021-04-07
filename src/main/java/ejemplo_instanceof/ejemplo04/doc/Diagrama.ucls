@@ -12,7 +12,7 @@
   </class>  
   <interface id="2" language="java" name="ejemplo_instanceof.ejemplo04.src.Animal" project="ort-p1" 
     file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo04/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="63" width="152" x="323" y="363"/>    
+    <position height="-1" width="-1" x="475" y="222"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </interface>  
   <class id="3" language="java" name="ejemplo_instanceof.ejemplo04.src.Dog" project="ort-p1" 
     file="/ort-p1/src/main/java/ejemplo_instanceof/ejemplo04/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="152" x="323" y="224"/>    
+    <position height="-1" width="-1" x="479" y="388"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
