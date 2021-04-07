@@ -35,4 +35,5 @@ public abstract class Profesor extends Persona {
 
 	// Metodo abstracto se debe implementar obligatoriamente en las subclases
 	public abstract float importeSalario();
+
 }
