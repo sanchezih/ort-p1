@@ -33,5 +33,6 @@ public abstract class Profesor extends Persona {
 		return super.toString().concat("\nID: ").concat(IdProfesor);
 	}
 
-	public abstract float importeSalario(); // Metodo abstracto
+	// Metodo abstracto se debe implementar obligatoriamente en las subclases
+	public abstract float importeSalario();
 }

@@ -23,9 +23,11 @@ public class ProfesorSuplente extends Profesor {
 		return fechaComienzoSuplencia;
 	}
 
+	// El metodo sobreescrito toString() de la clase ProfesorSuplente llama al
+	// metodo toString() de la superclase y lo concatena con nuevas cadenas.
+	@Override
 	public String toString() { // Sobreescritura del metodo
-		return super.toString().concat("\nComienzo suplencia: ")
-				.concat(fechaComienzoSuplencia.getTime().toString());
+		return super.toString().concat("\nComienzo suplencia: ").concat(fechaComienzoSuplencia.getTime().toString());
 	}
 
 	// Metodo abstracto sobreescrito

@@ -1,3 +1,10 @@
+/*
+ * En la clase de test creamos profesores titulares y suplentes y los vamos
+ * añadiendo a un listín. Posteriormente, invocamos el método imprimirListin(),
+ * que se basa en los métodos toString de las subclases y de sus superclases
+ * mediante invocaciones sucesivas a super.
+ */
+
 package abs.ejemplo01.src;
 
 import java.util.Calendar;
@@ -5,13 +12,13 @@ import java.util.Calendar;
 public class TestAbstract {
 	public static void main(String[] Args) {
 
-		ProfesorSuplente pi1 = new ProfesorSuplente("Maria",	"Hernandez",	38, "S-001", Calendar.getInstance());
-		ProfesorSuplente pi2 = new ProfesorSuplente("Andres",	"Molto",		41, "S-002", Calendar.getInstance());
-		ProfesorSuplente pi3 = new ProfesorSuplente("Rosa",		"Rios",			31, "S-003", Calendar.getInstance());
+		ProfesorSuplente pi1 = new ProfesorSuplente("Maria", "Hernandez", 38, "S-001", Calendar.getInstance());
+		ProfesorSuplente pi2 = new ProfesorSuplente("Andres", "Molto", 41, "S-002", Calendar.getInstance());
+		ProfesorSuplente pi3 = new ProfesorSuplente("Rosa", "Rios", 31, "S-003", Calendar.getInstance());
 
-		ProfesorTitular pt1 = new ProfesorTitular("Adriana",	"Perez",		43, "T-001");
-		ProfesorTitular pt2 = new ProfesorTitular("Alberto",	"Centa",		36, "T-002");
-		ProfesorTitular pt3 = new ProfesorTitular("Rosana",		"Garcia",		29, "T-003");
+		ProfesorTitular pt1 = new ProfesorTitular("Adriana", "Perez", 43, "T-001");
+		ProfesorTitular pt2 = new ProfesorTitular("Alberto", "Centa", 36, "T-002");
+		ProfesorTitular pt3 = new ProfesorTitular("Rosana", "Garcia", 29, "T-003");
 
 		ListinProfesores listinProfesorado = new ListinProfesores();
 		listinProfesorado.addProfesor(pi1);

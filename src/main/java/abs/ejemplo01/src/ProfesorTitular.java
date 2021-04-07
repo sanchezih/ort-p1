@@ -1,3 +1,9 @@
+/*
+ * ProfesorTitular lo hemos dejado con escaso contenido porque aquí lo usamos
+ * solo a modo de ejemplo de uso de clases abstractas y herencia. Su único
+ * cometido es mostrar que existe otra subclase de Profesor.
+ */
+
 package abs.ejemplo01.src;
 
 public class ProfesorTitular extends Profesor {
