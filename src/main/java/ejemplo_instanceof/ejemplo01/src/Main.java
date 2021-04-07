@@ -7,5 +7,4 @@ public class Main {
 		if (s instanceof String)
 			System.out.println("Efectivamente s pertenece a la clase String");
 	}
-
 }
