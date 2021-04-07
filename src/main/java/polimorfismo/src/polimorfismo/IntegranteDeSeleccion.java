@@ -63,8 +63,7 @@ public abstract class IntegranteDeSeleccion {
 				+ " y estoy asistiendo al Partido de Fútbol (Clase Padre)");
 	}
 
-	// IMPORTANTE -> METODO ABSTRACTO => no se implementa en la clase abstracta
-	// pero si en la clases hijas
+	// Metodo abstracto se debe implementar obligatoriamente en las subclases
 	public abstract void participarEnEntrenamiento();
 
 }

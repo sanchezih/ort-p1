@@ -10,10 +10,10 @@ public class IntegranteDeSeleccion {
 	public IntegranteDeSeleccion() {
 	}
 
-	public IntegranteDeSeleccion(int id, String nombre, String apellidos, int edad) {
+	public IntegranteDeSeleccion(int id, String nombre, String apellido, int edad) {
 		this.id = id;
 		this.nombre = nombre;
-		this.apellido = apellidos;
+		this.apellido = apellido;
 		this.edad = edad;
 	}
 
@@ -37,7 +37,7 @@ public class IntegranteDeSeleccion {
 		return apellido;
 	}
 
-	public void setApellidos(String apellido) {
+	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
 
