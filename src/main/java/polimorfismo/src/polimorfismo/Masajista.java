@@ -9,8 +9,8 @@ public class Masajista extends IntegranteDeSeleccion {
 		super();
 	}
 
-	public Masajista(int id, String nombre, String apellidos, int edad, String posicion, int aniosExperiencia) {
-		super(id, nombre, apellidos, edad);
+	public Masajista(int id, String nombre, String apellido, int edad, String posicion, int aniosExperiencia) {
+		super(id, nombre, apellido, edad);
 		this.posicion = posicion;
 		this.aniosExperiencia = aniosExperiencia;
 	}

@@ -9,20 +9,20 @@ import polimorfismo.src.polimorfismo.Masajista;
 
 public class Main {
 
-	// ArrayList de objetos SeleccionFutbol. Idenpendientemente de la clase hija
-	// a la que pertenezca el objeto
 	public static ArrayList<IntegranteDeSeleccion> integrantes = new ArrayList<IntegranteDeSeleccion>();
 
 	public static void main(String[] args) {
 
-		// El polimorfismo consiste en declarar un objeto de una clase, pero
-		// instanciarlo como un descendiente de dicha clase.
-		IntegranteDeSeleccion gallardo = new Entrenador(1, "Marcelo", "Gallardo", 41, 52418); // Upcasting
-		IntegranteDeSeleccion ponzio = new Futbolista(2, "Leonardo", "Ponzio", 34, 5, "Volante");
+		/*
+		 * El polimorfismo consiste en declarar un objeto de una clase, pero
+		 * instanciarlo como un descendiente de dicha clase.
+		 */
+		IntegranteDeSeleccion gallarre = new Entrenador(1, "Luis", "Gallarre", 41, 52418); // UpCasting
+		IntegranteDeSeleccion aguirre = new Futbolista(2, "Francisco", "Aguirre", 34, 5, "Volante");
 		IntegranteDeSeleccion perez = new Masajista(3, "Juan", "Perez", 47, "Licenciado en Fisioterapia", 23);
 
-		integrantes.add(gallardo);
-		integrantes.add(ponzio);
+		integrantes.add(gallarre);
+		integrantes.add(aguirre);
 		integrantes.add(perez);
 
 		// CONCENTRACION
@@ -54,13 +54,13 @@ public class Main {
 		// PLANIFICAR ENTRENAMIENTO
 		System.out.println(
 				"\nPlanificar Entrenamiento: Solo el entrenador tiene el metodo para planificar un entrenamiento:");
-		System.out.print(gallardo.getNombre() + " " + gallardo.getApellido() + " -> ");
-		((Entrenador) gallardo).planificarEntrenamiento(); // Downcasting
+		System.out.print(gallarre.getNombre() + " " + gallarre.getApellido() + " -> ");
+		((Entrenador) gallarre).planificarEntrenamiento(); // DownCasting
 
 		// ENTREVISTA
 		System.out.println("\nEntrevista: Solo el futbolista tiene el metodo para dar una entrevista:");
-		System.out.print(ponzio.getNombre() + " " + ponzio.getApellido() + " -> ");
-		((Futbolista) ponzio).entrevista();
+		System.out.print(aguirre.getNombre() + " " + aguirre.getApellido() + " -> ");
+		((Futbolista) aguirre).entrevista();
 
 		// MASAJE
 		System.out.println("\nMasaje: Solo el masajista tiene el metodo para dar un masaje:");

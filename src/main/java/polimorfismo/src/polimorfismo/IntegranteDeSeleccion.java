@@ -60,7 +60,7 @@ public abstract class IntegranteDeSeleccion {
 
 	public void participarEnPartido() {
 		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
-				+ " y estoy asistiendo al Partido de Fútbol (Clase Padre)");
+				+ " y estoy asistiendo al Partido de Futbol (Clase Padre)");
 	}
 
 	// Metodo abstracto se debe implementar obligatoriamente en las subclases
