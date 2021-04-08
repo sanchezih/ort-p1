@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 public class TestAbstract {
 	public static void main(String[] Args) {
-
+		
 		ProfesorSuplente ps1 = new ProfesorSuplente("Maria", "Hernandez", 38, "S-001", Calendar.getInstance());
 		ProfesorSuplente ps2 = new ProfesorSuplente("Andres", "Molto", 41, "S-002", Calendar.getInstance());
 		ProfesorSuplente ps3 = new ProfesorSuplente("Rosa", "Rios", 31, "S-003", Calendar.getInstance());
