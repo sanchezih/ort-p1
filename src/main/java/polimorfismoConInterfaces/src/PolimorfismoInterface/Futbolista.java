@@ -9,8 +9,8 @@ public class Futbolista extends SeleccionFutbol {
 		super();
 	}
 
-	public Futbolista(int id, String nombre, String apellidos, int edad, int dorsal, String demarcacion) {
-		super(id, nombre, apellidos, edad);
+	public Futbolista(int id, String nombre, String apellido, int edad, int dorsal, String demarcacion) {
+		super(id, nombre, apellido, edad);
 		this.dorsal = dorsal;
 		this.demarcacion = demarcacion;
 	}

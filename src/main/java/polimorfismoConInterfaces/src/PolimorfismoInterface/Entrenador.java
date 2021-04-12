@@ -8,8 +8,8 @@ public class Entrenador extends SeleccionFutbol {
 		super();
 	}
 
-	public Entrenador(int id, String nombre, String apellidos, int edad, int idFederacion) {
-		super(id, nombre, apellidos, edad);
+	public Entrenador(int id, String nombre, String apellido, int edad, int idFederacion) {
+		super(id, nombre, apellido, edad);
 		this.setIdFederacion(idFederacion);
 	}
 
@@ -24,7 +24,6 @@ public class Entrenador extends SeleccionFutbol {
 	@Override
 	public void entrenar() {
 		System.out.println("Dirige un entrenamiento (Clase Entrenador)");
-
 	}
 
 	@Override
@@ -35,5 +34,4 @@ public class Entrenador extends SeleccionFutbol {
 	public void planificarEntrenamiento() {
 		System.out.println("Planificar un Entrenamiento");
 	}
-
 }
