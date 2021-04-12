@@ -62,7 +62,7 @@ public abstract class SeleccionFutbol implements IntegranteDeSeleccionDeFutbol {
 	}
 
 	public void jugarPartido() {
-		System.out.println("Asiste al Partido de Fútbol (Clase Padre)");
+		System.out.println("Asiste al Partido de Futbol (Clase Padre)");
 	}
 
 }
