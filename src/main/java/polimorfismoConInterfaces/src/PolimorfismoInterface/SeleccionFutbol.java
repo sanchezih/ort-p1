@@ -1,6 +1,6 @@
 package polimorfismoConInterfaces.src.PolimorfismoInterface;
 
-public abstract class SeleccionFutbol implements IntegranteDeSeleccionDeFutbol {
+public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 
 	protected int id;
 	protected String nombre;
