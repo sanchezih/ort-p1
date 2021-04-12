@@ -1,12 +1,12 @@
-package polimorfismo2.src;
+package polimorfismoConInterfaces.src;
 
 
 import java.util.ArrayList;
 
-import polimorfismo2.src.PolimorfismoInterface.Entrenador;
-import polimorfismo2.src.PolimorfismoInterface.Futbolista;
-import polimorfismo2.src.PolimorfismoInterface.Masajista;
-import polimorfismo2.src.PolimorfismoInterface.SeleccionFutbol;
+import polimorfismoConInterfaces.src.PolimorfismoInterface.Entrenador;
+import polimorfismoConInterfaces.src.PolimorfismoInterface.Futbolista;
+import polimorfismoConInterfaces.src.PolimorfismoInterface.Masajista;
+import polimorfismoConInterfaces.src.PolimorfismoInterface.SeleccionFutbol;
 
 public class Main {
 

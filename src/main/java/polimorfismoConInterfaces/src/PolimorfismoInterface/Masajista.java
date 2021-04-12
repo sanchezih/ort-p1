@@ -1,4 +1,4 @@
-package polimorfismo2.src.PolimorfismoInterface;
+package polimorfismoConInterfaces.src.PolimorfismoInterface;
 
 public class Masajista extends SeleccionFutbol {
 
@@ -39,5 +39,4 @@ public class Masajista extends SeleccionFutbol {
 	public void darMasaje() {
 		System.out.println("Da un Masaje");
 	}
-
 }

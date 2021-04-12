@@ -1,4 +1,4 @@
-package polimorfismo2.src.PolimorfismoInterface;
+package polimorfismoConInterfaces.src.PolimorfismoInterface;
 
 public abstract class SeleccionFutbol implements IntegranteDeSeleccionDeFutbol {
 
