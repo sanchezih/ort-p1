@@ -1,4 +1,4 @@
-package overriding.src.p3;
+package overriding.p3.src;
 
 class A {
 	int i, j;

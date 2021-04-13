@@ -1,4 +1,4 @@
-package overriding.src.p1;
+package overriding.p2.src;
 
 class A {
 	int i, j;
@@ -13,8 +13,8 @@ class A {
 		System.out.println("i, j: " + i + ", " + j);
 	}
 }
-
 /*--------------------------------------------------------------------------*/
+
 class B extends A {
 	int k;
 
@@ -25,12 +25,13 @@ class B extends A {
 
 	// mostrar k - esto oculta el método mostrar() en A
 	void mostrar() {
+		super.mostrar();
 		System.out.println("k: " + k);
 	}
 }
 
 /*--------------------------------------------------------------------------*/
-class Override1 {
+class Override2 {
 	public static void main(String[] args) {
 		B b = new B(1, 2, 3);
 		b.mostrar(); // Esto llama a mostrar() en B
@@ -38,11 +39,12 @@ class Override1 {
 }
 
 /*
- * Cuando se llama a un método anulado dentro de una subclase, siempre se
- * referirá a la versión de ese método definida por la subclase.
+ * En esta versión de B, se invoca la versión de superclase de mostrar() dentro
+ * de la versión de la subclase. Esto permite que se muestren todas las
+ * variables de instancia.
  * 
- * Cuando se invoca mostrar() en un objeto de tipo B, se utiliza la versión
- * mostrar() definida en B. Es decir, la versión mostrar() dentro de B anula la
- * versión declarada en A. Si desea acceder a la versión de la superclase de un
- * método ‘anulado’, puede hacerlo utilizando super.
+ * Aquí, super.mostrar() llama a la versión superclase de mostrar(). La
+ * anulación del método ocurre solo cuando las firmas de los dos métodos son
+ * idénticas. Si no lo son, entonces los dos métodos están simplemente
+ * sobrecargados.
  */
