@@ -3,10 +3,10 @@ package polimorfismoConInterfaces.src;
 
 import java.util.ArrayList;
 
-import polimorfismoConInterfaces.src.PolimorfismoInterface.Entrenador;
-import polimorfismoConInterfaces.src.PolimorfismoInterface.Futbolista;
-import polimorfismoConInterfaces.src.PolimorfismoInterface.Masajista;
-import polimorfismoConInterfaces.src.PolimorfismoInterface.SeleccionFutbol;
+import polimorfismoConInterfaces.src.seleccion.Entrenador;
+import polimorfismoConInterfaces.src.seleccion.Futbolista;
+import polimorfismoConInterfaces.src.seleccion.Masajista;
+import polimorfismoConInterfaces.src.seleccion.SeleccionFutbol;
 
 public class Main {
 

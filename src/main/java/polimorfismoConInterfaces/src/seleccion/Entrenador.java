@@ -1,4 +1,4 @@
-package polimorfismoConInterfaces.src.PolimorfismoInterface;
+package polimorfismoConInterfaces.src.seleccion;
 
 public class Entrenador extends SeleccionFutbol {
 
