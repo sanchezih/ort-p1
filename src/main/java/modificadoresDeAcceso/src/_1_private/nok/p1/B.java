@@ -5,6 +5,6 @@ class B {
 	public static void main(String[] args) {
 		A obj = new A();
 		// tratando de acceder al método privado de otra clase
-		obj.mostrar();
+	//	obj.mostrar(); DESCOMENTAR
 	}
 }
