@@ -1,4 +1,4 @@
-package interfacesEjemploFigura.src;
+package interfacesEjemploFigura.src.figuras;
 
 public class Cuadrado implements Figura {
 	private float lado;
@@ -7,7 +7,9 @@ public class Cuadrado implements Figura {
 		this.lado = lado;
 	}
 
+	@Override
 	public float area() {
 		return lado * lado;
 	}
+
 }

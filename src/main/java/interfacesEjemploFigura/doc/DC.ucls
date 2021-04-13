@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="interfacesEjemploFigura.src.Circulo" project="ort-p1" 
-    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/Circulo.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="interfacesEjemploFigura.src.figuras.Circulo" project="ort-p1" 
+    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/figuras/Circulo.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="117" width="127" x="171" y="193"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="interfacesEjemploFigura.src.Rectangulo" project="ort-p1" 
-    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/Rectangulo.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="interfacesEjemploFigura.src.figuras.Rectangulo" project="ort-p1" 
+    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/figuras/Rectangulo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="135" width="133" x="449" y="157"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,17 +20,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="interfacesEjemploFigura.src.TestInterface" project="ort-p1" 
-    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/TestInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="127" x="789" y="157"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="4" language="java" name="interfacesEjemploFigura.src.Figura" project="ort-p1" 
-    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/Figura.java" binary="false" corner="BOTTOM_RIGHT">    
+  <interface id="3" language="java" name="interfacesEjemploFigura.src.figuras.Figura" project="ort-p1" 
+    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/figuras/Figura.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="127" x="536" y="332"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,8 +29,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="5" language="java" name="interfacesEjemploFigura.src.Cuadrado" project="ort-p1" 
-    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/Cuadrado.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="interfacesEjemploFigura.src.figuras.Cuadrado" project="ort-p1" 
+    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/figuras/Cuadrado.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="117" width="127" x="622" y="157"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -46,17 +38,26 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
+  <class id="5" language="java" name="interfacesEjemploFigura.src.Main" project="ort-p1" 
+    file="/ort-p1/src/main/java/interfacesEjemploFigura/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="127" x="119" y="63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <realization id="6">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
   <realization id="7">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
   <realization id="8">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

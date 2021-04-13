@@ -1,9 +1,14 @@
 package interfacesEjemploFigura.src;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
-public class TestInterface {
+import interfacesEjemploFigura.src.figuras.Circulo;
+import interfacesEjemploFigura.src.figuras.Cuadrado;
+import interfacesEjemploFigura.src.figuras.Figura;
+import interfacesEjemploFigura.src.figuras.Rectangulo;
+
+public class Main {
 	public static void main(String[] Args) {
 
 		Figura cuad1 = new Cuadrado(3.5f);
@@ -14,7 +19,8 @@ public class TestInterface {
 		Figura rect1 = new Rectangulo(2.25f, 2.55f);
 		Figura rect2 = new Rectangulo(12f, 3f);
 
-		List<Figura> serieDeFiguras = new ArrayList<Figura>();
+		List<Figura> serieDeFiguras; // Declaro una variable con el tipo de la interface Figura
+		serieDeFiguras = new ArrayList<Figura>(); // Inicializo la variable
 
 		serieDeFiguras.add(cuad1);
 		serieDeFiguras.add(cuad2);
@@ -31,7 +37,7 @@ public class TestInterface {
 		}
 
 		System.out.println("Tenemos un total de " + serieDeFiguras.size() + " figuras y su área total es de "
-				+ areaTotal + " uds cuadradas");
+				+ areaTotal + " unidades cuadradas");
 	}
 }
 

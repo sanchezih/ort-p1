@@ -1,4 +1,4 @@
-package interfacesEjemploFigura.src;
+package interfacesEjemploFigura.src.figuras;
 
 public class Rectangulo implements Figura {
 	private float lado;
@@ -9,7 +9,9 @@ public class Rectangulo implements Figura {
 		this.altura = altura;
 	}
 
+	@Override
 	public float area() {
 		return lado * altura;
 	}
+
 }

@@ -1,4 +1,4 @@
-package interfacesEjemploFigura.src;
+package interfacesEjemploFigura.src.figuras;
 
 public class Circulo implements Figura {
 	private float diametro;
@@ -7,7 +7,9 @@ public class Circulo implements Figura {
 		this.diametro = diametro;
 	}
 
+	@Override
 	public float area() {
 		return (PI * diametro * diametro / 4f);
 	}
+
 }
