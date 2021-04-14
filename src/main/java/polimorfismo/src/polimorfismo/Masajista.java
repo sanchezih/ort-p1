@@ -34,7 +34,7 @@ public class Masajista extends IntegranteDeSeleccion {
 	@Override
 	public void participarEnEntrenamiento() {
 		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
-				+ " y estoy dando asistencia en el entrenamiento (Clase Masajista)");
+				+ " y estoy dando asistencia en el entrenamiento (Clase Masajista - Override)");
 	}
 
 	public void darMasaje() {
