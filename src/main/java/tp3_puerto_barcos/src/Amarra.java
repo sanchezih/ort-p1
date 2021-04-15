@@ -35,5 +35,10 @@ public class Amarra {
 	public void setDisponible(boolean isDisponible) {
 		this.isDisponible = isDisponible;
 	}
+	
+	public Barco getBarco() {
+		return null;
+		
+	}
 
 }
