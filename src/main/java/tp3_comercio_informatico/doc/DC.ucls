@@ -3,7 +3,7 @@
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="tp3_comercio_informatico.src.Servicio" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Servicio.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="703" y="481"/>    
+    <position height="207" width="170" x="666" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="tp3_comercio_informatico.src.ServicioDeArmado" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/ServicioDeArmado.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="553" y="736"/>    
+    <position height="-1" width="-1" x="1093" y="282"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -22,7 +22,7 @@
   <class id="3" language="java" name="tp3_comercio_informatico.src.ServicioDeReparacion" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/ServicioDeReparacion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="323" width="213" x="1221" y="1020"/>    
+    <position height="323" width="213" x="827" y="492"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -31,7 +31,7 @@
   </class>  
   <class id="4" language="java" name="tp3_comercio_informatico.src.Insumo" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Insumo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="966" y="634"/>    
+    <position height="297" width="201" x="216" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -40,7 +40,7 @@
   </class>  
   <interface id="5" language="java" name="tp3_comercio_informatico.src.Facturable" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Facturable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="982" y="1065"/>    
+    <position height="-1" width="-1" x="359" y="654"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,136 +49,104 @@
   </interface>  
   <class id="6" language="java" name="tp3_comercio_informatico.src.Matematica" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Matematica.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="909" y="160"/>    
+    <position height="-1" width="-1" x="635" y="598"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="tp3_comercio_informatico.src.Main" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1323" y="199"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="8" language="java" name="tp3_comercio_informatico.src.Comercio" project="ort-p1" 
+  <class id="7" language="java" name="tp3_comercio_informatico.src.Comercio" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Comercio.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1181" y="544"/>    
+    <position height="117" width="148" x="457" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="9" language="java" name="tp3_comercio_informatico.src.Tipo" project="ort-p1" 
+  <enumeration id="8" language="java" name="tp3_comercio_informatico.src.Tipo" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Tipo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1544" y="744"/>    
+    <position height="-1" width="-1" x="107" y="337"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="10" language="java" name="tp3_comercio_informatico.src.Historial" project="ort-p1" 
+  <class id="9" language="java" name="tp3_comercio_informatico.src.Historial" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/Historial.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1191" y="881"/>    
+    <position height="117" width="169" x="457" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="11">    
-    <bendpoint x="1285" y="486"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="10"/>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
   </dependency>  
-  <generalization id="12">    
-    <bendpoint x="706" y="1181"/>    
-    <end type="SOURCE" refId="3"/>    
+  <generalization id="11">    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
+  <realization id="12">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
   <association id="13">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="14" name="historial"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="14" name="itemsVendidos">        
+        <position height="0" width="0" x="58" y="74"/>      
+      </attribute>      
+      <multiplicity id="15" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="58" y="74"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <dependency id="16">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <realization id="17">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <dependency id="18">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <association id="17">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="18" name="tipo">        
-        <position height="0" width="0" x="268" y="34"/>      
+  <generalization id="19">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="20">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="21" name="historial">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="268" y="34"/>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="20">    
-    <bendpoint x="1327" y="486"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="22">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <realization id="23">    
-    <bendpoint x="964" y="823"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <dependency id="24">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <association id="25">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="26" name="itemsVendidos"/>      
-      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
+  <association id="23">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="24" name="tipo">        
+        <position height="0" width="0" x="266" y="-227"/>      
+      </attribute>      
+      <multiplicity id="25" minimum="0" maximum="1">        
+        <position height="0" width="0" x="266" y="-227"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <generalization id="29">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <dependency id="30">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <realization id="31">    
-    <bendpoint x="812" y="804"/>    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <dependency id="32">    
-    <bendpoint x="1306" y="486"/>    
-    <bendpoint x="1306" y="823"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
