@@ -8,18 +8,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		Vehiculo v1 = new Vehiculo(45420350, CategoriaVehiculo.AUTO);
-		
 		Cabina c1 = new Cabina();
-		MedioDePago mp = new Efectivo();
-		c1.setMp(mp);
 		EstacionDePeaje ep1 = new EstacionDePeaje();
+		MedioDePago mp = new PASE();
 
+		c1.setMp(mp);
 		listaDeCabinas.add(c1);
-		
 		ep1.setListaDeCabinas(listaDeCabinas);
-		
-		c1.cobrar(v1);
-		
+		double aPagar = c1.cobrar(v1);
+		System.out.println("Debera pagar " + aPagar);
 
 	}
 }

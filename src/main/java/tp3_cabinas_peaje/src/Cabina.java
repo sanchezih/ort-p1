@@ -3,6 +3,8 @@ package tp3_cabinas_peaje.src;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import polimorfismo.src.polimorfismo.Entrenador;
+
 public class Cabina {
 	private static final int HP1_HORA_MIN = 6;
 	private static final int HP1_HORA_MAX = 10;
@@ -49,18 +51,18 @@ public class Cabina {
 	}
 
 	public double cobrar(Vehiculo v) {
-		double importeACobrar = 0;
 
-		System.out.println("Voy a cobrarle al vehiculo " + v.toString());
-		System.out.println("Es hora pico? " + isHoraPico());
-		System.out.println(v.getCategoria().tarifaBase);
-		
-		double desc = this.getMp().obtenerDescuento();
+		System.out.println("Soy la cabina " + this.id + ", mi medio de pago es " + this.mp.getClass().getSimpleName()
+				+ " y voy a cobrarle al vehiculo " + v.toString());
 
-	
-		
-		
-		return importeACobrar;
+		System.out.println("En este momento el medio de pago " + this.mp.getClass().getSimpleName()
+				+ " tiene una demora en el cobro de " + ((MedioDePagoElectronico) this.mp).getCantDiasDemoraPago());
+
+		System.out.println("Ahora mismo es hora pico? " + isHoraPico());
+		System.out.println("La tarifa base para la categoria " + v.getCategoria() + " es " + v.getCategoria().tarifaBase
+				+ " y tiene un descuento del " + this.mp.obtenerDescuento());
+
+		return (v.getCategoria().tarifaBase - (v.getCategoria().tarifaBase / this.mp.obtenerDescuento()));
 
 	}
 
