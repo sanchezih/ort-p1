@@ -28,7 +28,7 @@ public class Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Vehiculo [patente=" + patente + "]";
+		return "[patente=" + patente + "]";
 	}
 
 }

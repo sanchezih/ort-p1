@@ -13,4 +13,7 @@ public abstract class MedioDePagoElectronico extends MedioDePago {
 		return cantDiasDemoraPago;
 	}
 
+	public void setCantDiasDemoraPago(int cantDiasDemoraPago) {
+		this.cantDiasDemoraPago = cantDiasDemoraPago;
+	}
 }
