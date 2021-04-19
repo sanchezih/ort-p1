@@ -1,5 +1,5 @@
 package tp3_comercio_informatico.src;
 
-public enum Tipo {
+public enum TipoInsumo {
 	PERIFERICO, HARDWARE, LIMPIEZA
 }

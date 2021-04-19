@@ -1,7 +1,6 @@
 package tp3_comercio_informatico.src;
 
 public class Comercio {
-
 	Historial historial = new Historial();
 
 	public Comercio(Historial historial) {
@@ -16,5 +15,4 @@ public class Comercio {
 	public void setHistorial(Historial historial) {
 		this.historial = historial;
 	}
-
 }

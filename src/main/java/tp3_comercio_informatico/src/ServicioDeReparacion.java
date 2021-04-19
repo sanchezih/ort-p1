@@ -21,9 +21,7 @@ public class ServicioDeReparacion extends Servicio {
 
 	@Override
 	public void setPrecio() {
-
 		double precioInicial = VALOR_HORA * getCatHoras();
-
 		if (this.nivelDificultad > PUNTO_CORTE_DIFICULTAD) {
 			precio = Matematica.sumarPorcentaje(precioInicial, 25);
 		} else {
@@ -38,5 +36,4 @@ public class ServicioDeReparacion extends Servicio {
 				+ ", getMontoFacturacion()=" + getMontoFacturacion() + ", getClass()=" + getClass() + ", hashCode()="
 				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
-
 }

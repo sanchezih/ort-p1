@@ -5,14 +5,14 @@ public class Insumo implements Facturable {
 	private String nombre;
 	private double porcentajeGanancia;
 	private double precioLista;
-	private Tipo tipo;
+	private TipoInsumo tipoInsumo;
 
-	public Insumo(String nombre, double porcentajeGanancia, double precioLista, Tipo tipo) {
+	public Insumo(String nombre, double porcentajeGanancia, double precioLista, TipoInsumo tipoInsumo) {
 		super();
 		this.nombre = nombre;
 		this.porcentajeGanancia = porcentajeGanancia;
 		this.precioLista = precioLista;
-		this.tipo = tipo;
+		this.tipoInsumo = tipoInsumo;
 	}
 
 	public String getNombre() {
@@ -39,12 +39,12 @@ public class Insumo implements Facturable {
 		this.precioLista = precioLista;
 	}
 
-	public Tipo getTipo() {
-		return tipo;
+	public TipoInsumo getTipoInsumo() {
+		return tipoInsumo;
 	}
 
-	public void setTipo(Tipo tipo) {
-		this.tipo = tipo;
+	public void setTipoInsumo(TipoInsumo tipoInsumo) {
+		this.tipoInsumo = tipoInsumo;
 	}
 
 	@Override
