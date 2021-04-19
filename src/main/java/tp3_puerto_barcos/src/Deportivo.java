@@ -2,9 +2,16 @@ package tp3_puerto_barcos.src;
 
 public abstract class Deportivo extends Barco {
 
-	private double potencia;
+	protected double potencia;
 	private int factorAerodinamico;
-	protected final double ICP = 0.35;
+	protected final static double ICP = 0.35;
+
+	public Deportivo(String matricula, double eslora, int anioFabricacion, String nombreDuenio, double potencia,
+			int factorAerodinamico) {
+		super(matricula, eslora, anioFabricacion, nombreDuenio);
+		this.potencia = potencia;
+		this.factorAerodinamico = factorAerodinamico;
+	}
 
 	public double getPotencia() {
 		return potencia;
@@ -23,12 +30,12 @@ public abstract class Deportivo extends Barco {
 	}
 
 	public double calcularConsumo() {
-		return (potencia / factorAerodinamico * ICP);
+		return (this.potencia / this.factorAerodinamico * ICP);
 	}
 
 	@Override
-	public double calcularCostoAdicional() {
-		return (getValorAdicional() * (getPotencia() / 2));
+	public double calcularAdicional() {
+		return VALOR_ADICIONAL * (this.potencia / 2);
 	}
 
 }

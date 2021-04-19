@@ -25,8 +25,8 @@ public class Yate extends Barco {
 	}
 
 	@Override
-	public double calcularCostoAdicional() {
-		return getValorAdicional() * getCantCamarotes();
+	public double calcularAdicional() {
+		return VALOR_ADICIONAL * this.cantCamarotes;
 	}
 
 }

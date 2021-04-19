@@ -5,6 +5,7 @@ public class Amarra {
 	private int numero;
 	private String ubicacion;
 	private boolean isDisponible;
+	private Barco barco;
 
 	public Amarra(int numero, String ubicacion, boolean isDisponible) {
 		this.numero = numero;
@@ -35,10 +36,13 @@ public class Amarra {
 	public void setDisponible(boolean isDisponible) {
 		this.isDisponible = isDisponible;
 	}
-	
+
 	public Barco getBarco() {
-		return null;
-		
+		return barco;
+	}
+
+	public void setBarco(Barco barco) {
+		this.barco = barco;
 	}
 
 }

@@ -24,8 +24,8 @@ public class Velero extends Barco {
 	}
 
 	@Override
-	public double calcularCostoAdicional() {
-		return getValorAdicional() * getCantMastiles();
+	public double calcularAdicional() {
+		return VALOR_ADICIONAL * this.cantMastiles;
 	}
 
 }

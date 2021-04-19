@@ -6,10 +6,8 @@ public abstract class Barco {
 	private double eslora;
 	private int anioFabricacion;
 	private String nombreDuenio;
-	private static double valorBase = 10; // Precio base: Se obtiene multiplicando un valor definido por la
-											// administración del puerto para cada embarcación (denominado valorBase)
-											// por la eslora del barco.
-	private static double valorAdicional = 2.5;
+	protected final static double VALOR_BASE = 10;
+	protected final static double VALOR_ADICIONAL = 2.5;
 
 	public Barco() {
 
@@ -51,37 +49,17 @@ public abstract class Barco {
 		return nombreDuenio;
 	}
 
-	public static double getValorBase() {
-		return valorBase;
-	}
-
-	public static void setValorBase(float valorBase) {
-		Barco.valorBase = valorBase;
-	}
-
 	public void setNombreDuenio(String nombreDuenio) {
 		this.nombreDuenio = nombreDuenio;
 	}
 
-	public static double getValorAdicional() {
-		return valorAdicional;
+	public double calcularPrecioBase() {
+		return VALOR_BASE * this.eslora;
 	}
 
-	public static void setValorAdicional(double valorAdicional) {
-		Barco.valorAdicional = valorAdicional;
+	public double calcularCostoDelAlquiler() {
+		return calcularPrecioBase() + calcularAdicional();
 	}
-
-	public static void setValorBase(double valorBase) {
-		Barco.valorBase = valorBase;
-	}
-
-	public double calcularCostoBase() {
-		return (eslora * valorBase);
-	}
-
-	public double calcularAlquiler() {
-		return calcularCostoBase() + calcularCostoAdicional();
-	};
 
 	@Override
 	public String toString() {
@@ -89,5 +67,5 @@ public abstract class Barco {
 				+ ", nombreDuenio=" + nombreDuenio + "]";
 	}
 
-	abstract public double calcularCostoAdicional();
+	abstract public double calcularAdicional();
 }
