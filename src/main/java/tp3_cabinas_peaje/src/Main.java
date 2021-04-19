@@ -30,12 +30,15 @@ public class Main {
 		EstacionDePeaje ep1 = new EstacionDePeaje();
 		ep1.setListaDeCabinas(listaDeCabinas);
 
+		// Ejercicio B
 		System.out.println("Debera pagar " + c1.cobrar(v1));
 		System.out.println("Debera pagar " + c1.cobrar(v2));
 
+		// Ejercicio C
 		System.out.println(
 				"\nEn la estacion de peaje hay " + ep1.cabinasConEfectivo().size() + " cabinas que cobran en efectivo");
 
+		// Ejercicio D
 		System.out.println(
 				"\nEl promedio de dias de demora entre todas las cabinas que acepten medios de pago electrónicos (SUBE o PASE) es "
 						+ ep1.promedioDemora());
