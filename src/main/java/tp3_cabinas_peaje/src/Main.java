@@ -9,15 +9,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		Vehiculo v1 = new Vehiculo(45420350, CategoriaVehiculo.AUTO);
-		Vehiculo v2 = new Vehiculo(46331591, CategoriaVehiculo.CAMION);
+		Vehiculo v2 = new Vehiculo(46331591, CategoriaVehiculo.MOTO);
 
 		Cabina c1 = new Cabina();
 		Cabina c2 = new Cabina();
 		Cabina c3 = new Cabina();
 
 		MedioDePago mp1 = new Efectivo();
-		MedioDePago mp2 = new SUBE(6);
-		MedioDePago mp3 = new PASE(3);
+		MedioDePago mp2 = new SUBE(1);
+		MedioDePago mp3 = new PASE(120);
 
 		c1.setMp(mp1);
 		c2.setMp(mp2);

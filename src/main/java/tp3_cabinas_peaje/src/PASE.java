@@ -9,9 +9,9 @@ public class PASE extends MedioDePagoElectronico {
 	@Override
 	public double obtenerDescuento() {
 		if (this.getCantDiasDemoraPago() < 5) {
-			return 15;
+			return 0.15;
 		} else {
-			return 12;
+			return 0.12;
 		}
 
 	}
