@@ -1,6 +1,7 @@
 package tp3_bicicleteria.src;
 
 public class BicicletaElectrica extends Bicicleta {
+	private final static int POTENCIA_MAX_PERMITIDA = 250;
 	private double potencia;
 
 	public BicicletaElectrica(String marca, String modelo, double kilometraje, double potencia) {
@@ -14,6 +15,15 @@ public class BicicletaElectrica extends Bicicleta {
 
 	public void setPotencia(double potencia) {
 		this.potencia = potencia;
+	}
+
+	@Override
+	public boolean isReparable() {
+		if (super.isReparable() && this.potencia <= POTENCIA_MAX_PERMITIDA) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 }

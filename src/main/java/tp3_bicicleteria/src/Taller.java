@@ -23,19 +23,33 @@ public class Taller {
 	 * 250w de potencia o menos y que tengan menos de 2000 kms, como el resto de las
 	 * bicicletas”.
 	 */
+	
+	// Con polimorfismo
 	public int cantServiciosPosibles(ArrayList<Bicicleta> listaDeBicicletas) {
 		int cant = 0;
 		for (Bicicleta b : listaDeBicicletas) {
-			if (b.getKilometraje() < 2000) {
-				if ((b instanceof BicicletaElectrica)) {
-					if (((BicicletaElectrica) b).getPotencia() <= 250) {
-						cant++;
-					}
-				} else {
-					cant++;
-				}
+			if(b.isReparable()) {
+				cant++;
 			}
 		}
 		return cant;
-	}
+	}	
+	
+	// Con instanceof
+	//	public int cantServiciosPosibles(ArrayList<Bicicleta> listaDeBicicletas) {
+	//		int cant = 0;
+	//		for (Bicicleta b : listaDeBicicletas) {
+	//			if (b.getKilometraje() < 2000) {
+	//				if ((b instanceof BicicletaElectrica)) {
+	//					if (((BicicletaElectrica) b).getPotencia() <= 250) {
+	//						cant++;
+	//					}
+	//				} else {
+	//					cant++;
+	//				}
+	//			}
+	//		}
+	//		return cant;
+	//	}
+		
 }

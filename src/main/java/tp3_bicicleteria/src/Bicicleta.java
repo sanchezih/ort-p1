@@ -1,6 +1,7 @@
 package tp3_bicicleteria.src;
 
 public abstract class Bicicleta {
+	private final static int KM_MAX_PERMITIDO = 2000;
 	private String marca;
 	private String modelo;
 	private double kilometraje;
@@ -36,4 +37,7 @@ public abstract class Bicicleta {
 		this.kilometraje = kilometraje;
 	}
 
+	public boolean isReparable() {
+		return this.kilometraje < KM_MAX_PERMITIDO;
+	}
 }
