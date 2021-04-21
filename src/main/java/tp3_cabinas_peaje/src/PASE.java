@@ -13,6 +13,5 @@ public class PASE extends MedioDePagoElectronico {
 		} else {
 			return 0.12;
 		}
-
 	}
 }
