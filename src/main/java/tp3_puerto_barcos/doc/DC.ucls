@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="tp3_puerto_barcos.src.Yate" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Yate.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="178" x="488" y="1012"/>    
+    <position height="-1" width="-1" x="851" y="563"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="tp3_puerto_barcos.src.Barco" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Barco.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="423" width="186" x="268" y="549"/>    
+    <position height="-1" width="-1" x="635" y="226"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="tp3_puerto_barcos.src.Deportivo" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Deportivo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="180" x="268" y="1012"/>    
+    <position height="-1" width="-1" x="632" y="599"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="tp3_puerto_barcos.src.DeportivoComun" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/DeportivoComun.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="554" y="1336"/>    
+    <position height="-1" width="-1" x="790" y="798"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="tp3_puerto_barcos.src.Velero" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Velero.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="187" x="41" y="1012"/>    
+    <position height="-1" width="-1" x="408" y="563"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,96 +48,75 @@
   </class>  
   <class id="6" language="java" name="tp3_puerto_barcos.src.Amarra" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Amarra.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="279" width="159" x="268" y="230"/>    
+    <position height="-1" width="-1" x="147" y="226"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="tp3_puerto_barcos.src.Main" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="410" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="8" language="java" name="tp3_puerto_barcos.src.DeportivoDeLujo" project="ort-p1" 
+  <class id="7" language="java" name="tp3_puerto_barcos.src.DeportivoDeLujo" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/DeportivoDeLujo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="152" x="172" y="1295"/>    
+    <position height="-1" width="-1" x="484" y="815"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="tp3_puerto_barcos.src.Puerto" project="ort-p1" 
+  <class id="8" language="java" name="tp3_puerto_barcos.src.Puerto" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_puerto_barcos/src/Puerto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="243" x="127" y="37"/>    
+    <position height="-1" width="-1" x="148" y="556"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="10">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="11" name="barco">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="12" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <association id="13">    
-    <end type="SOURCE" refId="9" navigable="false">      
+    <end type="SOURCE" refId="8" navigable="false">      
       <attribute id="14" name="listaDeAmarras">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-200" y="-143"/>      
       </attribute>      
       <multiplicity id="15" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-200" y="-143"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="16">    
-    <end type="SOURCE" refId="4"/>    
+    <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <generalization id="17">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="18">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="20">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="21" name="listaDeAmarras">        
-        <position height="0" width="0" x="0" y="0"/>      
+  <association id="17">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="18" name="barco">        
+        <position height="0" width="0" x="274" y="-534"/>      
       </attribute>      
-      <multiplicity id="22" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="274" y="-534"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="23">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
