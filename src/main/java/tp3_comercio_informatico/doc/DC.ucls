@@ -22,7 +22,7 @@
   <class id="3" language="java" name="tp3_comercio_informatico.src.ServicioDeReparacion" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/ServicioDeReparacion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="323" width="213" x="880" y="11"/>    
+    <position height="256" width="218" x="877" y="44"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -76,7 +76,7 @@
   </class>  
   <enumeration id="9" language="java" name="tp3_comercio_informatico.src.TipoInsumo" project="ort-p1" 
     file="/ort-p1/src/main/java/tp3_comercio_informatico/src/TipoInsumo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="96" y="453"/>    
+    <position height="-1" width="-1" x="132" y="469"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,7 +120,7 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <dependency id="19">    
-    <bendpoint x="987" y="700"/>    
+    <bendpoint x="986" y="700"/>    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
@@ -131,10 +131,10 @@
   <association id="21">    
     <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="22" name="tipoInsumo">        
-        <position height="0" width="0" x="-28" y="-172"/>      
+        <position height="0" width="0" x="8" y="-156"/>      
       </attribute>      
       <multiplicity id="23" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-28" y="-172"/>      
+        <position height="0" width="0" x="8" y="-156"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
