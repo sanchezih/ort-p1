@@ -1,7 +1,7 @@
 package tp3_bicicleteria.src;
 
 public class BicicletaElectrica extends Bicicleta {
-	private final static int POTENCIA_MAX_PERMITIDA = 250;
+	private static int POTENCIA_MAX_PERMITIDA = 250;
 	private double potencia;
 
 	public BicicletaElectrica(String marca, String modelo, double kilometraje, double potencia) {
