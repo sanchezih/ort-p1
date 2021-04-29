@@ -1,4 +1,4 @@
-package tp3_cabinas_peaje.src;
+package tp3_cabinas_peaje.src.mediosdepago;
 
 public abstract class MedioDePagoElectronico extends MedioDePago {
 

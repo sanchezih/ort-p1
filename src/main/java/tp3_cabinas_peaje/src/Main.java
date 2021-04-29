@@ -2,6 +2,11 @@ package tp3_cabinas_peaje.src;
 
 import java.util.ArrayList;
 
+import tp3_cabinas_peaje.src.mediosdepago.Efectivo;
+import tp3_cabinas_peaje.src.mediosdepago.MedioDePago;
+import tp3_cabinas_peaje.src.mediosdepago.PASE;
+import tp3_cabinas_peaje.src.mediosdepago.SUBE;
+
 public class Main {
 	public static ArrayList<Cabina> listaDeCabinas = new ArrayList<Cabina>();
 	public static ArrayList<Cabina> cabinasConEfectivo = new ArrayList<Cabina>();
@@ -23,12 +28,10 @@ public class Main {
 		c2.setMp(mp2);
 		c3.setMp(mp3);
 
-		listaDeCabinas.add(c1);
-		listaDeCabinas.add(c2);
-		listaDeCabinas.add(c3);
-
-		EstacionDePeaje ep1 = new EstacionDePeaje();
-		ep1.setListaDeCabinas(listaDeCabinas);
+		EstacionDePeaje ep1 = new EstacionDePeaje("001", "Panamericana");
+		ep1.agregarCabina(c1);
+		ep1.agregarCabina(c2);
+		ep1.agregarCabina(c3);
 
 		// Ejercicio B
 		System.out.println("Debera pagar " + c1.cobrar(v1));

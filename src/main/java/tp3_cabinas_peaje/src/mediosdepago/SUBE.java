@@ -1,7 +1,7 @@
-package tp3_cabinas_peaje.src;
+package tp3_cabinas_peaje.src.mediosdepago;
 
 public class SUBE extends MedioDePagoElectronico {
-	double descuento = 0.1;
+	private static final double DCTO = 0.10;
 
 	public SUBE(int cantDiasDemoraPago) {
 		super(cantDiasDemoraPago);
@@ -9,6 +9,6 @@ public class SUBE extends MedioDePagoElectronico {
 
 	@Override
 	public double obtenerDescuento() {
-		return descuento;
+		return DCTO;
 	}
 }
