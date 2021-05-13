@@ -5,6 +5,13 @@ public class Venta {
 	private double importe;
 	private String legajoVendedor;
 
+	public Venta(String fecha, double importe, String legajoVendedor) {
+		super();
+		this.fecha = fecha;
+		this.importe = importe;
+		this.legajoVendedor = legajoVendedor;
+	}
+
 	public double getImporte() {
 		return importe;
 	}

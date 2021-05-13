@@ -5,7 +5,5 @@ public class Historial {
 
 	public void acumularGasto(PagoDeFactura unPago) {
 		this.gastosMensuales[unPago.getMes() - 1] += unPago.getImporte(); // Acumulo
-
 	}
-
 }
