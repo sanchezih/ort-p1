@@ -7,9 +7,9 @@ public class Main {
 	}
 
 	public static void mostrarSinRepetidos(char[] elementos) {
-		int i, j;
+		int j;
 		boolean salio;
-		for (i = 0; i < elementos.length; i++) {
+		for (int i = 0; i < elementos.length; i++) {
 			j = 0;
 			salio = false;
 			while (j < i && !salio) {

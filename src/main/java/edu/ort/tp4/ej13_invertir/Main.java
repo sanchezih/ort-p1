@@ -4,16 +4,17 @@ public class Main {
 	public static void main(String[] args) {
 		char elementos[] = { 'A', 'B', 'C' };
 		mostrar(elementos);
+		System.out.println("----");
 		invertir(elementos);
 		mostrar(elementos);
 	}
 
-	public static void invertir(char[] array) {
+	public static void invertir(char[] elementos) {
 		char aux;
-		for (int i = 0; i < (array.length / 2); i++) {
-			aux = array[i];
-			array[i] = array[array.length - 1 - i];
-			array[array.length - 1 - i] = aux;
+		for (int i = 0; i < (elementos.length / 2); i++) {
+			aux = elementos[i];
+			elementos[i] = elementos[elementos.length - 1 - i];
+			elementos[elementos.length - 1 - i] = aux;
 		}
 	}
 
