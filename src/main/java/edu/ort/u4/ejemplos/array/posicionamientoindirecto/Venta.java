@@ -1,4 +1,4 @@
-package edu.ort.u4.ejemplos.posicionamientoindirecto;
+package edu.ort.u4.ejemplos.array.posicionamientoindirecto;
 
 public class Venta {
 	private String fecha;

@@ -1,4 +1,4 @@
-package edu.ort.u4.ejemplos.posicionamientodirecto;
+package edu.ort.u4.ejemplos.array.posicionamientodirecto;
 
 public class PagoDeFactura {
 	private double importe;

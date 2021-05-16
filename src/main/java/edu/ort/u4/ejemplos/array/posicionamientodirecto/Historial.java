@@ -1,4 +1,4 @@
-package edu.ort.u4.ejemplos.posicionamientodirecto;
+package edu.ort.u4.ejemplos.array.posicionamientodirecto;
 
 public class Historial {
 	private double[] gastosMensuales = new double[12];

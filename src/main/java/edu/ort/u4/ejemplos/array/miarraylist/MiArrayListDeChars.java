@@ -1,4 +1,4 @@
-package edu.ort.u4.ejemplos.miarraylist;
+package edu.ort.u4.ejemplos.array.miarraylist;
 
 public class MiArrayListDeChars {
 	private char[] elementos = { 'A', 'P', 'R', 'E', 'N', 'D', 'E' };
