@@ -12,7 +12,7 @@ public class Main {
 		for (int i = 0; i < elementos.length; i++) {
 			j = 0;
 			salio = false;
-			while (j < i && !salio) {
+			while (!salio && j < i) {
 				if (elementos[i] == elementos[j]) {
 					salio = true;
 				}
