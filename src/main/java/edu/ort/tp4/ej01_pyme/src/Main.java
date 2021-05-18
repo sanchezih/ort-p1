@@ -1,17 +1,17 @@
-package edu.ort.tp4.ej01.src;
+package edu.ort.tp4.ej01_pyme.src;
 
-import edu.ort.tp4.ej01.src.pyme.Empleado;
-import edu.ort.tp4.ej01.src.pyme.NominaDeEmpleados;
-import edu.ort.tp4.ej01.src.pyme.Pyme;
+import edu.ort.tp4.ej01_pyme.src.pyme.Empleado;
+import edu.ort.tp4.ej01_pyme.src.pyme.NominaDeEmpleados;
+import edu.ort.tp4.ej01_pyme.src.pyme.Pyme;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Empleado e1 = new Empleado("31507904", "Perez", 100);
-		Empleado e2 = new Empleado("31293830", "Lopez", 150);
-		Empleado e3 = new Empleado("30566841", "Gomez", 300);
-		Empleado e4 = new Empleado("30566841", "sdsdd", 200);
+		Empleado e1 = new Empleado("10000000", "Perez", 100);
+		Empleado e2 = new Empleado("10000001", "Lopez", 150);
+		Empleado e3 = new Empleado("10000002", "Gomez", 300);
+		Empleado e4 = new Empleado("10000003", "Gerez", 200);
 
 		NominaDeEmpleados nomina = new NominaDeEmpleados();
 

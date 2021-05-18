@@ -1,4 +1,4 @@
-package edu.ort.tp4.ej01.src.pyme;
+package edu.ort.tp4.ej01_pyme.src.pyme;
 
 public class NominaDeEmpleados {
 	private static int CANT_EMP_MAX = 3;
