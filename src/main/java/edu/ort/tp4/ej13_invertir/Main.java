@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 		char elementos[] = { 'A', 'B', 'C' };
 		mostrar(elementos);
-		System.out.println("----");
+		System.out.println();
 		invertir(elementos);
 		mostrar(elementos);
 	}
@@ -20,7 +20,7 @@ public class Main {
 
 	public static void mostrar(char[] array) {
 		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
+			System.out.print(array[i]);
 		}
 	}
 }

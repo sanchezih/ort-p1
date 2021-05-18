@@ -19,7 +19,7 @@ public class Main {
 				j++;
 			}
 			if (!salio) {
-				System.out.println(elementos[i]);
+				System.out.print(elementos[i]);
 			}
 		}
 	}
