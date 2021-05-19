@@ -1,57 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="edu.ort.tp4.ej01.src.pyme.Pyme" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/tp4/ej01/src/pyme/Pyme.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="218" x="208" y="37"/>    
+  <class id="1" language="java" name="edu.ort.tp4.ej01_pyme.src.pyme.Empleado" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/tp4/ej01_pyme/src/pyme/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="556" y="430"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="edu.ort.tp4.ej01.src.pyme.NominaDeEmpleados" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/tp4/ej01/src/pyme/NominaDeEmpleados.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="190" x="41" y="230"/>    
+  <class id="2" language="java" name="edu.ort.tp4.ej01_pyme.src.pyme.NominaDeEmpleados" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/tp4/ej01_pyme/src/pyme/NominaDeEmpleados.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="198" y="429"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="edu.ort.tp4.ej01.src.pyme.Empleado" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/tp4/ej01/src/pyme/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="174" x="252" y="441"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+  <class id="3" language="java" name="edu.ort.tp4.ej01_pyme.src.pyme.Pyme" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/tp4/ej01_pyme/src/pyme/Pyme.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="232" x="82" y="52"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="4">    
+  <dependency id="4">    
+    <bendpoint x="556" y="129"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="5">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="5" name="empleados"/>      
-      <multiplicity id="6" minimum="0" maximum="2147483647"/>    
+      <attribute id="6" name="empleados"/>      
+      <multiplicity id="7" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="7">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="8" name="nomina">        
-        <position height="0" width="0" x="8" y="68"/>      
-      </attribute>      
-      <multiplicity id="9" minimum="0" maximum="1">        
-        <position height="0" width="0" x="8" y="68"/>      
-      </multiplicity>    
+  <association id="8">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="9" name="nomina"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="10">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
