@@ -5,40 +5,18 @@ public class Main {
 	public static void main(String[] args) {
 
 		// Representando una matriz creando un array de arrays
-		// char[][] matLetras = { { 'D', 'E', 'B', 'O' }, { 'U', 'S', 'A', 'R' }, { 'G',
-		// 'U', 'I', 'A' } };
-		char[][] matLetras = { { '2', '2' }, { '4' }, { '5', '6' }, { '7', '8' }, { '9', '0' } };
-		// System.out.println(matLetras.length);
+		char[][] matLetras = { { 'D', 'E', 'B', 'O' }, { 'U', 'S', 'A', 'R' }, { 'G', 'U', 'I', 'A' } };
 
-		// System.out.println(matLetras[0].length);
-		// System.out.println(matLetras[1].length);
-		// System.out.println(matLetras[2].length);
+		dibujar(matLetras);
+		System.out.println("Cantidad de filas: " + matLetras.length);
+		System.out.println("Cantidad de elementos: " + matLetras.length * matLetras[0].length);
+		System.out.println("El length de la primer fila es: " + matLetras[0].length);
 
-		// System.out.println(matLetras.length * matLetras[0].length);
+		recorrerConFor(matLetras);
+		recorrerConForEach(matLetras);
+		recorrerEnZigZag(matLetras);
+		recorrerEsEspiral(matLetras);
 
-		 recorrerConFor(matLetras);
-		// recorrerConForEach(matLetras);
-		//recorrerEnZigZag(matLetras);
-		// recorrerEsEspiral(matLetras);
-
-	}
-
-	// Recorrer todos los elementos usando ciclo for
-	public static void recorrerConFor(char[][] matLetras) {
-		for (int i = 0; i < matLetras.length; i++) {
-			for (int j = 0; j < matLetras[i].length; j++) {
-				System.out.print(matLetras[i][j]);
-			}
-		}
-	}
-
-	// Recorrer todos los elementos usando ciclo for each
-	public static void recorrerConForEach(char[][] matLetras) {
-		for (char[] vecLetras : matLetras) {
-			for (char letra : vecLetras) {
-				System.out.print(letra);
-			}
-		}
 	}
 
 	// Busqueda en matriz
@@ -54,21 +32,53 @@ public class Main {
 				j++;
 			}
 			i++;
-
 		}
 		return existe;
 	}
 
+	// Dibujar
+	public static void dibujar(char[][] matLetras) {
+		System.out.println("*** MATRIZ DE EJEMPLO ***");
+		for (int i = 0; i < matLetras.length; i++) {
+			for (int j = 0; j < matLetras[i].length; j++) {
+				System.out.print(matLetras[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+
+	// Recorrer todos los elementos usando ciclo for
+	public static void recorrerConFor(char[][] matLetras) {
+		System.out.println("\nRecorrer todos los elementos usando ciclo for");
+		for (int i = 0; i < matLetras.length; i++) {
+			for (int j = 0; j < matLetras[i].length; j++) {
+				System.out.print(matLetras[i][j] + " ");
+			}
+		}
+	}
+
+	// Recorrer todos los elementos usando ciclo for each
+	public static void recorrerConForEach(char[][] matLetras) {
+		System.out.println("\n\nRecorrer todos los elementos usando ciclo for each");
+		for (char[] vecLetras : matLetras) {
+			for (char letra : vecLetras) {
+				System.out.print(letra + " ");
+			}
+		}
+	}
+
 	// Recorrer todos los elementos en zigzag
 	public static void recorrerEnZigZag(char[][] matLetras) {
+		System.out.println("\n\nRecorrer todos los elementos en zigzag");
 		for (int i = 0; i < matLetras.length; i++) {
 			if (i % 2 == 0) { // fila par
 				for (int j = 0; j <= matLetras[i].length - 1; j++) {
-					System.out.print(matLetras[i][j]);
+					System.out.print(matLetras[i][j] + " ");
 				}
 			} else { // fila impar
 				for (int j = matLetras[i].length - 1; j >= 0; j--) {
-					System.out.print(matLetras[i][j]);
+					System.out.print(matLetras[i][j] + " ");
 				}
 			}
 		}
@@ -77,7 +87,7 @@ public class Main {
 	// Recorrer todos los elementos en espiral (Todas las filas deben tener el mismo
 	// length)
 	public static void recorrerEsEspiral(char[][] arr) {
-
+		System.out.println("\n\nRecorrer todos los elementos en espiral (Todas las filas deben tener el mismo length)");
 		int rows = arr.length;
 		int cols = arr[0].length;
 		// Defining the boundaries of the matrix.
