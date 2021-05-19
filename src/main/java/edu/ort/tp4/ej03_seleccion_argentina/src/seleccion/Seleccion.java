@@ -1,7 +1,5 @@
 package edu.ort.tp4.ej03_seleccion_argentina.src.seleccion;
 
-import edu.ort.tp4.ej01_pyme.src.pyme.Empleado;
-
 public class Seleccion {
 
 	private static int CANT_JUG = 23;
@@ -10,11 +8,27 @@ public class Seleccion {
 	private String nombre;
 	private Jugador[] jugadores = new Jugador[CANT_JUG];
 
-	public void cambio(int n1, int n2) {
+	public Seleccion(String nombre, Jugador[] jugadores) {
+		super();
+		this.nombre = nombre;
+		this.jugadores = jugadores;
+	}
 
-		if(rangoValido(n1) && rangoValido(n2) && n1 != n2) {
-			idx1=idxJugador(n1);
-			
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void cambio(int n1, int n2) {
+		int idx1;
+		int idx2;
+		if (rangoValido(n1) && rangoValido(n2) && n1 != n2) {
+			idx1 = idxJugador(n1);
+			idx2 = idxJugador(n2);
+			intercambiar(idx1, idx2);
 		}
 	}
 
@@ -22,19 +36,54 @@ public class Seleccion {
 
 	}
 
-//	+ obtenerReservas(): Jugador[]
-//	+ cantJugadoresPorPosicion(): int[]
-private int idxJugador(int nro) {
-	
-	int i=this.jugadores.length - 1;
-}
-	
+	public Jugador[] obtenerReservas() {
+		int cantReservas;
+		Jugador[] reservas;
+		cantReservas = CANT_JUG - CANT_TIT - CANT_SUP;
+		reservas = new Jugador[cantReservas];
+		for (int i = cantReservas; i < this.jugadores.length; i++) {
+			reservas[i - cantReservas] = this.jugadores[i];
+		}
+		return reservas;
+	}
+
+	public int[] cantJugadoresPorPosicion() {
+		Posicion[] posiciones;
+		int[] cantidades;
+		posiciones = Posicion.values();
+		cantidades = new int[posiciones.length];
+		for (int i = 0; i < this.jugadores.length; i++) {
+			Posicion p = this.jugadores[i].getPosicion();
+			cantidades[p.ordinal()]++;
+		}
+		return cantidades;
+	}
+
+	private int idxJugador(int nro) {
+		int i = this.jugadores.length - 1;
+		boolean jugEncontrado = false;
+		while (i >= 0 && !jugEncontrado) {
+			if (this.jugadores[i] != null && this.jugadores[i].getNroCamiseta() == nro) {
+				jugEncontrado = true;
+
+			} else {
+				i--;
+			}
+		}
+		return i;
+	}
+
 	private boolean rangoValido(int nro) {
 		final int MIN = 1;
 		return nro >= MIN && nro <= CANT_JUG;
 
 	}
-	
-//	- intercambiar(int, int): void
+
+	private void intercambiar(int i1, int i2) {
+		Jugador aux;
+		aux = this.jugadores[i1];
+		this.jugadores[i1] = this.jugadores[i2];
+		this.jugadores[i1] = aux;
+	}
 
 }
