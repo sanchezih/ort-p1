@@ -38,11 +38,11 @@ class Override1 {
 }
 
 /*
- * Cuando se llama a un método anulado dentro de una subclase, siempre se
- * referirá a la versión de ese método definida por la subclase.
+ * Cuando se llama a un metodo anulado dentro de una subclase, siempre se
+ * referira a la versión de ese método definida por la subclase.
  * 
- * Cuando se invoca mostrar() en un objeto de tipo B, se utiliza la versión
- * mostrar() definida en B. Es decir, la versión mostrar() dentro de B anula la
+ * Cuando se invoca mostrar() en un objeto de tipo B, se utiliza la version
+ * mostrar() definida en B. Es decir, la version mostrar() dentro de B anula la
  * versión declarada en A. Si desea acceder a la versión de la superclase de un
  * método ‘anulado’, puede hacerlo utilizando super.
  */
