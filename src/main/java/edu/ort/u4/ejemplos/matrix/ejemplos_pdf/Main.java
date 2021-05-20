@@ -12,10 +12,10 @@ public class Main {
 		System.out.println("Cantidad de elementos: " + matLetras.length * matLetras[0].length);
 		System.out.println("El length de la primer fila es: " + matLetras[0].length);
 
-		// recorrerConFor(matLetras);
-		// recorrerConForEach(matLetras);
+		recorrerConFor(matLetras);
+		recorrerConForEach(matLetras);
 		recorrerEnZigZag(matLetras);
-		// recorrerEsEspiral(matLetras);
+		recorrerEsEspiral(matLetras);
 
 	}
 
