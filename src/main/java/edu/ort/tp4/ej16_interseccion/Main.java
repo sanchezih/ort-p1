@@ -14,7 +14,7 @@ public class Main {
 			salio = false;
 			for (int j = 0; j < cjto2.length; j++) {
 				if (!salio && cjto1[i] == cjto2[j]) {
-					System.out.print(cjto2[j]);
+					System.out.print(cjto2[j] + " ");
 					salio = true;
 				}
 			}
