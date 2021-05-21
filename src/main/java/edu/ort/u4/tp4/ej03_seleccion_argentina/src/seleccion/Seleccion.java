@@ -32,8 +32,17 @@ public class Seleccion {
 		}
 	}
 
-	public void cambioPorLesion(int a, String b) {
+	public void cambioPorLesion(int nroLesion, String apeReemplazo) {
+		int idxLesion;
+		Jugador jugLesion;
+		Jugador jugReemplazo;
 
+		if (rangoValido(nroLesion)) {
+			idxLesion = idxJugador(nroLesion);
+			jugLesion = this.jugadores[idxLesion];
+			jugReemplazo = new Jugador(apeReemplazo, nroLesion, jugLesion.getPosicion());
+			this.jugadores[idxLesion] = jugReemplazo;
+		}
 	}
 
 	public Jugador[] obtenerReservas() {
@@ -41,8 +50,8 @@ public class Seleccion {
 		Jugador[] reservas;
 		cantReservas = CANT_JUG - CANT_TIT - CANT_SUP;
 		reservas = new Jugador[cantReservas];
-		for (int i = cantReservas; i < this.jugadores.length; i++) {
-			reservas[i - cantReservas] = this.jugadores[i];
+		for (int i = 0; i < reservas.length; i++) {
+			reservas[i] = this.jugadores[i + (CANT_JUG - cantReservas)];
 		}
 		return reservas;
 	}
@@ -76,14 +85,19 @@ public class Seleccion {
 	private boolean rangoValido(int nro) {
 		final int MIN = 1;
 		return nro >= MIN && nro <= CANT_JUG;
-
 	}
 
 	private void intercambiar(int i1, int i2) {
 		Jugador aux;
 		aux = this.jugadores[i1];
 		this.jugadores[i1] = this.jugadores[i2];
-		this.jugadores[i1] = aux;
+		this.jugadores[i2] = aux;
+	}
+
+	public void mostrarJugadores() {
+		for (int i = 0; i < this.jugadores.length; i++) {
+			System.out.println(i + 1 + ". " + jugadores[i].getApellido() + " (" + jugadores[i].getNroCamiseta() + ")");
+		}
 	}
 
 }
