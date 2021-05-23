@@ -1,4 +1,4 @@
-package edu.ort.u4.tp4.ej05_camiones.src;
+package edu.ort.u4.tp4.ej05_camiones.src.empresa;
 
 public class Chofer {
 	private String ID;

@@ -3,6 +3,10 @@ package edu.ort.u4.tp4.ej05_camiones.src;
 import java.util.ArrayList;
 
 import edu.ort.u4.tp4.ej04_viajes_tren.src.Reserva;
+import edu.ort.u4.tp4.ej05_camiones.src.empresa.Camion;
+import edu.ort.u4.tp4.ej05_camiones.src.empresa.Chofer;
+import edu.ort.u4.tp4.ej05_camiones.src.empresa.Empresa;
+import edu.ort.u4.tp4.ej05_camiones.src.empresa.Viaje;
 
 public class Main {
 
@@ -48,15 +52,18 @@ public class Main {
 				camion10 };
 
 		ArrayList<Viaje> viajes = new ArrayList<Viaje>();
-		Viaje viaje01 = new Viaje(1, "ch01", 520.0);
-		Viaje viaje02 = new Viaje(2, "ch02", 780.0);
+		Viaje viaje01 = new Viaje(1, "ch01", 1.0);
+		Viaje viaje02 = new Viaje(2, "ch02", 1.0);
+		Viaje viaje03 = new Viaje(2, "ch01", 1.0);
+
 		viajes.add(viaje01);
 		viajes.add(viaje02);
+		viajes.add(viaje03);
 
 		Empresa empresa = new Empresa(viajes, choferes, camiones);
 
 		recorrerArray(empresa.obtenerCostosDeViajes());
-	//	dibujarMatriz(empresa.obtenerViajesXChoferCamion());
+		dibujarMatriz(empresa.obtenerViajesXChoferCamion());
 
 	}
 
@@ -66,11 +73,13 @@ public class Main {
 		}
 	}
 
-	public static void dibujarMatriz(int[][] matLetras) {
+	public static void dibujarMatriz(int[][] matriz) {
 		System.out.println("\nViajes X Chofer");
-		for (int i = 0; i < matLetras.length; i++) {
-			for (int j = 0; j < matLetras[i].length; j++) {
-				System.out.print(matLetras[i][j] + " ");
+		System.out.println("\tCam1\tCam2\tCam3\tCam4\tCam5\tCam6\tCam7\tCam8\tCam9\tCam10");
+		for (int i = 0; i < matriz.length; i++) {
+			System.out.print("Chof" + (i + 1) + "\t");
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.print(matriz[i][j] + "\t");
 			}
 			System.out.println();
 		}

@@ -1,4 +1,4 @@
-package edu.ort.u4.tp4.ej05_camiones.src;
+package edu.ort.u4.tp4.ej05_camiones.src.empresa;
 
 import java.util.ArrayList;
 
@@ -52,7 +52,7 @@ public class Empresa {
 		int i = this.choferes.length - 1;
 		while (i >= 0 && this.choferes[i].getID() != id) {
 			i--;
-		} // Se recorre para atrás para que, si no se encuentra, se devuelva -1
+		} // Se recorre para atrï¿½s para que, si no se encuentra, se devuelva -1
 		return i;
 	}
 
