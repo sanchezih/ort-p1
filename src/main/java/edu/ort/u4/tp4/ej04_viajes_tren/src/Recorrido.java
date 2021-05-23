@@ -6,6 +6,12 @@ public class Recorrido {
 	private Estacion estDestino;
 	private Estacion estPartida;
 
+	public Recorrido(Estacion estDestino, Estacion estPartida) {
+		super();
+		this.estDestino = estDestino;
+		this.estPartida = estPartida;
+	}
+
 	public double getPrecio() {
 		double precio;
 

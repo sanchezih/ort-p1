@@ -6,6 +6,13 @@ public class Reserva {
 	private int cantViajeros;
 	private Recorrido recorrido;
 
+	public Reserva(String codigo, int cantViajeros, Recorrido recorrido) {
+		super();
+		this.codigo = codigo;
+		this.cantViajeros = cantViajeros;
+		this.recorrido = recorrido;
+	}
+
 	public double getPrecio() {
 		return this.recorrido.getPrecio();
 	}

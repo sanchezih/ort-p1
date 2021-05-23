@@ -5,6 +5,21 @@ import java.util.ArrayList;
 public class Empresa {
 
 	private ArrayList<Reserva> reservas;
+	
+	
+
+	public Empresa(ArrayList<Reserva> reservas) {
+		super();
+		this.reservas = reservas;
+	}
+
+	public ArrayList<Reserva> getReservas() {
+		return reservas;
+	}
+
+	public void setReservas(ArrayList<Reserva> reservas) {
+		this.reservas = reservas;
+	}
 
 	public int cantVecesRecorrida(Estacion e) {
 		int acuVeces = 0;
