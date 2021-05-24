@@ -22,6 +22,10 @@ public class Seleccion {
 		this.nombre = nombre;
 	}
 
+	public Jugador[] getJugadores() {
+		return jugadores;
+	}
+
 	public void cambio(int n1, int n2) {
 		int idx1;
 		int idx2;
@@ -97,6 +101,18 @@ public class Seleccion {
 	public void mostrarJugadores() {
 		for (int i = 0; i < this.jugadores.length; i++) {
 			System.out.println(i + 1 + ". " + jugadores[i].getApellido() + " (" + jugadores[i].getNroCamiseta() + ")");
+		}
+	}
+
+	public void mostrarJugadores(Jugador[] jugadores) {
+		for (int i = 0; i < jugadores.length; i++) {
+			System.out.println(i + 1 + ". " + jugadores[i].getApellido() + " (" + jugadores[i].getNroCamiseta() + ")");
+		}
+	}
+
+	public void mostrarCantJugadoresPorPosicion(int[] cantJugadoresPorPosicion) {
+		for (int i = 0; i < cantJugadoresPorPosicion.length; i++) {
+			System.out.println(Posicion.values()[i] + ": \t" + cantJugadoresPorPosicion[i]);
 		}
 	}
 

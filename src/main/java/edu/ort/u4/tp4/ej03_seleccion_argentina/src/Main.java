@@ -46,21 +46,18 @@ public class Main {
 
 		// Ejercicio B
 		// seleccion.cambio(1, 2);
+		// seleccion.mostrarJugadores();
 
 		// Ejercicio C
 		// seleccion.cambioPorLesion(1, "Caballero");
 		// seleccion.mostrarJugadores();
 
 		// Ejercicio D
-		// seleccion.obtenerReservas();
+		seleccion.mostrarJugadores(seleccion.obtenerReservas());
 
 		// Ejercicio E
-		// recorrerConFor(seleccion.cantJugadoresPorPosicion());
+		seleccion.mostrarCantJugadoresPorPosicion(seleccion.cantJugadoresPorPosicion());
+
 	}
 
-	public static void recorrerConFor(int[] elementos) {
-		for (int i = 0; i < elementos.length; i++) {
-			System.out.print(elementos[i] + " ");
-		}
-	}
 }
