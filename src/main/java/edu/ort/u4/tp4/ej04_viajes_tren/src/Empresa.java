@@ -27,4 +27,11 @@ public class Empresa {
 		return acuVeces;
 	}
 
+	public double recaudacionTotal() {
+		double acu = 0;
+		for (Reserva r : this.reservas) {
+			acu += r.getPrecio();
+		}
+		return acu;
+	}
 }
