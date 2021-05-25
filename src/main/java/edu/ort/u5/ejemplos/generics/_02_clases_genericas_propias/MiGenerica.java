@@ -1,18 +1,19 @@
 package edu.ort.u5.ejemplos.generics._02_clases_genericas_propias;
 
 public class MiGenerica<T> {
-	private T primero;
+
+	private T primerAtributo;
 
 	public MiGenerica() {
-		primero = null;
+		primerAtributo = null;
 	}
 
-	public T getPrimero() {
-		return primero;
+	public T getPrimerAtributo() {
+		return primerAtributo;
 	}
 
-	public void setPrimero(T primero) {
-		this.primero = primero;
+	public void setPrimerAtributo(T primerAtributo) {
+		this.primerAtributo = primerAtributo;
 	}
 
 }

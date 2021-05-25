@@ -9,16 +9,18 @@ public class MisMatrices {
 
 	public static <T extends Comparable> T getElementoMenor(T[] a) {
 		T res = null;
-		if (a == null || a.length == 0) {
-			return res;
-		}
-		T elementoMenor = a[0];
-		for (int i = 1; i < a.length; i++) {
-			if (elementoMenor.compareTo(a[i]) > 0) {
-				elementoMenor = a[i];
+
+		if (a != null && a.length != 0) {
+			T elementoMenor = a[0];
+			for (int i = 1; i < a.length; i++) {
+				if (elementoMenor.compareTo(a[i]) > 0) {
+					elementoMenor = a[i];
+				}
 			}
+			res = elementoMenor;
 		}
-		return elementoMenor;
+
+		return res;
 	}
 
 }

@@ -10,11 +10,11 @@ public class Main {
 
 		Persona persona1 = new Persona("Veronica");
 
-		genericaString.setPrimero("Un String");
-		genericaPersona.setPrimero(persona1);
+		genericaString.setPrimerAtributo("Un String");
+		genericaPersona.setPrimerAtributo(persona1);
 
-		System.out.println(genericaString.getPrimero());
-		System.out.println(genericaPersona.getPrimero().toString());
+		System.out.println(genericaString.getPrimerAtributo());
+		System.out.println(genericaPersona.getPrimerAtributo().toString());
 	}
 
 }
