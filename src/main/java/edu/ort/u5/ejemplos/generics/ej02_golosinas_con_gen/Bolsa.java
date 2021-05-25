@@ -23,4 +23,6 @@ public class Bolsa<T> implements Iterable<T> {
 	public Iterator<T> iterator() {
 		return lista.iterator();
 	}
+
+	// https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=589:interface-iterable-y-metodo-iterator-api-java-recorrer-colecciones-ejercicio-y-ejemplo-resuelto-cu00915c&catid=58&Itemid=180
 }

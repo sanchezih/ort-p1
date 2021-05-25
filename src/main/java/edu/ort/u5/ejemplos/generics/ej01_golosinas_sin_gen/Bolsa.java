@@ -20,7 +20,9 @@ public class Bolsa implements Iterable {
 		}
 	}
 
+	@Override
 	public Iterator iterator() {
 		return lista.iterator();
 	}
+
 }
