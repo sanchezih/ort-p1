@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.generics.ej164;
+package edu.ort.u5.ejemplos.generics._01_que_es;
 
 public class MiArrayList {
 

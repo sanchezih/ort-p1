@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.generics.ej164;
+package edu.ort.u5.ejemplos.generics._01_que_es;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -28,3 +28,4 @@ public class TestArrayList {
 	}
 
 }
+ 
