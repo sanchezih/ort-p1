@@ -1,19 +1,19 @@
-package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_bingo;
+package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_generico;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Bolillero {
+public class SorteadorGenerico<T> {
 
-	private ArrayList<String> elementos;
+	private ArrayList<T> elementos;
 	private Random r;
 
-	public Bolillero() {
-		this.elementos = new ArrayList<String>();
+	public SorteadorGenerico() {
+		this.elementos = new ArrayList<T>();
 		this.r = new Random();
 	}
 
-	public void add(String elemento) {
+	public void add(T elemento) {
 		this.elementos.add(elemento);
 	}
 
@@ -21,7 +21,7 @@ public class Bolillero {
 		return this.elementos.isEmpty();
 	}
 
-	public String remove() {
+	public Object remove() {
 		return this.elementos.remove(posRandom());
 	}
 

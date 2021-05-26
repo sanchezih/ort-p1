@@ -1,9 +1,9 @@
-package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._02_sorteador_generico;
+package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_generico;
 
-public class TestSorteador {
+public class TestSorteadorGenerico {
 
 	public static void main(String[] args) {
-		Sorteador sorteador = new Sorteador();
+		SorteadorGenerico<String> sorteador = new SorteadorGenerico<String>();
 
 		System.out.println(sorteador.isEmpty());
 

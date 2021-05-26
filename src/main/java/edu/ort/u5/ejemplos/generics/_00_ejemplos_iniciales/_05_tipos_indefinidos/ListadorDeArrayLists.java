@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._04_tipos_indefinidos;
+package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._05_tipos_indefinidos;
 
 import java.util.ArrayList;
 
