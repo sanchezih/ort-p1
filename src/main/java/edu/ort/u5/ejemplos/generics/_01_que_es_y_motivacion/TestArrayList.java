@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.generics._01_que_es;
+package edu.ort.u5.ejemplos.generics._01_que_es_y_motivacion;
 
 import java.io.File;
 import java.util.ArrayList;

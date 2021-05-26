@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.generics._00_apunte.tipos_indefinidos;
+package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._04_tipos_indefinidos;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ public class ListadorDeArrayLists {
 
 	public static void main(String[] args) {
 
-		ArrayList<Number> numeros = new ArrayList<Number>();
+		ArrayList<Number> numeros = new ArrayList<>();
 		numeros.add(1);
 		numeros.add(-32);
 		numeros.add(14.5);
@@ -17,7 +17,6 @@ public class ListadorDeArrayLists {
 		palabras.add("tal");
 
 		// Invocamos a los 2 metodos para mostrar el contenido de ambas colecciones
-
 		listarElementosConForEach(numeros);
 		listarElementosConForEach(palabras);
 

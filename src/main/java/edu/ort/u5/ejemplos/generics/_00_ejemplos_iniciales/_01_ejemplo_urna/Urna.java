@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.generics._00_apunte.ejemplo_urna;
+package edu.ort.u5.ejemplos.generics._00_ejemplos_iniciales._01_ejemplo_urna;
 
 import java.util.ArrayList;
 
