@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.listaordenada._00_ejemplos_con_strings;
+package edu.ort.u5.ejemplos.listasimplementeenlazada._00_ejemplos_con_strings;
 
 import java.util.LinkedList;
 
