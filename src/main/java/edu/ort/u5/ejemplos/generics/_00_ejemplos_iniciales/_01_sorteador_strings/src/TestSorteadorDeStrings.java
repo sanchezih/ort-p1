@@ -5,20 +5,20 @@ public class TestSorteadorDeStrings {
 	public static void main(String[] args) {
 		SorteadorDeStrings ss = new SorteadorDeStrings();
 		
-		System.out.println(ss.isEmpty());
+		System.out.println("El sorteador de Strings esta vacio? "+ss.isEmpty());
 		
 		ss.add("Perro");
 		ss.add("Lechuza");
 		ss.add("Caballo");
 		ss.add("Gato");
 		
-		System.out.println(ss.isEmpty());
+		System.out.println("El sorteador de Strings esta vacio? "+ss.isEmpty());
 		
 		while(!ss.isEmpty()) {
 			System.out.println(ss.remove().toUpperCase());
 		}
 		
-		System.out.println(ss.isEmpty());
+		System.out.println("El sorteador de Strings esta vacio? "+ss.isEmpty());
 	}
 
 }
