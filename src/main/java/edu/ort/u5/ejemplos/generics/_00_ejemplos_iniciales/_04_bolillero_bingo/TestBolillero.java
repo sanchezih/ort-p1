@@ -27,7 +27,7 @@ public class TestBolillero {
 	}
 
 	private static void isVacio() {
-		System.out.println("¿El bolillero esta vacio? " + bolillero.isEmpty());
+		System.out.println("El bolillero esta vacio? " + bolillero.isEmpty());
 	}
 
 }
