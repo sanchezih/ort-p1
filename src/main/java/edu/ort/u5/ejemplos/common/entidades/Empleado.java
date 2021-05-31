@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.common;
+package edu.ort.u5.ejemplos.common.entidades;
 
 import java.util.Objects;
 

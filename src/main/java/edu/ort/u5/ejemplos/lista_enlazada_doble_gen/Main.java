@@ -1,6 +1,6 @@
 package edu.ort.u5.ejemplos.lista_enlazada_doble_gen;
 
-import edu.ort.u5.ejemplos.common.Empleado;
+import edu.ort.u5.ejemplos.common.entidades.Empleado;
 
 public class Main {
 
