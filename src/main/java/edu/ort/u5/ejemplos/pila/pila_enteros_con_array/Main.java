@@ -7,5 +7,6 @@ public class Main {
 		pila.push(20);
 		pila.push(30);
 		System.out.println(pila.pop() + " popped from stack");
+		System.out.println(pila);
 	}
 }

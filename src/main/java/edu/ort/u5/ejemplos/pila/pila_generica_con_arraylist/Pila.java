@@ -4,20 +4,16 @@ import java.util.ArrayList;
 
 public class Pila<TipoElemento> {
 
-	ArrayList<TipoElemento> A;// Empty array list
-	int top = -1; // Default value of top variable when stack is empty
-	int size; // Variable to store size of array
+	private ArrayList<TipoElemento> listaDeElementos;// Empty array list
+	private int top = -1; // Default value of top variable when stack is empty
+	private int size; // Variable to store size of array
 
 	// Constructor of this class to initiliaze stack
 	Pila(int tamanio) {
-		// Storing the value of size into global variable
 		this.size = tamanio;
-
-		// Creating array of Size = size
-		this.A = new ArrayList<TipoElemento>(tamanio);
+		this.listaDeElementos = new ArrayList<TipoElemento>(tamanio);
 	}
 
-	// Method 1
 	// To push generic element into stack
 	void push(TipoElemento elemento) {
 		// Checking if array is full
@@ -31,54 +27,47 @@ public class Pila<TipoElemento> {
 			top = top + 1;
 
 			// Over-writing existing element
-			if (A.size() > top) {
-				A.set(top, elemento);
+			if (listaDeElementos.size() > top) {
+				listaDeElementos.set(top, elemento);
 			} else {
-				A.add(elemento);
+				listaDeElementos.add(elemento);
 			}
 		}
 	}
 
-	// Method 2
 	// To return topmost element of stack
 	TipoElemento top() {
+		TipoElemento elemento = null;
 		// If stack is empty
 		if (top == -1) {
-
-			// Display message when there are no elements in
-			// the stack
+			// Display message when there are no elements in the stack
 			System.out.println("Stack Underflow");
-
-			return null;
 		}
 
-		// else elements are present so
-		// return the topmost element
-		else
-			return A.get(top);
+		// else elements are present so return the topmost element
+		else {
+			elemento = listaDeElementos.get(top);
+		}
+		return elemento;
 	}
 
-	// Method 3
 	// To delete last element of stack
 	void pop() {
 		// If stack is empty
 		if (top == -1) {
 
-			// Display message when there are no elements in
-			// the stack
+			// Display message when there are no elements in the stack
 			System.out.println("Stack Underflow");
 		}
 
-		else
-
-			// Delete the last element
-			// by decrementing the top
+		else {
+			// Delete the last element by decrementing the top
 			top--;
+		}
 	}
 
-	// Method 4
 	// To check if stack is empty or not
-	boolean empty() {
+	boolean isEmpty() {
 		return top == -1;
 	}
 
@@ -86,9 +75,9 @@ public class Pila<TipoElemento> {
 	public String toString() {
 		String res = "";
 		for (int i = 0; i < top; i++) {
-			res += String.valueOf(A.get(i)) + "->";
+			res += String.valueOf(listaDeElementos.get(i)) + "->";
 		}
-		res += String.valueOf(A.get(top));
+		res += String.valueOf(listaDeElementos.get(top));
 		return res;
 	}
 }

@@ -28,12 +28,12 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 			Nodo<TipoElemento> X = head;
 
 			// Iterating till end of the List
-			while (X.next != null) {
-				X = X.next;
+			while (X.siguiente != null) {
+				X = X.siguiente;
 			}
 
 			// Adding new valued node at the end of the list
-			X.next = temp;
+			X.siguiente = temp;
 		}
 
 		// Increasing length after adding new node
@@ -63,7 +63,7 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 			head = new Nodo<TipoElemento>(elemento);
 
 			// New head node pointing to old head node
-			head.next = temp;
+			head.siguiente = temp;
 
 			return;
 		}
@@ -79,14 +79,14 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 			// assigning previous node
 			prev = temp;
 			// incrementing next node
-			temp = temp.next;
+			temp = temp.siguiente;
 			// decreasing position counter
 			posicion--;
 		}
 		// previous node now points to new value
-		prev.next = new Nodo<TipoElemento>(elemento);
+		prev.siguiente = new Nodo<TipoElemento>(elemento);
 		// new value now points to former current node
-		prev.next.next = temp;
+		prev.siguiente.siguiente = temp;
 	}
 
 	// Method
@@ -105,10 +105,10 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		Nodo<TipoElemento> prev = new Nodo<>(null);
 
 		// Dummy node pointing to head node
-		prev.next = head;
+		prev.siguiente = head;
 
 		// Next node that points ahead of current node
-		Nodo<TipoElemento> next = head.next;
+		Nodo<TipoElemento> next = head.siguiente;
 
 		// Temporary node for traversal
 		Nodo<TipoElemento> temp = head;
@@ -119,14 +119,14 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 
 		// If head node needs to be deleted
 		if (head.elemento == key) {
-			head = head.next;
+			head = head.siguiente;
 
 			// Node to be deleted exists
 			exists = true;
 		}
 
 		// Iterating over LinkedList
-		while (temp.next != null) {
+		while (temp.siguiente != null) {
 
 			// We convert value to be compared into Strings
 			// and then compare using
@@ -138,7 +138,7 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 				// If node to be deleted is found previous
 				// node now points to next node skipping the
 				// current node
-				prev.next = next;
+				prev.siguiente = next;
 				// node to be deleted exists
 				exists = true;
 
@@ -151,18 +151,18 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 			prev = temp;
 
 			// Current node now points to next node
-			temp = temp.next;
+			temp = temp.siguiente;
 
 			// Next node points the node ahead of current
 			// node
-			next = temp.next;
+			next = temp.siguiente;
 		}
 
 		// Comparing the last node with the given key value
 		if (exists == false && String.valueOf(temp.elemento).equals(String.valueOf(key))) {
 
 			// If found , last node is skipped over
-			prev.next = null;
+			prev.siguiente = null;
 
 			// Node to be deleted exists
 			exists = true;
@@ -203,9 +203,9 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		if (X == null) {
 			return S + " ]";
 		}
-		while (X.next != null) {
+		while (X.siguiente != null) {
 			S += String.valueOf(X.elemento) + " -> ";
-			X = X.next;
+			X = X.siguiente;
 		}
 		S += String.valueOf(X.elemento);
 		return S + " ]";

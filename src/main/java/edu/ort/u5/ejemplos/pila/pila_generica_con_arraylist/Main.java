@@ -9,27 +9,27 @@ public class Main {
 
 		// Creating an object of Stack class
 		// Declaring objects of Integer type
-		Pila<Integer> s1 = new Pila<>(3);
+		Pila<Integer> pila1 = new Pila<>(3);
 
 		// Pushing elements to integer stack - s1
 
 		// Element 1 - 10
-		s1.push(10);
+		pila1.push(10);
 		// Element 2 - 20
-		s1.push(20);
+		pila1.push(20);
 		// Element 3 - 30
-		s1.push(30);
+		pila1.push(30);
 
 		// Print the stack elements after pushing the
 		// elements
-		System.out.println("s1 after pushing 10, 20 and 30 :\n" + s1);
+		System.out.println("s1 after pushing 10, 20 and 30 :\n" + pila1);
 
 		// Now, pop from stack s1
-		s1.pop();
+		pila1.pop();
 
 		// Print the stack elements after poping few
 		// element/s
-		System.out.println("s1 after pop :\n" + s1);
+		System.out.println("s1 after pop :\n" + pila1);
 
 		// String Stack
 

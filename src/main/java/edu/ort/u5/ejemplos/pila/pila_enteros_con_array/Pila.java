@@ -22,23 +22,25 @@ public class Pila {
 	}
 
 	int pop() {
+		int res = 0;
 		if (top < 0) {
 			System.out.println("Stack Underflow");
-			return 0;
 		} else {
 			int x = tamanioMaximo[top--];
-			return x;
+			res = x;
 		}
+		return res;
 	}
 
 	int peek() {
+		int res = 0;
 		if (top < 0) {
 			System.out.println("Stack Underflow");
-			return 0;
 		} else {
 			int x = tamanioMaximo[top];
-			return x;
+			res = x;
 		}
+		return res;
 	}
 
 	boolean isEmpty() {
