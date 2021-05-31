@@ -19,7 +19,7 @@ public class Bolillero<T> {
 		if (this.elementos.size() < capacidadMaxima) {
 			this.elementos.add(elemento);
 		} else {
-			throw new RuntimeException("no caben mas");
+			throw new RuntimeException("No caben mas elementos");
 		}
 	}
 
