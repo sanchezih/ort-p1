@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.listadoblementeenlazada;
+package edu.ort.u5.ejemplos.lista_doblemente_enlazada_gen;
 
 import java.util.Objects;
 
@@ -13,9 +13,9 @@ public class Empleado {
 	Integer edad;
 	String puesto;
 
-	Empleado(String nombre, Integer age, String puesto) {
+	Empleado(String nombre, Integer edad, String puesto) {
 		this.nombre = nombre;
-		this.edad = age;
+		this.edad = edad;
 		this.puesto = puesto;
 	}
 

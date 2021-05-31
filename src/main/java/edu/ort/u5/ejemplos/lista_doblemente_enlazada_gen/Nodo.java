@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.listadoblementeenlazada;
+package edu.ort.u5.ejemplos.lista_doblemente_enlazada_gen;
 
 /**
  * The class Node wraps the nodes for the doubly linked list. Its constructor

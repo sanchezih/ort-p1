@@ -1,9 +1,9 @@
-package edu.ort.u5.ejemplos.listadoblementeenlazada;
+package edu.ort.u5.ejemplos.lista_doblemente_enlazada_gen;
 
-public class GenericDoublyLinkedList<T> {
+public class ListaDoblementeEnlazadaGenerica<T> {
 	private Nodo<T> header;
 
-	GenericDoublyLinkedList() {
+	ListaDoblementeEnlazadaGenerica() {
 		header = new Nodo<T>(null, null, null);
 	}
 
