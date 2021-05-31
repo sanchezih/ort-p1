@@ -1,23 +1,19 @@
 package edu.ort.u5.ejemplos.lista_enlazada_simple_gen;
 
-public class ListaEnlazadaSimpleGenerica<T> {
+public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 
-	// Generic node instance
-	Nodo<T> head;
-	// Data member to store length of list
+	Nodo<TipoElemento> head;
 	private int length = 0;
 
-	// Default constructor
 	ListaEnlazadaSimpleGenerica() {
 		this.head = null;
 	}
 
-	// Method
-	// To add node at the end of List
-	void add(T data) {
+	// Agrega un nodo al final de la lista
+	void add(TipoElemento elemento) {
 
 		// Creating new node with given value
-		Nodo<T> temp = new Nodo<>(data);
+		Nodo<TipoElemento> temp = new Nodo<>(elemento);
 
 		// Checking if list is empty
 		// and assigning new value to head node
@@ -29,7 +25,7 @@ public class ListaEnlazadaSimpleGenerica<T> {
 		else {
 
 			// Temporary node for traversal
-			Nodo<T> X = head;
+			Nodo<TipoElemento> X = head;
 
 			// Iterating till end of the List
 			while (X.next != null) {
@@ -46,10 +42,10 @@ public class ListaEnlazadaSimpleGenerica<T> {
 
 	// Method
 	// To add new node at any given position
-	void add(int position, T data) {
+	void add(int posicion, TipoElemento elemento) {
 
 		// Checking if position is valid
-		if (position > length + 1) {
+		if (posicion > length + 1) {
 
 			// Display message only
 			System.out.println("Position Unavailable in LikedList");
@@ -57,14 +53,14 @@ public class ListaEnlazadaSimpleGenerica<T> {
 		}
 
 		// If new position is head then replace head node
-		if (position == 1) {
+		if (posicion == 1) {
 
 			// Temporary node that stores previous head
 			// value
-			Nodo<T> temp = head;
+			Nodo<TipoElemento> temp = head;
 
 			// New valued node stored in head
-			head = new Nodo<T>(data);
+			head = new Nodo<TipoElemento>(elemento);
 
 			// New head node pointing to old head node
 			head.next = temp;
@@ -73,29 +69,29 @@ public class ListaEnlazadaSimpleGenerica<T> {
 		}
 
 		// Temporary node for traversal
-		Nodo<T> temp = head;
+		Nodo<TipoElemento> temp = head;
 
 		// Dummy node with null value that stores previous
 		// node
-		Nodo<T> prev = new Nodo<T>(null);
+		Nodo<TipoElemento> prev = new Nodo<TipoElemento>(null);
 		// interating to the given position
-		while (position - 1 > 0) {
+		while (posicion - 1 > 0) {
 			// assigning previous node
 			prev = temp;
 			// incrementing next node
 			temp = temp.next;
 			// decreasing position counter
-			position--;
+			posicion--;
 		}
 		// previous node now points to new value
-		prev.next = new Nodo<T>(data);
+		prev.next = new Nodo<TipoElemento>(elemento);
 		// new value now points to former current node
 		prev.next.next = temp;
 	}
 
 	// Method
 	// To remove a node from list
-	void remove(T key) {
+	void remove(TipoElemento key) {
 
 		// NOTE
 		// dummy node is used to represent the node before
@@ -106,16 +102,16 @@ public class ListaEnlazadaSimpleGenerica<T> {
 		// previous node is assigned to null.
 
 		// Dummy node with null value
-		Nodo<T> prev = new Nodo<>(null);
+		Nodo<TipoElemento> prev = new Nodo<>(null);
 
 		// Dummy node pointing to head node
 		prev.next = head;
 
 		// Next node that points ahead of current node
-		Nodo<T> next = head.next;
+		Nodo<TipoElemento> next = head.next;
 
 		// Temporary node for traversal
-		Nodo<T> temp = head;
+		Nodo<TipoElemento> temp = head;
 
 		// Boolean value that checks whether value to be
 		// deleted exists or not
@@ -187,52 +183,32 @@ public class ListaEnlazadaSimpleGenerica<T> {
 		}
 	}
 
-	// Method
-	// To clear the entire LinkedList
 	void clear() {
-
-		// Head now points to null
 		head = null;
-		// length is 0 again
 		length = 0;
 	}
 
-	// Method
-	// Returns whether List is empty or not
-	boolean empty() {
-
-		// Checking if head node points to null
-		if (head == null) {
-			return true;
-		}
-		return false;
+	boolean isEmpty() {
+		return head != null ? false : true;
 	}
 
-	// Method
-	// Returning the length of LinkedList
 	int length() {
 		return this.length;
 	}
 
-	// Method
-	// To display the LinkedList
-	// @Override
+	@Override
 	public String toString() {
-
-		String S = "{ ";
-
-		Nodo<T> X = head;
-
-		if (X == null)
-			return S + " }";
-
+		String S = "[ ";
+		Nodo<TipoElemento> X = head;
+		if (X == null) {
+			return S + " ]";
+		}
 		while (X.next != null) {
 			S += String.valueOf(X.elemento) + " -> ";
 			X = X.next;
 		}
-
 		S += String.valueOf(X.elemento);
-		return S + " }";
+		return S + " ]";
 	}
 
 }

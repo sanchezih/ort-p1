@@ -5,15 +5,15 @@ package edu.ort.u5.ejemplos.lista_enlazada_doble_gen;
  * receives pointers to next and previous nodes, as well as, an object to which
  * will be the node's value.
  */
-public class Nodo<T> {
-	T elemento;
-	Nodo next;
-	Nodo previous;
+public class Nodo<TipoElemento> {
+	TipoElemento elemento;
+	Nodo<TipoElemento> next;
+	Nodo<TipoElemento> previous;
 
 	Nodo() {
 	}
 
-	Nodo(Nodo next, Nodo previous, T elemento) {
+	Nodo(Nodo<TipoElemento> next, Nodo<TipoElemento> previous, TipoElemento elemento) {
 		this.next = next;
 		this.previous = previous;
 		this.elemento = elemento;

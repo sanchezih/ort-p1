@@ -1,28 +1,29 @@
 package edu.ort.u5.ejemplos.lista_enlazada_doble_gen;
 
-public class ListaEnlazadaDobleGenerica<T> {
-	private Nodo<T> header;
+public class ListaEnlazadaDobleGenerica<TipoElemento> {
+
+	private Nodo<TipoElemento> header;
 
 	ListaEnlazadaDobleGenerica() {
-		header = new Nodo<T>(null, null, null);
+		header = new Nodo<TipoElemento>(null, null, null);
 	}
 
 	/**
 	 * Add before the first item in the list
 	 */
-	public Nodo<T> addFirst(T item) {
-		Nodo n = new Nodo(header.next, header, item);
+	public Nodo<TipoElemento> addFirst(TipoElemento elemento) {
+		Nodo nodo = new Nodo(header.next, header, elemento);
 		if (header.next != null) {
-			header.next.previous = n;
+			header.next.previous = nodo;
 		}
-		header.next = n;
-		return n;
+		header.next = nodo;
+		return nodo;
 	}
 
 	/**
 	 * Add after the last item in the list
 	 */
-	public Nodo add(T item) {
+	public Nodo add(TipoElemento item) {
 		Nodo end = getNode(size() - 1);
 		Nodo next = new Nodo(null, end, item);
 		end.next = next;
@@ -32,14 +33,14 @@ public class ListaEnlazadaDobleGenerica<T> {
 	/**
 	 * Add anywhere in the list, after the index of position index
 	 */
-	public Nodo add(T item, int index) {
+	public Nodo add(TipoElemento elemento, int index) {
 		if (index >= size() || index < 0) {
 			throw new IndexOutOfBoundsException("pos = " + index + " does not exist");
 		}
 
 		Nodo nodeIns = null;
 
-		if (item != null) {
+		if (elemento != null) {
 			Nodo node = header;
 
 			if (node.next != null) {
@@ -48,7 +49,7 @@ public class ListaEnlazadaDobleGenerica<T> {
 				}
 			}
 
-			nodeIns = new Nodo(node.next, node, item);
+			nodeIns = new Nodo(node.next, node, elemento);
 
 			if (node.next != null) {
 				node.next.previous = nodeIns;
@@ -107,8 +108,8 @@ public class ListaEnlazadaDobleGenerica<T> {
 	/**
 	 * Delete by specifying object -- removes first occurrence of a string
 	 */
-	public boolean delete(T item) {
-		int index = find(item);
+	public boolean delete(TipoElemento elemento) {
+		int index = find(elemento);
 		if (index == -1)
 			return false;
 		return delete(index);
@@ -140,15 +141,15 @@ public class ListaEnlazadaDobleGenerica<T> {
 	/**
 	 * Returns the index of the String s, if found; -1 otherwise
 	 */
-	public int find(T item) {
-		if (item == null)
+	public int find(TipoElemento elemento) {
+		if (elemento == null)
 			return -1;
 		Nodo currentNode = header;
 		int i = -1;
 		while (currentNode.next != null) {
 			++i;
 			currentNode = currentNode.next;
-			if (item.equals(currentNode.elemento))
+			if (elemento.equals(currentNode.elemento))
 				return i;
 		}
 		return -1;

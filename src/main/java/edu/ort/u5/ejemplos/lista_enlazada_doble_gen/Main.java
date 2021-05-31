@@ -6,38 +6,38 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		ListaEnlazadaDobleGenerica<Empleado> lista = new ListaEnlazadaDobleGenerica<Empleado>();
+		ListaEnlazadaDobleGenerica<Empleado> listaDeEmpleados = new ListaEnlazadaDobleGenerica<Empleado>();
 
-		lista.add(new Empleado("Empleado_01", 28, "Programador"));
+		listaDeEmpleados.add(new Empleado("Empleado_01", 28, "Programador"));
 		Empleado employee = new Empleado("Empleado_02", 29, "Diseniador");
-		lista.add(employee);
-		lista.add(new Empleado("Empleado_03", 21, "Product Manager"));
-		lista.add(new Empleado("Empleado_04", 1, "Diseniador"));
-		System.out.println(lista);
+		listaDeEmpleados.add(employee);
+		listaDeEmpleados.add(new Empleado("Empleado_03", 21, "Product Manager"));
+		listaDeEmpleados.add(new Empleado("Empleado_04", 1, "Diseniador"));
+		System.out.println(listaDeEmpleados);
 
-		lista.addFirst(new Empleado("Empleado_05", 26, "Programador"));
-		System.out.println(lista);
+		listaDeEmpleados.addFirst(new Empleado("Empleado_05", 26, "Programador"));
+		System.out.println(listaDeEmpleados);
 
-		lista.addFirst(new Empleado("Empleado_06", 30, "Programador"));
-		System.out.println(lista);
+		listaDeEmpleados.addFirst(new Empleado("Empleado_06", 30, "Programador"));
+		System.out.println(listaDeEmpleados);
 
-		lista.deleteFirst();
-		System.out.println(lista);
+		listaDeEmpleados.deleteFirst();
+		System.out.println(listaDeEmpleados);
 
-		lista.deleteLast();
-		System.out.println(lista);
+		listaDeEmpleados.deleteLast();
+		System.out.println(listaDeEmpleados);
 
-		lista.add(employee);
-		System.out.println(lista);
+		listaDeEmpleados.add(employee);
+		System.out.println(listaDeEmpleados);
 
-		lista.delete(employee);
-		System.out.println(lista);
+		listaDeEmpleados.delete(employee);
+		System.out.println(listaDeEmpleados);
 
-		lista.delete(1);
-		System.out.println(lista);
+		listaDeEmpleados.delete(1);
+		System.out.println(listaDeEmpleados);
 
-		lista.deleteFirst();
-		System.out.println(lista);
+		listaDeEmpleados.deleteFirst();
+		System.out.println(listaDeEmpleados);
 	}
 
 }
