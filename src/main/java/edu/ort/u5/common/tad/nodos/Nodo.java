@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.common.tad.nodos;
+package edu.ort.u5.common.tad.nodos;
 
 public class Nodo<TipoElemento> {
 	private TipoElemento dato;

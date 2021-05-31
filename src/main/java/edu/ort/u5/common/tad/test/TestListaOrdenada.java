@@ -1,7 +1,7 @@
-package edu.ort.u5.ejemplos.common.tad.test;
+package edu.ort.u5.common.tad.test;
 
-import edu.ort.u5.ejemplos.common.tad.ListaOrdenada;
-import edu.ort.u5.ejemplos.common.tad.test.entidades.Empleado;
+import edu.ort.u5.common.tad.ListaOrdenada;
+import edu.ort.u5.common.tad.test.entidades.Empleado;
 
 public class TestListaOrdenada {
 

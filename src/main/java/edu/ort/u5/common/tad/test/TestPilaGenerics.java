@@ -1,7 +1,7 @@
-package edu.ort.u5.ejemplos.common.tad.test;
+package edu.ort.u5.common.tad.test;
 
-import edu.ort.u5.ejemplos.common.tad.Pila;
-import edu.ort.u5.ejemplos.common.tad.nodos.PilaNodos;
+import edu.ort.u5.common.tad.Pila;
+import edu.ort.u5.common.tad.nodos.PilaNodos;
 
 public class TestPilaGenerics {
 

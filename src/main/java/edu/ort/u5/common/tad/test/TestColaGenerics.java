@@ -1,7 +1,7 @@
-package edu.ort.u5.ejemplos.common.tad.test;
+package edu.ort.u5.common.tad.test;
 
-import edu.ort.u5.ejemplos.common.tad.Cola;
-import edu.ort.u5.ejemplos.common.tad.nodos.ColaNodos;
+import edu.ort.u5.common.tad.Cola;
+import edu.ort.u5.common.tad.nodos.ColaNodos;
 
 public class TestColaGenerics {
 

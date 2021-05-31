@@ -1,6 +1,6 @@
-package edu.ort.u5.ejemplos.common.tad.nodos;
+package edu.ort.u5.common.tad.nodos;
 
-import edu.ort.u5.ejemplos.common.tad.Cola;
+import edu.ort.u5.common.tad.Cola;
 
 public class ColaNodos<TipoElemento> implements Cola<TipoElemento> {
 

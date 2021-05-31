@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.common.tad;
+package edu.ort.u5.common.tad;
 
 public interface Cola<TipoElemento> {
 

@@ -1,4 +1,4 @@
-package edu.ort.u5.ejemplos.common.tad.test.entidades;
+package edu.ort.u5.common.tad.test.entidades;
 
 public class Empleado {
 

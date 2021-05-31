@@ -1,6 +1,6 @@
-package edu.ort.u5.ejemplos.common.tad.nodos;
+package edu.ort.u5.common.tad.nodos;
 
-import edu.ort.u5.ejemplos.common.tad.Pila;
+import edu.ort.u5.common.tad.Pila;
 
 public class PilaNodos<TipoElemento> implements Pila<TipoElemento> {
 
