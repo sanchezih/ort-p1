@@ -1,10 +1,12 @@
-package edu.ort.u5.ejemplos.lista_doblemente_enlazada_gen;
+package edu.ort.u5.ejemplos.lista_enlazada_doble_gen;
+
+import edu.ort.u5.ejemplos.common.Empleado;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		ListaDoblementeEnlazadaGenerica<Empleado> lista = new ListaDoblementeEnlazadaGenerica<Empleado>();
+		ListaEnlazadaDobleGenerica<Empleado> lista = new ListaEnlazadaDobleGenerica<Empleado>();
 
 		lista.add(new Empleado("Empleado_01", 28, "Programador"));
 		Empleado employee = new Empleado("Empleado_02", 29, "Diseniador");

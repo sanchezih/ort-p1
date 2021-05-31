@@ -1,23 +1,14 @@
-package edu.ort.u5.ejemplos.listasimplementeenlazada;
+package edu.ort.u5.ejemplos.lista_enlazada_simple_gen;
 
-//Java Program to Implement Generic  Linked List
-
-//Importing all input output classes
-import java.io.*;
-
-
-
-//Class 2
-//Helper class ( Generic LinkedList class)
-class list<T> {
+public class ListaEnlazadaSimpleGenerica<T> {
 
 	// Generic node instance
-	Node<T> head;
+	Nodo<T> head;
 	// Data member to store length of list
 	private int length = 0;
 
 	// Default constructor
-	list() {
+	ListaEnlazadaSimpleGenerica() {
 		this.head = null;
 	}
 
@@ -26,7 +17,7 @@ class list<T> {
 	void add(T data) {
 
 		// Creating new node with given value
-		Node<T> temp = new Node<>(data);
+		Nodo<T> temp = new Nodo<>(data);
 
 		// Checking if list is empty
 		// and assigning new value to head node
@@ -38,7 +29,7 @@ class list<T> {
 		else {
 
 			// Temporary node for traversal
-			Node<T> X = head;
+			Nodo<T> X = head;
 
 			// Iterating till end of the List
 			while (X.next != null) {
@@ -70,10 +61,10 @@ class list<T> {
 
 			// Temporary node that stores previous head
 			// value
-			Node<T> temp = head;
+			Nodo<T> temp = head;
 
 			// New valued node stored in head
-			head = new Node<T>(data);
+			head = new Nodo<T>(data);
 
 			// New head node pointing to old head node
 			head.next = temp;
@@ -82,11 +73,11 @@ class list<T> {
 		}
 
 		// Temporary node for traversal
-		Node<T> temp = head;
+		Nodo<T> temp = head;
 
 		// Dummy node with null value that stores previous
 		// node
-		Node<T> prev = new Node<T>(null);
+		Nodo<T> prev = new Nodo<T>(null);
 		// interating to the given position
 		while (position - 1 > 0) {
 			// assigning previous node
@@ -97,7 +88,7 @@ class list<T> {
 			position--;
 		}
 		// previous node now points to new value
-		prev.next = new Node<T>(data);
+		prev.next = new Nodo<T>(data);
 		// new value now points to former current node
 		prev.next.next = temp;
 	}
@@ -115,23 +106,23 @@ class list<T> {
 		// previous node is assigned to null.
 
 		// Dummy node with null value
-		Node<T> prev = new Node<>(null);
+		Nodo<T> prev = new Nodo<>(null);
 
 		// Dummy node pointing to head node
 		prev.next = head;
 
 		// Next node that points ahead of current node
-		Node<T> next = head.next;
+		Nodo<T> next = head.next;
 
 		// Temporary node for traversal
-		Node<T> temp = head;
+		Nodo<T> temp = head;
 
 		// Boolean value that checks whether value to be
 		// deleted exists or not
 		boolean exists = false;
 
 		// If head node needs to be deleted
-		if (head.data == key) {
+		if (head.elemento == key) {
 			head = head.next;
 
 			// Node to be deleted exists
@@ -146,7 +137,7 @@ class list<T> {
 			// String1.equals(String2) method
 
 			// Comparing value of key and current node
-			if (String.valueOf(temp.data).equals(String.valueOf(key))) {
+			if (String.valueOf(temp.elemento).equals(String.valueOf(key))) {
 
 				// If node to be deleted is found previous
 				// node now points to next node skipping the
@@ -172,7 +163,7 @@ class list<T> {
 		}
 
 		// Comparing the last node with the given key value
-		if (exists == false && String.valueOf(temp.data).equals(String.valueOf(key))) {
+		if (exists == false && String.valueOf(temp.elemento).equals(String.valueOf(key))) {
 
 			// If found , last node is skipped over
 			prev.next = null;
@@ -230,116 +221,18 @@ class list<T> {
 
 		String S = "{ ";
 
-		Node<T> X = head;
+		Nodo<T> X = head;
 
 		if (X == null)
 			return S + " }";
 
 		while (X.next != null) {
-			S += String.valueOf(X.data) + " -> ";
+			S += String.valueOf(X.elemento) + " -> ";
 			X = X.next;
 		}
 
-		S += String.valueOf(X.data);
+		S += String.valueOf(X.elemento);
 		return S + " }";
 	}
-}
 
-//Class 3
-//Main Class
-public class GFG {
-
-	// main driver method
-	public static void main(String[] args) {
-
-		// Integer List
-
-		// Creating new empty Integer linked list
-		list<Integer> list1 = new list<>();
-		System.out.println("Integer LinkedList created as list1 :");
-		// Adding elements to the above List object
-
-		// Element 1 - 100
-		list1.add(100);
-		// Element 2 - 200
-		list1.add(200);
-		// Element 3 - 300
-		list1.add(300);
-
-		// Display message only
-		System.out.println("list1 after adding 100,200 and 300 :");
-
-		// Print and display the above List elements
-		System.out.println(list1);
-
-		// Removing 200 from list1
-		list1.remove(200);
-
-		// Display message only
-		System.out.println("list1 after removing 200 :");
-
-		// Print and display again updaed List elements
-		System.out.println(list1);
-
-		// String LinkedList
-
-		// Creating new empty String linked list
-		list<String> list2 = new list<>();
-		System.out.println("\nString LinkedList created as list2");
-		// Adding elements to the above List object
-
-		// Element 1 - hello
-		list2.add("hello");
-
-		// Element 2 - world
-		list2.add("world");
-
-		// Display message only
-		System.out.println("list2 after adding hello and world :");
-
-		// Print current elements only
-		System.out.println(list2);
-
-		// Now, adding element 3- "GFG" at position 2
-		list2.add(2, "GFG");
-
-		// Display message only
-		System.out.println("list2 after adding GFG at postion 2 :");
-
-		// now print the updated List again
-		// after inserting element at second position
-		System.out.println(list2);
-
-		// Float LinkedList
-
-		// Creating new empty Float linked list
-		list<Float> list3 = new list<>();
-
-		// Display message only
-		System.out.println("\nFloat LinkedList created as list3");
-
-		// Adding elements to the above List
-
-		// Element 1 - 20.25
-		list3.add(20.25f);
-		// Element 2 - 50.42
-		list3.add(50.42f);
-		// Element 3 - 30.99
-		list3.add(30.99f);
-
-		// Display message only
-		System.out.println("list3 after adding 20.25, 50.42 and 30.99 :");
-
-		// Print and display List elements
-		System.out.println(list3);
-
-		// Display message only
-		System.out.println("Clearing list3 :");
-
-		// Now.clearing this lisy using clear() method
-		list3.clear();
-
-		// Now, print and display the aboce list again
-		System.out.println(list3);
-	}
 }
