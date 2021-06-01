@@ -1,4 +1,4 @@
-package edu.ort.u5.tp5.ej01_dvds;
+package edu.ort.u5.tp5.ej01_libros_dvds;
 
 public class DVD {
 	private String marca;
