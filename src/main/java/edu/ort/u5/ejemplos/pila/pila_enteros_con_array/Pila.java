@@ -1,6 +1,7 @@
 package edu.ort.u5.ejemplos.pila.pila_enteros_con_array;
 
 public class Pila {
+	
 	private static final int MAX = 1000;
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
@@ -9,7 +10,7 @@ public class Pila {
 		top = -1;
 	}
 
-	boolean push(int elemento) {
+	public boolean push(int elemento) {
 		boolean res = false;
 		if (top >= (MAX - 1)) {
 			System.out.println("Stack Overflow");
@@ -21,7 +22,7 @@ public class Pila {
 		return res;
 	}
 
-	int pop() {
+	public int pop() {
 		int res = 0;
 		if (top < 0) {
 			System.out.println("Stack Underflow");
@@ -32,7 +33,7 @@ public class Pila {
 		return res;
 	}
 
-	int peek() {
+	public int peek() {
 		int res = 0;
 		if (top < 0) {
 			System.out.println("Stack Underflow");
@@ -43,7 +44,7 @@ public class Pila {
 		return res;
 	}
 
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return (top < 0);
 	}
 

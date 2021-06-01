@@ -15,7 +15,7 @@ public class Pila<TipoElemento> {
 	}
 
 	// To push generic element into stack
-	void push(TipoElemento elemento) {
+	public void push(TipoElemento elemento) {
 		// Checking if array is full
 		if (top + 1 == size) {
 
@@ -36,7 +36,7 @@ public class Pila<TipoElemento> {
 	}
 
 	// To return topmost element of stack
-	TipoElemento top() {
+	public TipoElemento top() {
 		TipoElemento elemento = null;
 		// If stack is empty
 		if (top == -1) {
@@ -52,7 +52,7 @@ public class Pila<TipoElemento> {
 	}
 
 	// To delete last element of stack
-	void pop() {
+	public void pop() {
 		// If stack is empty
 		if (top == -1) {
 
@@ -67,7 +67,7 @@ public class Pila<TipoElemento> {
 	}
 
 	// To check if stack is empty or not
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return top == -1;
 	}
 

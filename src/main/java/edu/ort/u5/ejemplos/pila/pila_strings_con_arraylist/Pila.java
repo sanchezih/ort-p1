@@ -1,7 +1,6 @@
 package edu.ort.u5.ejemplos.pila.pila_strings_con_arraylist;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Pila {
 
