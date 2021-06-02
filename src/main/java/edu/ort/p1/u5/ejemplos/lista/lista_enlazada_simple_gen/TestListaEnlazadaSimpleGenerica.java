@@ -31,13 +31,13 @@ public class TestListaEnlazadaSimpleGenerica {
 
 		/*----------------------------------------------------------------------------*/
 
-//		ListaEnlazadaSimpleGenerica<Empleado> listaDeEmpleados = new ListaEnlazadaSimpleGenerica<Empleado>();
-//		System.out.println("\nlistaDeEmpleados...");
-//
-//		listaDeEmpleados.add(new Empleado("Rosa", 48, "Administrativo"));
-//		listaDeEmpleados.add(new Empleado("Hugo", 49, "Administrativo"));
-//		System.out.println(listaDeEmpleados);
-//		listaDeEmpleados.clear();
-//		System.out.println(listaDeEmpleados);
+		ListaEnlazadaSimpleGenerica<Empleado> listaDeEmpleados = new ListaEnlazadaSimpleGenerica<Empleado>();
+		System.out.println("\nlistaDeEmpleados...");
+
+		listaDeEmpleados.add(new Empleado("Rosa", 48, "Administrativo"));
+		listaDeEmpleados.add(new Empleado("Hugo", 49, "Administrativo"));
+		System.out.println(listaDeEmpleados);
+		listaDeEmpleados.clear();
+		System.out.println(listaDeEmpleados);
 	}
 }

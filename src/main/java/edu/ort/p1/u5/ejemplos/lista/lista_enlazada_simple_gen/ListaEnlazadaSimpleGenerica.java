@@ -12,53 +12,32 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 	// Agrega un nodo al final de la lista
 	public void add(TipoElemento elemento) {
 
-		// Creating new node with given value
 		Nodo<TipoElemento> temp = new Nodo<>(elemento);
 
-		// Checking if list is empty
-		// and assigning new value to head node
+		// Checking if list is empty and assigning new value to head node
 		if (this.head == null) {
 			head = temp;
-		}
-
-		// If list already exists
-		else {
-
-			// Temporary node for traversal
+		} else {
 			Nodo<TipoElemento> X = head;
-
-			// Iterating till end of the List
 			while (X.siguiente != null) {
 				X = X.siguiente;
 			}
-
-			// Adding new valued node at the end of the list
 			X.siguiente = temp;
 		}
-
-		// Increasing length after adding new node
 		length++;
 	}
 
 	// To add new node at any given position
 	public void add(int posicion, TipoElemento elemento) {
 
-		// Checking if position is valid
 		if (posicion > length + 1) {
-
-			// Display message only
 			System.out.println("Position Unavailable in LikedList");
 			return;
 		}
 
 		// If new position is head then replace head node
 		if (posicion == 1) {
-
-			// Temporary node that stores previous head
-			// value
 			Nodo<TipoElemento> temp = head;
-
-			// New valued node stored in head
 			head = new Nodo<TipoElemento>(elemento);
 
 			// New head node pointing to old head node
@@ -70,8 +49,7 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		// Temporary node for traversal
 		Nodo<TipoElemento> temp = head;
 
-		// Dummy node with null value that stores previous
-		// node
+		// Dummy node with null value that stores previous node
 		Nodo<TipoElemento> prev = new Nodo<TipoElemento>(null);
 		// interating to the given position
 		while (posicion - 1 > 0) {
@@ -113,8 +91,7 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		// Temporary node for traversal
 		Nodo<TipoElemento> temp = head;
 
-		// Boolean value that checks whether value to be
-		// deleted exists or not
+		// Boolean value that checks whether value to be deleted exists or not
 		boolean exists = false;
 
 		// If head node needs to be deleted
