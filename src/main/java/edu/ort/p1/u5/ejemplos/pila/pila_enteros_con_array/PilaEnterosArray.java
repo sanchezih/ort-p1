@@ -1,12 +1,12 @@
 package edu.ort.p1.u5.ejemplos.pila.pila_enteros_con_array;
 
-public class Pila {
-	
+public class PilaEnterosArray {
+
 	private static final int MAX = 1000;
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
 
-	Pila() {
+	PilaEnterosArray() {
 		top = -1;
 	}
 
@@ -16,7 +16,7 @@ public class Pila {
 			System.out.println("Stack Overflow");
 		} else {
 			tamanioMaximo[++top] = elemento;
-			System.out.println(elemento + " pushed into stack");
+			System.out.println(elemento + " introducido en la pila");
 			res = true;
 		}
 		return res;

@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.ejemplos.lista_enlazada_simple_gen;
+package edu.ort.p1.u5.ejemplos.lista.lista_enlazada_simple_gen;
 
 public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 

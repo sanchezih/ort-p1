@@ -2,31 +2,22 @@ package edu.ort.p1.u5.ejemplos.pila.pila_generica_con_arraylist;
 
 import java.util.ArrayList;
 
-public class Pila<TipoElemento> {
+public class PilaGenericaArraylist<TipoElemento> {
 
 	private ArrayList<TipoElemento> listaDeElementos;// Empty array list
 	private int top = -1; // Default value of top variable when stack is empty
 	private int size; // Variable to store size of array
 
-	// Constructor of this class to initiliaze stack
-	Pila(int tamanio) {
+	PilaGenericaArraylist(int tamanio) {
 		this.size = tamanio;
 		this.listaDeElementos = new ArrayList<TipoElemento>(tamanio);
 	}
 
-	// To push generic element into stack
 	public void push(TipoElemento elemento) {
-		// Checking if array is full
-		if (top + 1 == size) {
-
-			// Display message when array is full
+		if (top + 1 == size) { // Checking if array is full
 			System.out.println("Stack Overflow");
 		} else {
-
-			// Increment top to go to next position
 			top = top + 1;
-
-			// Over-writing existing element
 			if (listaDeElementos.size() > top) {
 				listaDeElementos.set(top, elemento);
 			} else {
@@ -53,14 +44,11 @@ public class Pila<TipoElemento> {
 
 	// To delete last element of stack
 	public void pop() {
-		// If stack is empty
-		if (top == -1) {
+		if (top == -1) { // If stack is empty
 
 			// Display message when there are no elements in the stack
 			System.out.println("Stack Underflow");
-		}
-
-		else {
+		} else {
 			// Delete the last element by decrementing the top
 			top--;
 		}

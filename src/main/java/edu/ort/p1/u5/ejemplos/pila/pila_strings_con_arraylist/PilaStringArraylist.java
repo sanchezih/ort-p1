@@ -2,7 +2,7 @@ package edu.ort.p1.u5.ejemplos.pila.pila_strings_con_arraylist;
 
 import java.util.ArrayList;
 
-public class Pila {
+public class PilaStringArraylist {
 
 	private ArrayList<String> elementos = new ArrayList<>();
 

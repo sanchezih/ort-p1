@@ -17,8 +17,8 @@ public class Main {
 		pilaDeLibros.push(new Libro("978-987-1949-68-7", 292));
 
 		Empleado e = new Empleado("Juan");
-		System.out.println("La cantidad de DVDs rayados es " + e.cantDVDsRayados(pilaDeDVDs));
-		System.out.println("El promedio es " + e.paginasPromedio(pilaDeLibros));
+		System.out.println("La cantidad de DVDs rayados es: " + e.cantDVDsRayados(pilaDeDVDs));
+		System.out.println("El promedio es: " + e.paginasPromedio(pilaDeLibros));
 
 	}
 

@@ -1,11 +1,11 @@
 package edu.ort.p1.u5.ejemplos.pila.pila_generica_con_lista_enlazada;
 
-public class LinkedStack<TipoElemento> {
+public class PilaGenericaListaEnlazada<TipoElemento> {
 
 	private Nodo<TipoElemento> end;
 	private int tamanio;
 
-	public LinkedStack() {
+	public PilaGenericaListaEnlazada() {
 		end = null;
 		tamanio = 0;
 	}
