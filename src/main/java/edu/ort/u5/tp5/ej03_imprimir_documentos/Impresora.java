@@ -1,7 +1,7 @@
 package edu.ort.u5.tp5.ej03_imprimir_documentos;
 
-import edu.ort.u5.common.tad.Cola;
-import edu.ort.u5.common.tad.nodos.ColaNodos;
+import edu.ort.tp1.u5.tda.Cola;
+import edu.ort.tp1.u5.tda.nodos.ColaNodos;
 
 public class Impresora {
 	private boolean estaEncendida;
@@ -52,7 +52,7 @@ public class Impresora {
 			System.out.println("Impreso: " + doc);
 			this.cantHojasDisp -= (int) Math.ceil(doc.getCantCarillas() / divisor);
 		}
-		// En la impresión doble faz, si el número de carillas es impar, se consume una
+		// En la impresiï¿½n doble faz, si el nï¿½mero de carillas es impar, se consume una
 		// hoja completa
 		// Math.ceil(4) --> 4.0
 		// Math.ceil(4.5) --> 5.0
