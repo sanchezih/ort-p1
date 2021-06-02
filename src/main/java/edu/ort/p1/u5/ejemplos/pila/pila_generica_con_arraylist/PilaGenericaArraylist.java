@@ -6,15 +6,15 @@ public class PilaGenericaArraylist<TipoElemento> {
 
 	private ArrayList<TipoElemento> listaDeElementos;// Empty array list
 	private int top = -1; // Default value of top variable when stack is empty
-	private int size; // Variable to store size of array
+	private int tamanio; // Variable to store size of array
 
 	PilaGenericaArraylist(int tamanio) {
-		this.size = tamanio;
+		this.tamanio = tamanio;
 		this.listaDeElementos = new ArrayList<TipoElemento>(tamanio);
 	}
 
 	public void push(TipoElemento elemento) {
-		if (top + 1 == size) { // Checking if array is full
+		if (top + 1 == tamanio) {
 			System.out.println("Stack Overflow");
 		} else {
 			top = top + 1;

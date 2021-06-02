@@ -1,8 +1,10 @@
 package edu.ort.p1.u5.ejemplos.pila.pila_enteros_con_array;
 
+import java.util.Arrays;
+
 public class PilaEnterosArray {
 
-	private static final int MAX = 1000;
+	private static final int MAX = 10;
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
 
@@ -16,7 +18,7 @@ public class PilaEnterosArray {
 			System.out.println("Stack Overflow");
 		} else {
 			tamanioMaximo[++top] = elemento;
-			System.out.println(elemento + " introducido en la pila");
+			System.out.println("Push " + elemento);
 			res = true;
 		}
 		return res;
@@ -46,6 +48,11 @@ public class PilaEnterosArray {
 
 	public boolean isEmpty() {
 		return (top < 0);
+	}
+
+	@Override
+	public String toString() {
+		return "PilaEnterosArray [top=" + top + ", tamanioMaximo=" + Arrays.toString(tamanioMaximo) + "]";
 	}
 
 }

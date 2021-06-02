@@ -2,15 +2,15 @@ package edu.ort.p1.u5.ejemplos.lista.lista_enlazada_simple_gen;
 
 public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 
-	Nodo<TipoElemento> head;
+	private Nodo<TipoElemento> head;
 	private int length = 0;
 
-	ListaEnlazadaSimpleGenerica() {
+	public ListaEnlazadaSimpleGenerica() {
 		this.head = null;
 	}
 
 	// Agrega un nodo al final de la lista
-	void add(TipoElemento elemento) {
+	public void add(TipoElemento elemento) {
 
 		// Creating new node with given value
 		Nodo<TipoElemento> temp = new Nodo<>(elemento);
@@ -40,9 +40,8 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		length++;
 	}
 
-	// Method
 	// To add new node at any given position
-	void add(int posicion, TipoElemento elemento) {
+	public void add(int posicion, TipoElemento elemento) {
 
 		// Checking if position is valid
 		if (posicion > length + 1) {
@@ -89,9 +88,10 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		prev.siguiente.siguiente = temp;
 	}
 
-	// Method
-	// To remove a node from list
-	void remove(TipoElemento key) {
+	/*
+	 * To remove a node from list
+	 */
+	public void remove(TipoElemento key) {
 
 		// NOTE
 		// dummy node is used to represent the node before
@@ -183,16 +183,16 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		}
 	}
 
-	void clear() {
+	public void clear() {
 		head = null;
 		length = 0;
 	}
 
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return head != null ? false : true;
 	}
 
-	int length() {
+	public int length() {
 		return this.length;
 	}
 

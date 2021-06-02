@@ -4,26 +4,27 @@ import java.util.ArrayList;
 
 public class PilaStringArraylist {
 
-	private ArrayList<String> elementos = new ArrayList<>();
-
-	public String peek() {
-		if (elementos.isEmpty()) {
-			return null;
-		}
-		return elementos.get(elementos.size() - 1);
-	}
-
-	public String pop() {
-		if (elementos.isEmpty()) {
-			return null;
-		}
-		String top = elementos.get(elementos.size() - 1);
-		elementos.remove(elementos.size() - 1);
-		return top;
-	}
+	private ArrayList<String> elementos = new ArrayList<String>();
 
 	public void push(String elemento) {
 		elementos.add(elemento);
+	}
+
+	public String pop() {
+		String res = null;
+		if (!elementos.isEmpty()) {
+			res = elementos.get(elementos.size() - 1);
+			elementos.remove(elementos.size() - 1);
+		}
+		return res;
+	}
+
+	public String peek() {
+		String res = null;
+		if (!elementos.isEmpty()) {
+			res = elementos.get(elementos.size() - 1);
+		}
+		return res;
 	}
 
 	public int size() {
@@ -36,6 +37,7 @@ public class PilaStringArraylist {
 
 	@Override
 	public String toString() {
-		return "Pila [elements=" + elementos + "]";
+		return "PilaStringArraylist [listaDeElementos=" + elementos + "]";
 	}
+
 }
