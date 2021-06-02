@@ -1,18 +1,18 @@
 package edu.ort.p1.u5.ejemplos.lista.lista_enlazada_doble_gen;
 
-public class ListaEnlazadaDobleGenerica<TipoElemento> {
+public class ListaEnlazadaDobleGenerica<T> {
 
-	private Nodo<TipoElemento> header;
+	private Nodo<T> header;
 
 	ListaEnlazadaDobleGenerica() {
-		header = new Nodo<TipoElemento>(null, null, null);
+		header = new Nodo<T>(null, null, null);
 	}
 
 	/**
 	 * Add before the first item in the list
 	 */
-	public Nodo<TipoElemento> addFirst(TipoElemento elemento) {
-		Nodo nodo = new Nodo(header.siguiente, header, elemento);
+	public Nodo<T> addFirst(T elemento) {
+		Nodo<T> nodo = new Nodo<T>(header.siguiente, header, elemento);
 		if (header.siguiente != null) {
 			header.siguiente.previo = nodo;
 		}
@@ -23,8 +23,8 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	/**
 	 * Add after the last item in the list
 	 */
-	public Nodo add(TipoElemento elemento) {
-		Nodo end = getNode(size() - 1);
+	public Nodo<T> add(T elemento) {
+		Nodo<T> end = getNode(size() - 1);
 		Nodo siguiente = new Nodo(null, end, elemento);
 		end.siguiente = siguiente;
 		return siguiente;
@@ -33,15 +33,15 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	/**
 	 * Add anywhere in the list, after the index of position index
 	 */
-	public Nodo add(TipoElemento elemento, int indice) {
+	public Nodo<T> add(T elemento, int indice) {
 		if (indice >= size() || indice < 0) {
 			throw new IndexOutOfBoundsException("pos = " + indice + " no existe");
 		}
 
-		Nodo nodeIns = null;
+		Nodo<T> nodeIns = null;
 
 		if (elemento != null) {
-			Nodo node = header;
+			Nodo<T> node = header;
 
 			if (node.siguiente != null) {
 				for (int i = 0; i <= indice; i++) {
@@ -62,8 +62,8 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	/**
 	 * Delete the first item of the list
 	 */
-	public Nodo deleteFirst() {
-		Nodo temp = getNode(0);
+	public Nodo<T> deleteFirst() {
+		Nodo<T> temp = getNode(0);
 		if (temp != null && temp.siguiente != null) {
 			temp.siguiente.previo = header;
 			header.siguiente = temp.siguiente;
@@ -77,9 +77,9 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	/**
 	 * Delete the last item of the list
 	 */
-	public Nodo deleteLast() {
-		Nodo temp = getNode(size() - 1);
-		Nodo newLast = getNode(size() - 2);
+	public Nodo<T> deleteLast() {
+		Nodo<T> temp = getNode(size() - 1);
+		Nodo<T> newLast = getNode(size() - 2);
 		newLast.siguiente = null;
 		return temp;
 	}
@@ -91,12 +91,12 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 		if (indice >= size() || indice < 0) {
 			throw new IndexOutOfBoundsException("pos = " + indice + " no existe");
 		}
-		Nodo toBeRemoved = getNode(indice);
+		Nodo<T> toBeRemoved = getNode(indice);
 		if (toBeRemoved == null) {
 			return false;
 		}
-		Nodo previo = toBeRemoved.previo;
-		Nodo siguiente = toBeRemoved.siguiente;
+		Nodo<T> previo = toBeRemoved.previo;
+		Nodo<T> siguiente = toBeRemoved.siguiente;
 
 		previo.siguiente = siguiente;
 		if (siguiente != null) {
@@ -109,7 +109,7 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	/**
 	 * Delete by specifying object -- removes first occurrence of a string
 	 */
-	public boolean delete(TipoElemento elemento) {
+	public boolean delete(T elemento) {
 		int indice = find(elemento);
 		if (indice == -1)
 			return false;
@@ -120,11 +120,11 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	/**
 	 * Get the specific node we are looking for at the position index
 	 */
-	private Nodo getNode(int indice) {
+	private Nodo<T> getNode(int indice) {
 		if (indice > size()) {
 			throw new IndexOutOfBoundsException();
 		}
-		Nodo node = header;
+		Nodo<T> node = header;
 		for (int i = 0; i <= indice; ++i) {
 			node = node.siguiente;
 		}
@@ -135,17 +135,17 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	 * Get the value of the node we are looking for at the position index
 	 */
 	public String get(int indice) {
-		Nodo nodo = getNode(indice);
+		Nodo<T> nodo = getNode(indice);
 		return (nodo != null) ? nodo.elemento.toString() : null;
 	}
 
 	/**
 	 * Returns the index of the String s, if found; -1 otherwise
 	 */
-	public int find(TipoElemento elemento) {
+	public int find(T elemento) {
 		if (elemento == null)
 			return -1;
-		Nodo currentNode = header;
+		Nodo<T> currentNode = header;
 		int i = -1;
 		while (currentNode.siguiente != null) {
 			++i;
@@ -160,13 +160,13 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	 * Returns the size of the list
 	 */
 	public int size() {
-		int count = 0;
-		Nodo nodo = header.siguiente;
+		int cont = 0;
+		Nodo<T> nodo = header.siguiente;
 		while (nodo != null) {
-			++count;
+			++cont;
 			nodo = nodo.siguiente;
 		}
-		return count;
+		return cont;
 	}
 
 	/**
@@ -181,7 +181,7 @@ public class ListaEnlazadaDobleGenerica<TipoElemento> {
 	 */
 	public String toString() {
 		StringBuilder sb = new StringBuilder("[");
-		Nodo next = header.siguiente;
+		Nodo<T> next = header.siguiente;
 		while (next != null) {
 			sb.append(next.elemento + ", ");
 			next = next.siguiente;

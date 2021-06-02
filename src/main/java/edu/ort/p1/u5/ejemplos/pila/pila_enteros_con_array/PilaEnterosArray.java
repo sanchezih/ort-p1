@@ -8,7 +8,7 @@ public class PilaEnterosArray {
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
 
-	PilaEnterosArray() {
+	public PilaEnterosArray() {
 		top = -1;
 	}
 
@@ -29,8 +29,7 @@ public class PilaEnterosArray {
 		if (top < 0) {
 			System.out.println("Stack Underflow");
 		} else {
-			int x = tamanioMaximo[top--];
-			res = x;
+			res = tamanioMaximo[top--];
 		}
 		return res;
 	}
@@ -40,8 +39,7 @@ public class PilaEnterosArray {
 		if (top < 0) {
 			System.out.println("Stack Underflow");
 		} else {
-			int x = tamanioMaximo[top];
-			res = x;
+			res = tamanioMaximo[top];
 		}
 		return res;
 	}

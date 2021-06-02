@@ -1,8 +1,8 @@
 package edu.ort.p1.u5.ejemplos.lista.lista_enlazada_simple_gen;
 
-public class ListaEnlazadaSimpleGenerica<TipoElemento> {
+public class ListaEnlazadaSimpleGenerica<T> {
 
-	private Nodo<TipoElemento> head;
+	private Nodo<T> head;
 	private int length = 0;
 
 	public ListaEnlazadaSimpleGenerica() {
@@ -10,15 +10,14 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 	}
 
 	// Agrega un nodo al final de la lista
-	public void add(TipoElemento elemento) {
+	public void add(T elemento) {
 
-		Nodo<TipoElemento> temp = new Nodo<>(elemento);
+		Nodo<T> temp = new Nodo<>(elemento);
 
-		// Checking if list is empty and assigning new value to head node
 		if (this.head == null) {
 			head = temp;
 		} else {
-			Nodo<TipoElemento> X = head;
+			Nodo<T> X = head;
 			while (X.siguiente != null) {
 				X = X.siguiente;
 			}
@@ -27,49 +26,43 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		length++;
 	}
 
-	// To add new node at any given position
-	public void add(int posicion, TipoElemento elemento) {
+	// Agrega un nodo en una posicion especifica
+	public void add(int posicion, T elemento) {
 
 		if (posicion > length + 1) {
 			System.out.println("Position Unavailable in LikedList");
 			return;
 		}
 
-		// If new position is head then replace head node
 		if (posicion == 1) {
-			Nodo<TipoElemento> temp = head;
-			head = new Nodo<TipoElemento>(elemento);
+			Nodo<T> temp = head;
+			head = new Nodo<T>(elemento);
 
-			// New head node pointing to old head node
 			head.siguiente = temp;
 
 			return;
 		}
 
 		// Temporary node for traversal
-		Nodo<TipoElemento> temp = head;
+		Nodo<T> temp = head;
 
 		// Dummy node with null value that stores previous node
-		Nodo<TipoElemento> prev = new Nodo<TipoElemento>(null);
+		Nodo<T> prev = new Nodo<T>(null);
+
 		// interating to the given position
 		while (posicion - 1 > 0) {
-			// assigning previous node
-			prev = temp;
-			// incrementing next node
-			temp = temp.siguiente;
-			// decreasing position counter
-			posicion--;
+			prev = temp; // assigning previous node
+			temp = temp.siguiente; // incrementing next node
+			posicion--; // decreasing position counter
+
 		}
 		// previous node now points to new value
-		prev.siguiente = new Nodo<TipoElemento>(elemento);
+		prev.siguiente = new Nodo<T>(elemento);
 		// new value now points to former current node
 		prev.siguiente.siguiente = temp;
 	}
 
-	/*
-	 * To remove a node from list
-	 */
-	public void remove(TipoElemento key) {
+	public void remove(T key) {
 
 		// NOTE
 		// dummy node is used to represent the node before
@@ -80,16 +73,16 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 		// previous node is assigned to null.
 
 		// Dummy node with null value
-		Nodo<TipoElemento> prev = new Nodo<>(null);
+		Nodo<T> prev = new Nodo<>(null);
 
 		// Dummy node pointing to head node
 		prev.siguiente = head;
 
 		// Next node that points ahead of current node
-		Nodo<TipoElemento> next = head.siguiente;
+		Nodo<T> next = head.siguiente;
 
 		// Temporary node for traversal
-		Nodo<TipoElemento> temp = head;
+		Nodo<T> temp = head;
 
 		// Boolean value that checks whether value to be deleted exists or not
 		boolean exists = false;
@@ -176,7 +169,7 @@ public class ListaEnlazadaSimpleGenerica<TipoElemento> {
 	@Override
 	public String toString() {
 		String S = "[ ";
-		Nodo<TipoElemento> X = head;
+		Nodo<T> X = head;
 		if (X == null) {
 			return S + " ]";
 		}

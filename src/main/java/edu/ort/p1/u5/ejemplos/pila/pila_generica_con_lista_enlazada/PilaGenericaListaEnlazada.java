@@ -1,8 +1,9 @@
 package edu.ort.p1.u5.ejemplos.pila.pila_generica_con_lista_enlazada;
 
-public class PilaGenericaListaEnlazada<TipoElemento> {
 
-	private Nodo<TipoElemento> end;
+public class PilaGenericaListaEnlazada<T> {
+
+	private Nodo<T> end;
 	private int tamanio;
 
 	public PilaGenericaListaEnlazada() {
@@ -10,8 +11,8 @@ public class PilaGenericaListaEnlazada<TipoElemento> {
 		tamanio = 0;
 	}
 
-	public void push(TipoElemento elemento) {
-		Nodo<TipoElemento> nuevoNodo = new Nodo<TipoElemento>(elemento);
+	public void push(T elemento) {
+		Nodo<T> nuevoNodo = new Nodo<T>(elemento);
 		if (end == null)
 			end = nuevoNodo;
 		else {
@@ -21,8 +22,8 @@ public class PilaGenericaListaEnlazada<TipoElemento> {
 		tamanio++;
 	};
 
-	public TipoElemento pop() {
-		TipoElemento elemento = null;
+	public T pop() {
+		T elemento = null;
 
 		if (end != null) {
 			elemento = end.getElemento();
@@ -40,11 +41,13 @@ public class PilaGenericaListaEnlazada<TipoElemento> {
 		return tamanio;
 	}
 
-	public TipoElemento end() {
-		TipoElemento res = null;
+	public T end() {
+		T res = null;
 		if (end != null) {
 			res = end.getElemento();
 		}
 		return res;
 	}
+
+	
 }

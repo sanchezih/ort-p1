@@ -1,5 +1,6 @@
 package edu.ort.p1.u5.practico05.ej01_libros_dvds;
 
+import edu.ort.tp1.u5.tda.Pila;
 import edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
 public class Empleado {
@@ -20,7 +21,7 @@ public class Empleado {
 
 	public int cantDVDsRayados(PilaNodos<DVD> pilaDVDs) {
 
-		PilaNodos<DVD> pilaAux = new PilaNodos<DVD>();
+		Pila<DVD> pilaAux = new PilaNodos<DVD>(); // upcasting
 
 		int cantRayados = 0;
 
@@ -31,12 +32,10 @@ public class Empleado {
 				cantRayados++;
 			}
 		}
-
 		while (!pilaAux.isEmpty()) {
 			pilaDVDs.push(pilaAux.pop());
 		}
 		return cantRayados;
-
 	}
 
 	public double paginasPromedio(PilaNodos<Libro> pilaLibros) {
