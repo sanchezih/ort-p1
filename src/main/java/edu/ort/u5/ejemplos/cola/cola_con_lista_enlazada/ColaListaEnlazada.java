@@ -4,7 +4,7 @@ package edu.ort.u5.ejemplos.cola.cola_con_lista_enlazada;
 *
 */
 
-public class LinkedQueue {
+public class ColaListaEnlazada {
 
 	class Node {
 		Object elem;
@@ -20,7 +20,7 @@ public class LinkedQueue {
 	Node end;
 	int size;
 
-	public LinkedQueue() {
+	public ColaListaEnlazada() {
 		end = null;
 		size = 0;
 	}

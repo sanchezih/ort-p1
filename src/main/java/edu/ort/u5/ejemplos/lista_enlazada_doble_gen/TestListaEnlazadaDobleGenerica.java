@@ -2,7 +2,7 @@ package edu.ort.u5.ejemplos.lista_enlazada_doble_gen;
 
 import edu.ort.u5.common.entidades.Empleado;
 
-public class Main {
+public class TestListaEnlazadaDobleGenerica {
 
 	public static void main(String[] args) {
 

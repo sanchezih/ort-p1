@@ -3,14 +3,14 @@ package edu.ort.u5.ejemplos.cola.cola_con_lista_enlazada;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class TestLinkedQueue {
+public class TestColaListaEnlazada {
 
 	public static void main(String args[]) {
 
 		FileReader f = null; // to read files
 		BufferedReader reader = null; // reading buffer
 		String line = null; // read lines
-		LinkedQueue queue = new LinkedQueue(); // initialization
+		ColaListaEnlazada queue = new ColaListaEnlazada(); // initialization
 
 		if (args.length < 1) {
 			System.err.println("Please invoke the program like this:");
