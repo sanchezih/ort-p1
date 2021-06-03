@@ -11,26 +11,25 @@ public class ColaListaEnlazada {
 		size = 0;
 	}
 
-	// Inserta un objeto en la cola
 	public void add(Object o) {
-		Nodo new_node = new Nodo(o);
+
+		Nodo nuevoNodo = new Nodo(o);
 		if (first == null) {
-			first = new_node;
-			last = new_node;
+			first = nuevoNodo;
+			last = nuevoNodo;
 		} else {
-			last.Next = new_node;
-			last = new_node;
+			last.next = nuevoNodo;
+			last = nuevoNodo;
 		}
 		size++;
 	}
 
-	// Remueve un objeto de la cola
 	public Object remove() {
 		if (first == null)
 			return null;
 
-		Object o = first.elem;
-		first = first.Next;
+		Object o = first.elemento;
+		first = first.next;
 		size--;
 		return o;
 	}
@@ -39,7 +38,7 @@ public class ColaListaEnlazada {
 		if (first == null)
 			return null;
 		else
-			return first.elem;
+			return first.elemento;
 	}
 
 	public boolean isEmpty() {
@@ -49,4 +48,5 @@ public class ColaListaEnlazada {
 	public int size() {
 		return size;
 	}
+
 }
