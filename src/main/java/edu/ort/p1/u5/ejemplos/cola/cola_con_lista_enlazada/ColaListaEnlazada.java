@@ -1,51 +1,46 @@
 package edu.ort.p1.u5.ejemplos.cola.cola_con_lista_enlazada;
-/*
-* LinkedQueue.java
-*
-*/
 
 public class ColaListaEnlazada {
 
-	class Node {
-		Object elem;
-		Node Next;
-
-		public Node(Object o) {
-			elem = o;
-			Next = null;
-		}
-	}
-
-	Node first;
-	Node end;
-	int size;
+	private Nodo first;
+	private Nodo last;
+	private int size;
 
 	public ColaListaEnlazada() {
-		end = null;
+		last = null;
 		size = 0;
 	}
 
-	public void enqueue(Object o) {
-		Node new_node = new Node(o);
+	// Inserta un objeto en la cola
+	public void add(Object o) {
+		Nodo new_node = new Nodo(o);
 		if (first == null) {
 			first = new_node;
-			end = new_node;
+			last = new_node;
 		} else {
-			end.Next = new_node;
-			end = new_node;
+			last.Next = new_node;
+			last = new_node;
 		}
 		size++;
-	}; // inserts an object onto the queue
+	}
 
-	public Object dequeue() {
+	// Remueve un objeto de la cola
+	public Object remove() {
 		if (first == null)
 			return null;
-		;
+
 		Object o = first.elem;
 		first = first.Next;
 		size--;
 		return o;
-	} // gets the object from the queue
+	}
+
+	public Object get() {
+		if (first == null)
+			return null;
+		else
+			return first.elem;
+	}
 
 	public boolean isEmpty() {
 		return (size == 0);
@@ -54,12 +49,4 @@ public class ColaListaEnlazada {
 	public int size() {
 		return size;
 	}
-
-	public Object first() {
-		if (first == null)
-			return null;
-		else
-			return first.elem;
-	}
-
-} // class LinkedQueue
+}

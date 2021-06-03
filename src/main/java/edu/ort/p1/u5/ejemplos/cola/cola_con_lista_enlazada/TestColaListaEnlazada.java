@@ -5,12 +5,13 @@ import java.io.FileReader;
 
 public class TestColaListaEnlazada {
 
+	static FileReader f = null; // to read files
+	static BufferedReader reader = null; // reading buffer
+
 	public static void main(String args[]) {
 
-		FileReader f = null; // to read files
-		BufferedReader reader = null; // reading buffer
 		String line = null; // read lines
-		ColaListaEnlazada queue = new ColaListaEnlazada(); // initialization
+		ColaListaEnlazada cola = new ColaListaEnlazada(); // initialization
 
 		if (args.length < 1) {
 			System.err.println("Please invoke the program like this:");
@@ -21,8 +22,9 @@ public class TestColaListaEnlazada {
 		try {
 			f = new FileReader(args[0]);
 			reader = new BufferedReader(f);
-			while ((line = reader.readLine()) != null)
-				queue.enqueue(line);
+			while ((line = reader.readLine()) != null) {
+				cola.add(line);
+			}
 		} catch (Exception e) {
 			System.err.println("File not found " + args[0]);
 			return;
@@ -32,15 +34,16 @@ public class TestColaListaEnlazada {
 		try {
 			f = new FileReader(args[1]);
 			reader = new BufferedReader(f);
-			while ((line = reader.readLine()) != null)
-				queue.enqueue(line);
+			while ((line = reader.readLine()) != null) {
+				cola.add(line);
+			}
 		} catch (Exception e) {
 			System.err.println("File not found " + args[1]);
 			return;
 		}
 
 		// Gets the strings from the queue and prints them
-		while ((line = (String) queue.dequeue()) != null) {
+		while ((line = (String) cola.remove()) != null) {
 			System.out.println(line);
 		}
 	}

@@ -19,7 +19,8 @@ public class Empleado {
 		this.nombre = nombre;
 	}
 
-	public int cantDVDsRayados(PilaNodos<DVD> pilaDVDs) {
+	// Siempre trabajaremos con las interfaces, salvo cuando tengamos que instanciar
+	public int cantDVDsRayados(Pila<DVD> pilaDVDs) {
 
 		Pila<DVD> pilaAux = new PilaNodos<DVD>(); // upcasting
 
@@ -38,8 +39,9 @@ public class Empleado {
 		return cantRayados;
 	}
 
-	public double paginasPromedio(PilaNodos<Libro> pilaLibros) {
-		PilaNodos<Libro> pilaAux = new PilaNodos<Libro>();
+	// Siempre trabajaremos con las interfaces, salvo cuando tengamos que instanciar
+	public double paginasPromedio(Pila<Libro> pilaLibros) {
+		Pila<Libro> pilaAux = new PilaNodos<Libro>();
 		int cantLibros = 0;
 		int acuPaginas = 0;
 		double promedio = 0;
