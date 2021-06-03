@@ -4,7 +4,7 @@
   <class id="1" language="java" name="edu.ort.p1.u5.ejemplos.lista.lista_enlazada_simple_gen.Nodo" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/ejemplos/lista/lista_enlazada_simple_gen/Nodo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="283" y="519"/>    
+    <position height="-1" width="-1" x="439" y="396"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="edu.ort.p1.u5.ejemplos.lista.lista_enlazada_simple_gen.Empleado" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/ejemplos/lista/lista_enlazada_simple_gen/Empleado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="261" width="238" x="250" y="38"/>    
+    <position height="261" width="238" x="42" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -25,7 +25,7 @@
     name="edu.ort.p1.u5.ejemplos.lista.lista_enlazada_simple_gen.ListaEnlazadaSimpleGenerica" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/ejemplos/lista/lista_enlazada_simple_gen/ListaEnlazadaSimpleGenerica.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="238" x="628" y="318"/>    
+    <position height="225" width="238" x="320" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -33,17 +33,25 @@
     </display>  
   </class>  
   <association id="4">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="siguiente"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="5" name="head">        
+        <position height="0" width="0" x="10" y="0"/>      
+      </attribute>      
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="10" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="7">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="8" name="head"/>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="8" name="siguiente">        
+        <position height="0" width="0" x="10" y="0"/>      
+      </attribute>      
+      <multiplicity id="9" minimum="0" maximum="1">        
+        <position height="0" width="0" x="10" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
