@@ -3,6 +3,14 @@ package edu.ort.p1.u5.practico05.ej03_imprimir_documentos;
 import edu.ort.tp1.u5.tda.Cola;
 import edu.ort.tp1.u5.tda.nodos.ColaNodos;
 
+/**
+ * 
+ * Class description goes here.
+ *
+ * @version 1.82 18 Mar 1999
+ * @author Firstname Lastname
+ * 
+ */
 public class Impresora {
 	private boolean estaEncendida;
 	private int cantHojasDisp;
@@ -46,17 +54,18 @@ public class Impresora {
 	}
 
 	private void efectuarImpresion(double divisor) {
+		/*-
+		 * En la impresion doble faz, si el numero de carillas es impar,
+		 * se consume una hoja completa
+		 * Math.ceil(4) --> 4.0
+		 * Math.ceil(4.5) --> 5.0
+		 */
 		Documento doc;
 		while (!this.colaDocs.isEmpty()) {
 			doc = this.colaDocs.remove();
 			System.out.println("Impreso: " + doc);
 			this.cantHojasDisp -= (int) Math.ceil(doc.getCantCarillas() / divisor);
 		}
-		// En la impresi�n doble faz, si el n�mero de carillas es impar, se consume una
-		// hoja completa
-		// Math.ceil(4) --> 4.0
-		// Math.ceil(4.5) --> 5.0
-
 	}
 
 	private double divisorSegunFaz(boolean dobleFaz) {
@@ -82,5 +91,14 @@ public class Impresora {
 		}
 		return cantCarillas / divisor <= this.cantHojasDisp;
 	}
+
+	/*-
+	 * Here is a block comment with some very special formatting that I want
+	 * indent(1) to ignore.
+	 *
+	 * 	one
+	 * 		two
+	 * 			three
+	 */
 
 }
