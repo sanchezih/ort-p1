@@ -1,5 +1,6 @@
 package edu.ort.p1.u5.practico05.ej01_libros_dvds;
 
+import edu.ort.p1.common.PilaGenericaAL;
 import edu.ort.tp1.u5.tda.Pila;
 import edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
@@ -21,9 +22,8 @@ public class Empleado {
 
 	// Siempre trabajaremos con las interfaces, salvo cuando tengamos que instanciar
 	public int cantDVDsRayados(Pila<DVD> pilaDVDs) {
-
-		Pila<DVD> pilaAux = new PilaNodos<DVD>(); // upcasting
-
+		
+		Pila<DVD> pilaAux = new PilaGenericaAL<DVD>(); /* Hago upcasting y utilizo otra impl de pila */
 		int cantRayados = 0;
 
 		while (!pilaDVDs.isEmpty()) {
@@ -41,7 +41,8 @@ public class Empleado {
 
 	// Siempre trabajaremos con las interfaces, salvo cuando tengamos que instanciar
 	public double paginasPromedio(Pila<Libro> pilaLibros) {
-		Pila<Libro> pilaAux = new PilaNodos<Libro>();
+		
+		Pila<Libro> pilaAux = new PilaNodos<Libro>(); // upcasting
 		int cantLibros = 0;
 		int acuPaginas = 0;
 		double promedio = 0;
