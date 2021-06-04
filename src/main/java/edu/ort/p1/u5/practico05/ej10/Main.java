@@ -1,11 +1,7 @@
 package edu.ort.p1.u5.practico05.ej10;
 
+public class Main {
 
-
-
-
-public class Test {
-	
 	static MesaElectoral mesaElectoral;
 	static PadronElectoral padron;
 
@@ -18,13 +14,13 @@ public class Test {
 		registrarElector(4635281, "Einstein", "Alberto", 1005);
 
 		padron = mesaElectoral.generarPadron();
-		
+
 		consultarMesaDeElectorPorDNI(12345678);
 		consultarMesaDeElectorPorDNI(22222231);
 		consultarMesaDeElectorPorDNI(4635281);
 		consultarMesaDeElectorPorDNI(1245);
 	}
-	
+
 	private static void registrarElector(int dni, String apellido, String nombre, int mesa) {
 		System.out.println("Registrando elector en Mesa Electoral");
 		System.out.println("Apellido: " + apellido);
