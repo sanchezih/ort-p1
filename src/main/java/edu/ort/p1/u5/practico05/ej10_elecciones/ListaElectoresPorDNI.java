@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.practico05.ej10;
+package edu.ort.p1.u5.practico05.ej10_elecciones;
 
 import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
