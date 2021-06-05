@@ -4,13 +4,12 @@ public class Empleado {
 
 	private String nombre;
 	private int edad;
-	private String puesto;
 
-	public Empleado(String nombre, int edad, String puesto) {
+	public Empleado(String nombre, int edad) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
-		this.puesto = puesto;
+
 	}
 
 	public String getNombre() {
@@ -27,14 +26,6 @@ public class Empleado {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
-	}
-
-	public String getPuesto() {
-		return puesto;
-	}
-
-	public void setPuesto(String puesto) {
-		this.puesto = puesto;
 	}
 
 	@Override

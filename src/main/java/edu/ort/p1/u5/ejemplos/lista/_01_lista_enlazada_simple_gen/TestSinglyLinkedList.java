@@ -13,7 +13,15 @@ public class TestSinglyLinkedList {
 
 		listaDeEnteros.removeFirst();
 		System.out.println(listaDeEnteros);
+		
+		
+		
+		SinglyLinkedList<Empleado> listaDeEmpleados = new SinglyLinkedList<Empleado>();
 
+		listaDeEmpleados.addFirst(new Empleado("Florencia", 38));
+		listaDeEmpleados.addFirst(new Empleado("Juan", 40));
+		
+		
 	}
 
 }
