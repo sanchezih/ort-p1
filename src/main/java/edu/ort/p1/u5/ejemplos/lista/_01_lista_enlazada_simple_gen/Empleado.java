@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.ejemplos.lista.lista_enlazada_doble_gen;
+package edu.ort.p1.u5.ejemplos.lista._01_lista_enlazada_simple_gen;
 
 public class Empleado {
 
@@ -39,7 +39,7 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return "[" + nombre + "]";
+		return "Empleado [" + nombre + "]";
 	}
 
 }
