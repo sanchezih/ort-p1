@@ -30,7 +30,7 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return "[" + nombre + "]";
+		return nombre;
 	}
 
 }

@@ -116,4 +116,26 @@ public class DoublyLinkedList<E> {
 		size--;
 		return node.getElement();
 	}
-} // ----------- end of DoublyLinkedList class -----------
+
+	public void printNodes() {
+		if (size != 0) {
+			if (header.next != null) {
+				Node<E> ptr = header;
+				System.out.print(header.element + " <-> ");
+				ptr = header.next;
+				while (ptr.next != null) {
+					System.out.print(ptr.element + " <-> ");
+					ptr = ptr.next;
+				}
+				System.out.print(ptr.element + "\n");
+			} else {
+				System.out.println(header.element);
+			}
+		} else {
+			System.out.print("empty\n");
+		}
+
+	}
+
+}
+// ----------- end of DoublyLinkedList class -----------

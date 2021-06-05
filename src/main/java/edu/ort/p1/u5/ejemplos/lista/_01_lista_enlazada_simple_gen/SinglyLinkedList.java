@@ -83,4 +83,24 @@ public class SinglyLinkedList<E> {
 		return answer;
 	}
 
+	/**
+	 * Prints out the list in an array format
+	 */
+	@Override
+	public String toString() {
+		String resString = "[ ";
+		Node<E> X = head;
+
+		if (X == null) {
+			return resString + " ]";
+		}
+		while (X.next != null) {
+			resString += String.valueOf(X.element) + " -> ";
+			X = X.next;
+		}
+		resString += String.valueOf(X.element);
+
+		return resString + " ]";
+	}
+
 }
