@@ -1,7 +1,6 @@
 package edu.ort.p1.common;
 
 import java.util.ArrayList;
-
 import edu.ort.tp1.u5.tda.Pila;
 
 public class PilaGenericaAL<T> implements Pila<T> {
