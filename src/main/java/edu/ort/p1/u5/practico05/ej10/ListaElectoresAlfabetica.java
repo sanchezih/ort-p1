@@ -1,6 +1,5 @@
 package edu.ort.p1.u5.practico05.ej10;
 
-
 import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaElectoresAlfabetica extends ListaOrdenadaNodos<String, Elector> {

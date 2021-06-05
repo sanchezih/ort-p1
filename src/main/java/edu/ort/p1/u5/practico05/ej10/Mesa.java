@@ -1,13 +1,11 @@
 package edu.ort.p1.u5.practico05.ej10;
 
-
-
 public class Mesa {
 
 	private int numero;
 	private ListaElectoresAlfabetica electoresAlfa;
 	private ListaElectoresPorDNI electoresDni;
-	
+
 	public Mesa(int numero) {
 		setNumero(numero);
 		electoresAlfa = new ListaElectoresAlfabetica();
@@ -22,7 +20,7 @@ public class Mesa {
 		electoresDni.add(elector);
 		electoresAlfa.add(elector);
 	}
-	
+
 	public Integer getNumero() {
 		return numero;
 	}
@@ -31,11 +29,12 @@ public class Mesa {
 		int pos = electoresAlfa.size() - 1;
 		while (pos > -1 && electoresAlfa.get(pos).getDni() != dni)
 			pos--;
-		return pos+1;
+		return pos + 1;
 	}
 
 	private void setNumero(int numero) {
-		if (numero < 1) throw new RuntimeException("Numero de mesa ilegal");
+		if (numero < 1)
+			throw new RuntimeException("Numero de mesa ilegal");
 		this.numero = numero;
 	}
 

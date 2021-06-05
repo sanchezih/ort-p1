@@ -1,7 +1,5 @@
 package edu.ort.p1.u5.practico05.ej10;
 
-
-
 public class Elector {
 	private int dni;
 	private String apellido;

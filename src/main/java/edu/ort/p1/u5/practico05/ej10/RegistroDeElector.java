@@ -1,12 +1,9 @@
 package edu.ort.p1.u5.practico05.ej10;
 
-
-
 public class RegistroDeElector {
 	private int dni;
 	private int nroDeMesa;
 	private int nroDeOrden;
-
 
 	public RegistroDeElector(int dni, int nroDeMesa, int nroDeOrden) {
 		this.dni = dni;

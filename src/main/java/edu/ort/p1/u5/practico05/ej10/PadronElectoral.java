@@ -1,15 +1,13 @@
 package edu.ort.p1.u5.practico05.ej10;
 
-
-
 public class PadronElectoral {
 
 	private ListaDeMesas mesas;
-	
+
 	public PadronElectoral() {
 		mesas = new ListaDeMesas();
 	}
-	
+
 	public RegistroDeElector generarRegistroDeElector(int dni) {
 		int pos = 0;
 		RegistroDeElector registro = null;
