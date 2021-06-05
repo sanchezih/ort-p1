@@ -3,11 +3,13 @@ package edu.ort.p1.u5.ejemplos.lista_ordenada;
 public class Empleado {
 	private String nombre;
 	private int edad;
+	private Automovil automovil;
 
-	public Empleado(String nombre, int edad) {
+	public Empleado(String nombre, int edad, Automovil automovil) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
+		this.automovil = automovil;
 	}
 
 	public String getNombre() {
@@ -26,9 +28,17 @@ public class Empleado {
 		this.edad = edad;
 	}
 
+	public Automovil getAutomovil() {
+		return automovil;
+	}
+
+	public void setAutomovil(Automovil automovil) {
+		this.automovil = automovil;
+	}
+
 	@Override
 	public String toString() {
-		return "Empleado [nombre=" + nombre + ", edad=" + edad + "]";
+		return "Empleado [nombre=" + nombre + ", \tedad=" + edad + ", \tautomovil=" + automovil + "]";
 	}
 
 }
