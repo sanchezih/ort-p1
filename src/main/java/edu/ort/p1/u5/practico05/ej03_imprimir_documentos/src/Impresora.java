@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.practico05.ej03_imprimir_documentos;
+package edu.ort.p1.u5.practico05.ej03_imprimir_documentos.src;
 
 import edu.ort.tp1.u5.tda.Cola;
 import edu.ort.tp1.u5.tda.nodos.ColaNodos;

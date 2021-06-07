@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.practico05.ej03_imprimir_documentos;
+package edu.ort.p1.u5.practico05.ej03_imprimir_documentos.src;
 
 public class Main {
 
