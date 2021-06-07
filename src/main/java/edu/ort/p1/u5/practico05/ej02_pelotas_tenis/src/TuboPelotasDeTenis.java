@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.practico05.ej02_pelotas_tenis;
+package edu.ort.p1.u5.practico05.ej02_pelotas_tenis.src;
 
 import edu.ort.tp1.u5.tda.Pila;
 import edu.ort.tp1.u5.tda.nodos.PilaNodos;
