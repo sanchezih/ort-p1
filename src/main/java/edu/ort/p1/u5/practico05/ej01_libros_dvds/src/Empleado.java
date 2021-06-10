@@ -1,4 +1,4 @@
-package edu.ort.p1.u5.practico05.ej01_libros_dvds;
+package edu.ort.p1.u5.practico05.ej01_libros_dvds.src;
 
 import edu.ort.p1.common.PilaGenericaAL;
 import edu.ort.tp1.u5.tda.Pila;
