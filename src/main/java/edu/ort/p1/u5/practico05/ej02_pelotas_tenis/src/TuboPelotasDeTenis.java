@@ -5,14 +5,19 @@ import edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
 public class TuboPelotasDeTenis extends PilaNodos<PelotaDeTenis> {
 
-	public final int MAX_PELOTAS = 3;
+	public final static int MAX_PELOTAS = 3;
+
+	public TuboPelotasDeTenis() {
+		super(MAX_PELOTAS);
+	}
 
 	public boolean hayAlgunaPelotaUsada() {
 		boolean hayAlguna = false;
 		Pila<PelotaDeTenis> pilaAux;
 		pilaAux = new PilaNodos<PelotaDeTenis>();
+
 		while (!isEmpty() && !hayAlguna) {
-			PelotaDeTenis pelota = pilaAux.pop();
+			PelotaDeTenis pelota = this.pop();
 			pilaAux.push(pelota);
 			hayAlguna = pelota.getEstado() != Estado.NUEVA;
 		}
