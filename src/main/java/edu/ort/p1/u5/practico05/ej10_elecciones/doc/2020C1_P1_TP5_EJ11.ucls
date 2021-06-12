@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.Elector" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/Elector.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="161" x="314" y="943"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.ListaDeMesas" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/ListaDeMesas.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="183" x="262" y="436"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.Main" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/Main.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="113" x="466" y="37"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="4" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.Estado" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/Estado.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="116" x="175" y="37"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="5" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.MesaElectoral" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/MesaElectoral.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="215" x="83" y="182"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.RegistroDeElector" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/RegistroDeElector.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="159" x="602" y="780"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.ListaElectoresPorDNI" 
+    project="ort-p1" file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/ListaElectoresPorDNI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="190" x="83" y="780"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.ListaElectoresAlfabetica" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/ListaElectoresAlfabetica.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="186" x="313" y="780"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.Mesa" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/Mesa.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="258" x="262" y="563"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.ElectorConMesa" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/ElectorConMesa.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="199" x="314" y="1160"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.PadronElectoral" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/PadronElectoral.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="258" x="466" y="309"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="13">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="14" name="mesas"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="17" name="mesaElectoral"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="20">    
+    <bendpoint x="592" y="436"/>    
+    <bendpoint x="592" y="563"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="21">    
+    <bendpoint x="475" y="436"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="22">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="23" name="electoresAlfa"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="25">    
+    <bendpoint x="550" y="436"/>    
+    <bendpoint x="550" y="563"/>    
+    <bendpoint x="550" y="780"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="26">    
+    <bendpoint x="754" y="182"/>    
+    <bendpoint x="754" y="309"/>    
+    <bendpoint x="754" y="436"/>    
+    <bendpoint x="754" y="563"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="27">    
+    <bendpoint x="31" y="309"/>    
+    <bendpoint x="31" y="436"/>    
+    <bendpoint x="31" y="563"/>    
+    <bendpoint x="31" y="780"/>    
+    <bendpoint x="31" y="943"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <association id="29">    
+    <bendpoint x="92" y="309"/>    
+    <bendpoint x="92" y="436"/>    
+    <bendpoint x="92" y="563"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="30" name="electores"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="33">    
+    <bendpoint x="475" y="182"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="34" name="padron"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="36">    
+    <bendpoint x="52" y="309"/>    
+    <bendpoint x="52" y="436"/>    
+    <bendpoint x="52" y="563"/>    
+    <bendpoint x="52" y="780"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="37">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="38" name="electoresDni"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="40">    
+    <bendpoint x="529" y="780"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="41">    
+    <bendpoint x="571" y="436"/>    
+    <bendpoint x="571" y="563"/>    
+    <bendpoint x="571" y="780"/>    
+    <bendpoint x="571" y="943"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="42">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="43">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="false" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

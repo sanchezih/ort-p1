@@ -1,5 +1,7 @@
 package edu.ort.p1.u5.practico05.ej02_pelotas_tenis.src;
 
+import edu.ort.p1.u5.practico05.ej10_elecciones.src.Estado;
+
 public class PelotaDeTenis {
 
 	public final int USOS_HASTA_GASTADA = 7;

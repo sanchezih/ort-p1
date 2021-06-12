@@ -22,8 +22,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="3" language="java" name="edu.ort.p1.u5.practico05.ej02_pelotas_tenis.src.Estado" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej02_pelotas_tenis/src/Estado.java" binary="false" 
+  <enumeration id="3" language="java" name="edu.ort.p1.u5.practico05.ej10_elecciones.src.Estado" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej10_elecciones/src/Estado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="135" width="207" x="269" y="616"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
