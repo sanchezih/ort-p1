@@ -1,5 +1,7 @@
 package edu.ort.p1.u4.practico04.ej09_estacionamiento.src;
 
+import java.util.Date;
+
 public class Fecha {
 
 	private int dia;
@@ -25,8 +27,9 @@ public class Fecha {
 		return anio;
 	}
 
-	public Fecha hoy() {
-		return this; // revisar
+	public static Fecha hoy() {
+		Date date = new Date();
+		return new Fecha(date.getDay(), date.getMonth(), date.getYear());
 	}
 
 }
