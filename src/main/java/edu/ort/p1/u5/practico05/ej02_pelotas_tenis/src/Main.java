@@ -52,7 +52,7 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		/*
+		/**
 		 * Un tubo de pelotas se considerara usado cuando no este lleno o al menos una
 		 * de sus pelotas no sea nueva.
 		 */
