@@ -47,4 +47,9 @@ public class Ticket {
 		this.prioridad = prioridad;
 	}
 
+	@Override
+	public String toString() {
+		return "Ticket [ID=" + ID + "]";
+	}
+
 }

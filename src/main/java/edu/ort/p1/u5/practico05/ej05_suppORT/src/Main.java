@@ -12,7 +12,33 @@ public class Main {
 		soporte.agregarTicket(ticket01);
 		soporte.agregarTicket(ticket02);
 
+		/*----------------------------------------------------------------------------*/
+
+		/**
+		 * La explotación del método cantTicketsXSectorPrioridad, que retorne la
+		 * cantidad de tickets que hay por resolver (aún sin hacerlo) por cada sector y
+		 * discriminado por prioridad.
+		 */
+
+		soporte.dibujar(soporte.cantTicketsXSectorPrioridad());
+
+		/*----------------------------------------------------------------------------*/
+
+		/**
+		 * La explotación del método eliminarTicket, que reciba por parámetro un ID y
+		 * borre el ticket para que no sea procesado. Debe devolver el ticket borrado o
+		 * null si no existe.
+		 */
+		soporte.recorrerColaDeTickets();
+
 		soporte.eliminarTicket(1);
+		soporte.recorrerColaDeTickets();
+
+		soporte.eliminarTicket(2);
+		soporte.recorrerColaDeTickets();
+
+		soporte.dibujar(soporte.cantTicketsXSectorPrioridad());
+
 	}
 
 }
