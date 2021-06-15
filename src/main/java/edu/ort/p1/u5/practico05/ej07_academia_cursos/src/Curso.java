@@ -2,6 +2,7 @@ package edu.ort.p1.u5.practico05.ej07_academia_cursos.src;
 
 import java.util.ArrayList;
 
+import edu.ort.p1.u5.practico05.ej05_suppORT.src.Ticket;
 import edu.ort.p1.u5.practico05.ej07_academia_cursos.src.listasordenadas.ListaAlumnosPorEdad;
 
 public class Curso {
@@ -11,11 +12,11 @@ public class Curso {
 	private String titulo;
 	private int hsDuracion;
 	private NivelCurso nivel;
-	private ListaAlumnosPorEdad listaAlumnosPorEdad= new ListaAlumnosPorEdad();
-	
-	
+	private ListaAlumnosPorEdad listaAlumnosPorEdad = new ListaAlumnosPorEdad();
 
-	
+	public void agregarAlumno(Alumno a) {
+		this.listaAlumnosPorEdad.add(a);
+	}
 
 	public Curso(String codigo, String titulo, int hsDuracion, NivelCurso nivel) {
 		super();
@@ -62,7 +63,8 @@ public class Curso {
 		int idx = 0;
 
 		while (idx < this.listaAlumnosPorEdad.size() && idx < CINCO) {
-			alumnos.add(alumnos.get(idx));idx++;
+			alumnos.add(listaAlumnosPorEdad.get(idx));
+			idx++;
 		}
 		return alumnos;
 	}
@@ -71,6 +73,15 @@ public class Curso {
 	public String toString() {
 		return "Curso [codigo=" + codigo + ", titulo=" + titulo + ", hsDuracion=" + hsDuracion + ", nivel=" + nivel
 				+ "]";
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	public void mostrarTop5AlumnosMasLongevos() {
+		System.out.println("\nMuestro los 5 alumnos mas longevos del cusro " + this.getCodigo());
+		for (Alumno a : top5AlumnosMasLongevos()) {
+			System.out.println(a);
+		}
 	}
 
 }

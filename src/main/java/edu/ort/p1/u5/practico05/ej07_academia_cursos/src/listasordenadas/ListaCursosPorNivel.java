@@ -7,12 +7,12 @@ import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 public class ListaCursosPorNivel extends ListaOrdenadaNodos<NivelCurso, Curso> {
 
 	@Override
-	public int compare(Curso c1, Curso c2) {
-	return c1.getNivel().ordinal() - c2.getNivel().ordinal();
+	public int compare(Curso curso1, Curso curso2) {
+	return curso1.getNivel().ordinal() - curso2.getNivel().ordinal();
 	}
 
 	@Override
-	public int compareByKey(NivelCurso clave, Curso c) {
-		return clave.ordinal() - c.getNivel().ordinal();
+	public int compareByKey(NivelCurso nivel, Curso curso) {
+		return nivel.ordinal() - curso.getNivel().ordinal();
 	}
 }

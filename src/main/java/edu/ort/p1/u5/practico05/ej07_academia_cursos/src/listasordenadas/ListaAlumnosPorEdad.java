@@ -6,12 +6,12 @@ import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 public class ListaAlumnosPorEdad extends ListaOrdenadaNodos<Integer, Alumno> {
 
 	@Override
-	public int compare(Alumno dato1, Alumno dato2) {
-		return dato1.getEdad() - dato2.getEdad();
+	public int compare(Alumno a1, Alumno a2) {
+		return a2.getEdad() - a1.getEdad();
 	}
 
 	@Override
-	public int compareByKey(Integer clave, Alumno elemento) {
-		return clave - elemento.getEdad();
+	public int compareByKey(Integer clave, Alumno a) {
+		return clave - a.getEdad();
 	}
 }
