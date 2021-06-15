@@ -46,4 +46,10 @@ public class Factura {
 		this.tipo = tipo;
 	}
 
+	@Override
+	public String toString() {
+		return "Factura [codigoBarras=" + codigoBarras + ", nroMes=" + nroMes + ", monto=" + monto + ", tipo=" + tipo
+				+ "]";
+	}
+
 }
