@@ -2,7 +2,6 @@ package edu.ort.p1.u5.practico05.ej07_academia_cursos.src;
 
 import java.util.ArrayList;
 
-import edu.ort.p1.u5.practico05.ej05_suppORT.src.Ticket;
 import edu.ort.p1.u5.practico05.ej07_academia_cursos.src.listasordenadas.ListaAlumnosPorEdad;
 
 public class Curso {
@@ -88,6 +87,8 @@ public class Curso {
 	}
 
 	/*----------------------------------------------------------------------------*/
+	
+	/* Metodos extra */
 
 	public void mostrarTop5AlumnosMasLongevos() {
 		System.out.println("\nMuestro los 5 alumnos mas longevos del cusro " + this.getCodigo());

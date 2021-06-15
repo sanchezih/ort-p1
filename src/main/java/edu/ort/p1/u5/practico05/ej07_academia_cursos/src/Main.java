@@ -16,9 +16,9 @@ public class Main {
 		Alumno alumno10 = new Alumno("12345678", "Natalia", 23);
 		Alumno alumno11 = new Alumno("12345678", "Maximiliano", 20);
 
-		Curso curso01 = new Curso("c001", "P1", 4, NivelCurso.BASICO);
-		Curso curso02 = new Curso("c002", "P2", 4, NivelCurso.AVANZADO);
-		Curso curso03 = new Curso("c003", "P3", 4, NivelCurso.INTERMEDIO);
+		Curso curso01 = new Curso("c001", "Programacion 1", 4, NivelCurso.BASICO);
+		Curso curso02 = new Curso("c002", "Programacion 3", 4, NivelCurso.AVANZADO);
+		Curso curso03 = new Curso("c003", "Programacion 2", 4, NivelCurso.INTERMEDIO);
 
 		curso01.agregarAlumno(alumno01);
 		curso01.agregarAlumno(alumno02);
