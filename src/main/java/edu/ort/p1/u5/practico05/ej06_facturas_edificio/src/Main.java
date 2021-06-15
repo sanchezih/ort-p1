@@ -9,13 +9,20 @@ public class Main {
 
 		Pila<Factura> pilaDeFacturas = new PilaNodos<Factura>();
 
-		pilaDeFacturas.push(new Factura("1", 3, 140, TipoFactura.INTERNET));
-		pilaDeFacturas.push(new Factura("2", 4, 140, TipoFactura.INTERNET));
-		pilaDeFacturas.push(new Factura("3", 1, 140, TipoFactura.ABL));
+		pilaDeFacturas.push(new Factura("6", 5, 5500, TipoFactura.LUZ));
+
+		pilaDeFacturas.push(new Factura("6", 2, 600, TipoFactura.INTERNET));
+		pilaDeFacturas.push(new Factura("2", 4, 700, TipoFactura.INTERNET));
+		pilaDeFacturas.push(new Factura("5", 12, 140, TipoFactura.INTERNET));
 		pilaDeFacturas.push(new Factura("4", 1, 140, TipoFactura.LUZ));
-		pilaDeFacturas.push(new Factura("5", 1, 140, TipoFactura.INTERNET));
-		pilaDeFacturas.push(new Factura("6", 2, 140, TipoFactura.INTERNET));
+		pilaDeFacturas.push(new Factura("3", 1, 140, TipoFactura.ABL));
+
+		pilaDeFacturas.push(new Factura("6", 2, 140, TipoFactura.GAS));
+		pilaDeFacturas.push(new Factura("7", 1, 140, TipoFactura.INTERNET));
+
 		pilaDeFacturas.push(new Factura("7", 2, 140, TipoFactura.ABL));
+		pilaDeFacturas.push(new Factura("1", 3, 140, TipoFactura.INTERNET));
+		pilaDeFacturas.push(new Factura("12", 8, 140, TipoFactura.ABL));
 
 		/*----------------------------------------------------------------------------*/
 
@@ -27,16 +34,19 @@ public class Main {
 		 */
 
 		Edificio edificio = new Edificio();
-
 		edificio.catalogar(pilaDeFacturas);
 
 		/*----------------------------------------------------------------------------*/
 
 		/**
-		 * La explotación del método montoAAbonarPorTipo, que retorne el monto a abonar
+		 * La explotacion del método montoAAbonarPorTipo, que retorne el monto a abonar
 		 * actualmente por cada tipo de servicio.
 		 */
 
+		System.out.println("\n\n--Monto a abonar por cada servicio--");
+		double[] array = edificio.montoAAbonarPorTipo();
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(TipoFactura.values()[i] + " " + array[i]);
+		}
 	}
-
 }

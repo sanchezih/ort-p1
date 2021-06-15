@@ -24,12 +24,14 @@ public class Edificio {
 
 		while (!facturasApiladas.isEmpty()) {
 			facturaActual = facturasApiladas.pop();
-			System.out.println(facturaActual);
-
 			posCola = facturaActual.getTipo().ordinal();
+			System.out.println("Saco de la pila " + facturaActual + " y la pondre en la cola  -> "
+					+ TipoFactura.values()[posCola]);
+
 			colocarFacturaEnCola(this.colasDeFacturas[posCola], facturaActual);
 		}
-		//mostrar(); // Metodo agregado
+		System.out.println();
+		mostrar(); // Metodo agregado
 	}
 
 	private void colocarFacturaEnCola(Cola<Factura> colaFacts, Factura fact) {
@@ -46,9 +48,9 @@ public class Edificio {
 			if (factActual.getNroMes() > fact.getNroMes() && !entro) {
 				colaFacts.add(fact);
 				entro = true;
-				colaFacts.add(factActual);
-				factActual = colaFacts.remove();
 			}
+			colaFacts.add(factActual);
+			factActual = colaFacts.remove();
 		}
 
 		/* Si ninguna factura en la cola es mayor o la cola estaba vacia... */
@@ -63,7 +65,7 @@ public class Edificio {
 	public double[] montoAAbonarPorTipo() {
 		double[] montosPorTipo;
 		montosPorTipo = new double[TipoFactura.values().length];
-		for (int i = 0; i < CANT_COLAS; i++) {
+		for (int i = 0; i <= CANT_COLAS - 1; i++) {
 			montosPorTipo[i] = montoFacturasPorTipo(i);
 		}
 		return montosPorTipo;
@@ -91,11 +93,18 @@ public class Edificio {
 	/*----------------------------------------------------------------------------*/
 
 	private void mostrar() {
-		Factura f = null;
 		for (int i = 0; i < CANT_COLAS; i++) {
-			while (!this.colasDeFacturas[i].isEmpty()) {
-				f = this.colasDeFacturas[i].remove();
-				System.out.println(f);
+			System.out.println("Muestro las facturas de la cola " + TipoFactura.values()[i]);
+			Factura factCentinela;
+			Factura factActual;
+			factCentinela = new Factura(null, 0, 0, null); // Valores invalidos
+			this.colasDeFacturas[i].add(factCentinela);
+			factActual = this.colasDeFacturas[i].remove();
+
+			while (factActual != factCentinela) {
+				System.out.println("\t" + factActual);
+				this.colasDeFacturas[i].add(factActual);
+				factActual = this.colasDeFacturas[i].remove();
 			}
 		}
 	}
