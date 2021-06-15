@@ -9,7 +9,7 @@ public class Main {
 		Alumno alumno04 = new Alumno("12345678", "Ulises", 33);
 		Alumno alumno05 = new Alumno("12345678", "Facundo", 34);
 		Alumno alumno06 = new Alumno("12345678", "Daniel", 35);
-		
+
 		Alumno alumno07 = new Alumno("12345678", "Fernanda", 36);
 		Alumno alumno08 = new Alumno("12345678", "Betina", 27);
 		Alumno alumno09 = new Alumno("12345678", "Ignacio", 22);
@@ -32,7 +32,7 @@ public class Main {
 		academia.agregarCurso(curso03);
 		academia.agregarCurso(curso01);
 		academia.agregarCurso(curso02);
-		
+
 		/*----------------------------------------------------------------------------*/
 
 		/**
@@ -59,8 +59,6 @@ public class Main {
 		 * devolver los que haya). Asumir que no hay edades repetidas.
 		 */
 		curso01.mostrarTop5AlumnosMasLongevos();
-		
-
 	}
 
 }

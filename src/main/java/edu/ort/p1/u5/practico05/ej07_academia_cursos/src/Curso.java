@@ -69,6 +69,18 @@ public class Curso {
 		return alumnos;
 	}
 
+	public double calcularPromedio() {
+		double acum = 0;
+
+		for (Alumno a : listaAlumnosPorEdad) {
+			acum += a.getEdad();
+		}
+		if (listaAlumnosPorEdad.size() > 0) {
+			acum = acum / listaAlumnosPorEdad.size();
+		}
+		return acum;
+	}
+
 	@Override
 	public String toString() {
 		return "Curso [codigo=" + codigo + ", titulo=" + titulo + ", hsDuracion=" + hsDuracion + ", nivel=" + nivel

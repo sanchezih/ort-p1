@@ -14,17 +14,16 @@ public class Academia {
 	}
 
 	public Estadistica obtenerEstadistica(String codigo) {
-		Estadistica estadistica = null;
+		Estadistica e = null;
+		double promedio = 0;
+		Curso curso = cursosPorCodigo.search(codigo);
 
-		if (cursosPorCodigo.exists(codigo)) {
+		if (curso != null) {
 			System.out.println("El curso fue encontrado...");
-
-			// estadistica=new Estadistica(curso.getTitulo(),
-			// curso.obtenerPromedioEdadAlumnos()
-
+			promedio = curso.calcularPromedio();
+			e = new Estadistica(curso.getTitulo(), promedio);
 		}
-
-		return estadistica;
+		return e;
 	}
 
 	public ListaCursosPorNivel listadoDeCursosPorNivel() {
