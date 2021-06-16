@@ -10,8 +10,7 @@ public class Medico extends Persona {
 	}
 
 	public int getprioridad() {
-
-		return 0;
+		return super.PRIORIDAD_MAXIMA;
 	}
 
 	private String getMatricula() {

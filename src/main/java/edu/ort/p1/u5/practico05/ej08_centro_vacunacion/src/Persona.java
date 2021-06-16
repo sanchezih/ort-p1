@@ -2,8 +2,12 @@ package edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src;
 
 public class Persona implements Vacunable {
 
-	private static final int EDAD_MAX = 60;
 	private static final int EDAD_MINIMA = 30;
+	private static final int EDAD_MAXIMA = 60;
+
+	protected static final int PRIORIDAD_MINIMA = 2;
+	protected static final int PRIORIDAD_MEDIA = 1;
+	protected static final int PRIORIDAD_MAXIMA = 0;
 
 	private String dni;
 	private String nombre;
@@ -19,13 +23,13 @@ public class Persona implements Vacunable {
 
 	@Override
 	public int getprioridad() {
-		int resu = 1;
-		if (this.pacRiesgo || this.edad > EDAD_MAX) {
-			resu = 0;
+		int prioridad = PRIORIDAD_MEDIA;
+		if (this.pacRiesgo || this.edad > EDAD_MAXIMA) {
+			prioridad = PRIORIDAD_MAXIMA;
 		} else if (this.edad <= EDAD_MINIMA) {
-			resu = 2;
+			prioridad = PRIORIDAD_MINIMA;
 		}
-		return resu;
+		return prioridad;
 	}
 
 	public String getDni() {
@@ -62,8 +66,8 @@ public class Persona implements Vacunable {
 
 	@Override
 	public String toString() {
-		return "Prioridad: " + getprioridad() + " Persona [dni=" + dni + ", nombre=" + nombre + ", edad=" + edad
-				+ ", pacRiesgo=" + pacRiesgo + "]";
+		return "Prioridad: " + getprioridad() + " Persona [DNI=" + dni + ", Nombre=" + nombre + ",\tedad=" + edad
+				+ ", pacRiesgo=" + pacRiesgo + "]\t";
 	}
 
 }
