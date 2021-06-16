@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/ColaDePersonas.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="231" x="380" y="495"/>    
+    <position height="-1" width="-1" x="1077" y="532"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -15,7 +15,7 @@
   <class id="2" language="java" name="edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Educador" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Educador.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="270" x="312" y="1097"/>    
+    <position height="-1" width="-1" x="849" y="1003"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -26,7 +26,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/ListaPersonasXPrioridadOrden.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="278" x="41" y="284"/>    
+    <position height="-1" width="-1" x="385" y="86"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -37,7 +37,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/OrdenYPrioridad.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="189" width="231" x="41" y="688"/>    
+    <position height="-1" width="-1" x="384" y="646"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -47,7 +47,7 @@
   <interface id="5" language="java" name="edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Vacunable" 
     project="ort-p1" file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Vacunable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="231" x="622" y="1097"/>    
+    <position height="-1" width="-1" x="1094" y="697"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -58,7 +58,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/NivelEducacion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="231" x="312" y="1308"/>    
+    <position height="-1" width="-1" x="1202" y="1002"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -68,7 +68,7 @@
   <class id="7" language="java" name="edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Medico" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Medico.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="231" x="41" y="1097"/>    
+    <position height="-1" width="-1" x="580" y="1030"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -78,7 +78,7 @@
   <class id="8" language="java" name="edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Persona" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Persona.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="369" width="231" x="380" y="688"/>    
+    <position height="-1" width="-1" x="745" y="696"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -89,7 +89,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/CentroVacunacion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="367" x="424" y="37"/>    
+    <position height="-1" width="-1" x="743" y="294"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -99,119 +99,101 @@
   <class id="10" language="java" name="edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.PersonaEnCola" 
     project="ort-p1" file="/ort-p1/src/main/java/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/PersonaEnCola.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="231" x="109" y="495"/>    
+    <position height="-1" width="-1" x="383" y="293"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="edu.ort.tp1.u5.tda.nodos.ColaNodos" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/tp1/u5/tda/nodos/ColaNodos.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="112" x="380" y="284"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
   <association id="12">    
-    <bendpoint x="522" y="284"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="13" name="pacientes">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="14" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="16">    
-    <bendpoint x="641" y="284"/>    
-    <bendpoint x="641" y="495"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <association id="17">    
     <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="18" name="OrdPri">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <attribute id="13" name="OrdPri">        
+        <position height="0" width="0" x="228" y="-136"/>      
       </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="0" width="0" x="228" y="-136"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="20">    
+  <generalization id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <dependency id="16">    
     <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="11"/>  
+    <end type="TARGET" refId="10"/>  
   </dependency>  
-  <association id="21">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="22" name="laPersona">        
-        <position height="0" width="0" x="0" y="0"/>      
+  <association id="17">    
+    <bendpoint x="1078" y="295"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="18" name="pacientes">        
+        <position height="0" width="0" x="582" y="-3"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="19" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="582" y="-3"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="20">    
+    <bendpoint x="744" y="86"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="22">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="23" name="laPersona">        
+        <position height="0" width="0" x="250" y="-176"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1">        
+        <position height="0" width="0" x="250" y="-176"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="24">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <dependency id="25">    
-    <bendpoint x="349" y="284"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <dependency id="26">    
-    <bendpoint x="50" y="495"/>    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="27">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <realization id="28">    
+  <realization id="25">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="5"/>  
   </realization>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <dependency id="27">    
+    <bendpoint x="191" y="88"/>    
+    <bendpoint x="192" y="646"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
   <association id="29">    
     <end type="SOURCE" refId="2" navigable="false">      
       <attribute id="30" name="nivelDelProfe">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="775" y="-373"/>      
       </attribute>      
       <multiplicity id="31" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="775" y="-373"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="32">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="11"/>  
-  </generalization>  
-  <generalization id="33">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <dependency id="34">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
