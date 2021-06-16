@@ -29,24 +29,29 @@ public class Main {
 
 		e1.setAutos(autos);
 
-		// System.out.println("Retire el auto: " + e1.retirar(11));
-		// System.out.println("Retire el auto: " + e1.retirar(12));
+		/*----------------------------------------------------------------------------*/
 
 		/**
-		 * El cliente nos pide expresamente que se pueda saber lo mas eficientemente
-		 * posible si un automovil cumplio con todos los pagos necesarios, dándonos como
-		 * dato clave que, en general, los mayores casos de morosidad se dan por no
-		 * tener abonado el mes corriente.
-		 * 
-		 * C) La explotación del método autosMasMorososPorPiso que devuelva (no muestre
-		 * por consola) de cada piso, el auto con mayor cantidad de pagos no efectuados
-		 * durante este año (se supone único por piso).
+		 * La explotacion del metodo retirar, que permita resolver lo enunciado. Retorna
+		 * el auto indicado o null, segun corresponda.
 		 */
 
-		Auto[] autosMasMorososPorPiso = e1.autosMasMorososPorPiso();
-		for (int i = 0; i < autosMasMorososPorPiso.length; i++) {
-			autosMasMorososPorPiso[i].toString();
-		}
+		System.out.println("Retiro el auto: " + e1.retirar(04));
+		System.out.println("Retiro el auto: " + e1.retirar(01));
+
+		/*----------------------------------------------------------------------------*/
+
+		/**
+		 * La explotacion del metodo autosMasMorososPorPiso que devuelva (no muestre por
+		 * consola) de cada piso, el auto con mayor cantidad de pagos no efectuados
+		 * durante este anio (se supone unico por piso).
+		 */
+
+		// TODO: Terminar
+//		Auto[] autosMasMorososPorPiso = e1.autosMasMorososPorPiso();
+//		for (int i = 0; i < autosMasMorososPorPiso.length; i++) {
+//			autosMasMorososPorPiso[i].toString();
+//		}
 
 	}
 

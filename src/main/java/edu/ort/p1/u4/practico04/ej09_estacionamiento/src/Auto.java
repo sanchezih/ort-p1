@@ -41,11 +41,10 @@ public class Auto {
 		this.fechaIngreso = fechaIngreso;
 	}
 
-	public int getMesesImpagos() { // revisar
+	public int getMesesImpagos() {
 		int cont = 0;
-		int mesActual = new Date().getMonth();
 
-		for (int i = mesActual; i >= 0; i--) {
+		for (int i = Fecha.hoy().getMes(); i >= 0; i--) {
 			if (pagos[i] != null) {
 				cont++;
 			}

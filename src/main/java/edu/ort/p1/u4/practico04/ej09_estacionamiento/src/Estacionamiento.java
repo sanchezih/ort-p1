@@ -52,9 +52,9 @@ public class Estacionamiento {
 		int mesInicio;
 		boolean condiAprobada = true;
 		mesInicio = calcularMesInicio(auto.getFechaIngreso());
-		int mesActual = new Date().getMonth();
+		int mesActual = Fecha.hoy().getMes();
 
-		while (mesActual >= mesInicio && auto.getPagos()[mesActual].getMonto() > 0) { // IHS
+		while (mesActual >= mesInicio && auto.getPagos()[mesActual].getMonto() > 0) {
 			mesActual--;
 		}
 
@@ -64,10 +64,9 @@ public class Estacionamiento {
 		return condiAprobada;
 	}
 
-	private int calcularMesInicio(Fecha fecha) { // IHS
+	private int calcularMesInicio(Fecha fecha) {
 		int mesInicio = 0;
-		int year = new Date().getYear();
-		if (fecha.getAnio() == year) {
+		if (fecha.getAnio() == Fecha.hoy().getAnio()) {
 			mesInicio = fecha.getMes();
 		}
 		return mesInicio;
@@ -79,8 +78,9 @@ public class Estacionamiento {
 		Auto autoMoroso;
 
 		for (int f = 0; f < CANT_PISOS; f++) {
+			System.out.println("Entro a ver los autos del piso "+f);
 			autoMoroso = autoMasMorosoPorPiso(autos[f]);
-			autosMasMorosos[f] = autoMoroso;
+			//autosMasMorosos[f] = autoMoroso;
 		}
 		return autosMasMorosos;
 	}
