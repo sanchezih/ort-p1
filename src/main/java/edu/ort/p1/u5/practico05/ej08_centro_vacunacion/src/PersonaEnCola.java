@@ -2,28 +2,28 @@ package edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src;
 
 public class PersonaEnCola {
 
-	private Persona laPersona;
-	private OrdenYPrioridad OrdPri;
+	private Persona persona;
+	private OrdenYPrioridad ordenPrioridad;
 
-	public PersonaEnCola(Persona p, int orden, int pri) {
-		setLaPersona(p);
-		setOrdPri(orden, pri);
+	public PersonaEnCola(Persona persona, int orden, int pri) {
+		setPersona(persona);
+		setOrdenPrioridad(orden, pri);
 	}
 
-	public Persona getLaPersona() {
-		return laPersona;
+	public Persona getPersona() {
+		return persona;
 	}
 
-	private void setLaPersona(Persona laPersona) {
-		this.laPersona = laPersona;
+	private void setPersona(Persona persona) {
+		this.persona = persona;
 	}
 
-	public OrdenYPrioridad getOrdPri() {
-		return OrdPri;
+	public OrdenYPrioridad getOrdenPrioridad() {
+		return ordenPrioridad;
 	}
 
-	private void setOrdPri(int orden, int pri) {
-		OrdPri = new OrdenYPrioridad(orden, pri);
+	private void setOrdenPrioridad(int orden, int pri) {
+		ordenPrioridad = new OrdenYPrioridad(orden, pri);
 	}
 
 }

@@ -28,7 +28,7 @@ public class CentroVacunacion {
 
 	private void pasarListaAcola(ListaPersonasXPrioridadOrden lista, ColaDePersonas cola) {
 		for (PersonaEnCola personaEnCola : lista) {
-			cola.add(personaEnCola.getLaPersona());
+			cola.add(personaEnCola.getPersona());
 		}
 	}
 

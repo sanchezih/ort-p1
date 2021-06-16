@@ -7,9 +7,9 @@ public class ListaPersonasXPrioridadOrden extends ListaOrdenadaNodos<OrdenYPrior
 	@Override
 	public int compare(PersonaEnCola dato1, PersonaEnCola dato2) {
 		int dif;
-		dif = dato1.getOrdPri().getPrioridad() - dato2.getOrdPri().getPrioridad();
+		dif = dato1.getOrdenPrioridad().getPrioridad() - dato2.getOrdenPrioridad().getPrioridad();
 		if (dif == 0) {
-			dif = dato1.getOrdPri().getOrden() - dato2.getOrdPri().getOrden();
+			dif = dato1.getOrdenPrioridad().getOrden() - dato2.getOrdenPrioridad().getOrden();
 		}
 		return dif;
 	}
