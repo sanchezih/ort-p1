@@ -15,6 +15,7 @@ public class Main {
 
 		OrdenPuertaAPuerta orden1 = new OrdenPuertaAPuerta(1001, "2021-06-10", 150, vendedor1, comprador1, true);
 		OrdenPuertaAPuerta orden2 = new OrdenPuertaAPuerta(1002, "2021-06-10", 260, vendedor1, comprador1, false);
+		
 		OrdenPuertaAPuerta orden3 = new OrdenPuertaAPuerta(1003, "2021-06-10", 740, vendedor1, comprador2, true);
 
 		/*----------------------------------------------------------------------------*/
@@ -35,26 +36,17 @@ public class Main {
 		 * comunas hacia las demas, incluyendo la misma (los envios dentro de la misma
 		 * comuna son muy frecuentes).
 		 */
-		dibujarMatrizDeEnvios(todoLibre.cantEnviosEntreComunas());
+		
+		todoLibre.dibujarMatrizDeEnvios();
 
 		/**
 		 * Ejercicio C: El metodo ordenesPuertaPuertaGratisPorMonto() que debe devolver
 		 * (no mostrar por consola) todas las ordenes Puerta a Puerta con envio gratis
 		 * ordenadas por monto de forma descendente.
 		 */
+		
 		todoLibre.mostrarOrdenesRetiroSucursalSabadosPorMonto();
 
-	}
-
-	public static void dibujarMatrizDeEnvios(int[][] matLetras) {
-		System.out.println("*** MATRIZ DE ENVIOS ***");
-		for (int i = 0; i < matLetras.length; i++) {
-			for (int j = 0; j < matLetras[i].length; j++) {
-				System.out.print(matLetras[i][j] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println();
 	}
 
 }

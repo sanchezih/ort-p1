@@ -4,7 +4,7 @@
   <class id="1" language="java" name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.ItemOrden" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/ItemOrden.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="177" x="486" y="1085"/>    
+    <position height="135" width="231" x="597" y="1085"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <interface id="2" language="java" name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.Priorizable" 
     project="ort-p1" file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/Priorizable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="279" y="1122"/>    
+    <position height="81" width="231" x="557" y="1561"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.Producto" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/Producto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="261" width="181" x="486" y="1260"/>    
+    <position height="261" width="231" x="597" y="1260"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.Orden" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/Orden.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="329" width="228" x="467" y="462"/>    
+    <position height="329" width="228" x="578" y="462"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -45,7 +45,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/OrdenPuertaPuerta.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="362" x="507" y="831"/>    
+    <position height="153" width="362" x="1079" y="831"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -56,7 +56,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/OrdenRetiroSucursal.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="214" width="421" x="909" y="831"/>    
+    <position height="214" width="421" x="618" y="831"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   <class id="7" language="java" name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.ColaOrdenes" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/ColaOrdenes.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="177" x="41" y="305"/>    
+    <position height="81" width="231" x="44" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -76,7 +76,7 @@
   <class id="8" language="java" name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.TodoLibre" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/TodoLibre.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="228" width="315" x="809" y="37"/>    
+    <position height="228" width="315" x="974" y="37"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -87,7 +87,7 @@
     name="edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.listasordenadas.ListaOrdenesPorMonto" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/listasordenadas/ListaOrdenesPorMonto.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="245" x="543" y="305"/>    
+    <position height="117" width="299" x="315" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -99,7 +99,7 @@
     
     file="/ort-p1/src/main/java/edu/ort/p1/extra/exa/_2021c1/_2p/tema2/resuelto/src/listasordenadas/ListaOrdenesPorPrioridad.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="245" x="258" y="305"/>    
+    <position height="117" width="299" x="654" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -107,104 +107,106 @@
     </display>  
   </class>  
   <dependency id="11">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <realization id="12">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="13">    
-    <bendpoint x="818" y="305"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="14">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <association id="16">    
-    <bendpoint x="394" y="992"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="17" name="items">        
-        <position height="0" width="0" x="724" y="-221"/>      
-      </attribute>      
-      <multiplicity id="18" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="724" y="-221"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="19">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="20" name="producto">        
-        <position height="0" width="0" x="1038" y="-1037"/>      
-      </attribute>      
-      <multiplicity id="21" minimum="0" maximum="1">        
-        <position height="0" width="0" x="1038" y="-1037"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="22">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <dependency id="23">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="24">    
-    <bendpoint x="298" y="865"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <generalization id="25">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="27">    
-    <bendpoint x="839" y="305"/>    
-    <bendpoint x="839" y="462"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="29">    
-    <bendpoint x="868" y="305"/>    
-    <bendpoint x="868" y="462"/>    
+    <bendpoint x="1004" y="305"/>    
+    <bendpoint x="1004" y="462"/>    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <association id="30">    
+  <dependency id="12">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <dependency id="14">    
+    <bendpoint x="566" y="831"/>    
+    <bendpoint x="566" y="1085"/>    
+    <bendpoint x="566" y="1260"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="16">    
     <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="31" name="colaOrdenes">        
+      <attribute id="17" name="colaOrdenes">        
         <position height="0" width="0" x="779" y="430"/>      
       </attribute>      
-      <multiplicity id="32" minimum="0" maximum="1">        
+      <multiplicity id="18" minimum="0" maximum="1">        
         <position height="0" width="0" x="779" y="430"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="33">    
+  <dependency id="19">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="21">    
+    <bendpoint x="587" y="831"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="22" name="items">        
+        <position height="0" width="0" x="724" y="-221"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="724" y="-221"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="24">    
+    <bendpoint x="1035" y="305"/>    
+    <bendpoint x="1035" y="462"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="25">    
     <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
+  <realization id="27">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="29">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="30" name="producto">        
+        <position height="0" width="0" x="1038" y="-1037"/>      
+      </attribute>      
+      <multiplicity id="31" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1038" y="-1037"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="32">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="33">    
+    <bendpoint x="983" y="305"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

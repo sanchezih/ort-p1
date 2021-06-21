@@ -76,6 +76,20 @@ public class TodoLibre {
 		this.colaOrdenes.add(o);
 	}
 
+	public void dibujarMatrizDeEnvios() {
+		System.out.println("Ejercicio B\nMuestro la matriz de envios");
+
+		int[][] matLetras = cantEnviosEntreComunas();
+
+		for (int i = 0; i < matLetras.length; i++) {
+			for (int j = 0; j < matLetras[i].length; j++) {
+				System.out.print(matLetras[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+
 	public void mostrarColaDeOrdenes() {
 		System.out.println("\nMuestro como esta la cola de ordenes en este momento...");
 		colaOrdenes.add(null);
@@ -89,7 +103,7 @@ public class TodoLibre {
 	}
 
 	public void mostrarOrdenesRetiroSucursalSabadosPorMonto() {
-		System.out.println("\nEjercicio C\nMuestro ordenesPuertaPuertaPorMonto");
+		System.out.println("\nEjercicio C\nMuestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
 		for (Orden o : ordenesPuertaPuertaPorMonto()) {
 			System.out.println(o.toString());
 		}

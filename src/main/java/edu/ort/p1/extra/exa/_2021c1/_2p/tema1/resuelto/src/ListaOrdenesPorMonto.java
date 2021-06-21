@@ -6,12 +6,12 @@ public class ListaOrdenesPorMonto extends ListaOrdenadaNodos<Double, Orden> {
 
 	@Override
 	public int compare(Orden o1, Orden o2) {
-		return (int) (o1.getMonto() - o2.getMonto());
+		return (int) (o2.getMonto() - o1.getMonto());
 	}
 
 	@Override
 	public int compareByKey(Double monto, Orden o) {
-		return (int) (monto - o.getMonto());
+		return (int) (o.getMonto() - monto);
 	}
 
 }
