@@ -5,9 +5,9 @@ public class PersonaEnCola {
 	private Persona persona;
 	private OrdenYPrioridad ordenPrioridad;
 
-	public PersonaEnCola(Persona persona, int orden, int pri) {
+	public PersonaEnCola(Persona persona, int orden, int prioridad) {
 		setPersona(persona);
-		setOrdenPrioridad(orden, pri);
+		setOrdenPrioridad(orden, prioridad);
 	}
 
 	public Persona getPersona() {
@@ -22,8 +22,8 @@ public class PersonaEnCola {
 		return ordenPrioridad;
 	}
 
-	private void setOrdenPrioridad(int orden, int pri) {
-		ordenPrioridad = new OrdenYPrioridad(orden, pri);
+	private void setOrdenPrioridad(int orden, int prioridad) {
+		ordenPrioridad = new OrdenYPrioridad(orden, prioridad);
 	}
 
 }

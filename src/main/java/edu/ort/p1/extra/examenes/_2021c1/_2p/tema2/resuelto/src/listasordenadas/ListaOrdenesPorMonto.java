@@ -1,6 +1,6 @@
-package edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.listasordenadas;
+package edu.ort.p1.extra.examenes._2021c1._2p.tema2.resuelto.src.listasordenadas;
 
-import edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.Orden;
+import edu.ort.p1.extra.examenes._2021c1._2p.tema2.resuelto.src.Orden;
 import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaOrdenesPorMonto extends ListaOrdenadaNodos<Double, Orden> {

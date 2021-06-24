@@ -1,4 +1,4 @@
-package edu.ort.p1.extra.exa._2021c1._2p.tema1.resuelto.src;
+package edu.ort.p1.extra.examenes._2021c1._2p.tema1.resuelto.src;
 
 public class Main {
 
@@ -15,7 +15,7 @@ public class Main {
 
 		OrdenPuertaAPuerta orden1 = new OrdenPuertaAPuerta(1001, "2021-06-10", 150, vendedor1, comprador1, true);
 		OrdenPuertaAPuerta orden2 = new OrdenPuertaAPuerta(1002, "2021-06-10", 260, vendedor1, comprador1, false);
-		
+
 		OrdenPuertaAPuerta orden3 = new OrdenPuertaAPuerta(1003, "2021-06-10", 740, vendedor1, comprador2, true);
 
 		/*----------------------------------------------------------------------------*/
@@ -26,7 +26,7 @@ public class Main {
 		todoLibre.agregarOrden(orden2);
 		todoLibre.agregarOrden(orden3);
 
-		// todoLibre.mostrarColaDeOrdenes();
+		todoLibre.mostrarColaDeOrdenes();
 
 		/*----------------------------------------------------------------------------*/
 
@@ -36,7 +36,7 @@ public class Main {
 		 * comunas hacia las demas, incluyendo la misma (los envios dentro de la misma
 		 * comuna son muy frecuentes).
 		 */
-		
+
 		todoLibre.dibujarMatrizDeEnvios();
 
 		/**
@@ -44,7 +44,7 @@ public class Main {
 		 * (no mostrar por consola) todas las ordenes Puerta a Puerta con envio gratis
 		 * ordenadas por monto de forma descendente.
 		 */
-		
+
 		todoLibre.mostrarOrdenesRetiroSucursalSabadosPorMonto();
 
 	}

@@ -53,16 +53,16 @@ public class CentroVacunacion {
 
 	/* Metodos extra */
 
-	public void mostrarLista() {
-		ColaNodos<Persona> colaFinal = obtenerColaPorPrioridadYOrden();
-		colaFinal.add(null);
-		Persona persona = colaFinal.remove();
+	public void mostrarColaPorPrioridadYOrden() {
+		ColaNodos<Persona> cola = obtenerColaPorPrioridadYOrden();
+		cola.add(null);
+		Persona persona = cola.remove();
 		int i = 0;
 		while (persona != null) {
 			System.out.print("Turno " + (i + 1) + " ->\t");
 			System.out.println(persona);
-			colaFinal.add(persona);
-			persona = colaFinal.remove();
+			cola.add(persona);
+			persona = cola.remove();
 			i++;
 		}
 	}

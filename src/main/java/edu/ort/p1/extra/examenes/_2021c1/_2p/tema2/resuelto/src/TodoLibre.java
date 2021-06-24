@@ -1,7 +1,7 @@
-package edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src;
+package edu.ort.p1.extra.examenes._2021c1._2p.tema2.resuelto.src;
 
-import edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.listasordenadas.ListaOrdenesPorMonto;
-import edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src.listasordenadas.ListaOrdenesPorPrioridad;
+import edu.ort.p1.extra.examenes._2021c1._2p.tema2.resuelto.src.listasordenadas.ListaOrdenesPorMonto;
+import edu.ort.p1.extra.examenes._2021c1._2p.tema2.resuelto.src.listasordenadas.ListaOrdenesPorPrioridad;
 
 public class TodoLibre {
 

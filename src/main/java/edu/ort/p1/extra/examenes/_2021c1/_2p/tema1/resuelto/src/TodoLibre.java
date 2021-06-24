@@ -1,6 +1,7 @@
-package edu.ort.p1.extra.exa._2021c1._2p.tema1.resuelto.src;
+package edu.ort.p1.extra.examenes._2021c1._2p.tema1.resuelto.src;
 
 public class TodoLibre {
+	
 	private static final int CANT_COMUNAS = 15;
 	private ColaOrdenes colaOrdenes;
 
@@ -13,16 +14,16 @@ public class TodoLibre {
 	public int[][] cantEnviosEntreComunas() {
 
 		int[][] informe;
-		Orden ordenCent;
+		Orden ordenCentinela;
 		Orden orden = null;
 
 		informe = new int[CANT_COMUNAS][CANT_COMUNAS];
-		ordenCent = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
+		ordenCentinela = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
 
-		colaOrdenes.add(ordenCent);
+		colaOrdenes.add(ordenCentinela);
 		orden = colaOrdenes.remove();
 
-		while (orden != ordenCent) {
+		while (orden != ordenCentinela) {
 			procesarOrden(orden, informe);
 			colaOrdenes.add(orden);
 			orden = colaOrdenes.remove();
@@ -42,14 +43,14 @@ public class TodoLibre {
 	// Ejercicio C
 	public ListaOrdenesPorMonto ordenesPuertaPuertaPorMonto() {
 		ListaOrdenesPorMonto lista;
-		Orden e;
+		Orden ordenCentinela;
 		Orden orden;
 		lista = new ListaOrdenesPorMonto();
-		e = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
+		ordenCentinela = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
 
-		colaOrdenes.add(e);
+		colaOrdenes.add(ordenCentinela);
 		orden = colaOrdenes.remove();
-		while (orden != e) {
+		while (orden != ordenCentinela) {
 			procesarOrden(orden, lista);
 			colaOrdenes.add(orden);
 			orden = colaOrdenes.remove();
@@ -77,7 +78,7 @@ public class TodoLibre {
 	}
 
 	public void dibujarMatrizDeEnvios() {
-		System.out.println("Ejercicio B\nMuestro la matriz de envios");
+		System.out.println("\nEjercicio B\nMuestro la matriz de envios");
 
 		int[][] matLetras = cantEnviosEntreComunas();
 
@@ -103,7 +104,8 @@ public class TodoLibre {
 	}
 
 	public void mostrarOrdenesRetiroSucursalSabadosPorMonto() {
-		System.out.println("\nEjercicio C\nMuestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
+		System.out.println(
+				"\nEjercicio C\nMuestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
 		for (Orden o : ordenesPuertaPuertaPorMonto()) {
 			System.out.println(o.toString());
 		}

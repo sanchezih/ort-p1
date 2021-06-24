@@ -1,4 +1,4 @@
-package edu.ort.p1.extra.exa._2021c1._2p.tema1.resuelto.src;
+package edu.ort.p1.extra.examenes._2021c1._2p.tema1.resuelto.src;
 
 public class Usuario {
 

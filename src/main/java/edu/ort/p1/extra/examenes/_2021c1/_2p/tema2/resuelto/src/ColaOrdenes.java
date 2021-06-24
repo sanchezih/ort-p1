@@ -1,4 +1,4 @@
-package edu.ort.p1.extra.exa._2021c1._2p.tema2.resuelto.src;
+package edu.ort.p1.extra.examenes._2021c1._2p.tema2.resuelto.src;
 
 import edu.ort.tp1.u5.tda.nodos.ColaNodos;
 
