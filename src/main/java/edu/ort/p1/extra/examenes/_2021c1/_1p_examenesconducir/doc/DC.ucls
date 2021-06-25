@@ -43,11 +43,22 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="5">    
+  <class id="5" language="java" name="edu.ort.p1.extra.examenes._2021c1._1p_examenesconducir.src.ExamenDeAuto" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_1p_examenesconducir/src/ExamenDeAuto.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="277" x="217" y="591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="6">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="6">    
+  <generalization id="7">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
