@@ -1,29 +1,25 @@
-package edu.ort.p1.u3.practico03.tp3_comercio_informatico.src;
+package ejercicio10_guia1;
 
 public abstract class Servicio implements Facturable {
-	private double catHoras;
-	protected double precio = 0;
 
-	public Servicio(double catHoras) {
-		super();
-		this.catHoras = catHoras;
-	}
+    private int cantidadDeHoras;
 
-	public double getCatHoras() {
-		return catHoras;
-	}
+    public Servicio(int cantidadDeHoras) {
+        this.cantidadDeHoras = cantidadDeHoras;
+    }
+    
+    public double getCosto() {
+        return cantidadDeHoras * getValorHora();
+    }
+    
+    public abstract double getValorHora();
 
-	public void setCatHoras(double catHoras) {
-		this.catHoras = catHoras;
-	}
-
-	public double getPrecio() {
-		return precio;
-	}
-
-	public abstract void setPrecio();
-
-	public double getMontoFacturacion() {
-		return Matematica.sumarPorcentaje(getPrecio(), (IVA / 2));
-	}
+    public int getCantidadDeHoras() {
+        return cantidadDeHoras;
+    }
+    
+    @Override
+    public double getMontoDeFacturacion() {
+        return Matematica.sumarPorcentaje(getCosto(), IVA / 2);
+    }
 }

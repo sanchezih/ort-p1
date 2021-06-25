@@ -1,7 +1,13 @@
-package edu.ort.p1.u3.practico03.tp3_comercio_informatico.src;
+
+package ejercicio10_guia1;
+
 
 public class Matematica {
-	public final static double sumarPorcentaje(double valor, double porcentaje) {
-		return valor + (valor * porcentaje / 100);
-	}
+    
+    public static double sumarPorcentaje(double a, double b){
+        return a+calcularPorcentaje(a,b);
+    }
+    public static double calcularPorcentaje(double a,double b){
+        return (a*b)/100;
+    }
 }

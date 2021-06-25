@@ -1,7 +1,8 @@
-package edu.ort.p1.u3.practico03.tp3_comercio_informatico.src;
+
+package ejercicio10_guia1;
+
 
 public interface Facturable {
-	double IVA = 21;
-
-	double getMontoFacturacion();
+  public static int IVA = 21;
+  public abstract double getMontoDeFacturacion();
 }
