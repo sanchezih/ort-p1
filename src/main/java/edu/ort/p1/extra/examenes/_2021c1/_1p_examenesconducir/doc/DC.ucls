@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="edu.ort.p1.extra.examenes._2021c1._1p_examenesconducir.src.Persona" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_1p_examenesconducir/src/Persona.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="259" width="194" x="276" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="edu.ort.p1.extra.examenes._2021c1._1p_examenesconducir.src.Vehiculo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_1p_examenesconducir/src/Vehiculo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="259" width="194" x="42" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="edu.ort.p1.extra.examenes._2021c1._1p_examenesconducir.src.Auto" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_1p_examenesconducir/src/Auto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="194" x="276" y="336"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="edu.ort.p1.extra.examenes._2021c1._1p_examenesconducir.src.Moto" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_1p_examenesconducir/src/Moto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="194" x="42" y="336"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="5">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
