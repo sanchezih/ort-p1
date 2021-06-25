@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="edu.ort.u4.tp4.ej04_viajes_tren.src.Empresa" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/u4/tp4/ej04_viajes_tren/src/Empresa.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="590" y="135"/>    
+  <class id="1" language="java" name="edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Empresa" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Empresa.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="209" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="2" language="java" name="edu.ort.u4.tp4.ej04_viajes_tren.src.Estacion" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/u4/tp4/ej04_viajes_tren/src/Estacion.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="601" y="449"/>    
+  <enumeration id="2" language="java" name="edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Estacion" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Estacion.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="205" width="197" x="41" y="646"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="3" language="java" name="edu.ort.u4.tp4.ej04_viajes_tren.src.Recorrido" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/u4/tp4/ej04_viajes_tren/src/Recorrido.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="197" y="449"/>    
+  <class id="3" language="java" name="edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Recorrido" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Recorrido.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="187" width="197" x="41" y="419"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="edu.ort.u4.tp4.ej04_viajes_tren.src.Reserva" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/u4/tp4/ej04_viajes_tren/src/Reserva.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="197" y="136"/>    
+  <class id="4" language="java" name="edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Reserva" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Reserva.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="197" x="41" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,40 +42,33 @@
     </display>  
   </class>  
   <association id="5">    
-    <bendpoint x="318" y="527"/>    
-    <bendpoint x="404" y="527"/>    
-    <bendpoint x="488" y="527"/>    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="6" name="estDestino"/>      
-      <multiplicity id="7" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="8">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="9">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="10" name="reservas"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+      <attribute id="6" name="reservas"/>      
+      <multiplicity id="7" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="12">    
+  <association id="8">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="13" name="recorrido"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
+      <attribute id="9" name="recorrido"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="15">    
+  <association id="11">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="16" name="estPartida"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+      <attribute id="12" name="estDestino"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="14">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="15" name="estPartida"/>      
+      <multiplicity id="16" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
