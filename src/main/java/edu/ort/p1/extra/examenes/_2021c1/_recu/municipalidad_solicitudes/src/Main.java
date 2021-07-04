@@ -23,7 +23,7 @@ public class Main {
 		 * solicitud y tipo.
 		 */
 
-	//	municipalidad.mostrarInformeCostoAcumPorMesTipo();
+		municipalidad.mostrarInformeCostoAcumPorMesTipo();
 
 		/*----------------------------------------------------------------------------*/
 
@@ -33,7 +33,7 @@ public class Main {
 		 * vencieron.
 		 */
 
-	//	municipalidad.mostrarCantidadPodaNoVencida();
+		municipalidad.mostrarCantidadPodaNoVencida();
 
 		/*----------------------------------------------------------------------------*/
 

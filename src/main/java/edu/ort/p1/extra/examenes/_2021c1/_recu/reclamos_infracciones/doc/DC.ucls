@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Caducable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="299" x="41" y="1025"/>    
+    <position height="-1" width="-1" x="912" y="931"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -16,7 +16,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Mes.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="299" x="380" y="1326"/>    
+    <position height="-1" width="-1" x="1056" y="1441"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/ExcesoVelocidad.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="299" x="1058" y="1025"/>    
+    <position height="153" width="299" x="41" y="1079"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,7 +38,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Infraccion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="299" x="550" y="742"/>    
+    <position height="243" width="299" x="401" y="796"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,7 +49,7 @@
     name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.MalEstacionamiento" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/MalEstacionamiento.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="299" x="719" y="1025"/>    
+    <position height="171" width="299" x="401" y="1079"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -60,7 +60,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Fecha.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="261" width="299" x="380" y="1025"/>    
+    <position height="261" width="299" x="361" y="1290"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -71,7 +71,7 @@
     name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.ColaDeReclamosAtendidos" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/ColaDeReclamosAtendidos.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="299" x="550" y="356"/>    
+    <position height="81" width="299" x="359" y="356"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -82,7 +82,7 @@
     name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.DireccionGeneralTransito" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/DireccionGeneralTransito.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="279" width="400" x="550" y="37"/>    
+    <position height="279" width="400" x="700" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,77 +93,145 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Reclamo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="299" x="550" y="477"/>    
+    <position height="243" width="299" x="380" y="513"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="10">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="11" name="mes">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="12" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="13">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="14" name="fecha">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="15" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="16">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <association id="17">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="18" name="reclamosAtendidos">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="20">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <association id="21">    
+  <interface id="10" language="java" name="edu.ort.tp1.u5.tda.Cola" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/tp1/u5/tda/Cola.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="103" x="216" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="11" language="java" name="edu.ort.tp1.u5.tda.nodos.ColaNodos" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/tp1/u5/tda/nodos/ColaNodos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="112" x="288" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="12">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="22" name="infraccionReclamada">        
+      <attribute id="13" name="infraccionReclamada">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="1">        
+      <multiplicity id="14" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="24">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
   </generalization>  
-  <generalization id="25">    
+  <association id="16">    
+    <bendpoint x="370" y="1079"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="17" name="fecha">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="19">    
+    <bendpoint x="1090" y="356"/>    
+    <bendpoint x="1090" y="513"/>    
+    <bendpoint x="1090" y="796"/>    
+    <bendpoint x="1090" y="1079"/>    
+    <bendpoint x="1090" y="1290"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="20">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="21" name="reclamosAtendidos">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="23">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <realization id="25">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <dependency id="27">    
+    <bendpoint x="730" y="356"/>    
+    <bendpoint x="730" y="513"/>    
+    <bendpoint x="730" y="796"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <dependency id="29">    
+    <bendpoint x="709" y="356"/>    
+    <bendpoint x="709" y="513"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="30">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="31" name="mes">        
+        <position height="0" width="0" x="186" y="-298"/>      
+      </attribute>      
+      <multiplicity id="32" minimum="0" maximum="1">        
+        <position height="0" width="0" x="186" y="-298"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="35">    
+    <bendpoint x="730" y="1079"/>    
+    <bendpoint x="730" y="1290"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="36">    
+    <bendpoint x="688" y="356"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

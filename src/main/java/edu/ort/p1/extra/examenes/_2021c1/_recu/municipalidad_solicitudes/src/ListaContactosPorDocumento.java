@@ -10,8 +10,8 @@ public class ListaContactosPorDocumento extends ListaOrdenadaNodos<String, Conta
 	}
 
 	@Override
-	public int compareByKey(String clave, Contacto c) {
-		return clave.compareTo(c.getDni());
+	public int compareByKey(String dni, Contacto c) {
+		return dni.compareTo(c.getDni());
 	}
 
 }

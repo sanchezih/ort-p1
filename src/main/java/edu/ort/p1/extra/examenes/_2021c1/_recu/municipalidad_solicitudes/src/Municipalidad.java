@@ -9,16 +9,17 @@ public class Municipalidad {
 		this.contactos = new PilaDeContactos();
 	}
 
+	/**
+	 * Recorro la pila de contactos utilizando una pila auxiliar. Cada contacto que
+	 * extraigo lo proceso.
+	 */
 	public double[][] informeCostoAcumPorMesTipo() {
-
 		double[][] informe;
 		PilaDeContactos pilaAux = null;
 		Contacto contacto;
 
-		informe = new double[Mes.values().length][CANT_TIPO_SOLICITUD]; // IHS: es new int
+		informe = new double[Mes.values().length][CANT_TIPO_SOLICITUD];
 		pilaAux = new PilaDeContactos();
-
-		// REVISAR reclamo=reclamosAtendidos.remove();
 
 		while (!contactos.isEmpty()) {
 			contacto = contactos.pop();
@@ -29,10 +30,13 @@ public class Municipalidad {
 		while (!pilaAux.isEmpty()) {
 			contactos.push(pilaAux.pop());
 		}
-
 		return informe;
 	}
 
+	/**
+	 * Para cada contacto, evaluo en que posicion de la matriz deberia ir y sumo el
+	 * costo al valor existente en la posicion.
+	 */
 	private void procesarContacto(Contacto contacto, double[][] informe) {
 		int columna;
 		int fila;
@@ -46,6 +50,10 @@ public class Municipalidad {
 		return solicitud instanceof ReparacionVereda ? 0 : 1;
 	}
 
+	/**
+	 * Recorro la pila de contactos de solicitudes de poda utilizando una pila
+	 * auxiliar. Cada contacto que extraigo lo proceso.
+	 */
 	public int cantidadPodaNoVencida() {
 
 		PilaDeContactos pilaAux = null;
@@ -53,14 +61,12 @@ public class Municipalidad {
 		int cant = 0;
 
 		pilaAux = new PilaDeContactos();
-		// reclamo=reclamosAtendidos.remove()
 
 		while (!contactos.isEmpty()) {
 			contacto = contactos.pop();
 			cant += procesarContacto(contacto);
 			pilaAux.push(contacto);
 		}
-
 		while (!pilaAux.isEmpty()) {
 			contactos.push(pilaAux.pop());
 		}
@@ -73,6 +79,10 @@ public class Municipalidad {
 		return solicitud instanceof Poda && !solicitud.vencido() ? 1 : 0;
 	}
 
+	/**
+	 * Recorro la pila de contactos y armo la lista ordenada. La lista quedara en su
+	 * estado original.
+	 */
 	public ListaContactosPorDocumento contactosPorDocumento() {
 		PilaDeContactos pilaAux = null;
 		Contacto contacto;
