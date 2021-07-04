@@ -111,10 +111,11 @@ public class Municipalidad {
 	}
 
 	public void mostrarInformeCostoAcumPorMesTipo() {
-
-		double[][] matLetras = informeCostoAcumPorMesTipo();
+		
 		System.out.println("Ejercicio B --> Muestro el costo acumulado de todas las solicitudes");
 		System.out.println("\tREPA\tPODA");
+
+		double[][] matLetras = informeCostoAcumPorMesTipo();
 		for (int i = 0; i < matLetras.length; i++) {
 			System.out.print(((Mes.values()[i]).toString().substring(0, 3)) + "\t");
 			for (int j = 0; j < matLetras[i].length; j++) {
