@@ -4,9 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Contacto c1 = new Contacto("001", false, new Poda(20.0, new Fecha(5, Mes.FEBRERO, 2021)));
+		Contacto c1 = new Contacto("001", false, new Poda(20.0, new Fecha(1, Mes.JULIO, 2021)));
 		Contacto c2 = new Contacto("003", false, new ReparacionVereda(25.0, new Fecha(18, Mes.MARZO, 2021)));
-		Contacto c3 = new Contacto("002", false, new Poda(35.0, new Fecha(15, Mes.ABRIL, 2021)));
+		Contacto c3 = new Contacto("002", false, new Poda(35.0, new Fecha(5, Mes.ENERO, 2021)));
 
 		/*----------------------------------------------------------------------------*/
 
@@ -23,7 +23,7 @@ public class Main {
 		 * solicitud y tipo.
 		 */
 
-		municipalidad.mostrarInformeCostoAcumPorMesTipo();
+	//	municipalidad.mostrarInformeCostoAcumPorMesTipo();
 
 		/*----------------------------------------------------------------------------*/
 
@@ -33,7 +33,7 @@ public class Main {
 		 * vencieron.
 		 */
 
-		municipalidad.mostrarCantidadPodaNoVencida();
+	//	municipalidad.mostrarCantidadPodaNoVencida();
 
 		/*----------------------------------------------------------------------------*/
 

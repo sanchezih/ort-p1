@@ -11,7 +11,7 @@ public class Poda extends Solicitud {
 
 	@Override
 	public boolean vencido() {
-		System.out.println("Poda con fecha de contacto: " + super.getFecha() + " (Dias transcurridos: "
+		System.out.println("Solicitud con fecha de contacto: " + super.getFecha() + " (Dias transcurridos: "
 				+ super.getFecha().cantidadDiasHastaHoy() + ")");
 
 		return super.getFecha().cantidadDiasHastaHoy() > Poda.DIAS_VTO;

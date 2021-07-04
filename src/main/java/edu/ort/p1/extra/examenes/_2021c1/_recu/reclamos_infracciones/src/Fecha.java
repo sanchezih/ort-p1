@@ -1,4 +1,4 @@
-package edu.ort.p1.extra.examenes._2021c1._recu.municipalidad_solicitudes.src;
+package edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

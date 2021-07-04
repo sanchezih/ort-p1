@@ -59,15 +59,12 @@ public class Municipalidad {
 			contacto = contactos.pop();
 			cant += procesarContacto(contacto);
 			pilaAux.push(contacto);
-
 		}
 
 		while (!pilaAux.isEmpty()) {
 			contactos.push(pilaAux.pop());
 		}
-
 		return cant;
-
 	}
 
 	private int procesarContacto(Contacto contacto) {

@@ -1,6 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true">  
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.Caducable" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Caducable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="299" x="41" y="1025"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="2" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.Mes" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Mes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="299" x="380" y="1326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="3" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.ExcesoVelocidad" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/ExcesoVelocidad.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="299" x="1058" y="1025"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.Infraccion" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Infraccion.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="299" x="550" y="742"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" 
+    name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.MalEstacionamiento" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/MalEstacionamiento.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="299" x="719" y="1025"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.Fecha" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Fecha.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="299" x="380" y="1025"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" 
+    name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.ColaDeReclamosAtendidos" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/ColaDeReclamosAtendidos.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="299" x="550" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" 
+    name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.DireccionGeneralTransito" project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/DireccionGeneralTransito.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="400" x="550" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src.Reclamo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu/reclamos_infracciones/src/Reclamo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="299" x="550" y="477"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="11" name="mes">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="12" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="13">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="14" name="fecha">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="15" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="16">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="17">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="18" name="reclamosAtendidos">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="21">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="22" name="infraccionReclamada">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
