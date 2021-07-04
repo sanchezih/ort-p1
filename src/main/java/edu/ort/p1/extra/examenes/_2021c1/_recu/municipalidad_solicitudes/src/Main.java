@@ -11,7 +11,6 @@ public class Main {
 		/*----------------------------------------------------------------------------*/
 
 		Municipalidad municipalidad = new Municipalidad();
-
 		municipalidad.agregarContacto(c1);
 		municipalidad.agregarContacto(c2);
 		municipalidad.agregarContacto(c3);
@@ -24,7 +23,7 @@ public class Main {
 		 * solicitud y tipo.
 		 */
 
-		municipalidad.dibujarInformeCostoAcumPorMesTipo();
+		municipalidad.mostrarInformeCostoAcumPorMesTipo();
 
 		/*----------------------------------------------------------------------------*/
 

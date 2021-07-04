@@ -103,7 +103,7 @@ public class Municipalidad {
 		this.contactos.push(c);
 	}
 
-	public void dibujarInformeCostoAcumPorMesTipo() {
+	public void mostrarInformeCostoAcumPorMesTipo() {
 
 		double[][] matLetras = informeCostoAcumPorMesTipo();
 		System.out.println("Ejercicio B --> Muestro el costo acumulado de todas las solicitudes");
