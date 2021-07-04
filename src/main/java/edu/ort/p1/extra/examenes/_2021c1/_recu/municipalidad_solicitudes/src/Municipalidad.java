@@ -23,8 +23,8 @@ public class Municipalidad {
 
 		while (!contactos.isEmpty()) {
 			contacto = contactos.pop();
-			procesarContacto(contacto, informe);
 			pilaAux.push(contacto);
+			procesarContacto(contacto, informe);
 		}
 
 		while (!pilaAux.isEmpty()) {
