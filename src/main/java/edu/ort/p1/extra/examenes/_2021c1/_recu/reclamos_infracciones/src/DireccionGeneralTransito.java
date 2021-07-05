@@ -1,8 +1,5 @@
 package edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src;
 
-import edu.ort.p1.extra.examenes._2021c1._recu.municipalidad_solicitudes.src.Contacto;
-import edu.ort.p1.extra.examenes._2021c1._recu.municipalidad_solicitudes.src.Mes;
-
 public class DireccionGeneralTransito {
 
 	private final static int CANT_TIPO_INFRACCION = 2;
@@ -46,8 +43,10 @@ public class DireccionGeneralTransito {
 		Reclamo centinela = null;
 		Reclamo reclamo;
 		int cantidad = 0;
+
 		reclamosAtendidos.add(centinela);
 		reclamo = reclamosAtendidos.remove();
+
 		while (reclamo != centinela) {
 			cantidad = cantidad + procesarReclamo(reclamo);
 			reclamosAtendidos.add(reclamo);
