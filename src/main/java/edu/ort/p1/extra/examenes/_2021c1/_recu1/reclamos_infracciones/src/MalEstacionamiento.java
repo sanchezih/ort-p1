@@ -1,4 +1,4 @@
-package edu.ort.p1.extra.examenes._2021c1._recu.reclamos_infracciones.src;
+package edu.ort.p1.extra.examenes._2021c1._recu1.reclamos_infracciones.src;
 
 public class MalEstacionamiento extends Infraccion {
 	private final static int CANT_UNIDADES = 7;
