@@ -5,13 +5,13 @@ public class CamionDeSolidos extends Camion {
 	public static final int MAX_LARGO = 6;
 	public static final int KMTS = 200000;
 	public static final int MAX_KMTS = 250000;
-	
+
 	private int ancho;
 	private int alto;
 	private int largo;
 
-	public CamionDeSolidos(int ancho, int alto, int largo) {
-		super();
+	public CamionDeSolidos(int nroPatente, int anioFabricacion, int kmRecorridos, int ancho, int alto, int largo) {
+		super(nroPatente, anioFabricacion, kmRecorridos);
 		this.ancho = ancho;
 		this.alto = alto;
 		this.largo = largo;

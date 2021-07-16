@@ -1,8 +1,8 @@
 Una empresa de logística y distribución desea una aplicación para informatizar sus procesos, para lo cual
 nos brinda la siguiente información: Por disposición de la provincia donde desarrolla sus actividades no
 puede tener más de 80 camiones de los cuales contamos con: Nro. de patente (entero), año de fabricación y
-los kilómetros recorridos. Estos camiones pueden ser para transporte de líquidos o para transporte de
-sólidos, en el caso de los primeros, nos informan además la capacidad de litros que puede transportar y la
+los kilometros recorridos. Estos camiones pueden ser para transporte de líquidos o para transporte de
+solidos, en el caso de los primeros, nos informan además la capacidad de litros que puede transportar y la
 cantidad de tanques que posee; en el caso de los que transportan sólidos, el ancho, alto y largo de la caja de
 carga en metros.
 

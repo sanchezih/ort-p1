@@ -2,56 +2,40 @@ package edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src;
 
 public class Viaje {
 
-	private Camion suCaminon;
+	private Camion suCamion;
 	private Chofer suChofer;
 	private PilaDeDestinos pilaDestinos;
-	
-	
 
 	public Viaje(Camion suCaminon, Chofer suChofer, PilaDeDestinos pilaDestinos) {
 		super();
-		this.suCaminon = suCaminon;
+		this.suCamion = suCaminon;
 		this.suChofer = suChofer;
 		this.pilaDestinos = pilaDestinos;
 	}
-	
-	
 
-	public Camion getSuCaminon() {
-		return suCaminon;
+	public Camion getSuCamion() {
+		return suCamion;
 	}
 
-
-
-	public void setSuCaminon(Camion suCaminon) {
-		this.suCaminon = suCaminon;
+	public void setSuCaminon(Camion suCamnon) {
+		this.suCamion = suCamion;
 	}
-
-
 
 	public Chofer getSuChofer() {
 		return suChofer;
 	}
 
-
-
 	public void setSuChofer(Chofer suChofer) {
 		this.suChofer = suChofer;
 	}
-
-
 
 	public PilaDeDestinos getPilaDestinos() {
 		return pilaDestinos;
 	}
 
-
-
 	public void setPilaDestinos(PilaDeDestinos pilaDestinos) {
 		this.pilaDestinos = pilaDestinos;
 	}
-
-
 
 	public boolean contieneDestino(String nombreDestino) {
 		Destino d;
@@ -72,5 +56,28 @@ public class Viaje {
 			target.push(source.pop());
 		}
 	}
+
+	public int getLegajoChofer() {
+		return this.suChofer.getNroLegajo();
+	}
+
+	public int getPatenteDeCamion() {
+		// TODO Auto-generated method stub
+		return this.suCamion.getNroPatente();
+	}
+
+	public int cantDestinos() {
+		Destino d;
+		int cant = 0;
+		PilaDeDestinos pilaAux = new PilaDeDestinos();
+		while (!this.pilaDestinos.isEmpty()) {
+			pilaAux.push(this.pilaDestinos.pop());
+			cant++;
+		}
+		pasarElementos(pilaAux, this.pilaDestinos);
+		return cant;
+	}
+
+
 
 }

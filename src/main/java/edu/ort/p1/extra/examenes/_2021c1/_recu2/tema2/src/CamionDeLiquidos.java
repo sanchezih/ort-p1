@@ -7,8 +7,9 @@ public class CamionDeLiquidos extends Camion {
 	private int capacidadLitros;
 	private int cantTanques;
 
-	public CamionDeLiquidos(int capacidadLitros, int cantTanques) {
-		super();
+	public CamionDeLiquidos(int nroPatente, int anioFabricacion, int kmRecorridos, int capacidadLitros,
+			int cantTanques) {
+		super(nroPatente, anioFabricacion, kmRecorridos);
 		this.capacidadLitros = capacidadLitros;
 		this.cantTanques = cantTanques;
 	}
