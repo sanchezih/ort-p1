@@ -42,6 +42,7 @@ public class Main {
 		/* Creacion de empresa */
 		EmpresaLogistica empresaDeLogistica = new EmpresaLogistica();
 		
+	
 
 		empresaDeLogistica.agregarViaje(viaje01);
 

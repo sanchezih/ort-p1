@@ -4,7 +4,7 @@
   <interface id="1" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.Identificable" 
     project="ort-p1" file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/Identificable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="637" y="897"/>    
+    <position height="81" width="236" x="339" y="1079"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.Camion" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/Camion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="236" x="615" y="508"/>    
+    <position height="261" width="236" x="615" y="778"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <interface id="3" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.Renovable" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/Renovable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1307" y="831"/>    
+    <position height="81" width="236" x="615" y="1079"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.Viaje" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/Viaje.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="533" y="297"/>    
+    <position height="279" width="279" x="312" y="459"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -45,7 +45,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/EmpresaLogistica.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="848" y="125"/>    
+    <position height="261" width="370" x="612" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -56,7 +56,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/CamionDeLiquidos.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1346" y="560"/>    
+    <position height="-1" width="-1" x="1276" y="787"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -67,7 +67,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/CamionDeSolidos.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="972" y="982"/>    
+    <position height="-1" width="-1" x="1214" y="1170"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -77,7 +77,7 @@
   <class id="8" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.Chofer" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/Chofer.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="261" width="236" x="339" y="508"/>    
+    <position height="261" width="236" x="339" y="778"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -87,7 +87,7 @@
   <class id="9" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.ColaDeViajes" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/ColaDeViajes.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="510" y="126"/>    
+    <position height="81" width="236" x="355" y="338"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -98,7 +98,7 @@
     name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.ListaCamionesOrdenadaPorAntiguedad" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/ListaCamionesOrdenadaPorAntiguedad.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="960" y="415"/>    
+    <position height="117" width="249" x="652" y="459"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -108,7 +108,7 @@
   <class id="11" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.PilaDeDestinos" 
     project="ort-p1" file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/PilaDeDestinos.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="160" y="314"/>    
+    <position height="81" width="236" x="42" y="778"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -118,110 +118,112 @@
   <class id="12" language="java" name="edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src.Destino" project="ort-p1" 
     file="/ort-p1/src/main/java/edu/ort/p1/extra/examenes/_2021c1/_recu2/tema2/src/Destino.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="171" y="635"/>    
+    <position height="207" width="236" x="63" y="1079"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="13">    
+  <realization id="13">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <association id="16">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="14" name="pilaDestinos">        
+      <attribute id="17" name="suCamion">        
+        <position height="0" width="0" x="167" y="-27"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="167" y="-27"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <realization id="20">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="21">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="22">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="23" name="pilaDestinos">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="15" minimum="0" maximum="1">        
+      <multiplicity id="24" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="16">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="17">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="18" name="suChofer">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="20">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <generalization id="21">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <dependency id="22">    
-    <bendpoint x="308" y="508"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <realization id="23">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <realization id="24">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <dependency id="25">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <association id="26">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="27" name="suCamion">        
-        <position height="0" width="0" x="167" y="-27"/>      
-      </attribute>      
-      <multiplicity id="28" minimum="0" maximum="1">        
-        <position height="0" width="0" x="167" y="-27"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="29">    
+  <association id="25">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="30" name="viajesContratados">        
+      <attribute id="26" name="viajesContratados">        
         <position height="0" width="0" x="37" y="-144"/>      
       </attribute>      
-      <multiplicity id="31" minimum="0" maximum="1">        
+      <multiplicity id="27" minimum="0" maximum="1">        
         <position height="0" width="0" x="37" y="-144"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="32">    
-    <end type="SOURCE" refId="10"/>    
+  <generalization id="28">    
+    <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="33">    
+  </generalization>  
+  <association id="29">    
+    <bendpoint x="621" y="338"/>    
+    <bendpoint x="621" y="459"/>    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="34" name="camiones">        
+      <attribute id="30" name="camiones">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="35" minimum="0" maximum="2147483647">        
+      <multiplicity id="31" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="36">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="4"/>  
+  <dependency id="32">    
+    <bendpoint x="308" y="778"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
   </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="34">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="35" name="suChofer">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="36" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
