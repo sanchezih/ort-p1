@@ -43,4 +43,11 @@ public class Chofer implements Identificable {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Chofer [nroLegajo=" + nroLegajo + ", nombre=" + nombre + ", edad=" + edad + "]";
+	}
+	
+	
+
 }

@@ -11,7 +11,7 @@ public class Main {
 		Chofer choferMario = new Chofer(0004, "Mario", 51);
 
 		/* Creacion de camiones */
-		Camion camionDeLiquidos01 = new CamionDeLiquidos(061, 2009, 250000, 200, 4);
+		Camion camionDeLiquidos01 = new CamionDeLiquidos(965, 2009, 250000, 200, 4);
 		Camion camionDeLiquidos02 = new CamionDeLiquidos(222, 2003, 235000, 200, 3);
 
 		Camion camionDeSolidos01 = new CamionDeSolidos(125, 2007, 153000, 3, 1, 5);
@@ -41,8 +41,16 @@ public class Main {
 
 		/* Creacion de empresa */
 		EmpresaLogistica empresaDeLogistica = new EmpresaLogistica();
+
+		empresaDeLogistica.altaDeCamion(camionDeLiquidos01);
+		empresaDeLogistica.altaDeCamion(camionDeLiquidos02);
+		empresaDeLogistica.altaDeCamion(camionDeSolidos01);
+		empresaDeLogistica.altaDeCamion(camionDeSolidos02);
 		
-	
+		empresaDeLogistica.altaDeChofer(choferGeronimo);
+		empresaDeLogistica.altaDeChofer(choferLuis);
+		empresaDeLogistica.altaDeChofer(choferMaria);
+		empresaDeLogistica.altaDeChofer(choferMario);
 
 		empresaDeLogistica.agregarViaje(viaje01);
 

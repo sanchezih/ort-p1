@@ -2,8 +2,8 @@ package edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src;
 
 public class EmpresaLogistica {
 
-	public final static int CANT_CAMIONES = 80;
-	public final static int CANT_CHOFERES = 20;
+	public final static int CANT_CAMIONES = 4;
+	public final static int CANT_CHOFERES = 4;
 
 	private Camion[] camiones = new Camion[CANT_CAMIONES];
 	private Chofer[] choferes = new Chofer[CANT_CHOFERES];
@@ -58,10 +58,23 @@ public class EmpresaLogistica {
 		mat[indexCamion][indexChofer] += viaje.cantDestinos();
 	}
 
+//	private int idxCamion(int patente) {
+//		int i = this.camiones.length - 1;
+//		while (i >= 0 && this.camiones[i].getNroPatente() != patente) {
+//			i--;
+//		}
+//		return i;
+//	}
+
 	private int idxCamion(int patente) {
-		int i = this.camiones.length-1;
-		while (i >= 0 && this.camiones[i].getNroPatente() != patente) {
-			i--;
+		Camion camionEncontrado = null;
+		int i = 0;
+		while (i < this.camiones.length && camionEncontrado == null) {
+			if (this.camiones[i] != null && this.camiones[i].getNroPatente() != patente) {
+				i++;
+			} else {
+				camionEncontrado = this.camiones[i];
+			}
 		}
 		return i;
 	}
@@ -79,16 +92,45 @@ public class EmpresaLogistica {
 	}
 
 	private void mostrarMatriz(int[][] mat) {
+		System.out.println("\nEjercicio C\nCantidad de destinos en total que visitara cada camion con cada chofer\n");
+
 		for (int i = 0; i < mat.length; i++) {
 			System.out.println("Para el camion " + this.camiones[i] + ": ");
-			System.out.println("Total destinos recorridos por chofer");
 			for (int j = 0; j < mat[i].length; j++) {
-				System.out.println("Chofer " + this.choferes[j] + ": ");
+				System.out.print("Chofer " + this.choferes[j] + ": ");
 				System.out.println(mat[i][j] + " destinos recorridos");
 			}
 			System.out.println("\n");
 
 		}
+	}
+
+	public int altaDeCamion(Camion camion) {
+		int i = 0;
+		boolean hayLugar = false;
+		while (i < this.camiones.length && !hayLugar) {
+			if (this.camiones[i] == null) {
+				this.camiones[i] = camion;
+				hayLugar = true;
+			} else {
+				i++;
+			}
+		}
+		return hayLugar ? i : -1;
+	}
+
+	public int altaDeChofer(Chofer chofer) {
+		int i = 0;
+		boolean hayLugar = false;
+		while (i < this.choferes.length && !hayLugar) {
+			if (this.choferes[i] == null) {
+				this.choferes[i] = chofer;
+				hayLugar = true;
+			} else {
+				i++;
+			}
+		}
+		return hayLugar ? i : -1;
 	}
 
 }
