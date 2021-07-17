@@ -15,7 +15,7 @@ public class Main {
 		Camion camionDeLiquidos02 = new CamionDeLiquidos(222, 2003, 235000, 200, 3);
 
 		Camion camionDeSolidos01 = new CamionDeSolidos(125, 2007, 251000, 3, 1, 5);
-		Camion camionDeSolidos02 = new CamionDeSolidos(882, 1999, 540000, 2, 2, 1);
+		Camion camionDeSolidos02 = new CamionDeSolidos(882, 1999, 219000, 2, 2, 7);
 
 		/* Creacion de destinos */
 		Destino destinoRetiro = new Destino(1, "Retiro");
@@ -31,13 +31,21 @@ public class Main {
 		Destino destinoRosarioNorte = new Destino(11, "Rosario Norte");
 
 		/* Creacion de pilas de destinos */
-		PilaDeDestinos pila01 = new PilaDeDestinos();
-		pila01.push(destinoRetiro);
-		pila01.push(destinoCampana);
-		pila01.push(destinoZarate);
+		PilaDeDestinos retiroAZarate = new PilaDeDestinos();
+		retiroAZarate.push(destinoRetiro);
+		retiroAZarate.push(destinoCampana);
+		retiroAZarate.push(destinoZarate);
+
+		PilaDeDestinos retiroABaradero = new PilaDeDestinos();
+		retiroABaradero.push(destinoRetiro);
+		retiroABaradero.push(destinoCampana);
+		retiroABaradero.push(destinoZarate);
+		retiroABaradero.push(destinoBaradero);
 
 		/* Creacion de viajes */
-		Viaje viaje01 = new Viaje(camionDeSolidos01, choferGeronimo, pila01);
+		Viaje viaje01 = new Viaje(camionDeSolidos01, choferGeronimo, retiroAZarate);
+		Viaje viaje02 = new Viaje(camionDeLiquidos01, choferLuis, retiroABaradero);
+		Viaje viaje03 = new Viaje(camionDeSolidos01, choferLuis, retiroABaradero);
 
 		/* Creacion de empresa */
 		EmpresaLogistica empresa = new EmpresaLogistica();
@@ -53,11 +61,13 @@ public class Main {
 		empresa.altaDeChofer(choferMario);
 
 		empresa.agregarViaje(viaje01);
+		empresa.agregarViaje(viaje02);
+		empresa.agregarViaje(viaje03);
 
 		/*----------------------------------------------------------------------------*/
 
 		// Ejercicio B
-		empresa.mostrarCantDeViajesProgramadosQueNoIncluyenAlDestino("Baradero");
+		empresa.mostrarCantDeViajesProgramadosQueNoIncluyenAlDestino("Ramallo");
 
 		// Ejercicio C
 		empresa.informarDestinosPorCamionChofer();

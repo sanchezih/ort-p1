@@ -102,7 +102,7 @@ public class EmpresaLogistica {
 	public void mostrarCantDeViajesProgramadosQueNoIncluyenAlDestino(String destino) {
 		int cant = 0;
 		cant = cantViajesSinDestino(destino);
-		System.out.println("Ejercicio B\nDe los viajes programados, " + cant + " no incluyen al destino " + destino);
+		System.out.println("Ejercicio B\nDe los viajes programados, " + cant + " no incluyen " + destino);
 	}
 
 	private void mostrarMatriz(int[][] matriz) {
