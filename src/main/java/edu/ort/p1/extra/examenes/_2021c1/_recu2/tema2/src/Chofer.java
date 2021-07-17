@@ -39,15 +39,12 @@ public class Chofer implements Identificable {
 
 	@Override
 	public void mostrarID() {
-		// TODO Auto-generated method stub
-
+		System.out.println(this.nroLegajo);
 	}
 
 	@Override
 	public String toString() {
-		return "Chofer [nroLegajo=" + nroLegajo + ", nombre=" + nombre + ", edad=" + edad + "]";
+		return "[" + nombre + "]";
 	}
-	
-	
 
 }

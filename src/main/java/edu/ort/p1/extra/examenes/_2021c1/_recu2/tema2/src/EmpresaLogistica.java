@@ -3,7 +3,7 @@ package edu.ort.p1.extra.examenes._2021c1._recu2.tema2.src;
 public class EmpresaLogistica {
 
 	public final static int CANT_CAMIONES = 4;
-	public final static int CANT_CHOFERES = 4;
+	public final static int CANT_CHOFERES = 5;
 
 	private Camion[] camiones = new Camion[CANT_CAMIONES];
 	private Chofer[] choferes = new Chofer[CANT_CHOFERES];
@@ -79,7 +79,21 @@ public class EmpresaLogistica {
 		return i;
 	}
 
+	public ListaCamionesOrdenadaPorAntiguedad renovarCamionesTranspSolido() {
+		ListaCamionesOrdenadaPorAntiguedad camionesPorAntiguedad;
+		camionesPorAntiguedad = new ListaCamionesOrdenadaPorAntiguedad();
+		for (int i = 0; i < this.camiones.length; i++) {
+			Camion c = this.camiones[i];
+			if (c instanceof CamionDeSolidos && c.debeRenovarse()) {
+				camionesPorAntiguedad.add(c);
+			}
+		}
+		return camionesPorAntiguedad;
+	}
+
 	/*----------------------------------------------------------------------------*/
+	
+	/* Metodos extra */
 
 	public void agregarViaje(Viaje viaje) {
 		this.viajesContratados.add(viaje);
@@ -91,17 +105,16 @@ public class EmpresaLogistica {
 		System.out.println("Ejercicio B\nDe los viajes programados, " + cant + " no incluyen al destino " + destino);
 	}
 
-	private void mostrarMatriz(int[][] mat) {
+	private void mostrarMatriz(int[][] matriz) {
 		System.out.println("\nEjercicio C\nCantidad de destinos en total que visitara cada camion con cada chofer\n");
 
-		for (int i = 0; i < mat.length; i++) {
+		for (int i = 0; i < matriz.length; i++) {
 			System.out.println("Para el camion " + this.camiones[i] + ": ");
-			for (int j = 0; j < mat[i].length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				System.out.print("Chofer " + this.choferes[j] + ": ");
-				System.out.println(mat[i][j] + " destinos recorridos");
+				System.out.println(matriz[i][j] + " destinos recorridos");
 			}
 			System.out.println("\n");
-
 		}
 	}
 
@@ -133,4 +146,10 @@ public class EmpresaLogistica {
 		return hayLugar ? i : -1;
 	}
 
+	public void mostrarCamionesTranspSolidoQueDebanSerRenovados() {
+		System.out.println("\nEjercicio D\nMuestro la lista de camiones de trans. solido que deben ser renovados");
+		for (Camion i : renovarCamionesTranspSolido()) {
+			System.out.println(i.toString());
+		}
+	}
 }

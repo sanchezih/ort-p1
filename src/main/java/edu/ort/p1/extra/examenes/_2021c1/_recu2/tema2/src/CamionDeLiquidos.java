@@ -32,14 +32,6 @@ public class CamionDeLiquidos extends Camion {
 
 	@Override
 	public boolean debeRenovarse() {
-		// TODO Auto-generated method stub
-		return false;
+		return Fecha.aniosHastaHoy(getAnioFabricacion()) > MAX;
 	}
-
-	@Override
-	public void mostrarID() {
-		// TODO Auto-generated method stub
-
-	}
-
 }

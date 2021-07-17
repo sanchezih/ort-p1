@@ -6,7 +6,7 @@ public class Main {
 
 		/* Creacion de choferes */
 		Chofer choferGeronimo = new Chofer(0001, "Geronimo", 50);
-		Chofer choferMaria = new Chofer(0002, "Maria", 40);
+		Chofer choferMaria = new Chofer(0002, "Luciana", 40);
 		Chofer choferLuis = new Chofer(0003, "Luis", 45);
 		Chofer choferMario = new Chofer(0004, "Mario", 51);
 
@@ -14,7 +14,7 @@ public class Main {
 		Camion camionDeLiquidos01 = new CamionDeLiquidos(965, 2009, 250000, 200, 4);
 		Camion camionDeLiquidos02 = new CamionDeLiquidos(222, 2003, 235000, 200, 3);
 
-		Camion camionDeSolidos01 = new CamionDeSolidos(125, 2007, 153000, 3, 1, 5);
+		Camion camionDeSolidos01 = new CamionDeSolidos(125, 2007, 251000, 3, 1, 5);
 		Camion camionDeSolidos02 = new CamionDeSolidos(882, 1999, 540000, 2, 2, 1);
 
 		/* Creacion de destinos */
@@ -40,28 +40,29 @@ public class Main {
 		Viaje viaje01 = new Viaje(camionDeSolidos01, choferGeronimo, pila01);
 
 		/* Creacion de empresa */
-		EmpresaLogistica empresaDeLogistica = new EmpresaLogistica();
+		EmpresaLogistica empresa = new EmpresaLogistica();
 
-		empresaDeLogistica.altaDeCamion(camionDeLiquidos01);
-		empresaDeLogistica.altaDeCamion(camionDeLiquidos02);
-		empresaDeLogistica.altaDeCamion(camionDeSolidos01);
-		empresaDeLogistica.altaDeCamion(camionDeSolidos02);
-		
-		empresaDeLogistica.altaDeChofer(choferGeronimo);
-		empresaDeLogistica.altaDeChofer(choferLuis);
-		empresaDeLogistica.altaDeChofer(choferMaria);
-		empresaDeLogistica.altaDeChofer(choferMario);
+		empresa.altaDeCamion(camionDeLiquidos01);
+		empresa.altaDeCamion(camionDeLiquidos02);
+		empresa.altaDeCamion(camionDeSolidos01);
+		empresa.altaDeCamion(camionDeSolidos02);
 
-		empresaDeLogistica.agregarViaje(viaje01);
+		empresa.altaDeChofer(choferGeronimo);
+		empresa.altaDeChofer(choferLuis);
+		empresa.altaDeChofer(choferMaria);
+		empresa.altaDeChofer(choferMario);
+
+		empresa.agregarViaje(viaje01);
 
 		/*----------------------------------------------------------------------------*/
 
 		// Ejercicio B
-		empresaDeLogistica.mostrarCantDeViajesProgramadosQueNoIncluyenAlDestino("Baradero");
+		empresa.mostrarCantDeViajesProgramadosQueNoIncluyenAlDestino("Baradero");
 
 		// Ejercicio C
-		empresaDeLogistica.informarDestinosPorCamionChofer();
+		empresa.informarDestinosPorCamionChofer();
 
 		// Ejercicio D
+		empresa.mostrarCamionesTranspSolidoQueDebanSerRenovados();
 	}
 }

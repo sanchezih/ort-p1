@@ -43,14 +43,7 @@ public class CamionDeSolidos extends Camion {
 
 	@Override
 	public boolean debeRenovarse() {
-		// TODO Auto-generated method stub
-		return false;
+		boolean cumpleLargo = this.largo > MAX_LARGO;
+		return (cumpleLargo && getKmRecorridos() > KMTS) || (!cumpleLargo && getKmRecorridos() > MAX_KMTS);
 	}
-
-	@Override
-	public void mostrarID() {
-		// TODO Auto-generated method stub
-
-	}
-
 }

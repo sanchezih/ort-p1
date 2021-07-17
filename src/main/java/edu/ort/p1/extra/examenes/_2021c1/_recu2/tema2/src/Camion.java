@@ -38,6 +38,11 @@ public abstract class Camion implements Renovable, Identificable {
 	}
 
 	@Override
+	public void mostrarID() {
+		System.out.println(this.nroPatente);
+	}
+
+	@Override
 	public String toString() {
 		return "Camion [nroPatente=" + nroPatente + ", anioFabricacion=" + anioFabricacion + ", kmRecorridos="
 				+ kmRecorridos + "]";
