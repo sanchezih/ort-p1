@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.ColaOrdenes" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/ColaOrdenes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="263" x="730" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.Domicilio" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/Domicilio.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="263" x="463" y="1686"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.OrdenPuertaAPuerta" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/OrdenPuertaAPuerta.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="341" x="366" y="1156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.SucursalCorreo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/SucursalCorreo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="263" x="463" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.TodoLibre" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/TodoLibre.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="295" x="366" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.OrdenRetiroSucursal" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/OrdenRetiroSucursal.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="301" x="747" y="1156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.Usuario" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/Usuario.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="263" x="827" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.Entregable" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/Entregable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="263" x="63" y="1156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.ListaOrdenesPorMonto" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/ListaOrdenesPorMonto.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="263" x="427" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ar.edu.ort.p1.extra.examenes._2021c1._2p_todolibre.tema1.src.Orden" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/_2021c1/_2p_todolibre/tema1/src/Orden.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="351" width="263" x="747" y="765"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="11">    
+    <bendpoint x="375" y="428"/>    
+    <bendpoint x="375" y="765"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <realization id="12">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <dependency id="14">    
+    <bendpoint x="1120" y="1156"/>    
+    <bendpoint x="1120" y="1367"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="17">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="18" name="sucursalCorreo">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="21">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="22" name="domicilio">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="24">    
+    <bendpoint x="1078" y="1156"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="25" name="comprador">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="28" name="domicilio">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="30">    
+    <bendpoint x="396" y="428"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="31">    
+    <bendpoint x="756" y="1367"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="32">    
+    <bendpoint x="32" y="428"/>    
+    <bendpoint x="32" y="765"/>    
+    <bendpoint x="32" y="1156"/>    
+    <bendpoint x="32" y="1367"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="33">    
+    <bendpoint x="423" y="1367"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="35">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="36" name="colaOrdenes">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="37" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="38">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="39">    
+    <bendpoint x="272" y="1367"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="40">    
+    <bendpoint x="1099" y="1156"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="41" name="vendedor">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="43">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
