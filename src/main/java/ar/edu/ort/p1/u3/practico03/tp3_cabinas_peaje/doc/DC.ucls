@@ -1,169 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="tp3.tp3_cabinas_peaje.src.mediosdepago.PASE" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/mediosdepago/PASE.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="182" x="486" y="971"/>    
+  <class id="1" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.mediosdepago.Efectivo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/mediosdepago/Efectivo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="955" y="623"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="tp3.tp3_cabinas_peaje.src.mediosdepago.SUBE" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/mediosdepago/SUBE.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="182" x="264" y="971"/>    
+  <class id="2" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.mediosdepago.MedioDePago" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/mediosdepago/MedioDePago.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="603" y="426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="tp3.tp3_cabinas_peaje.src.mediosdepago.MedioDePago" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/mediosdepago/MedioDePago.java" binary="false" 
+  <class id="3" language="java" 
+    name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.mediosdepago.MedioDePagoElectronico" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/mediosdepago/MedioDePagoElectronico.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="281" x="426" y="639"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.mediosdepago.PASE" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/mediosdepago/PASE.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="182" x="269" y="639"/>    
+    <position height="153" width="281" x="265" y="868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="tp3.tp3_cabinas_peaje.src.mediosdepago.Efectivo" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/mediosdepago/Efectivo.java" binary="false" 
+  <class id="5" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.mediosdepago.SUBE" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/mediosdepago/SUBE.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="182" x="259" y="796"/>    
+    <position height="117" width="281" x="586" y="868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="tp3.tp3_cabinas_peaje.src.mediosdepago.MedioDePagoElectronico" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/mediosdepago/MedioDePagoElectronico.java" binary="false" 
+  <class id="6" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.Vehiculo" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/Vehiculo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="187" x="481" y="796"/>    
+    <position height="-1" width="-1" x="1251" y="534"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="tp3.tp3_cabinas_peaje.src.Vehiculo" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/Vehiculo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="205" x="41" y="37"/>    
+  <enumeration id="7" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.Sexo" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/Sexo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="218" x="41" y="374"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </class>  
-  <interface id="7" language="java" name="tp3.tp3_cabinas_peaje.src.Descontable" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/Descontable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="158" x="61" y="796"/>    
+  </enumeration>  
+  <interface id="8" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.Descontable" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/Descontable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="218" x="168" y="639"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <enumeration id="8" language="java" name="tp3.tp3_cabinas_peaje.src.CategoriaVehiculo" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/CategoriaVehiculo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="159" x="41" y="302"/>    
+  <class id="9" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.EstacionDePeaje" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/EstacionDePeaje.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="545" y="166"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.Cabina" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/Cabina.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="218" x="864" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.Empleado" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/Empleado.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="218" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="12" language="java" name="ar.edu.ort.p1.u3.practico03.tp3_cabinas_peaje.src.CategoriaVehiculo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/tp3_cabinas_peaje/src/CategoriaVehiculo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1354" y="226"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="9" language="java" name="tp3.tp3_cabinas_peaje.src.EstacionDePeaje" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/EstacionDePeaje.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="223" x="286" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="tp3.tp3_cabinas_peaje.src.Cabina" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/Cabina.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="151" x="277" y="302"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" name="tp3.tp3_cabinas_peaje.src.Empleado" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="119" x="549" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="12" language="java" name="tp3.tp3_cabinas_peaje.src.Sexo" project="ort-p1" 
-    file="/ort-p1/src/main/java/tp3/tp3_cabinas_peaje/src/Sexo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="119" x="549" y="302"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </enumeration>  
-  <association id="13">    
+  <dependency id="13">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <association id="16">    
     <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="14" name="sexo"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
+      <attribute id="17" name="sexo"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="20">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <association id="22">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="23" name="categoria"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="16">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <generalization id="17">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="18">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="19" name="mp"/>      
-      <multiplicity id="20" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="21">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="23">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
-  <association id="24">    
+  <association id="25">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="25" name="cabinas"/>      
-      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+      <attribute id="26" name="cabinas"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="27">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="28" name="categoria"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
+  <dependency id="28">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <association id="30">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="31" name="mp"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <realization id="33">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
