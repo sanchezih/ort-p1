@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.u3.ejemplos.herenciaFiguras.src.Figura" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/herenciaFiguras/src/Figura.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="115" width="201" x="165" y="128"/>    
+  <class id="1" language="java" name="ar.edu.ort.p1.u2.palabra_super._01_super_en_variables.src.Vehicle" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/palabra_super/_01_super_en_variables/src/Main.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="256" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.u3.ejemplos.herenciaFiguras.src.Triangulo" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/herenciaFiguras/src/Triangulo.java" binary="false" 
+  <class id="2" language="java" name="ar.edu.ort.p1.u2.palabra_super._01_super_en_variables.src.Car" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/palabra_super/_01_super_en_variables/src/Main.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="133" width="201" x="165" y="283"/>    
+    <position height="115" width="256" x="41" y="174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u3.ejemplos.herenciaFiguras.src.Principal" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/herenciaFiguras/src/Principal.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="97" width="201" x="406" y="128"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <generalization id="4">    
+  <generalization id="3">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
