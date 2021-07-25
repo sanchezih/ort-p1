@@ -1,26 +1,25 @@
-package ar.edu.ort.p1.u2.ejemplos._05_palabra_super._02_super_en_metodos.src;
+package ar.edu.ort.p1.u2.ejemplos._05_palabra_super._02_en_metodos.src;
 
-// Clase Base Person 
-class Person {
+class Persona {
 	void message() {
 		System.out.println("Esta es una clase persona");
 	}
 }
 
-/*--------------------------------------------------------------------------*/
-// Subclase Student 
-class Student extends Person {
+/*----------------------------------------------------------------------------*/
+
+class Estudiante extends Persona {
+
 	void message() {
 		System.out.println("Esta es una clase estudiante");
 	}
 
-	// display() solo est� en la clase Student
+	/* display() solo esta en la clase Estudiante */
 	void display() {
-		// llamar� al metodo message() de la clase actual
-		message();
 
-		// llamar� al metodo message() de la clase padre
-		super.message();
+		message(); // llamara al metodo message() de la clase actual
+
+		super.message(); // llamara al metodo message() de la clase padre
 	}
 }
 
@@ -28,10 +27,10 @@ class Student extends Person {
 
 class Main {
 	public static void main(String args[]) {
-		Student s = new Student();
 
-		// llamando a display() de Student
-		s.display();
+		Estudiante s = new Estudiante();
+		s.display(); // llamando a display() de Estudiante
+
 	}
 }
 
