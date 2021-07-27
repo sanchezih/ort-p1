@@ -166,3 +166,6 @@ build/
 
 #NDK
 obj/
+
+
+.attach_pid*
