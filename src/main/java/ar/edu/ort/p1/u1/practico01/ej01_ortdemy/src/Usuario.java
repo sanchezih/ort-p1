@@ -1,18 +1,33 @@
 package ar.edu.ort.p1.u1.practico01.ej01_ortdemy.src;
 
 public class Usuario {
-	
-	private int id;
+
+	private String id;
 	private String nombre;
 	private String email;
 	private boolean esBecado;
+
+	public Usuario(String id, String nombre, String email, boolean esBecado) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.email = email;
+		this.esBecado = esBecado;
+	}
+
 	
-	
+	public String getId() {
+		return id;
+	}
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 
 	public boolean esBecado() {
-	
 		return esBecado;
 	}
-	
 
 }

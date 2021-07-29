@@ -7,7 +7,13 @@ public class Ortdemy {
 	private ArrayList<Usuario> usuarios;
 	private ArrayList<Categoria> categorias;
 
+	public Ortdemy() {
+		this.usuarios = new ArrayList<Usuario>();
+		this.categorias = new ArrayList<Categoria>();
+	}
+
 	public Resultado suscribirseACurso(String idUsuario, String idCurso) {
+
 		Resultado res = Resultado.SUSCRIPTO_OK;
 		Usuario user;
 		Curso curso;
@@ -38,6 +44,18 @@ public class Ortdemy {
 		return res;
 	}
 
+	private Usuario buscarUsuario(String id) {
+		int i = 0;
+		Usuario usuarioEncontrado = null;
+		while (i < this.usuarios.size() && usuarioEncontrado == null) {
+			if (id.equals(this.usuarios.get(i).getId())) {
+				usuarioEncontrado = this.usuarios.get(i);
+			}
+			i++;
+		}
+		return usuarioEncontrado;
+	}
+
 	private Curso buscarCurso(String id) {
 		int i = 0;
 		Curso cursoEncontrado = null;
@@ -48,4 +66,19 @@ public class Ortdemy {
 		return cursoEncontrado;
 	}
 
+	public void agregarUsuario(Usuario u) {
+		this.usuarios.add(u);
+	}
+
+	public void agregarCategoria(Categoria c) {
+		this.categorias.add(c);
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	/* Metodos extra */
+
+	public void mostrarResultadoAlSuscribirseACurso(String idUsuario, String idCurso) {
+		System.out.println(suscribirseACurso(idUsuario, idCurso));
+	}
 }
