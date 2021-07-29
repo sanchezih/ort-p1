@@ -5,13 +5,12 @@ public class Main {
 	public static void main(String[] args) {
 
 		/* Creacion de usuarios */
-		Usuario usuarioVictoria = new Usuario("u11", "Victoria", "victoria@mail.com", true);
-		Usuario usuarioAgustina = new Usuario("u12", "Agustina", "agustina@mail.com", true);
-		Usuario usuarioMartin = new Usuario("u13", "Martin", "martin@mail.com", false);
-		Usuario usuarioFelipe = new Usuario("u14", "Felipe", "felipe@mail.com", true);
+		Usuario usuarioVictoria = new Usuario("victoria", "Victoria", "victoria@mail.com", true);
+		Usuario usuarioAgustina = new Usuario("agustina", "Agustina", "agustina@mail.com", true);
+		Usuario usuarioMartin = new Usuario("martin", "Martin", "martin@mail.com", false);
+		Usuario usuarioFelipe = new Usuario("felipe", "Felipe", "felipe@mail.com", true);
 
-
-		Usuario autorCarlos = new Usuario("u21", "Carlos", "carlos@mail.com", false);
+		Usuario autorCarlos = new Usuario("carlos", "Carlos", "carlos@mail.com", false);
 
 		/* Creacion de categorias y agregado de cursos a cada una */
 		Categoria categoriaDesarrolloWeb = new Categoria("ca01", "Desarrollo Web");
@@ -40,10 +39,10 @@ public class Main {
 		ortdemy.agregarUsuario(usuarioFelipe);
 		ortdemy.agregarUsuario(autorCarlos);
 
-		ortdemy.mostrarResultadoAlSuscribirseACurso("u11", "cu01");
-		ortdemy.mostrarResultadoAlSuscribirseACurso("u12", "cu01");
-		ortdemy.mostrarResultadoAlSuscribirseACurso("u13", "cu01");
-		ortdemy.mostrarResultadoAlSuscribirseACurso("u14", "cu01");
+		ortdemy.mostrarResultadoAlSuscribirseACurso("victoria", "cu01");
+		ortdemy.mostrarResultadoAlSuscribirseACurso("victoria", "cu01");
+		ortdemy.mostrarResultadoAlSuscribirseACurso("martin", "cu01");
+		ortdemy.mostrarResultadoAlSuscribirseACurso("felipe", "cu01");
 	}
 
 }

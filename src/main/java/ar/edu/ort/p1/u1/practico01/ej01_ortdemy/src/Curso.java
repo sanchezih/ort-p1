@@ -41,9 +41,8 @@ public class Curso {
 
 		int i = 0;
 		int cantBecados = 0;
-		boolean res = true;
 
-		while (i < this.suscriptores.size() && cantBecados < MAX_BECADOS) { 
+		while (i < this.suscriptores.size() && cantBecados < MAX_BECADOS) {
 			if (this.suscriptores.get(i).esBecado()) {
 				cantBecados++;
 			}

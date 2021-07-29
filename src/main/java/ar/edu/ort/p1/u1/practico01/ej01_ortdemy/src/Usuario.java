@@ -15,16 +15,13 @@ public class Usuario {
 		this.esBecado = esBecado;
 	}
 
-	
 	public String getId() {
 		return id;
 	}
 
-
 	public void setId(String id) {
 		this.id = id;
 	}
-
 
 	public boolean esBecado() {
 		return esBecado;

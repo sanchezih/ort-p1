@@ -14,7 +14,6 @@ public class Categoria {
 		this.cursos = new ArrayList<Curso>();
 	}
 
-	// buscar usuario de ortdemy
 	public Curso buscarCurso(String id) {
 		int i = 0;
 		Curso cursoEncontrado = null;
