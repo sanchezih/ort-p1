@@ -11,6 +11,23 @@ public class OrtParking {
 		this.garages = new ArrayList<Garage>();
 	}
 
+	/**
+	 * Ejercicio C: El metodo obtenerInformeEstadoGarajes que debe devolver una
+	 * lista detallando, para cada garaje, su codigo y la cantidad de vehiculos
+	 * estacionados
+	 * 
+	 * @return
+	 */
+	public ArrayList<InformeGarage> obtenerInformeEstadoGarages() {
+
+		ArrayList<InformeGarage> lista = new ArrayList<InformeGarage>();
+
+		for (Garage garage : this.garages) {
+			lista.add(garage.dameInforme());
+		}
+		return lista;
+	}
+
 	/*----------------------------------------------------------------------------*/
 
 	/* Metodos complementarios */

@@ -16,14 +16,19 @@ public class Main {
 		Vehiculo ecosport = new Vehiculo("JEV993");
 		Vehiculo twingo = new Vehiculo("OOF125");
 
-		/* Creo los garages */
+		/* Creo los garages y registro los vehiculos */
 		Garage saa01 = new Garage("saa01", new Tablero());
-		Garage cog01 = new Garage("cog01", new Tablero());
+		saa01.registrarVehiculo(focus);
+		saa01.registrarVehiculo(siena);
+		saa01.registrarVehiculo(clio);
+		saa01.registrarVehiculo(ecosport);
+		saa01.registrarVehiculo(twingo);
 
 		/*----------------------------------------------------------------------------*/
 
 		OrtParking ortparking = new OrtParking();
 
+		// Ejercicio B
 		System.out.println("Intento estacionar el vehiculo LAP004... => " + saa01.estacionarVehiculo("LAP004"));
 
 	}
