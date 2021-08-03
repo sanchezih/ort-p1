@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u1.practico01.ej04_ort_informes_carreras.src;
+package ar.edu.ort.p1.u1.practico01.ej03_ort_informes_carreras.src;
 
 import java.util.ArrayList;
 

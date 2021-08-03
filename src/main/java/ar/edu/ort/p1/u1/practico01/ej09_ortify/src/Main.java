@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u1.practico01.ej05_hotel.src;
+package ar.edu.ort.p1.u1.practico01.ej09_ortify.src;
 
 public class Main {
 
