@@ -1,6 +1,6 @@
 /*
- * ProfesorTitular lo hemos dejado con escaso contenido porque aqu� lo usamos
- * solo a modo de ejemplo de uso de clases abstractas y herencia. Su �nico
+ * ProfesorTitular lo hemos dejado con escaso contenido porque aqui lo usamos
+ * solo a modo de ejemplo de uso de clases abstractas y herencia. Su unico
  * cometido es mostrar que existe otra subclase de Profesor.
  */
 
