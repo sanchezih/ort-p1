@@ -29,7 +29,7 @@ public class Hotel {
 	}
 
 	/**
-	 * Ejercicio E: La explotacion del método realizarCheckout de la clase Hotel,
+	 * Ejercicio E: La explotacion del metodo realizarCheckout de la clase Hotel,
 	 * que recibe como parametro el numero de habitacion y debe hacer lo siguiente:
 	 * I. Verificar que la habitacion existe y este ocupada actualmente. II.
 	 * Devolver el monto a abonar para dicha habitacion. El metodo devolvera -1 si

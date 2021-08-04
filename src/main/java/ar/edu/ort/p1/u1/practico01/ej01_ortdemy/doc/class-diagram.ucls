@@ -14,7 +14,7 @@
   <enumeration id="2" language="java" name="ar.edu.ort.p1.u1.practico01.ej01_ortdemy.src.TipoDeLeccion" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej01_ortdemy/src/TipoDeLeccion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="718" y="849"/>    
+    <position height="-1" width="-1" x="861" y="829"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.u1.practico01.ej01_ortdemy.src.Usuario" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej01_ortdemy/src/Usuario.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1001" y="531"/>    
+    <position height="-1" width="-1" x="931" y="533"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,7 +44,7 @@
   <enumeration id="5" language="java" name="ar.edu.ort.p1.u1.practico01.ej01_ortdemy.src.Resultado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej01_ortdemy/src/Resultado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="167" y="139"/>    
+    <position height="-1" width="-1" x="174" y="143"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -64,7 +64,7 @@
   <class id="7" language="java" name="ar.edu.ort.p1.u1.practico01.ej01_ortdemy.src.Categoria" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej01_ortdemy/src/Categoria.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="197" x="278" y="266"/>    
+    <position height="-1" width="-1" x="237" y="364"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -73,95 +73,97 @@
   </class>  
   <association id="8">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="9" name="lecciones">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <attribute id="9" name="suscriptores">        
+        <position height="0" width="0" x="961" y="-1095"/>      
       </attribute>      
       <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="961" y="-1095"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="12">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="13" name="autor">        
+        <position height="0" width="0" x="961" y="-1095"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="0" width="0" x="961" y="-1095"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="16" name="tipo">        
+        <position height="0" width="0" x="1232" y="-771"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1232" y="-771"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="18">    
+    <bendpoint x="526" y="266"/>    
+    <bendpoint x="526" y="495"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="19" name="usuarios">        
+        <position height="0" width="0" x="961" y="-1095"/>      
+      </attribute>      
+      <multiplicity id="20" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="961" y="-1095"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="21">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="22" name="lecciones">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="11">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="12" name="autor">        
-        <position height="0" width="0" x="648" y="-729"/>      
-      </attribute>      
-      <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="648" y="-729"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="14">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="15" name="cursos">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="16" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="17">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="18" name="tipo">        
-        <position height="0" width="0" x="749" y="-490"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="749" y="-490"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="20">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="21" name="suscriptores">        
-        <position height="0" width="0" x="648" y="-729"/>      
-      </attribute>      
-      <multiplicity id="22" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="648" y="-729"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="23">    
+  <dependency id="24">    
+    <bendpoint x="505" y="266"/>    
     <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="TARGET" refId="1"/>  
   </dependency>  
-  <association id="24">    
+  <association id="25">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="25" name="categorias">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <attribute id="26" name="categorias">        
+        <position height="0" width="0" x="-139" y="22"/>      
       </attribute>      
-      <multiplicity id="26" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-139" y="22"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="27">    
-    <bendpoint x="655" y="405"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
   <association id="28">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="29" name="usuarios">        
-        <position height="0" width="0" x="648" y="-729"/>      
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="29" name="cursos">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="30" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="648" y="-729"/>      
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

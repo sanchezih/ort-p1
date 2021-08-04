@@ -19,7 +19,6 @@ public class Main {
 		/* Creo los garages y registro los vehiculos */
 		Garage saa01 = new Garage("saa01", new Tablero());
 		saa01.registrarVehiculo(focus);
-		saa01.registrarVehiculo(siena);
 		saa01.registrarVehiculo(clio);
 		saa01.registrarVehiculo(ecosport);
 		saa01.registrarVehiculo(twingo);
@@ -30,6 +29,7 @@ public class Main {
 
 		// Ejercicio B
 		System.out.println("Intento estacionar el vehiculo LAP004... => " + saa01.estacionarVehiculo("LAP004"));
+		System.out.println("Intento estacionar el vehiculo EIO521... => " + saa01.estacionarVehiculo("EIO521"));
 
 	}
 

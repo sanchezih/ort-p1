@@ -1,0 +1,44 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>160</y><w>340</w><h>120</h></coordinates><panel_attributes>Hotel
+--
+- nombre: String
+- direccion: String
+--
++ obtenerHabitacionesDisponibles(): ArrayList&lt;Habitacion&gt;
++ realizarCheckout(int): double
+- buscarHabitacion(int): Habitacion
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>380</y><w>210</w><h>190</h></coordinates><panel_attributes>Habitacion
+--
+- numero: int
+- precio: double
+--
++ Habitacion(int, double)
++ estaOcupada(): boolean
++ reservar(Cliente): void
++ liberar(): void
++ calcularTotal(): double
+- calcularAdicionales(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>270</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- habitaciones</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>670</y><w>210</w><h>70</h></coordinates><panel_attributes>Cliente
+--
+- nombre: String
+- cantidadDiasEstadia: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>560</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- cliente</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>490</y><w>210</w><h>80</h></coordinates><panel_attributes>Adicional
+--
+- precio: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>520</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- adicionales</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>310</y><w>210</w><h>90</h></coordinates><panel_attributes>Fecha
+--
+- dia: int
+- mes: int
+- ano: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>390</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- fechaPrestacion</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>670</y><w>120</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Tipo
+--
+_+ DESAYUNO_
+_+ ROOM_SERVICE_
+_+ TRASLADO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>560</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>

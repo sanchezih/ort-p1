@@ -1,0 +1,53 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>100</y><w>290</w><h>190</h></coordinates><panel_attributes>Portal
+--
++ procesarPedido(Cliente): ArrayList&lt;Producto&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Cliente
+--
+- nombre: String
+- apellido: String
+- direccion: String
+- email: String
+- telefono: String
+--
++ getPedidoPendiente(): Pedido
++ confirmarPedido(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>710</y><w>210</w><h>100</h></coordinates><panel_attributes>Producto
+--
+- nombre: String
+- precioUnitario: double
+- cantEnStock: int
+--
++ descontar(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>510</y><w>310</w><h>130</h></coordinates><panel_attributes>Pedido
+--
+- fechaHora: String
+--
++ hayStockSuficiente(): boolean
++ dameListaProductosFaltantes(): ArrayList&lt;Producto&gt; 
++ confirmar(): void
+- descontarStock(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>180</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- clientes</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>280</y><w>90</w><h>450</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- productos</panel_attributes><additional_attributes>10;430;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>280</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- historial</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>380</y><w>210</w><h>60</h></coordinates><panel_attributes>Historial
+--
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>430</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- pedidos</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>500</y><w>120</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+_+ PENDIENTE_
+_+ CONFIRMADO_
+_+ EN_CAMINO_
+_+ ENTREGADO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>540</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- estado</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>630</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- items</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>710</y><w>210</w><h>80</h></coordinates><panel_attributes>ItemPedido
+--
+- cant: int
+--
++ hayStockSuficiente(): boolean
++ descontarStock(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>730</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- producto</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>220</y><w>100</w><h>310</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;290;80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>280</y><w>190</w><h>250</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>170;230;10;10</additional_attributes></element></diagram>

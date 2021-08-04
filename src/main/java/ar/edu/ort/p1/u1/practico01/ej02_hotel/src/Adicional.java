@@ -4,9 +4,9 @@ public class Adicional {
 	private double precio;
 	private Tipo tipo;
 	private Fecha fechaPrestacion;
+
 	public double getPrecio() {
 		return precio;
 	}
-	
-	
+
 }
