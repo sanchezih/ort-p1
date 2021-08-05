@@ -8,7 +8,6 @@ public class Usuario {
 	private boolean esBecado;
 
 	public Usuario(String id, String nombre, String email, boolean esBecado) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.email = email;
