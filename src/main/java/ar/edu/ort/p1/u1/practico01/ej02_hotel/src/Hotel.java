@@ -15,7 +15,6 @@ public class Hotel {
 	 * 
 	 * @return
 	 */
-
 	public ArrayList<Habitacion> obtenerHabitacionesDisponibles() {
 
 		ArrayList<Habitacion> lista = new ArrayList<Habitacion>();
@@ -62,7 +61,7 @@ public class Hotel {
 
 		int i = 0;
 		Habitacion habitacinEncontrada = null;
-		
+
 		while (i < this.habitaciones.size() && habitacinEncontrada == null) {
 			if (nroHab == this.habitaciones.get(i).getNumero()) {
 				habitacinEncontrada = this.habitaciones.get(i);
@@ -70,7 +69,5 @@ public class Hotel {
 			i++;
 		}
 		return habitacinEncontrada;
-
 	}
-
 }
