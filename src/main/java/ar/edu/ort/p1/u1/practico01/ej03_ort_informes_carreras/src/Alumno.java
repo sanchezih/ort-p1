@@ -9,7 +9,6 @@ public class Alumno {
 	private ArrayList<Materia> materias;
 
 	public Alumno(String nombre, String mail) {
-		super();
 		this.nombre = nombre;
 		this.mail = mail;
 		this.materias = new ArrayList<Materia>();

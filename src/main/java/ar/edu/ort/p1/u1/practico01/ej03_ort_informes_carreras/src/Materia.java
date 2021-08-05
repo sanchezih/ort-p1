@@ -7,7 +7,6 @@ public class Materia {
 	private Estado estado;
 
 	public Materia(String nombre, String cuatrimestre, Estado estado) {
-		super();
 		this.nombre = nombre;
 		this.cuatrimestre = cuatrimestre;
 		this.estado = estado;
