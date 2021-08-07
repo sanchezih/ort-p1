@@ -1,11 +1,5 @@
-package ar.edu.ort.p1.extra.muestraenums.muestra_metodos_enum_java;
+package ar.edu.ort.p1.u1.ejemplos.enums._01_ejemplo_nivel_estudio.src;
 
-/**
- *
- * @author Charly Cimino Aprendé más Java en mi canal:
- *         https://www.youtube.com/c/CharlyCimino Encontrá más código en mi
- *         repo de GitHub: https://github.com/CharlyCimino
- */
 public class Persona {
 
 	private String nombre;
