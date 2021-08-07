@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u1.practico01.ej02_hotel.src;
+package ar.edu.ort.p1.common.pojo;
 
 public class Fecha {
 	private int dia;
@@ -6,7 +6,6 @@ public class Fecha {
 	private int anio;
 
 	public Fecha(int dia, int mes, int anio) {
-		super();
 		this.dia = dia;
 		this.mes = mes;
 		this.anio = anio;

@@ -1,6 +1,9 @@
 package ar.edu.ort.p1.u1.practico01.ej02_hotel.src;
 
+import ar.edu.ort.p1.common.pojo.Fecha;
+
 public class Adicional {
+	
 	private double precio;
 	private Tipo tipo;
 	private Fecha fechaPrestacion;

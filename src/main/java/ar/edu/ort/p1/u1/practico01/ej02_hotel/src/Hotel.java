@@ -17,14 +17,14 @@ public class Hotel {
 	 */
 	public ArrayList<Habitacion> obtenerHabitacionesDisponibles() {
 
-		ArrayList<Habitacion> lista = new ArrayList<Habitacion>();
+		ArrayList<Habitacion> listaDeHabitaciones = new ArrayList<Habitacion>();
 
-		for (Habitacion h : this.habitaciones) {
-			if (!h.estaOcupada()) {
-				lista.add(h);
+		for (Habitacion habitacion : this.habitaciones) {
+			if (!habitacion.estaOcupada()) {
+				listaDeHabitaciones.add(habitacion);
 			}
 		}
-		return lista;
+		return listaDeHabitaciones;
 	}
 
 	/**
@@ -41,12 +41,12 @@ public class Hotel {
 	public double realizarCheckout(int nroHab) {
 
 		double precio = -1;
-		Habitacion hab;
-		hab = buscarHabitacion(nroHab);
+		Habitacion habitacion;
+		habitacion = buscarHabitacion(nroHab);
 
-		if (hab != null && hab.estaOcupada()) {
-			precio = hab.calcularTotal();
-			hab.liberar();
+		if (habitacion != null && habitacion.estaOcupada()) {
+			precio = habitacion.calcularTotal();
+			habitacion.liberar();
 		}
 		return precio;
 	}

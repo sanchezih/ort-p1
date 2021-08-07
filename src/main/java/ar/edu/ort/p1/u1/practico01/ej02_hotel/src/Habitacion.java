@@ -8,8 +8,6 @@ public class Habitacion {
 	private double precio;
 	private Cliente cliente;
 	private ArrayList<Adicional> adicionales;
-	
-	
 
 	public int getNumero() {
 		return numero;

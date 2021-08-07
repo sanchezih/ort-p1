@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.u5.practico05.ej01_libros_dvds.src;
 
-import ar.edu.ort.p1.common.PilaGenericaAL;
+import ar.edu.ort.p1.common.tda.PilaGenericaAL;
 import edu.ort.tp1.u5.tda.Pila;
 import edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
