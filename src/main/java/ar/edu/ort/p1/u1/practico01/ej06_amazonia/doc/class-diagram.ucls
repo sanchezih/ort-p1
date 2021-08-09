@@ -4,7 +4,7 @@
   <class id="1" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.Pedido" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/Pedido.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="410" y="478"/>    
+    <position height="-1" width="-1" x="324" y="445"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <enumeration id="2" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.Estado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/Estado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="207" y="662"/>    
+    <position height="-1" width="-1" x="715" y="446"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.ItemPedido" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/ItemPedido.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="449" y="653"/>    
+    <position height="-1" width="-1" x="324" y="728"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.Producto" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/Producto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="858" y="530"/>    
+    <position height="-1" width="-1" x="967" y="728"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,7 +44,7 @@
   <class id="5" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.Historial" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/Historial.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="213" y="311"/>    
+    <position height="-1" width="-1" x="226" y="104"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -54,7 +54,7 @@
   <class id="6" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.Cliente" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/Cliente.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="449" y="155"/>    
+    <position height="-1" width="-1" x="543" y="157"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -64,7 +64,7 @@
   <class id="7" language="java" name="ar.edu.ort.p1.u1.practico01.ej06_amazonia.src.Portal" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u1/practico01/ej06_amazonia/src/Portal.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="822" y="125"/>    
+    <position height="-1" width="-1" x="967" y="152"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -73,90 +73,90 @@
   </class>  
   <association id="8">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="9" name="items">        
-        <position height="0" width="0" x="64" y="-115"/>      
+      <attribute id="9" name="estado">        
+        <position height="0" width="0" x="636" y="-500"/>      
       </attribute>      
-      <multiplicity id="10" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="64" y="-115"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="11">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <association id="12">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="13" name="productos">        
-        <position height="0" width="0" x="250" y="-440"/>      
-      </attribute>      
-      <multiplicity id="14" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="250" y="-440"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="15">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="16" name="historial">        
-        <position height="0" width="0" x="51" y="-134"/>      
-      </attribute>      
-      <multiplicity id="17" minimum="0" maximum="1">        
-        <position height="0" width="0" x="51" y="-134"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="18">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="19" name="estado">        
-        <position height="0" width="0" x="64" y="-115"/>      
-      </attribute>      
-      <multiplicity id="20" minimum="0" maximum="1">        
-        <position height="0" width="0" x="64" y="-115"/>      
+      <multiplicity id="10" minimum="0" maximum="1">        
+        <position height="0" width="0" x="636" y="-500"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="21">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="22" name="producto">        
-        <position height="0" width="0" x="250" y="-440"/>      
+  <association id="11">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="12" name="historial">        
+        <position height="0" width="0" x="115" y="-493"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="1">        
-        <position height="0" width="0" x="250" y="-440"/>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="115" y="-493"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="24">    
+  <association id="14">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="25" name="pedidos">        
-        <position height="0" width="0" x="64" y="-115"/>      
+      <attribute id="15" name="pedidos">        
+        <position height="0" width="0" x="42" y="-299"/>      
       </attribute>      
-      <multiplicity id="26" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="64" y="-115"/>      
+      <multiplicity id="16" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="42" y="-299"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="27">    
+  <association id="17">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="28" name="clientes">        
-        <position height="0" width="0" x="64" y="-115"/>      
+      <attribute id="18" name="clientes">        
+        <position height="0" width="0" x="222" y="-237"/>      
       </attribute>      
-      <multiplicity id="29" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="64" y="-115"/>      
+      <multiplicity id="19" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="222" y="-237"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="21" name="producto">        
+        <position height="0" width="0" x="609" y="-745"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="609" y="-745"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="24">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="25" name="productos">        
+        <position height="0" width="0" x="609" y="-745"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="609" y="-745"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="28" name="items">        
+        <position height="0" width="0" x="3" y="-218"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="3" y="-218"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
