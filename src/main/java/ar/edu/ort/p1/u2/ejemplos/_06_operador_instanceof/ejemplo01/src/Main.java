@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u3.ejemplos.operador_instanceof.ejemplo01.src;
+package ar.edu.ort.p1.u2.ejemplos._06_operador_instanceof.ejemplo01.src;
 
 public class Main {
 
@@ -9,3 +9,4 @@ public class Main {
 		}
 	}
 }
+

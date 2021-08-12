@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.u3.ejemplos.operador_instanceof.ejemplo01.src.Main" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/operador_instanceof/ejemplo01/src/Main.java" binary="false" 
+  <class id="1" language="java" name="ar.edu.ort.p1.u2.ejemplos._01_herencia.vehiculos.src.Main" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_01_herencia/vehiculos/src/Main.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="265" x="48" y="259"/>    
+    <position height="-1" width="-1" x="240" y="99"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

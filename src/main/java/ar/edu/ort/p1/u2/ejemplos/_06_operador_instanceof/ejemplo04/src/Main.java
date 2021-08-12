@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u3.ejemplos.operador_instanceof.ejemplo04.src;
+package ar.edu.ort.p1.u2.ejemplos._06_operador_instanceof.ejemplo04.src;
 //Java program to check if an object of a class is also an instance of the interface implemented by the class
 
 interface Animal {

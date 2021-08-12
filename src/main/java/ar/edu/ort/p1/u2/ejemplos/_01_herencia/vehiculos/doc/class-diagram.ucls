@@ -1,44 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.u2.ejemplos.herencia.herenciaAnimales.src.animales.Caballo" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/herencia/herenciaAnimales/src/animales/Caballo.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="151" width="286" x="69" y="87"/>    
+  <class id="1" language="java" name="ar.edu.ort.p1.u2.ejemplos._01_herencia.vehiculos.src.Vehiculo" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_01_herencia/vehiculos/src/Vehiculo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="216" x="297" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.u2.ejemplos.herencia.herenciaAnimales.src.animales.Gato" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/herencia/herenciaAnimales/src/animales/Gato.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="151" width="286" x="395" y="87"/>    
+  <class id="2" language="java" name="ar.edu.ort.p1.u2.ejemplos._01_herencia.vehiculos.src.Coche" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_01_herencia/vehiculos/src/Coche.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="133" width="216" x="553" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u2.ejemplos.herencia.herenciaAnimales.src.animales.Animal" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/herencia/herenciaAnimales/src/animales/Animal.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="241" width="286" x="395" y="-194"/>    
+  <enumeration id="3" language="java" name="ar.edu.ort.p1.u2.ejemplos._01_herencia.vehiculos.src.Color" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_01_herencia/vehiculos/src/Color.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="133" width="216" x="297" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </class>  
-  <class id="4" language="java" name="ar.edu.ort.p1.u2.ejemplos.herencia.herenciaAnimales.src.animales.Perro" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/herencia/herenciaAnimales/src/animales/Perro.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="151" width="286" x="721" y="87"/>    
+  </enumeration>  
+  <class id="4" language="java" name="ar.edu.ort.p1.u2.ejemplos._01_herencia.vehiculos.src.Barco" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_01_herencia/vehiculos/src/Barco.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="79" width="232" x="27" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -46,16 +42,24 @@
     </display>  
   </class>  
   <generalization id="5">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="6">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="7">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="6">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="7" name="color">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="8" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

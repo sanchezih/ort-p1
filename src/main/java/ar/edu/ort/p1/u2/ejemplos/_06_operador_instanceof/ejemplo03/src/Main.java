@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u3.ejemplos.operador_instanceof.ejemplo03.src;
+package ar.edu.ort.p1.u2.ejemplos._06_operador_instanceof.ejemplo03.src;
 
 // Java Program to check if an object of the subclass is also an instance of the superclass
 
