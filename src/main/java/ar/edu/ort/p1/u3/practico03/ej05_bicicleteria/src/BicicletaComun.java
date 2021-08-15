@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u3.practico03.tp3_bicicleteria.src;
+package ar.edu.ort.p1.u3.practico03.ej05_bicicleteria.src;
 
 public class BicicletaComun extends Bicicleta {
 

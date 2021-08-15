@@ -1,6 +1,7 @@
-package ar.edu.ort.p1.u3.practico03.tp3_bicicleteria.src;
+package ar.edu.ort.p1.u3.practico03.ej05_bicicleteria.src;
 
 public class BicicletaElectrica extends Bicicleta {
+
 	private static int POTENCIA_MAX_PERMITIDA = 250;
 	private double potencia;
 
@@ -19,11 +20,12 @@ public class BicicletaElectrica extends Bicicleta {
 
 	@Override
 	public boolean isReparable() {
-		if (super.isReparable() && this.potencia <= POTENCIA_MAX_PERMITIDA) {
-			return true;
-		} else {
-			return false;
-		}
+
+		/* Para punto B */
+		return this.potencia < POTENCIA_MAX_PERMITIDA;
+
+		/* Para punto C */
+		// return super.isReparable() && this.potencia <= POTENCIA_MAX_PERMITIDA;
 	}
 
 }

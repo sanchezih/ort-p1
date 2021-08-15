@@ -1,6 +1,7 @@
-package ar.edu.ort.p1.u3.practico03.tp3_bicicleteria.src;
+package ar.edu.ort.p1.u3.practico03.ej05_bicicleteria.src;
 
 public abstract class Bicicleta {
+	
 	private static int KM_MAX_PERMITIDO = 2000;
 	private String marca;
 	private String modelo;
