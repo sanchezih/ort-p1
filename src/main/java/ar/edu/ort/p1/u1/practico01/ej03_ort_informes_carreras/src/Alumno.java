@@ -34,6 +34,8 @@ public class Alumno {
 		this.mail = mail;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public int cantAprobadas() {
 		int cant = 0;
 		for (Materia m : this.materias) {

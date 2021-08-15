@@ -14,9 +14,18 @@ public class Carrera {
 		this.alumnos.add(a);
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio B: La explotacion del metodo getInformeMaxMaterias de la clase
+	 * Carrera, que debe crear y devolver un unico que contenga como datos: I.
+	 * Cantidad de materias aprobadas II. Lista con unicamente los nombres y mails
+	 * de todos aquellos alumnos que sean quienes mas materias tienen aprobadas.
+	 * 
+	 * @return
+	 */
 	public Informe getInformeMaxMaterias() {
 		Informe informe;
-		ArrayList<AlumnoSimplificado> lista = new ArrayList<>();
 		int maxCantAprobadas;
 
 		maxCantAprobadas = maxCantMateriasAprobadas();
