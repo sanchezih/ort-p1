@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u3.practico03.tp3_adm_personal.src;
+package ar.edu.ort.p1.u3.practico03.ej07_admin_de_personal.src;
 
 import java.util.ArrayList;
 
