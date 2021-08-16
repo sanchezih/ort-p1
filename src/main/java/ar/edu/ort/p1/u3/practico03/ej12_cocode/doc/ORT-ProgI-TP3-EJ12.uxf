@@ -1,0 +1,63 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>2</y><w>340</w><h>70</h></coordinates><panel_attributes>Sophie
+--
+--
++ programasPorDebajoDe(int): ArrayList&lt;Programa&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>152</y><w>330</w><h>170</h></coordinates><panel_attributes>Programa
+--
+- id: String
+- nombre: String
+- nomResponsable: String
+- pasoPruebasUnitarias: boolean
+--
++ mostrarDetalleDeMetodo(String): void
++ listadoFuentesMayoresAlPromedio(): ArrayList&lt;Fuente&gt;
++ indiceCalidad(): double
+- promedioIndiceCalidadFuentes(): double
+- buscarMetodo(String): Metodo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>152</y><w>210</w><h>70</h></coordinates><panel_attributes>/Fuente/
+--
+- nombre: String
+- path: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>312</y><w>240</w><h>100</h></coordinates><panel_attributes>FuenteProgramacion
+--
+--
++ indiceCalidad(): double
++ buscarMetodo(String): Metodo
++ promedioIndiceCalidadMetodos(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>512</y><w>200</w><h>130</h></coordinates><panel_attributes>Metodo
+--
+- nombre: String
+- cantParametros: int
+- cantInstrucciones: int
+- cantRamificacionesFlujo: int
+--
++ indiceCalidad(): double
++ mostrarDatos(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>312</y><w>210</w><h>90</h></coordinates><panel_attributes>FuenteMarcado
+--
+_+ MARCADO_DIVISION: int = 450_
+- tamanioArchivoKB: double
+--
++ indiceCalidad(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>182</y><w>240</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- fuentes
+m1=*</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>412</y><w>230</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Calificable/
+--
+
+--
+/+ indiceCalidad(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>62</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+- programas
+m1=*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>482</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;100;90</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>312</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>212</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>212</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;100</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>212</y><w>260</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;200;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>402</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-metodos</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>512</y><w>90</w><h>80</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoMarcado
+--
+_XML_
+_HTML_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>512</y><w>110</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoProgramacion
+--
+_JAVA_
+_JAVASCRIPT_
+_C_SHARP_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>402</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>392</y><w>60</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>30</x><y>310</y><w>390</w><h>330</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>370;310;10;310;10;10</additional_attributes></element></diagram>

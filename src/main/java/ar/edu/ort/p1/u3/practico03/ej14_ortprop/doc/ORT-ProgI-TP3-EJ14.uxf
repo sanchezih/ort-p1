@@ -1,0 +1,29 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>490</y><w>180</w><h>110</h></coordinates><panel_attributes>Cliente
+--
+-apellido: String
+-nombre: String
+-telefono: String
+-email: String
+--
++recibirNotificacion(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>490</y><w>200</w><h>100</h></coordinates><panel_attributes>Inmobiliaria
+--
+-nombre: String
+-email: String
+-porcentajeComision: String
+--
++recibirNotificacion(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>100</y><w>200</w><h>130</h></coordinates><panel_attributes>Inmueble
+--
+-domicilio: String
+-superficieEnM2: String
+-cantidadDeHamb: int
+-precio: double
+--
++setPrecio(double): void
++mostrarDatos() void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>320</y><w>210</w><h>60</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/Notificable/
+--
+/+recibirNotificacion(String): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>370</y><w>120</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>370</y><w>140</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;120;120</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>220</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-interesados
+m1=0..*</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>150</y><w>130</w><h>360</h></coordinates><panel_attributes>lt=&lt;-
+-inmuebles
+m1=0..*</panel_attributes><additional_attributes>10;20;110;20;110;340</additional_attributes></element></diagram>
