@@ -6,10 +6,10 @@ package ar.edu.ort.p1.u2.ejemplos._04_constructores.src;
  */
 
 //Java Program to create and call a default constructor  
-class Bike1 {
+class Bike {
 
 //creating a default constructor  
-	Bike1() {
+	Bike() {
 		System.out.println("Bike is created");
 	}
 
@@ -17,6 +17,6 @@ class Bike1 {
 	public static void main(String args[]) {
 
 //calling a default constructor  
-		Bike1 b = new Bike1();
+		Bike b = new Bike();
 	}
 }
