@@ -2,7 +2,7 @@ package ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._1_private.ok;
 
 public class EjemploPrivate {
 
-	private int atributo1; // Este atributo es privado
+	private String unAtributoPrivado; // Este atributo es privado
 	private int contador = 0; // Contador de registro
 
 	/**
@@ -10,13 +10,14 @@ public class EjemploPrivate {
 	 * el acceso a el desde otras instancias
 	 * 
 	 */
-	public void setAtributo1(int valor) {
-		contador++; // Contador que lleva el registro de ediciones del atributo1
-		atributo1 = valor; // Establecemos el valor del atributo
+	public String getUnAtributoPrivado() {
+		return unAtributoPrivado; // Retornamos el valor actual del atributo
 	}
 
-	public int getAtributo1() {
-		return atributo1; // Retornamos el valor actual del atributo
+	public void setUnAtributoPrivado(String valor) {
+		contador++; // Contador que lleva el registro de ediciones del atributo unAtributoPrivado
+		unAtributoPrivado = valor; // Establecemos el valor del atributo
+		System.out.println("Seteo el valor del atributo con el valor: " + valor);
 	}
 
 	// Get para el contador
