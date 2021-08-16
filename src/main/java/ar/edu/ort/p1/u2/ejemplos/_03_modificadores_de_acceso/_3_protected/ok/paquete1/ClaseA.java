@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._3_protected.ok.ejemplo2.paquete1;
+package ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._3_protected.ok.paquete1;
 
 public class ClaseA {
 

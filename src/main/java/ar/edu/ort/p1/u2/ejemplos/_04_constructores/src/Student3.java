@@ -9,13 +9,12 @@ package ar.edu.ort.p1.u2.ejemplos._04_constructores.src;
  *
  */
 
-//Let us see another example of default constructor  
-//which displays the default values  
+//Let us see another example of default constructor which displays the default values  
 class Student3 {
 	int id;
 	String name;
 
-//method to display the value of id and name  
+	//method to display the value of id and name  
 	void display() {
 		System.out.println(id + " " + name);
 	}

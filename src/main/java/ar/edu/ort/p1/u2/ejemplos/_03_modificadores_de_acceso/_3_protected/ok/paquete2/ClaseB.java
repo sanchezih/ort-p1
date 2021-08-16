@@ -1,6 +1,6 @@
-package ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._3_protected.ok.ejemplo2.paquete2;
+package ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._3_protected.ok.paquete2;
 
-import ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._3_protected.ok.ejemplo2.paquete1.ClaseA;
+import ar.edu.ort.p1.u2.ejemplos._03_modificadores_de_acceso._3_protected.ok.paquete1.ClaseA;
 
 public class ClaseB extends ClaseA {
 

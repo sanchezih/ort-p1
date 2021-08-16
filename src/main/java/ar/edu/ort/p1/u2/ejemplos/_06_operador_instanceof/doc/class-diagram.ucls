@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.u3.ejemplos.instanceof_.ejemplo03.src.Animal" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/instanceof_/ejemplo03/src/Main.java" binary="false" 
+  <class id="1" language="java" name="ar.edu.ort.p1.u2.ejemplos._06_operador_instanceof.src.Perro" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_06_operador_instanceof/src/Perro.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="79" width="228" x="30" y="119"/>    
+    <position height="115" width="239" x="41" y="156"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.u3.ejemplos.instanceof_.ejemplo03.src.Dog" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/instanceof_/ejemplo03/src/Main.java" binary="false" 
+  <class id="2" language="java" name="ar.edu.ort.p1.u2.ejemplos._06_operador_instanceof.src.Animal" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u2/ejemplos/_06_operador_instanceof/src/Animal.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="79" width="228" x="30" y="256"/>    
+    <position height="79" width="239" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -22,8 +22,8 @@
     </display>  
   </class>  
   <generalization id="3">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
