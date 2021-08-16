@@ -1,0 +1,33 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>310</y><w>210</w><h>100</h></coordinates><panel_attributes>/Figura/
+--
+-color: String
+--
+/+calcularArea(): double/
+/+calcularPerimetro(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>130</y><w>210</w><h>80</h></coordinates><panel_attributes>GrupoDeFiguras
+--
+
+--
++mostrarInfoDeFiguras: void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>200</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-figuras</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>450</y><w>210</w><h>80</h></coordinates><panel_attributes>Circunferencia
+--
+-radio: double
+--
++calcularArea(): double
++calcularPerimetro(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>580</y><w>210</w><h>100</h></coordinates><panel_attributes>Rectangulo
+--
+-base: double
+-altura: double
+--
++calcularArea(): double
++calcularPerimetro(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>450</y><w>180</w><h>100</h></coordinates><panel_attributes>TrianguloEquilatero
+--
+-lado: double
+--
+-altura(): double
++calcularArea(): double
++calcularPerimetro(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>400</y><w>150</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;50</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>400</y><w>130</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>400</y><w>30</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element></diagram>

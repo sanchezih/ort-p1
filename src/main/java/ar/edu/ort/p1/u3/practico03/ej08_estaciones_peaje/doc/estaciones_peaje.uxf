@@ -1,0 +1,69 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>201</x><y>55</y><w>240</w><h>110</h></coordinates><panel_attributes>Estacion
+--
+- ID: String
+- descripcion: String
+--
+_+ dameHoraActual(): int_
++ cabinasConEfectivo(): ArrayList&lt;Cabina&gt;
++ promedioDemora(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>191</x><y>295</y><w>230</w><h>170</h></coordinates><panel_attributes>Cabina
+--
+_- MIN_H_PICO1: int = 6_
+_- MAX_H_PICO1: int = 10_
+_- MIN_H_PICO2: int = 17_
+_- MAX_H_PICO2: int = 20_
+_- INCR_H_PICO: double = 0.08_
+- ID: String
+--
++ cobrar(Vehiculo): double 
+- abonaIncrementoHoraPico(): boolean
+- esHoraPico(int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>271</x><y>155</y><w>80</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- cabinas</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>591</x><y>315</y><w>120</w><h>110</h></coordinates><panel_attributes>Empleado
+--
+- nombre: String
+- apellido: String
+- sexo: String
+- domicilio: String
+- telefono: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>411</x><y>375</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- empleadosHabilitados</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>201</x><y>535</y><w>150</w><h>60</h></coordinates><panel_attributes>/MedioDePago/
+--
+- descripcion: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>455</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- medioDePago</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>191</x><y>725</y><w>150</w><h>50</h></coordinates><panel_attributes>Efectivo
+--
++ getDescuento(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>351</x><y>725</y><w>150</w><h>70</h></coordinates><panel_attributes>SUBE
+--
+_-DCTO: double = 0.1_
+--
++ getDescuento(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>511</x><y>725</y><w>210</w><h>100</h></coordinates><panel_attributes>PASE
+--
+_-DCTO: double = 0.15_
+_-DEMORA_ESP: int = 5_
+_-DCTO_X_DEM_ESP: double = 0.12_
+--
++ getDescuento(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>251</x><y>585</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>421</x><y>645</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>491</x><y>645</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>411</x><y>585</y><w>170</w><h>70</h></coordinates><panel_attributes>/MedioDePagoElectronico/
+--
+- diasDemora: int
+--
++ getDiasDemora(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>341</x><y>555</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;10;140;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>491</x><y>255</y><w>120</w><h>50</h></coordinates><panel_attributes>Vehiculo
+--
+- patente: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>491</x><y>55</y><w>120</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Categoria
+--
+_+ AUTO(100)_
+_+ MOTO(50)_
+_+ CAMION(200)_
+- tarifa: double
+- Categoria(double)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>541</x><y>165</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-categoria</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>321</x><y>275</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>170;10;10;10;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>495</y><w>150</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Descontable/
+--
+--
+/+ getDescuento(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>540</y><w>240</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>220;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>120</y><w>160</w><h>690</h></coordinates><panel_attributes>lt=&lt;.
+m1=Dependencia dada\npor el método\ncabinasConEfectivo</panel_attributes><additional_attributes>130;640;40;640;40;10;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>0</y><w>500</w><h>680</h></coordinates><panel_attributes>lt=&lt;.
+m1=Dependencia dada\npor el método\npromedioDemora</panel_attributes><additional_attributes>260;630;480;630;480;10;10;10;10;50</additional_attributes></element></diagram>
