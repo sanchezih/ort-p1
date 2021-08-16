@@ -1,0 +1,52 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>450</x><y>98</y><w>210</w><h>120</h></coordinates><panel_attributes>Carta
+--
+_- tipoDePapel: String_
+_- patronContraCara: String_
+_- marca: String_
+- estaTapada: boolean
+--
++ darVuelta(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>398</y><w>140</w><h>120</h></coordinates><panel_attributes>CartaConLetra
+--
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>328</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>268</y><w>120</w><h>60</h></coordinates><panel_attributes>Joker
+--
+- dibujo: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>148</y><w>120</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>398</y><w>160</w><h>50</h></coordinates><panel_attributes>CartaConNumero
+--
+- numero: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>328</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>268</y><w>210</w><h>70</h></coordinates><panel_attributes>CartaComun
+--
+
+--
++ getPalo(): Palo</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>208</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>242</y><w>140</w><h>140</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Palo
+--
+_+PICAS_
+_+CORAZON_
+_+TREBOL_
+_+DIAMANTE_
+- Palo(Color)
+--
++ getColor(): Color</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>282</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-palo</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>92</y><w>110</w><h>80</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Color
+--
+_+ROJO_
+_+NEGRO_
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>162</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-color</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>402</y><w>100</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Letra
+--
+_-A_
+_-J_
+_-Q_
+_-K_
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>449</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- letra</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element></diagram>
