@@ -6,7 +6,7 @@ public class Persona {
 	private String apellido;
 	private int edad;
 
-	// Constructores
+	/* Constructores */
 	public Persona() {
 		nombre = "";
 		apellido = "";
@@ -19,7 +19,7 @@ public class Persona {
 		this.edad = edad;
 	}
 
-	// Metodos
+	/* Metodos */
 	public String getNombre() {
 		return nombre;
 	}
@@ -32,6 +32,7 @@ public class Persona {
 		return edad;
 	}
 
+	@Override
 	public String toString() {
 		Integer datoEdad = edad;
 		return "Nombre completo: ".concat(nombre).concat(" ").concat(apellido).concat("\nEdad: ")

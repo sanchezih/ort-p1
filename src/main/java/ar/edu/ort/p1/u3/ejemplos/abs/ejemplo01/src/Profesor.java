@@ -2,38 +2,39 @@ package ar.edu.ort.p1.u3.ejemplos.abs.ejemplo01.src;
 
 public abstract class Profesor extends Persona {
 
-	private String IdProfesor;
+	private String idProfesor;
 
-	// Constructores
+	/* Constructores */
 	public Profesor() {
 		super();
-		IdProfesor = "Unknown";
+		idProfesor = "Unknown";
 	}
 
 	public Profesor(String nombre, String apellido, int edad, String id) {
 		super(nombre, apellido, edad);
-		IdProfesor = id;
+		idProfesor = id;
 	}
 
-	// Metodos
+	/* Metodos */
 	public void setIdProfesor(String IdProfesor) {
-		this.IdProfesor = IdProfesor;
+		this.idProfesor = IdProfesor;
 	}
 
 	public String getIdProfesor() {
-		return IdProfesor;
+		return idProfesor;
 	}
 
 	public void mostrarDatos() {
 		System.out.println("Datos Profesor. Profesor de nombre: " + getNombre() + " " + getApellido()
-				+ " con Id de profesor: " + getIdProfesor());
+				+ " con id de profesor: " + getIdProfesor());
 	}
 
+	@Override
 	public String toString() {
-		return super.toString().concat("\nID: ").concat(IdProfesor);
+		return super.toString().concat("\nid: ").concat(idProfesor);
 	}
 
-	// Metodo abstracto se debe implementar obligatoriamente en las subclases
+	/* Metodo abstracto se debe implementar obligatoriamente en las subclases */
 	public abstract float importeSalario();
 
 }

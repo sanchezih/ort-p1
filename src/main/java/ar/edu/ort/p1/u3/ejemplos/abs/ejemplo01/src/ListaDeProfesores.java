@@ -3,40 +3,42 @@ package ar.edu.ort.p1.u3.ejemplos.abs.ejemplo01.src;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class ListinProfesores {
+public class ListaDeProfesores {
 
-	private ArrayList<Profesor> listinProfesores;
+	private ArrayList<Profesor> listaDeProfesores;
 
-	// Constructor
-	public ListinProfesores() {
-		listinProfesores = new ArrayList<Profesor>(); // 1
+	/* Constructor */
+	public ListaDeProfesores() {
+		listaDeProfesores = new ArrayList<Profesor>(); // Ver nota 1
 	}
 
 	public void addProfesor(Profesor profesor) {
-		listinProfesores.add(profesor);
+		listaDeProfesores.add(profesor);
 	}
 
-	public void imprimirListin() {
+	public void imprimirLista() {
 		String tempString = "";
 
-		for (Profesor profeTemp : listinProfesores) {
-			System.out.println(profeTemp.toString());
+		for (Profesor profesor : listaDeProfesores) {
+			System.out.println(profesor.toString());
 
-			if (profeTemp instanceof ProfesorSuplente) { // 2
+			if (profesor instanceof ProfesorSuplente) { // Ver nota 2
 				tempString = "Suplente";
 			} else {
 				tempString = "Titular";
 			}
 
-			System.out.println("Tipo: " + tempString + "\nSalario: " + (profeTemp.importeSalario()) + "\n"); // 2
+			System.out.println("Tipo: " + tempString + "\nSalario: " + (profesor.importeSalario()) + "\n"); // Ver nota
+																											// 2
 
 		}
 	}
 
 	public float importeTotalSalariosProfesorado() {
+
 		float importeTotal = 0f;
 
-		Iterator<Profesor> it = listinProfesores.iterator();
+		Iterator<Profesor> it = listaDeProfesores.iterator();
 		while (it.hasNext()) {
 			importeTotal = importeTotal + it.next().importeSalario();
 		}
@@ -44,16 +46,14 @@ public class ListinProfesores {
 	}
 }
 
-/*
- * 1 Se crea un ArrayList de profesores que pueden titulares o suplentes y
+/**
+ * Nota 1. Se crea un ArrayList de profesores que pueden titulares o suplentes y
  * realizar operaciones con esos conjuntos. El listin se basa en el tipo
  * estatico Profesor, pero su contenido dinamico siempre sera a base de
  * instancias de ProfesorTitular o de ProfesorSuplente ya que Profesor es una
  * clase abstracta, no instanciable.
- */
-
-/*
- * 2 Ejemplo de uso de instanceof para determinar que tipo de profesor es.
+ * 
+ * Nota 2. Ejemplo de uso de instanceof para determinar que tipo de profesor es.
  * Dinamicamente se determina de que tipo es cada objeto y al invocar el metodo
  * abstracto importeSalario() Java determina si debe utilizar el metodo propio
  * de un subtipo u otro.
