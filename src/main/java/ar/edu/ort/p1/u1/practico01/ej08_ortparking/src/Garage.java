@@ -23,11 +23,13 @@ public class Garage {
 	/**
 	 * Ejercicio B: El metodo estacionarVehiculo de la clase Garaje que recibe como
 	 * parametros la patente del vehiculo a ingresar. El metodo debe devolver alguno
-	 * de los siguientes resultados: VEHICULO_NO_HABILITADO: cuando no se encuentra
-	 * al vehiculo en el registro. VEHICULO_YA_ESTACIONADO: cuando ya figura
-	 * previamente estacionado. NO_ESTACIONA_ADEUDA: si el vehiculo tiene mas de
-	 * tres (3) meses adeudados. INGRESO_OK: cuando se cumplen todos los requisitos
-	 * para ingresar al vehiculo, habiendo hecho los cambios correspondientes.
+	 * de los siguientes resultados:
+	 * 
+	 * VEHICULO_NO_HABILITADO: cuando no se encuentra al vehiculo en el registro.
+	 * VEHICULO_YA_ESTACIONADO: cuando ya figura previamente estacionado.
+	 * NO_ESTACIONA_ADEUDA: si el vehiculo tiene mas de tres (3) meses adeudados.
+	 * INGRESO_OK: cuando se cumplen todos los requisitos para ingresar al vehiculo,
+	 * habiendo hecho los cambios correspondientes.
 	 * 
 	 * @param patente
 	 * @return
