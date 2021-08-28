@@ -5,9 +5,8 @@ import java.util.ArrayList;
 public class Empresa {
 	private ArrayList<Empleado> listaDeEmpleados = new ArrayList<Empleado>();
 
-	public Empresa(ArrayList<Empleado> listaDeEmpleados) {
-		super();
-		this.listaDeEmpleados = listaDeEmpleados;
+	public Empresa() {
+		this.listaDeEmpleados = new ArrayList<Empleado>();
 	}
 
 	public ArrayList<Empleado> getListaDeEmpleados() {
@@ -39,4 +38,13 @@ public class Empresa {
 		}
 		return ecmc;
 	}
+
+	/*----------------------------------------------------------------------------*/
+
+	/* Metodos extra */
+
+	public void agregarEmpleado(Empleado empleado) {
+		this.listaDeEmpleados.add(empleado);
+	}
+
 }

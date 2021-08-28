@@ -1,21 +1,14 @@
 package ar.edu.ort.p1.u3.practico03.ej07_admin_de_personal.src;
 
-import java.util.ArrayList;
-
 public class Main {
 
 	public static void main(String[] args) {
 
-		ArrayList<Empleado> listaDeEmpleados = new ArrayList<Empleado>();
-		Empleado ec1 = new EmpleadoAComision(31507904, "Maria", "Perez", 2018, 22);
-		Empleado ec2 = new EmpleadoAComision(31293830, "Ignacio", "Sanchez", 2015, 23);
-		Empleado ef1 = new EmpleadoASalarioFijo(31293830, "Julia", "Rossi", 2016);
+		Empresa e1 = new Empresa();
 
-		listaDeEmpleados.add(ec1);
-		listaDeEmpleados.add(ec2);
-		listaDeEmpleados.add(ef1);
-
-		Empresa e1 = new Empresa(listaDeEmpleados);
+		e1.agregarEmpleado(new EmpleadoAComision(31507904, "Maria", "Perez", 2018, 22));
+		e1.agregarEmpleado(new EmpleadoAComision(31293830, "Ignacio", "Sanchez", 2015, 23));
+		e1.agregarEmpleado(new EmpleadoASalarioFijo(31293830, "Julia", "Rossi", 2016));
 
 		// Ejercicio 1
 		e1.mostrarSalarios();

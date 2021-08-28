@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.u3.practico03.ej07_admin_de_personal.src;
 
 public class EmpleadoASalarioFijo extends Empleado {
+	
 	private static final double SALARIO_BASICO = 18000;
 	private static final double SALARIO_AD_2_A_5 = 0.05;
 	private static final double SALARIO_AD_6_A_10 = 0.1;
