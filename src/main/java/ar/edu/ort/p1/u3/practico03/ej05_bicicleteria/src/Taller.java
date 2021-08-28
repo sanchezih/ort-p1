@@ -4,18 +4,6 @@ import java.util.ArrayList;
 
 public class Taller {
 
-	public ArrayList<Bicicleta> listaDeBicicletas;
-
-	public Taller() {
-		this.listaDeBicicletas = new ArrayList<Bicicleta>();
-	}
-
-	public ArrayList<Bicicleta> getListaDeBicicletas() {
-		return listaDeBicicletas;
-	}
-
-	/*----------------------------------------------------------------------------*/
-
 	/**
 	 * Ejercicio B: La explotacion del metodo cantServiciosPosibles que reciba como
 	 * parametro una lista de bicicletas y retorne a cuantas de ellas se le podra
@@ -57,13 +45,5 @@ public class Taller {
 //		}
 //		return cant;
 //	}
-
-	/*----------------------------------------------------------------------------*/
-
-	/* Metodos extra */
-
-	public void agregarBicicleta(Bicicleta bicicleta) {
-		this.listaDeBicicletas.add(bicicleta);
-	}
 
 }

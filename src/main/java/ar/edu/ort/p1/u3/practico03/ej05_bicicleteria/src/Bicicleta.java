@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.u3.practico03.ej05_bicicleteria.src;
 
-public abstract class Bicicleta {
+public  class Bicicleta {
 	
 	private static int KM_MAX_PERMITIDO = 2000;
 	private String marca;
@@ -8,7 +8,6 @@ public abstract class Bicicleta {
 	private double kilometraje;
 
 	public Bicicleta(String marca, String modelo, double kilometraje) {
-		super();
 		this.marca = marca;
 		this.modelo = modelo;
 		this.kilometraje = kilometraje;
