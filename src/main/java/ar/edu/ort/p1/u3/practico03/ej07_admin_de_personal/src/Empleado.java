@@ -10,7 +10,6 @@ public abstract class Empleado {
 	protected double salario;
 
 	public Empleado(int dni, String nombre, String apellido, int anioIngreso) {
-		super();
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -54,7 +53,8 @@ public abstract class Empleado {
 	}
 
 	public void mostrarDatos() {
-		System.out.println(getNombreCompleto() + " $" + getSalario());
+		System.out.println(getNombreCompleto() + " $" + getSalario()); // getSalario() se resuelve en tiempo de
+																		// ejecucion
 	}
 
 	public int getAniosDeAntiguedad() {

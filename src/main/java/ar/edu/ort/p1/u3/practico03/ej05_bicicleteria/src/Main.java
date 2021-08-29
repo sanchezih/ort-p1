@@ -24,11 +24,11 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		Taller t1 = new Taller();
+		Taller taller = new Taller();
 
 		// Ejercicios B y C
 		System.out.println(
-				"El taller le podra prestar servicio a " + t1.cantServiciosPosibles(bicicletas) + " bicicletas.");
+				"El taller le podra prestar servicio a " + taller.cantServiciosPosibles(bicicletas) + " bicicletas.");
 	}
 
 }

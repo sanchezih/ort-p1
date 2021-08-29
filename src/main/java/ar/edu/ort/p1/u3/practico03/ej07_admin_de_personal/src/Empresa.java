@@ -3,30 +3,30 @@ package ar.edu.ort.p1.u3.practico03.ej07_admin_de_personal.src;
 import java.util.ArrayList;
 
 public class Empresa {
-	private ArrayList<Empleado> listaDeEmpleados = new ArrayList<Empleado>();
+
+	private ArrayList<Empleado> empleados = new ArrayList<Empleado>();
 
 	public Empresa() {
-		this.listaDeEmpleados = new ArrayList<Empleado>();
+		this.empleados = new ArrayList<Empleado>();
 	}
 
-	public ArrayList<Empleado> getListaDeEmpleados() {
-		return listaDeEmpleados;
-	}
-
-	public void setListaDeEmpleados(ArrayList<Empleado> listaDeEmpleados) {
-		this.listaDeEmpleados = listaDeEmpleados;
-	}
+	/*----------------------------------------------------------------------------*/
 
 	public void mostrarSalarios() {
-		for (Empleado e : this.listaDeEmpleados) {
+		System.out.println("Muestro los salarios de los empleados");
+		for (Empleado e : this.empleados) {
 			e.mostrarDatos();
 		}
 	}
 
-	public Empleado empleadoConMasClientes() {
+	/*----------------------------------------------------------------------------*/
+
+	public EmpleadoAComision empleadoConMasClientes() {
+
 		EmpleadoAComision ecmc = null;
 		int maxClientes = -1;
-		for (Empleado e : this.listaDeEmpleados) {
+
+		for (Empleado e : this.empleados) {
 			if (e instanceof EmpleadoAComision) {
 				EmpleadoAComision eac = (EmpleadoAComision) e;
 				int cantCli = eac.getCantClientesCaptados();
@@ -44,7 +44,7 @@ public class Empresa {
 	/* Metodos extra */
 
 	public void agregarEmpleado(Empleado empleado) {
-		this.listaDeEmpleados.add(empleado);
+		this.empleados.add(empleado);
 	}
 
 }

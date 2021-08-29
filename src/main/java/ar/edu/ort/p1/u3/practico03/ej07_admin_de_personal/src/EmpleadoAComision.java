@@ -17,11 +17,9 @@ public class EmpleadoAComision extends Empleado {
 
 	@Override
 	public double getSalario() {
-		double salarioAux = this.cantClientesCaptados * MONTO_A_COBRAR_X_CLIENTE;
-		if (salarioAux <= SALARIO_MINIMO) {
-			return SALARIO_MINIMO;
-		} else {
-			return salarioAux;
-		}
+		double posibleSueldo = this.cantClientesCaptados * MONTO_A_COBRAR_X_CLIENTE;
+
+		/* Implementacion con operador ternario */
+		return posibleSueldo < SALARIO_MINIMO ? SALARIO_MINIMO : posibleSueldo;
 	}
 }
