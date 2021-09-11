@@ -1,6 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.Embarcacion" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/Embarcacion.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="261" width="222" x="322" y="405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.Puerto" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/Puerto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="222" x="544" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.Amarra" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/Amarra.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="222" x="301" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.DeportivoLujo" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/DeportivoLujo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="222" x="565" y="953"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.Velero" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/Velero.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="222" x="41" y="706"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.Yate" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/Yate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="222" x="303" y="706"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ar.edu.ort.p1.u3.practico03.ej09_puerto_parana.src.Deportivo" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej09_puerto_parana/src/Deportivo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="222" x="565" y="706"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="8">    
+    <bendpoint x="598" y="380"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="9">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="10" name="amarras"/>      
+      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="17">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="18" name="embarcacion"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
