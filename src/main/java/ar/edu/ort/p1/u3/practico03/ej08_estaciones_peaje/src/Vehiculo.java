@@ -2,10 +2,9 @@ package ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src;
 
 public class Vehiculo {
 	private int patente;
-	private CategoriaVehiculo categoria;
+	private Categoria categoria;
 
-	public Vehiculo(int patente, CategoriaVehiculo categoria) {
-		super();
+	public Vehiculo(int patente, Categoria categoria) {
 		this.patente = patente;
 		this.categoria = categoria;
 	}
@@ -18,11 +17,11 @@ public class Vehiculo {
 		this.patente = patente;
 	}
 
-	public CategoriaVehiculo getCategoria() {
+	public Categoria getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(CategoriaVehiculo categoria) {
+	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
 

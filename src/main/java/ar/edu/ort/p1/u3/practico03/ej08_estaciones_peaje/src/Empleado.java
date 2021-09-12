@@ -7,5 +7,7 @@ public class Empleado {
 	private Sexo sexo;
 	private String domicilio;
 	private int telefono;
+	
+	
 
 }

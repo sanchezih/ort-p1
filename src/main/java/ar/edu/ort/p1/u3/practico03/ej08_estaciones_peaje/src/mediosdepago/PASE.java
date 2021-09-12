@@ -11,7 +11,7 @@ public class PASE extends MedioDePagoElectronico {
 	}
 
 	@Override
-	public double obtenerDescuento() {
-		return getCantDiasDemoraPago() <= DEMORA_ESP ? DCTO : DCTO_X_DEM_ESP;
+	public double getDescuento() {
+		return getDiasDemora() <= DEMORA_ESP ? DCTO : DCTO_X_DEM_ESP;
 	}
 }

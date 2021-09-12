@@ -37,22 +37,43 @@ public class EstacionDePeaje {
 		return dtf.format(now);
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio C: La explotacion del método cabinasConEfectivo que devuelva una
+	 * lista unicamente con las cabinas que aceptan efectivo como medio de pago.
+	 * 
+	 * @return
+	 */
 	public ArrayList<Cabina> cabinasConEfectivo() {
-		ArrayList<Cabina> lista = new ArrayList<>();
-		for (Cabina cabina : this.cabinas) {
-			if (cabina.aceptaEfectivo()) {
-				lista.add(cabina);
+
+		ArrayList<Cabina> cabinasConEFE = new ArrayList<>();
+
+		for (Cabina c : this.cabinas) {
+			if (c.getMedioDePago() instanceof Efectivo) {
+				cabinasConEFE.add(c);
 			}
 		}
-		return lista;
+		return cabinasConEFE;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio D: La explotacion del metodo promedioDemora que devuelva cual es el
+	 * promedio de dias de demora entre todas las cabinas que acepten medios de pago
+	 * electronicos (SUBE o PASE).
+	 * 
+	 * @return
+	 */
 	public double promedioDemora() {
+		
 		double sumatoria = 0;
 		double cantidad = 0;
+		
 		for (Cabina c : this.cabinas) {
-			if (c.getMp() instanceof MedioDePagoElectronico) {
-				sumatoria = sumatoria + ((MedioDePagoElectronico) c.getMp()).getCantDiasDemoraPago();
+			if (c.getMedioDePago() instanceof MedioDePagoElectronico) {
+				sumatoria = sumatoria + ((MedioDePagoElectronico) c.getMedioDePago()).getDiasDemora();
 				cantidad++;
 			}
 		}

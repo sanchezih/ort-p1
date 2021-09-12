@@ -9,7 +9,7 @@ public abstract class MedioDePagoElectronico extends MedioDePago {
 		this.cantDiasDemoraPago = cantDiasDemoraPago;
 	}
 
-	public int getCantDiasDemoraPago() {
+	public int getDiasDemora() {
 		return cantDiasDemoraPago;
 	}
 

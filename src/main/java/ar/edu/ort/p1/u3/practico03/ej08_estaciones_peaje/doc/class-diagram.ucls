@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/mediosdepago/Efectivo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="955" y="623"/>    
+    <position height="117" width="298" x="1205" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -16,7 +16,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/mediosdepago/MedioDePago.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="603" y="426"/>    
+    <position height="117" width="298" x="888" y="356"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
     name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.mediosdepago.MedioDePagoElectronico" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/mediosdepago/MedioDePagoElectronico.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="281" x="426" y="639"/>    
+    <position height="135" width="298" x="592" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,7 +38,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/mediosdepago/PASE.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="281" x="265" y="868"/>    
+    <position height="153" width="298" x="423" y="850"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,7 +49,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/mediosdepago/SUBE.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="281" x="586" y="868"/>    
+    <position height="117" width="298" x="761" y="850"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -59,7 +59,7 @@
   <class id="6" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.Vehiculo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/Vehiculo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1251" y="534"/>    
+    <position height="189" width="235" x="317" y="356"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -69,7 +69,7 @@
   <enumeration id="7" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.Sexo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/Sexo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="218" x="41" y="374"/>    
+    <position height="-1" width="-1" x="158" y="422"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -79,7 +79,7 @@
   <interface id="8" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.Descontable" 
     project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/Descontable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="218" x="168" y="639"/>    
+    <position height="81" width="235" x="930" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -90,7 +90,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/EstacionDePeaje.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="545" y="166"/>    
+    <position height="-1" width="-1" x="1111" y="144"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -100,7 +100,7 @@
   <class id="10" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.Cabina" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/Cabina.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="297" width="218" x="864" y="37"/>    
+    <position height="279" width="235" x="573" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -110,18 +110,17 @@
   <class id="11" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.Empleado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/Empleado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="218" x="41" y="37"/>    
+    <position height="-1" width="-1" x="158" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="12" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.CategoriaVehiculo" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/CategoriaVehiculo.java" 
+  <enumeration id="12" language="java" name="ar.edu.ort.p1.u3.practico03.ej08_estaciones_peaje.src.Categoria" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej08_estaciones_peaje/src/Categoria.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1354" y="226"/>    
+    <position height="189" width="235" x="317" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -129,88 +128,89 @@
     </display>  
   </enumeration>  
   <association id="13">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="14" name="sexo">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="15" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="14" name="medioDePago"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <dependency id="16">    
+    <bendpoint x="690" y="471"/>    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="12"/>  
   </dependency>  
   <generalization id="17">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="18">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="18">    
+  <association id="19">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="19" name="cabinas">        
+      <attribute id="20" name="cabinas">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="20" minimum="0" maximum="2147483647">        
+      <multiplicity id="21" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="21">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
   <dependency id="22">    
     <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="9"/>  
+    <end type="TARGET" refId="6"/>  
   </dependency>  
   <association id="23">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="24" name="mp">        
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="24" name="categoria">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="25" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <association id="27">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="28" name="categoria">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="29" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
     <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <realization id="31">    
+  <realization id="26">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <generalization id="32">    
-    <end type="SOURCE" refId="1"/>    
+  <generalization id="27">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <dependency id="33">    
+  <association id="29">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="30" name="sexo">        
+        <position height="0" width="0" x="-1" y="-266"/>      
+      </attribute>      
+      <multiplicity id="31" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-1" y="-266"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="32">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="33" name="empleadosHabilitados"/>      
+      <multiplicity id="34" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="35">    
     <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="6"/>  
+    <end type="TARGET" refId="9"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
