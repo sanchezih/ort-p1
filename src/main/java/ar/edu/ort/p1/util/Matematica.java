@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src;
+package ar.edu.ort.p1.util;
 
 public class Matematica {
 

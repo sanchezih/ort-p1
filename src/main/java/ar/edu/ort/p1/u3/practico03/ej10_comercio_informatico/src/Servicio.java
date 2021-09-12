@@ -1,25 +1,27 @@
 package ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src;
 
+import ar.edu.ort.p1.util.Matematica;
+
 public abstract class Servicio implements Facturable {
 
-	private int cantidadDeHoras;
+	private int cantHoras;
 
-	public Servicio(int cantidadDeHoras) {
-		this.cantidadDeHoras = cantidadDeHoras;
+	public Servicio(int cantHoras) {
+		this.cantHoras = cantHoras;
 	}
 
-	public double getCosto() {
-		return cantidadDeHoras * getValorHora();
+	public int getCantHoras() {
+		return cantHoras;
+	}
+
+	public double getPrecio() {
+		return getCantHoras() * getValorHora();
 	}
 
 	public abstract double getValorHora();
 
-	public int getCantidadDeHoras() {
-		return cantidadDeHoras;
-	}
-
 	@Override
-	public double getMontoDeFacturacion() {
-		return Matematica.sumarPorcentaje(getCosto(), IVA / 2);
+	public double getMontoFacturacion() {
+		return Matematica.sumarPorcentaje(getPrecio(), Facturable.IVA / 2);
 	}
 }

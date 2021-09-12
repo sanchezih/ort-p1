@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.common.pojo;
+package ar.edu.ort.p1.util;
 
 public class Fecha {
 	private int dia;
