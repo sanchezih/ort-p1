@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Empleado" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/Empleado.java" binary="false" 
+  <class id="1" language="java" name="ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Pyme" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/Pyme.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="243" width="203" x="265" y="441"/>    
+    <position height="151" width="221" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.NominaDeEmpleados" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/NominaDeEmpleados.java" binary="false" 
+  <class id="2" language="java" name="ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.NominaDeEmpleados" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/NominaDeEmpleados.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="203" x="41" y="230"/>    
+    <position height="169" width="212" x="41" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Pyme" project="ort-p1" 
-    file="/ort-p1/src/main/java/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/Pyme.java" binary="false" 
+  <class id="3" language="java" name="ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Empleado" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/Empleado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="218" x="250" y="37"/>    
+    <position height="241" width="212" x="41" y="437"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -32,23 +32,19 @@
     </display>  
   </class>  
   <association id="4">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="5" name="nomina"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="5" name="empleados"/>      
+      <multiplicity id="6" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="7">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <association id="8">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="9" name="empleados"/>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+  <association id="7">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="8" name="nomina"/>      
+      <multiplicity id="9" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

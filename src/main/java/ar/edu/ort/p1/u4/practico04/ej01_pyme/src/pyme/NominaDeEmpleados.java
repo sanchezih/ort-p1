@@ -1,15 +1,16 @@
 package ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme;
 
 public class NominaDeEmpleados {
+
 	private static int CANT_EMP_MAX = 3;
 	private Empleado[] empleados = new Empleado[CANT_EMP_MAX];
 
-	public int altaDeEmpleado(Empleado emp) {
+	public int altaDeEmpleado(Empleado empleado) {
 		int i = 0;
 		boolean hayLugar = false;
 		while (i < this.empleados.length && !hayLugar) {
 			if (this.empleados[i] == null) {
-				this.empleados[i] = emp;
+				this.empleados[i] = empleado;
 				hayLugar = true;
 			} else {
 				i++;
@@ -32,16 +33,6 @@ public class NominaDeEmpleados {
 		return empEncontrado;
 	}
 
-	public double sueldoTotal() {
-		double acu = 0;
-		for (int i = 0; i < this.empleados.length; i++) {
-			if (this.empleados[i] != null) {
-				acu += this.empleados[i].getSueldo();
-			}
-		}
-		return acu;
-	}
-
 	public int cantVacantes() {
 		int cant = 0;
 		for (int i = 0; i < this.empleados.length; i++) {
@@ -50,6 +41,16 @@ public class NominaDeEmpleados {
 			}
 		}
 		return cant;
+	}
+
+	public double sueldoTotal() {
+		double acu = 0;
+		for (int i = 0; i < this.empleados.length; i++) {
+			if (this.empleados[i] != null) {
+				acu += this.empleados[i].getSueldo();
+			}
+		}
+		return acu;
 	}
 
 }

@@ -1,0 +1,27 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>100</y><w>260</w><h>100</h></coordinates><panel_attributes>Pyme
+--
+--
++ altaDeEmpleado(String, String, double): int
++ bajaDeEmpleado(String): Empleado
++ cantVacantes(): int
++ sueldoTotal(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>470</y><w>190</w><h>110</h></coordinates><panel_attributes>Empleado
+--
+- DNI: String
+- apellido: String
+- sueldo: double
+--
++ Empleado(String,String,double)
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>380</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_EMP_MAX
+- empleados</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>270</y><w>210</w><h>120</h></coordinates><panel_attributes>NominaDeEmpleados
+--
+_- CANT_EMP_MAX: int = 665_
+--
++ altaDeEmpleado(Empleado): int
++ bajaDeEmpleado(String): Empleado
++ cantVacantes(): int
++ sueldoTotal(): double
+- idxPrimerNull(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>190</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- nomina</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>190</y><w>50</w><h>390</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>30;370;10;370;10;10</additional_attributes></element></diagram>

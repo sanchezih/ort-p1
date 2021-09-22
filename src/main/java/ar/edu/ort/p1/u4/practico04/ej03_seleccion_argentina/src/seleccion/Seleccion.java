@@ -9,7 +9,6 @@ public class Seleccion {
 	private Jugador[] jugadores = new Jugador[CANT_JUG];
 
 	public Seleccion(String nombre, Jugador[] jugadores) {
-		super();
 		this.nombre = nombre;
 		this.jugadores = jugadores;
 	}
@@ -78,7 +77,6 @@ public class Seleccion {
 		while (i >= 0 && !jugEncontrado) {
 			if (this.jugadores[i] != null && this.jugadores[i].getNroCamiseta() == nro) {
 				jugEncontrado = true;
-
 			} else {
 				i--;
 			}

@@ -4,14 +4,14 @@ public class Main {
 	public static void main(String[] args) {
 		char elementos[] = { 'I', 'N', 'M', 'I', 'N', 'E', 'N', 'T', 'E' };
 
-		if (IsPalindromo(elementos)) {
+		if (isPalindromo(elementos)) {
 			System.out.println("Es palindromo");
 		} else {
 			System.out.println("No es palindromo");
 		}
 	}
 
-	public static boolean IsPalindromo(char[] array) {
+	public static boolean isPalindromo(char[] array) {
 
 		int length = array.length;
 		boolean isPalindromo = true;

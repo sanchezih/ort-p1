@@ -6,7 +6,6 @@ public class Jugador {
 	private Posicion posicion;
 
 	public Jugador(String apellido, int nroCamiseta, Posicion posicion) {
-		super();
 		this.apellido = apellido;
 		this.nroCamiseta = nroCamiseta;
 		this.posicion = posicion;

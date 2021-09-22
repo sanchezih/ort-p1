@@ -7,7 +7,6 @@ public class Empleado {
 	private double sueldo;
 
 	public Empleado(String dni, String apellido, double sueldo) {
-		super();
 		this.dni = dni;
 		this.apellido = apellido;
 		this.sueldo = sueldo;
