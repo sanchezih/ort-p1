@@ -11,4 +11,9 @@ public class Fecha {
 		this.anio = anio;
 	}
 
+	public int restar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
