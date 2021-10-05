@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.extra.examenes._2021c2._1p_gestionauditorias.tema1.src;
+package ar.edu.ort.p1.extra.examenes._2021c2._1p_gestionauditorias.src;
 
 public class Proceso implements Auditable {
 
@@ -24,6 +24,4 @@ public class Proceso implements Auditable {
 		}
 		return 0;
 	}
-	
-
 }

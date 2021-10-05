@@ -1,0 +1,107 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>1394</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>class
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>530</y><w>420</w><h>170</h></coordinates><panel_attributes>Area
+--
+-nombre: String
+-cantEmpleados: int
+--
++obtenerCantObservacionesExternas(): int
++obtenerObservacionesVencidas():ArrayList&lt;Observacion&gt;
++mostrarObservacionesCriticas(): void
+-buscarObservacion(String): Observacion
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>530</y><w>260</w><h>160</h></coordinates><panel_attributes>/Observacion/
+--
+_-NIVEL_CRITICO: int = 1_
+-titulo: String
+-descripción: String
+
+--
+/+estaVencida():boolean/
++esCritica():boolean
++mostrar(): void
+#buscarCompromisoVencido():Compromiso
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>570</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-observaciones</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>740</y><w>220</w><h>120</h></coordinates><panel_attributes>/ObservacionInterna/
+--
+-revision: boolean
+_-CANT_DIAS_MAX:int = 90_
+--
++estaVencida(): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>740</y><w>220</w><h>120</h></coordinates><panel_attributes>/ObservacionExterna/
+--
+-nombreConsultora: String
+_-CANT_DIAS_MAX:int = 60_
+--
++estaVencida():boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>680</y><w>150</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;60</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>680</y><w>160</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>500</y><w>210</w><h>90</h></coordinates><panel_attributes>Compromiso
+--
+-descripcion: String
+--
++getFechaCompromiso():Fecha
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>530</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-compromisos</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>280</y><w>210</w><h>120</h></coordinates><panel_attributes>Empleado
+--
+-nombre: String
+-apellido: String
+-legajo: int
+--
++mostrar():void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>211</x><y>390</y><w>180</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=
+responsable</panel_attributes><additional_attributes>160;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>421</x><y>390</y><w>230</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+auditor</panel_attributes><additional_attributes>10;10;210;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>530</y><w>220</w><h>120</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Auditable/
+
+--
+/+getNivelCriticidad():int/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>740</y><w>210</w><h>120</h></coordinates><panel_attributes>Sistema
+--
+_-MAX_CANT_USUARIOS: int=500_
+-nombre: String
+-poseeDatosClientes: boolean
+-cantUsuarios: int
+--
++getNivelCriticidad():int
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1170</x><y>740</y><w>210</w><h>120</h></coordinates><panel_attributes>Proceso
+--
+_-MAX_CANT_ACTIVIDADES: int=7_
+-codigo: String
+-cantActividades: int
+-impactaCliente: boolean
+-afectaPatrimonioCompania: boolean
+--
++getNivelCriticidad():int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>640</y><w>190</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>170;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1230</x><y>640</y><w>70</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;50;100</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>610</y><w>340</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=
+-auditable</panel_attributes><additional_attributes>320;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>130</y><w>300</w><h>160</h></coordinates><panel_attributes>Fecha
+--
+-dia:int
+-mes:int
+-anio:int
+--
+
++restar():int //devuelve la resta con la fecha actual
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>280</y><w>80</w><h>270</h></coordinates><panel_attributes>lt=&lt;-
+m1=
+-fechaAlta</panel_attributes><additional_attributes>10;10;10;250</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>280</y><w>130</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
+m1=
+-fechaCompromiso</panel_attributes><additional_attributes>10;10;10;220</additional_attributes></element></diagram>

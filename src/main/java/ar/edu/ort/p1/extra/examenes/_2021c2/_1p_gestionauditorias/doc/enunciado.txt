@@ -1,0 +1,28 @@
+Enunciado
+
+Una compañía nos pide diseñar un sistema que permita administrar las auditorías que son llevadas a cabo en ella. 
+Para los que no conocen el tema, cuando se hace una auditoría en una compañía o cualquier otra entidad auditable, se revisan todos los sistemas y procesos y a partir de los defectos, problemas o detalles que se encuentran se generan observaciones sobre las que luego se toman acciones correctivas.
+Esta compañía se divide en áreas y éstas son las que se auditan. Nos indican que cada área (de la cual conocemos el nombre, la cantidad de empleados y quién es su responsable) puede tener muchas observaciones.
+Estas observaciones pueden ser observaciones internas u observaciones externas. Todas son expirables (tienen un vencimiento que depende del tipo de observación) y tienen un título, el auditor que hizo la observación, la fecha de alta y una descripción que indica de manera textual las deficiencias encontradas.
+Las observaciones internas tienen la particularidad de que pueden estar "en revisión", mientras que las observaciones externas no tienen este estado pero necesitan registrar el nombre de la consultora que informó el problema. Cada observación se realiza o sobre un sistema o sobre un proceso; ambos son elementos auditables y de todo elemento auditable debemos conocer su nivel de criticidad.
+Cada observación registra al menos un compromiso para darle solución. Cada compromiso tiene una descripción que indica textualmente las acciones a realizar y una fecha para la cual se estima su cumplimiento.
+De los sistemas conocemos su nombre, si posee o no datos de los clientes y cantidad de usuarios. De los procesos conocemos su código, cantidad de actividades que tiene, si el proceso impacta o no en los clientes y si afecta o no al patrimonio de la compañía.
+Tanto el responsable del área a la cual se hacen las observaciones como los auditores son empleados de la compañía. De ellos necesitamos nombre, apellido y legajo.
+
+Consideraciones
+Nivel de Criticidades
+Un sistema tiene nivel de criticidad 1 si posee datos de los clientes y nivel de criticidad 2 si además la cantidad de usuarios supera los 500, mientras que un proceso tiene nivel de criticidad 1 si el proceso impacta en los clientes y nivel de criticidad 2 si además posee más de 7 actividades e impacta al patrimonio.
+
+Vencimientos de las Observaciones
+En el caso de las observaciones internas: si tiene al menos un compromiso vencido es decir donde la fecha de compromiso tiene más de 90 días de atraso respecto a la fecha del día y la observación no esté en revisión.
+En el caso de las observaciones externas: si tiene al menos un compromiso vencido es decir donde la fecha de compromiso tiene más de 60 días de atraso respecto a la fecha del día.
+
+Para hacer el ejercicio considerar que contás con una clase Fecha que tiene día, mes y año y un método restar() que devuelve un entero con la diferencia en días con la fecha de hoy. Modelarlo en el diagrama de clases y no explotar el método restar().
+
+Basado en el enunciado descripto, realizá:
+A)	El diagrama de clases que lo modelice, con sus relaciones, atributos y métodos.
+B)	El método obtenerCantObservacionesExternas() que tiene un área.
+C)	El método estaVencida() que permita determinar cuando una observación está vencida de acuerdo a los criterios citados.
+D)	El método obtenerObservacionesVencidas() que deberá devolver, no mostrar por consola, la lista de observaciones que están vencidas.
+E)	El método getNivelCriticidad() que permita calcular para cualquier elemento auditable (Sistema o Proceso) su nivel de criticidad para el negocio.
+F)	El método mostrarObservacionesCriticas() que muestre por consola el título, descripción y el nombre, apellido y legajo del auditor de las observaciones cuyo nivel de criticidad de su elemento auditable sea mayor a 1.
