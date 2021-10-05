@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Pyme" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/Pyme.java" binary="false" 
+  <class id="1" language="java" name="ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme.Pyme" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej19_pyme/src/pyme/Pyme.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="151" width="221" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -11,8 +11,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.NominaDeEmpleados" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/NominaDeEmpleados.java" binary="false" 
+  <class id="2" language="java" name="ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme.NominaDeEmpleados" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej19_pyme/src/pyme/NominaDeEmpleados.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="169" width="212" x="41" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -21,8 +21,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Empleado" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej01_pyme/src/pyme/Empleado.java" binary="false" 
+  <class id="3" language="java" name="ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme.Empleado" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej19_pyme/src/pyme/Empleado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="241" width="212" x="41" y="437"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -33,16 +33,24 @@
   </class>  
   <association id="4">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="5" name="empleados"/>      
-      <multiplicity id="6" minimum="0" maximum="2147483647"/>    
+      <attribute id="5" name="empleados">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="6" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="7">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="8" name="nomina"/>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
+      <attribute id="8" name="nomina">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="9" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

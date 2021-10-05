@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme;
+package ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme;
 
 public class NominaDeEmpleados {
 

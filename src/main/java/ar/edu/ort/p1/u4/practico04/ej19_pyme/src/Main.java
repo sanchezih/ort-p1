@@ -1,8 +1,8 @@
-package ar.edu.ort.p1.u4.practico04.ej01_pyme.src;
+package ar.edu.ort.p1.u4.practico04.ej19_pyme.src;
 
-import ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Empleado;
-import ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.NominaDeEmpleados;
-import ar.edu.ort.p1.u4.practico04.ej01_pyme.src.pyme.Pyme;
+import ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme.Empleado;
+import ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme.NominaDeEmpleados;
+import ar.edu.ort.p1.u4.practico04.ej19_pyme.src.pyme.Pyme;
 
 public class Main {
 

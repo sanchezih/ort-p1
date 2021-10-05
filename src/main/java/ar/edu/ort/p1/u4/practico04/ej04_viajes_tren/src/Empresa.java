@@ -7,7 +7,6 @@ public class Empresa {
 	private ArrayList<Reserva> reservas;
 
 	public Empresa(ArrayList<Reserva> reservas) {
-		super();
 		this.reservas = reservas;
 	}
 

@@ -2,7 +2,6 @@ package ar.edu.ort.p1.u4.practico04.ej05_camiones.src;
 
 import java.util.ArrayList;
 
-import ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Reserva;
 import ar.edu.ort.p1.u4.practico04.ej05_camiones.src.empresa.Camion;
 import ar.edu.ort.p1.u4.practico04.ej05_camiones.src.empresa.Chofer;
 import ar.edu.ort.p1.u4.practico04.ej05_camiones.src.empresa.Empresa;

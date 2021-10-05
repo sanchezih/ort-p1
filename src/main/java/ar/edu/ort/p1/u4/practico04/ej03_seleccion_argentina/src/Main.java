@@ -42,7 +42,7 @@ public class Main {
 
 		Seleccion seleccion = new Seleccion("Seleccion Argentina de Futbol", jugadores);
 
-		// seleccion.mostrarJugadores();
+		 seleccion.mostrarJugadores();
 
 		// Ejercicio B
 		// seleccion.cambio(1, 2);
@@ -53,10 +53,10 @@ public class Main {
 		// seleccion.mostrarJugadores();
 
 		// Ejercicio D
-		seleccion.mostrarJugadores(seleccion.obtenerReservas());
+		//seleccion.mostrarJugadores(seleccion.obtenerReservas());
 
 		// Ejercicio E
-		seleccion.mostrarCantJugadoresPorPosicion(seleccion.cantJugadoresPorPosicion());
+		//seleccion.mostrarCantJugadoresPorPosicion(seleccion.cantJugadoresPorPosicion());
 
 	}
 

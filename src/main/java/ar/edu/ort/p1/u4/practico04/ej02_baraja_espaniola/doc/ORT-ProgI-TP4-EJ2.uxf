@@ -1,0 +1,25 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>280</y><w>180</w><h>80</h></coordinates><panel_attributes>Baraja
+--
+_-CANT_CARTAS: int = 48_
+--
++estaOrdenada(): boolean
+-estaOrdenada(Palo): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>130</y><w>150</w><h>100</h></coordinates><panel_attributes>Carta
+--
+_+MIN_NUM: int = 1_
+_+MAX_NUM: int = 12_
+- numero: int
+--
++esDe(Palo): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>170</y><w>170</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-cartas
+m1=CANT_CARTAS</panel_attributes><additional_attributes>150;20;10;20;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>310</y><w>110</w><h>140</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Palo
+--
+_+ORO: Palo_
+_+BASTO: Palo_
+_+ESPADA: Palo_
+_+COPA: Palo_
+--
+_+values(): Palo[]_
++ordinal(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>220</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-palo</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>350</y><w>200</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>180;70;10;70;10;10</additional_attributes></element></diagram>

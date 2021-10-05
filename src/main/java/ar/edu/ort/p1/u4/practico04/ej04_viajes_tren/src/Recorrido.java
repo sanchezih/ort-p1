@@ -27,13 +27,12 @@ public class Recorrido {
 	}
 
 	private int cantEstacionesRecorridas() {
-		int idx1, idx2;
-
+		int idx1;
+		int idx2;
 		idx1 = this.estDestino.ordinal();
 		idx2 = this.estPartida.ordinal();
 
-		// El valor absoluto asegura que siempre sea positivo
-		return Math.abs(idx1 - idx2);
+		return Math.abs(idx1 - idx2); // El valor absoluto asegura que siempre sea positivo
 	}
 
 	public boolean pasaPor(Estacion e) {
