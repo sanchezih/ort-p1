@@ -22,6 +22,6 @@ public class Proceso implements Auditable {
 				nivel = 2;
 			}
 		}
-		return 0;
+		return nivel;
 	}
 }
