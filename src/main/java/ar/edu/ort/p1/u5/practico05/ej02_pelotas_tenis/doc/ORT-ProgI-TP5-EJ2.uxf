@@ -1,0 +1,30 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>350</y><w>210</w><h>120</h></coordinates><panel_attributes>PelotaDeTenis
+--
+_+USOS_HASTA_GASTADA: int = 7_
+- cantUsos: int
+--
++PelotaDeTenis()
++usar(): void
+-actualizarEstado(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>200</y><w>160</w><h>140</h></coordinates><panel_attributes>PilaDePelotasDeTenis
+--
++ PilaDePelotasDeTenis()
++ PilaDePelotasDeTenis(int)
++ push(PelotaDeTenis): void
++ pop(): PelotaDeTenis
++ peek(): PelotaDeTenis
++ isEmpty(): boolean
++ isFull(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>230</y><w>210</w><h>70</h></coordinates><panel_attributes>TuboPelotasDeTenis
+--
+_+ MAX_PELOTAS: int = 3_
+--
++ hayAlgunaPelotaUsada(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>130</y><w>280</w><h>50</h></coordinates><panel_attributes>ClubDeTenis
+--
+_+ esTuboUsado(TuboPelotasDeTenis): boolean_
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>350</y><w>80</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+_+ NUEVA_
+_+ USADA_
+_+ GASTADA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>380</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-estado</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>339</x><y>270</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>179</x><y>290</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>319</x><y>290</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>229</x><y>170</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>219</x><y>330</y><w>290</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;270;130;270;10</additional_attributes></element></diagram>

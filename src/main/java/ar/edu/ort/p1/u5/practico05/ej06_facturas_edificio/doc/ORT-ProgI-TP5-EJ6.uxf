@@ -1,0 +1,47 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>39</x><y>480</y><w>130</w><h>100</h></coordinates><panel_attributes>Factura
+-
+- codigoBarras: String
+- nroMes: int
+- monto: double
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>159</x><y>492</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-tipo
+m1=1</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>309</x><y>440</y><w>80</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoFactura
+-
+_+LUZ_
+_+GAS_
+_+ABL_
+_+INTERNET_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>390</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>17</x><y>290</y><w>310</w><h>110</h></coordinates><panel_attributes>Edificio
+-
+_+ CANT_COLAS: int = 4_
+-
++ catalogar(PilaDeFacturas): void
++ montoAAbonarPorTipo(): double[]
+- colocarFacturaEnCola(ColaDeFacturas, Factura): void
+- montoFacturasPorTipo(int): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>165</x><y>190</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-colasDeFacturas
+m1=CANT_COLAS</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>390</y><w>110</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>84;70;10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>319</x><y>330</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>61</y><w>150</w><h>140</h></coordinates><panel_attributes>ColaDeFacturas
+--
+--
++ ColaDeFacturas()
++ ColaDeFacturas(int)
++ add(Factura): void
++ get(): Factura
++ remove(): Factura
++ isEmpty(): boolean
++ isFull(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>374</x><y>281</y><w>130</w><h>140</h></coordinates><panel_attributes>PilaDeFacturas
+--
+--
++ PilaDeFacturas()
++ PilaDeFacturas(int)
++ push(Factura): void
++ peek(): Factura
++ pop(): Factura
++ isEmpty(): boolean
++ isFull(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>159</x><y>410</y><w>310</w><h>180</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;160;290;160;290;10</additional_attributes></element></diagram>

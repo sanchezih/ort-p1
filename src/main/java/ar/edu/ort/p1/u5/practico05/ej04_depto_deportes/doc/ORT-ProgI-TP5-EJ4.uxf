@@ -1,0 +1,35 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>380</y><w>130</w><h>80</h></coordinates><panel_attributes>Pelota
+--
+- codigo: String
+--
++ getCodigo(): String
++ getTipo(): TipoPelota</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>370</y><w>90</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoPelota
+--
+_+ FUTBOL_
+_+ BASQUET_
+_+ VOLEY_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>170</y><w>280</w><h>170</h></coordinates><panel_attributes>DepartamentoDeportes
+--
+_- CANT_PILAS: int = 3_
+_- PELOTAS_X_PILA: int = 5_
+--
++ DepartamentoDeportes()
++ agregarPelota(Pelota): boolean
++ verPelotasEnTopes(): void
++ buscarPelota(String): Pelota
++ pelotasPorTipo(): int[][]
+- buscarPelotaEnPila(String, PilaDePelotas): Pelota
+- cantPelotasPorTipo(PilaDePelotas): int[]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>400</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>190</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_PILAS
+- pilas</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>170</y><w>120</w><h>140</h></coordinates><panel_attributes>PilaDePelotas
+--
+--
++ PilaDePelotas()
++ PilaDePelotas(int)
++ push(Pelota): void
++ pop(): Pelota
++ peek(): Pelota
++ isEmpty(): boolean
++ isFull(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>330</y><w>70</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;90;10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>320</y><w>130</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;50;110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>300</y><w>280</w><h>220</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;160;10;200;260;200;260;10</additional_attributes></element></diagram>

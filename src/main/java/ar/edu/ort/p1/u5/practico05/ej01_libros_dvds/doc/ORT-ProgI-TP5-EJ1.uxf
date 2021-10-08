@@ -1,0 +1,33 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>310</x><y>430</y><w>130</w><h>80</h></coordinates><panel_attributes>DVD
+--
+- marca: String
+- rayado: boolean
+--
++ isRayado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>320</y><w>230</w><h>70</h></coordinates><panel_attributes>Empleado
+--
+--
++ cantDVDsRayados(PilaDeDVDs): int 
++ paginasPromedio(PilaDeLibros): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>320</y><w>120</w><h>140</h></coordinates><panel_attributes>PilaDeDVDs
+--
+--
++ PilaDeDVDs()
++ PilaDeDVDs(int)
++ push(DVD): void
++ pop(): DVD
++ peek(): DVD
++ isEmpty(): boolean
++ isFull(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>380</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>430</y><w>130</w><h>80</h></coordinates><panel_attributes>Libro
+--
+- ISBN: String
+- nroPaginas: int
+--
++ getNroPaginas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>380</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>350</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>350</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>320</y><w>120</w><h>140</h></coordinates><panel_attributes>PilaDeLibros
+--
+--
++ PilaDeLibros()
++ PilaDeLibros(int)
++ push(Libro): void
++ pop(): Libro
++ peek(): Libro
++ isEmpty(): boolean
++ isFull(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>450</y><w>90</w><h>50</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>70;30;10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>450</y><w>90</w><h>50</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;30;70;30;70;10</additional_attributes></element></diagram>

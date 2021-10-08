@@ -1,0 +1,58 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>650</x><y>135</y><w>300</w><h>160</h></coordinates><panel_attributes>Curso
+--
+_-CINCO:int=5_
+-codigo: String
+-titulo: String
+-hsDuracion: int
+--
++getCodigo():String
++top5AlumnosMasLongevos(): ArrayList&lt;Alumno&gt;
++obtenerPromedioEdadAlumnos(): double
++getTitulo(): String
++getNivel(): NivelCurso</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>145</y><w>220</w><h>90</h></coordinates><panel_attributes>ListaOrdenadaCursosPorCodigo
+--
+
+--
++compare(Curso, Curso): int
++compareByKey(String, Curso): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>165</y><w>80</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-cursos</panel_attributes><additional_attributes>60;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>250</y><w>350</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>330;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>180</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>165</y><w>330</w><h>110</h></coordinates><panel_attributes>Academia
+--
+
+--
++fabricar(Mueble): void
++modeloFabricado(String): boolean
++obtenerEstadistica(String): Estadistica
++listadoDeCursosPorNivel(): ListaOrdenadaCursosPorNivel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>0</y><w>110</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+NivelCurso
+--
+BASICO,
+INTERMEDIO,
+AVANZADO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>80</y><w>60</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-nivel</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>385</y><w>130</w><h>160</h></coordinates><panel_attributes>Alumno
+--
+-dni: String
+-nombre: String
+-edad: Integer
+--
++getEdad(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>405</y><w>220</w><h>90</h></coordinates><panel_attributes>ListaOrdenadaAlumnosPorEdad
+--
+
+--
++compare(Alumno, Alumno): int
++compareByKey(Integer, Alumno): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>285</y><w>80</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-alumnos</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>290</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>430</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>315</y><w>210</w><h>100</h></coordinates><panel_attributes>Estadistica
+--
+- nombre: String
+- promedioEdad: double
+--
++Estadistica(String, double)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>260</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>15</y><w>220</w><h>90</h></coordinates><panel_attributes>ListaOrdenadaCursosPorNivel
+--
+
+--
++compare(Curso, Curso): int
++compareByKey(NivelCurso, Curso): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>90</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>50</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>35</y><w>190</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-cursosPorNivel</panel_attributes><additional_attributes>170;10;10;130</additional_attributes></element></diagram>
