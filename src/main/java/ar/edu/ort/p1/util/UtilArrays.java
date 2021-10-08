@@ -232,4 +232,16 @@ public class UtilArrays {
 		System.out.println();
 	}
 
+	/**
+	 * Mostrar el contenido de un array de double recibido como parametro
+	 * 
+	 * @param elementos
+	 */
+	public static void mostrar(double[] elementos) {
+		for (int i = 0; i < elementos.length; i++) {
+			System.out.print(elementos[i] + " ");
+		}
+		System.out.println();
+	}
+
 }
