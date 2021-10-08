@@ -1,0 +1,40 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>70</y><w>220</w><h>170</h></coordinates><panel_attributes>Estacionamiento
+--
+
+--
+_CANT_PISOS: int= 8_
+_CANT_LUGARES: int=6_
++retirar(int): Auto
+-existeUbicacion(int, int): boolean
+-condicionAprobada(Auto):boolean
+-calcularMesInicio(Fecha): int
++autosMasMorososPorPiso():Autos[]
+-autoMasMorosoPorPiso(Auto[]):Auto
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>80</y><w>140</w><h>120</h></coordinates><panel_attributes>Registro
+--
+-patente:String
+-fechaRetiro: Fecha</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>430</y><w>140</w><h>120</h></coordinates><panel_attributes>Auto
+--
+-patente: String
+--
++getMesesImpagos():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>440</y><w>100</w><h>110</h></coordinates><panel_attributes>Pago
+--
+-monto:double
+-dni:String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>200</y><w>100</w><h>160</h></coordinates><panel_attributes>Fecha
+--
+-dia:int
+-mes:int
+-anio:int
+--
++Fecha(int, int, int)
++hoy():Fecha
++getDia():int
++getMes():int
++getAnio():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>230</y><w>210</w><h>220</h></coordinates><panel_attributes>-autos[][]
+lt=&lt;-
+m1=[CANT_PISOS][CANT_LUGARES]</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>120</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>490</y><w>220</w><h>50</h></coordinates><panel_attributes>-pagos[]
+lt=&lt;-
+m1=12</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>130</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>10</y><w>520</w><h>210</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;190;10;10;500;10;500;70</additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>350</y><w>150</w><h>150</h></coordinates><panel_attributes>-fechaIngreso
+lt=&lt;-
+m1=1
+</panel_attributes><additional_attributes>10;10;10;130;130;130</additional_attributes></element></diagram>

@@ -1,0 +1,32 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>290</y><w>240</w><h>130</h></coordinates><panel_attributes>Empresa
+--
+_- CANT_CAMIONES: int = 10_
+_- CANT_CHOFERES: int = 20_
+--
++ obtenerCostosDeViajes(): double[]
++ obtenerViajesXChoferCamion(): int[][]
+- idxChofer(String): int
+- buscarChofer(String): Chofer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>110</y><w>150</w><h>90</h></coordinates><panel_attributes>Camion
+--
+- ID: int
+- costoXKm: double
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>520</y><w>150</w><h>100</h></coordinates><panel_attributes>Chofer
+--
+- ID: String
+- nombre: String
+- pagoXViaje: double
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>340</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- viajes</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>410</y><w>130</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CHOFERES
+- choferes</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>300</y><w>110</w><h>110</h></coordinates><panel_attributes>Viaje
+--
+- idCamion: int
+- idChofer: String
+- kms: double
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>190</y><w>130</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CAMIONES
+- camiones</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element></diagram>

@@ -1,0 +1,30 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>50</y><w>210</w><h>200</h></coordinates><panel_attributes>Seleccion
+--
+_- CANT_JUG: int = 23_
+_- CANT_TIT: int = 11_
+_- CANT_SUP: int = 7_
+- nombre: String
+--
++ cambio(int, int): void
++ cambioPorLesion(int, String): void
++ obtenerReservas(): Jugador[]
++ cantJugadoresPorPosicion(): int[]
+- idxJugador(int): Jugador
+- rangoValido(int): boolean
+- intercambiar(int, int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>340</y><w>130</w><h>80</h></coordinates><panel_attributes>Jugador
+--
+- apellido: String
+- nroCamiseta: int
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>240</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_JUG
+- jugadores</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>230</y><w>120</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Posicion
+--
+_+ ARQUERO_
+_+ DEFENSOR_
+_+ MEDIOCAMPISTA_
+_+ DELANTERO_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>330</y><w>240</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- posicion</panel_attributes><additional_attributes>170;10;170;80;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>180</y><w>190</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>170;50;170;10;10;10</additional_attributes></element></diagram>

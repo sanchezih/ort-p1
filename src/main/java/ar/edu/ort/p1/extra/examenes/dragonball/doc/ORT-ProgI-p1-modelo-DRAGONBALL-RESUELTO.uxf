@@ -1,0 +1,64 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>356</y><w>150</w><h>70</h></coordinates><panel_attributes>/Personaje/
+--
+-ki: int
+--
++comer(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>496</y><w>200</w><h>110</h></coordinates><panel_attributes>Demonio
+--
+_+ENERGIA_GANADA_int=200_
+_+KI_EXTRA_X_VICTIMA int=10_
+-cantVictimas: int
+--
++incrementoDeKi(): int
+-incrKiPorVictimas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>496</y><w>180</w><h>70</h></coordinates><panel_attributes>Terricola
+--
+_+ENERGIA_GANADA: int=200_
+--
++incrementoDeKi(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>626</y><w>250</w><h>110</h></coordinates><panel_attributes>/Extraterrestre/
+--
+_+KI_EXTRA_X_ALIADO int=10_
+_+MIN_EXTRA_POR_ALIADO int=500_
+-cantAliados: int
+--
+/+getEnergiaGanada(): int/
++incrementoDeKi(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>416</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>299</x><y>416</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;80</additional_attributes></element><element><id>Relation</id><coordinates><x>269</x><y>416</y><w>30</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;210</additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>776</y><w>210</w><h>100</h></coordinates><panel_attributes>Saiyajin
+--
+_+ENERGIA_GANADA: int=200_
+_+MULTIPLICADOR_ORAZU int= 10_
+modoOzaru:boolean
+--
++getEnergiaGanada(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>776</y><w>180</w><h>70</h></coordinates><panel_attributes>Namekiano
+--
+_+ENERGIA_GANADA: int=100_
+--
++getEnergiaGanada(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>329</x><y>726</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>239</x><y>726</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>110</y><w>290</w><h>100</h></coordinates><panel_attributes>Banquete
+--
+--
++darPrimerPlato(): void
++listar5MasDebiles(): void
++listar5MasDebilesAlternativo(): Personaje[]
+-copiarPersonajesALista(ListaPersonajesPorKi): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>200</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>40</y><w>230</w><h>140</h></coordinates><panel_attributes>ColaPersonajes
+--
+
+--
++add(Personaje): void
++get() Personaje
++remove()Personaje
++isEmptyy() boolean
++isFul() booelan
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>66</y><w>200</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-colaDeInvitados</panel_attributes><additional_attributes>180;10;60;10;60;110;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>200</y><w>230</w><h>100</h></coordinates><panel_attributes>ListaPersonajesPorKi
+--
+--
++ListaPersonajesPorKi() 
++compare(Personaje,Personaje) int
++compareByKey(Energia, Personaje) int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>110</y><w>450</w><h>330</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;310;430;310;430;10;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>260</y><w>420</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;400;130;400;10;350;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>366</y><w>150</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Incrementable/
+--
+--
+/+incrementoDeKi(): int/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>138</x><y>390</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;16;60;16</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>195</y><w>170</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;50;10;15</additional_attributes></element></diagram>
