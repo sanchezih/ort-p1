@@ -24,6 +24,7 @@ public class UtilArrays {
 				System.out.print(elementos[i] + " ");
 			}
 		}
+		System.out.println();
 	}
 
 	/**
@@ -53,7 +54,7 @@ public class UtilArrays {
 	}
 
 	/**
-	 * Invertir el contenido de un array de caracteres recibido como parámetro, sin
+	 * Invertir el contenido de un array de caracteres recibido como parametro, sin
 	 * usar un array auxiliar.
 	 * 
 	 * @param elementos
@@ -65,11 +66,12 @@ public class UtilArrays {
 			elementos[i] = elementos[elementos.length - 1 - i];
 			elementos[elementos.length - 1 - i] = aux;
 		}
+		mostrar(elementos);
 	}
 
 	/**
-	 * Rotar una posición hacia la derecha cada elemento de un array de caracteres
-	 * recibido como parámetro, sin usar un array auxiliar.
+	 * Rotar una posicion hacia la derecha cada elemento de un array de caracteres
+	 * recibido como parametro, sin usar un array auxiliar.
 	 * 
 	 * @param elementos
 	 */
@@ -80,6 +82,7 @@ public class UtilArrays {
 			elementos[i + 1] = elementos[i];
 		}
 		elementos[0] = aux;
+		mostrar(elementos);
 	}
 
 	public static char[] unirConjuntos(char[] cjto1, char[] cjto2) {
@@ -122,6 +125,13 @@ public class UtilArrays {
 		return existe;
 	}
 
+	/**
+	 * Mostrar los valores resultantes de la intersección de dos arrays de
+	 * caracteres (sin repeticiones) recibidos como parámetros.
+	 * 
+	 * @param cjto1
+	 * @param cjto2
+	 */
 	public static void mostrarInterseccion(char[] cjto1, char[] cjto2) {
 		boolean salio;
 		for (int i = 0; i < cjto1.length; i++) {
@@ -133,9 +143,82 @@ public class UtilArrays {
 				}
 			}
 		}
+		System.out.println();
 	}
 
-	////////////////////////////////////////////////////////////
+	/**
+	 * Mostrar los valores resultantes de la diferencia de dos arrays de caracteres
+	 * (sin repeticiones) recibidos como parametros (el primero menos el segundo).
+	 * 
+	 * @param cjto1
+	 * @param cjto2
+	 */
+	public static void mostrarDiferencia(char[] cjto1, char[] cjto2) {
+		char[] res = new char[cjto1.length];
+		int resIndex = 0;
+		for (int i = 0; i < cjto1.length; i++) {
+			boolean encontrada = false;
+			int j = 0;
+			while (j < cjto2.length && !encontrada) {
+				if (cjto1[i] == cjto2[j]) {
+					encontrada = true;
+				}
+				j++;
+			}
+			if (!encontrada) {
+				res[resIndex] = cjto1[i];
+				resIndex++;
+			}
+		}
+		mostrarSinRepetidos(res);
+	}
+
+	/**
+	 * Mostrar los valores resultantes de la diferencia simétrica de dos arrays de
+	 * caracteres (sin repeticiones) recibidos como parámetros (el primero menos el
+	 * segundo).
+	 * 
+	 * @param cjto1
+	 * @param cjto2
+	 */
+	public static void mostrarDiferenciaSimetrica(char[] cjto1, char[] cjto2) {
+		char[] res = new char[cjto1.length + cjto2.length];
+		int resIndex = 0;
+
+		for (int i = 0; i < cjto1.length; i++) {
+			boolean encontrada = false;
+			int j = 0;
+			while (j < cjto2.length && !encontrada) {
+				if (cjto1[i] == cjto2[j]) {
+					encontrada = true;
+				}
+				j++;
+			}
+			if (!encontrada) {
+				res[resIndex] = cjto1[i];
+				resIndex++;
+			}
+		}
+
+		for (int i = 0; i < cjto2.length; i++) {
+			boolean encontrada = false;
+			int j = 0;
+			while (j < cjto1.length && !encontrada) {
+				if (cjto2[i] == cjto1[j]) {
+					encontrada = true;
+				}
+				j++;
+			}
+			if (!encontrada) {
+				res[resIndex] = cjto2[i];
+				resIndex++;
+			}
+		}
+
+		mostrarSinRepetidos(res);
+	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Mostrar el contenido de un array de caracteres recibido como parametro
@@ -146,6 +229,7 @@ public class UtilArrays {
 		for (int i = 0; i < elementos.length; i++) {
 			System.out.print(elementos[i] + " ");
 		}
+		System.out.println();
 	}
 
 }
