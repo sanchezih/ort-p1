@@ -5,6 +5,7 @@ import ar.edu.ort.p1.util.UtilArrays;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		char elementos[] = { 'I', 'N', 'M', 'I', 'N', 'E', 'N', 'T', 'E' };
 
 		char conjunto1[] = { 'B', 'L', 'A', 'N', 'C', 'O' };

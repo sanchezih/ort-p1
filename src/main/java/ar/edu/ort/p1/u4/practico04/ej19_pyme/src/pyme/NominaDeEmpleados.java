@@ -6,22 +6,17 @@ public class NominaDeEmpleados {
 	private Empleado[] empleados = new Empleado[CANT_EMP_MAX];
 
 	public int altaDeEmpleado(Empleado empleado) {
-		int i = 0;
-		boolean hayLugar = false;
-		while (i < this.empleados.length && !hayLugar) {
-			if (this.empleados[i] == null) {
-				this.empleados[i] = empleado;
-				hayLugar = true;
-			} else {
-				i++;
-			}
+		int pos;
+		pos = idxPrimerNull();
+		if (pos > -1) {
+			this.empleados[pos] = empleado;
 		}
-		return hayLugar ? i : -1;
+		return pos;
 	}
 
 	public Empleado bajaDeEmpleado(String dni) {
-		Empleado empEncontrado = null;
 		int i = 0;
+		Empleado empEncontrado = null;
 		while (i < this.empleados.length && empEncontrado == null) {
 			if (this.empleados[i] != null && this.empleados[i].getDni().equals(dni)) {
 				empEncontrado = this.empleados[i];
@@ -53,4 +48,11 @@ public class NominaDeEmpleados {
 		return acu;
 	}
 
+	private int idxPrimerNull() {
+		int i = 0;
+		while (i < this.empleados.length && this.empleados[i] != null) {
+			i++;
+		}
+		return i < this.empleados.length ? i : -1;
+	}
 }
