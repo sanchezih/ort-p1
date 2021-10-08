@@ -7,7 +7,7 @@ _-CANT_CARTAS: int = 48_
 --
 _+MIN_NUM: int = 1_
 _+MAX_NUM: int = 12_
-- numero: int
+-numero: int
 --
 +esDe(Palo): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>170</y><w>170</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
 -cartas
