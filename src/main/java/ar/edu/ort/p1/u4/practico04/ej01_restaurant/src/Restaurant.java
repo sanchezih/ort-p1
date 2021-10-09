@@ -102,6 +102,8 @@ public class Restaurant {
 		this.robots[7] = new Robot("R08", 6);
 
 		// Creo los pedidos
-		this.pedidos.add(new Pedido("Fernanda", 0, "R03", 149));
+		this.pedidos.add(new Pedido("Fernanda", 0, "R03", 149.1));
+		this.pedidos.add(new Pedido("Luis", 1, "R04", 355));
+		this.pedidos.add(new Pedido("Nelly", 1, "R05", 46));
 	}
 }
