@@ -1,7 +1,8 @@
 package ar.edu.ort.p1.u4.practico04.ej09_estacionamiento.src;
 
 import java.util.ArrayList;
-import java.util.Date;
+
+import ar.edu.ort.p1.util.Fecha;
 
 public class Estacionamiento {
 	private static int CANT_PISOS = 8;
@@ -78,9 +79,9 @@ public class Estacionamiento {
 		Auto autoMoroso;
 
 		for (int f = 0; f < CANT_PISOS; f++) {
-			System.out.println("Entro a ver los autos del piso "+f);
+			System.out.println("Entro a ver los autos del piso " + f);
 			autoMoroso = autoMasMorosoPorPiso(autos[f]);
-			//autosMasMorosos[f] = autoMoroso;
+			// autosMasMorosos[f] = autoMoroso;
 		}
 		return autosMasMorosos;
 	}

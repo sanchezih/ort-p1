@@ -2,6 +2,8 @@ package ar.edu.ort.p1.u4.practico04.ej09_estacionamiento.src;
 
 import java.util.Date;
 
+import ar.edu.ort.p1.util.Fecha;
+
 public class Auto {
 
 	private static int CANT_PAGOS = 12;

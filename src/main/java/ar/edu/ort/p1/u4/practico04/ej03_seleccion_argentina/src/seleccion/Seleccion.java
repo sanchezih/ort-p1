@@ -8,9 +8,8 @@ public class Seleccion {
 	private String nombre;
 	private Jugador[] jugadores = new Jugador[CANT_JUG];
 
-	public Seleccion(String nombre, Jugador[] jugadores) {
-		this.nombre = nombre;
-		this.jugadores = jugadores;
+	public Seleccion() {
+		inicializarSeleccion();
 	}
 
 	public String getNombre() {
@@ -114,4 +113,39 @@ public class Seleccion {
 		}
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	private void inicializarSeleccion() {
+		this.nombre = "Seleccion Argentina de Futbol";
+
+		// Titulares
+		this.jugadores[0] = new Jugador("Guzman", 1, Posicion.ARQUERO);
+		this.jugadores[1] = new Jugador("Mercado", 2, Posicion.DEFENSOR);
+		this.jugadores[2] = new Jugador("Tagliafico", 3, Posicion.DEFENSOR);
+		this.jugadores[3] = new Jugador("Ansaldi", 4, Posicion.DEFENSOR);
+		this.jugadores[4] = new Jugador("Biglia", 5, Posicion.MEDIOCAMPISTA);
+		this.jugadores[5] = new Jugador("Fazio", 6, Posicion.DEFENSOR);
+		this.jugadores[6] = new Jugador("Banega", 7, Posicion.MEDIOCAMPISTA);
+		this.jugadores[7] = new Jugador("Acuna", 8, Posicion.DEFENSOR);
+		this.jugadores[8] = new Jugador("Higuain", 9, Posicion.DELANTERO);
+		this.jugadores[9] = new Jugador("Messi", 10, Posicion.DELANTERO);
+		this.jugadores[10] = new Jugador("Di Maria", 11, Posicion.MEDIOCAMPISTA);
+
+		// Suplentes
+		this.jugadores[11] = new Jugador("Armani", 12, Posicion.ARQUERO);
+		this.jugadores[12] = new Jugador("Meza", 13, Posicion.MEDIOCAMPISTA);
+		this.jugadores[13] = new Jugador("Mascherano", 14, Posicion.MEDIOCAMPISTA);
+		this.jugadores[14] = new Jugador("Perez", 15, Posicion.MEDIOCAMPISTA);
+		this.jugadores[15] = new Jugador("Rojo", 16, Posicion.DEFENSOR);
+		this.jugadores[16] = new Jugador("Otamendi", 17, Posicion.DEFENSOR);
+		this.jugadores[17] = new Jugador("Salvio", 18, Posicion.DEFENSOR);
+
+		// Reserva
+		this.jugadores[18] = new Jugador("Aguero", 19, Posicion.DELANTERO);
+		this.jugadores[19] = new Jugador("Lo Celso", 20, Posicion.MEDIOCAMPISTA);
+		this.jugadores[20] = new Jugador("Dybala", 21, Posicion.DELANTERO);
+		this.jugadores[21] = new Jugador("Pavon", 22, Posicion.MEDIOCAMPISTA);
+		this.jugadores[22] = new Jugador("Caballero", 23, Posicion.ARQUERO);
+
+	}
 }
