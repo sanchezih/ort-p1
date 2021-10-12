@@ -38,11 +38,11 @@ public class UtilArrays {
 
 		int length = elementos.length;
 		boolean isPalindromo = true;
-		for (int index = 0; index < elementos.length; index++) {
+		for (int i = 0; i < elementos.length; i++) {
 			if (isPalindromo) {
-				int start = elementos[index];
+				int start = elementos[i];
 				int end = elementos[--length];
-				if (length < index) {
+				if (length < i) {
 					break;
 				}
 				if (start != end) {
