@@ -1,0 +1,41 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>280</y><w>240</w><h>160</h></coordinates><panel_attributes>Restaurant
+--
+_- CANT_CAJEROS: int = 5_
+_- CANT_ROBOTS: int = 8_
+--
++ montosPorCajero(): double[]
++ informeDePedidos(): InfoPedido[]
++ mostrarPedidosConMasRiesgo(): void
+- robotConMenorBateria(): Robot
+- buscarRobot(String): Robot
+- idxRobot(String): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>110</y><w>150</w><h>100</h></coordinates><panel_attributes>Cajero
+--
+- ID: int
+- apellido: String
+- antiguedad: int
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>520</y><w>150</w><h>90</h></coordinates><panel_attributes>Robot
+--
+- codigo: String
+- nivelBateria: int
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>340</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- pedidos</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>430</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_ROBOTS
+- robots</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>300</y><w>140</w><h>110</h></coordinates><panel_attributes>Pedido
+--
+- nombreCliente: String
+- idCajero: int
+- codRobot: String
+- monto: double
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>200</y><w>120</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CAJEROS
+- cajeros</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>110</y><w>180</w><h>100</h></coordinates><panel_attributes>InfoPedido
+--
+- monto: double
+- apellidoCajero: String
+- bateriaRobot: int
+--
++InfoPedido(double, String, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>200</y><w>140</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>120;10;120;80;10;80</additional_attributes></element></diagram>
