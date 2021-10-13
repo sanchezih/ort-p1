@@ -7,7 +7,8 @@ public class NominaDeEmpleados {
 
 	public int altaDeEmpleado(Empleado empleado) {
 		int pos;
-		pos = idxPrimerNull();
+		//pos = idxPrimerNull();
+		pos=getPrimerPosicionLibre();
 		if (pos > -1) {
 			this.empleados[pos] = empleado;
 		}
@@ -54,5 +55,21 @@ public class NominaDeEmpleados {
 			i++;
 		}
 		return i < this.empleados.length ? i : -1;
+	}
+
+	/**
+	 * Otra impl para obtener la primer posicion libre del array
+	 * @return
+	 */
+	private int getPrimerPosicionLibre() {
+		boolean encontrado = false;
+		int i = 0;
+		while (i < this.empleados.length && !encontrado) {
+			if (this.empleados[i] == null) {
+				encontrado = true;
+			} else
+				i++;
+		}
+		return encontrado ? i : -1;
 	}
 }
