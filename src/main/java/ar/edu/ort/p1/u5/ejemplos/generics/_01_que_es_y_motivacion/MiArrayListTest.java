@@ -3,7 +3,7 @@ package ar.edu.ort.p1.u5.ejemplos.generics._01_que_es_y_motivacion;
 import java.io.File;
 import java.util.ArrayList;
 
-public class TestArrayList {
+public class MiArrayListTest {
 
 	public static void main(String[] args) {
 
