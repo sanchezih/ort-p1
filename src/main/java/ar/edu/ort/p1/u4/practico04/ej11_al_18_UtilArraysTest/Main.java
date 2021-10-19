@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u4.practico04.ej11al18_UtilArraysTest;
+package ar.edu.ort.p1.u4.practico04.ej11_al_18_UtilArraysTest;
 
 import ar.edu.ort.p1.util.UtilArrays;
 

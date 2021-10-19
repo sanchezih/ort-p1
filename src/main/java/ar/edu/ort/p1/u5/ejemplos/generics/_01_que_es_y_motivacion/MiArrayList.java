@@ -2,16 +2,16 @@ package ar.edu.ort.p1.u5.ejemplos.generics._01_que_es_y_motivacion;
 
 public class MiArrayList {
 
-	// Array de objetos
+	/* Array de Object */
 	private Object[] datosElemento;
 	private int i = 0;
 
-	// Constructor
+	/* Constructor */
 	public MiArrayList(int z) {
 		datosElemento = new Object[z];
 	}
 
-	// Devuelve un elemento del array
+	/* Devuelve un elemento del array */
 	public Object get(int i) {
 		return datosElemento[i];
 	}
