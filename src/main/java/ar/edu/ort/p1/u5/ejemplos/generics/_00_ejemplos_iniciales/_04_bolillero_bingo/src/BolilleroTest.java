@@ -1,6 +1,6 @@
-package ar.edu.ort.p1.u5.ejemplos.generics._00_ejemplos_iniciales._04_bolillero_bingo;
+package ar.edu.ort.p1.u5.ejemplos.generics._00_ejemplos_iniciales._04_bolillero_bingo.src;
 
-public class TestBolillero {
+public class BolilleroTest {
 
 	private static int CANT_MAX_BOLILLAS = 5;
 	private static Bolillero<Bolilla> bolillero = new Bolillero<Bolilla>(CANT_MAX_BOLILLAS);

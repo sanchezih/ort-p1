@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.u5.ejemplos.generics._00_ejemplos_iniciales._02_sorteador_objects;
 
-public class TestSorteadorDeObjects {
+public class SorteadorDeObjectsTest {
 
 	public static void main(String[] args) {
 		SorteadorDeObjects sorteador = new SorteadorDeObjects();

@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.u5.ejemplos.generics._00_ejemplos_iniciales._01_sorteador_strings.src;
 
-public class TestSorteadorDeStrings {
+public class SorteadorDeStringsTest {
 
 	public static void main(String[] args) {
 		SorteadorDeStrings sorteador = new SorteadorDeStrings();

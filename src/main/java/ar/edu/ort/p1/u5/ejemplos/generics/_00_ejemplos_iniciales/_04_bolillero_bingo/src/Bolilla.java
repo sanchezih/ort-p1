@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u5.ejemplos.generics._00_ejemplos_iniciales._04_bolillero_bingo;
+package ar.edu.ort.p1.u5.ejemplos.generics._00_ejemplos_iniciales._04_bolillero_bingo.src;
 
 public class Bolilla {
 	private int numero;
