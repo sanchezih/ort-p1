@@ -13,7 +13,7 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		Pila<DVD> pilaDeDVDs = new PilaDeDVDs(); // Utilizo otra impl de pila
+		Pila<DVD> pilaDeDVDs = new PilaDeDVDs();
 		pilaDeDVDs.push(new DVD("Verbatim", true));
 		pilaDeDVDs.push(new DVD("Sony", false));
 		pilaDeDVDs.push(new DVD("TDK", true));
