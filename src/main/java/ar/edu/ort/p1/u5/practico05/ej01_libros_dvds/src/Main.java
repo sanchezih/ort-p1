@@ -20,9 +20,9 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		Empleado e = new Empleado("Juan");
-		System.out.println("La cantidad de DVDs rayados es: " + e.cantDVDsRayados(pilaDeDVDs));
-		System.out.println("El promedio es: " + e.paginasPromedio(pilaDeLibros));
+		Empleado empleado = new Empleado("Juan");
+		System.out.println("La cantidad de DVDs rayados es: " + empleado.cantDVDsRayados(pilaDeDVDs));
+		System.out.println("El promedio es: " + empleado.paginasPromedio(pilaDeLibros));
 
 	}
 
