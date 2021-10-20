@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.extra.examenes._2021c1._recu1.reclamos_infracciones.src;
 
-import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
+import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaInfraccionesReclamadasPorImporte extends ListaOrdenadaNodos<Double, Infraccion> {
 

@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.u5.practico05.ej07_academia_cursos.src.listasordenadas;
 
 import ar.edu.ort.p1.u5.practico05.ej07_academia_cursos.src.Curso;
-import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
+import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaCursosPorCodigo extends ListaOrdenadaNodos<String, Curso> {
 

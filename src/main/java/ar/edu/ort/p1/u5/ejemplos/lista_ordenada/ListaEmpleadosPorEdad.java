@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.u5.ejemplos.lista_ordenada;
 
-import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
+import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Empleado> {
 

@@ -1,8 +1,8 @@
 package ar.edu.ort.p1.u5.practico05.ej01_libros_dvds.src;
 
 import ar.edu.ort.p1.util.tda.PilaGenericaAL;
-import edu.ort.tp1.u5.tda.Pila;
-import edu.ort.tp1.u5.tda.nodos.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.Pila;
+import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
 public class Empleado {
 	private String nombre;

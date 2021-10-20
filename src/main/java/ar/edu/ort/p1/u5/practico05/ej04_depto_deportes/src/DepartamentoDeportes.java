@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.u5.practico05.ej04_depto_deportes.src;
 
-import edu.ort.tp1.u5.tda.Pila;
-import edu.ort.tp1.u5.tda.nodos.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.Pila;
+import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
 public class DepartamentoDeportes {
 

@@ -1,16 +1,8 @@
 package ar.edu.ort.p1.u5.practico05.ej03_imprimir_documentos.src;
 
-import edu.ort.tp1.u5.tda.Cola;
-import edu.ort.tp1.u5.tda.nodos.ColaNodos;
+import ar.edu.ort.tp1.u5.tda.Cola;
+import ar.edu.ort.tp1.u5.tda.nodos.ColaNodos;
 
-/**
- * 
- * Class description goes here.
- *
- * @version 1.82 18 Mar 1999
- * @author Firstname Lastname
- * 
- */
 public class Impresora {
 	private boolean estaEncendida;
 	private int cantHojasDisp;

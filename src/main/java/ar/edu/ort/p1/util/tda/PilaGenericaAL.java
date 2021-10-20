@@ -1,7 +1,8 @@
 package ar.edu.ort.p1.util.tda;
 
 import java.util.ArrayList;
-import edu.ort.tp1.u5.tda.Pila;
+
+import ar.edu.ort.tp1.u5.tda.Pila;
 
 public class PilaGenericaAL<T> implements Pila<T> {
 	private ArrayList<T> elementos = new ArrayList<T>();

@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.u5.practico05.ej06_facturas_edificio.src;
 
-import edu.ort.tp1.u5.tda.Pila;
-import edu.ort.tp1.u5.tda.nodos.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.Pila;
+import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
 public class Main {
 

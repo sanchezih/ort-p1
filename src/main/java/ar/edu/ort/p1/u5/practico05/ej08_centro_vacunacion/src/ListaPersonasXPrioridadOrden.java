@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src;
 
-import edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
+import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaPersonasXPrioridadOrden extends ListaOrdenadaNodos<OrdenYPrioridad, PersonaEnCola> {
 
