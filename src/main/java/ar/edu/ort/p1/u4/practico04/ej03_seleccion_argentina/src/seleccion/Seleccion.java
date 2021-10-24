@@ -24,6 +24,8 @@ public class Seleccion {
 		return jugadores;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public void cambio(int n1, int n2) {
 		int idx1;
 		int idx2;
@@ -33,6 +35,8 @@ public class Seleccion {
 			intercambiar(idx1, idx2);
 		}
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public void cambioPorLesion(int nroLesion, String apeReemplazo) {
 		int idxLesion;
@@ -47,6 +51,8 @@ public class Seleccion {
 		}
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public Jugador[] obtenerReservas() {
 		int cantReservas;
 		Jugador[] reservas;
@@ -57,6 +63,8 @@ public class Seleccion {
 		}
 		return reservas;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public int[] cantJugadoresPorPosicion() {
 		Posicion[] posiciones;
@@ -70,6 +78,8 @@ public class Seleccion {
 		return cantidades;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	private int idxJugador(int nro) {
 		int i = this.jugadores.length - 1;
 		boolean jugEncontrado = false;
@@ -77,7 +87,7 @@ public class Seleccion {
 			if (this.jugadores[i] != null && this.jugadores[i].getNroCamiseta() == nro) {
 				jugEncontrado = true;
 			} else {
-				i--;
+				i--; // Recorre para atras para que, si no se encuentra, devuelva -1
 			}
 		}
 		return i;

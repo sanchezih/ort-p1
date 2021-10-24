@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej03_seleccion_argentina/src/seleccion/Jugador.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="287" x="41" y="464"/>    
+    <position height="-1" width="-1" x="270" y="691"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -16,7 +16,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej03_seleccion_argentina/src/seleccion/Posicion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="287" x="349" y="729"/>    
+    <position height="-1" width="-1" x="689" y="470"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej03_seleccion_argentina/src/seleccion/Seleccion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="387" width="287" x="349" y="37"/>    
+    <position height="-1" width="-1" x="269" y="253"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,21 +35,31 @@
     </display>  
   </class>  
   <association id="4">    
+    <bendpoint x="690" y="692"/>    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="posicion"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+      <attribute id="5" name="posicion">        
+        <position height="0" width="0" x="197" y="-335"/>      
+      </attribute>      
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="197" y="-335"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <dependency id="7">    
+    <bendpoint x="689" y="254"/>    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
   <association id="8">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="9" name="jugadores"/>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+      <attribute id="9" name="jugadores">        
+        <position height="0" width="0" x="86" y="115"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="86" y="115"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
