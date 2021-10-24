@@ -1,0 +1,46 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>270</x><y>70</y><w>320</w><h>220</h></coordinates><panel_attributes>CicloDeCharlas
+--
+-titulo: String
+-cantEspectadores: int
+_-LIMITE_EXPECTADORES: 50_
+_-CANT_TANDAS: 2_
+_-MAX_CHARLAS: 5_
+_-DIAS_ENTRE_TANDAS: 10_
+--
++CicloDeCharlas(String, Pelicula[], Fecha, int)
+-validarDatos(Pelicula[],int): void
+-crearCharlas(Pelicula[], Fecha, int): Charla[][]
++registrarEspectadorEnCharla(Espectador, int): Ticket
++verCartelera(): void
+-mostrarCharlas(int): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>620</y><w>130</w><h>100</h></coordinates><panel_attributes>Fecha
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>390</y><w>240</w><h>160</h></coordinates><panel_attributes>Charla
+--
+-numero: int
+-cantVacantes: int
+--
++Charla(Fecha, int, Pelicula, int)
++agregoExpectador(Espectador): boolean
+-reducirVacantes(): void
++getTitulo(): String
++mostrar(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>280</y><w>220</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1= [CANT_TANDAS]...[MAX_CHARLAS]
+-charlas</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>540</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fecha</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>620</y><w>210</w><h>100</h></coordinates><panel_attributes>Ticket
+--
+-titulo: String
+-nombreEspectador: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>650</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fecha</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>390</y><w>150</w><h>160</h></coordinates><panel_attributes>Pelicula
+--
+-titulo: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>450</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-pelicula</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>150</y><w>150</w><h>260</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>130;240;130;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>430</y><w>130</w><h>100</h></coordinates><panel_attributes>Espectador
+--
+-nombre: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>450</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1= [cantVacantes]
+-expectadores</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>110</y><w>320</w><h>590</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>180;570;300;570;300;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>160</y><w>180</w><h>290</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;270;10;100;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>10</x><y>100</y><w>310</w><h>590</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>290;570;10;570;10;120;260;10</additional_attributes></element></diagram>
