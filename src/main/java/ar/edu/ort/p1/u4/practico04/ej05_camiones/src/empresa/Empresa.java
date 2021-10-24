@@ -10,9 +10,8 @@ public class Empresa {
 	private Chofer[] choferes = new Chofer[CANT_CHOFERES];
 	private Camion[] camiones = new Camion[CANT_CAMIONES];
 
-	public Empresa(ArrayList<Viaje> viajes, Chofer[] choferes, Camion[] camiones) {
-		super();
-		this.viajes = viajes;
+	public Empresa(Chofer[] choferes, Camion[] camiones) {
+		this.viajes = new ArrayList<Viaje>();
 		this.choferes = choferes;
 		this.camiones = camiones;
 	}
@@ -52,7 +51,7 @@ public class Empresa {
 		int i = this.choferes.length - 1;
 		while (i >= 0 && this.choferes[i].getID() != id) {
 			i--;
-		} // Se recorre para atr�s para que, si no se encuentra, se devuelva -1
+		} // Se recorre para atras para que, si no se encuentra, se devuelva -1
 		return i;
 	}
 
@@ -65,4 +64,10 @@ public class Empresa {
 		return elChofer;
 	}
 
+	/*----------------------------------------------------------------------------*/
+	/* Metodos extra */
+
+	public void agregarViaje(Viaje viaje) {
+		this.viajes.add(viaje);
+	}
 }

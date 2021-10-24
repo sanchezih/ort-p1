@@ -1,7 +1,5 @@
 package ar.edu.ort.p1.u4.practico04.ej05_camiones.src;
 
-import java.util.ArrayList;
-
 import ar.edu.ort.p1.u4.practico04.ej05_camiones.src.empresa.Camion;
 import ar.edu.ort.p1.u4.practico04.ej05_camiones.src.empresa.Chofer;
 import ar.edu.ort.p1.u4.practico04.ej05_camiones.src.empresa.Empresa;
@@ -50,18 +48,26 @@ public class Main {
 		Camion[] camiones = { camion01, camion02, camion03, camion04, camion05, camion06, camion07, camion08, camion09,
 				camion10 };
 
-		ArrayList<Viaje> viajes = new ArrayList<Viaje>();
-		Viaje viaje01 = new Viaje(1, "ch01", 1.0);
-		Viaje viaje02 = new Viaje(2, "ch02", 1.0);
-		Viaje viaje03 = new Viaje(2, "ch01", 1.0);
+		Empresa empresa = new Empresa(choferes, camiones);
 
-		viajes.add(viaje01);
-		viajes.add(viaje02);
-		viajes.add(viaje03);
+		empresa.agregarViaje(new Viaje(1, "ch01", 1.0));
+		empresa.agregarViaje(new Viaje(2, "ch02", 1.0));
+		empresa.agregarViaje(new Viaje(2, "ch01", 1.0));
 
-		Empresa empresa = new Empresa(viajes, choferes, camiones);
-
+		/*----------------------------------------------------------------------------*/
+		/**
+		 * Ejercicio B: La explotación del método obtenerCostosDeViajes que devuelva (no
+		 * muestre por consola) el costo aproximado de cada viaje (honorarios +
+		 * consumo).
+		 */
 		recorrerArray(empresa.obtenerCostosDeViajes());
+
+		/*----------------------------------------------------------------------------*/
+		/**
+		 * Ejercicio C: La explotación del método obtenerViajesXChoferCamion que
+		 * devuelva (no muestre por consola) la cantidad de viajes que realizó cada
+		 * chofer con cada camión.
+		 */
 		dibujarMatriz(empresa.obtenerViajesXChoferCamion());
 
 	}
