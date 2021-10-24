@@ -6,17 +6,21 @@ public class Empresa {
 
 	private ArrayList<Reserva> reservas;
 
-	public Empresa(ArrayList<Reserva> reservas) {
-		this.reservas = reservas;
+	public Empresa() {
+		this.reservas = new ArrayList<Reserva>();
 	}
 
-	public ArrayList<Reserva> getReservas() {
-		return reservas;
+	/*----------------------------------------------------------------------------*/
+
+	public double recaudacionTotal() {
+		double acu = 0;
+		for (Reserva r : this.reservas) {
+			acu += r.getPrecio();
+		}
+		return acu;
 	}
 
-	public void setReservas(ArrayList<Reserva> reservas) {
-		this.reservas = reservas;
-	}
+	/*----------------------------------------------------------------------------*/
 
 	public int cantVecesRecorrida(Estacion e) {
 		int acuVeces = 0;
@@ -26,11 +30,10 @@ public class Empresa {
 		return acuVeces;
 	}
 
-	public double recaudacionTotal() {
-		double acu = 0;
-		for (Reserva r : this.reservas) {
-			acu += r.getPrecio();
-		}
-		return acu;
+	/*----------------------------------------------------------------------------*/
+	/* Metodos extra */
+
+	public void agregarReserva(Reserva r) {
+		this.reservas.add(r);
 	}
 }

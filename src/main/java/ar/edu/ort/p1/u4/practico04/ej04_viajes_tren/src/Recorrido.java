@@ -46,6 +46,5 @@ public class Recorrido {
 			idxDestino = aux;
 		}
 		return idxE >= idxPartida && idxE <= idxDestino;
-
 	}
 }
