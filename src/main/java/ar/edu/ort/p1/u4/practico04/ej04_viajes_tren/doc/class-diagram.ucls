@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.u5.practico05.ej02_pelotas_tenis.src.Empresa" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej02_pelotas_tenis/src/Empresa.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="583" y="143"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="2" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Estacion" project="ort-p1" 
+  <enumeration id="1" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Estacion" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Estacion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="583" y="470"/>    
@@ -21,7 +11,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Recorrido" project="ort-p1" 
+  <class id="2" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Recorrido" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Recorrido.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="205" y="469"/>    
@@ -31,7 +21,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Reserva" project="ort-p1" 
+  <class id="3" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Reserva" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Reserva.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="205" y="144"/>    
@@ -41,61 +31,67 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="5">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="6">    
+  <class id="4" language="java" name="ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src.Empresa" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/u4/practico04/ej04_viajes_tren/src/Empresa.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="584" y="143"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="5">    
     <bendpoint x="394" y="561"/>    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="7" name="estPartida">        
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="6" name="estPartida">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="8" minimum="0" maximum="1">        
+      <multiplicity id="7" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="8">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="9" name="recorrido">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="9">    
+  <dependency id="11">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="12">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="10" name="recorrido">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="11" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="13" name="reservas"/>      
+      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="12">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
   </dependency>  
-  <association id="13">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="14" name="estDestino">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="15" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <association id="16">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="17" name="reservas">        
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="17" name="estDestino">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="18" minimum="0" maximum="2147483647">        
+      <multiplicity id="18" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
