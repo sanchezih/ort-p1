@@ -1,7 +1,5 @@
 package ar.edu.ort.p1.u5.practico05.ej02_pelotas_tenis.src;
 
-import ar.edu.ort.p1.u5.practico05.ej10_elecciones.src.Estado;
-
 public class Main {
 
 	public static void main(String[] args) {

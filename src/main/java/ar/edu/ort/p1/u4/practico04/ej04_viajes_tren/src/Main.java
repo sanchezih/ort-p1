@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.u4.practico04.ej04_viajes_tren.src;
 
+import ar.edu.ort.p1.u5.practico05.ej02_pelotas_tenis.src.Empresa;
+
 public class Main {
 
 	public static void main(String[] args) {
