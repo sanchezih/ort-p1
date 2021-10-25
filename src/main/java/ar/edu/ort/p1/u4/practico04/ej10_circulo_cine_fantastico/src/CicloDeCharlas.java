@@ -1,7 +1,5 @@
 package ar.edu.ort.p1.u4.practico04.ej10_circulo_cine_fantastico.src;
 
-
-
 public class CicloDeCharlas {
 
 	private static final int LIMITE_EXPECTADORES = 50;
@@ -29,41 +27,27 @@ public class CicloDeCharlas {
 		Fecha fecha;
 
 		for (int i = 0; i < charlas.length; i++) {
-
 			for (int j = 0; j < charlas[i].length; j++) {
-
 				fecha = new Fecha((j + diaInicio + (i * DIAS_ENTRE_TANDAS)), mes, anio);
-
 				nroCharla = i * peliculas.length + j + 1;
-
 				charla = new Charla(fecha, nroCharla, peliculas[j], cantEspectadores);
-
 				charlas[i][j] = charla;
-
 			}
 		}
-
 		return charlas;
 	}
 
 	private void validarDatos(Pelicula[] peliculas, int cantEspectadores) {
-
 		if (peliculas.length > MAX_CHARLAS) {
-
 			throw new IllegalArgumentException("La cantidad de peliculas no puede ser mayor a " + MAX_CHARLAS);
-
 		}
-
 		if (cantEspectadores <= 0 || cantEspectadores > LIMITE_EXPECTADORES) {
-
 			throw new IllegalArgumentException(
 					"La cantidad de espectadores no puede ser mayor a " + LIMITE_EXPECTADORES + " o ser menos que uno");
 		}
-
 	}
 
 	public Ticket registrarEspectadorEnCharla(Espectador espectador, int nroCharla) {
-
 		Ticket ticket = null;
 		Charla charla;
 		int posicionTanda, posicionCharla;
@@ -73,13 +57,9 @@ public class CicloDeCharlas {
 		charla = charlas[posicionTanda][posicionCharla];
 
 		if (charla.agregoEspectador(espectador)) {
-
 			ticket = new Ticket(charla.getFecha(), charla.getTitulo(), espectador.getNombre());
-
 		}
-
 		return ticket;
-
 	}
 
 	public void verCartelera() {
