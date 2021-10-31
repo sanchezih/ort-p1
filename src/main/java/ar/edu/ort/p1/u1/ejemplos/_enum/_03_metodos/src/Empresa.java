@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u1.ejemplos.enums._03_metodos.src;
+package ar.edu.ort.p1.u1.ejemplos._enum._03_metodos.src;
 
 import java.util.ArrayList;
 

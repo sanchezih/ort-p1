@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.u1.ejemplos.enums._02_enums_con_atributos.src;
+package ar.edu.ort.p1.u1.ejemplos._enum._02_enums_con_atributos.src;
 
 public enum Continente {
 	
