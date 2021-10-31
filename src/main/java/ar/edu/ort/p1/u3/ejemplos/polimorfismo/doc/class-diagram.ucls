@@ -5,73 +5,55 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismo/src/polimorfismo/IntegranteDeSeleccion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="387" width="246" x="149" y="300"/>    
+    <position height="387" width="246" x="327" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.Main" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismo/src/Main.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="99" width="189" x="149" y="161"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.polimorfismo.Futbolista" 
+  <class id="2" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.polimorfismo.Futbolista" 
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismo/src/polimorfismo/Futbolista.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="261" width="246" x="-137" y="727"/>    
+    <position height="261" width="246" x="41" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.polimorfismo.Masajista" 
+  <class id="3" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.polimorfismo.Masajista" 
     project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismo/src/polimorfismo/Masajista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="246" x="149" y="727"/>    
+    <position height="243" width="246" x="613" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.polimorfismo.Entrenador" 
+  <class id="4" language="java" name="ar.edu.ort.p1.u3.ejemplos.polimorfismo.src.polimorfismo.Entrenador" 
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismo/src/polimorfismo/Entrenador.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="207" width="246" x="435" y="727"/>    
+    <position height="207" width="246" x="327" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="6">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="7" name="integrantes"/>      
-      <multiplicity id="8" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="9">    
+  <generalization id="5">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="6">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="4"/>    
+  <generalization id="7">    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
