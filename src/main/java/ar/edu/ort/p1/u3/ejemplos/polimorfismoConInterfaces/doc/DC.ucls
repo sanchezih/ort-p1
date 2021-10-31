@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/Entrenador.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="291" x="41" y="464"/>    
+    <position height="207" width="291" x="372" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,7 +49,7 @@
     name="ar.edu.ort.p1.u3.ejemplos.polimorfismoConInterfaces.src.seleccion.IntegranteSeleccionFutbol" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/IntegranteSeleccionFutbol.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="291" x="372" y="464"/>    
+    <position height="135" width="291" x="41" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,21 +57,21 @@
     </display>  
   </interface>  
   <generalization id="6">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <generalization id="7">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <realization id="8">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <generalization id="9">    
+  <generalization id="7">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
