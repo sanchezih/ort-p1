@@ -6,10 +6,10 @@ public class CentroVacunacion {
 
 	private static final int CANT_COLAS = 3;
 
-	private ColaDePersonas[] pacientes;
+	private ColaDePersonas[] colasDePersonas;
 
 	public CentroVacunacion() {
-		this.pacientes = new ColaDePersonas[CANT_COLAS];
+		this.colasDePersonas = new ColaDePersonas[CANT_COLAS];
 	}
 
 	public ColaNodos<Persona> obtenerColaPorPrioridadYOrden() {
@@ -21,9 +21,9 @@ public class CentroVacunacion {
 	}
 
 	public void cargarColas(ColaDePersonas colaCargar1, ColaDePersonas colaCargar2, ColaDePersonas colaCargar3) {
-		pacientes[0] = colaCargar1;
-		pacientes[1] = colaCargar2;
-		pacientes[2] = colaCargar3;
+		colasDePersonas[0] = colaCargar1;
+		colasDePersonas[1] = colaCargar2;
+		colasDePersonas[2] = colaCargar3;
 	}
 
 	private void pasarListaAcola(ListaPersonasXPrioridadOrden lista, ColaDePersonas cola) {
@@ -34,7 +34,7 @@ public class CentroVacunacion {
 
 	private void cargarLista(ListaPersonasXPrioridadOrden lista) {
 		for (int i = 0; i < CANT_COLAS; i++) {
-			ColaDePersonas cola = this.pacientes[i];
+			ColaDePersonas cola = this.colasDePersonas[i];
 			cargarLista(lista, cola);
 		}
 	}
@@ -44,7 +44,7 @@ public class CentroVacunacion {
 		while (!cola.isEmpty()) {
 			Persona persona = cola.remove();
 			orden++;
-			PersonaEnCola perEnCola = new PersonaEnCola(persona, orden, persona.getprioridad());
+			PersonaEnCola perEnCola = new PersonaEnCola(persona, orden, persona.getPrioridad());
 			lista.add(perEnCola);
 		}
 	}

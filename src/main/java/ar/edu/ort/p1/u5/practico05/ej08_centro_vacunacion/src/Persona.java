@@ -5,10 +5,6 @@ public class Persona implements Vacunable {
 	private static final int EDAD_MINIMA = 30;
 	private static final int EDAD_MAXIMA = 60;
 
-	protected static final int PRIORIDAD_MINIMA = 2;
-	protected static final int PRIORIDAD_MEDIA = 1;
-	protected static final int PRIORIDAD_MAXIMA = 0;
-
 	private String dni;
 	private String nombre;
 	private int edad;
@@ -22,7 +18,7 @@ public class Persona implements Vacunable {
 	}
 
 	@Override
-	public int getprioridad() {
+	public int getPrioridad() {
 		int prioridad = PRIORIDAD_MEDIA;
 		if (this.pacRiesgo || this.edad > EDAD_MAXIMA) {
 			prioridad = PRIORIDAD_MAXIMA;
@@ -66,7 +62,7 @@ public class Persona implements Vacunable {
 
 	@Override
 	public String toString() {
-		return "Prioridad: " + getprioridad() + " Persona [DNI=" + dni + ", Nombre=" + nombre + ",\tedad=" + edad
+		return "Prioridad: " + getPrioridad() + " Persona [DNI=" + dni + ", Nombre=" + nombre + ",\tedad=" + edad
 				+ ", pacRiesgo=" + pacRiesgo + "]\t";
 	}
 

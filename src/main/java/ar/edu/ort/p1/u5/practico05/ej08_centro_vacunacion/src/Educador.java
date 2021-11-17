@@ -9,9 +9,9 @@ public class Educador extends Persona {
 		this.nivelEducacion = nivelEducacion;
 	}
 
-	public int getprioridad() {
+	public int getPrioridad() {
 		int prioridad = super.PRIORIDAD_MEDIA;
-		if ((super.getprioridad() == super.PRIORIDAD_MAXIMA) || this.nivelEducacion == NivelEducacion.INICIAL) {
+		if ((super.getPrioridad() == super.PRIORIDAD_MAXIMA) || this.nivelEducacion == NivelEducacion.INICIAL) {
 			prioridad = super.PRIORIDAD_MAXIMA;
 		}
 		return prioridad;

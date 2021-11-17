@@ -9,7 +9,7 @@ public class Medico extends Persona {
 		this.setMatricula(matricula);
 	}
 
-	public int getprioridad() {
+	public int getPrioridad() {
 		return super.PRIORIDAD_MAXIMA;
 	}
 
