@@ -8,9 +8,10 @@ public class Main {
 
 		gestor.agregarEmpleado(new Empleado("Juan", "Perez", "AA"));
 
-		// gestor.agregarTicket(new Incidente("Un host", false));
+		gestor.agregarTicket(new Incidente("unCliente", "ABC", "fecha", "titulo", new Empleado("Juan", "Perez", "AA"),
+				null, null, null, false));
 		// gestor.agregarTicket(new Incidente("BB", true));
-	//	gestor.agregarTicket(new Bug(TipoBug.INTEGRACION, 4));
+		// gestor.agregarTicket(new Bug(TipoBug.INTEGRACION, 4));
 
 		/*----------------------------------------------------------------------------*/
 

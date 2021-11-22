@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class GestorTareas {
 
 	private ListaTicketsOrdenadoasPorPrioridad ticketsSinAsignar;
-	private ArrayList<Empleado> usuarios;
+	private ArrayList<Empleado> empleados;
 
 	public GestorTareas() {
 		this.ticketsSinAsignar = new ListaTicketsOrdenadoasPorPrioridad();
-		this.usuarios = new ArrayList<Empleado>();
+		this.empleados = new ArrayList<Empleado>();
 	}
 
 	public double[] reporteTiempoPromedioPorPrioridad() {
@@ -43,18 +43,20 @@ public class GestorTareas {
 
 	public void asignarTickets() {
 		int i = 0;
-		if (this.usuarios.size() != 0) {
+		if (this.empleados.size() != 0) {
 			for (Ticket t : this.ticketsSinAsignar) {
-				if (i == this.usuarios.size()) {
+				if (i == this.empleados.size()) {
 					i = 0;
 				}
-				this.usuarios.get(i).agregarTicket(t);
+				this.empleados.get(i).agregarTicket(t);
 				i++;
 			}
 			this.ticketsSinAsignar = new ListaTicketsOrdenadoasPorPrioridad(); // Limpio la lista
 		}
 
 	}
+	
+
 
 	/*----------------------------------------------------------------------------*/
 
@@ -65,6 +67,6 @@ public class GestorTareas {
 	}
 
 	public void agregarEmpleado(Empleado empleado) {
-		this.usuarios.add(empleado);
+		this.empleados.add(empleado);
 	}
 }
