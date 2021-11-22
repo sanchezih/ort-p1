@@ -5,22 +5,20 @@ public class Main {
 	public static void main(String[] args) {
 		GestorTareas gestor = new GestorTareas();
 
-		Usuario usuario01 = new Usuario("Juan", "Perez", "AA");
-		gestor.agregarUsuario(usuario01);
+		gestor.agregarUsuario(new Usuario("Juan", "Perez", "AA"));
 
-		 gestor.agregarTarea(new ErrorInterno("DESA", null, "Victoria"));
+		gestor.agregarTarea(new ErrorInterno("DESA", null, "Victoria"));
 		gestor.agregarTarea(new ErrorEnProduccion("PRD", null, true, "PRD"));
 		gestor.agregarTarea(new ErrorEnProduccion("PRD", null, true, "PRD"));
 		gestor.agregarTarea(new Desarrollo("Bla", 5));
-		 gestor.agregarTarea(new Desarrollo("Bla", 39));
+		gestor.agregarTarea(new Desarrollo("Bla", 39));
 
 		/*----------------------------------------------------------------------------*/
 
 		// Test Ejercicio B
 		mostrar(gestor.reporteTiempoPromedioTareasPorPrioridad());
-		
-		mostrar(gestor.reporteTiempoPromedioTareasPorPrioridadConSwitch());
 
+		mostrar(gestor.reporteTiempoPromedioTareasPorPrioridadConSwitch());
 
 		// Test Ejercicio C
 		gestor.asignarTareas();
