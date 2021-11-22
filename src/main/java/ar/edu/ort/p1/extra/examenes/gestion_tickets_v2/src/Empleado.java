@@ -14,4 +14,7 @@ public class Empleado {
 		this.tareasAsignadas = new ColaDeTareas();
 	}
 
+	public void agregarTicket(Ticket ticket) {
+		this.tareasAsignadas.add(ticket);
+	}
 }

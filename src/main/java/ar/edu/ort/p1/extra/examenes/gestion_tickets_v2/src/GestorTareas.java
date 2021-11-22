@@ -21,7 +21,7 @@ public class GestorTareas {
 			promedio = promedios[t.calcularPrioridad().ordinal()];
 			if (promedio == null) {
 				promedio = new Promedio();
-				promedio = promedios[t.calcularPrioridad().ordinal()];
+				promedios[t.calcularPrioridad().ordinal()] = promedio;
 				promedio.incrementarPromedio(t.obtenerTiempoDeResolucion());
 			}
 		}
@@ -39,6 +39,21 @@ public class GestorTareas {
 			}
 		}
 		return totales;
+	}
+
+	public void asignarTickets() {
+		int i = 0;
+		if (this.usuarios.size() != 0) {
+			for (Ticket t : this.ticketsSinAsignar) {
+				if (i == this.usuarios.size()) {
+					i = 0;
+				}
+				this.usuarios.get(i).agregarTicket(t);
+				i++;
+			}
+			this.ticketsSinAsignar = new ListaTicketsOrdenadoasPorPrioridad(); // Limpio la lista
+		}
+
 	}
 
 	/*----------------------------------------------------------------------------*/

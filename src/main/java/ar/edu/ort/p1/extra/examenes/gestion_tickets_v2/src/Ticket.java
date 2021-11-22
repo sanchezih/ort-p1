@@ -8,6 +8,15 @@ public abstract class Ticket implements Estimable {
 	private String titulo;
 	private Empleado empleadoQueLoReporto;
 
+	public Ticket(String cliente, String unidadDeNegocio, String fechaDeCarga, String titulo,
+			Empleado empleadoQueLoReporto) {
+		this.cliente = cliente;
+		this.unidadDeNegocio = unidadDeNegocio;
+		this.fechaDeCarga = fechaDeCarga;
+		this.titulo = titulo;
+		this.empleadoQueLoReporto = empleadoQueLoReporto;
+	}
+
 	public Prioridad calcularPrioridad() {
 		int tiempoEstimado = obtenerTiempoDeResolucion();
 		Prioridad prioridad;
@@ -22,7 +31,5 @@ public abstract class Ticket implements Estimable {
 			}
 		}
 		return prioridad;
-
 	}
-
 }

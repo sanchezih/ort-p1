@@ -7,7 +7,10 @@ public class Incidente extends Error {
 	private final static int STOPPER = 12;
 	private final static int NO_STOPPER = 32;
 
-	public Incidente(String nombreDelHost, boolean esStopper) {
+	public Incidente(String cliente, String unidadDeNegocio, String fechaDeCarga, String titulo,
+			Empleado empleadoQueLoReporto, String descripcion, String personaQueLoDetecto, String nombreDelHost,
+			boolean esStopper) {
+		super(cliente, unidadDeNegocio, fechaDeCarga, titulo, empleadoQueLoReporto, descripcion, personaQueLoDetecto);
 		this.nombreDelHost = nombreDelHost;
 		this.esStopper = esStopper;
 	}
@@ -23,4 +26,14 @@ public class Incidente extends Error {
 		return tiempo;
 	}
 
+	public Prioridad calcularPrioridad() {
+		int tiempoEstimado = obtenerTiempoDeResolucion();
+		Prioridad prioridad;
+		if (tiempoEstimado <= 12) {
+			prioridad = Prioridad.ALTA;
+		} else {
+			prioridad = Prioridad.MEDIA;
+		}
+		return prioridad;
+	}
 }
