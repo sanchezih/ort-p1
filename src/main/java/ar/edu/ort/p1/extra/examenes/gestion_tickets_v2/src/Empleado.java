@@ -5,13 +5,13 @@ public class Empleado {
 	private String nombre;
 	private String apellido;
 	private String proyecto;
-	private ColaDeTareas tareasAsignadas;
+	private ColaDeTickets tareasAsignadas;
 
 	public Empleado(String nombre, String apellido, String proyecto) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.proyecto = proyecto;
-		this.tareasAsignadas = new ColaDeTareas();
+		this.tareasAsignadas = new ColaDeTickets();
 	}
 
 	public void agregarTicket(Ticket ticket) {

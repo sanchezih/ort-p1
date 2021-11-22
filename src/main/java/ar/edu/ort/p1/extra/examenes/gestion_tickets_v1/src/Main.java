@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		GestorTareas gestor = new GestorTareas();
 
-		gestor.agregarUsuario(new Usuario("Juan", "Perez", "AA"));
+		gestor.agregarUsuario(new Usuario("Maria", "Gonzalez", "AA"));
 
 		gestor.agregarTarea(new ErrorInterno("DESA", null, "Victoria"));
 		gestor.agregarTarea(new ErrorEnProduccion("PRD", null, true, "PRD"));
