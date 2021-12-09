@@ -1,0 +1,66 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>76</y><w>420</w><h>100</h></coordinates><panel_attributes>CentroDeMonitoreo
+--
+_+CANT_MESES: int = 12_
+_+CANT_DIAS_X_MES: int = 28_
+--
++ porcentajeDeZonasEnRiesgo(): double
++ zonasInferioresSegunMesYTemp(int, double): ListaZonasPorElevacion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>316</y><w>220</w><h>160</h></coordinates><panel_attributes>/Zona/
+--
+_-CANT_MESES: int: 12_
+_-CANT_DIAS_X_MES: int: 28_
+- extension: int
+- elevacion: int
+- temperaturas: double[][]
+--
++ tempPromedio(): double
++ algunaInferiorA(double): boolean
++ algunaInferiorA(double, int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>516</y><w>160</w><h>100</h></coordinates><panel_attributes>ZonaSeca
+--
+_-TEMP_MAX: double = 43_
+_-INS_MAX: double = 90_
+- porcInsolacion: double
+--
++ enRiesgo(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>516</y><w>160</w><h>100</h></coordinates><panel_attributes>ZonaTropical
+--
+_-TEMP_MIN: double = 18_
+_-ELEV_MAX: double = 1000_
+- mmLlovidos: int
+-
++ enRiesgo(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>166</y><w>70</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+- zonas
+m1=1</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>466</y><w>90</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>336</y><w>140</w><h>60</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Monitoreable/
+--
+/+ enRiesgo(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>636</y><w>110</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+IntensidadViento
+--
+_+ FUERTE_
+_+ MODERADO_
+_+ LEVE_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>366</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>386</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>646</y><w>190</w><h>80</h></coordinates><panel_attributes>ZonaTropicalMonzonica
+--
+_-TEMP_MIN: double = 15_
+-
++ enRiesgo(): boolean
+- enRiesgoMonzonica(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>606</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>316</y><w>130</w><h>140</h></coordinates><panel_attributes>PilaDeZonas
+--
+--
++ PilaDeZonas()
++ PilaDeZonas(int)
++ push(Zona): void
++ pop(): Zona
++ peek():Zona
++ isEmpty(): boolean
++ isFull(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>466</y><w>100</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;50</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>666</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- intensidadViento
+</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>246</y><w>190</w><h>60</h></coordinates><panel_attributes>ListaZonasPorElevacion
+--
++ compare(Zona, Zona)
++ compareByKey(Integer,Zona)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>146</y><w>180</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>276</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>130;40;130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>206</y><w>210</w><h>70</h></coordinates><panel_attributes>Matematica
+--
+--
+_+ promedio(double, double): double_
+_+ porcentaje(int, int): double_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>166</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>266</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element></diagram>
