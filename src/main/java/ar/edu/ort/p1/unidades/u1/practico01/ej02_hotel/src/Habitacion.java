@@ -57,6 +57,7 @@ public class Habitacion {
 		double total = 0;
 
 		for (Adicional a : this.adicionales) {
+			
 			/* total = total + a.getPrecio() */
 			total += a.getPrecio(); // Acumulador
 		}
