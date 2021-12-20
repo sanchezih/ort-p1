@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class Empresa {
 
-	private ArrayList<Persona> listaPersonas;
+	private ArrayList<Persona> personas;
 
 	public Empresa() {
-		this.listaPersonas = new ArrayList<>();
+		this.personas = new ArrayList<>();
 	}
 
-	public void agregarPersona(Persona p) {
-		this.listaPersonas.add(p);
+	public void agregarPersona(Persona persona) {
+		this.personas.add(persona);
 	}
 
 	public void mostrarPorNivel(NivelEstudio nivel) {
-		for (Persona p : listaPersonas) {
-			if (p.getNivelEstudio() == nivel) {
-				System.out.println(p);
+		for (Persona persona : personas) {
+			if (persona.getNivelEstudio() == nivel) {
+				System.out.println(persona);
 			}
 		}
 	}
