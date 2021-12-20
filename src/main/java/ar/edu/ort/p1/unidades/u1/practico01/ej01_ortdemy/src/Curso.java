@@ -33,8 +33,8 @@ public class Curso {
 		return autor;
 	}
 
-	public boolean estaSuscripto(Usuario user) {
-		return this.suscriptores.contains(user);
+	public boolean estaSuscripto(Usuario usuario) {
+		return this.suscriptores.contains(usuario);
 	}
 
 	public boolean cupoBecadosLleno() {
@@ -51,7 +51,7 @@ public class Curso {
 		return cantBecados >= MAX_BECADOS;
 	}
 
-	public void suscribir(Usuario user) {
-		this.suscriptores.add(user);
+	public void suscribir(Usuario usuario) {
+		this.suscriptores.add(usuario);
 	}
 }
