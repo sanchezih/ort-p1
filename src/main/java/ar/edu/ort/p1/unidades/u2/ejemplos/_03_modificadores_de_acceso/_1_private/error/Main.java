@@ -10,6 +10,6 @@ class Main {
 		Persona persona = new Persona();
 
 		/* Trato de acceder a un metodo privado la clase Persona */
-		//persona.saludar(); // DESCOMENTAR
+		// persona.saludar(); // DESCOMENTAR
 	}
 }

@@ -8,10 +8,10 @@ public class Main {
 		 * getInformacion() debido a la relación IS-A de la clase Automovil con la clase
 		 * Vehiculo.
 		 */
-		Automovil unAutomovil = new Automovil();
-		unAutomovil.setColor("ROJO");
-		unAutomovil.setVelocidadMaxima(180);
-		unAutomovil.getInformacion();
-		unAutomovil.PruebaDeEncendido();
+		Automovil automovil = new Automovil();
+		automovil.setColor("ROJO");
+		automovil.setVelocidadMaxima(180);
+		automovil.getInformacion();
+		automovil.PruebaDeEncendido();
 	}
 }
