@@ -4,18 +4,18 @@ import java.util.ArrayList;
 
 public class Empresa {
 
-	private ArrayList<Persona> listaDePersonas;
+	private ArrayList<Persona> personas;
 
 	public Empresa() {
-		this.listaDePersonas = new ArrayList<>();
+		this.personas = new ArrayList<>();
 	}
 
 	public void agregarPersona(Persona persona) {
-		this.listaDePersonas.add(persona);
+		this.personas.add(persona);
 	}
 
 	public void mostrarPorNivel(NivelEstudio nivel) {
-		for (Persona persona : listaDePersonas) {
+		for (Persona persona : personas) {
 			if (persona.getNivelEstudio() == nivel) {
 				System.out.println(persona);
 			}
