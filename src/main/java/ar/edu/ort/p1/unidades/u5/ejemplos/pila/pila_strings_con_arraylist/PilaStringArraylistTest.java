@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.pila.pila_strings_con_arraylist;
 
-public class TestPilaStringArraylist {
+public class PilaStringArraylistTest {
 	
 	static PilaStringArraylist pila = new PilaStringArraylist();
 

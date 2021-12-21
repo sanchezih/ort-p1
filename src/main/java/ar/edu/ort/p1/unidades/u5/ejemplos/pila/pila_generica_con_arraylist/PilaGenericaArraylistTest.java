@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.pila.pila_generica_con_arraylist;
 
-public class TestPilaGenericaArraylist {
+public class PilaGenericaArraylistTest {
 
 	public static void main(String[] args) {
 
