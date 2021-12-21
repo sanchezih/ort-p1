@@ -26,8 +26,8 @@ public class Categoria {
 		return cursoEncontrado;
 	}
 
-	public void agregarCurso(Curso c) {
-		this.cursos.add(c);
+	public void agregarCurso(Curso curso) {
+		this.cursos.add(curso);
 	}
 
 }

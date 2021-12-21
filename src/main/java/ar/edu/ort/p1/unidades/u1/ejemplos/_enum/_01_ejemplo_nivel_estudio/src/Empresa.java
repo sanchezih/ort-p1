@@ -14,9 +14,9 @@ public class Empresa {
 		this.personas.add(persona);
 	}
 
-	public void mostrarPorNivel(NivelEstudio nivel) {
+	public void mostrarPorNivel(NivelEstudio nivelEstudio) {
 		for (Persona persona : personas) {
-			if (persona.getNivelEstudio() == nivel) {
+			if (persona.getNivelEstudio() == nivelEstudio) {
 				System.out.println(persona);
 			}
 		}
