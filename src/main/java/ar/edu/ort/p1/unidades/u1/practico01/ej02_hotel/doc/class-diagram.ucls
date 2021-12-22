@@ -4,7 +4,7 @@
   <enumeration id="1" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej02_hotel.src.Tipo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej02_hotel/src/Tipo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="223" x="304" y="742"/>    
+    <position height="135" width="223" x="187" y="742"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej02_hotel.src.Hotel" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej02_hotel/src/Hotel.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="298" x="173" y="37"/>    
+    <position height="171" width="298" x="174" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej02_hotel.src.Cliente" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej02_hotel/src/Cliente.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="189" width="223" x="41" y="513"/>    
+    <position height="189" width="223" x="305" y="513"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej02_hotel.src.Adicional" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej02_hotel/src/Adicional.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="223" x="304" y="513"/>    
+    <position height="117" width="223" x="42" y="513"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,59 +44,76 @@
   <class id="5" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej02_hotel.src.Habitacion" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej02_hotel/src/Habitacion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="225" width="223" x="173" y="248"/>    
+    <position height="225" width="223" x="174" y="248"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="6">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="7" name="cliente">        
-        <position height="0" width="0" x="230" y="-239"/>      
-      </attribute>      
-      <multiplicity id="8" minimum="0" maximum="1">        
-        <position height="0" width="0" x="230" y="-239"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="9">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="10" name="adicionales">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="11" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="12">    
+  <class id="6" language="java" name="ar.edu.ort.p1.util.Fecha" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/Fecha.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="105" x="42" y="742"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="7">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="13" name="habitaciones">        
+      <attribute id="8" name="habitaciones">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="14" minimum="0" maximum="2147483647">        
+      <multiplicity id="9" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="15">    
+  <association id="10">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="16" name="tipo">        
+      <attribute id="11" name="tipo">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="17" minimum="0" maximum="1">        
+      <multiplicity id="12" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="13">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="14" name="adicionales">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="15" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="17" name="fechaPrestacion"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="20" name="cliente">        
+        <position height="0" width="0" x="230" y="-239"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="230" y="-239"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

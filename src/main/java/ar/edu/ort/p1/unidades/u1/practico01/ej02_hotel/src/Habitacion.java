@@ -17,6 +17,14 @@ public class Habitacion {
 		this.cliente = cliente;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	@Override
+	public String toString() {
+		return "Habitacion [numero=" + numero + ", precio=" + precio + ", cliente=" + cliente + ", adicionales="
+				+ adicionales + "]";
+	}
+
 	/**
 	 * Ejercicio B: El constructor parametrizado de la clase Habitacion, que
 	 * recibiria como parametros el numero y el precio por dia.
@@ -29,6 +37,8 @@ public class Habitacion {
 		this.precio = precioXDia;
 		this.adicionales = new ArrayList<Adicional>(); // Que pasa si no se inicializa?
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio C: La explotacion del metodo calcularTotal de la clase Habitacion,
@@ -57,12 +67,14 @@ public class Habitacion {
 		double total = 0;
 
 		for (Adicional a : this.adicionales) {
-			
+
 			/* total = total + a.getPrecio() */
 			total += a.getPrecio(); // Acumulador
 		}
 		return total;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public void liberar() {
 		setCliente(null);

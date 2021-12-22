@@ -8,6 +8,14 @@ public class Hotel {
 	private String direccion;
 	private ArrayList<Habitacion> habitaciones;
 
+	public Hotel(String nombre, String direccion) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.habitaciones = new ArrayList<Habitacion>();
+	}
+
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * Ejercicio D: La explotacion del metodo obtenerHabitacionesDisponibles de la
 	 * clase Hotel que debe devolver una lista con aquellas habitaciones que no
@@ -26,6 +34,8 @@ public class Hotel {
 		}
 		return listaDeHabitaciones;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio E: La explotacion del metodo realizarCheckout de la clase Hotel,
@@ -69,5 +79,13 @@ public class Hotel {
 			i++;
 		}
 		return habitacinEncontrada;
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	/* Metodos extra */
+
+	public void agregarHabitacion(Habitacion habitacion) {
+		this.habitaciones.add(habitacion);
 	}
 }
