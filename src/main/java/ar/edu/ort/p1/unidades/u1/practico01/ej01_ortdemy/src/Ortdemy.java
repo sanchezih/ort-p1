@@ -13,7 +13,7 @@ public class Ortdemy {
 	}
 
 	/*-
-	 * Ejercicio B: La explotación del metodo suscribirseACurso el cual recibe
+	 * Ejercicio B: La explotacion del metodo suscribirseACurso el cual recibe
 	 * un ID de usuario y un ID de curso y debe retornar alguno de los
 	 * siguientes resultados:
 		- CURSO_INEX: El curso no existe.
