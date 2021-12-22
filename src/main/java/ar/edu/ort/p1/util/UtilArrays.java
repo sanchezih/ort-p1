@@ -3,8 +3,8 @@ package ar.edu.ort.p1.util;
 public class UtilArrays {
 
 	/**
-	 * Mostrar el contenido de un array de caracteres recibido como parametro sin
-	 * valores repetidos
+	 * Ejercicio TP4-11: Mostrar el contenido de un array de caracteres recibido
+	 * como parametro sin valores repetidos
 	 * 
 	 * @param elementos
 	 */
@@ -27,9 +27,11 @@ public class UtilArrays {
 		System.out.println();
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Retornar si el contenido de un array de caracteres recibido como parametro
-	 * representa un palindromo.
+	 * Ejercicio TP4-12: Retornar si el contenido de un array de caracteres recibido
+	 * como parametro representa un palindromo.
 	 * 
 	 * @param elementos
 	 * @return
@@ -53,9 +55,11 @@ public class UtilArrays {
 		return isPalindromo;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Invertir el contenido de un array de caracteres recibido como parametro, sin
-	 * usar un array auxiliar.
+	 * Ejercicio TP4-13: Invertir el contenido de un array de caracteres recibido
+	 * como parametro, sin usar un array auxiliar.
 	 * 
 	 * @param elementos
 	 */
@@ -69,9 +73,11 @@ public class UtilArrays {
 		mostrar(elementos);
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Rotar una posicion hacia la derecha cada elemento de un array de caracteres
-	 * recibido como parametro, sin usar un array auxiliar.
+	 * Ejercicio TP4-14: Rotar una posicion hacia la derecha cada elemento de un
+	 * array de caracteres recibido como parametro, sin usar un array auxiliar.
 	 * 
 	 * @param elementos
 	 */
@@ -84,6 +90,8 @@ public class UtilArrays {
 		elementos[0] = aux;
 		mostrar(elementos);
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public static char[] unirConjuntos(char[] cjto1, char[] cjto2) {
 		char[] res = new char[cjto1.length + cjto2.length];
@@ -113,6 +121,8 @@ public class UtilArrays {
 		return res;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public static boolean contiene(char[] elementos, char key) {
 		boolean existe = false;
 		int i = 0;
@@ -125,9 +135,11 @@ public class UtilArrays {
 		return existe;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Mostrar los valores resultantes de la intersección de dos arrays de
-	 * caracteres (sin repeticiones) recibidos como parámetros.
+	 * Ejercicio TP4-16: Mostrar los valores resultantes de la intersección de dos
+	 * arrays de caracteres (sin repeticiones) recibidos como parámetros.
 	 * 
 	 * @param cjto1
 	 * @param cjto2
@@ -146,9 +158,12 @@ public class UtilArrays {
 		System.out.println();
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Mostrar los valores resultantes de la diferencia de dos arrays de caracteres
-	 * (sin repeticiones) recibidos como parametros (el primero menos el segundo).
+	 * Ejercicio TP4-17: Mostrar los valores resultantes de la diferencia de dos
+	 * arrays de caracteres (sin repeticiones) recibidos como parametros (el primero
+	 * menos el segundo).
 	 * 
 	 * @param cjto1
 	 * @param cjto2
@@ -173,10 +188,12 @@ public class UtilArrays {
 		mostrarSinRepetidos(res);
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Mostrar los valores resultantes de la diferencia simétrica de dos arrays de
-	 * caracteres (sin repeticiones) recibidos como parámetros (el primero menos el
-	 * segundo).
+	 * Ejercicio TP4-18: Mostrar los valores resultantes de la diferencia simétrica
+	 * de dos arrays de caracteres (sin repeticiones) recibidos como parámetros (el
+	 * primero menos el segundo).
 	 * 
 	 * @param cjto1
 	 * @param cjto2
@@ -231,6 +248,8 @@ public class UtilArrays {
 		}
 		System.out.println();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Mostrar el contenido de un array de double recibido como parametro
