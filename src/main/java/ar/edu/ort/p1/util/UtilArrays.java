@@ -1,5 +1,11 @@
 package ar.edu.ort.p1.util;
 
+/**
+ * Clase que implementa ejercicios opcionales con arrays
+ * 
+ * @author ihsanch
+ *
+ */
 public class UtilArrays {
 
 	/**

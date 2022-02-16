@@ -8,7 +8,7 @@ public class Universidad {
 	private ArrayList<Profesor> listaDeProfesores;
 
 	public Universidad() {
-		this.listaDeProfesores = new ArrayList<Profesor>(); // 1
+		this.listaDeProfesores = new ArrayList<Profesor>(); // Ver Nota 1
 	}
 
 	public void addProfesor(Profesor profesor) {
@@ -21,7 +21,7 @@ public class Universidad {
 		for (Profesor profesor : this.listaDeProfesores) {
 			System.out.println(profesor.toString());
 
-			if (profesor instanceof ProfesorSuplente) { // 2
+			if (profesor instanceof ProfesorSuplente) { // Ver Nota 2
 				tempString = "Suplente";
 			} else {
 				tempString = "Titular";

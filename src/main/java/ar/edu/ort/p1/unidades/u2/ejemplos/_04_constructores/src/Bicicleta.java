@@ -14,7 +14,7 @@ class Bicicleta {
 	/* Metodo main */
 	public static void main(String args[]) {
 
-		Bicicleta b = new Bicicleta();// calling a default constructor
+		Bicicleta b = new Bicicleta(); // calling a default constructor
 
 	}
 }

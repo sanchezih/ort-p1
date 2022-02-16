@@ -10,16 +10,19 @@ public class Droide {
 	/*----------------------------------------------------------------------------*/
 
 	/**
-	 * Ejercicio B: La explotación del metodo autoRepararse de la clase Droide, que
+	 * Ejercicio B: La explotacion del metodo autoRepararse de la clase Droide, que
 	 * no recibe parametros. Debe intentar reemplazar sus piezas no operativas por
 	 * las piezas operativas que pudiera encontrar en alguno de los otros droides.
 	 * Cada vez que una pieza se reemplaza la pieza no operativa original se
 	 * descarta. Este metodo devuelve alguno de estos resultados:
 	 * 
 	 * COMPLETAMENTE_OPERATIVO: cuando todas las piezas del droide estan operativas.
+	 * 
 	 * REPARACION_PARCIAL: cuando quedan algunas piezas no operativas, pero alguna
-	 * se pudo reemplazar. REPARACION_IMPOSIBLE: cuando no se logre reparar ninguna
-	 * de las piezas no operativas que pudiera tener.
+	 * se pudo reemplazar.
+	 * 
+	 * REPARACION_IMPOSIBLE: cuando no se logre reparar ninguna de las piezas no
+	 * operativas que pudiera tener.
 	 * 
 	 * @return
 	 */
@@ -45,7 +48,6 @@ public class Droide {
 	private void reemplazarPieza(Pieza piezaNoOperativa, Pieza piezaOperativa) {
 		this.piezasNoOperativas.remove(piezaNoOperativa);
 		this.piezasOperativas.add(piezaOperativa);
-
 	}
 
 	private Pieza buscarPiezaOperativa(String nombrePieza) {

@@ -7,22 +7,16 @@ public class Main {
 		Empresa empresa = new Empresa();
 
 		empresa.agregarEmpleado(new EmpleadoAComision(31507904, "Maria", "Perez", 2018, 22));
-		empresa.agregarEmpleado(new EmpleadoAComision(31293830, "Ignacio", "Vazquez", 2015, 23));
-		
+		empresa.agregarEmpleado(new EmpleadoAComision(31293830, "Carina", "Vazquez", 2015, 23));
+
 		empresa.agregarEmpleado(new EmpleadoASalarioFijo(31293830, "Julia", "Rossi", 2016));
 
 		/*----------------------------------------------------------------------------*/
 
-		/**
-		 * Ejercicio B: La explotacion del metodo mostrarSalarios que imprima por
-		 * consola el nombre completo de cada empleado junto a su salario.
-		 */
+		/* Ejercicio B */
 		empresa.mostrarSalarios();
 
-		/**
-		 * Ejercicio C: La explotacion del metodo empleadoConMasClientes que devuelva al
-		 * empleado con mayor cantidad de clientes captados (se supone unico).
-		 */
+		/* Ejercicio C */
 		System.out.println("\nEl empleado con mas clientes captados es " + empresa.empleadoConMasClientes().getNombre()
 				+ " (" + ((EmpleadoAComision) empresa.empleadoConMasClientes()).getCantClientesCaptados()
 				+ " clientes)");

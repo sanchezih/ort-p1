@@ -10,10 +10,10 @@ public class Cliente {
 	private Historial historial;
 
 	/**
-	 * La clase Cliente posee un metodo ya provisto llamado getPedidoPendiente que
-	 * devuelve un objeto de la clase Pedido con el pedido que posea el cliente en
-	 * curso (o null si no tuviera ninguno). Cada cliente puede tener un solo pedido
-	 * en estado PENDIENTE a la vez.
+	 * Metodo ya provisto llamado getPedidoPendiente que devuelve un objeto de la
+	 * clase Pedido con el pedido que posea el cliente en curso (o null si no
+	 * tuviera ninguno). Cada cliente puede tener un solo pedido en estado PENDIENTE
+	 * a la vez.
 	 * 
 	 * @return
 	 */

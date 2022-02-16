@@ -1,140 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.Facturable" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/Facturable.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="563" y="347"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="2" language="java" name="ar.edu.ort.p1.util.Matematica" project="ort-p1" 
+  <class id="1" language="java" name="ar.edu.ort.p1.util.Matematica" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/util/Matematica.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="554" y="530"/>    
+    <position height="153" width="225" x="396" y="549"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.Servicio" 
+  <class id="2" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.Historial" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/Servicio.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="966" y="553"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.ServicioDeReparacion" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/ServicioDeReparacion.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/Historial.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1255" y="842"/>    
+    <position height="135" width="293" x="689" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.Historial" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/Historial.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="575" y="124"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.Insumo" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/Insumo.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="175" y="506"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.ServicioArmado" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/ServicioArmado.java" 
+  <class id="3" language="java" 
+    name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.ServicioDeReparacion" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/ServicioDeReparacion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="817" y="741"/>    
+    <position height="261" width="293" x="396" y="248"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="8" language="java" name="ar.edu.ort.p1.u3.practico03.ej10_comercio_informatico.src.Tipo" 
-    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u3/practico03/ej10_comercio_informatico/src/Tipo.java" 
+  <enumeration id="4" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.Tipo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/Tipo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="177" y="272"/>    
+    <position height="135" width="293" x="1083" y="248"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <dependency id="9">    
-    <bendpoint x="554" y="842"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="10">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="11" name="tipo"/>      
-      <multiplicity id="12" minimum="0" maximum="1"/>    
+  <interface id="5" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.Facturable" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/Facturable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="293" x="729" y="248"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.ServicioArmado" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/ServicioArmado.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="293" x="42" y="248"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.Servicio" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/Servicio.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="293" x="356" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej10_comercio_informatico.src.Insumo" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej10_comercio_informatico/src/Insumo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="293" x="1043" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="9">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="10" name="tipo"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="13">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
+  <realization id="12">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="5"/>  
   </realization>  
-  <dependency id="14">    
-    <bendpoint x="1256" y="124"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="16">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="17" name="facturables"/>      
-      <multiplicity id="18" minimum="0" maximum="2147483647"/>    
+  <association id="13">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="14" name="facturables"/>      
+      <multiplicity id="15" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="19">    
+  <dependency id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="17">    
     <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="20">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="TARGET" refId="5"/>  
   </realization>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
+  <dependency id="18">    
+    <bendpoint x="1052" y="248"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
   </dependency>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
   </generalization>  
+  <dependency id="20">    
+    <bendpoint x="365" y="248"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

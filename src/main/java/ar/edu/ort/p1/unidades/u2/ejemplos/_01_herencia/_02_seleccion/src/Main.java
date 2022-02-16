@@ -10,21 +10,22 @@ import ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.selecci
 public class Main {
 
 	/*
-	 * ArrayList de objetos IntegranteDeSeleccion. Idenpendientemente de la clase
-	 * hija a la que pertenezca el objeto
+	 * Se declara un ArrayList de objetos IntegranteDeSeleccion. Contendra
+	 * integrantes, idenpendientemente de la clase hija a la que pertenezca el
+	 * objeto
 	 */
 	public static ArrayList<IntegranteDeSeleccion> integrantes = new ArrayList<IntegranteDeSeleccion>();
 
 	public static void main(String[] args) {
 
 		/* Creacion del equipo */
-		Entrenador delBosque = new Entrenador(1, "Vicente", "Del Bosque", 60, "284EZ89");
-		Futbolista iniesta = new Futbolista(2, "Andres", "Iniesta", 29, 6, "Interior Derecho");
-		Masajista raulMartinez = new Masajista(3, "Raul", "Martinez", 41, "Licenciado en Fisioterapia", 18);
+		Entrenador entrenador = new Entrenador(1, "Bruno", "Diaz", 60, "284EZ89");
+		Futbolista futbolista = new Futbolista(2, "Ricardo", "Tapia", 29, 6, "Lateral Derecho");
+		Masajista masajista = new Masajista(3, "Raul", "Martinez", 41, "Licenciado en Fisioterapia", 18);
 
-		integrantes.add(delBosque);
-		integrantes.add(iniesta);
-		integrantes.add(raulMartinez);
+		integrantes.add(entrenador);
+		integrantes.add(futbolista);
+		integrantes.add(masajista);
 
 		/* Concentracion */
 		System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
@@ -39,18 +40,19 @@ public class Main {
 		}
 
 		/* Entrenamiento */
-		System.out.println("\nEntrenamiento: Solamente el entrenador y el futbolista tiene metodos para entrenar:");
-		delBosque.dirigirEntrenamiento();
-		iniesta.entrenar();
+		System.out.println(
+				"\nEntrenamiento: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un entrenamiento:");
+		entrenador.dirigirEntrenamiento();
+		futbolista.entrenar();
 
 		/* Masaje */
 		System.out.println("\nMasaje: Solo el masajista tiene el método para dar un masaje:");
-		raulMartinez.darMasaje();
+		masajista.darMasaje();
 
 		/* Partido de futbol */
 		System.out.println(
-				"\nPartido de Futbol: Solamente el entrenador y el futbolista tiene metodos para el partido de futbol:");
-		delBosque.dirigirPartido();
-		iniesta.jugarPartido();
+				"\nPartido de Futbol: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un partido de futbol:");
+		entrenador.dirigirPartido();
+		futbolista.jugarPartido();
 	}
 }

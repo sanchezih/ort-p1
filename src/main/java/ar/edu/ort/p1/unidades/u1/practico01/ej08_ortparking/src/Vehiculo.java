@@ -29,7 +29,6 @@ public class Vehiculo {
 	 * @return
 	 */
 	public int getMesesAdeudados() {
-
-		return 2;
+		return 2; // Para test devuelve siempre 2
 	}
 }

@@ -12,6 +12,10 @@ public class Empresa {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * Ejercicio B: La explotacion del metodo mostrarSalarios que imprima por
+	 * consola el nombre completo de cada empleado junto a su salario.
+	 */
 	public void mostrarSalarios() {
 		System.out.println("Muestro los salarios de los empleados");
 		for (Empleado e : this.empleados) {
@@ -21,6 +25,10 @@ public class Empresa {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * Ejercicio C: La explotacion del metodo empleadoConMasClientes que devuelva al
+	 * empleado con mayor cantidad de clientes captados (se supone unico).
+	 */
 	public EmpleadoAComision empleadoConMasClientes() {
 
 		EmpleadoAComision ecmc = null;
