@@ -4,21 +4,21 @@ public class Persona {
 
 	private String nombre;
 	private String apellido;
-	private NivelEstudio nivelEstudio;
+	private NivelDeEstudio nivelDeEstudio;
 
-	public Persona(String nombre, String apellido, NivelEstudio nivelEstudio) {
+	public Persona(String nombre, String apellido, NivelDeEstudio nivelDeEstudio) {
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.nivelEstudio = nivelEstudio;
+		this.nivelDeEstudio = nivelDeEstudio;
 	}
 
-	public NivelEstudio getNivelEstudio() {
-		return nivelEstudio;
+	public NivelDeEstudio getNivelDeEstudio() {
+		return nivelDeEstudio;
 	}
 
 	@Override
 	public String toString() {
-		return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", nivelEstudio=" + nivelEstudio + '}';
+		return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", nivelDeEstudio=" + nivelDeEstudio + '}';
 	}
 
 }

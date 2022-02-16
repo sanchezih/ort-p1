@@ -21,6 +21,7 @@ public class AgenteDeBolsa extends Persona {
 	}
 
 	/**
+	 * Metodo que evalua si un agente puede tomar una solicitud
 	 * 
 	 * @return
 	 */

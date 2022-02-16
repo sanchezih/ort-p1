@@ -79,7 +79,7 @@ public class ProcesadorBursatil {
 	private void inicializarProcesadorBursatil() {
 
 		/* Creacion de los agentes de bolsa */
-		this.agentes[0] = new AgenteDeBolsa("Marcela", "SuApellido", "17824001", "MAT025");
+		this.agentes[0] = new AgenteDeBolsa("Marcela", "SuApellido", "17824001", "MAT005");
 		this.agentes[1] = new AgenteDeBolsa("Luis", "SuApellido", "17824001", "MAT029");
 		this.agentes[2] = new AgenteDeBolsa("Sabrina", "SuApellido", "17824001", "MAT016");
 		this.agentes[3] = new AgenteDeBolsa("Adolfo", "SuApellido", "17824001", "MAT098");

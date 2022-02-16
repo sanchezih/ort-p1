@@ -3,6 +3,7 @@ package ar.edu.ort.p1.util;
 import java.util.Date;
 
 public class Fecha {
+
 	private int dia;
 	private int mes;
 	private int anio;
@@ -44,11 +45,22 @@ public class Fecha {
 
 	/**
 	 * Metodo que devuelve la fecha de hoy
+	 * 
 	 * @return
 	 */
 	public static Fecha hoy() {
 		Date date = new Date();
 		return new Fecha(date.getDay(), date.getMonth(), date.getYear());
+	}
+
+	/**
+	 * 
+	 * @param fechaInicio
+	 * @return
+	 */
+	public static int compareToNow(Fecha fechaInicio) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
