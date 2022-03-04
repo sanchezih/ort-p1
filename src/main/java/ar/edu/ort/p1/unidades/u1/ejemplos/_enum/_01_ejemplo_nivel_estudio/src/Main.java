@@ -23,7 +23,7 @@ public class Main {
 		empresa.agregarPersona(new Persona("Alex", "Gomez", NivelDeEstudio.SECUNDARIO));
 		empresa.agregarPersona(new Persona("Sara", "Jerez", NivelDeEstudio.SECUNDARIO));
 
-		empresa.mostrarPorNivel(NivelDeEstudio.SECUNDARIO);
+		empresa.mostrarPorNivel(NivelDeEstudio.SECUNDARIO); // Se puede cambiar
 
 		System.out.println();
 

@@ -1,7 +1,8 @@
 package ar.edu.ort.p1.unidades.u1.ejemplos._enum._02_enums_con_atributos_y_metodos.src;
 
-/*-
+/**
  * Ver https://www.youtube.com/watch?v=F8HSRnFGhYM
+ * 
  * @author ihsanch
  *
  */

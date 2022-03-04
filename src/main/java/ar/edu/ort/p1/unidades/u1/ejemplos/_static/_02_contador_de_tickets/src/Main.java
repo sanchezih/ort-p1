@@ -1,5 +1,11 @@
 package ar.edu.ort.p1.unidades.u1.ejemplos._static._02_contador_de_tickets.src;
 
+/**
+ * Ver https://www.youtube.com/watch?v=29TnNxNzvZo
+ * 
+ * @author ihsanch
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

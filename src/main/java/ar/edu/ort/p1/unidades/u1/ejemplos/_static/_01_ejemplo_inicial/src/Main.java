@@ -1,5 +1,11 @@
 package ar.edu.ort.p1.unidades.u1.ejemplos._static._01_ejemplo_inicial.src;
 
+/**
+ * Ver https://www.youtube.com/watch?v=mvBX4-5-A4o
+ * 
+ * @author ihsanch
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
