@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u3.ejemplos.interfacesEjemploFigura.src.figuras;
 
 public class Rectangulo implements Figura {
+
 	private float lado;
 	private float altura;
 

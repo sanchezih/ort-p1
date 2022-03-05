@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/interfacesEjemploFigura/src/figuras/Circulo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="308" x="737" y="37"/>    
+    <position height="115" width="306" x="387" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -16,7 +16,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/interfacesEjemploFigura/src/figuras/Cuadrado.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="308" x="389" y="37"/>    
+    <position height="115" width="306" x="733" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/interfacesEjemploFigura/src/figuras/Figura.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="308" x="389" y="212"/>    
+    <position height="97" width="306" x="387" y="210"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,7 +38,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/interfacesEjemploFigura/src/figuras/Rectangulo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="308" x="41" y="37"/>    
+    <position height="133" width="306" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -46,15 +46,15 @@
     </display>  
   </class>  
   <realization id="5">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <realization id="6">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
-  <realization id="7">    
+  <realization id="6">    
     <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="7">    
+    <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

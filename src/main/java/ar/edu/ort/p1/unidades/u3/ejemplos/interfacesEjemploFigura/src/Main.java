@@ -8,6 +8,18 @@ import ar.edu.ort.p1.unidades.u3.ejemplos.interfacesEjemploFigura.src.figuras.Cu
 import ar.edu.ort.p1.unidades.u3.ejemplos.interfacesEjemploFigura.src.figuras.Figura;
 import ar.edu.ort.p1.unidades.u3.ejemplos.interfacesEjemploFigura.src.figuras.Rectangulo;
 
+/**
+ * En este ejemplo comprobamos que la interface Figura define un tipo. Podemos
+ * crear un ArrayList de figuras donde tenemos figuras de distintos tipos
+ * (cuadrados, circulos, rectangulos) aprovechandonos del polimorfismo.
+ * 
+ * Esto nos permite darle un tratamiento comun a todas las figuras. En concreto,
+ * usamos un bucle for-each para recorrer la lista de figuras y obtener un area
+ * total.
+ * 
+ * @author ihsanch
+ *
+ */
 public class Main {
 	public static void main(String[] Args) {
 
@@ -19,7 +31,7 @@ public class Main {
 		Figura rect1 = new Rectangulo(2.25f, 2.55f);
 		Figura rect2 = new Rectangulo(12f, 3f);
 
-		List<Figura> serieDeFiguras; // Declaro una variable con el tipo de la interface Figura
+		List<Figura> serieDeFiguras; // Declaro una variable de tipo Figura (Interface)
 		serieDeFiguras = new ArrayList<Figura>(); // Inicializo la variable
 
 		serieDeFiguras.add(cuad1);
@@ -36,15 +48,7 @@ public class Main {
 			areaTotal = areaTotal + tmp.area();
 		}
 
-		System.out.println("Tenemos un total de " + serieDeFiguras.size() + " figuras y su �rea total es de "
+		System.out.println("Tenemos un total de " + serieDeFiguras.size() + " figuras y su area total es de "
 				+ areaTotal + " unidades cuadradas");
 	}
 }
-
-/*
- * En este ejemplo comprobamos que la interface Figura define un tipo. Podemos
- * crear un ArrayList de figuras donde tenemos figuras de distintos tipos
- * (cuadrados, c�rculos, rect�ngulos) aprovech�ndonos del polimorfismo. Esto nos
- * permite darle un tratamiento com�n a todas las figuras. En concreto, usamos
- * un bucle for-each para recorrer la lista de figuras y obtener un area total.
- */

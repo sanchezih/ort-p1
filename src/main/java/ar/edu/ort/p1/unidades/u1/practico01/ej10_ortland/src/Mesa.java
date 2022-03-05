@@ -53,7 +53,7 @@ public class Mesa {
 		return this.participantes.size();
 	}
 
-	public void agregarParticipante(Participante p) {
-		this.participantes.add(p);
+	public void agregarParticipante(Participante participante) {
+		this.participantes.add(participante);
 	}
 }
