@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u1.ejemplos._static._02_contador_de_tickets.src;
 
 public class Ticket {
-	
+
 	private static int contador = 0;
 	private int numero;
 	private String fechaCompra;
