@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u1.practico01.ej06_amazonia.src;
+package ar.edu.ort.p1.unidades.u1.practico01.ej07_amazonia.src;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,22 @@ public class Pedido {
 	private Estado estado;
 	private ArrayList<ItemPedido> items;
 
+	public Pedido(String fechaHora, ArrayList<ItemPedido> items) {
+		this.fechaHora = fechaHora;
+		this.estado = Estado.PENDIENTE;
+		this.items = items;
+	}
+
+	public Estado getEstado() {
+		return estado;
+	}
+
 	/*----------------------------------------------------------------------------*/
+
+	@Override
+	public String toString() {
+		return "Pedido [fechaHora=" + fechaHora + ", estado=" + estado + ", items=" + items + "]";
+	}
 
 	public boolean hayStockSuficiente() {
 
@@ -39,7 +54,7 @@ public class Pedido {
 				itemsConStock.add(item);
 			}
 		}
-		this.items = itemsConStock; // Actualizamos la lista de items, quitando los faltantes;
+		this.items = itemsConStock; // Actualizamos la lista de items, quitando los faltantes
 		return productosFaltantes;
 	}
 

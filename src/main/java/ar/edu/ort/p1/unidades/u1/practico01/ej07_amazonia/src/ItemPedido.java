@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u1.practico01.ej06_amazonia.src;
+package ar.edu.ort.p1.unidades.u1.practico01.ej07_amazonia.src;
 
 public class ItemPedido {
 
@@ -19,6 +19,11 @@ public class ItemPedido {
 	}
 
 	/*----------------------------------------------------------------------------*/
+
+	@Override
+	public String toString() {
+		return "ItemPedido [cant=" + cant + ", producto=" + producto + "]";
+	}
 
 	public void descontarStock() {
 		this.producto.descontar(this.cant);

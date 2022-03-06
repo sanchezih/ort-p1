@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u1.practico01.ej06_amazonia.src;
+package ar.edu.ort.p1.unidades.u1.practico01.ej07_amazonia.src;
 
 public enum Estado {
 	PENDIENTE, CONFIRMADO, EN_CAMINO, ENTREGADO
