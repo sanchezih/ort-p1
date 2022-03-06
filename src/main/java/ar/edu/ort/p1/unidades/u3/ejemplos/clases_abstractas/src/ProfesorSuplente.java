@@ -6,7 +6,7 @@ public class ProfesorSuplente extends Profesor {
 
 	private Calendar fechaComienzoSuplencia;
 
-	/* Constructores */
+	// Constructores
 	public ProfesorSuplente(Calendar fechaInicioSuplencia) {
 		super();
 		fechaComienzoSuplencia = fechaInicioSuplencia;
@@ -17,7 +17,7 @@ public class ProfesorSuplente extends Profesor {
 		fechaComienzoSuplencia = fechaInicioSuplencia;
 	}
 
-	/* Metodos */
+	// Metodos
 	public Calendar getFechaComienzoSuplencia() {
 		return fechaComienzoSuplencia;
 	}
@@ -32,7 +32,7 @@ public class ProfesorSuplente extends Profesor {
 		return super.toString().concat("\nComienzo suplencia: ").concat(fechaComienzoSuplencia.getTime().toString());
 	}
 
-	/* Metodo abstracto sobreescrito */
+	// Metodo abstracto sobreescrito
 	@Override
 	public float importeSalario() {
 		return 30f * 10f;

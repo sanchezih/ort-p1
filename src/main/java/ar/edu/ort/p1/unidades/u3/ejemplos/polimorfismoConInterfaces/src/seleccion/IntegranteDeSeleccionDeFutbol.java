@@ -1,16 +1,16 @@
 package ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion;
 
-public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
+public abstract class IntegranteDeSeleccionDeFutbol implements IntegranteDePlantelDeFutbol {
 
 	protected int id;
 	protected String nombre;
 	protected String apellido;
 	protected int edad;
 
-	public SeleccionFutbol() {
+	public IntegranteDeSeleccionDeFutbol() {
 	}
 
-	public SeleccionFutbol(int id, String nombre, String apellido, int edad) {
+	public IntegranteDeSeleccionDeFutbol(int id, String nombre, String apellido, int edad) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -49,6 +49,14 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 		this.edad = edad;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	/*
+	 * Tener en cuenta: Esta clase no se puede instanciar porque es abstracta, por
+	 * lo tanto no es necesario implementar en ella los metodos de la interface; de
+	 * ser este el caso, sera obligatorio implementarlos en sus clases hijas.
+	 */
+
 	public void concentrarse() {
 		System.out.println("Concentrarse (Clase Padre)");
 	}
@@ -64,5 +72,7 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 	public void jugarPartido() {
 		System.out.println("Asiste al Partido de Futbol (Clase Padre)");
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 }

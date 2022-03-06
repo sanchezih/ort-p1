@@ -6,7 +6,7 @@ public class Persona {
 	private String apellido;
 	private int edad;
 
-	/* Constructores */
+	// Constructores
 	public Persona() {
 		nombre = "";
 		apellido = "";
@@ -19,7 +19,7 @@ public class Persona {
 		this.edad = edad;
 	}
 
-	/* Metodos */
+	// Metodos
 	public String getNombre() {
 		return nombre;
 	}

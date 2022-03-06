@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion;
 
-public class Futbolista extends SeleccionFutbol {
+public class Futbolista extends IntegranteDeSeleccionDeFutbol {
 
 	private int dorsal;
 	private String demarcacion;

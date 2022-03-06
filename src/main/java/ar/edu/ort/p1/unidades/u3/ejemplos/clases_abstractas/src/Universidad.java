@@ -7,27 +7,39 @@ public class Universidad {
 
 	private ArrayList<Profesor> listaDeProfesores;
 
+	/**
+	 * En el constructor se crea un ArrayList de profesores (titulares o suplentes).
+	 * La lista se basa en el tipo Profesor, pero su contenido dinamico siempre sera
+	 * en base a instancias de ProfesorTitular o de ProfesorSuplente ya que Profesor
+	 * es una clase abstracta, no instanciable.
+	 */
 	public Universidad() {
-		this.listaDeProfesores = new ArrayList<Profesor>(); // Ver Nota 1
+		this.listaDeProfesores = new ArrayList<Profesor>();
 	}
 
 	public void addProfesor(Profesor profesor) {
 		this.listaDeProfesores.add(profesor);
 	}
 
+	/**
+	 * Ejemplo de uso de instanceof para determinar que tipo de profesor es.
+	 * Dinamicamente se determina de que tipo es cada objeto y al invocar el metodo
+	 * abstracto importeSalario() Java determina si debe utilizar el metodo propio
+	 * de un subtipo u otro.
+	 */
 	public void imprimirLista() {
 		String tempString = "";
 
 		for (Profesor profesor : this.listaDeProfesores) {
 			System.out.println(profesor.toString());
 
-			if (profesor instanceof ProfesorSuplente) { // Ver Nota 2
+			if (profesor instanceof ProfesorSuplente) {
 				tempString = "Suplente";
 			} else {
 				tempString = "Titular";
 			}
 
-			System.out.println("Tipo: " + tempString + "\nSalario: " + (profesor.importeSalario()) + "\n"); // 2
+			System.out.println("Tipo: " + tempString + "\nSalario: " + (profesor.importeSalario()) + "\n");
 		}
 	}
 
@@ -42,16 +54,3 @@ public class Universidad {
 		return importeTotal;
 	}
 }
-
-/**
- * Nota 1. Se crea un ArrayList de profesores que pueden titulares o suplentes y
- * realizar operaciones con esos conjuntos. El listin se basa en el tipo
- * estatico Profesor, pero su contenido dinamico siempre sera a base de
- * instancias de ProfesorTitular o de ProfesorSuplente ya que Profesor es una
- * clase abstracta, no instanciable.
- * 
- * Nota 2. Ejemplo de uso de instanceof para determinar que tipo de profesor es.
- * Dinamicamente se determina de que tipo es cada objeto y al invocar el metodo
- * abstracto importeSalario() Java determina si debe utilizar el metodo propio
- * de un subtipo u otro.
- */

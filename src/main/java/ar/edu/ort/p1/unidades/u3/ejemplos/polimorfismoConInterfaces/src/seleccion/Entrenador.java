@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion;
 
-public class Entrenador extends SeleccionFutbol {
+public class Entrenador extends IntegranteDeSeleccionDeFutbol {
 
 	private int idFederacion;
 

@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion;
 
-public class Masajista extends SeleccionFutbol {
+public class Masajista extends IntegranteDeSeleccionDeFutbol {
 
 	private String titulo;
 	private int aniosExperiencia;

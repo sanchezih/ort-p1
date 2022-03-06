@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion;
 
-public interface IntegranteSeleccionFutbol {
+public interface IntegranteDePlantelDeFutbol {
 
 	void concentrarse();
 

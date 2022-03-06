@@ -4,7 +4,7 @@ public abstract class Profesor extends Persona {
 
 	private String idProfesor;
 
-	/* Constructores */
+	// Constructores
 	public Profesor() {
 		super();
 		idProfesor = "Unknown";
@@ -15,7 +15,7 @@ public abstract class Profesor extends Persona {
 		idProfesor = id;
 	}
 
-	/* Metodos */
+	// Metodos
 	public void setIdProfesor(String IdProfesor) {
 		this.idProfesor = IdProfesor;
 	}
@@ -34,7 +34,9 @@ public abstract class Profesor extends Persona {
 		return super.toString().concat("\nid: ").concat(idProfesor);
 	}
 
-	/* Metodo abstracto se debe implementar obligatoriamente en las subclases */
+	/**
+	 * Metodo abstracto se debe implementar obligatoriamente en las subclases
+	 */
 	public abstract float importeSalario();
 
 }

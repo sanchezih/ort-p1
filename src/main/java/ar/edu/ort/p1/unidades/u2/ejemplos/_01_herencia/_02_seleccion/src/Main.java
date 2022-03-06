@@ -18,7 +18,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/* Creacion del equipo */
+		// Creacion del equipo
 		Entrenador entrenador = new Entrenador(1, "Bruno", "Diaz", 60, "284EZ89");
 		Futbolista futbolista = new Futbolista(2, "Ricardo", "Tapia", 29, 6, "Lateral Derecho");
 		Masajista masajista = new Masajista(3, "Raul", "Martinez", 41, "Licenciado en Fisioterapia", 18);
@@ -27,29 +27,29 @@ public class Main {
 		integrantes.add(futbolista);
 		integrantes.add(masajista);
 
-		/* Concentracion */
+		// Concentracion
 		System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.concentrarse();
 		}
 
-		/* Viaje */
+		// Viaje
 		System.out.println("\nTodos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.viajar();
 		}
 
-		/* Entrenamiento */
+		// Entrenamiento
 		System.out.println(
 				"\nEntrenamiento: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un entrenamiento:");
 		entrenador.dirigirEntrenamiento();
 		futbolista.entrenar();
 
-		/* Masaje */
-		System.out.println("\nMasaje: Solo el masajista tiene el método para dar un masaje:");
+		// Masaje
+		System.out.println("\nMasaje: Solo el masajista tiene el metodo para dar un masaje:");
 		masajista.darMasaje();
 
-		/* Partido de futbol */
+		// Partido de futbol
 		System.out.println(
 				"\nPartido de Futbol: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un partido de futbol:");
 		entrenador.dirigirPartido();
