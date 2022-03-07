@@ -6,14 +6,14 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/* Creo el hotel */
+		// Creo el hotel
 		Hotel hotel = new Hotel("Hotel 9 de Julio", "Cochabamba 1614");
 
-		/* Creo los clientes */
+		// Creo los clientes
 		Cliente c1 = new Cliente("Viviana", 7);
 		Cliente c2 = new Cliente("Sandra", 10);
 
-		/* Creo y agrego las habitaciones */
+		// Creo y agrego las habitaciones
 		Habitacion h1 = new Habitacion(101, 500.0);
 		Habitacion h2 = new Habitacion(102, 500.0);
 
@@ -22,26 +22,26 @@ public class Main {
 
 		h1.setCliente(c1);
 
-		/* Muestro los totales */
+		// Test ejercicio C
 		System.out.println("calcularTotal");
-		System.out.println(h1.calcularTotal());
-		System.out.println(h2.calcularTotal());
+		System.out.println("-> Total para la habitacion 101: " + h1.calcularTotal());
+		System.out.println("-> Total para la habitacion 102: " + h2.calcularTotal());
 
 		System.out.println();
 
-		/* Muestro cuales son las habitaciones disponibles al momento */
-		System.out.println("Muestro cuales son las habitaciones disponibles al momento");
+		// Test ejercicio D: Muestro cuales son las habitaciones disponibles al momento
+		System.out.println("-> Muestro cuales son las habitaciones disponibles al momento");
 		UtilArraylist.listarElementos(hotel.obtenerHabitacionesDisponibles());
 
 		System.out.println();
 
-		/* Realizo los checkout */
-		System.out.println("Hago checkout de la habitacion 101. Debe abonar $" + hotel.realizarCheckout(101));
+		// Test ejercicio E: Realizo los checkout
+		System.out.println("-> Hago checkout de la habitacion 101. Debe abonar $" + hotel.realizarCheckout(101));
 
 		System.out.println();
 
-		/* Muestro cuales son las habitaciones disponibles al momento */
-		System.out.println("Muestro cuales son las habitaciones disponibles al momento");
+		// Muestro nuevamente cuales son las habitaciones disponibles al momento
+		System.out.println("-> Muestro cuales son las habitaciones disponibles al momento");
 		UtilArraylist.listarElementos(hotel.obtenerHabitacionesDisponibles());
 	}
 
