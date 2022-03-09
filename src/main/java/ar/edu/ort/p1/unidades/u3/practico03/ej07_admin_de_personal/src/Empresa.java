@@ -49,7 +49,7 @@ public class Empresa {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos extra
 
 	public void agregarEmpleado(Empleado empleado) {
 		this.empleados.add(empleado);

@@ -13,10 +13,10 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		/* Ejercicio B */
+		// Test ejercicio B
 		empresa.mostrarSalarios();
 
-		/* Ejercicio C */
+		// Test ejercicio C
 		System.out.println("\nEl empleado con mas clientes captados es " + empresa.empleadoConMasClientes().getNombre()
 				+ " (" + ((EmpleadoAComision) empresa.empleadoConMasClientes()).getCantClientesCaptados()
 				+ " clientes)");

@@ -20,7 +20,7 @@ public class Ortdemy {
 		- USUARIO_INEX: El usuario no existe.
 		- YA_SUSCRIPTO: El usuario ya estaba suscripto en el curso.
 		- ES_AUTOR: El usuario que intenta suscribirse es el autor del curso.
-		- MAX_BECADOS: El usuario es becado y el curso ya cuenta con el máximo
+		- MAX_BECADOS: El usuario es becado y el curso ya cuenta con el maximo
 		de becados posible.
 		- SUSCRIPTO_OK: El usuario se suscribio exitosamente al curso. Debe
 		guardarse en la lista de suscriptos.
