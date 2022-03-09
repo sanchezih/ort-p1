@@ -46,4 +46,10 @@ public class Pedido {
 		this.monto = monto;
 	}
 
+	@Override
+	public String toString() {
+		return "Pedido [nombreCliente=" + nombreCliente + ", idCajero=" + idCajero + ", codRobot=" + codRobot
+				+ ", monto=" + monto + "]";
+	}
+
 }

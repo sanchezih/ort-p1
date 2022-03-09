@@ -37,4 +37,9 @@ public class Cajero {
 		this.antiguedad = antiguedad;
 	}
 
+	@Override
+	public String toString() {
+		return "Cajero [id=" + id + ", apellido=" + apellido + ", antiguedad=" + antiguedad + "]";
+	}
+
 }
