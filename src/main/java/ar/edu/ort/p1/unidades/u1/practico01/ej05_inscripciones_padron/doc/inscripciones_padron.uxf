@@ -1,0 +1,75 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>26</y><w>120</w><h>100</h></coordinates><panel_attributes>Padron
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>546</y><w>180</w><h>100</h></coordinates><panel_attributes>Fecha
+--
+-dia: int
+-mes: int
+-anio: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1030</x><y>26</y><w>120</w><h>100</h></coordinates><panel_attributes>Provincia
+--
+- nombre: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>26</y><w>300</w><h>100</h></coordinates><panel_attributes>Escuela
+--
+-nombre: String
+--
++designarPresidenteDeMesa(Mesa, Persona): void
+-quitarPersonaDeMesa(Persona): void
++obtenerInforme(): ArrayList&lt;PadronMesa&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>26</y><w>180</w><h>100</h></coordinates><panel_attributes>Domicilio
+--
+-calle: String
+-codigoPostal: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>246</y><w>180</w><h>190</h></coordinates><panel_attributes>Persona
+--
+- dni: String
+- nombre: String
+- apellido: String
+
+--
++ getNombreApellido(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>546</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Genero
+--
+_+FEMENINO_
+_+MASCULINO_
+_+OTRO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>66</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-escuelas</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>296</y><w>150</w><h>50</h></coordinates><panel_attributes>-personas
+lt=&lt;-
+m1=*</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>426</y><w>130</w><h>140</h></coordinates><panel_attributes>- fechaNacimiento
+lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>426</y><w>380</w><h>140</h></coordinates><panel_attributes>-genero
+lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;120;10;60;360;60;360;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>66</y><w>150</w><h>50</h></coordinates><panel_attributes>-domicilio
+lt=&lt;-
+m1=1</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>66</y><w>120</w><h>50</h></coordinates><panel_attributes>- provincia
+lt=&lt;-
+m1=1</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>116</y><w>80</w><h>150</h></coordinates><panel_attributes>-domicilio
+lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>246</y><w>300</w><h>190</h></coordinates><panel_attributes>Mesa
+--
+-numero: int
+
+--
++asignarPresidente(Persona): void
++quitarPersona(Persona): boolean
+-quitarPresidente(Persona): void
++obtenerPadronMesa(ArrayList&lt;PadronMesa&gt;): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>116</y><w>70</w><h>150</h></coordinates><panel_attributes>-mesas
+lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>246</y><w>240</w><h>190</h></coordinates><panel_attributes>PadronMesa
+--
+-numeroMesa: int
+-orden: int
+-dni: String
+-nombreApellido: String
+--
++PadronMesa(int, int, String, String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>326</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>116</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;10;70;180;70;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>356</y><w>150</w><h>50</h></coordinates><panel_attributes>-presidente
+lt=&lt;-
+m1=0..1</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element></diagram>
