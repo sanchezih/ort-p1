@@ -18,7 +18,6 @@ public class Mesa {
 	public String toString() {
 		return "Mesa [numero=" + numero + ", personas=" + personas + ", presidente=" + presidente + "]";
 	}
-
 	/*----------------------------------------------------------------------------*/
 
 	/**

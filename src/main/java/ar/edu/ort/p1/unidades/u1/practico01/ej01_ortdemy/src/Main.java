@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/* Creacion de usuarios */
+		// Creacion de usuarios
 		Usuario usuarioVictoria = new Usuario("victoria", "Victoria", "victoria@mail.com", true);
 		Usuario usuarioAgustina = new Usuario("agustina", "Agustina", "agustina@mail.com", true);
 		Usuario usuarioMartin = new Usuario("martin", "Martin", "martin@mail.com", false);
@@ -12,7 +12,7 @@ public class Main {
 
 		Usuario autorCarlos = new Usuario("carlos", "Carlos", "carlos@mail.com", false);
 
-		/* Creacion de categorias y agregado de cursos a cada una */
+		// Creacion de categorias y agregado de cursos a cada una
 		Categoria categoriaDesarrolloWeb = new Categoria("ca01", "Desarrollo Web");
 		categoriaDesarrolloWeb.agregarCurso(new Curso("cu01", "Introduccion a Angular", 150, 5, autorCarlos));
 		categoriaDesarrolloWeb.agregarCurso(new Curso("cu02", "Introduccion a PHP", 150, 5, autorCarlos));

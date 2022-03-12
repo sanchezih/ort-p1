@@ -92,7 +92,7 @@ public class Ortdemy {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos extra
 
 	public void mostrarResultadoAlSuscribirseACurso(String idUsuario, String idCurso) {
 		System.out.println(idUsuario + " en curso " + idCurso + " => " + suscribirseACurso(idUsuario, idCurso));

@@ -14,4 +14,10 @@ public class PadronMesa {
 		this.nombreApellido = nombreApellido;
 	}
 
+	@Override
+	public String toString() {
+		return "PadronMesa [numeroMesa=" + numeroMesa + ", orden=" + orden + ", dni=" + dni + ", nombreApellido="
+				+ nombreApellido + "]";
+	}
+
 }
