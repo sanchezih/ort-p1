@@ -17,7 +17,7 @@ public class Main {
 		Vehiculo twingo = new Vehiculo("OOF125");
 
 		// Creo los garages y registro los vehiculos
-		Garage saa01 = new Garage("saa01", new Tablero());
+		Garage saa01 = new Garage("SAA01", new Tablero());
 		saa01.registrarVehiculo(focus);
 		saa01.registrarVehiculo(clio);
 		saa01.registrarVehiculo(ecosport);
@@ -27,7 +27,7 @@ public class Main {
 
 		OrtParking ortparking = new OrtParking();
 
-		// Ejercicio B
+		// Test ejercicio B
 		System.out.println("Intento estacionar el vehiculo LAP004... => " + saa01.estacionarVehiculo("LAP004"));
 		System.out.println("Intento estacionar el vehiculo EIO521... => " + saa01.estacionarVehiculo("EIO521"));
 

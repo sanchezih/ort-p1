@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Garage {
 
-	public String codigo;
-	public Tablero tablero;
-	public ArrayList<Vehiculo> retirados;
-	public ArrayList<Vehiculo> estacionados;
+	private String codigo;
+	private Tablero tablero;
+	private ArrayList<Vehiculo> retirados;
+	private ArrayList<Vehiculo> estacionados;
 
 	public Garage(String codigo, Tablero tablero) {
 		this.codigo = codigo;
