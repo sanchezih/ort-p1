@@ -1,28 +1,29 @@
 <diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>544</y><w>210</w><h>190</h></coordinates><panel_attributes>Usuario
 --
--id: int
+-id: String
 -nombre: String
 -email: String
 -esBecado: boolean
 --
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>44</y><w>310</w><h>130</h></coordinates><panel_attributes>Ortdemy
 --
+
 --
 +suscribirseACurso(String, String): Resultado
 -buscarCurso(): Curso
--buscarUsuario(String): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>164</y><w>80</w><h>400</h></coordinates><panel_attributes>lt=&lt;-
+-buscarUsuario(String): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>164</y><w>80</w><h>400</h></coordinates><panel_attributes>lt=&lt;-
 -usuarios
 m1=*
 
 </panel_attributes><additional_attributes>10;380;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>44</y><w>220</w><h>130</h></coordinates><panel_attributes>Categoria
 --
--id: int
+-id: String
 -nombre: String
 --
 +buscarCurso(String): Curso</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>274</y><w>220</w><h>160</h></coordinates><panel_attributes>Curso
 --
 _-MAX_BECADOS: int = 5_
--id: int
+-id: String
 -titulo: String
 -precio: double
 -valoracion: int
@@ -35,9 +36,9 @@ _-MAX_BECADOS: int = 5_
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>694</y><w>130</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 TipoDeLeccion
 --
-_-TEXTO_
-_-VIDEO_
-_-RECURSO_
+_+TEXTO_
+_+VIDEO_
+_+RECURSO_
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>424</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
 -lecciones
 m1=*
@@ -72,4 +73,4 @@ m1=*
 m1=1
 
 
-</panel_attributes><additional_attributes>10;140;10;10;200;10</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes>10;140;10;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>164</y><w>180</w><h>170</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>160;150;10;150;10;10</additional_attributes></element></diagram>
