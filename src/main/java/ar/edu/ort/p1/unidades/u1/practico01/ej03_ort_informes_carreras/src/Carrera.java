@@ -18,9 +18,12 @@ public class Carrera {
 
 	/**
 	 * Ejercicio B: La explotacion del metodo getInformeMaxMaterias de la clase
-	 * Carrera, que debe crear y devolver un unico que contenga como datos: I.
-	 * Cantidad de materias aprobadas II. Lista con unicamente los nombres y mails
-	 * de todos aquellos alumnos que sean quienes mas materias tienen aprobadas.
+	 * Carrera, que debe crear y devolver un unico que contenga como datos:
+	 * 
+	 * I. Cantidad de materias aprobadas.
+	 * 
+	 * II. Lista con unicamente los nombres y mails de todos aquellos alumnos que
+	 * sean quienes mas materias tienen aprobadas.
 	 * 
 	 * @return
 	 */

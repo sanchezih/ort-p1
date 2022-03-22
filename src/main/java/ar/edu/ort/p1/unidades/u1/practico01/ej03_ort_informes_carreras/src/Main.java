@@ -35,6 +35,7 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
+		// Test ejercicio B
 		analistaDeSistemas.mostrarInformeMaxMaterias();
 
 	}

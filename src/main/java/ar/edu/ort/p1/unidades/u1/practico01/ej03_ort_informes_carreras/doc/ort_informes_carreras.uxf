@@ -1,13 +1,17 @@
 <diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text>Sp}ace for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>150</x><y>90</y><w>110</w><h>100</h></coordinates><panel_attributes>ORT
 --
+
+--
+
+
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>90</y><w>180</w><h>190</h></coordinates><panel_attributes>Alumno
 --
 -nombre: String
 -mail: String
 --
-+ cantAprobadas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>210</y><w>180</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
++cantAprobadas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>210</y><w>180</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-alumnos</panel_attributes><additional_attributes>160;10;50;10;50;160;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>270</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-alumnos</panel_attributes><additional_attributes>160;10;50;10;50;160;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>270</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
 materias</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>380</y><w>210</w><h>190</h></coordinates><panel_attributes>Materia
 --
@@ -29,8 +33,8 @@ _+ APROBADA_</panel_attributes><additional_attributes></additional_attributes></
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>390</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>330</y><w>230</w><h>70</h></coordinates><panel_attributes>Carrera
 --
 --
-+ getInformeMaxMaterias(): Informe
-- maxCantMateriasAprobadas(): int
++getInformeMaxMaterias(): Informe
+-maxCantMateriasAprobadas(): int
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>180</y><w>80</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
 - carreras</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>520</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
@@ -40,4 +44,4 @@ m1=*
 -nombre: String
 -mail: String
 --
-+ AlumnoSimplificado(String, String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>390</y><w>30</w><h>260</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>250</y><w>80</w><h>460</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;440;10;440;10;10;60;10</additional_attributes></element></diagram>
++AlumnoSimplificado(String, String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>390</y><w>30</w><h>260</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>250</y><w>80</w><h>460</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;440;60;440;60;10;20;10</additional_attributes></element></diagram>
