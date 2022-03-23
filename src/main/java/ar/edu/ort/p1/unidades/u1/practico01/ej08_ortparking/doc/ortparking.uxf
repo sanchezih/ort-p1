@@ -2,8 +2,8 @@
 --
 
 --
-+ obtenerInformeEstadoGarages(): ArrayList&lt;InformeGarage&gt;
-+ mostrarVehiculosSinLlave(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>60</y><w>310</w><h>140</h></coordinates><panel_attributes>Garage
++obtenerInformeEstadoGarages(): ArrayList&lt;InformeGarage&gt;
++mostrarVehiculosSinLlave(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>60</y><w>310</w><h>140</h></coordinates><panel_attributes>Garage
 --
 - codigo: String
 --
