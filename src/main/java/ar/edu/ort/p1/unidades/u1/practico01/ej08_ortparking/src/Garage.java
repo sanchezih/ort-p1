@@ -20,6 +20,8 @@ public class Garage {
 		return codigo;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * Ejercicio B: El metodo estacionarVehiculo de la clase Garaje que recibe como
 	 * parametros la patente del vehiculo a ingresar. El metodo debe devolver alguno
@@ -72,6 +74,8 @@ public class Garage {
 		return vehEncontrado;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public InformeGarage dameInforme() {
 		return new InformeGarage(this.getCodigo(), dameCantEstacionados());
 	}
@@ -79,6 +83,8 @@ public class Garage {
 	private int dameCantEstacionados() {
 		return this.estacionados.size();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio D: El metodo mostrarVehiculosSinLlave que debe mostrar por
@@ -96,6 +102,8 @@ public class Garage {
 			}
 		}
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio E: El metodo esPersonaAutorizada, que recibe el DNI de una persona

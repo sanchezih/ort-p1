@@ -17,14 +17,17 @@ public class Vehiculo {
 		this.autorizados = new ArrayList<Persona>();
 	}
 
-	public boolean esPersonaAutorizada(String p) {
-		return false;
+	/*----------------------------------------------------------------------------*/
 
+	public boolean esPersonaAutorizada(String p) {
+		return false; // Para test devuelve siempre false
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
-	 * Tambien cada vehiculo cuenta con un metodo ya desarrollado que permite
-	 * devolver la cantidad de meses que adeuda llamado getMesesAdeudados().
+	 * Metodo ya desarrollado que permite devolver la cantidad de meses que adeuda
+	 * llamado getMesesAdeudados().
 	 * 
 	 * @return
 	 */

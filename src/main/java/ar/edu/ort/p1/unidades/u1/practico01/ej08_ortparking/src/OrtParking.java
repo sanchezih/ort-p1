@@ -11,6 +11,8 @@ public class OrtParking {
 		this.garages = new ArrayList<Garage>();
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * Ejercicio C: El metodo obtenerInformeEstadoGarajes que debe devolver una
 	 * lista detallando, para cada garaje, su codigo y la cantidad de vehiculos
@@ -29,6 +31,18 @@ public class OrtParking {
 	}
 
 	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio D: El metodo mostrarVehiculosSinLlave que debe mostrar por
+	 * pantalla, de todos los garajes, el codigo del garaje y las patentes de
+	 * aquellos vehiculos estacionados en el cuya llave no este guardada en el
+	 * tablero.
+	 */
+	public void mostrarVehiculosSinLlave() {
+		for (Garage garage : this.garages) {
+			garage.mostrarVehiculosSinLlave();
+		}
+	}
 
 	/* Metodos complementarios */
 
