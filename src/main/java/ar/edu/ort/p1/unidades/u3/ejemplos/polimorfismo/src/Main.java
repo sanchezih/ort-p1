@@ -18,7 +18,7 @@ public class Main {
 		 * instanciarlo como un descendiente de dicha clase.
 		 */
 
-		// UpCasting
+		// Hago upcasting. Ver video https://www.youtube.com/watch?v=UG3n-GZtnZk
 		IntegranteDeSeleccion gallarre = new Entrenador(1, "Luis", "Gallarre", 41, 52418);
 		IntegranteDeSeleccion aguirre = new Futbolista(2, "Francisco", "Aguirre", 34, 5, "Volante");
 		IntegranteDeSeleccion perez = new Masajista(3, "Juan", "Perez", 47, "Licenciado en Fisioterapia", 23);
@@ -27,28 +27,26 @@ public class Main {
 		integrantes.add(aguirre);
 		integrantes.add(perez);
 
-		// CONCENTRACION
-		System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
+		// Concentracion
+		System.out.println("1. Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.concentrarse();
 		}
 
-		// VIAJE
-		System.out.println("\nTodos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo metodo)");
+		// Viaje
+		System.out.println("\n2. Todos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.viajar();
 		}
 
-		// ENTRENAMIENTO
-		System.out.println(
-				"\nEntrenamiento: Todos los integrantes tienen su funcin en un entrenamiento (Especializacion)");
+		// Entrenamiento
+		System.out.println("\n3.Entrenamiento: Todos los integrantes tienen su funcion en un entrenamiento");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.participarEnEntrenamiento();
 		}
 
-		// PARTIDO DE FUTBOL
-		System.out.println(
-				"\nPartido de Futbol: Todos los integrantes tienen su funcion en un partido (Especializacion)");
+		// Partido de futbol
+		System.out.println("\nPartido de Futbol: Todos los integrantes tienen su funcion en un partido");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.participarEnPartido();
 		}
@@ -58,7 +56,7 @@ public class Main {
 				"\nPlanificar Entrenamiento: Solo el entrenador tiene el metodo para planificar un entrenamiento:");
 		System.out.print(gallarre.getNombre() + " " + gallarre.getApellido() + " -> ");
 
-		// DownCasting
+		// Hago Downcasting. Ver video https://www.youtube.com/watch?v=nzPC7dk_nmg
 		((Entrenador) gallarre).planificarEntrenamiento();
 
 		// ENTREVISTA

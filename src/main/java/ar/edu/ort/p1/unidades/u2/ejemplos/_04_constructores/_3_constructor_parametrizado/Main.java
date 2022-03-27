@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u2.ejemplos._04_constructores.src;
+package ar.edu.ort.p1.unidades.u2.ejemplos._04_constructores._3_constructor_parametrizado;
 
 /**
  * A constructor which has a specific number of parameters is called a
@@ -15,29 +15,17 @@ package ar.edu.ort.p1.unidades.u2.ejemplos._04_constructores.src;
  * @author ihsanch
  *
  */
-
-//Java Program to demonstrate the use of the parameterized constructor.  
-class Student4 {
-	int id;
-	String name;
-
-	// creating a parameterized constructor
-	Student4(int i, String n) {
-		id = i;
-		name = n;
-	}
-
-	// method to display the values
-	void display() {
-		System.out.println(id + " " + name);
-	}
+public class Main {
 
 	public static void main(String args[]) {
+
 		// creating objects and passing values
 		Student4 s1 = new Student4(111, "Karan");
 		Student4 s2 = new Student4(222, "Aryan");
+
 		// calling method to display the values of object
 		s1.display();
 		s2.display();
 	}
+
 }

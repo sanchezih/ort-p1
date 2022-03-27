@@ -31,7 +31,7 @@ public class Masajista extends IntegranteDeSeleccion {
 	}
 
 	public void darMasaje() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje...");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje...");
 	}
 
 }

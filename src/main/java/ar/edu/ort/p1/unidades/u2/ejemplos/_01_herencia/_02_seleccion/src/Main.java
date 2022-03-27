@@ -28,30 +28,30 @@ public class Main {
 		integrantes.add(masajista);
 
 		// Concentracion
-		System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
+		System.out.println("1.Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.concentrarse();
 		}
 
 		// Viaje
-		System.out.println("\nTodos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo metodo)");
+		System.out.println("\n2. Todos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo metodo)");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.viajar();
 		}
 
 		// Entrenamiento
 		System.out.println(
-				"\nEntrenamiento: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un entrenamiento:");
+				"\n3. Entrenamiento: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un entrenamiento:");
 		entrenador.dirigirEntrenamiento();
 		futbolista.entrenar();
 
 		// Masaje
-		System.out.println("\nMasaje: Solo el masajista tiene el metodo para dar un masaje:");
+		System.out.println("\n4. Masaje: Solo el masajista tiene el metodo para dar un masaje:");
 		masajista.darMasaje();
 
 		// Partido de futbol
 		System.out.println(
-				"\nPartido de Futbol: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un partido de futbol:");
+				"\n5. Partido de Futbol: Solamente el entrenador y el futbolista tienen metodos para hacer algo en un partido de futbol:");
 		entrenador.dirigirPartido();
 		futbolista.jugarPartido();
 	}

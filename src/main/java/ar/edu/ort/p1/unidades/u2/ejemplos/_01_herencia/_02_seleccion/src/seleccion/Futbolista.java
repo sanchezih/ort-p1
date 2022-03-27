@@ -32,11 +32,11 @@ public class Futbolista extends IntegranteDeSeleccion {
 	}
 
 	public void jugarPartido() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy jugando un partido...");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy jugando un partido...");
 	}
 
 	public void entrenar() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy entrenando...");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy entrenando...");
 	}
 
 }

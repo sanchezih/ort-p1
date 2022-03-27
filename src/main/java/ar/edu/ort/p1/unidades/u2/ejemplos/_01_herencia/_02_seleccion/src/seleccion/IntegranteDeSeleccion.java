@@ -50,11 +50,11 @@ public class IntegranteDeSeleccion {
 	}
 
 	public void concentrarse() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy concentrandome...");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy concentrandome...");
 	}
 
 	public void viajar() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy viajando...");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy viajando...");
 	}
 
 }

@@ -22,12 +22,12 @@ public class Entrenador extends IntegranteDeSeleccion {
 	}
 
 	public void dirigirPartido() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dirigiendo un partido...");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy dirigiendo un partido...");
 	}
 
 	public void dirigirEntrenamiento() {
 		System.out.println(
-				"Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dirigiendo un entrenamiento...");
+				"\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy dirigiendo un entrenamiento...");
 	}
 
 }

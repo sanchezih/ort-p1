@@ -50,20 +50,22 @@ public abstract class IntegranteDeSeleccion {
 	}
 
 	public void viajar() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy vianajdno (Clase Padre)");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy vianajdno (Clase Padre)");
 	}
 
 	public void concentrarse() {
 		System.out.println(
-				"Soy " + this.getNombre() + " " + this.getApellido() + " y estoy concentrandome (Clase Padre)");
+				"\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy concentrandome (Clase Padre)");
 	}
 
 	public void participarEnPartido() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
 				+ " y estoy asistiendo al Partido de Futbol (Clase Padre)");
 	}
 
-	// Metodo abstracto se debe implementar obligatoriamente en las subclases
+	/**
+	 * Metodo abstracto el cual debe implementarse obligatoriamente en las subclases
+	 */
 	public abstract void participarEnEntrenamiento();
 
 }
