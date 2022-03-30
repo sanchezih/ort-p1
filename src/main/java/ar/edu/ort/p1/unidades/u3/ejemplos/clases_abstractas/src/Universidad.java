@@ -8,7 +8,7 @@ public class Universidad {
 	private ArrayList<Profesor> listaDeProfesores;
 
 	/**
-	 * En el constructor se crea un ArrayList de profesores (titulares o suplentes).
+	 * En el constructor se crea un ArrayList de profesores (titulares y suplentes).
 	 * La lista se basa en el tipo Profesor, pero su contenido dinamico siempre sera
 	 * en base a instancias de ProfesorTitular o de ProfesorSuplente ya que Profesor
 	 * es una clase abstracta, no instanciable.
