@@ -19,7 +19,7 @@ public class EmpleadoAComision extends Empleado {
 	public double getSalario() {
 		double posibleSueldo = this.cantClientesCaptados * MONTO_A_COBRAR_X_CLIENTE;
 
-		/* Implementacion con operador ternario */
+		// Implementacion con operador ternario
 		return posibleSueldo < SALARIO_MINIMO ? SALARIO_MINIMO : posibleSueldo;
 	}
 }
