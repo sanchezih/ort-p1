@@ -3,7 +3,7 @@ package ar.edu.ort.p1.unidades.u3.practico03.ej07_admin_de_personal.src;
 import java.util.Calendar;
 
 public abstract class Empleado {
-	
+
 	private int dni;
 	private String nombre;
 	private String apellido;
@@ -54,8 +54,11 @@ public abstract class Empleado {
 	}
 
 	public void mostrarDatos() {
-		System.out.println(getNombreCompleto() + " $" + getSalario()); // getSalario() se resuelve en tiempo de
-																		// ejecucion
+		
+		/*
+		 * getSalario() se resuelve en tiempo de ejecucion
+		 */
+		System.out.println(getNombreCompleto() + " $" + getSalario());
 	}
 
 	public int getAniosDeAntiguedad() {
