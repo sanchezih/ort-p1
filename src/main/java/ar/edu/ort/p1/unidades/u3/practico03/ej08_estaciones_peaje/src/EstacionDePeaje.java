@@ -31,10 +31,14 @@ public class EstacionDePeaje {
 
 	}
 
-	public static String dameHoraActual() {
+	/**
+	 * Metodo de clase que devuelve la hora del momento en el que se invoca.
+	 * 
+	 * @return
+	 */
+	public static int dameHoraActual() {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH");
-		LocalDateTime now = LocalDateTime.now();
-		return dtf.format(now);
+		return Integer.parseInt(dtf.format(LocalDateTime.now()));
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -67,10 +71,10 @@ public class EstacionDePeaje {
 	 * @return
 	 */
 	public double promedioDemora() {
-		
+
 		double sumatoria = 0;
 		double cantidad = 0;
-		
+
 		for (Cabina c : this.cabinas) {
 			if (c.getMedioDePago() instanceof MedioDePagoElectronico) {
 				sumatoria = sumatoria + ((MedioDePagoElectronico) c.getMedioDePago()).getDiasDemora();

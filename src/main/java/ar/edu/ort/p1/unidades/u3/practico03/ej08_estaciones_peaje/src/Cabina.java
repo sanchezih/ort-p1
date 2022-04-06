@@ -50,7 +50,7 @@ public class Cabina {
 
 	private boolean abonaIncrementoHoraPico() {
 		int horaActual = 0;
-		horaActual = Integer.parseInt(EstacionDePeaje.dameHoraActual());
+		horaActual = EstacionDePeaje.dameHoraActual();
 		return esHoraPico(horaActual);
 	}
 
