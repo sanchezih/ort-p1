@@ -131,7 +131,7 @@ public class Restaurant {
 
 	/*----------------------------------------------------------------------------*/
 
-	// Metodos extra
+	// Metodos complementarios
 
 	private void inicializarRestaurant() {
 

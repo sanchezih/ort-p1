@@ -83,7 +83,7 @@ public class Hotel {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos complementarios
 
 	public void agregarHabitacion(Habitacion habitacion) {
 		this.habitaciones.add(habitacion);

@@ -44,7 +44,9 @@ public class OrtParking {
 		}
 	}
 
-	/* Metodos complementarios */
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
 
 	public void agregarGarage(Garage garage) {
 		this.garages.add(garage);

@@ -7,16 +7,28 @@ public class Deportivo extends Embarcacion {
 	private int potenciaMotor;
 	private int factorAerodinamico;
 
+	public Deportivo(String matricula, double eslora, int anioFabricacion, String duenio, double valorBase,
+			double valorAdicional, int potenciaMotor, int factorAerodinamico) {
+		super(matricula, eslora, anioFabricacion, duenio, valorBase, valorAdicional);
+		this.potenciaMotor = potenciaMotor;
+		this.factorAerodinamico = factorAerodinamico;
+	}
+
 	public int getPotenciaMotor() {
 		return potenciaMotor;
 	}
 
+	/**
+	 * Se obtiene multiplicando el valorAdicional por el 50% de la potencia
+	 */
 	@Override
 	public double precioAdicional() {
 		return getValorAdicional() * (this.potenciaMotor * 0.5);
 	}
 
-	public double getConsumo() {
+	/*----------------------------------------------------------------------------*/
+
+	public double calcularConsumo() {
 		return potenciaMotor / factorAerodinamico * INDICE_CALC_POTENCIA;
 
 	}
@@ -26,7 +38,7 @@ public class Deportivo extends Embarcacion {
 	 * 
 	 * @return
 	 */
-	public static double GET_INDICE_CALC_POTENCIA() {
+	public static double GET_INDICE_CALCULO_POTENCIA() {
 		return INDICE_CALC_POTENCIA;
 	}
 }

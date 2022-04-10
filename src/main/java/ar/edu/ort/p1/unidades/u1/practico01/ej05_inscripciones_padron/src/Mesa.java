@@ -65,7 +65,7 @@ public class Mesa {
 
 	/*----------------------------------------------------------------------------*/
 
-	// Metodos extra
+	// Metodos complementarios
 
 	public void agregarPersona(Persona persona) {
 		this.personas.add(persona);

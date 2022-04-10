@@ -4,5 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		Puerto puertoParana = new Puerto();
+
+		// Test ejercicio B
+		System.out.println(
+				"La cantidad de embarcaciones que abonan un importe mayor al indicado en concepto de alquiler de su amarra es: "
+						+ puertoParana.barcosConAlquilerMayorA(2));
+
+		// Test ejercicio C
+		System.out.println("El barco deportivo (de lujo o no) de mayor consumo en todo el puerto es: "
+				+ puertoParana.barcoConMayorConsumo());
+
 	}
 }

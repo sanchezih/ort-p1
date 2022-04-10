@@ -5,7 +5,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Embarcacion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="261" width="262" x="343" y="405"/>    
+    <position height="-1" width="-1" x="635" y="367"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -16,7 +16,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Amarra.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="262" x="343" y="194"/>    
+    <position height="-1" width="-1" x="635" y="111"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/DeportivoLujo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="262" x="343" y="953"/>    
+    <position height="-1" width="-1" x="635" y="847"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,7 +38,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Velero.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="262" x="41" y="706"/>    
+    <position height="-1" width="-1" x="283" y="596"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   <class id="5" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej09_puerto_parana.src.Yate" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Yate.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="262" x="645" y="706"/>    
+    <position height="-1" width="-1" x="992" y="596"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -59,7 +59,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Deportivo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="262" x="343" y="706"/>    
+    <position height="-1" width="-1" x="635" y="641"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -70,45 +70,86 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Puerto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="262" x="343" y="37"/>    
+    <position height="-1" width="-1" x="274" y="110"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="8">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="9" name="embarcacion"/>      
-      <multiplicity id="10" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
+  <enumeration id="8" language="java" name="ar.edu.ort.p1.unidades.u3.practico03.ej09_puerto_parana.src.Ubicacion" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/practico03/ej09_puerto_parana/src/Ubicacion.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="992" y="110"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <dependency id="10">    
+    <bendpoint x="274" y="368"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
   <generalization id="11">    
-    <end type="SOURCE" refId="5"/>    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <association id="12">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="13" name="amarras"/>      
-      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+      <attribute id="13" name="amarras">        
+        <position height="0" width="0" x="161" y="-168"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="161" y="-168"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="15">    
+  <dependency id="15">    
+    <bendpoint x="385" y="467"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="16">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="17" name="ubicacion">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="20">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="16">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <generalization id="17">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
+  <association id="21">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="22" name="embarcacion">        
+        <position height="0" width="0" x="161" y="-168"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="1">        
+        <position height="0" width="0" x="161" y="-168"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
