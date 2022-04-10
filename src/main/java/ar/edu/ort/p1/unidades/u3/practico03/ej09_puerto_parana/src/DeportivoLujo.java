@@ -5,8 +5,7 @@ public class DeportivoLujo extends Deportivo {
 	public DeportivoLujo(String matricula, double eslora, int anioFabricacion, String duenio, double valorBase,
 			double valorAdicional, int potenciaMotor, int factorAerodinamico) {
 		super(matricula, eslora, anioFabricacion, duenio, valorBase, valorAdicional, potenciaMotor, factorAerodinamico);
-		// TODO Auto-generated constructor stub
-	}
+		}
 
 	@Override
 	public double calcularConsumo() {

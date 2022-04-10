@@ -89,35 +89,33 @@
     </display>  
   </enumeration>  
   <generalization id="9">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <dependency id="10">    
-    <bendpoint x="274" y="368"/>    
-    <end type="SOURCE" refId="7"/>    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <generalization id="11">    
+  </generalization>  
+  <generalization id="10">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <association id="12">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="13" name="amarras">        
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="13" name="embarcacion">        
         <position height="0" width="0" x="161" y="-168"/>      
       </attribute>      
-      <multiplicity id="14" minimum="0" maximum="2147483647">        
+      <multiplicity id="14" minimum="0" maximum="1">        
         <position height="0" width="0" x="161" y="-168"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="15">    
-    <bendpoint x="385" y="467"/>    
-    <end type="SOURCE" refId="7"/>    
+  <generalization id="15">    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="6"/>  
-  </dependency>  
+  </generalization>  
   <association id="16">    
     <end type="SOURCE" refId="2" navigable="false">      
       <attribute id="17" name="ubicacion">        
@@ -130,26 +128,29 @@
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="20">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="21">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="22" name="embarcacion">        
+  <dependency id="19">    
+    <bendpoint x="274" y="478"/>    
+    <bendpoint x="372" y="478"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="20">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="21" name="amarras">        
         <position height="0" width="0" x="161" y="-168"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="1">        
+      <multiplicity id="22" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="161" y="-168"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <dependency id="23">    
+    <bendpoint x="274" y="368"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

@@ -25,7 +25,7 @@ public abstract class Embarcacion {
 	}
 
 	public double getValorAdicional() {
-		return 0;
+		return this.valorAdicional;
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -36,10 +36,11 @@ public abstract class Embarcacion {
 
 	public abstract double precioAdicional();
 
+	/*----------------------------------------------------------------------------*/
+
 	@Override
 	public String toString() {
-		return "Embarcacion [matricula=" + matricula + ", eslora=" + eslora + ", anioFabricacion=" + anioFabricacion
-				+ ", duenio=" + duenio + ", valorBase=" + valorBase + ", valorAdicional=" + valorAdicional + "]";
+		return "Embarcacion " + matricula;
 	}
 
 }

@@ -9,7 +9,7 @@ public class Main {
 		// Test ejercicio B
 		System.out.println(
 				"La cantidad de embarcaciones que abonan un importe mayor al indicado en concepto de alquiler de su amarra es: "
-						+ puertoParana.barcosConAlquilerMayorA(2));
+						+ puertoParana.barcosConAlquilerMayorA(50));
 
 		// Test ejercicio C
 		System.out.println("El barco deportivo (de lujo o no) de mayor consumo en todo el puerto es: "

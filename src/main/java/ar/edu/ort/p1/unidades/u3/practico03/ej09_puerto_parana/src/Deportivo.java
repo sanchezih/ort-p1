@@ -15,7 +15,7 @@ public class Deportivo extends Embarcacion {
 	}
 
 	public int getPotenciaMotor() {
-		return potenciaMotor;
+		return this.potenciaMotor;
 	}
 
 	/**
@@ -29,8 +29,7 @@ public class Deportivo extends Embarcacion {
 	/*----------------------------------------------------------------------------*/
 
 	public double calcularConsumo() {
-		return potenciaMotor / factorAerodinamico * INDICE_CALC_POTENCIA;
-
+		return this.potenciaMotor / this.factorAerodinamico * INDICE_CALC_POTENCIA;
 	}
 
 	/**
