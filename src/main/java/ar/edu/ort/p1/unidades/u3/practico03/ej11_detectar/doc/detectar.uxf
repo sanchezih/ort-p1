@@ -1,50 +1,53 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>Persona
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text>Space for diagram n</help_text><element><id>UMLClass</id><coordinates><x>340</x><y>90</y><w>290</w><h>120</h></coordinates><panel_attributes>Dia
 --
--dni: int
--edad: int
--nombre: String
--apellido: String
+_-NOTIFICACION: String = "No hay cupos para hoy"_
+- fecha: String
+- esHabil: boolean
 --
-#getEdad(): int
-#getMotivo(): Motivo
-+esPrioritario(): int
-+notificar(String mensaje): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>330</y><w>230</w><h>190</h></coordinates><panel_attributes>Dia
++ promedioEdadPersonasSinOS: double
++ cantPersonasPorPrioridad(int): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>280</y><w>170</w><h>140</h></coordinates><panel_attributes>Persona
 --
--fecha: String
--esHabil: boolean
+_+ EDAD_MAX_PRI: int = 60_
+- dni: String
+- nombre: String
+- apellido: String
+- edad: int
 --
-+promedioEdadPersonasSinOS(): int
-+obtenerCantPrioritarios(): int
-+notificarExcluidos(): int
-+obtenerCantInscriptos(): int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>460</y><w>210</w><h>90</h></coordinates><panel_attributes>PersonaConObraSocial
---
--nroAsociado: int
--nombreObraSocial: String
---
-+esPrioritario(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>70</y><w>230</w><h>190</h></coordinates><panel_attributes>Centro
---
-_+CANT_TEST:50_
---
-+mostrarDiaConMasPrioritarios(): void
-+revisar(): double
---
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>220</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
-Motivo
++ getPrioridad(): int
++ notificar(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>280</y><w>180</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+MotivoTest
 --
 _+CONTACTO_ESTRECHO_
 _+VIAJE_
-_+REPETICION_POR_ERROR_
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>400</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>250</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-m1=1</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>360</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-m1=0..n</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>250</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
-m1=0..n</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>30</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+_+REPETICION_POR_ERROR_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>490</y><w>180</w><h>90</h></coordinates><panel_attributes>PersonaObraSocial
+--
+- nombrePrestador: String
+- numeroAfiliado: int
+--
++ getPrioridad(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>411</x><y>410</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>501</x><y>310</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-motivo</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>90</y><w>230</w><h>80</h></coordinates><panel_attributes>Centro
+--
+_- CAPACIDAD: int = 50_
+--
++ revisar(): double
++ mostrarDiaConMasPrioritarios(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>221</x><y>100</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- dias</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>411</x><y>200</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- personas</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>250</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 Priorizable
 --
-_+TIENE_PRIORIDAD: int = 1_
-_+NO_TIENE_PRIORIDAD: int = 2_
+_+ PRIORIDAD_MAX: int = 1_
+_+ PRIORIDAD_MIN: int = 2_
 --
-+esPrioritario(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/+ getPrioridad(): int/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>380</y><w>150</w><h>60</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 Notificable
 --
-+notificar(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>130</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;30;90</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>130</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;90</additional_attributes></element></diagram>
+/+ notificar(String): void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>211</x><y>290</y><w>150</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;60</additional_attributes></element><element><id>Relation</id><coordinates><x>211</x><y>380</y><w>150</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>160</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>360</y><w>220</w><h>200</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>200;10;200;180;10;180</additional_attributes></element></diagram>
