@@ -3,11 +3,20 @@ package ar.edu.ort.p1.unidades.u3.practico03.ej12_cocode_v1.src;
 import java.util.ArrayList;
 
 public class Programa implements Calificable {
+
 	private String id;
 	private String nombre;
 	private String nomResponsable;
 	private boolean pasoPruebasUnitarias;
 	private ArrayList<Fuente> fuentes;
+
+	public Programa(String id, String nombre, String nomResponsable, boolean pasoPruebasUnitarias) {
+		this.id = id;
+		this.nombre = nombre;
+		this.nomResponsable = nomResponsable;
+		this.pasoPruebasUnitarias = pasoPruebasUnitarias;
+		this.fuentes = new ArrayList<Fuente>();
+	}
 
 	/*----------------------------------------------------------------------------*/
 
@@ -33,7 +42,7 @@ public class Programa implements Calificable {
 	/**
 	 * Ejercicio D: El metodo mostrarDetalleDeMetodo de la clase Programa que recibe
 	 * el nombre de un metodo y muestra por consola su cantidad de parametros,
-	 * instrucciones y ramificaciones, ademas del índice de calidad.
+	 * instrucciones y ramificaciones, ademas del indice de calidad.
 	 * 
 	 * Si no existe, se informa tal situacion.
 	 * 
@@ -45,7 +54,7 @@ public class Programa implements Calificable {
 		if (m != null) {
 			m.mostrarDatos();
 		} else {
-			System.out.println("No existe método " + nombreMetodo);
+			System.out.println("No existe metodo " + nombreMetodo);
 		}
 	}
 
@@ -79,5 +88,18 @@ public class Programa implements Calificable {
 			}
 		}
 		return lista;
+	}
+
+	@Override
+	public String toString() {
+		return "Programa [Nombre=" + nombre + ", Responsable=" + nomResponsable + "]";
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
+
+	public void agregarFuente(Fuente fuente) {
+		this.fuentes.add(fuente);
 	}
 }

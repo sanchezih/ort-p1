@@ -8,7 +8,6 @@ public class Sophie {
 
 	public Sophie() {
 		this.programas = new ArrayList<Programa>();
-		inicializarSophie();
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -34,7 +33,7 @@ public class Sophie {
 	/*----------------------------------------------------------------------------*/
 
 	// Metodos complementarios
-	private void inicializarSophie() {
-
+	public void agregarPrograma(Programa programa) {
+		this.programas.add(programa);
 	}
 }

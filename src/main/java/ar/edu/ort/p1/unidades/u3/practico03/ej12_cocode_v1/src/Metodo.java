@@ -7,10 +7,17 @@ public class Metodo implements Calificable {
 	private int cantInstrucciones;
 	private int cantRamificacionesFlujo;
 
+	public Metodo(String nombre, int cantParametros, int cantInstrucciones, int cantRamificacionesFlujo) {
+		this.nombre = nombre;
+		this.cantParametros = cantParametros;
+		this.cantInstrucciones = cantInstrucciones;
+		this.cantRamificacionesFlujo = cantRamificacionesFlujo;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
-	
+
 	/*----------------------------------------------------------------------------*/
 
 	/**
