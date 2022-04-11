@@ -45,7 +45,8 @@ public class Historial {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos complementarios
+
 	public void agregarFacturable(Facturable facturable) {
 		this.facturables.add(facturable);
 	}

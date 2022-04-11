@@ -20,8 +20,6 @@ public class ServicioDeReparacion extends Servicio {
 	@Override
 	public double getPrecio() {
 		double precioBase = super.getPrecio();
-
-		/* Usamos operador ternario (condition ? v_true : v_false) */
 		return this.dificultad > MIN_DIFIC ? Matematica.sumarPorcentaje(precioBase, INCR_DIF) : precioBase;
 	}
 

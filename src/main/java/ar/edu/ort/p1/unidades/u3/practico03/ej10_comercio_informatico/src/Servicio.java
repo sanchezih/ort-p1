@@ -20,6 +20,8 @@ public abstract class Servicio implements Facturable {
 
 	public abstract double getValorHora();
 
+	/*----------------------------------------------------------------------------*/
+
 	@Override
 	public double getMontoFacturacion() {
 		return Matematica.sumarPorcentaje(getPrecio(), Facturable.IVA / 2);
