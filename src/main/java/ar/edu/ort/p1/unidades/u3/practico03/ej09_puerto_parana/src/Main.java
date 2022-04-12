@@ -12,7 +12,7 @@ public class Main {
 						+ puertoParana.barcosConAlquilerMayorA(50));
 
 		// Test ejercicio C
-		System.out.println("El barco deportivo (de lujo o no) de mayor consumo en todo el puerto es: "
+		System.out.println("\nEl barco deportivo (de lujo o no) de mayor consumo en todo el puerto es: "
 				+ puertoParana.barcoConMayorConsumo());
 
 	}
