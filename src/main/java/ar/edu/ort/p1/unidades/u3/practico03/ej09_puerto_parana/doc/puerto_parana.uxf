@@ -64,4 +64,6 @@ _+ESTE_
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>89</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 -ubicacion
 m1=1
-</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>680</x><y>250</y><w>220</w><h>140</h></coordinates><panel_attributes>Nota: La administracion del puerto
+define para cada embarcacion dos
+valores: valorBase y valorAdicional.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
