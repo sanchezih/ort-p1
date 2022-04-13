@@ -14,7 +14,7 @@ public class Velero extends Embarcacion {
 	 * Se obtiene multiplicando el valorAdicional por la cantidad de mastiles
 	 */
 	@Override
-	public double precioAdicional() {
+	public double getPrecioAdicional() {
 		return getValorAdicional() * this.cantMastiles;
 	}
 

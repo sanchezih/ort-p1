@@ -14,7 +14,7 @@ public class Yate extends Embarcacion {
 	 * Se obtiene multiplicando el valorAdicional por la cantidad de camarotes
 	 */
 	@Override
-	public double precioAdicional() {
+	public double getPrecioAdicional() {
 		return getValorAdicional() * this.camarotes;
 	}
 }

@@ -20,7 +20,7 @@ public abstract class Embarcacion {
 		this.valorAdicional = valorAdicional;
 	}
 
-	private double precioBase() {
+	private double getPrecioBase() {
 		return this.valorBase * this.eslora;
 	}
 
@@ -31,10 +31,10 @@ public abstract class Embarcacion {
 	/*----------------------------------------------------------------------------*/
 
 	public double getMontoAlquiler() {
-		return precioBase() + precioAdicional();
+		return getPrecioBase() + getPrecioAdicional();
 	}
 
-	public abstract double precioAdicional();
+	public abstract double getPrecioAdicional();
 
 	/*----------------------------------------------------------------------------*/
 
