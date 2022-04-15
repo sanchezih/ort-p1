@@ -26,7 +26,7 @@ public abstract class Observacion {
 	/*----------------------------------------------------------------------------*/
 
 	public boolean esCritica() {
-		return false;
+		return auditable.getNivelCriticidad() >= NIVEL_CRITICO;
 	}
 
 	public void mostrar() {
@@ -46,4 +46,15 @@ public abstract class Observacion {
 	}
 
 	public abstract boolean estaVencida();
+
+	@Override
+	public String toString() {
+		return "Observacion [titulo=" + titulo + ", descripcion=" + descripcion + ", auditor=" + auditor
+				+ ", fechaAlta=" + fechaAlta + ", auditable=" + auditable + ", compromisos=" + compromisos + "]";
+	}
+
+	public void agregarCompromiso(Compromiso compromiso) {
+		this.compromisos.add(compromiso);
+	}
+
 }
