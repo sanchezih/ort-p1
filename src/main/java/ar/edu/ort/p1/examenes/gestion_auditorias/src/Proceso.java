@@ -8,10 +8,18 @@ public class Proceso implements Auditable {
 	private boolean impactaCliente;
 	private boolean afectaPatrimonioCompania;
 
+	public Proceso(String codigo, int cantActividades, boolean impactaCliente, boolean afectaPatrimonioCompania) {
+		super();
+		this.codigo = codigo;
+		this.cantActividades = cantActividades;
+		this.impactaCliente = impactaCliente;
+		this.afectaPatrimonioCompania = afectaPatrimonioCompania;
+	}
+
 	/**
-	 * Tema 1 - Ejercicio C: El metodo getNivelCriticidad() que permita calcular
-	 * para cualquier elemento auditable (Sistema o Proceso) su nivel de criticidad
-	 * para el negocio.
+	 * Ejercicio E: El metodo getNivelCriticidad() que permita calcular para
+	 * cualquier elemento auditable (Sistema o Proceso) su nivel de criticidad para
+	 * el negocio.
 	 */
 	@Override // sobreescritura al implementar interface
 	public int getNivelCriticidad() {

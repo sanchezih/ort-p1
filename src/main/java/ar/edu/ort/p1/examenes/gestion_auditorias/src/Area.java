@@ -9,9 +9,15 @@ public class Area {
 	private Empleado responsable;
 	private ArrayList<Observacion> observaciones;
 
+	public Area(String nombre, int cantEmpleados, Empleado responsable) {
+		this.nombre = nombre;
+		this.cantEmpleados = cantEmpleados;
+		this.responsable = responsable;
+		this.observaciones = new ArrayList<Observacion>();
+	}
+
 	/**
-	 * Tema 1 - Ejercicio B: El metodo obtenerCantObservacionesExternas() que tiene
-	 * un area.
+	 * Ejercicio B: El metodo obtenerCantObservacionesExternas() que tiene un area.
 	 * 
 	 * @return
 	 */
@@ -26,39 +32,9 @@ public class Area {
 	}
 
 	/**
-	 * Tema 1 - Ejercicio D: El metodo mostrarObservacionesCriticas() que muestre
-	 * por consola el titulo, descripcion y el nombre, apellido y legajo del auditor
-	 * de las observaciones en un area en particular cuyo nivel de criticidad de su
-	 * elemento auditable sea mayor a 1.
-	 */
-	public void mostrarObservacionesCriticas() {
-		for (Observacion observacion : observaciones) {
-			if (observacion.esCritica()) {
-				observacion.mostrar();
-			}
-		}
-	}
-
-	/**
-	 * Tema 2 - Ejercicio B: El metodo obtenerCantObservacionesInternas() que tiene
-	 * un area.
-	 * 
-	 * @return
-	 */
-	public int obtenerCantObservacionesInternas() {
-		int cantidad = 0;
-		for (Observacion observacion : observaciones) {
-			if (observacion instanceof ObservacionInterna) {
-				cantidad++;
-			}
-		}
-		return cantidad;
-	}
-
-	/**
-	 * Tema 2 - Ejercicio D: El metodo obtenerObservacionesVencidas() que debera
-	 * devolver, no mostrar por consola, la lista de observaciones que estan
-	 * vencidas en un area en particular.
+	 * Ejercicio D: El metodo obtenerObservacionesVencidas() que debera devolver, no
+	 * mostrar por consola, la lista de observaciones que estan vencidas en un area
+	 * en particular.
 	 * 
 	 * @return
 	 */
@@ -71,4 +47,27 @@ public class Area {
 		}
 		return observacionesVencidas;
 	}
+
+	/**
+	 * Ejercicio F: El metodo mostrarObservacionesCriticas() que muestre por consola
+	 * el titulo, descripcion y el nombre, apellido y legajo del auditor de las
+	 * observaciones en un area en particular cuyo nivel de criticidad de su
+	 * elemento auditable sea mayor a 1.
+	 */
+	public void mostrarObservacionesCriticas() {
+		for (Observacion observacion : observaciones) {
+			if (observacion.esCritica()) {
+				observacion.mostrar();
+			}
+		}
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
+
+	public void agregarObservacion(Observacion observacion) {
+		this.observaciones.add(observacion);
+	}
+
 }

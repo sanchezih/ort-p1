@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import ar.edu.ort.p1.util.Fecha;
 
 public abstract class Observacion {
+
 	private final static int NIVEL_CRITICO = 1;
 	private String titulo;
 	private String descripcion;
@@ -12,6 +13,15 @@ public abstract class Observacion {
 	private Fecha fechaAlta;
 	private Auditable auditable;
 	private ArrayList<Compromiso> compromisos;
+
+	public Observacion(String titulo, String descripcion, Empleado auditor, Fecha fechaAlta, Auditable auditable) {
+		this.titulo = titulo;
+		this.descripcion = descripcion;
+		this.auditor = auditor;
+		this.fechaAlta = fechaAlta;
+		this.auditable = auditable;
+		this.compromisos = new ArrayList<Compromiso>();
+	}
 
 	/*----------------------------------------------------------------------------*/
 

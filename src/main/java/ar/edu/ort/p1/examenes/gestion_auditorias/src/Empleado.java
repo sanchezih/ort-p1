@@ -1,12 +1,12 @@
 package ar.edu.ort.p1.examenes.gestion_auditorias.src;
 
 public class Empleado {
+
 	private String nombre;
 	private String apellido;
 	private int legajo;
 
 	public Empleado(String nombre, String apellido, int legajo) {
-		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.legajo = legajo;
