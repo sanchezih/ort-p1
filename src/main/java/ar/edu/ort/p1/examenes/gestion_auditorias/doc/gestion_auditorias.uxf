@@ -18,10 +18,10 @@ _-NIVEL_CRITICO: int = 1_
 -titulo: String
 -descripción: String
 --
-/+estaVencida():boolean/
-+esCritica():boolean
+/+estaVencida(): boolean/
++esCritica(): boolean
 +mostrar(): void
-#buscarCompromisoVencido():Compromiso
+#buscarCompromisoVencido(): Compromiso
 
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>290</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
@@ -43,7 +43,7 @@ _-CANT_DIAS_MAX:int = 60_
 --
 -descripcion: String
 --
-+getFechaCompromiso():Fecha
++getFechaCompromiso(): Fecha
 
 
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>120</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;-

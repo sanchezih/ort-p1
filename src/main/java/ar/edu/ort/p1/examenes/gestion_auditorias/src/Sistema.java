@@ -19,7 +19,7 @@ public class Sistema implements Auditable {
 	 * cualquier elemento auditable (Sistema o Proceso) su nivel de criticidad para
 	 * el negocio.
 	 */
-	@Override // sobreescritura al implementar interface
+	@Override
 	public int getNivelCriticidad() {
 		int nivel = 0;
 		if (poseeDatosClientes) {

@@ -19,7 +19,7 @@ public class Main {
 		// Se crean las observaciones
 		ObservacionInterna oi01 = new ObservacionInterna("No se cumplen politicas de privacidad", "Una descripcion",
 				new Empleado("Felipe", "Perez", 78524), new Fecha(3, 3, 2015), sistemaDeLegales01, false);
-		oi01.agregarCompromiso(new Compromiso("Se hara...", new Fecha(3, 3, 2015)));
+		oi01.agregarCompromiso(new Compromiso("Se hara...", new Fecha(3, 3, 2022)));
 
 		ObservacionExterna oe01 = new ObservacionExterna("No cumple con politica 671", "Una descripcion",
 				new Empleado("Maria", "Perez", 96699), new Fecha(4, 3, 2015), sistemaDeLegales01, "asd");

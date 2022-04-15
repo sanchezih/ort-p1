@@ -30,17 +30,18 @@ public abstract class Observacion {
 	}
 
 	public void mostrar() {
-		System.out.println("Titulo: " + titulo + " Descripcion: " + descripcion);
+		System.out.println("Titulo: " + titulo + " Descripción: " + descripcion);
+		auditor.mostrar();
 	}
 
 	protected Compromiso buscarCompromisoVencido(int cantidadDias) {
 		int i = 0;
 		Compromiso compromisoEncontrado = null;
 		while (i < compromisos.size() && compromisoEncontrado == null) {
-			if (compromisos.get(i).getFechaCompromiso().restar() < cantidadDias) {
+			if (compromisos.get(i).getFechaCompromiso().getCantidadDiasHastaHoy() > cantidadDias) {
 				compromisoEncontrado = compromisos.get(i);
-				i++;
 			}
+			i++;
 		}
 		return compromisoEncontrado;
 	}

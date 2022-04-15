@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.util;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 public class Fecha {
@@ -38,29 +40,24 @@ public class Fecha {
 		this.anio = anio;
 	}
 
-	public int restar() {
-		// TODO Auto-generated method stub
-		return 0;
+	/**
+	 * Metodo que devuelve un numero que indica la diferencia de dias entre una
+	 * fecha y hoy.
+	 * 
+	 * @return
+	 */
+	public long getCantidadDiasHastaHoy() {
+		return ChronoUnit.DAYS.between(LocalDate.of(this.anio, this.mes, this.dia), LocalDate.now());
 	}
 
 	/**
-	 * Metodo que devuelve la fecha de hoy
+	 * Metodo que devuelve la fecha de hoy.
 	 * 
 	 * @return
 	 */
 	public static Fecha hoy() {
 		Date date = new Date();
 		return new Fecha(date.getDay(), date.getMonth(), date.getYear());
-	}
-
-	/**
-	 * 
-	 * @param fechaInicio
-	 * @return
-	 */
-	public static int compareToNow(Fecha fechaInicio) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }

@@ -55,9 +55,9 @@ Consideraciones
 		dias de atraso respecto a la fecha del dia.
 
 Para hacer el ejercicio considerar que contas con una clase Fecha que tiene dia,
-mes y ano y un metodo restar() que devuelve un entero con la diferencia en dias
-con la fecha de hoy. Modelarlo en el diagrama de clases y no explotar el metodo
-restar().
+mes y anio y un metodo getCantidadDiasHastaHoy() que devuelve un numero
+indicando la diferencia en dias con la fecha de hoy. Modelarlo en el diagrama de
+clases y no explotarlo.
 
 Basado en el enunciado descripto, realiza:
 A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
