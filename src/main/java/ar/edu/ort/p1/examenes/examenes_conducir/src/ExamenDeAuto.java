@@ -6,8 +6,8 @@ public class ExamenDeAuto extends Examen {
 	private Circuito circuito;
 	private Auto auto;
 
-	public ExamenDeAuto(Persona persona, Circuito circuito, Auto auto) {
-		super(persona);
+	public ExamenDeAuto(String fecha, Persona persona, Circuito circuito, Auto auto) {
+		super(fecha, persona);
 		this.circuito = circuito;
 		this.auto = auto;
 	}

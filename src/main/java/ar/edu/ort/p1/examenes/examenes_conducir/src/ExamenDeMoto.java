@@ -10,8 +10,8 @@ public class ExamenDeMoto extends Examen {
 	private Moto moto;
 	private ArrayList<Circuito> circuitos;
 
-	public ExamenDeMoto(Persona persona, Moto moto) {
-		super(persona);
+	public ExamenDeMoto(String fecha, Persona persona, Moto moto) {
+		super(fecha, persona);
 		this.moto = moto;
 		this.circuitos = new ArrayList<Circuito>();
 	}
