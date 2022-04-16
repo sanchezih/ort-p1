@@ -1,8 +1,8 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>700</x><y>730</y><w>200</w><h>60</h></coordinates><panel_attributes>Auto
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>460</x><y>660</y><w>200</w><h>60</h></coordinates><panel_attributes>Auto
 --
 -cantPuertas: int
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>390</y><w>200</w><h>130</h></coordinates><panel_attributes>ExamenDeMoto
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>360</y><w>200</w><h>130</h></coordinates><panel_attributes>ExamenDeMoto
 --
 _-TOPE_CILINDRADA: int = 150_
 _-TOPE_SEGUNDOS: int = 120_
@@ -11,57 +11,57 @@ _-TOPE_SEGUNDOS: int = 120_
 -cantCircuitosAprobados(): int
 -apruebaMotoMenorCC(): boolean
 -cumpleTiempoTotal(): boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>200</y><w>200</w><h>70</h></coordinates><panel_attributes>/Examen/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>170</y><w>200</w><h>70</h></coordinates><panel_attributes>/Examen/
 --
 -fecha: String
 --
-+isAprobado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>730</y><w>200</w><h>60</h></coordinates><panel_attributes>Moto
++isAprobado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>660</y><w>200</w><h>60</h></coordinates><panel_attributes>Moto
 --
 -tieneEspejos: boolean
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>400</y><w>200</w><h>110</h></coordinates><panel_attributes>Circuito
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>370</y><w>200</w><h>110</h></coordinates><panel_attributes>Circuito
 --
 _-MAX_FALTAS: int = 2_
 -tiempoEnSeg: int
 -nroFaltas: int
 --
 +getTiempoEnSeg(): int
-+isAprobado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>510</y><w>120</w><h>280</h></coordinates><panel_attributes>lt=&lt;-
-- moto
-m1=1</panel_attributes><additional_attributes>100;250;10;250;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>400</y><w>200</w><h>80</h></coordinates><panel_attributes>ExamenDeAuto
++isAprobado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>480</y><w>120</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
+-moto
+m1=1</panel_attributes><additional_attributes>100;210;10;210;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>370</y><w>200</w><h>80</h></coordinates><panel_attributes>ExamenDeAuto
 --
 _-SEG_MIN: int = 90_
 --
 +aprobado(): boolean
-+getTiempo(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>470</y><w>100</w><h>320</h></coordinates><panel_attributes>lt=&lt;-
++getTiempo(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>440</y><w>100</w><h>280</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--auto</panel_attributes><additional_attributes>10;290;80;290;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>550</y><w>200</w><h>100</h></coordinates><panel_attributes>/Vehiculo/
+-auto</panel_attributes><additional_attributes>10;250;80;250;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>510</y><w>200</w><h>100</h></coordinates><panel_attributes>/Vehiculo/
 --
 -patente: String
 -marca: String
 -cilindrada: int
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>640</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;120;50;120;90</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>640</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;120;50;10;50;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>260</y><w>220</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>200;10;200;80;10;80;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>220</y><w>180</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;10;160;180</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>440</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>600</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;120;40;120;60</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>600</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;120;40;10;40;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>230</y><w>230</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>210;10;210;80;10;80;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>190</y><w>170</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10;150;180</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>410</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
--circuitos</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>430</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-circuitos</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>400</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--circuito</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>310</y><w>200</w><h>50</h></coordinates><panel_attributes>/Evaluable/
+-circuito</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>280</y><w>200</w><h>50</h></coordinates><panel_attributes>/Evaluable/
 --
-/+isAprobado(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>240</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;70;60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>210</y><w>200</w><h>80</h></coordinates><panel_attributes>Persona
+/+isAprobado(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>210</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;70;60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>170</y><w>200</w><h>80</h></coordinates><panel_attributes>Persona
 --
 -dni: String
 -nombre: String
--mail: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>230</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-mail: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>190</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
-- persona</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>80</y><w>240</w><h>80</h></coordinates><panel_attributes>SedeDeLicencias
+-persona</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>10</y><w>240</w><h>80</h></coordinates><panel_attributes>SedeDeLicencias
 --
 +obtenerInforme(): Informe
 -porcentajeDeReprobados(): double
--promTiempoAutosAprobados(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>150</y><w>90</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+-promTiempoAutosAprobados(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>80</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- examenes</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>80</y><w>230</w><h>80</h></coordinates><panel_attributes>Informe
+-examenes</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>230</w><h>80</h></coordinates><panel_attributes>Informe
 --
 -porcReprobados: double
 -promTiempoAutosAprobados: double
 --
-+Informe(double,double)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>110</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>320</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>50;10;10;10;10;80</additional_attributes></element><element><id>UMLNote</id><coordinates><x>770</x><y>30</y><w>160</w><h>60</h></coordinates><panel_attributes>Se omiten dependencias
++Informe(double, double)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>40</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>300</y><w>70</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>50;10;10;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>590</x><y>20</y><w>160</w><h>60</h></coordinates><panel_attributes>Se omiten dependencias
 entre SedeDeLicencias
-y ExamenDeAuto/Moto</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>110</y><w>260</w><h>310</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>240;290;240;10;10;10</additional_attributes></element></diagram>
+y ExamenDeAuto/Moto</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>80</y><w>220</w><h>310</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>200;290;200;50;10;50;10;10</additional_attributes></element></diagram>
