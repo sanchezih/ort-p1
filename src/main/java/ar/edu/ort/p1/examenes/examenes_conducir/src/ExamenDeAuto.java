@@ -2,7 +2,7 @@ package ar.edu.ort.p1.examenes.examenes_conducir.src;
 
 public class ExamenDeAuto extends Examen {
 
-	private final static int SEG_MIN = 90;
+	private final static int TIEMPO_MAXIMO_PERMITIDO = 90;
 	private Circuito circuito;
 	private Auto auto;
 
@@ -14,7 +14,7 @@ public class ExamenDeAuto extends Examen {
 
 	@Override
 	public boolean isAprobado() {
-		return this.circuito.isAprobado() && getTiempo() <= SEG_MIN;
+		return this.circuito.isAprobado() && getTiempo() <= TIEMPO_MAXIMO_PERMITIDO;
 	}
 
 	public double getTiempo() {
