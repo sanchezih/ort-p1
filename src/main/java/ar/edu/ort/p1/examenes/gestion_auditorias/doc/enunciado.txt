@@ -60,15 +60,17 @@ indicando la diferencia en dias con la fecha de hoy. Modelarlo en el diagrama de
 clases y no explotarlo.
 
 Basado en el enunciado descripto, realiza:
-A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
-metodos.
-B) El metodo obtenerCantObservacionesExternas() que tiene un area.
-C) El metodo estaVencida() que permita determinar cuando una observacion esta
-vencida de acuerdo a los criterios citados.
-D) El metodo obtenerObservacionesVencidas() que debera devolver, no mostrar por
-consola, la lista de observaciones que estan vencidas.
-E) El metodo getNivelCriticidad() que permita calcular para cualquier elemento
-auditable (Sistema o Proceso) su nivel de criticidad para el negocio.
-F) El metodo mostrarObservacionesCriticas() que muestre por consola el titulo,
-descripcion y el nombre, apellido y legajo del auditor de las observaciones cuyo
-nivel de criticidad de su elemento auditable sea mayor a 1.
+	A) 	El diagrama de clases que lo modelice, con sus relaciones, atributos y
+		metodos.
+	B) 	El metodo obtenerCantObservacionesExternas() que tiene un area.
+	C) 	El metodo estaVencida() que permita determinar cuando una observacion
+		esta vencida de acuerdo a los criterios citados.
+	D) 	El metodo obtenerObservacionesVencidas() que debera devolver, no mostrar
+		por consola, la lista de observaciones que estan vencidas.
+	E) 	El metodo getNivelCriticidad() que permita calcular para cualquier
+		elemento auditable (Sistema o Proceso) su nivel de criticidad para el
+		negocio.
+	F) 	El metodo mostrarObservacionesCriticas() que muestre por consola el
+		titulo, descripcion y el nombre, apellido y legajo del auditor de las
+		observaciones cuyo nivel de criticidad de su elemento auditable sea
+		mayor a 1.
