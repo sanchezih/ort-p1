@@ -1,16 +1,16 @@
-package ar.edu.ort.p1.unidades.u5.practico05.ej03_imprimir_documentos.src;
-
-import ar.edu.ort.tp1.u5.tda.Cola;
-import ar.edu.ort.tp1.u5.tda.nodos.ColaNodos;
+package ar.edu.ort.p1.unidades.u5.practico05.ej03_impresora.src;
 
 public class Impresora {
+
 	private boolean estaEncendida;
 	private int cantHojasDisp;
-	private Cola<Documento> colaDocs = new ColaNodos<>();
+	private ColaDeDocumentos colaDocs;
+
 
 	public Impresora(boolean estaEncendida, int cantHojasDisp) {
 		this.estaEncendida = estaEncendida;
 		this.cantHojasDisp = cantHojasDisp;
+		this.colaDocs = new ColaDeDocumentos();
 	}
 
 	public boolean isEstaEncendida() {

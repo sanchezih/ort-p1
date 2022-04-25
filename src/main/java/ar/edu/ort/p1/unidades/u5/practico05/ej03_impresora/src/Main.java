@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.practico05.ej03_imprimir_documentos.src;
+package ar.edu.ort.p1.unidades.u5.practico05.ej03_impresora.src;
 
 public class Main {
 
