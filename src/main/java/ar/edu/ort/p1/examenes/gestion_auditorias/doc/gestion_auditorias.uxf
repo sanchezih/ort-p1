@@ -1,10 +1,10 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>230</y><w>330</w><h>150</h></coordinates><panel_attributes>Area
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>36</x><y>223</y><w>315</w><h>135</h></coordinates><panel_attributes>Area
 --
 -nombre: String
 -cantEmpleados: int
 --
 +obtenerCantObservacionesExternas(): int
-+obtenerObservacionesVencidas():ArrayList&lt;Observacion&gt;
++obtenerObservacionesVencidas(): ArrayList&lt;Observacion&gt;
 +mostrarObservacionesCriticas(): void
 -buscarObservacion(String): Observacion
 
@@ -12,7 +12,7 @@
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>230</y><w>260</w><h>150</h></coordinates><panel_attributes>/Observacion/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>223</y><w>234</w><h>135</h></coordinates><panel_attributes>/Observacion/
 --
 _-NIVEL_CRITICO: int = 1_
 -titulo: String
@@ -23,32 +23,32 @@ _-NIVEL_CRITICO: int = 1_
 +mostrar(): void
 #buscarCompromisoVencido(): Compromiso
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>290</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>277</y><w>135</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
--observaciones</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>470</y><w>220</w><h>120</h></coordinates><panel_attributes>ObservacionInterna
+-observaciones</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>369</x><y>439</y><w>198</w><h>108</h></coordinates><panel_attributes>ObservacionInterna
 --
 -enRevision: boolean
 _-CANT_DIAS_MAX:int = 90_
 --
 +estaVencida(): boolean
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>470</y><w>220</w><h>120</h></coordinates><panel_attributes>ObservacionExterna
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>439</y><w>198</w><h>108</h></coordinates><panel_attributes>ObservacionExterna
 --
 -nombreConsultora: String
 _-CANT_DIAS_MAX:int = 60_
 --
 +estaVencida():boolean
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>370</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>370</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>40</y><w>210</w><h>90</h></coordinates><panel_attributes>Compromiso
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>349</y><w>135</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>349</y><w>135</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>558</x><y>52</y><w>189</w><h>81</h></coordinates><panel_attributes>Compromiso
 --
 -descripcion: String
 --
 +getFechaCompromiso(): Fecha
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>120</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>124</y><w>99</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
 m1=1..*
--compromisos</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>30</y><w>220</w><h>120</h></coordinates><panel_attributes>Empleado
+-compromisos</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>171</x><y>43</y><w>198</w><h>108</h></coordinates><panel_attributes>Empleado
 --
 -nombre: String
 -apellido: String
@@ -56,26 +56,26 @@ m1=1..*
 --
 +mostrar(): void
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>221</x><y>140</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>142</y><w>90</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--responsable</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>100</y><w>190</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+-responsable</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>106</y><w>171</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--auditor</panel_attributes><additional_attributes>10;20;170;20;170;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1040</x><y>300</y><w>150</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+-auditor</panel_attributes><additional_attributes>10;20;170;20;170;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>963</x><y>286</y><w>135</w><h>72</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 /Auditable/
 --
-/+getNivelCriticidad():int/
+/+getNivelCriticidad(): int/
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>470</y><w>220</w><h>120</h></coordinates><panel_attributes>Sistema
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>819</x><y>439</y><w>198</w><h>108</h></coordinates><panel_attributes>Sistema
 --
 _-MAX_CANT_USUARIOS: int = 500_
 -nombre: String
 -poseeDatosClientes: boolean
 -cantUsuarios: int
 --
-+getNivelCriticidad():int
++getNivelCriticidad(): int
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1120</x><y>470</y><w>220</w><h>120</h></coordinates><panel_attributes>Proceso
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1035</x><y>439</y><w>198</w><h>108</h></coordinates><panel_attributes>Proceso
 --
 _-MAX_CANT_ACTIVIDADES: int = 7_
 -codigo: String
@@ -83,20 +83,20 @@ _-MAX_CANT_ACTIVIDADES: int = 7_
 -impactaCliente: boolean
 -afectaPatrimonioCompania: boolean
 --
-+getNivelCriticidad():int
++getNivelCriticidad(): int
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>370</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;140;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>370</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>340</y><w>330</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>349</y><w>144</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;140;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1017</x><y>349</y><w>135</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>684</x><y>322</y><w>297</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--auditable</panel_attributes><additional_attributes>310;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>170</y><w>100</w><h>120</h></coordinates><panel_attributes>Fecha
+-auditable</panel_attributes><additional_attributes>310;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>801</x><y>169</y><w>198</w><h>108</h></coordinates><panel_attributes>Fecha
 --
 -dia: int
 -mes: int
 -anio: int
 --
-+restar():int
++getCantidadDiasHastaHoy(): int
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>250</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>684</x><y>241</y><w>135</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--fechaAlta</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>90</y><w>240</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+-fechaAlta</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>738</x><y>88</y><w>153</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--fechaCompromiso</panel_attributes><additional_attributes>120;80;120;10;10;10</additional_attributes></element></diagram>
+-fechaCompromiso</panel_attributes><additional_attributes>120;90;120;20;10;20</additional_attributes></element></diagram>
