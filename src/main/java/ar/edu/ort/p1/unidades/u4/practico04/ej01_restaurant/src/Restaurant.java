@@ -23,9 +23,11 @@ public class Restaurant {
 	 * muestre por consola) el monto total de pedidos que tomo cada cajero.
 	 */
 	public double[] montosPorCajero() {
+
 		int cantPedidos = this.pedidos.size();
 		double[] montos;
-		montos = new double[cantPedidos];
+		montos = new double[CANT_CAJEROS];
+
 		for (int p = 0; p < cantPedidos; p++) {
 			Pedido pedido = this.pedidos.get(p);
 			montos[pedido.getIdCajero()] += pedido.getMonto();
