@@ -1,0 +1,61 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>496</x><y>205</y><w>210</w><h>100</h></coordinates><panel_attributes>/Componente/
+--
+-texto: String
+-color: String
+-habilitado: boolean
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>796</x><y>245</y><w>210</w><h>70</h></coordinates><panel_attributes>Posicion
+--
+-x: int
+-y: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>696</x><y>265</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-posicion</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>796</x><y>155</y><w>210</w><h>70</h></coordinates><panel_attributes>Tamanio
+--
+-ancho: int
+-alto: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>676</x><y>155</y><w>140</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tamanio</panel_attributes><additional_attributes>120;20;10;20;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>496</x><y>45</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Dibujable/
+-
+/+dibujar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>596</x><y>105</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>846</x><y>395</y><w>210</w><h>110</h></coordinates><panel_attributes>Etiqueta
+-
+-fuente: String
+-
++dibujar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>596</x><y>295</y><w>380</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;360;60;360;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>616</x><y>395</y><w>210</w><h>110</h></coordinates><panel_attributes>Boton
+-
+
+-
++dibujar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>596</x><y>295</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>386</x><y>395</y><w>210</w><h>110</h></coordinates><panel_attributes>CampoDeTexto
+-
+-multitexto: boolean
+-cursorActivo: boolean
+-
++activarCursor(): void
++dibujar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>295</y><w>140</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;120;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>86</x><y>395</y><w>280</w><h>110</h></coordinates><panel_attributes>Ventana
+-
+-hayCursorActivo: boolean
+-
++dibujar(): void
++agregar(Componente): boolean
+-activarAlgunCursor(Componente): void
+-chequearCursorActivo(Componente): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>226</x><y>295</y><w>400</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;380;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>176</x><y>235</y><w>340</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-componentes</panel_attributes><additional_attributes>320;20;10;20;10;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>46</x><y>575</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+-
+_+MINIMIZADA_
+_+MAXIMIZADA_
+_+CERRADA_
+_+ABIERTA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>156</x><y>495</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-estado</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>286</x><y>575</y><w>210</w><h>110</h></coordinates><panel_attributes>VentanaDeError
+--
+
+-
++VentanaDeError(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>326</x><y>495</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>495</y><w>270</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-botonAceptar</panel_attributes><additional_attributes>240;10;240;110;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>495</y><w>500</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-etiquetaError</panel_attributes><additional_attributes>470;10;470;160;10;160</additional_attributes></element></diagram>
