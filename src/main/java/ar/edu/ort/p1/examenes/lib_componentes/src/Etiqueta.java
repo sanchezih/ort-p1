@@ -4,15 +4,26 @@ public class Etiqueta extends Componente {
 
 	private String fuente;
 
+	public Etiqueta(String texto, String color, boolean hablitiado, Tamanio tamanio, Posicion posicion, String fuente) {
+		super(texto, color, hablitiado, tamanio, posicion);
+		this.fuente = fuente;
+	}
+
+	public String getFuente() {
+		return fuente;
+	}
+
+	public void setFuente(String fuente) {
+		this.fuente = fuente;
+	}
+
 	/**
-	 * El método dibujar() que debe mostrar por consola los siguientes datos: En el
-	 * caso de una etiqueta: “Dibujando Etiqueta con el texto XXX con fuente XXX”
-	 * 
+	 * Ejercicio B3: En el caso de una etiqueta: "Dibujando Etiqueta con el texto
+	 * XXX con fuente XXX"
 	 */
 	@Override
 	public void dibujar() {
-		// TODO Auto-generated method stub
-
+		System.out.println("Dibujando Etiqueta con el texto " + getTexto() + " con fuente " + getFuente());
 	}
 
 }

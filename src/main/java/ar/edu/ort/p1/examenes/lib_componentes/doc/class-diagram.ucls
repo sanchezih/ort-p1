@@ -4,7 +4,7 @@
   <interface id="1" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Dibujable" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Dibujable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="198" x="41" y="441"/>    
+    <position height="-1" width="-1" x="585" y="129"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <enumeration id="2" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Estado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Estado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="198" x="398" y="248"/>    
+    <position height="-1" width="-1" x="314" y="788"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Boton" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Boton.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="198" x="993" y="441"/>    
+    <position height="-1" width="-1" x="1094" y="492"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.CampoDeTexto" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/CampoDeTexto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="198" x="755" y="441"/>    
+    <position height="-1" width="-1" x="710" y="528"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,7 +44,7 @@
   <class id="5" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Etiqueta" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Etiqueta.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="198" x="1231" y="441"/>    
+    <position height="-1" width="-1" x="1478" y="519"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -54,7 +54,7 @@
   <class id="6" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Componente" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Componente.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="198" x="636" y="248"/>    
+    <position height="-1" width="-1" x="927" y="205"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -64,7 +64,7 @@
   <class id="7" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Tamanio" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Tamanio.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="198" x="279" y="441"/>    
+    <position height="-1" width="-1" x="1443" y="105"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -74,7 +74,7 @@
   <class id="8" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Ventana" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Ventana.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="227" x="636" y="37"/>    
+    <position height="-1" width="-1" x="314" y="537"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   <class id="9" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.Posicion" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/Posicion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="198" x="517" y="441"/>    
+    <position height="-1" width="-1" x="1441" y="313"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -94,7 +94,7 @@
   <class id="10" language="java" name="ar.edu.ort.p1.examenes.lib_componentes.src.VentanaDeError" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/lib_componentes/src/VentanaDeError.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="198" x="1112" y="248"/>    
+    <position height="-1" width="-1" x="857" y="812"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -105,70 +105,91 @@
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="6"/>  
   </generalization>  
-  <generalization id="12">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <association id="13">    
+  <association id="12">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="14" name="posicion"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="16">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="17" name="etiquetaError"/>      
-      <multiplicity id="18" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="19">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="20" name="tamanio"/>      
-      <multiplicity id="21" minimum="0" maximum="1"/>    
+      <attribute id="13" name="tamanio">        
+        <position height="0" width="0" x="430" y="-140"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="0" width="0" x="430" y="-140"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="22">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="23" name="estado"/>      
-      <multiplicity id="24" minimum="0" maximum="1"/>    
+  <association id="15">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="16" name="posicion">        
+        <position height="0" width="0" x="475" y="-68"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="0" width="0" x="475" y="-68"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="25">    
+  <generalization id="18">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="20">    
     <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="26" name="botonAceptar"/>      
-      <multiplicity id="27" minimum="0" maximum="1"/>    
+      <attribute id="21" name="botonAceptar"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="28">    
-    <end type="SOURCE" refId="4"/>    
+  <generalization id="23">    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="6"/>  
   </generalization>  
-  <association id="29">    
+  <generalization id="24">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="25">    
+    <bendpoint x="427" y="317"/>    
     <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="30" name="componentes"/>      
-      <multiplicity id="31" minimum="0" maximum="2147483647"/>    
+      <attribute id="26" name="componentes">        
+        <position height="0" width="0" x="-225" y="65"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-225" y="65"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="32">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <realization id="33">    
+  <association id="28">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="29" name="estado">        
+        <position height="0" width="0" x="-441" y="199"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-441" y="199"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="31">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
+  <association id="32">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="33" name="etiquetaError"/>      
+      <multiplicity id="34" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
