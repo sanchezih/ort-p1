@@ -21,9 +21,9 @@ public class CampoDeTexto extends Componente {
 	}
 
 	/**
-	 * Ejercicio B2: En el caso de un campo de texto: “Dibujando Campo de Texto XXX
-	 * que tiene el cursor ZZZ (donde XXX puede ser “multitexto” o “simple” y ZZZ
-	 * “activado” o “desactivado”)
+	 * Ejercicio B2: En el caso de un campo de texto: "Dibujando Campo de Texto XXX
+	 * que tiene el cursor ZZZ (donde XXX puede ser "multitexto" o "simple" y ZZZ
+	 * "activado" o "desactivado")
 	 */
 	@Override
 	public void dibujar() {
