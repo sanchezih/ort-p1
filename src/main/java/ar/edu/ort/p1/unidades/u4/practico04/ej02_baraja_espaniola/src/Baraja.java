@@ -3,6 +3,7 @@ package ar.edu.ort.p1.unidades.u4.practico04.ej02_baraja_espaniola.src;
 import java.util.Random;
 
 public class Baraja {
+
 	private static final int CANT_CARTAS = 48;
 	private Carta[] cartas = new Carta[CANT_CARTAS];
 
@@ -10,6 +11,19 @@ public class Baraja {
 		inicializarBaraja();
 	}
 
+	/**
+	 * Dada una baraja de cartas espaniolas sin comodines, de las que se sabe, de
+	 * cada una, su numero y palo, desarrollar el metodo estaOrdenada en la clase
+	 * Baraja que permita retornar si las cartas se encuentran ordenadas tal como se
+	 * ilustra en la figura.
+	 * 
+	 * Ayuda: Recorda que los palos se pueden enumerar. Los enumerados tienen
+	 * metodos utiles que podran ayudarte a resolver el problema.
+	 * 
+	 * https://www.youtube.com/watch?v=-Q1f3eCPsfY
+	 * 
+	 * @return
+	 */
 	public boolean estaOrdenada() {
 		boolean estaOrdenada = true;
 		int idxPalo = 0;
@@ -38,6 +52,8 @@ public class Baraja {
 
 	/*----------------------------------------------------------------------------*/
 
+	// Metodos complementarios
+
 	private void inicializarBaraja() {
 		int i = 0;
 		for (Palo p : Palo.values()) {
@@ -46,10 +62,9 @@ public class Baraja {
 				i++;
 			}
 		}
-		mezclarBaraja();
 	}
 
-	private void mezclarBaraja() {
+	public void mezclarBaraja() {
 		Random random = new Random();
 		for (int i = 0; i < cartas.length; i++) {
 			int randomIndexToSwap = random.nextInt(cartas.length);
