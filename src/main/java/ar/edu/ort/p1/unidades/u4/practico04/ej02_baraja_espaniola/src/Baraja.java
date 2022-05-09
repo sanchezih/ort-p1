@@ -72,5 +72,6 @@ public class Baraja {
 			cartas[randomIndexToSwap] = cartas[i];
 			cartas[i] = temp;
 		}
+		System.out.println("-> La baraja ahora esta mezclada");
 	}
 }
