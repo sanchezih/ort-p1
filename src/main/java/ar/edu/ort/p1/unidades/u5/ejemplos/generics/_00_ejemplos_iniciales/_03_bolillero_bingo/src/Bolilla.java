@@ -1,6 +1,7 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._04_bolillero_bingo.src;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._03_bolillero_bingo.src;
 
 public class Bolilla {
+
 	private int numero;
 
 	public Bolilla(int numero) {

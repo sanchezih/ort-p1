@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_generico;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._04_sorteador_generico;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,6 +1,6 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_generico;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._04_sorteador_generico;
 
-public class SorteadorGenericoTest {
+public class Main {
 
 	public static void main(String[] args) {
 		SorteadorGenerico<String> sorteador = new SorteadorGenerico<String>();

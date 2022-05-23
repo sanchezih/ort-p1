@@ -25,9 +25,9 @@ public class ListadorDeArrayLists {
 	}
 
 	// Tener en cuenta:
-	// 1. Al hacer esto, dentro del metodo no podremos acceder a los m�todos propios
+	// 1. Al hacer esto, dentro del metodo no podremos acceder a los metodos propios
 	// del elemento manipulado.
-	// 2. Si tuvi�semos que devolver un elemento, el tipo declarado no puede ser
+	// 2. Si tuviesemos que devolver un elemento, el tipo declarado no puede ser
 	// otro que Object.
 
 	private static void listarElementosConForEach(ArrayList<?> lista) {
