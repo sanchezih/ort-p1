@@ -3,6 +3,7 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._01_s
 public class Main {
 
 	public static void main(String[] args) {
+		
 		SorteadorDeStrings sorteador = new SorteadorDeStrings();
 
 		System.out.println("El sorteador de Strings esta vacio? -> " + sorteador.isEmpty());
