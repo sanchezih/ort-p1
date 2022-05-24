@@ -10,16 +10,17 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/******* PROGRAMACION GENERICA *******/
+		/****** PROGRAMACION GENERICA ******/
 
-		/* Ejemplo con objetos de tipo String */
-		String nombres[] = { "Azul", "Verde", "Naranja" };
+		// Pruebo los metodos genericos con un array de String
+		String nombres[] = { "Verde", "Azul", "Naranja" };
 		System.out.println(MisMatrices.getElementos(nombres));
-		System.out.println(MisMatrices.getElementoMenor(nombres));
+		System.out.println("El elemento menor del array de String es " + MisMatrices.getElementoMenor(nombres));
+		System.out.println();
 
-		/* Ejemplo con objetos de tipo Empleado */
+		/*----------------------------------------------------------------------------*/
 
-		// Creo una serie de empleados
+		// Pruebo los metodos genericos con un array de Empleado
 		Empleado e1 = new Empleado("Ana");
 		Empleado e2 = new Empleado("Luis");
 		Empleado e3 = new Empleado("Ruben");
@@ -28,13 +29,23 @@ public class Main {
 		Empleado empleados[] = { e1, e2, e3, e4 };
 		System.out.println(MisMatrices.getElementos(empleados));
 
-		/* Ejemplo con objetos de tipo Integer */
+		/*
+		 * Solo podremos usar el metodo getElementoMenor si le pasamos como parametro un
+		 * array de elementos que implementen la interface Comparable
+		 */
+		// System.out.println(MisMatrices.getElementoMenor(empleados));
+
+		System.out.println();
+
+		/*----------------------------------------------------------------------------*/
+
+		// Pruebo los metodos genericos con un array de Integer
 		Integer int1 = Integer.valueOf(1010);
-		Integer int2 = Integer.valueOf(569);
+		Integer int2 = Integer.valueOf(91);
 		Integer int3 = Integer.valueOf(420);
 
 		Integer enteros[] = { int1, int2, int3 };
-		System.out.println(MisMatrices.getElementoMenor(enteros));
+		System.out.println("El elemento menor del array de Integer es " + MisMatrices.getElementoMenor(enteros));
 
 	}
 
