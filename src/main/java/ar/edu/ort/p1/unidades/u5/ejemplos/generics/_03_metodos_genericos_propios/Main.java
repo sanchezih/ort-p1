@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos_propios;
 
 /**
  * https://www.youtube.com/watch?v=7Ip_N1fbOmQ
@@ -10,12 +10,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/****** PROGRAMACION GENERICA ******/
-
 		// Pruebo los metodos genericos con un array de String
 		String nombres[] = { "Verde", "Azul", "Naranja" };
-		System.out.println(MisMatrices.getElementos(nombres));
-		System.out.println("El elemento menor del array de String es " + MisMatrices.getElementoMenor(nombres));
+		System.out.println(MetodosGen.getElementos(nombres));
+		System.out.println("El elemento menor del array de String es " + MetodosGen.getElementoMenor(nombres));
 		System.out.println();
 
 		/*----------------------------------------------------------------------------*/
@@ -27,7 +25,7 @@ public class Main {
 		Empleado e4 = new Empleado("Manuel");
 
 		Empleado empleados[] = { e1, e2, e3, e4 };
-		System.out.println(MisMatrices.getElementos(empleados));
+		System.out.println(MetodosGen.getElementos(empleados));
 
 		/*
 		 * Solo podremos usar el metodo getElementoMenor si le pasamos como parametro un
@@ -45,7 +43,7 @@ public class Main {
 		Integer int3 = Integer.valueOf(420);
 
 		Integer enteros[] = { int1, int2, int3 };
-		System.out.println("El elemento menor del array de Integer es " + MisMatrices.getElementoMenor(enteros));
+		System.out.println("El elemento menor del array de Integer es " + MetodosGen.getElementoMenor(enteros));
 
 	}
 

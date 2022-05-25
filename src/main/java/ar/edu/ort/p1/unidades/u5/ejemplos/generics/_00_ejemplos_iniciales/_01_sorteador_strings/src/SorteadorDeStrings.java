@@ -6,11 +6,12 @@ import java.util.Random;
 public class SorteadorDeStrings {
 
 	private ArrayList<String> elementos;
-	private Random r;
+	private Random random;
 
+	// Constructor
 	public SorteadorDeStrings() {
 		this.elementos = new ArrayList<String>();
-		this.r = new Random();
+		this.random = new Random();
 	}
 
 	public void add(String elemento) {
@@ -26,6 +27,6 @@ public class SorteadorDeStrings {
 	}
 
 	private int posRandom() {
-		return r.nextInt(this.elementos.size());
+		return random.nextInt(this.elementos.size());
 	}
 }

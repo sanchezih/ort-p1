@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._02_sorteador_objects;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_objects;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,11 +6,12 @@ import java.util.Random;
 public class SorteadorDeObjects {
 
 	private ArrayList<Object> elementos;
-	private Random r;
+	private Random random;
 
+	// Constructor
 	public SorteadorDeObjects() {
 		this.elementos = new ArrayList<Object>();
-		this.r = new Random();
+		this.random = new Random();
 	}
 
 	public void add(Object elemento) {
@@ -26,6 +27,6 @@ public class SorteadorDeObjects {
 	}
 
 	private int posRandom() {
-		return r.nextInt(this.elementos.size());
+		return random.nextInt(this.elementos.size());
 	}
 }

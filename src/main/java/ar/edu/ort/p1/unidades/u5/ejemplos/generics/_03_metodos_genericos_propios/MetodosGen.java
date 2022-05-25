@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos_propios;
 
 /**
  * Los metodos genericos no tienen que estar necesariamente creados en clases
@@ -7,7 +7,7 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos;
  * @author ihsanch
  *
  */
-public class MisMatrices {
+public class MetodosGen {
 
 	/**
 	 * Metodo estatico (de clase) que devuelve un String que nos indicara la

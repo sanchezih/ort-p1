@@ -22,7 +22,7 @@ public class SorteadorGenerico<T> {
 		return this.elementos.isEmpty();
 	}
 
-	public Object remove() {
+	public T remove() {
 		return this.elementos.remove(posRandom());
 	}
 

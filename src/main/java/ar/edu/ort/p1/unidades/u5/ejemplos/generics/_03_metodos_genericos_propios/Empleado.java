@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._03_metodos_genericos_propios;
 
 public class Empleado {
 
