@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.ReparacionVereda" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/ReparacionVereda.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="310" x="42" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" 
+    name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.ListaContactosPorDocumento" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/ListaContactosPorDocumento.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="310" x="82" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Solicitud" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Solicitud.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="310" x="723" y="868"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Poda" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Poda.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="310" x="1113" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Municipalidad" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Municipalidad.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="310" x="763" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.PilaDeContactos" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/PilaDeContactos.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="310" x="432" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Contacto" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Contacto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="310" x="453" y="585"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Valorable" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Valorable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="310" x="763" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="9" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Mes" 
+    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Mes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="310" x="723" y="1452"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="10" language="java" name="ar.edu.ort.p1.examenes.ds.municipalidad_solicitudes.src.Fecha" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/municipalidad_solicitudes/src/Fecha.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="261" width="310" x="392" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="13">    
+    <bendpoint x="732" y="1151"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <dependency id="15">    
+    <bendpoint x="772" y="428"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="16">    
+    <bendpoint x="51" y="428"/>    
+    <bendpoint x="51" y="585"/>    
+    <bendpoint x="51" y="868"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="17">    
+    <bendpoint x="1063" y="428"/>    
+    <bendpoint x="1063" y="585"/>    
+    <bendpoint x="1063" y="868"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="18">    
+    <bendpoint x="793" y="428"/>    
+    <bendpoint x="793" y="585"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="19">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="20" name="contactos">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="24">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="25" name="fecha">        
+        <position height="0" width="0" x="354" y="-81"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="1">        
+        <position height="0" width="0" x="354" y="-81"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="28" name="solicitud">        
+        <position height="0" width="0" x="484" y="-498"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="484" y="-498"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="31" name="mes">        
+        <position height="0" width="0" x="349" y="-51"/>      
+      </attribute>      
+      <multiplicity id="32" minimum="0" maximum="1">        
+        <position height="0" width="0" x="349" y="-51"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="33">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
