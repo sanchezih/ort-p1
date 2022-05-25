@@ -1,10 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej01_libros_dvds.src;
 
-import ar.edu.ort.p1.util.tda.PilaGenericaAL;
-import ar.edu.ort.tp1.u5.tda.Pila;
-import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
-
 public class Empleado {
+
 	private String nombre;
 
 	public Empleado(String nombre) {
@@ -20,10 +17,16 @@ public class Empleado {
 		this.nombre = nombre;
 	}
 
-	// Siempre trabajaremos con las interfaces, salvo cuando tengamos que instanciar
-	public int cantDVDsRayados(Pila<DVD> pilaDVDs) {
-		
-		Pila<DVD> pilaAux = new PilaGenericaAL<DVD>(); /* Hago upcasting y utilizo otra impl de pila */
+	/**
+	 * Ejercicio B: La explotacion del metodo cantDVDsRayados que reciba por
+	 * parametro una pila de DVDs y devuelva la cantidad de DVDs rayados que haya
+	 * 
+	 * @param pilaDVDs
+	 * @return
+	 */
+	public int cantDVDsRayados(PilaDeDVDs pilaDVDs) {
+
+		PilaDeDVDs pilaAux = new PilaDeDVDs();
 		int cantRayados = 0;
 
 		while (!pilaDVDs.isEmpty()) {
@@ -39,10 +42,17 @@ public class Empleado {
 		return cantRayados;
 	}
 
-	// Siempre trabajaremos con las interfaces, salvo cuando tengamos que instanciar
-	public double paginasPromedio(Pila<Libro> pilaLibros) {
-		
-		Pila<Libro> pilaAux = new PilaNodos<Libro>(); // upcasting
+	/**
+	 * Ejercicio C: La explotacion del metodo paginasPromedio que reciba por
+	 * parametro una pila de libros y devuelva el promedio de cantidad de hojas
+	 * entre todos ellos.
+	 * 
+	 * @param pilaLibros
+	 * @return
+	 */
+	public double paginasPromedio(PilaDeLibros pilaLibros) {
+
+		PilaDeLibros pilaAux = new PilaDeLibros();
 		int cantLibros = 0;
 		int acuPaginas = 0;
 		double promedio = 0;
@@ -62,7 +72,6 @@ public class Empleado {
 			promedio = acuPaginas / (double) cantLibros;
 		}
 		return promedio;
-
 	}
 
 }
