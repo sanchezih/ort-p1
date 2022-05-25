@@ -4,20 +4,20 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Documento doc1 = new Documento("2021-05-18", 4);
-		Documento doc2 = new Documento("2021-05-18", 3);
+		Documento doc1 = new Documento("2021-05-18", 5, true); // Consume 3 hojas
+		Documento doc2 = new Documento("2021-05-18", 4, false); // Consume 4 hojas
 
 		/*----------------------------------------------------------------------------*/
 
 		Impresora impresora = new Impresora(true, 10);
-
+		System.out.println("La impresora tiene " + impresora.getCantHojasDisp() + " hojas disponibles");
+		
 		impresora.agregarDocumento(doc1);
 		impresora.agregarDocumento(doc2);
-
-		impresora.imprimir(false);
-
-		System.out.println(impresora.getCantHojasDisp());
-
+		
+		impresora.imprimir();
+		
+		System.out.println("La impresora tiene " + impresora.getCantHojasDisp() + " hojas disponibles");
 	}
 
 }
