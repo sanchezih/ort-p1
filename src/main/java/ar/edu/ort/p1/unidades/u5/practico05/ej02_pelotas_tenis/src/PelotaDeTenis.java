@@ -11,6 +11,14 @@ public class PelotaDeTenis {
 		this.setEstado(Estado.NUEVA);
 	}
 
+	public Estado getEstado() {
+		return estado;
+	}
+
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
+
 	public void usar() {
 		this.cantUsos++;
 		actualizarEstado();
@@ -22,14 +30,6 @@ public class PelotaDeTenis {
 		} else {
 			this.setEstado(Estado.GASTADA);
 		}
-	}
-
-	public Estado getEstado() {
-		return estado;
-	}
-
-	public void setEstado(Estado estado) {
-		this.estado = estado;
 	}
 
 }

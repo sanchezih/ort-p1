@@ -3,7 +3,6 @@ package ar.edu.ort.p1.unidades.u5.practico05.ej02_pelotas_tenis.src;
 import ar.edu.ort.tp1.u5.tda.Pila;
 import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
 
-
 public class TuboPelotasDeTenis extends PilaNodos<PelotaDeTenis> {
 
 	public final static int MAX_PELOTAS = 3;
@@ -14,8 +13,9 @@ public class TuboPelotasDeTenis extends PilaNodos<PelotaDeTenis> {
 
 	public boolean hayAlgunaPelotaUsada() {
 		boolean hayAlguna = false;
-		Pila<PelotaDeTenis> pilaAux;
-		pilaAux = new PilaNodos<PelotaDeTenis>();
+		
+		Pila<PelotaDeTenis> pilaAux; // Recordar trabajar con interfaces
+		pilaAux = new PilaNodos<PelotaDeTenis>(); // Instanciar clases concretas
 
 		while (!isEmpty() && !hayAlguna) {
 			PelotaDeTenis pelota = this.pop();

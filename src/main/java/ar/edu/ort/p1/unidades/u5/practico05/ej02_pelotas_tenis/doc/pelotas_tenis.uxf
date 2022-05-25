@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>450</y><w>210</w><h>140</h></coordinates><panel_attributes>PelotaDeTenis
+--
+_+USOS_HASTA_GASTADA: int = 7_
+-cantUsos: int
+--
++PelotaDeTenis()
++usar(): void
+-actualizarEstado(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>230</y><w>280</w><h>130</h></coordinates><panel_attributes>TuboPelotasDeTenis
+--
+_+MAX_PELOTAS: int = 3_
+
+--
++hayAlgunaPelotaUsada(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>80</y><w>280</w><h>100</h></coordinates><panel_attributes>ClubDeTenis
+--
+
+--
+_+esTuboUsado(TuboPelotasDeTenis): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>450</y><w>130</w><h>140</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+_+NUEVA_
+_+USADA_
+_+GASTADA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>480</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-estado</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>300</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>300</y><w>80</w><h>170</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;150;10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>350</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>170</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>230</y><w>210</w><h>130</h></coordinates><panel_attributes>PilaNodos&lt;T&gt;
+--
+
+--
++PilaNodos()
++PilaNodos(int)
++peek(): T
++pop(): T
++push(T): void
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
