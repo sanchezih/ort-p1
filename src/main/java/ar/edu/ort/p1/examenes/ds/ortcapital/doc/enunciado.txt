@@ -1,15 +1,37 @@
-OrtCapital nos pide desarrollar un procesador bursátil para asignar las solicitudes de compra y venta de títulos a sus agentes de bolsa.
-El procesador bursátil tendrá siempre 30 agentes de bolsa los cuales podrán atender como máximo 30 solicitudes cada uno y las irán resolviendo en orden de llegada.
-De los agentes de bolsa nos interesa tener registrado su nombre, apellido, DNI y número de matrícula de la CNV (Comisión Nacional de Valores). Todas las solicitudes son realizadas por personas que tienen un nombre, apellido y DNI, las cuales tendrán un número de solicitud, el título con el que desea transaccionar, la cantidad y  el precio ofertado en pesos. 
-Los títulos pueden ser bonos, acciones o letras y además tienen un código, un nombre y un precio en pesos. 
+OrtCapital nos pide desarrollar un procesador bursatil para asignar las
+solicitudes de compra y venta de titulos a sus agentes de bolsa.
+El procesador bursatil tendra siempre 30 agentes de bolsa los cuales podran
+atender como maximo 30 solicitudes cada uno y las iran resolviendo en orden de
+llegada.
+De los agentes de bolsa nos interesa tener registrado su nombre, apellido, DNI y
+numero de matricula de la CNV (Comision Nacional de Valores). Todas las
+solicitudes son realizadas por personas que tienen un nombre, apellido y DNI,
+las cuales tendran un numero de solicitud, el titulo con el que desea
+transaccionar, la cantidad y  el precio ofertado en pesos. 
+Los titulos pueden ser bonos, acciones o letras y ademas tienen un codigo, un
+nombre y un precio en pesos. 
 
 
-Es importante destacar que las solicitudes pueden ser de compra o de venta y para evaluar si estas se pueden concretar se debe tener presente la siguiente lógica:
-Las solicitudes de compra se pueden concretar si el precio ofertado es, al menos, un 10%  mayor al precio del título.
-Las solicitudes de venta se pueden concretar siempre que el precio ofertado sea menor o igual al precio del título, pero si el tipo de título que se desea vender es un bono, entonces el ente regulador nos exige que el monto de la operación no supere los 10.000.000 de pesos.
+Es importante destacar que las solicitudes pueden ser de compra o de venta y
+para evaluar si estas se pueden concretar se debe tener presente la siguiente
+logica:
+Las solicitudes de compra se pueden concretar si el precio ofertado es, al
+menos, un 10%  mayor al precio del titulo.
+Las solicitudes de venta se pueden concretar siempre que el precio ofertado sea
+menor o igual al precio del titulo, pero si el tipo de titulo que se desea
+vender es un bono, entonces el ente regulador nos exige que el monto de la
+operacion no supere los 10.000.000 de pesos.
 
 Basado en el enunciado descripto, realizar:
-A) El diagrama de clases que lo modelice, con sus relaciones, atributos y métodos.
-B) El método ingresar del procesador bursátil que recibirá como parámetro una solicitud y se encargará de asignar la solicitud al primer agente que pueda tomar solicitudes, siempre y cuando la solicitud esté en condiciones de poder ser concretada.
-C) El método cantSolicitudesPorAgenteyTipoDeTitulo que debe devolver (no mostrar por consola) la cantidad de solicitudes que hay por agente de bolsa y tipo de título.
-D) El método listarSolicitudesDeCompra que debe devolver (no mostrar por consola) una lista de todas las solicitudes de compra ordenadas por precio ofertado.
+    A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
+       metodos.
+    B) El metodo ingresar del procesador bursatil que recibira como parametro
+       una solicitud y se encargara de asignar la solicitud al primer agente que
+       pueda tomar solicitudes, siempre y cuando la solicitud este en
+       condiciones de poder ser concretada.
+    C) El metodo cantSolicitudesPorAgenteyTipoDeTitulo que debe devolver (no
+       mostrar por consola) la cantidad de solicitudes que hay por agente de
+       bolsa y tipo de titulo.
+    D) El metodo listarSolicitudesDeCompra que debe devolver (no mostrar por
+       consola) una lista de todas las solicitudes de compra ordenadas por
+       precio ofertado.
