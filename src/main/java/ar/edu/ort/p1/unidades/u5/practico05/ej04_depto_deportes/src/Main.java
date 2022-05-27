@@ -4,8 +4,12 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Pelota p1=new Pelota("C001", TipoPelota.BASQUET);
+		
+
 		DepartamentoDeportes departamento = new DepartamentoDeportes();
+		
+		// Test ejercicio B
+	//	departamento.verPelotasEnTopes();
 
 	}
 
