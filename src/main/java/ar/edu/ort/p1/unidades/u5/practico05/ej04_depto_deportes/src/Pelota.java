@@ -19,9 +19,15 @@ public class Pelota {
 		return tipo;
 	}
 
+
+
 	@Override
 	public String toString() {
 		return "Pelota [codigo=" + codigo + ", tipo=" + tipo + "]";
+	}
+
+	public char getInicial() {
+		return this.getTipo().name().charAt(0);
 	}
 
 }
