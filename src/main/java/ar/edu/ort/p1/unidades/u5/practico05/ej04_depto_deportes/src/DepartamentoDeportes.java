@@ -106,7 +106,7 @@ public class DepartamentoDeportes {
 	/*----------------------------------------------------------------------------*/
 
 	/**
-	 * Ejercicio E: La explotacion del método pelotasPorTipo que retorne cuantas
+	 * Ejercicio E: La explotacion del metodo pelotasPorTipo que retorne cuantas
 	 * pelotas de cada tipo hay en cada pila.
 	 * 
 	 * @return

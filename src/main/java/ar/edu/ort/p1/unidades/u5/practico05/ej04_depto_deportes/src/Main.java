@@ -6,15 +6,24 @@ public class Main {
 
 		DepartamentoDeportes departamento = new DepartamentoDeportes();
 
-		
 		// Test ejercicio B
 		System.out.println("Ejercicio B: La pelotas actualmente visibles son:");
 		departamento.verPelotasEnTopes();
 
 		// Test ejercicio C
-		System.out.println("Ejercicio C: Agrego una nueva pelota:");
-		departamento.agregarPelota(new Pelota("PAgregada", TipoPelota.FUTBOL));
+		System.out.println(
+				"\nEjercicio C: Agrego una nueva pelota de voley en la primera pila que tenga lugar para alojarla:");
+		System.out.println(
+				"Se pudo agregar? -> " + departamento.agregarPelota(new Pelota("PAgregada", TipoPelota.VOLEY)));
 		departamento.dibujarPilas();
+
+		// Test ejercicio D
+		System.out.println(
+				"Ejercicio D: Busco la pelota con codigo PAgregada: " + departamento.buscarPelota("PAgregada"));
+
+		// Test ejercicio E
+		int[][] matrizPorTipo = departamento.pelotasPorTipo();
+
 	}
 
 }
