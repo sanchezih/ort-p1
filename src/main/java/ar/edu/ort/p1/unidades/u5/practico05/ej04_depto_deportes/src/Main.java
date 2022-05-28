@@ -6,6 +6,7 @@ public class Main {
 
 		DepartamentoDeportes departamento = new DepartamentoDeportes();
 
+		
 		// Test ejercicio B
 		System.out.println("Ejercicio B: La pelotas actualmente visibles son:");
 		departamento.verPelotasEnTopes();
