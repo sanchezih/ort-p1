@@ -38,9 +38,9 @@ m1=1
 
 --
 +compare(Alumno, Alumno): int
-+compareByKey(Integer, Alumno): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1220</x><y>398</y><w>210</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
++compareByKey(Integer, Alumno): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1220</x><y>398</y><w>170</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
-listaOrdenadaAlumnosPorEdad</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>398</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;120;70;120;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>538</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>468</y><w>210</w><h>100</h></coordinates><panel_attributes>Estadistica
+-listaDeAlumnosPorEdad</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>398</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;120;70;120;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>538</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>468</y><w>210</w><h>100</h></coordinates><panel_attributes>Estadistica
 --
 -nombre: String
 -promedioEdad: double
