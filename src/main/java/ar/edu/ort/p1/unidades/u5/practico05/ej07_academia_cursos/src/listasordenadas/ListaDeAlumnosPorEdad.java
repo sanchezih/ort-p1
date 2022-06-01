@@ -3,7 +3,7 @@ package ar.edu.ort.p1.unidades.u5.practico05.ej07_academia_cursos.src.listasorde
 import ar.edu.ort.p1.unidades.u5.practico05.ej07_academia_cursos.src.Alumno;
 import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
-public class ListaAlumnosPorEdad extends ListaOrdenadaNodos<Integer, Alumno> {
+public class ListaDeAlumnosPorEdad extends ListaOrdenadaNodos<Integer, Alumno> {
 
 	@Override
 	public int compare(Alumno a1, Alumno a2) {

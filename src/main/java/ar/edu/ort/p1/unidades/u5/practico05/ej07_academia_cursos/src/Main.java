@@ -35,30 +35,20 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		/**
-		 * La explotacion del metodo obtenerEstadistica, que reciba por parametro el
-		 * codigo de un curso y se retornen los siguientes datos: I. Nombre del curso.
-		 * II. Promedio de edad de los alumnos que posee.
-		 */
-
+		// Test ejercicio B
 		academia.mostrarLaEstadisticaDeUnCurso("c001");
+		academia.mostrarLaEstadisticaDeUnCurso("c003");
 
 		/*----------------------------------------------------------------------------*/
 
-		/**
-		 * La explotacion del metodo listadoDeCursosPorNivel, que retorne una lista de
-		 * cursos ordenados de menor a mayor nivel.
-		 */
+		// Test ejercicio C
 		academia.mostrarListaDeCursosOrdenadosDeMenorAMayorNivel();
 
 		/*----------------------------------------------------------------------------*/
 
-		/**
-		 * La explotacion del metodo top5AlumnosMasLongevos, de la clase Curso que
-		 * retorne a los 5 alumnos mas longevos (mayor edad) que posea (si no llega a 5,
-		 * devolver los que haya). Asumir que no hay edades repetidas.
-		 */
+		// Test ejercicio D
 		curso01.mostrarTop5AlumnosMasLongevos();
+		curso02.mostrarTop5AlumnosMasLongevos();
 	}
 
 }

@@ -4,9 +4,9 @@ public class Alumno {
 
 	private String dni;
 	private String nombre;
-	private int edad;
+	private Integer edad;
 
-	public Alumno(String dni, String nombre, int edad) {
+	public Alumno(String dni, String nombre, Integer edad) {
 		super();
 		this.dni = dni;
 		this.nombre = nombre;
@@ -29,11 +29,11 @@ public class Alumno {
 		this.nombre = nombre;
 	}
 
-	public int getEdad() {
+	public Integer getEdad() {
 		return edad;
 	}
 
-	public void setEdad(int edad) {
+	public void setEdad(Integer edad) {
 		this.edad = edad;
 	}
 
