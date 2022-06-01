@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src;
 
 public class OrdenYPrioridad {
+
 	private int orden;
 	private int prioridad;
 

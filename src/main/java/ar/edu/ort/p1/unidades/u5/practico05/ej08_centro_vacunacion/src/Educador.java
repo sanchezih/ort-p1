@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src;
 
 public class Educador extends Persona {
-	
+
 	private NivelEducacion nivelEducacion;
 
 	public Educador(String dni, String nombre, int edad, boolean pacRiesgo, NivelEducacion nivelEducacion) {
@@ -9,6 +9,7 @@ public class Educador extends Persona {
 		this.nivelEducacion = nivelEducacion;
 	}
 
+	@Override
 	public int getPrioridad() {
 		int prioridad = super.PRIORIDAD_MEDIA;
 		if ((super.getPrioridad() == super.PRIORIDAD_MAXIMA) || this.nivelEducacion == NivelEducacion.INICIAL) {

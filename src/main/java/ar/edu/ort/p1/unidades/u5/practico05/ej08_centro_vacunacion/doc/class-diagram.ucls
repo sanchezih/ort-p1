@@ -1,106 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Vacunable" 
-    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Vacunable.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1045" y="602"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="2" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Educador" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Educador.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="799" y="910"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Medico" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Medico.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="504" y="931"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="4" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.NivelEducacion" 
+  <class id="1" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.ColaDePersonas" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/NivelEducacion.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/ColaDePersonas.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1211" y="890"/>    
+    <position height="81" width="282" x="685" y="284"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.Educador" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/Educador.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="282" x="501" y="886"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" 
+    name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.ListaPersonasXPrioridadOrden" project="ort-p1" 
+    
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/ListaPersonasXPrioridadOrden.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="282" x="41" y="284"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.CentroVacunacion" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/CentroVacunacion.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="367" x="685" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="5" language="java" 
+    name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.NivelEducacion" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/NivelEducacion.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="282" x="501" y="1097"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="5" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.ColaDePersonas" 
+  <class id="6" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.PersonaEnCola" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/ColaDePersonas.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/PersonaEnCola.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="834" y="275"/>    
+    <position height="153" width="282" x="363" y="284"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.Persona" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/Persona.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="638" y="613"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" 
-    name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.ListaPersonasXPrioridadOrden" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/ListaPersonasXPrioridadOrden.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="937" y="114"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="8" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.CentroVacunacion" 
+  <interface id="7" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.Vacunable" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/CentroVacunacion.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/Vacunable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="359" y="136"/>    
+    <position height="135" width="282" x="823" y="886"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.Medico" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/Medico.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="282" x="179" y="886"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.PersonaEnCola" 
+  <class id="9" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.Persona" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/PersonaEnCola.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/Persona.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="244" y="468"/>    
+    <position height="369" width="282" x="685" y="477"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="ar.edu.ort.p1.u5.practico05.ej08_centro_vacunacion.src.OrdenYPrioridad" 
+  <class id="10" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej08_centro_vacunacion.src.OrdenYPrioridad" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/u5/practico05/ej08_centro_vacunacion/src/OrdenYPrioridad.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej08_centro_vacunacion/src/OrdenYPrioridad.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="242" y="719"/>    
+    <position height="189" width="282" x="202" y="477"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -109,80 +114,69 @@
   </class>  
   <generalization id="11">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="6"/>  
+    <end type="TARGET" refId="9"/>  
   </generalization>  
   <dependency id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <generalization id="13">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <association id="13">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="14" name="colasDePersonas">        
-        <position height="0" width="0" x="354" y="-193"/>      
-      </attribute>      
-      <multiplicity id="15" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="354" y="-193"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="16">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <dependency id="17">    
-    <end type="SOURCE" refId="8"/>    
+  </generalization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="18">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <association id="19">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="20" name="persona">        
-        <position height="0" width="0" x="83" y="-156"/>      
-      </attribute>      
-      <multiplicity id="21" minimum="0" maximum="1">        
-        <position height="0" width="0" x="83" y="-156"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="22">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="23" name="ordenPrioridad">        
-        <position height="0" width="0" x="-3" y="12"/>      
-      </attribute>      
-      <multiplicity id="24" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-3" y="12"/>      
-      </multiplicity>    
+  </realization>  
+  <association id="15">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="16" name="ordenPrioridad"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="25">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <association id="26">    
+  <dependency id="18">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="20">    
+    <bendpoint x="997" y="284"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="21">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="27" name="nivelEducacion">        
-        <position height="0" width="0" x="767" y="-382"/>      
-      </attribute>      
-      <multiplicity id="28" minimum="0" maximum="1">        
-        <position height="0" width="0" x="767" y="-382"/>      
-      </multiplicity>    
+      <attribute id="22" name="nivelEducacion"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="29">    
+  <dependency id="24">    
     <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="25">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="26" name="colasDePersonas"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="29" name="persona"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

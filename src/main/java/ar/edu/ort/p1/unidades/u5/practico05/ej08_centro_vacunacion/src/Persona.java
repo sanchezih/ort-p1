@@ -36,28 +36,8 @@ public class Persona implements Vacunable {
 		this.dni = dni;
 	}
 
-	private String getNombre() {
-		return nombre;
-	}
-
-	private void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
 	public int getEdad() {
 		return edad;
-	}
-
-	private void setEdad(int edad) {
-		this.edad = edad;
-	}
-
-	private boolean isPacRiesgo() {
-		return pacRiesgo;
-	}
-
-	private void setPacRiesgo(boolean pacRiesgo) {
-		this.pacRiesgo = pacRiesgo;
 	}
 
 	@Override

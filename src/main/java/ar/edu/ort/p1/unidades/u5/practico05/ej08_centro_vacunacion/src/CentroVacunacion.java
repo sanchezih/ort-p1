@@ -10,26 +10,20 @@ public class CentroVacunacion {
 
 	public CentroVacunacion() {
 		this.colasDePersonas = new ColaDePersonas[CANT_COLAS];
+		inicializarColas();
 	}
 
+	/**
+	 * Metodo principal
+	 * 
+	 * @return
+	 */
 	public ColaNodos<Persona> obtenerColaPorPrioridadYOrden() {
 		ColaDePersonas colaFinal = new ColaDePersonas();
 		ListaPersonasXPrioridadOrden lista = new ListaPersonasXPrioridadOrden();
 		cargarLista(lista);
 		pasarListaAcola(lista, colaFinal);
 		return colaFinal;
-	}
-
-	public void cargarColas(ColaDePersonas colaCargar1, ColaDePersonas colaCargar2, ColaDePersonas colaCargar3) {
-		colasDePersonas[0] = colaCargar1;
-		colasDePersonas[1] = colaCargar2;
-		colasDePersonas[2] = colaCargar3;
-	}
-
-	private void pasarListaAcola(ListaPersonasXPrioridadOrden lista, ColaDePersonas cola) {
-		for (PersonaEnCola personaEnCola : lista) {
-			cola.add(personaEnCola.getPersona());
-		}
 	}
 
 	private void cargarLista(ListaPersonasXPrioridadOrden lista) {
@@ -43,15 +37,31 @@ public class CentroVacunacion {
 		int orden = 0;
 		while (!cola.isEmpty()) {
 			Persona persona = cola.remove();
+			PersonaEnCola personaEnCola = new PersonaEnCola(persona, orden, persona.getPrioridad());
 			orden++;
-			PersonaEnCola perEnCola = new PersonaEnCola(persona, orden, persona.getPrioridad());
-			lista.add(perEnCola);
+			lista.add(personaEnCola);
+		}
+	}
+
+	private void pasarListaAcola(ListaPersonasXPrioridadOrden lista, ColaDePersonas cola) {
+		for (PersonaEnCola personaEnCola : lista) {
+			cola.add(personaEnCola.getPersona());
 		}
 	}
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos complementarios
+
+	private void inicializarColas() {
+		for (int i = 0; i < CANT_COLAS; i++) {
+			this.colasDePersonas[i] = new ColaDePersonas();
+		}
+	}
+
+	public void agregarEnCola(int nroDeCola, Persona p) {
+		this.colasDePersonas[nroDeCola].add(p);
+	}
 
 	public void mostrarColaPorPrioridadYOrden() {
 		ColaNodos<Persona> cola = obtenerColaPorPrioridadYOrden();
