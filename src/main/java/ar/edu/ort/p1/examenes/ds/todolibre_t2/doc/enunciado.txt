@@ -1,0 +1,33 @@
+Enunciado - Todo Libre T2
+
+La empresa de comercio electronico TodoLibre nos contrato para mejorar el modulo
+de logistica que procesa las ordenes de compras para realizar los envios. La
+primera prueba de concepto (POC) contempla solo las 15 comunas de la Ciudad
+Autonoma de Buenos Aires.
+
+El modulo de logistica almacena las ordenes respetando el orden que van
+ingresando. Para la primera version se consideran dos tipos de ordenes:
+Puerta-Puerta y Retiro Sucursal (del correo).
+
+Todas las ordenes de compra tienen en comun un numero, la fecha (String) y los
+items con la cantidad y el producto pedido. De los productos por ahora solo nos
+interesa su codigo, el precio y un indicador sobre si es esencial o no.
+	-Las ordenes de Retiro Sucursal tienen el nombre de la sucursal del correo y
+	 si trabaja o no los sabados.
+	-Las ordenes de Puerta Puerta tienen un indicador que informa si el envio es
+	 gratis o no.
+
+Tanto las ordenes como los productos son priorizables, siendo para la prioridad
+de los productos: 1 (uno) si son esenciales o 0 (cero) si no lo son. La
+prioridad de una orden (del tipo que sea) es la suma de las prioridades de sus
+productos.
+
+Basado en el enunciado descrito, realiza:
+	A)	El diagrama de clases que lo modelice, con sus relaciones, atributos y
+		metodos.
+	B)	El metodo reordenarPorPrioridad que debe reordenar todas las ordenes de
+		acuerdo con su prioridad (las de mayor prioridad van primero).
+	C)	El metodo ordenesRetiroSucursalSabadosPorMonto que debe devolver (no
+		mostrar por consola) (dejando todas las ordenes en su estado original)
+		todas las ordenes Retiro Sucursal cuya sucursal trabaje los sabados,
+		ordenadas por monto de forma descendente.
