@@ -1,0 +1,79 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>260</x><y>351</y><w>210</w><h>100</h></coordinates><panel_attributes>/Orden/
+--
+-numero: long
+-fecha: String
+- monto: double
+--
++ getDomicilioOrigen(): Domicilio
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>501</y><w>210</w><h>80</h></coordinates><panel_attributes>OrdenPuertaPuerta
+--
+-envioGratis: boolean
+--
++getDomicilioEntrega():Domicilio
++hasEnvioGratis(): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>521</y><w>210</w><h>50</h></coordinates><panel_attributes>OrdenRetiroSucursal
+--
++getDomicilioEntrega():Domicilio
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>661</y><w>150</w><h>70</h></coordinates><panel_attributes>SucursalCorreo
+--
+-nombre:String
+--
++getDomicilio():Domicilio
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>661</y><w>120</w><h>100</h></coordinates><panel_attributes>Domicilio
+--
+-calle: String
+-numero: String
+-pisoDepto: String
+-comuna: int
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>671</y><w>120</w><h>80</h></coordinates><panel_attributes>Usuario
+--
+-numero: int
+-nombre:String
+-dni:String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>441</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>441</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110;40;110</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>561</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-sucursalCorreo</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>691</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-domicilio</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>691</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-domicilio</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>441</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>441</y><w>270</w><h>250</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-vendedor</panel_attributes><additional_attributes>240;230;240;170;10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>441</y><w>250</w><h>250</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-comprador</panel_attributes><additional_attributes>220;230;220;200;10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>181</y><w>320</w><h>110</h></coordinates><panel_attributes>TodoLibre
+--
+_+CANT_COMUNAS=15_
+--
++cantEnviosEntreComunas(): int[][]
++ordenesPuertaPuertaPorMonto(): ListaOrdenesPorMonto 
+-procesarOrden(Orden, int[][]):void
+-procesarOrden(Orden,ListaOrdenesPorPrioridad):void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>371</y><w>130</w><h>80</h></coordinates><panel_attributes>ColaOrdenes
+--
++add(Orden)
++remove(): Orden
++isEmpty():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>401</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>231</y><w>100</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-colaOrdenes</panel_attributes><additional_attributes>10;140;10;10;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>281</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>381</y><w>190</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Entregable/
+--
+/+getDomicilioOrigen(): Domicilio/
+/+getDomicilioEntrega():Domicilio/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>391</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>102</y><w>180</w><h>100</h></coordinates><panel_attributes>/ListaOrdenadaNodos&lt;K,T&gt;/
+--
+--
++ ListaOrdenadaNodos()
++ add(T): void
+/+ compare(T,T): int/
+/+ compareByKey(K,T): int/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>242</y><w>210</w><h>60</h></coordinates><panel_attributes>ListaOrdenesPorMonto
+--
++ compare(Orden,Orden): int
++ compareByKey(Double,Orden): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>270</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>190</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>541</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;120;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>571</y><w>280</w><h>230</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;190;10;210;260;210;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>451</y><w>360</w><h>360</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;310;10;340;340;340;340;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>290</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;140;70;140;10</additional_attributes></element></diagram>
