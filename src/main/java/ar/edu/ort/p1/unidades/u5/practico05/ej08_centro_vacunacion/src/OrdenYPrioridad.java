@@ -14,16 +14,8 @@ public class OrdenYPrioridad {
 		return orden;
 	}
 
-	private void setOrden(int orden) {
-		this.orden = orden;
-	}
-
 	public int getPrioridad() {
 		return prioridad;
-	}
-
-	private void setPrioridad(int prioridad) {
-		this.prioridad = prioridad;
 	}
 
 }
