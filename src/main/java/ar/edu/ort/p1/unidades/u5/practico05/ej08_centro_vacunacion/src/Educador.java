@@ -11,9 +11,9 @@ public class Educador extends Persona {
 
 	@Override
 	public int getPrioridad() {
-		int prioridad = super.PRIORIDAD_MEDIA;
-		if ((super.getPrioridad() == super.PRIORIDAD_MAXIMA) || this.nivelEducacion == NivelEducacion.INICIAL) {
-			prioridad = super.PRIORIDAD_MAXIMA;
+		int prioridad = PRIORIDAD_MEDIA;
+		if ((super.getPrioridad() == PRIORIDAD_MAXIMA) || this.nivelEducacion == NivelEducacion.INICIAL) {
+			prioridad = PRIORIDAD_MAXIMA;
 		}
 		return prioridad;
 	}
