@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.examenes.ds.todolibre_t1.src;
 
 public class TodoLibre {
-	
+
 	private static final int CANT_COMUNAS = 15;
 	private ColaOrdenes colaOrdenes;
 
@@ -10,7 +10,16 @@ public class TodoLibre {
 		this.colaOrdenes = new ColaOrdenes();
 	}
 
-	// Ejercicio B
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio B: El metodo cantEnviosEntreComunas que debe devolver (no mostrar
+	 * por consola) la cantidad de envios a realizar desde cada una de las 15
+	 * comunas hacia las demas, incluyendo la misma (los envios dentro de la misma
+	 * comuna son muy frecuentes).
+	 * 
+	 * @return
+	 */
 	public int[][] cantEnviosEntreComunas() {
 
 		int[][] informe;
@@ -40,13 +49,20 @@ public class TodoLibre {
 		informe[desde][hasta]++;
 	}
 
-	// Ejercicio C
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio C: El metodo ordenesPuertaPuertaGratisPorMonto() que debe devolver
+	 * (no mostrar por consola) todas las ordenes Puerta a Puerta con envio gratis
+	 * ordenadas por monto de forma descendente.
+	 * 
+	 * @return
+	 */
+
 	public ListaOrdenesPorMonto ordenesPuertaPuertaPorMonto() {
-		ListaOrdenesPorMonto lista;
-		Orden ordenCentinela;
+		ListaOrdenesPorMonto lista = new ListaOrdenesPorMonto();
+		Orden ordenCentinela = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
 		Orden orden;
-		lista = new ListaOrdenesPorMonto();
-		ordenCentinela = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
 
 		colaOrdenes.add(ordenCentinela);
 		orden = colaOrdenes.remove();
@@ -71,14 +87,27 @@ public class TodoLibre {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos complementarios
 
 	public void agregarOrden(Orden o) {
 		this.colaOrdenes.add(o);
 	}
 
+	public void mostrarColaDeOrdenes() {
+		System.out.println("Muestro como esta la cola de ordenes en este momento...");
+		colaOrdenes.add(null);
+		Orden o = colaOrdenes.remove();
+		int i = 0;
+		while (o != null) {
+			i++;
+			System.out.println("\t-> Turno " + i + ": " + o.toString());
+			colaOrdenes.add(o);
+			o = colaOrdenes.remove();
+		}
+	}
+
 	public void dibujarMatrizDeEnvios() {
-		System.out.println("\nEjercicio B\nMuestro la matriz de envios");
+		System.out.println("\nEjercicio B: Muestro la matriz de envios");
 
 		int[][] matLetras = cantEnviosEntreComunas();
 
@@ -91,24 +120,13 @@ public class TodoLibre {
 		System.out.println();
 	}
 
-	public void mostrarColaDeOrdenes() {
-		System.out.println("\nMuestro como esta la cola de ordenes en este momento...");
-		colaOrdenes.add(null);
-		Orden o = colaOrdenes.remove();
-		while (o != null) {
-			System.out.println(o.toString());
-			colaOrdenes.add(o);
-			o = colaOrdenes.remove();
-
-		}
-	}
-
 	public void mostrarOrdenesRetiroSucursalSabadosPorMonto() {
 		System.out.println(
-				"\nEjercicio C\nMuestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
+				"Ejercicio C: Muestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
 		for (Orden o : ordenesPuertaPuertaPorMonto()) {
-			System.out.println(o.toString());
+			System.out.println("\t-> " + o.toString());
 		}
+		System.out.println();
 	}
 
 }

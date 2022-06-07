@@ -6,7 +6,6 @@ public class OrdenRetiroSucursal extends Orden {
 
 	public OrdenRetiroSucursal(long numero, String fecha, double monto, Usuario vendedor, Usuario comprador) {
 		super(numero, fecha, monto, vendedor, comprador);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

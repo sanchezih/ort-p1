@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.examenes.ds.todolibre_t1.src;
 
 public abstract class Orden implements Entregable {
+
 	private long numero;
 	private String fecha;
 	private double monto;
@@ -59,7 +60,6 @@ public abstract class Orden implements Entregable {
 	@Override
 	public Domicilio getDomicilioOrigen() {
 		return this.vendedor.getDomicilio();
-
 	}
 
 	@Override

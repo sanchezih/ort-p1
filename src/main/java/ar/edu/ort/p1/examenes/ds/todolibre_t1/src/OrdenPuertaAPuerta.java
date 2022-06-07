@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.examenes.ds.todolibre_t1.src;
 
 public class OrdenPuertaAPuerta extends Orden {
+
 	private boolean envioGratis;
 
 	public OrdenPuertaAPuerta(long numero, String fecha, double monto, Usuario vendedor, Usuario comprador,
@@ -19,7 +20,7 @@ public class OrdenPuertaAPuerta extends Orden {
 
 	@Override
 	public Domicilio getDomicilioEntrega() {
-		return getComprador().getDomicilio();
+		return this.getComprador().getDomicilio();
 	}
 
 	@Override

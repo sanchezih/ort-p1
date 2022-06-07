@@ -6,7 +6,20 @@ public class ListaOrdenesPorMonto extends ListaOrdenadaNodos<Double, Orden> {
 
 	@Override
 	public int compare(Orden o1, Orden o2) {
-		return (int) (o2.getMonto() - o1.getMonto());
+		 return (int) (o2.getMonto() - o1.getMonto());
+
+//		double dif;
+//		int r = 0;
+//		dif = o2.getMonto() - o1.getMonto();
+//		if (dif > 0) {
+//			r = 1;
+//		} else {
+//			if (dif < 0) {
+//				r = -1;
+//			}
+//		}
+//		return r;
+
 	}
 
 	@Override
