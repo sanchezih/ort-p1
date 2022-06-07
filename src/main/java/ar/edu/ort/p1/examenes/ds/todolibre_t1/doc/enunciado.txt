@@ -34,4 +34,4 @@ original:
 		misma comuna son muy frecuentes).
 	C)	El metodo ordenesPuertaPuertaGratisPorMonto() que debe devolver (no
 		mostrar por consola) todas las ordenes Puerta a Puerta con envio gratis
-		ordenadas por monto de forma descendente.
+		ordenadas por monto de forma descendente (Las mas caras primero).
