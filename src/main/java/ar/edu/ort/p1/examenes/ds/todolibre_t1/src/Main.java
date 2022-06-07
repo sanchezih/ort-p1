@@ -16,11 +16,11 @@ public class Main {
 		TodoLibre todoLibre = new TodoLibre();
 
 		// Agrego ordenes del comprador 1
-		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1001, "2021-06-10", 150, vendedor1, comprador1, true));
-		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1002, "2021-06-10", 260, vendedor1, comprador1, false));
+		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1001, "2021-06-10", 800, vendedor1, comprador1, true));
+		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1002, "2021-06-10", 3, vendedor1, comprador1, true));
 
 		// Agrego ordenes del comprador 2
-		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1003, "2021-06-10", 740, vendedor1, comprador2, true));
+		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1003, "2021-06-10", 1550, vendedor1, comprador2, true));
 
 		todoLibre.mostrarColaDeOrdenes();
 
@@ -33,7 +33,7 @@ public class Main {
 		 * comuna son muy frecuentes).
 		 */
 
-		 todoLibre.dibujarMatrizDeEnvios();
+		todoLibre.dibujarMatrizDeEnvios();
 
 		/*----------------------------------------------------------------------------*/
 
@@ -44,7 +44,7 @@ public class Main {
 		 */
 
 		todoLibre.mostrarOrdenesRetiroSucursalSabadosPorMonto();
-		
+
 		todoLibre.mostrarColaDeOrdenes();
 
 	}
