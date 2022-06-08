@@ -40,7 +40,7 @@ _+MIN_PRIORIDAD: int= 2_
 _+MED_PRIORIDAD: int= 1_
 _+MAX_PRIORIDAD: int= 0_
 -
-/+getPrioridad() int/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>40</y><w>210</w><h>90</h></coordinates><panel_attributes>ColaDePersonas
+/+getPrioridad(): int/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>40</y><w>210</w><h>90</h></coordinates><panel_attributes>ColaDePersonas
 --
 
 --
