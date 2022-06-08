@@ -18,7 +18,7 @@ public class CentroVacunacion {
 	 * 
 	 * @return
 	 */
-	public ColaNodos<Persona> obtenerColaPorPrioridadYOrden() {
+	public ColaDePersonas obtenerColaPorPrioridadYOrden() {
 		ColaDePersonas colaFinal = new ColaDePersonas();
 		ListaPersonasXPrioridadOrden lista = new ListaPersonasXPrioridadOrden();
 		cargarLista(lista);
