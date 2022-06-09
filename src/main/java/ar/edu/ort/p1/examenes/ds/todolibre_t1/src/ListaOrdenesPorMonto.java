@@ -15,7 +15,7 @@ public class ListaOrdenesPorMonto extends ListaOrdenadaNodos<Double, Orden> {
 
 	@Override
 	public int compareByKey(Double monto, Orden orden) {
-		int res = (int) (orden.getMonto() - monto);
+		int res = (int) (monto - orden.getMonto());
 		return res;
 	}
 
