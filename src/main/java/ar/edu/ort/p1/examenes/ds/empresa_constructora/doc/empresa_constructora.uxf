@@ -16,7 +16,6 @@ m1=1
 --
 -responsable: String
 --
-+tipoDeObraPorDificultad(): int[][]
 +estimar(): int
 /+duracion(): int/
 +getDificultad(): Dificultad</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>210</y><w>250</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
