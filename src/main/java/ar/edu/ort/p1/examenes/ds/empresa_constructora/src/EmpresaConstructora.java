@@ -14,7 +14,7 @@ public class EmpresaConstructora {
 	/**
 	 * Ejercicio C: El metodo tipoDeObraPorDificultad() de la clase que corresponda,
 	 * que debe devolver (no mostrar por consola) la cantidad de obras que hay
-	 * registradas para realizar en función de su tipo y dificultad.
+	 * registradas para realizar en funcion de su tipo y dificultad.
 	 * 
 	 * @return
 	 */
