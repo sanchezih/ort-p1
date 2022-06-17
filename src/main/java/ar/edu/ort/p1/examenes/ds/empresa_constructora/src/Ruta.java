@@ -25,7 +25,7 @@ public class Ruta extends ObraVial {
 		puente = this.puentes.remove();
 		while (puente != cent) {
 			duracion = duracion + puente.duracion();
-			puentes.add(puente);
+			this.puentes.add(puente);
 			puente = this.puentes.remove();
 		}
 		return duracion;
