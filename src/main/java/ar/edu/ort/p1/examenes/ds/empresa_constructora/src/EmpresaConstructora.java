@@ -4,12 +4,23 @@ import java.util.ArrayList;
 
 public class EmpresaConstructora {
 
+	/*
+	 * Si bien a simple vista nos podemos dar cuenta que esta no es la mejor
+	 * implementacion, ya que si agregan mas tipos de obra hay que hacer
+	 * modificaciones en estas constantes, en este momento hacer esto es una
+	 * solucion aceptable.
+	 */
 	private final static int TIPOS_OBRA = 3;
 	private final static int TIPO_CIVIL = 0;
 	private final static int TIPO_RUTA = 1;
 	private final static int TIPO_PUENTE = 2;
 
 	private ArrayList<Obra> obras;
+
+	public EmpresaConstructora() {
+		super();
+		this.obras = new ArrayList<Obra>();
+	}
 
 	/**
 	 * Ejercicio C: El metodo tipoDeObraPorDificultad() de la clase que corresponda,
@@ -33,7 +44,7 @@ public class EmpresaConstructora {
 	private int tipoObra(Obra obra) {
 		int tipo;
 
-		if (obra instanceof Civil) {
+		if (obra instanceof ObraCivil) {
 			tipo = EmpresaConstructora.TIPO_CIVIL;
 		} else {
 			if (obra instanceof Ruta) {

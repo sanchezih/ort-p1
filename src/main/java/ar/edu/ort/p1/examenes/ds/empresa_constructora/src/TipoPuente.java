@@ -2,7 +2,7 @@ package ar.edu.ort.p1.examenes.ds.empresa_constructora.src;
 
 public enum TipoPuente {
 
-	VIGA(1), ARCO(2), COLGANTE(3);
+	VIGA(10), ARCO(20), COLGANTE(30);
 
 	private int indice;
 

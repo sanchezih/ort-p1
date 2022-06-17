@@ -1,12 +1,14 @@
 package ar.edu.ort.p1.examenes.ds.empresa_constructora.src;
 
-public class Civil extends Obra {
+public class ObraCivil extends Obra {
 
+	private String ciudad;
 	private int meses;
 
-	public Civil(String responsable, Dificultad dificultad, int meses) {
+	public ObraCivil(String responsable, Dificultad dificultad, String ciudad, int meses) {
 		super(responsable, dificultad);
 		this.meses = meses;
+		this.ciudad = ciudad;
 	}
 
 	@Override

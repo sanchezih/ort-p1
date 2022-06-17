@@ -20,12 +20,17 @@ public abstract class Obra implements Estimable {
 	 * devolver (no mostrar por consola) el tiempo estimado de cada obra.
 	 */
 	public int estimar() {
-
-		int duracion = this.duracion();
-		int indice = this.dificultad.getIndice();
-		return duracion * indice;
+		return this.duracion() * this.dificultad.getIndice();
 	}
 
 	public abstract int duracion();
 
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
+
+	public void mostrarInformacion() {
+		System.out.println(this.getClass().getSimpleName() + " responsabilidad de " + this.responsable
+				+ " - Tiempo estimado: " + estimar() + " meses");
+	}
 }
