@@ -2,6 +2,8 @@ package ar.edu.ort.p1.examenes.ds.empresa_constructora.src;
 
 import java.util.ArrayList;
 
+import ar.edu.ort.p1.unidades.u5.practico05.ej06_facturas_edificio.src.TipoFactura;
+
 public class EmpresaConstructora {
 
 	/*
@@ -54,5 +56,25 @@ public class EmpresaConstructora {
 			}
 		}
 		return tipo;
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
+
+	public void agregarObra(Obra obra) {
+		this.obras.add(obra);
+	}
+
+	public void mostrarMatriz() {
+		int[][] matriz = tipoDeObraPorDificultad();
+		System.out.println("Muestro...");
+		for (int i = 0; i < matriz.length; i++) {
+
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.println(matriz[i][j]);
+			}
+			
+		}
 	}
 }
