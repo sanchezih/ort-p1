@@ -1,243 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Bug" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Bug.java" binary="false" 
+  <class id="1" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Incidente" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Incidente.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="341" x="462" y="948"/>    
+    <position height="-1" width="-1" x="535" y="1041"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.ColaDeTickets" 
-    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/ColaDeTickets.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="231" x="550" y="441"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.GestorTareas" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/GestorTareas.java" binary="false" 
+  <interface id="2" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Priorizable" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Priorizable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="246" x="1039" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" 
-    name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.ListaTicketsOrdenadoasPorPrioridad" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/ListaTicketsOrdenadoasPorPrioridad.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="236" x="526" y="248"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Incidente" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Incidente.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="189" width="381" x="41" y="948"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="6" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Prioridad" 
-    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Prioridad.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="231" x="1054" y="948"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </enumeration>  
-  <enumeration id="7" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.TipoBug" 
-    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/TipoBug.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="231" x="462" y="1177"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </enumeration>  
-  <class id="8" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.NuevaFuncionalidad" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/NuevaFuncionalidad.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="391" x="642" y="773"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="9" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Ticket" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Ticket.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="171" width="232" x="802" y="562"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Empleado" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Empleado.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="153" width="231" x="802" y="248"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Promedio" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Promedio.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="153" width="231" x="255" y="248"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Error" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Error.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="117" width="290" x="41" y="773"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="13" language="java" name="ar.edu.ort.p1.extra.examenes.gestion_tickets_v2.src.Estimable" 
-    project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/extra/examenes/gestion_tickets_v2/src/Estimable.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="231" x="371" y="773"/>    
+    <position height="-1" width="-1" x="1189" y="660"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
-  <generalization id="15">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
-  <association id="16">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="17" name="tareasAsignadas"/>      
-      <multiplicity id="18" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="19">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="20" name="prioridad"/>      
-      <multiplicity id="21" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="22">    
-    <bendpoint x="1084" y="248"/>    
-    <bendpoint x="1084" y="441"/>    
-    <bendpoint x="1084" y="562"/>    
-    <bendpoint x="1084" y="773"/>    
-    <end type="SOURCE" refId="3"/>    
+  <class id="3" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.NuevaFuncionalidad" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/NuevaFuncionalidad.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="991" y="829"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Bug" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Bug.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="829" y="1034"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Error" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Error.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="708" y="826"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Ticket" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Ticket.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="837" y="609"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="7" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Prioridad" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Prioridad.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1177" y="1049"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="8" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Estimable" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Estimable.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1186" y="523"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" language="java" 
+    name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.ListaDeTicketsOrdenadosPorPrioridad" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/ListaDeTicketsOrdenadosPorPrioridad.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="842" y="364"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.GestorDeIncidentes" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/GestorDeIncidentes.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="516" y="218"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Empleado" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Empleado.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="474" y="490"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.ColaDeTickets" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/ColaDeTickets.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="473" y="672"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.ColaDeEmpleados" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/ColaDeEmpleados.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="197" y="474"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Promedio" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Promedio.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="214" x="95" y="157"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <association id="23">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="24" name="ticketsSinAsignar"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="26">    
-    <bendpoint x="832" y="441"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="27" name="empleadoQueLoReporto"/>      
-      <multiplicity id="28" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="29">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="12"/>  
-  </generalization>  
-  <dependency id="30">    
-    <bendpoint x="811" y="441"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="9"/>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
   </dependency>  
-  <association id="31">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="32" name="tipoBug"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
+  <association id="17">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="18" name="ticketsSinAsignar"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="20">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="21">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="22" name="empleadoQueLoReporto"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="24">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="25" name="ticketAsignados"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="29">    
+    <bendpoint x="1363" y="330"/>    
+    <bendpoint x="1367" y="1027"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="30">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="31">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="32">    
+    <bendpoint x="682" y="1157"/>    
+    <bendpoint x="1172" y="1153"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="34">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="35">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="36" name="empleados"/>      
+      <multiplicity id="37" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <realization id="39">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="41">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="42" name="prioridad"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="12"/>  
-  </generalization>  
-  <dependency id="35">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <dependency id="36">    
-    <bendpoint x="1063" y="248"/>    
-    <bendpoint x="1063" y="441"/>    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <association id="37">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="38" name="empleados"/>      
-      <multiplicity id="39" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="40">    
-    <bendpoint x="1063" y="773"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <dependency id="41">    
-    <bendpoint x="519" y="441"/>    
+  <dependency id="44">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <realization id="42">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <dependency id="43">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="11"/>  
+    <end type="TARGET" refId="7"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
