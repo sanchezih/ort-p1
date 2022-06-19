@@ -1,0 +1,89 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>890</x><y>326</y><w>210</w><h>140</h></coordinates><panel_attributes>/Tarea/
+--
+_-HS_ALTA: int = 16_
+_-HS_MEDIA: int = 24_
+-proyecto:String
+-versionAfectada:int
+-versionACorregir:int
+-titulo:String
+--
++calcularPrioridad(): Prioridad</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>636</y><w>220</w><h>160</h></coordinates><panel_attributes>ErrorEnProduccion
+--
+_-HS_ALTA: int = 8_
+_-HS_MEDIA: int = 16_
+_-STOPPER: int = 8_
+_-NO_STOPPER: int = 16_
+-nombreDelAmbienteDelCliente: String
+-esStopper:boolean
+--
++obtenerTiempoDeResolucion():int
++calcularPrioridad():Prioridad</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>306</y><w>160</w><h>110</h></coordinates><panel_attributes>Usuario
+--
+-nombre:String
+-apellido:String
+-proyecto:String
+--
++agregarTarea(Tarea):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>376</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-usuarioQueLoReporto</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>506</y><w>210</w><h>90</h></coordinates><panel_attributes>/Error/
+--
+-ambiente: String
+-casosDePrueba: ArrayList&lt;String&gt;
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1070</x><y>636</y><w>210</w><h>80</h></coordinates><panel_attributes>ErrorInterno
+--
+-nombreDelTestQueLoDetecto:String
+_-TIEMPO:40_
+--
++obtenerTiempoDeResolucion(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1150</x><y>506</y><w>210</w><h>90</h></coordinates><panel_attributes>Desarrollo
+--
+-descripcionFuncional:String
+-tiempoEstimado:int
+--
++obtenerTiempoDeResolucion():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1130</x><y>256</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Estimable/
+--
+--
+/+obtenerTiempoDeResolucion():int/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>436</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;10;140;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>586</y><w>90</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;50</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>586</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>456</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>406</y><w>120</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tareasAsignadas</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>596</y><w>230</w><h>70</h></coordinates><panel_attributes>TareasOrdenadasPorPrioridad
+--
++compare(Tarea,Tarea):int
++compareByKey(Prioridad,Tarea):int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>436</y><w>210</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>190;10;10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>286</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>130;10;10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>676</y><w>100</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Prioridad
+--
+_+ALTA_
+_+MEDIA_
+_+BAJA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>456</y><w>130</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;220;10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>206</y><w>270</w><h>120</h></coordinates><panel_attributes>GestorTareas
+--
+--
++asignarTareas():void
++reportePromedioTareasPorPrioridad(): double[]
+-obtenerPromediosTotales(Promedio[]):double[]
+-inicializarPromedios(Promedio[]):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>226</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tareasSinAsignar</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>206</y><w>140</w><h>80</h></coordinates><panel_attributes>ColaDeTareas
+--
+--
++ add(Tarea): void
++ remove(): Tarea
++ isEmpty(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>346</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>656</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;50;10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>406</y><w>180</w><h>100</h></coordinates><panel_attributes>Promedio
+--
+-total:double
+-cantidad:int
+--
++obtenerPromedio():double
++incrementarPromedio(int):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>316</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>726</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>346</y><w>180</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Priorizable/
+--
+--
+/+calcularPrioridad(): Prioridad/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>366</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>306</y><w>140</w><h>80</h></coordinates><panel_attributes>ColaDeUsuarios
+--
+--
++add(Usuario): void
++remove(): Usuario
++isEmpty(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>246</y><w>370</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>350;80;350;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>306</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-usuarios</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>340</x><y>416</y><w>180</w><h>60</h></coordinates><panel_attributes>Los usuarios pueden estar en
+un ArrayList, pero con una cola
+circular es más natural.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
