@@ -10,4 +10,14 @@ public abstract class Ticket implements Priorizable, Estimable {
 	private String titulo;
 	private Empleado empleadoQueLoReporto;
 
+	public Ticket(String nombreCliente, String unidadNegocio, String fechaCarga, String titulo,
+			Empleado empleadoQueLoReporto) {
+		super();
+		this.nombreCliente = nombreCliente;
+		this.unidadNegocio = unidadNegocio;
+		this.fechaCarga = fechaCarga;
+		this.titulo = titulo;
+		this.empleadoQueLoReporto = empleadoQueLoReporto;
+	}
+
 }

@@ -7,16 +7,32 @@ public class Bug extends Error {
 
 	private int tiempoEstimado;
 
+	public Bug(String nombreCliente, String unidadNegocio, String fechaCarga, String titulo,
+			Empleado empleadoQueLoReporto, String descripcion, String nombrePersonaQueLoDetecto, int tiempoEstimado) {
+		super(nombreCliente, unidadNegocio, fechaCarga, titulo, empleadoQueLoReporto, descripcion,
+				nombrePersonaQueLoDetecto);
+		this.tiempoEstimado = tiempoEstimado;
+	}
+
 	@Override
 	public Prioridad calcularPrioridad() {
-		// TODO Auto-generated method stub
-		return null;
+		int tiempoEstimado = obtenerTiempoDeResolucion();
+		Prioridad prioridad;
+		if (tiempoEstimado <= HS_ALTA) {
+			prioridad = Prioridad.ALTA;
+		} else {
+			if (tiempoEstimado <= HS_MEDIA) {
+				prioridad = Prioridad.MEDIA;
+			} else {
+				prioridad = Prioridad.BAJA;
+			}
+		}
+		return prioridad;
 	}
 
 	@Override
 	public int obtenerTiempoDeResolucion() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.tiempoEstimado;
 	}
 
 }

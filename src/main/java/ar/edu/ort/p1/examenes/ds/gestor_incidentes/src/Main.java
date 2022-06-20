@@ -4,10 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-//		GestorTareas gestor = new GestorTareas();
-//
-//		gestor.agregarEmpleado(new Empleado("Juan", "Perez", "AA"));
-//
+		GestorDeIncidentes gestor = new GestorDeIncidentes();
+
+		gestor.agregarEmpleado(new Empleado("Juan", "Perez", "AA"));
+
 //		gestor.agregarTicket(new Incidente("unCliente", "ABC", "fecha", "titulo", new Empleado("Juan", "Perez", "AA"),
 //				null, null, null, false));
 //		// gestor.agregarTicket(new Incidente("BB", true));

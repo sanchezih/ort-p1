@@ -4,17 +4,23 @@ public class NuevaFuncionalidad extends Ticket {
 	private String descripcionFuncional;
 	private int tiempoDesarrollo;
 	private Prioridad prioridad;
-	
+
+	public NuevaFuncionalidad(String nombreCliente, String unidadNegocio, String fechaCarga, String titulo,
+			Empleado empleadoQueLoReporto, String descripcionFuncional, int tiempoDesarrollo, Prioridad prioridad) {
+		super(nombreCliente, unidadNegocio, fechaCarga, titulo, empleadoQueLoReporto);
+		this.descripcionFuncional = descripcionFuncional;
+		this.tiempoDesarrollo = tiempoDesarrollo;
+		this.prioridad = prioridad;
+	}
+
 	@Override
 	public Prioridad calcularPrioridad() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.prioridad;
 	}
 
 	@Override
 	public int obtenerTiempoDeResolucion() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.tiempoDesarrollo;
 	}
 
 }
