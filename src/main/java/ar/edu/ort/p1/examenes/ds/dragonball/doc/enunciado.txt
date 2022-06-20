@@ -1,0 +1,11 @@
+Enunciado
+
+En el universo de DragonBall cada personaje puede ser terricola, demonio o
+extraterrestre; a su vez estos ultiimos pueden ser namekianos (del planeta
+	Namekusei) o saiyajins (originarios del planeta Vegeta). NingUn personaje puede ser de mas de un planeta ni cambiar lo que es. Ademas. todos cuentan con una energia Ilamada ki. Los extraterrestres tienen una cantidad de aliados y los demonios una cantidad de victimas. 
+
+Los saiyajins pueden estar o no en modo Ozaru (una suerte de simio gigante). Si lo estan, tienen diez veces su ki en forma normal, siendo muy peligrosos. Habitualmente se organizan banquetes a los que son invitados algunos personajes y donde el menu tiene como primer plato una Semilla del Ermitano. Cada personaje que Ilega al banquete se coloca en una fila para recibir y comer una semilla.de a uno por vez y por orden de Ilegada, hasta que todos hayan comido una. Luego se colocan nuevamente en la fila para luego recibir otro plato. 
+
+Cada especie reacciona de forma dist inta a la ingests de una Semilla del Ermitano: • Cuando un terricola la come. gana 200 unidades de energia (ki). • Cuando un extraterrestre la come. incrementa 100 ki su poder en caso de ser namekiano o el doble (200) si es saiyajin. Adicionalmente. si tenia mas de 500 ki de poder. gana 10 ki extra por cada aliado que tenga. • Cuando un demonio la come. suma 200 ki mas 10 ki adicionales por cada una de sus victimas. 
+
+Se pide: A) Realizar el diagrama de claws que reprsente el modelo planteado. B) Representar en diagrama Nassi-Shneiaerman: I. El desarrollo del banquete. es decir. que cada personaje coma una semilla del ermitano. incremente su energia y paw a esperar el proximo plato. II. La manera de incrementar el ki de cada personaje. Listar los cinco personajes mas debiles en orden ascendente. asumiendo que no hay ki's iguales. Si hay menos de cinco. listar a todos. 
