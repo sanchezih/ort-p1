@@ -14,14 +14,14 @@ _-CANT_DIAS_X_MES: int: 28_
 --
 +tempPromedio(): double
 +algunaInferiorA(double): boolean
-+algunaInferiorA(double, int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>590</y><w>210</w><h>100</h></coordinates><panel_attributes>ZonaSeca
++algunaInferiorA(double, int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>560</y><w>210</w><h>100</h></coordinates><panel_attributes>ZonaSeca
 --
 _-TEMP_MAX: double = 43_
 _-INS_MAX: double = 90_
 -porcInsolacion: double
 --
-+ enRiesgo(): boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>590</y><w>210</w><h>100</h></coordinates><panel_attributes>ZonaTropical
++enRiesgo(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>560</y><w>210</w><h>100</h></coordinates><panel_attributes>ZonaTropical
 --
 _-TEMP_MIN: double = 18_
 _-ELEV_MAX: double = 1000_
@@ -30,28 +30,28 @@ _-ELEV_MAX: double = 1000_
 +enRiesgo(): boolean
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>130</y><w>70</w><h>190</h></coordinates><panel_attributes>lt=&lt;-
 -zonas
-m1=1</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>490</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;140;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>460</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+m1=1</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>490</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;140;40;10;40;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>460</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 /Monitoreable/
 --
 
 --
-/+enRiesgo(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>720</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+/+enRiesgo(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>700</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 IntensidadViento
 --
 _+FUERTE: IntensidadViento_
 _+MODERADO: IntensidadViento_
 _+LEVE: IntensidadViento_
 --
-+IntensidadViento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>470</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>390</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>730</y><w>210</w><h>100</h></coordinates><panel_attributes>ZonaTropicalMonzonica
++IntensidadViento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>470</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>390</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>700</y><w>210</w><h>110</h></coordinates><panel_attributes>ZonaTropicalMonzonica
 --
 _-TEMP_MIN: double = 15_
 --
 +enRiesgo(): boolean
--enRiesgoMonzonica(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>680</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>300</y><w>210</w><h>140</h></coordinates><panel_attributes>PilaDeZonas
+-enRiesgoMonzonica(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>650</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>300</y><w>210</w><h>140</h></coordinates><panel_attributes>PilaDeZonas
 --
 
 --
-+PilaDeZonas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>490</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>770</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
++PilaDeZonas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>490</y><w>150</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;130;40;130;70</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>740</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
 -intensidadViento
 </panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>190</y><w>210</w><h>90</h></coordinates><panel_attributes>ListaZonasPorElevacion
@@ -65,7 +65,7 @@ m1=1
 --
 _+promedio(double, double): double_
 _+porcentaje(int, int): double_
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>130</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>270</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;80;90;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>130</y><w>30</w><h>230</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;210;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>300</y><w>210</w><h>140</h></coordinates><panel_attributes>PilaNodos&lt;T&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>130</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>270</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;80;90;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>130</y><w>30</w><h>230</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;210;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>300</y><w>210</w><h>140</h></coordinates><panel_attributes>PilaNodos&lt;T&gt;
 --
 
 --
@@ -73,4 +73,4 @@ _+porcentaje(int, int): double_
 +PilaNodos(int)
 +peek(): T
 +pop(): T
-+puah(T): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>390</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element></diagram>
++push(T): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>390</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element></diagram>
