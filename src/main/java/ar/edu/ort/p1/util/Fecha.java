@@ -2,6 +2,7 @@ package ar.edu.ort.p1.util;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Fecha {
@@ -58,6 +59,13 @@ public class Fecha {
 	public static Fecha hoy() {
 		Date date = new Date();
 		return new Fecha(date.getDay(), date.getMonth(), date.getYear());
+	}
+
+	/**
+	 * Devuelve el anio actual en int
+	 */
+	public static int anioActual() {
+		return Calendar.getInstance().get(Calendar.YEAR);
 	}
 
 }
