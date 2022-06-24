@@ -54,7 +54,7 @@ m1=1
 m1=1
 -comprador</panel_attributes><additional_attributes>260;230;260;200;10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>40</y><w>380</w><h>110</h></coordinates><panel_attributes>TodoLibre
 --
-_+CANT_COMUNAS: int = 15_
+_-CANT_COMUNAS: int = 15_
 --
 +cantEnviosEntreComunas(): int[][]
 +ordenesPuertaPuertaGratisPorMonto(): ListaOrdenesPorMonto 
@@ -64,17 +64,15 @@ _+CANT_COMUNAS: int = 15_
 --
 
 --
-+add(Orden)
-+remove(): Orden
-+isEmpty():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>250</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>110</y><w>170</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
++ColaOrdenes()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>250</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>110</y><w>170</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--colaOrdenes</panel_attributes><additional_attributes>30;110;30;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>140</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>220</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
-/Entregable/
+-colaOrdenes</panel_attributes><additional_attributes>30;110;30;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>140</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>220</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Entregable
 --
 
 --
-/+getDomicilioOrigen(): Domicilio/
-/+getDomicilioEntrega(): Domicilio/
++getDomicilioOrigen(): Domicilio
++getDomicilioEntrega(): Domicilio
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>40</y><w>220</w><h>110</h></coordinates><panel_attributes>ListaOrdenesPorMonto
 --
 
