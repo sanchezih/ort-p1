@@ -122,7 +122,7 @@ public class TodoLibre {
 
 	public void mostrarOrdenesRetiroSucursalSabadosPorMonto() {
 		System.out.println(
-				"Ejercicio C: Muestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
+				"Ejercicio C: Muestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto (DESC)");
 		for (Orden o : ordenesPuertaPuertaGratisPorMonto()) {
 			System.out.println("\t-> " + o.toString());
 		}
