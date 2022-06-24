@@ -4,7 +4,7 @@
   <class id="1" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Incidente" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Incidente.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="535" y="1041"/>    
+    <position height="225" width="381" x="1138" y="845"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <interface id="2" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Priorizable" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Priorizable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1189" y="660"/>    
+    <position height="-1" width="-1" x="650" y="539"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -25,7 +25,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/NuevaFuncionalidad.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="991" y="829"/>    
+    <position height="153" width="391" x="368" y="845"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Bug" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Bug.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="829" y="1034"/>    
+    <position height="171" width="299" x="799" y="845"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -45,7 +45,7 @@
   <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Error" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Error.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="708" y="826"/>    
+    <position height="135" width="290" x="1250" y="670"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -55,7 +55,7 @@
   <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Ticket" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Ticket.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="850" y="596"/>    
+    <position height="189" width="232" x="1253" y="441"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,7 +65,7 @@
   <enumeration id="7" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Prioridad" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Prioridad.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1177" y="1049"/>    
+    <position height="135" width="214" x="328" y="1110"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   <interface id="8" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Estimable" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Estimable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1186" y="523"/>    
+    <position height="-1" width="-1" x="1024" y="491"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -86,7 +86,7 @@
     name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.ListaDeTicketsOrdenadosPorPrioridad" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/ListaDeTicketsOrdenadosPorPrioridad.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="858" y="327"/>    
+    <position height="117" width="244" x="897" y="248"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -97,7 +97,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/GestorDeIncidentes.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="503" y="165"/>    
+    <position height="171" width="279" x="897" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -107,7 +107,7 @@
   <class id="11" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Empleado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Empleado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="456" y="451"/>    
+    <position height="153" width="214" x="1540" y="1110"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -117,7 +117,7 @@
   <class id="12" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.ColaDeTickets" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/ColaDeTickets.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="473" y="672"/>    
+    <position height="81" width="214" x="1561" y="1303"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -127,7 +127,7 @@
   <class id="13" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.ColaDeEmpleados" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/ColaDeEmpleados.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="175" y="445"/>    
+    <position height="81" width="214" x="1519" y="248"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -137,7 +137,7 @@
   <class id="14" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_incidentes.src.Promedio" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_incidentes/src/Promedio.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="165" y="163"/>    
+    <position height="-1" width="-1" x="561" y="95"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -145,151 +145,195 @@
     </display>  
   </class>  
   <dependency id="15">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <dependency id="16">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <dependency id="17">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="18">    
-    <bendpoint x="1366" y="365"/>    
-    <bendpoint x="1367" y="1050"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="19">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <dependency id="20">    
-    <bendpoint x="1503" y="318"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <dependency id="22">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <dependency id="23">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="7"/>  
   </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="17">    
+    <bendpoint x="1633" y="441"/>    
+    <bendpoint x="1633" y="670"/>    
+    <bendpoint x="1633" y="845"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="19">    
+    <bendpoint x="1612" y="845"/>    
+    <bendpoint x="1612" y="670"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="20">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="21" name="ticketsAsignados">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="23">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
   <dependency id="24">    
+    <bendpoint x="866" y="248"/>    
+    <bendpoint x="866" y="441"/>    
+    <bendpoint x="866" y="670"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <dependency id="27">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="14"/>  
   </dependency>  
-  <association id="25">    
+  <association id="28">    
     <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="26" name="ticketsSinAsignar">        
+      <attribute id="29" name="ticketsSinAsignar">        
         <position height="0" width="0" x="16" y="-37"/>      
       </attribute>      
-      <multiplicity id="27" minimum="0" maximum="1">        
+      <multiplicity id="30" minimum="0" maximum="1">        
         <position height="0" width="0" x="16" y="-37"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="28">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="8"/>  
-  </realization>  
-  <dependency id="29">    
-    <end type="SOURCE" refId="2"/>    
+  <dependency id="31">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="32">    
+    <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="7"/>  
   </dependency>  
-  <association id="30">    
+  <dependency id="33">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="34">    
+    <bendpoint x="295" y="248"/>    
+    <bendpoint x="295" y="441"/>    
+    <bendpoint x="295" y="670"/>    
+    <bendpoint x="295" y="845"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="35">    
+    <bendpoint x="316" y="441"/>    
+    <bendpoint x="316" y="670"/>    
+    <bendpoint x="316" y="845"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <dependency id="37">    
+    <bendpoint x="1171" y="248"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="38">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="31" name="prioridad">        
+      <attribute id="39" name="prioridad">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="32" minimum="0" maximum="1">        
+      <multiplicity id="40" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="33">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <association id="35">    
+  <association id="41">    
+    <bendpoint x="1591" y="670"/>    
+    <bendpoint x="1591" y="845"/>    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="36" name="empleadoQueLoReporto">        
+      <attribute id="42" name="empleadoQueLoReporto">        
         <position height="0" width="0" x="-18" y="-39"/>      
       </attribute>      
-      <multiplicity id="37" minimum="0" maximum="1">        
+      <multiplicity id="43" minimum="0" maximum="1">        
         <position height="0" width="0" x="-18" y="-39"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="39" name="ticketsAsignados"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="41">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <generalization id="42">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <generalization id="43">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <realization id="44">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <generalization id="45">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <dependency id="46">    
-    <bendpoint x="682" y="1157"/>    
-    <bendpoint x="1172" y="1153"/>    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="47">    
-    <bendpoint x="182" y="721"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <association id="48">    
+  <association id="44">    
     <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="49" name="empleados">        
+      <attribute id="45" name="empleados">        
         <position height="0" width="0" x="-22" y="-29"/>      
       </attribute>      
-      <multiplicity id="50" minimum="0" maximum="1">        
+      <multiplicity id="46" minimum="0" maximum="1">        
         <position height="0" width="0" x="-22" y="-29"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="47">    
+    <bendpoint x="845" y="670"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <dependency id="48">    
+    <bendpoint x="1549" y="845"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="49">    
+    <bendpoint x="1763" y="248"/>    
+    <bendpoint x="1763" y="441"/>    
+    <bendpoint x="1763" y="670"/>    
+    <bendpoint x="1763" y="845"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="50">    
+    <bendpoint x="1784" y="1110"/>    
+    <bendpoint x="1784" y="845"/>    
+    <bendpoint x="1742" y="670"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="51">    
+    <bendpoint x="1570" y="670"/>    
+    <bendpoint x="1570" y="845"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="52">    
+    <bendpoint x="337" y="845"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="53">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
