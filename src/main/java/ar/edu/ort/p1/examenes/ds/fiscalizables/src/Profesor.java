@@ -13,6 +13,9 @@ public class Profesor extends Empleado {
 		this.cargos = cargos;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public boolean hayIrregularidad() {
 		final int NOCTURNO = 2;
@@ -72,7 +75,7 @@ public class Profesor extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Profesor con DNI: " + getDNI();
+		return this.getClass().getSimpleName() + " con DNI: " + getDNI();
 	}
 
 }

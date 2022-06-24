@@ -10,7 +10,7 @@ _-DIAS_SEMANA: int = 5_
 +hayIrregularidad(): boolean
 -cargosValidosSegunNivel(): boolean
 -cargosValidosSegunNivel(Cargo[]): boolean
--cumpleCantCargos(int, int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>605</y><w>231</w><h>88</h></coordinates><panel_attributes>Cargo
+-cumpleCantCargos(int, int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>605</y><w>231</w><h>121</h></coordinates><panel_attributes>Cargo
 --
 -nombreInstitucion: String
 -cantHoras: int
@@ -26,9 +26,9 @@ _+POSGRADO_
 m1=1
 -tipo</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>517</y><w>407</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=[DIAS_SEMANA][TURNOS]
--cargos</panel_attributes><additional_attributes>210;80;210;40;10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>517</y><w>66</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-cargos</panel_attributes><additional_attributes>210;80;210;50;10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>517</y><w>66</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--titulo</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>385</y><w>231</w><h>110</h></coordinates><panel_attributes>Auxiliar
+-titulo</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>385</y><w>231</w><h>143</h></coordinates><panel_attributes>Auxiliar
 --
 _-MAX_HS_SEMANALES: int = 20_
 _-MAX_ANTIGUEDAD: int = 10_

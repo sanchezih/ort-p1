@@ -11,6 +11,9 @@ public class Auxiliar extends Empleado {
 		this.cantHorasSemanales = cantHorasSemanales;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public boolean hayIrregularidad() {
 		return antiguedad() > MAX_ANTIGUEDAD || this.cantHorasSemanales < MAX_HS_SEMANALES;
@@ -18,7 +21,7 @@ public class Auxiliar extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Auxiliar con DNI: " + getDNI();
+		return this.getClass().getSimpleName() + " con DNI: " + getDNI();
 	}
 
 }

@@ -13,7 +13,7 @@ public class Instituto {
 	/**
 	 * Ejercicio B: El metodo empleadosEnFalta(), de la clase que corresponda, que
 	 * debe devolver (no mostrar por consola) a los empleados que hayan presentado
-	 * alguna irregularidad, en una coleccion que permita accederlos rápidamente
+	 * alguna irregularidad, en una coleccion que permita accederlos rapidamente
 	 * conociendo su DNI. Deben desarrollarse tambien los metodos asociados que se
 	 * usen, sean o no de la misma clase.
 	 * 
@@ -45,5 +45,23 @@ public class Instituto {
 
 	public void agregarEmpleado(Empleado empleado) {
 		this.colaEmps.add(empleado);
+	}
+
+	public void mostrarColaEmps() {
+		Empleado empCent;
+		Empleado empActual;
+		int i = 1;
+
+		System.out.println("Cola al momento...");
+
+		empCent = new Auxiliar(null, -1, -1);
+		this.colaEmps.add(empCent);
+		empActual = this.colaEmps.remove();
+		while (empCent != empActual) {
+			System.out.println("\t" + i + ". " + empActual);
+			this.colaEmps.add(empActual);
+			empActual = this.colaEmps.remove();
+			i++;
+		}
 	}
 }

@@ -10,63 +10,71 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		Cargo[][] cargosP32100890 = new Cargo[DIAS_SEMANA][TURNOS];
-		cargosP32100890[1][2] = new Cargo("Institucion 1", 2, Nivel.POSGRADO);
-		cargosP32100890[2][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
-		cargosP32100890[3][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
+		Cargo[][] cargosP7 = new Cargo[DIAS_SEMANA][TURNOS];
+		cargosP7[1][2] = new Cargo("Institucion 1", 2, Nivel.POSGRADO);
+		cargosP7[2][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
+		cargosP7[3][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
 
 		// En falta porque tiene nivel universitario y tiene cargos en posgrado
-		instituto.agregarEmpleado(new Profesor("32100890", 2003, Nivel.UNIVERSITARIO, cargosP32100890));
+		instituto.agregarEmpleado(new Profesor("77777777", 2003, Nivel.UNIVERSITARIO, cargosP7));
 
 		/*----------------------------------------------------------------------------*/
 
 		// OK
-		instituto.agregarEmpleado(new Auxiliar("31099505", 2022, 32));
+		instituto.agregarEmpleado(new Auxiliar("66666666", 2022, 32));
 
 		/*----------------------------------------------------------------------------*/
 
 		// En falta porque tiene trabaja menos de 20 Hs. semanales
-		instituto.agregarEmpleado(new Auxiliar("31328442", 2018, 12));
+		instituto.agregarEmpleado(new Auxiliar("55555555", 2018, 12));
 
 		/*----------------------------------------------------------------------------*/
 
 		// OK
-		instituto.agregarEmpleado(new Auxiliar("30400177", 2015, 24));
+		instituto.agregarEmpleado(new Auxiliar("22222222", 2015, 24));
 
 		/*----------------------------------------------------------------------------*/
 
-		Cargo[][] cargosP29566712 = new Cargo[DIAS_SEMANA][TURNOS];
-		cargosP29566712[1][2] = new Cargo("Institucion 1", 2, Nivel.POSGRADO);
-		cargosP29566712[2][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
-		cargosP29566712[3][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
-		cargosP29566712[0][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
+		Cargo[][] cargosP1 = new Cargo[DIAS_SEMANA][TURNOS];
+		cargosP1[1][2] = new Cargo("Institucion 1", 2, Nivel.POSGRADO);
+		cargosP1[2][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
+		cargosP1[3][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
+		cargosP1[0][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
 
 		// En falta porque tiene mas de 3 cargos nocturnos
-		instituto.agregarEmpleado(new Profesor("29566712", 2012, Nivel.POSGRADO, cargosP29566712));
+		instituto.agregarEmpleado(new Profesor("11111111", 2012, Nivel.POSGRADO, cargosP1));
 
 		/*----------------------------------------------------------------------------*/
 
-		Cargo[][] cargosP18950781 = new Cargo[DIAS_SEMANA][TURNOS];
-		cargosP18950781[1][2] = new Cargo("Institucion 1", 2, Nivel.TERCIARIO);
-		cargosP18950781[2][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
-		cargosP18950781[3][2] = new Cargo("Institucion 1", 2, Nivel.TERCIARIO);
+		Cargo[][] cargosP8 = new Cargo[DIAS_SEMANA][TURNOS];
+		cargosP8[1][2] = new Cargo("Institucion 1", 2, Nivel.TERCIARIO);
+		cargosP8[2][2] = new Cargo("Institucion 1", 2, Nivel.UNIVERSITARIO);
+		cargosP8[3][2] = new Cargo("Institucion 1", 2, Nivel.TERCIARIO);
 
 		// OK
-		instituto.agregarEmpleado(new Profesor("18950781", 2012, Nivel.POSGRADO, cargosP18950781));
+		instituto.agregarEmpleado(new Profesor("88888888", 2012, Nivel.POSGRADO, cargosP8));
 
 		/*----------------------------------------------------------------------------*/
 
 		// En falta porque tiene mas de 10 anios de antiguedad
-		instituto.agregarEmpleado(new Auxiliar("31118920", 2002, 24));
+		instituto.agregarEmpleado(new Auxiliar("33333333", 2002, 24));
 
 		/*----------------------------------------------------------------------------*/
 
+		instituto.mostrarColaEmps();
+
 		ListaEmpsPorDNI lista = instituto.empleadosEnFalta();
 
-		System.out.println("Lista de empleados con irregularidades:");
+		System.out.println();
+
+		System.out.println("Lista de empleados con irregularidades, ordenados por DNI (ASC):");
 		for (Empleado e : lista) {
 			System.out.println("\t-> " + e);
 		}
+
+		System.out.println();
+
+		instituto.mostrarColaEmps();
 	}
 
 }
