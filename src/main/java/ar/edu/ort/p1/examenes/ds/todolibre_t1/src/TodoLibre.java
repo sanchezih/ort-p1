@@ -59,7 +59,7 @@ public class TodoLibre {
 	 * @return
 	 */
 
-	public ListaOrdenesPorMonto ordenesPuertaPuertaPorMonto() {
+	public ListaOrdenesPorMonto ordenesPuertaPuertaGratisPorMonto() {
 		ListaOrdenesPorMonto lista = new ListaOrdenesPorMonto();
 		Orden ordenCentinela = new OrdenPuertaAPuerta(0, null, 0, null, null, false);
 		Orden orden;
@@ -123,7 +123,7 @@ public class TodoLibre {
 	public void mostrarOrdenesRetiroSucursalSabadosPorMonto() {
 		System.out.println(
 				"Ejercicio C: Muestro las ordenes Puerta a Puerta con envio gratis ordenadas por monto de forma descendente");
-		for (Orden o : ordenesPuertaPuertaPorMonto()) {
+		for (Orden o : ordenesPuertaPuertaGratisPorMonto()) {
 			System.out.println("\t-> " + o.toString());
 		}
 		System.out.println();

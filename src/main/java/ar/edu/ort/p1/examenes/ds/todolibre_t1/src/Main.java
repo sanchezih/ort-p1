@@ -17,10 +17,10 @@ public class Main {
 
 		// Agrego ordenes del comprador 1
 		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1001, "2021-06-10", 800, vendedor1, comprador1, true));
-		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1002, "2021-06-10", 3, vendedor1, comprador1, true));
+		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1002, "2021-06-10", 3, vendedor1, comprador1, false));
 
 		// Agrego ordenes del comprador 2
-		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1003, "2021-06-10", 1550, vendedor1, comprador2, true));
+		todoLibre.agregarOrden(new OrdenPuertaAPuerta(1003, "2021-06-10", 1550, vendedor1, comprador2, false));
 
 		todoLibre.mostrarColaDeOrdenes();
 
