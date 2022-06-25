@@ -17,10 +17,10 @@ public class Instituto {
 	 * conociendo su DNI. Deben desarrollarse tambien los metodos asociados que se
 	 * usen, sean o no de la misma clase.
 	 * 
-	 * 1. Recorre la cola colaEmps (Profesores y Auxiliares)
+	 * 1. Recorre la cola de empleados (Profesores y Auxiliares)
 	 * 
-	 * 2. Si el empleado tiene alguna irregularidad, lo saco de la cola y lo pongo
-	 * en la lista ordenada. Caso contrario, lo vuelvo a meter en la cola.
+	 * 2. Por cada empleado, si tiene alguna irregularidad, lo saco de la cola y lo
+	 * pongo en la lista ordenada. Caso contrario, lo vuelvo a meter en la cola.
 	 * 
 	 * @return
 	 */
