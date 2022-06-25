@@ -25,24 +25,6 @@ public class Profesor extends Empleado {
 
 	/**
 	 * 
-	 * @param nroTurno
-	 * @param max
-	 * @return
-	 */
-	private boolean cumpleCantCargos(int nroTurno, int max) {
-		int cant = 0;
-		int i = 0;
-		while (i < cargos.length && cant <= max) {
-			if (cargos[i][nroTurno] != null) {
-				cant++;
-			}
-			i++;
-		}
-		return i == cargos.length;
-	}
-
-	/**
-	 * 
 	 * @return
 	 */
 	private boolean cargosValidosSegunNivel() {
@@ -71,6 +53,24 @@ public class Profesor extends Empleado {
 			i++;
 		}
 		return todoOk;
+	}
+
+	/**
+	 * 
+	 * @param nroTurno
+	 * @param max
+	 * @return
+	 */
+	private boolean cumpleCantCargos(int nroTurno, int max) {
+		int cant = 0;
+		int i = 0;
+		while (i < cargos.length && cant <= max) {
+			if (cargos[i][nroTurno] != null) {
+				cant++;
+			}
+			i++;
+		}
+		return i == cargos.length;
 	}
 
 	@Override
