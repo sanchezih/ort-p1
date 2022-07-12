@@ -4,7 +4,7 @@
   <enumeration id="1" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Nivel" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Nivel.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="465" y="1018"/>    
+    <position height="-1" width="-1" x="534" y="992"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Profesor" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Profesor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="516" y="715"/>    
+    <position height="-1" width="-1" x="534" y="730"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Empleado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Empleado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="192" x="439" y="351"/>    
+    <position height="-1" width="-1" x="534" y="416"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Auxiliar" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Auxiliar.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="870" y="699"/>    
+    <position height="-1" width="-1" x="837" y="730"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,7 +44,7 @@
   <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Cargo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Cargo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="228" y="774"/>    
+    <position height="-1" width="-1" x="182" y="730"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -54,7 +54,7 @@
   <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Instituto" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Instituto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="808" y="164"/>    
+    <position height="-1" width="-1" x="837" y="161"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -64,7 +64,7 @@
   <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.ColaEmpleados" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/ColaEmpleados.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="521" y="143"/>    
+    <position height="-1" width="-1" x="534" y="161"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -74,7 +74,7 @@
   <interface id="8" language="java" name="ar.edu.ort.p1.examenes.ds.fiscalizables.src.Fiscalizable" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/fiscalizables/src/Fiscalizable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="232" y="244"/>    
+    <position height="-1" width="-1" x="182" y="161"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -83,7 +83,7 @@
   </interface>  
   <class id="9" language="java" name="ar.edu.ort.p1.util.Fecha" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/util/Fecha.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="229" y="487"/>    
+    <position height="-1" width="-1" x="182" y="416"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -101,92 +101,91 @@
     </display>  
   </class>  
   <association id="11">    
-    <bendpoint x="488" y="882"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="12" name="titulo">        
-        <position height="0" width="0" x="416" y="-809"/>      
-      </attribute>      
-      <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="416" y="-809"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="14">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <dependency id="16">    
-    <bendpoint x="1030" y="305"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <association id="17">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="18" name="cargos">        
-        <position height="0" width="0" x="135" y="-501"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="135" y="-501"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="20">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="21" name="colaEmps">        
+      <attribute id="12" name="colaEmps">        
         <position height="0" width="0" x="-159" y="-177"/>      
       </attribute>      
-      <multiplicity id="22" minimum="0" maximum="1">        
+      <multiplicity id="13" minimum="0" maximum="1">        
         <position height="0" width="0" x="-159" y="-177"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="23">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="10"/>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
-  <generalization id="24">    
+  <dependency id="16">    
+    <bendpoint x="984" y="160"/>    
+    <bendpoint x="984" y="731"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="17">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="25">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="26" name="tipo">        
-        <position height="0" width="0" x="214" y="-803"/>      
+  <dependency id="18">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <realization id="19">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <association id="20">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="21" name="titulo">        
+        <position height="0" width="0" x="474" y="-835"/>      
       </attribute>      
-      <multiplicity id="27" minimum="0" maximum="1">        
-        <position height="0" width="0" x="214" y="-803"/>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="474" y="-835"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="29">    
-    <bendpoint x="661" y="194"/>    
+  <association id="23">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="24" name="cargos">        
+        <position height="0" width="0" x="54" y="-538"/>      
+      </attribute>      
+      <multiplicity id="25" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="54" y="-538"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="26">    
     <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="27">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="28">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="29" name="tipo">        
+        <position height="0" width="0" x="272" y="-829"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="272" y="-829"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="31">    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="31">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="8"/>  
-  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
