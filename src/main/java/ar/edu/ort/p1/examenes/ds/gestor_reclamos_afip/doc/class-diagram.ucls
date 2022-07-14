@@ -4,7 +4,7 @@
   <class id="1" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Auto" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Auto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="352" y="1013"/>    
+    <position height="-1" width="-1" x="1567" y="1007"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.GestionAfip" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/GestionAfip.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="673" y="66"/>    
+    <position height="153" width="231" x="564" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Reclamo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Reclamo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="231" x="1146" y="405"/>    
+    <position height="-1" width="-1" x="661" y="518"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/ListaOrdenadaDni.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="250" y="151"/>    
+    <position height="-1" width="-1" x="1032" y="115"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -45,7 +45,7 @@
   <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Ciudadano" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Ciudadano.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="699" y="394"/>    
+    <position height="189" width="231" x="856" y="441"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -55,7 +55,7 @@
   <interface id="6" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Tributable" 
     project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Tributable.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="682" y="601"/>    
+    <position height="81" width="231" x="856" y="670"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,7 +65,7 @@
   <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Vehiculo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Vehiculo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="238" x="321" y="738"/>    
+    <position height="171" width="238" x="1164" y="729"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   <class id="8" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Moto" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Moto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="53" y="1017"/>    
+    <position height="-1" width="-1" x="1288" y="1016"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -85,7 +85,7 @@
   <class id="9" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Arma" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Arma.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1096" y="867"/>    
+    <position height="-1" width="-1" x="956" y="920"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -95,7 +95,7 @@
   <enumeration id="10" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Tipo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Tipo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-266" y="991"/>    
+    <position height="-1" width="-1" x="1279" y="1236"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -105,7 +105,7 @@
   <class id="11" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.Inmueble" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/Inmueble.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="756" y="847"/>    
+    <position height="-1" width="-1" x="601" y="914"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -115,7 +115,7 @@
   <class id="12" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.ColaDeReclamos" 
     project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/ColaDeReclamos.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1196" y="213"/>    
+    <position height="81" width="231" x="312" y="230"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -125,7 +125,7 @@
   <class id="13" language="java" name="ar.edu.ort.p1.examenes.ds.gestor_reclamos_afip.src.PilaDeReclamos" 
     project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/gestor_reclamos_afip/src/PilaDeReclamos.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1424" y="85"/>    
+    <position height="81" width="231" x="41" y="230"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -136,76 +136,92 @@
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="7"/>  
   </generalization>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="16">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <generalization id="17">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="7"/>  
-  </generalization>  
-  <dependency id="18">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="19">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <association id="20">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="21" name="reclamos"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="23">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="24">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <association id="25">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="26" name="bienes"/>      
-      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="28">    
-    <end type="SOURCE" refId="7"/>    
+  <realization id="15">    
+    <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="6"/>  
   </realization>  
-  <realization id="29">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <association id="30">    
+  <association id="16">    
     <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="31" name="tipo"/>      
-      <multiplicity id="32" minimum="0" maximum="1"/>    
+      <attribute id="17" name="tipo">        
+        <position height="0" width="0" x="16" y="499"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="16" y="499"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="33">    
+  <generalization id="19">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="20">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="21" name="bienes">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="25">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="34" name="ciudadanos"/>      
-      <multiplicity id="35" minimum="0" maximum="1"/>    
+      <attribute id="26" name="reclamos">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="28">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="29">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="30">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="31" name="ciudadanos">        
+        <position height="0" width="0" x="313" y="-173"/>      
+      </attribute>      
+      <multiplicity id="32" minimum="0" maximum="1">        
+        <position height="0" width="0" x="313" y="-173"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="35">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
   <realization id="36">    
-    <end type="SOURCE" refId="9"/>    
+    <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="6"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
