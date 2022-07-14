@@ -14,7 +14,7 @@ public class Mesa {
 	}
 
 	/**
-	 * Ejercicio C: La explotación del método repartirCartas que reparta una carta a
+	 * Ejercicio C: La explotacion del método repartirCartas que reparta una carta a
 	 * cada jugador siguiendo una ronda hasta llegar a darle 4 a cada uno. Debe
 	 * haber por lo menos dos jugadores en la mesa. Verificar no quedarse sin cartas
 	 * para repartir. Devuelve true o false dependiendo de si pudo repartir las
