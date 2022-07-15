@@ -6,7 +6,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_04_polimorfismo_basado_en_interfaces/figuras/src/Rectangulo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="121" width="133" x="361" y="37"/>    
+    <position height="121" width="133" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -18,7 +18,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_04_polimorfismo_basado_en_interfaces/figuras/src/Cuadrado.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="103" width="120" x="201" y="37"/>    
+    <position height="103" width="120" x="214" y="37"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -29,7 +29,7 @@
     name="ar.edu.ort.p1.unidades.u3.ejemplos._04_polimorfismo_basado_en_interfaces.figuras.src.Figura" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_04_polimorfismo_basado_en_interfaces/figuras/src/Figura.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="85" width="120" x="201" y="198"/>    
+    <position height="85" width="120" x="214" y="198"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -41,7 +41,7 @@
     
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_04_polimorfismo_basado_en_interfaces/figuras/src/Circulo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="103" width="120" x="41" y="37"/>    
+    <position height="103" width="120" x="374" y="37"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,11 +49,11 @@
     </display>  
   </class>  
   <realization id="5">    
-    <end type="SOURCE" refId="2"/>    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
   <realization id="6">    
-    <end type="SOURCE" refId="4"/>    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
   <realization id="7">    
