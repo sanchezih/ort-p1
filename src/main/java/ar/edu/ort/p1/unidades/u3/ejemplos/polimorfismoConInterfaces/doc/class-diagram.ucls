@@ -5,8 +5,8 @@
     name="ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion.Masajista" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/Masajista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="331" x="1154" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="229" width="211" x="266" y="450"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -17,8 +17,8 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/IntegranteDePlantelDeFutbol.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="233" y="230"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="-1" width="-1" x="146" y="223"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -29,8 +29,8 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/IntegranteDeSeleccionDeFutbol.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="387" width="331" x="598" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="373" width="271" x="399" y="37"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -40,8 +40,8 @@
     name="ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion.Futbolista" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/Futbolista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="261" width="331" x="41" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="247" width="212" x="517" y="450"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -51,27 +51,27 @@
     name="ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismoConInterfaces.src.seleccion.Entrenador" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismoConInterfaces/src/seleccion/Entrenador.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="754" y="622"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="193" width="188" x="769" y="450"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="6">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="7">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="8">    
+  <realization id="6">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </realization>  
-  <generalization id="9">    
+  <generalization id="7">    
     <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
