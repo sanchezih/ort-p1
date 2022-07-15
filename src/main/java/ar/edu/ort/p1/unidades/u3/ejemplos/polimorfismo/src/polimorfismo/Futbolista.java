@@ -46,7 +46,6 @@ public class Futbolista extends IntegranteDeSeleccion {
 	public void entrevista() {
 		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
 				+ " y estoy dando una entrevista (Clase Futbolista)");
-
 	}
 
 }
