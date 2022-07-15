@@ -15,22 +15,6 @@ public class Futbolista extends IntegranteDeSeleccion {
 		this.demarcacion = demarcacion;
 	}
 
-	public int getDorsal() {
-		return dorsal;
-	}
-
-	public void setDorsal(int dorsal) {
-		this.dorsal = dorsal;
-	}
-
-	public String getDemarcacion() {
-		return demarcacion;
-	}
-
-	public void setDemarcacion(String demarcacion) {
-		this.demarcacion = demarcacion;
-	}
-
 	@Override
 	public void participarEnEntrenamiento() {
 		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()

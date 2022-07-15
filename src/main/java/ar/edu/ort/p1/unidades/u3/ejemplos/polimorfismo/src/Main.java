@@ -51,19 +51,24 @@ public class Main {
 			integrante.participarEnPartido();
 		}
 
+		/*----------------------------------------------------------------------------*/
+
+		/**
+		 * En los siguientes 3 metodos es necesario hacer downcasting. Ver video:
+		 * https://www.youtube.com/watch?v=nzPC7dk_nmg
+		 */
 		// Planificar un entrenamiento
 		System.out.println(
-				"\n5. Planificar Entrenamiento: Solo el entrenador tiene el metodo para planificar un entrenamiento:");
-		((Entrenador) gallarre).planificarEntrenamiento(); // Hago Downcasting. Ver video
-															// https://www.youtube.com/watch?v=nzPC7dk_nmg
+				"\n5. Planificar Entrenamiento: Solo el entrenador tiene el metodo para planificar un entrenamiento");
+		((Entrenador) gallarre).planificarEntrenamiento();
 
 		// Entrevista
-		System.out.println("\n6. Dar entrevista: Solo el futbolista tiene el metodo para dar una entrevista:");
-		((Futbolista) aguirre).entrevista(); // Hago Downcasting.
+		System.out.println("\n6. Dar entrevista: Solo el futbolista tiene el metodo para dar una entrevista");
+		((Futbolista) aguirre).entrevista();
 
 		// MASAJE
 		System.out.println("\n7. Masaje: Solo el masajista tiene el metodo para dar un masaje:");
-		((Masajista) perez).darMasaje(); // Hago Downcasting.
+		((Masajista) perez).darMasaje();
 
 	}
 }
