@@ -5,8 +5,8 @@
     name="ar.edu.ort.p1.unidades.u3.ejemplos.polimorfismo.src.polimorfismo.IntegranteDeSeleccion" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismo/src/polimorfismo/IntegranteDeSeleccion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="387" width="286" x="367" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="373" width="229" x="293" y="37"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -16,8 +16,8 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismo/src/polimorfismo/Futbolista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="261" width="286" x="41" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="247" width="212" x="41" y="450"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -27,8 +27,8 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismo/src/polimorfismo/Masajista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="286" x="693" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="157" width="211" x="293" y="450"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -38,8 +38,8 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/polimorfismo/src/polimorfismo/Entrenador.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="286" x="367" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="157" width="188" x="544" y="450"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -50,14 +50,14 @@
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="6">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="7">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+  <generalization id="7">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="false" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
     <operations public="true" package="true" protected="true" private="true" static="true"/>  

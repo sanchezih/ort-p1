@@ -15,30 +15,14 @@ public class Masajista extends IntegranteDeSeleccion {
 		this.aniosExperiencia = aniosExperiencia;
 	}
 
-	public String getPosicion() {
-		return posicion;
-	}
-
-	public void setPosicion(String posicion) {
-		this.posicion = posicion;
-	}
-
-	public int getAniosExperiencia() {
-		return aniosExperiencia;
-	}
-
-	public void setAniosExperiencia(int aniosExperiencia) {
-		this.aniosExperiencia = aniosExperiencia;
-	}
-
 	@Override
 	public void participarEnEntrenamiento() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
 				+ " y estoy dando asistencia en el entrenamiento (Clase Masajista - Override)");
 	}
 
 	public void darMasaje() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje");
 	}
 
 }

@@ -40,34 +40,30 @@ public class Main {
 		}
 
 		// Entrenamiento
-		System.out.println("\n3.Entrenamiento: Todos los integrantes tienen su funcion en un entrenamiento");
+		System.out.println("\n3. Entrenamiento: Todos los integrantes tienen su funcion en un entrenamiento");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.participarEnEntrenamiento();
 		}
 
 		// Partido de futbol
-		System.out.println("\nPartido de Futbol: Todos los integrantes tienen su funcion en un partido");
+		System.out.println("\n4. Partido de Futbol: Todos los integrantes tienen su funcion en un partido");
 		for (IntegranteDeSeleccion integrante : integrantes) {
 			integrante.participarEnPartido();
 		}
 
-		// PLANIFICAR ENTRENAMIENTO
+		// Planificar un entrenamiento
 		System.out.println(
-				"\nPlanificar Entrenamiento: Solo el entrenador tiene el metodo para planificar un entrenamiento:");
-		System.out.print(gallarre.getNombre() + " " + gallarre.getApellido() + " -> ");
+				"\n5. Planificar Entrenamiento: Solo el entrenador tiene el metodo para planificar un entrenamiento:");
+		((Entrenador) gallarre).planificarEntrenamiento(); // Hago Downcasting. Ver video
+															// https://www.youtube.com/watch?v=nzPC7dk_nmg
 
-		// Hago Downcasting. Ver video https://www.youtube.com/watch?v=nzPC7dk_nmg
-		((Entrenador) gallarre).planificarEntrenamiento();
-
-		// ENTREVISTA
-		System.out.println("\nEntrevista: Solo el futbolista tiene el metodo para dar una entrevista:");
-		System.out.print(aguirre.getNombre() + " " + aguirre.getApellido() + " -> ");
-		((Futbolista) aguirre).entrevista();
+		// Entrevista
+		System.out.println("\n6. Dar entrevista: Solo el futbolista tiene el metodo para dar una entrevista:");
+		((Futbolista) aguirre).entrevista(); // Hago Downcasting.
 
 		// MASAJE
-		System.out.println("\nMasaje: Solo el masajista tiene el metodo para dar un masaje:");
-		System.out.print(perez.getNombre() + " " + perez.getApellido() + " -> ");
-		((Masajista) perez).darMasaje();
+		System.out.println("\n7. Masaje: Solo el masajista tiene el metodo para dar un masaje:");
+		((Masajista) perez).darMasaje(); // Hago Downcasting.
 
 	}
 }

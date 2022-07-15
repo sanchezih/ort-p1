@@ -41,16 +41,8 @@ public abstract class IntegranteDeSeleccion {
 		this.apellido = apellido;
 	}
 
-	public int getEdad() {
-		return edad;
-	}
-
 	public void setEdad(int edad) {
 		this.edad = edad;
-	}
-
-	public void viajar() {
-		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy vianajdno (Clase Padre)");
 	}
 
 	public void concentrarse() {
@@ -58,9 +50,13 @@ public abstract class IntegranteDeSeleccion {
 				"\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy concentrandome (Clase Padre)");
 	}
 
+	public void viajar() {
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy viajando (Clase Padre)");
+	}
+
 	public void participarEnPartido() {
 		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
-				+ " y estoy asistiendo al Partido de Futbol (Clase Padre)");
+				+ " y estoy participando del Partido de Futbol (Clase Padre)");
 	}
 
 	/**

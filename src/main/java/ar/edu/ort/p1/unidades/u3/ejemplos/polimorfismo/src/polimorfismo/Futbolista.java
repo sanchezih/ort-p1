@@ -33,18 +33,20 @@ public class Futbolista extends IntegranteDeSeleccion {
 
 	@Override
 	public void participarEnEntrenamiento() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
 				+ " y estoy entrenando (Clase Futbolista - Override)");
 	}
 
 	@Override
 	public void participarEnPartido() {
-		System.out.println("Soy " + this.getNombre() + " " + this.getApellido()
-				+ " -> Juega un Partido (Clase Futbolista - Override)");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
+				+ " y estoy participando (Jugando) en un Partido (Clase Futbolista - Override)");
 	}
 
 	public void entrevista() {
-		System.out.println("Da una Entrevista");
+		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido()
+				+ " y estoy dando una entrevista (Clase Futbolista)");
+
 	}
 
 }
