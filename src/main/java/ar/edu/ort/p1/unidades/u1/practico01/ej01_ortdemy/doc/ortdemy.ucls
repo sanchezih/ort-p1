@@ -4,7 +4,7 @@
   <class id="1" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej01_ortdemy.src.Curso" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/Curso.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="824" y="525"/>    
+    <position height="-1" width="-1" x="820" y="569"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -15,7 +15,7 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/TipoDeLeccion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="172" y="607"/>    
+    <position height="-1" width="-1" x="172" y="570"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -25,7 +25,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej01_ortdemy.src.Leccion" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/Leccion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="523" y="583"/>    
+    <position height="-1" width="-1" x="468" y="569"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej01_ortdemy.src.Usuario" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/Usuario.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1163" y="317"/>    
+    <position height="-1" width="-1" x="1197" y="141"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -45,7 +45,7 @@
   <enumeration id="5" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej01_ortdemy.src.Resultado" 
     project="ort-p1" file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/Resultado.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="215" y="127"/>    
+    <position height="-1" width="-1" x="172" y="142"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -55,7 +55,7 @@
   <class id="6" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej01_ortdemy.src.Ortdemy" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/Ortdemy.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="189" width="303" x="576" y="37"/>    
+    <position height="-1" width="-1" x="820" y="141"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,7 +65,7 @@
   <class id="7" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej01_ortdemy.src.Categoria" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej01_ortdemy/src/Categoria.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="282" y="357"/>    
+    <position height="-1" width="-1" x="172" y="358"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -73,96 +73,96 @@
     </display>  
   </class>  
   <association id="8">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="9" name="usuarios">        
-        <position height="0" width="0" x="1226" y="-1856"/>      
+    <bendpoint x="1067" y="529"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="9" name="suscriptores">        
+        <position height="0" width="0" x="1260" y="-2032"/>      
       </attribute>      
       <multiplicity id="10" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="1226" y="-1856"/>      
+        <position height="0" width="0" x="1260" y="-2032"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="11">    
-    <bendpoint x="771" y="289"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <association id="12">    
+  <association id="11">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="13" name="lecciones">        
-        <position height="0" width="0" x="647" y="-390"/>      
+      <attribute id="12" name="autor">        
+        <position height="0" width="0" x="1260" y="-2032"/>      
       </attribute>      
-      <multiplicity id="14" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="647" y="-390"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="15">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="16" name="autor">        
-        <position height="0" width="0" x="1226" y="-1856"/>      
-      </attribute>      
-      <multiplicity id="17" minimum="0" maximum="1">        
-        <position height="0" width="0" x="1226" y="-1856"/>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1260" y="-2032"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="18">    
+  <association id="14">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="19" name="cursos">        
-        <position height="0" width="0" x="907" y="-295"/>      
+      <attribute id="15" name="cursos">        
+        <position height="0" width="0" x="911" y="-251"/>      
       </attribute>      
-      <multiplicity id="20" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="907" y="-295"/>      
+      <multiplicity id="16" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="911" y="-251"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="21">    
+  <dependency id="17">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="5"/>  
   </dependency>  
-  <association id="22">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="23" name="suscriptores">        
-        <position height="0" width="0" x="1226" y="-1856"/>      
-      </attribute>      
-      <multiplicity id="24" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="1226" y="-1856"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="25">    
+  <association id="18">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="26" name="categorias">        
-        <position height="0" width="0" x="260" y="-196"/>      
+      <attribute id="19" name="categorias">        
+        <position height="0" width="0" x="217" y="-195"/>      
       </attribute>      
-      <multiplicity id="27" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="260" y="-196"/>      
+      <multiplicity id="20" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="217" y="-195"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="28">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="29" name="tipo">        
-        <position height="0" width="0" x="1525" y="-1469"/>      
+  <association id="21">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="22" name="usuarios">        
+        <position height="0" width="0" x="1260" y="-2032"/>      
       </attribute>      
-      <multiplicity id="30" minimum="0" maximum="1">        
-        <position height="0" width="0" x="1525" y="-1469"/>      
+      <multiplicity id="23" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="1260" y="-2032"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="25">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="26" name="tipo">        
+        <position height="0" width="0" x="1482" y="-1468"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1482" y="-1468"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="29" name="lecciones">        
+        <position height="0" width="0" x="592" y="-374"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="592" y="-374"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
