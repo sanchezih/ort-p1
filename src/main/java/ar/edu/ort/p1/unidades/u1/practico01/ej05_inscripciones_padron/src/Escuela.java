@@ -30,7 +30,6 @@ public class Escuela {
 	public void designarPresidenteDeMesa(Mesa mesa, Persona persona) {
 		this.quitarPersonaDeMesa(persona);
 		mesa.asignarPresidente(persona);
-
 	}
 
 	/**
@@ -80,7 +79,8 @@ public class Escuela {
 
 	/*----------------------------------------------------------------------------*/
 
-	// Metodos extra
+	// Metodos complementarios
+	
 	public void agregarMesa(Mesa mesa) {
 		this.mesas.add(mesa);
 	}

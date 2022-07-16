@@ -6,7 +6,6 @@ public class AlumnoSimplificado {
 	private String mail;
 
 	public AlumnoSimplificado(String nombre, String mail) {
-		super();
 		this.nombre = nombre;
 		this.mail = mail;
 	}
@@ -29,7 +28,7 @@ public class AlumnoSimplificado {
 
 	@Override
 	public String toString() {
-		return "AlumnoSimplificado [nombre=" + nombre + ", mail=" + mail + "]";
+		return "\n\t\t" + nombre + ", " + mail;
 	}
 
 }

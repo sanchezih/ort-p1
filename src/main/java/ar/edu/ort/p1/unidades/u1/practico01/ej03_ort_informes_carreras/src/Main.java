@@ -18,6 +18,9 @@ public class Main {
 		fernanda.agregarMateria(orgEmpresarialEnCurso);
 		luis.agregarMateria(introInformaticaAprobada);
 		facundo.agregarMateria(introInformaticaAprobada);
+		facundo.agregarMateria(orgEmpresarialAprobada);
+		luis.agregarMateria(orgEmpresarialAprobada);
+
 
 		// Creo las carreras
 		Carrera analistaDeSistemas = new Carrera();

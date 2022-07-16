@@ -2,12 +2,27 @@ package ar.edu.ort.p1.util;
 
 public class Matematica {
 
-	public static double sumarPorcentaje(double a, double b) {
-		return a + calcularPorcentaje(a, b);
+	/**
+	 * Metodo que recibe un valor x y un valor p. El p% de x es sumado a x y el
+	 * resultado es retornado.
+	 * 
+	 * @param x
+	 * @param p
+	 * @return
+	 */
+	public static double sumarPorcentaje(double x, double p) {
+		return x + calcularPorcentaje(x, p);
 	}
 
-	public static double calcularPorcentaje(double a, double b) {
-		return (a * b) / 100;
+	/**
+	 * Metodo que recibe un valor x y un valor p. El p% de x es retornado.
+	 * 
+	 * @param x
+	 * @param b
+	 * @return
+	 */
+	public static double calcularPorcentaje(double x, double p) {
+		return (x * p) / 100;
 	}
 
 	public static double promedio(double acu, double total) {

@@ -14,8 +14,8 @@ public class Alumno {
 		this.materias = new ArrayList<Materia>();
 	}
 
-	public void agregarMateria(Materia m) {
-		this.materias.add(m);
+	public void agregarMateria(Materia materia) {
+		this.materias.add(materia);
 	}
 
 	public String getNombre() {
@@ -38,8 +38,8 @@ public class Alumno {
 
 	public int cantAprobadas() {
 		int cant = 0;
-		for (Materia m : this.materias) {
-			if (m.getEstado() == Estado.APROBADA) {
+		for (Materia materia : this.materias) {
+			if (materia.getEstado() == Estado.APROBADA) {
 				cant++;
 			}
 		}

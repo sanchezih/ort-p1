@@ -1,6 +1,5 @@
 package ar.edu.ort.p1.unidades.u1.practico01.ej07_amazonia.src;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Cliente {
@@ -119,7 +118,8 @@ public class Cliente {
 				sePuedeAgregar = false;
 			}
 		}
-		if (sePuedeAgregar)
+		if (sePuedeAgregar) {
 			this.historial.agregarPedido(pedido);
+		}
 	}
 }

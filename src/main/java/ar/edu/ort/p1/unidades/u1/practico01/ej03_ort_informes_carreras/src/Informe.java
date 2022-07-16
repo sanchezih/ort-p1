@@ -18,7 +18,8 @@ public class Informe {
 
 	@Override
 	public String toString() {
-		return "Informe [cant=" + cant + ", alumnos=" + alumnos + "]";
+		return "Informe {\n\tMaximo nro de materias aprobadas por un alumno: " + cant + "\n\talumnos=" + alumnos
+				+ "\n}";
 	}
 
 }

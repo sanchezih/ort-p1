@@ -34,9 +34,9 @@ public class Carrera {
 		maxCantAprobadas = maxCantMateriasAprobadas();
 		informe = new Informe(maxCantAprobadas);
 
-		for (Alumno a : this.alumnos) {
-			if (a.cantAprobadas() == maxCantAprobadas) {
-				AlumnoSimplificado as = new AlumnoSimplificado(a.getNombre(), a.getMail());
+		for (Alumno alumno : this.alumnos) {
+			if (alumno.cantAprobadas() == maxCantAprobadas) {
+				AlumnoSimplificado as = new AlumnoSimplificado(alumno.getNombre(), alumno.getMail());
 				informe.agregarAlumnoSimplificado(as);
 			}
 		}
@@ -47,8 +47,8 @@ public class Carrera {
 		int max = 0;
 		int cantAprobadas;
 
-		for (Alumno a : this.alumnos) {
-			cantAprobadas = a.cantAprobadas();
+		for (Alumno alumno : this.alumnos) {
+			cantAprobadas = alumno.cantAprobadas();
 			if (cantAprobadas > max) {
 				max = cantAprobadas;
 			}
@@ -57,7 +57,7 @@ public class Carrera {
 	}
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos complementarios
 
 	public void mostrarInformeMaxMaterias() {
 		Informe informe = this.getInformeMaxMaterias();

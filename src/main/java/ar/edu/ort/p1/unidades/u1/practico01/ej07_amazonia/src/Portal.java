@@ -37,7 +37,7 @@ public class Portal {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos extra */
+	// Metodos complementarios
 
 	public void agregarCliente(Cliente cliente) {
 		this.clientes.add(cliente);
