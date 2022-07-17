@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u4.practico04.ej10_circulo_cine_fantastico.src;
 
-
+import ar.edu.ort.p1.util.Fecha;
 
 public class Ticket {
 

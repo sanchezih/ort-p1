@@ -68,4 +68,8 @@ public class Fecha {
 		return Calendar.getInstance().get(Calendar.YEAR);
 	}
 
+	@Override
+	public String toString() {
+		return dia + "/" + mes + "/" + anio;
+	}
 }
