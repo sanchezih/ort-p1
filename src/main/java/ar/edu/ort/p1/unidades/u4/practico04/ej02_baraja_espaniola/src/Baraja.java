@@ -55,9 +55,10 @@ public class Baraja {
 	// Metodos complementarios
 
 	private void inicializarBaraja() {
+		final int CANT_CARTAS_POR_PALO = 12;
 		int i = 0;
 		for (Palo p : Palo.values()) {
-			for (int j = 0; j < 12; j++) {
+			for (int j = 0; j < CANT_CARTAS_POR_PALO; j++) {
 				cartas[i] = new Carta(j + 1, p);
 				i++;
 			}
