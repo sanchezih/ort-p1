@@ -1,6 +1,7 @@
-package ar.edu.ort.p1.unidades.u4.practico04.ej05_camiones.src.empresa;
+package ar.edu.ort.p1.unidades.u4.practico04.ej05_empresa_camiones.src;
 
 public class Viaje {
+
 	private int idCamion;
 	private String idChofer;
 	private double kms;
@@ -34,6 +35,11 @@ public class Viaje {
 
 	public void setKms(double kms) {
 		this.kms = kms;
+	}
+
+	@Override
+	public String toString() {
+		return "Viaje [idCamion=" + idCamion + ", idChofer=" + idChofer + ", kms=" + kms + "]";
 	}
 
 }

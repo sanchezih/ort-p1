@@ -264,9 +264,9 @@ public class UtilArrays {
 	 */
 	public static void mostrar(double[] elementos) {
 		for (int i = 0; i < elementos.length; i++) {
-			System.out.print(elementos[i] + " ");
+			System.out.print(Double.parseDouble(String.format("%.2f", elementos[i])) + "\n");
 		}
-		System.out.println();
+
 	}
 
 }
