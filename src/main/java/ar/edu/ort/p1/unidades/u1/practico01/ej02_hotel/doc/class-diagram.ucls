@@ -61,15 +61,15 @@
     </display>  
   </class>  
   <association id="7">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="8" name="tipo">        
-        <position height="0" width="0" x="392" y="9"/>      
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="8" name="cliente">        
+        <position height="0" width="0" x="230" y="-239"/>      
       </attribute>      
       <multiplicity id="9" minimum="0" maximum="1">        
-        <position height="0" width="0" x="392" y="9"/>      
+        <position height="0" width="0" x="230" y="-239"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="10">    
@@ -85,27 +85,27 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="13">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="14" name="cliente">        
-        <position height="0" width="0" x="230" y="-239"/>      
-      </attribute>      
-      <multiplicity id="15" minimum="0" maximum="1">        
-        <position height="0" width="0" x="230" y="-239"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="16">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="17" name="fechaPrestacion">        
+      <attribute id="14" name="fechaPrestacion">        
         <position height="0" width="0" x="483" y="12"/>      
       </attribute>      
-      <multiplicity id="18" minimum="0" maximum="1">        
+      <multiplicity id="15" minimum="0" maximum="1">        
         <position height="0" width="0" x="483" y="12"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="17" name="tipo">        
+        <position height="0" width="0" x="392" y="9"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="392" y="9"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="19">    
