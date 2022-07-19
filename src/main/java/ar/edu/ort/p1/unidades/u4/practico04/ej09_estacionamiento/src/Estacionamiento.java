@@ -54,13 +54,12 @@ public class Estacionamiento {
 		// Hago las validaciones pedidas
 		if (existeUbicacion(nivel, espacio) && // Que la ubicacion exista
 				this.autos[nivel][espacio] != null && // Que el auto no se haya ya retirado
-				condicionAprobada(this.autos[nivel][espacio]) // Pagos
+				validarHistorialDePagos(this.autos[nivel][espacio]) // Pagos
 		) {
 			autoBuscado = this.autos[nivel][espacio];
 			this.autos[nivel][espacio] = null;
 			this.registros.add(new Registro(autoBuscado.getPatente(), Fecha.hoy()));
 		}
-
 		return autoBuscado;
 	}
 
@@ -68,34 +67,25 @@ public class Estacionamiento {
 		return nivel >= 0 && nivel < CANT_PISOS && espacio >= 0 && espacio < CANT_LUGARES;
 	}
 
-	private boolean condicionAprobada(Auto auto) {
-		boolean condiAprobada = true;
-		int mesInicio = calcularMesInicio(auto.getFechaIngreso()) - 1;
-		int mesActual = Fecha.hoy().getMes() - 1;
+	private boolean validarHistorialDePagos(Auto auto) {
+		boolean aprobado = true;
+		int posMesInicio = calcularPosicionDelMesInicio(auto.getFechaIngreso());
+		int posMesFin = Fecha.hoy().getMes() - 1;
 
-		
-		
-		while (auto.getPagos()[mesActual] != null && auto.getPagos()[mesActual].getMonto() > 0
-				&& mesActual >= mesInicio) {
-			mesActual--;
+		while (auto.getPagos()[posMesFin] != null && auto.getPagos()[posMesFin].getMonto() > 0
+				&& posMesFin > posMesInicio) {
+			posMesFin--;
 		}
-
-		if (mesActual >= mesInicio) {
-			condiAprobada = false;
+		if (posMesFin > posMesInicio) {
+			aprobado = false;
 		}
-
-		return condiAprobada;
+		return aprobado;
 	}
 
-	private int calcularMesInicio(Fecha fecha) {
-		int mesInicio = 1;
-		
-		if (fecha.getAnio() < Fecha.hoy().getAnio()) {
-			mesInicio = 1;
-		}
-		
+	private int calcularPosicionDelMesInicio(Fecha fecha) {
+		int mesInicio = 0;
 		if (fecha.getAnio() == Fecha.hoy().getAnio()) {
-			mesInicio = fecha.getMes();
+			mesInicio = fecha.getMes()-1;
 		}
 		return mesInicio;
 	}
@@ -158,7 +148,7 @@ public class Estacionamiento {
 		};
 
 		Pago[] pagosNIF512 = { //
-				new Pago(90, "39867181"), // Feb
+				null, // Ago
 				new Pago(90, "39867181"), // Feb
 				new Pago(90, "39867181"), // Feb
 				new Pago(90, "39867181"), // Feb
@@ -173,7 +163,7 @@ public class Estacionamiento {
 		};
 
 		// this.autos[0][0] = new Auto("IHH062", pagosIHH062, new Fecha(10, 1, 2021));
-		this.autos[0][1] = new Auto("NIF512", pagosNIF512, new Fecha(10, 9, 2021));
+		this.autos[0][1] = new Auto("NIF512", pagosNIF512, new Fecha(10, 1, 2022));
 
 	}
 }
