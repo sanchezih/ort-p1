@@ -3,7 +3,6 @@ package ar.edu.ort.p1.util;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Clase Fecha Java
@@ -122,8 +121,8 @@ public class Fecha {
 	 * @return
 	 */
 	public static Fecha hoy() {
-		Date date = new Date();
-		return new Fecha(date.getDay(), date.getMonth(), date.getYear());
+		LocalDate currentDate = LocalDate.now();
+		return new Fecha(currentDate.getDayOfMonth(), currentDate.getMonth().getValue(), currentDate.getYear());
 	}
 
 	/**

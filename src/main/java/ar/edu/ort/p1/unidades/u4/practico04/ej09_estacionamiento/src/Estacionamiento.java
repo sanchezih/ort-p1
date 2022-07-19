@@ -69,26 +69,31 @@ public class Estacionamiento {
 	}
 
 	private boolean condicionAprobada(Auto auto) {
-		int mesInicio;
 		boolean condiAprobada = true;
-		mesInicio = calcularMesInicio(auto.getFechaIngreso());
-		int mesActual = Fecha.hoy().getMes();
+		int mesInicio = calcularMesInicio(auto.getFechaIngreso()) - 1;
+		int mesActual = Fecha.hoy().getMes() - 1;
 
-		if (auto.getPagos()[mesActual] != null) {
-			while (mesActual >= mesInicio && //
-					auto.getPagos()[mesActual].getMonto() > 0) {
-				mesActual--;
-			}
+		
+		
+		while (auto.getPagos()[mesActual] != null && auto.getPagos()[mesActual].getMonto() > 0
+				&& mesActual >= mesInicio) {
+			mesActual--;
 		}
 
 		if (mesActual >= mesInicio) {
 			condiAprobada = false;
 		}
+
 		return condiAprobada;
 	}
 
 	private int calcularMesInicio(Fecha fecha) {
-		int mesInicio = 0;
+		int mesInicio = 1;
+		
+		if (fecha.getAnio() < Fecha.hoy().getAnio()) {
+			mesInicio = 1;
+		}
+		
 		if (fecha.getAnio() == Fecha.hoy().getAnio()) {
 			mesInicio = fecha.getMes();
 		}
@@ -153,13 +158,13 @@ public class Estacionamiento {
 		};
 
 		Pago[] pagosNIF512 = { //
-				null, // Ene
+				new Pago(90, "39867181"), // Feb
+				new Pago(90, "39867181"), // Feb
+				new Pago(90, "39867181"), // Feb
+				new Pago(90, "39867181"), // Feb
 				new Pago(90, "39867181"), // Feb
 				new Pago(90, "39867181"), // Mar
 				new Pago(90, "39867181"), // Abr
-				null, // May
-				null, // Jun
-				null, // Jul
 				null, // Ago
 				null, // Sep
 				null, // Oct
@@ -168,7 +173,7 @@ public class Estacionamiento {
 		};
 
 		// this.autos[0][0] = new Auto("IHH062", pagosIHH062, new Fecha(10, 1, 2021));
-		this.autos[0][1] = new Auto("NIF512", pagosNIF512, new Fecha(10, 2, 2022));
+		this.autos[0][1] = new Auto("NIF512", pagosNIF512, new Fecha(10, 9, 2021));
 
 	}
 }
