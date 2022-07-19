@@ -41,16 +41,23 @@ public class Auto {
 		this.fechaIngreso = fechaIngreso;
 	}
 
-	public int getMesesImpagos() {
-		int cont = 0;
+	/*----------------------------------------------------------------------------*/
 
-		for (int i = Fecha.hoy().getMes(); i >= 0; i--) {
-			if (pagos[i] != null) {
-				cont++;
+	public int getMesesImpagos() {
+		int cantMesesImpagos = -1;
+		int idxMesBajo = (this.fechaIngreso.getAnio() < Fecha.anioActual()) ? 0 : this.fechaIngreso.getMes();
+		int idxMesAlto = Fecha.hoy().getMes();
+
+		for (int i = idxMesAlto; i >= idxMesBajo; i--) {
+			System.out.println("valido mes "+i);
+			if (pagos[i] == null || pagos[i].getMonto() <= 0) {
+				cantMesesImpagos++;
 			}
 		}
-		return cont;
+		return cantMesesImpagos;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	@Override
 	public String toString() {

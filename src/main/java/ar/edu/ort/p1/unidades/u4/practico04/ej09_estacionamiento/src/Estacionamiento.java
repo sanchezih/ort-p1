@@ -17,6 +17,7 @@ public class Estacionamiento {
 		this.registros = new ArrayList<Registro>();
 		this.autos = new Auto[CANT_PISOS][CANT_LUGARES];
 		inicializarEstacionamiento();
+		dibujarEstacionamiento(this.autos);
 	}
 
 	public ArrayList<Registro> getRegistros() {
@@ -68,27 +69,37 @@ public class Estacionamiento {
 	}
 
 	private boolean validarHistorialDePagos(Auto auto) {
-		boolean aprobado = true;
-		int posMesInicio = calcularPosicionDelMesInicio(auto.getFechaIngreso());
-		int posMesFin = Fecha.hoy().getMes() - 1;
+		boolean aprobado = false;
+		// int idxInicio = getIdxDelMesInicio(auto.getFechaIngreso());
 
-		while (auto.getPagos()[posMesFin] != null && auto.getPagos()[posMesFin].getMonto() > 0
-				&& posMesFin > posMesInicio) {
-			posMesFin--;
+		int idxInicio = (auto.getFechaIngreso().getAnio() == Fecha.hoy().getAnio())
+				? auto.getFechaIngreso().getMes() - 1
+				: 0;
+
+		int idxFin = Fecha.hoy().getMes() - 1;
+
+		// System.out.println("valido de la pos " + idxInicio + " a la " + idxFin);
+
+		while (idxFin >= idxInicio && auto.getPagos()[idxFin] != null && auto.getPagos()[idxFin].getMonto() > 0) {
+			// System.out.println("En la pos " + idxFin + " se pago " +
+			// auto.getPagos()[idxFin].getMonto());
+			idxFin--;
 		}
-		if (posMesFin > posMesInicio) {
-			aprobado = false;
+
+		if (idxFin < idxInicio) {
+			// System.out.println("El ciclo se cortó en la pos " + idxFin);
+			aprobado = true;
 		}
 		return aprobado;
 	}
 
-	private int calcularPosicionDelMesInicio(Fecha fecha) {
-		int mesInicio = 0;
-		if (fecha.getAnio() == Fecha.hoy().getAnio()) {
-			mesInicio = fecha.getMes()-1;
-		}
-		return mesInicio;
-	}
+//	private int getIdxDelMesInicio(Fecha fecha) {
+//		int mesInicio = 0;
+//		if (fecha.getAnio() == Fecha.hoy().getAnio()) {
+//			mesInicio = fecha.getMes() - 1;
+//		}
+//		return mesInicio;
+//	}
 
 	/*----------------------------------------------------------------------------*/
 
@@ -104,26 +115,25 @@ public class Estacionamiento {
 		Auto[] autosMasMorosos = new Auto[CANT_PISOS];
 		Auto autoMoroso;
 
-		for (int f = 0; f < CANT_PISOS; f++) {
-			System.out.println("Entro a ver los autos del piso " + f);
-			autoMoroso = autoMasMorosoPorPiso(autos[f]);
-			// autosMasMorosos[f] = autoMoroso;
+		for (int i = 0; i < CANT_PISOS; i++) {
+			autoMoroso = autoMasMorosoPorPiso(autos[i]);
+			autosMasMorosos[i] = autoMoroso;
 		}
 		return autosMasMorosos;
 	}
 
-	private Auto autoMasMorosoPorPiso(Auto[] autosMorosos) {
-		Auto autoMayor = null;
+	private Auto autoMasMorosoPorPiso(Auto[] autos) {
+		Auto autoMasMoroso = null;
 		int max = 0;
 
-		for (int i = 0; i < autosMorosos.length; i++) {
-			int mesesImpagos = autosMorosos[i].getMesesImpagos();
+		for (int i = 0; i < autos.length; i++) {
+			int mesesImpagos = (autos[i] != null) ? autos[i].getMesesImpagos() : -1;
 			if (mesesImpagos > max) {
-				autoMayor = autosMorosos[i];
+				autoMasMoroso = autos[i];
 				max = mesesImpagos;
 			}
 		}
-		return autoMayor;
+		return autoMasMoroso;
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -132,29 +142,14 @@ public class Estacionamiento {
 
 	private void inicializarEstacionamiento() {
 
-		Pago[] pagosIHH062 = { //
-				new Pago(90, "12110899"), // Ene
-				new Pago(90, "12110899"), // Feb
-				new Pago(90, "12110899"), // Mar
-				new Pago(90, "12110899"), // Abr
-				new Pago(90, "12110899"), // May
-				new Pago(90, "12110899"), // Jun
-				new Pago(90, "12110899"), // Jul
-				new Pago(90, "12110899"), // Ago
-				new Pago(90, "12110899"), // Sep
-				new Pago(90, "12110899"), // Oct
-				new Pago(90, "12110899"), // Nov
-				new Pago(90, "12110899") // Dic
-		};
-
 		Pago[] pagosNIF512 = { //
-				null, // Ago
-				new Pago(90, "39867181"), // Feb
-				new Pago(90, "39867181"), // Feb
-				new Pago(90, "39867181"), // Feb
-				new Pago(90, "39867181"), // Feb
-				new Pago(90, "39867181"), // Mar
-				new Pago(90, "39867181"), // Abr
+				null, // Ene
+				null, // Feb
+				null, // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
 				null, // Ago
 				null, // Sep
 				null, // Oct
@@ -162,8 +157,178 @@ public class Estacionamiento {
 				null // Dic
 		};
 
-		// this.autos[0][0] = new Auto("IHH062", pagosIHH062, new Fecha(10, 1, 2021));
-		this.autos[0][1] = new Auto("NIF512", pagosNIF512, new Fecha(10, 1, 2022));
+		this.autos[0][0] = new Auto("NIF512", pagosNIF512, new Fecha(10, 4, 2022));
+
+		Pago[] pagosOLP727 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[0][1] = new Auto("OLP727", pagosOLP727, new Fecha(10, 1, 2022));
+
+		Pago[] pagosCXE820 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[2][0] = new Auto("CXE820", pagosCXE820, new Fecha(10, 4, 2021));
+
+		Pago[] pagosAJQ503 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[2][1] = new Auto("AJQ503", pagosAJQ503, new Fecha(10, 4, 2021));
+
+		Pago[] pagosOOF152 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[2][2] = new Auto("OOF152", pagosOOF152, new Fecha(10, 4, 2021));
+
+		Pago[] pagosAYN288 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[4][3] = new Auto("AYN288", pagosAYN288, new Fecha(10, 4, 2021));
+
+		Pago[] pagosFKG252 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[3][5] = new Auto("FKG252", pagosFKG252, new Fecha(10, 4, 2021));
+
+		Pago[] pagosFKG253 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[3][4] = new Auto("FKG253", pagosFKG253, new Fecha(10, 4, 2021));
+
+		Pago[] pagosFKG250 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[3][3] = new Auto("FKG250", pagosFKG250, new Fecha(10, 4, 2021));
+
+		Pago[] pagosFKG251 = { //
+				new Pago(90, "11111111"), // Ene
+				new Pago(90, "11111111"), // Feb
+				new Pago(90, "11111111"), // Mar
+				new Pago(90, "11111111"), // Abr
+				new Pago(90, "11111111"), // May
+				new Pago(90, "11111111"), // Jun
+				new Pago(90, "11111111"), // Jul
+				null, // Ago
+				null, // Sep
+				null, // Oct
+				null, // Nov
+				null // Dic
+		};
+
+		this.autos[3][2] = new Auto("FKG251", pagosFKG251, new Fecha(10, 4, 2021));
 
 	}
+
+	private void dibujarEstacionamiento(Auto[][] estacionamiento) {
+		System.out.println("     ESTACIONAMIENTO     ");
+		for (int i = estacionamiento.length - 1; i >= 0; i--) {
+			System.out.print("| ");
+			for (int j = 0; j < estacionamiento[i].length; j++) {
+				char c = (estacionamiento[i][j] != null) ? 'A' : ' ';
+				System.out.print(c + " | ");
+			}
+			System.out.println();
+		}
+		System.out.print("+");
+		for (int k = 0; k < CANT_LUGARES; k++) {
+			System.out.print("---+");
+		}
+		System.out.println("\n");
+	}
+
 }

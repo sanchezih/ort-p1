@@ -1,59 +1,46 @@
 package ar.edu.ort.p1.unidades.u4.practico04.ej09_estacionamiento.src;
 
-import ar.edu.ort.p1.util.Fecha;
-
 public class Main {
 
 	public static void main(String[] args) {
 
-//		Pago auto01pago01 = new Pago(90, "31507904");
-//		Pago auto01pago02 = new Pago(90, "31507904");
-//		Pago auto01pago03 = new Pago(90, "31507904");
-//		Pago auto01pago04 = new Pago(90, "31507904");
-//		Pago auto01pago05 = new Pago(90, "31507904");
-//		Pago auto01pago06 = new Pago(90, "31507904");
-//		Pago auto01pago07 = new Pago(90, "31507904");
-//		Pago auto01pago08 = new Pago(90, "31507904");
-//		Pago auto01pago09 = new Pago(90, "31507904");
-//		Pago auto01pago10 = new Pago(90, "31507904");
-//		Pago auto01pago11 = new Pago(90, "31507904");
-//		Pago auto01pago12 = new Pago(90, "31507904");
-//
-//		Pago[] pagosAuto01 = { auto01pago01, auto01pago02, auto01pago03, auto01pago04, auto01pago05, auto01pago06,
-//				auto01pago07, auto01pago08, auto01pago09, auto01pago10, auto01pago11, auto01pago12 };
-//
-//		Auto autos[][] = new Auto[8][6];
-//
-//		autos[0][0] = new Auto("IHW061", pagosAuto01, new Fecha(10, 1, 2021));
-		// autos[0][1] = new Auto("AJQ503", pagosAuto01, new Fecha(13, 6, 2021));
-
 		Estacionamiento estacionamiento = new Estacionamiento();
 
-		// e1.setAutos(autos);
+		/*----------------------------------------------------------------------------*/
+
+		/**
+		 * Ejercicio B: La explotacion del metodo retirar, que permita resolver lo
+		 * pedido. Retorna el auto indicado o null en caso contrario.
+		 */
+
+		System.out.println("Ejercicio B - INTENTO RETIRAR AUTOS");
+		System.out.println("\tPuedo retirar de 00? (Auto): " + estacionamiento.retirar(00)); // Hay auto
+		System.out.println("\tPuedo retirar de 01? (Auto): " + estacionamiento.retirar(01)); // Hay auto
+		System.out.println("\tPuedo retirar de 20? (Auto): " + estacionamiento.retirar(20)); // Hay auto
+		System.out.println("\tPuedo retirar de 21? (Auto): " + estacionamiento.retirar(21)); // Hay auto
+		System.out.println("\tPuedo retirar de 22? (Auto): " + estacionamiento.retirar(22)); // Hay auto
+		System.out.println("\tPuedo retirar de 32? (Auto): " + estacionamiento.retirar(32)); // Hay auto
+		System.out.println("\tPuedo retirar de 33? (Auto): " + estacionamiento.retirar(33)); // Hay auto
+		System.out.println("\tPuedo retirar de 34? (Auto): " + estacionamiento.retirar(34)); // Hay auto
+		System.out.println("\tPuedo retirar de 35? (Auto): " + estacionamiento.retirar(35)); // Hay auto
+		System.out.println("\tPuedo retirar de 43? (Auto): " + estacionamiento.retirar(43)); // Hay auto
+		System.out.println("\tPuedo retirar de 44? (Vacio): " + estacionamiento.retirar(44)); // No hay auto
+		System.out.println("\tPuedo retirar de 51? (Vacio): " + estacionamiento.retirar(51)); // No hay auto
 
 		/*----------------------------------------------------------------------------*/
 
 		/**
-		 * La explotacion del metodo retirar, que permita resolver lo pedido. Retorna el
-		 * auto indicado o null en caso contrario.
+		 * Ejercicio C: La explotacion del metodo autosMasMorososPorPiso que devuelva
+		 * (no muestre por consola) de cada piso, el auto con mayor cantidad de pagos no
+		 * efectuados durante este anio (se supone unico por piso).
 		 */
+		System.out.println();
+		System.out.println("Ejercicio C - MUESTRO EL AUTO MAS MOROSOS DE CADA PISO");
 
-		//System.out.println("Retiro el auto: " + estacionamiento.retirar(00));
-		System.out.println("Retiro el auto: " + estacionamiento.retirar(01));
-
-		/*----------------------------------------------------------------------------*/
-
-		/**
-		 * La explotacion del metodo autosMasMorososPorPiso que devuelva (no muestre por
-		 * consola) de cada piso, el auto con mayor cantidad de pagos no efectuados
-		 * durante este anio (se supone unico por piso).
-		 */
-
-		// TODO: Terminar
-//		Auto[] autosMasMorososPorPiso = e1.autosMasMorososPorPiso();
-//		for (int i = 0; i < autosMasMorososPorPiso.length; i++) {
-//			autosMasMorososPorPiso[i].toString();
-//		}
+		Auto[] losMasMorosos = estacionamiento.autosMasMorososPorPiso();
+		for (int i = 0; i < losMasMorosos.length; i++) {
+			System.out.println("\tPiso " + i + ": " + losMasMorosos[i]);
+		}
 
 	}
 
