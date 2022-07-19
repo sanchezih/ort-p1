@@ -26,22 +26,23 @@ public class Main {
 		System.out.println("\tPuedo retirar de 43? (Auto): " + estacionamiento.retirar(43)); // Hay auto
 		System.out.println("\tPuedo retirar de 44? (Vacio): " + estacionamiento.retirar(44)); // No hay auto
 		System.out.println("\tPuedo retirar de 51? (Vacio): " + estacionamiento.retirar(51)); // No hay auto
+		System.out.println();
 
 		/*----------------------------------------------------------------------------*/
+
+		estacionamiento.dibujarEstacionamientoAlMomento();
 
 		/**
 		 * Ejercicio C: La explotacion del metodo autosMasMorososPorPiso que devuelva
 		 * (no muestre por consola) de cada piso, el auto con mayor cantidad de pagos no
 		 * efectuados durante este anio (se supone unico por piso).
 		 */
-		System.out.println();
+
 		System.out.println("Ejercicio C - MUESTRO EL AUTO MAS MOROSOS DE CADA PISO");
 
 		Auto[] losMasMorosos = estacionamiento.autosMasMorososPorPiso();
 		for (int i = 0; i < losMasMorosos.length; i++) {
 			System.out.println("\tPiso " + i + ": " + losMasMorosos[i]);
 		}
-
 	}
-
 }

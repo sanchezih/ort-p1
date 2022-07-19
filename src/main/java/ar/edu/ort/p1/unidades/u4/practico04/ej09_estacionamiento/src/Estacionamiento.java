@@ -17,7 +17,7 @@ public class Estacionamiento {
 		this.registros = new ArrayList<Registro>();
 		this.autos = new Auto[CANT_PISOS][CANT_LUGARES];
 		inicializarEstacionamiento();
-		dibujarEstacionamiento(this.autos);
+		dibujarEstacionamientoAlMomento();
 	}
 
 	public ArrayList<Registro> getRegistros() {
@@ -234,7 +234,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // Abr
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
-				new Pago(90, "11111111"), // Jul
+				null, // Jul
 				null, // Ago
 				null, // Sep
 				null, // Oct
@@ -314,12 +314,12 @@ public class Estacionamiento {
 
 	}
 
-	private void dibujarEstacionamiento(Auto[][] estacionamiento) {
-		System.out.println("     ESTACIONAMIENTO     ");
-		for (int i = estacionamiento.length - 1; i >= 0; i--) {
+	public void dibujarEstacionamientoAlMomento() {
+		System.out.println("  ESTACIONAMIENTO AHORA  ");
+		for (int i = this.autos.length - 1; i >= 0; i--) {
 			System.out.print("| ");
-			for (int j = 0; j < estacionamiento[i].length; j++) {
-				char c = (estacionamiento[i][j] != null) ? 'A' : ' ';
+			for (int j = 0; j < this.autos[i].length; j++) {
+				char c = (this.autos[i][j] != null) ? 'A' : ' ';
 				System.out.print(c + " | ");
 			}
 			System.out.println();

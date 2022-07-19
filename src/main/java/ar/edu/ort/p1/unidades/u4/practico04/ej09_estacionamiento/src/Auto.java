@@ -49,7 +49,6 @@ public class Auto {
 		int idxMesAlto = Fecha.hoy().getMes();
 
 		for (int i = idxMesAlto; i >= idxMesBajo; i--) {
-			System.out.println("valido mes "+i);
 			if (pagos[i] == null || pagos[i].getMonto() <= 0) {
 				cantMesesImpagos++;
 			}
