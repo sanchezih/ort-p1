@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Escuela {
 
 	private String nombre;
+	private Domicilio domicilio;
 	private ArrayList<Mesa> mesas;
 
 	public Escuela(String nombre) {
@@ -80,7 +81,7 @@ public class Escuela {
 	/*----------------------------------------------------------------------------*/
 
 	// Metodos complementarios
-	
+
 	public void agregarMesa(Mesa mesa) {
 		this.mesas.add(mesa);
 	}
