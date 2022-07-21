@@ -70,36 +70,20 @@ public class Estacionamiento {
 
 	private boolean validarHistorialDePagos(Auto auto) {
 		boolean aprobado = false;
-		// int idxInicio = getIdxDelMesInicio(auto.getFechaIngreso());
-
 		int idxInicio = (auto.getFechaIngreso().getAnio() == Fecha.hoy().getAnio())
 				? auto.getFechaIngreso().getMes() - 1
 				: 0;
-
 		int idxFin = Fecha.hoy().getMes() - 1;
 
-		// System.out.println("valido de la pos " + idxInicio + " a la " + idxFin);
-
 		while (idxFin >= idxInicio && auto.getPagos()[idxFin] != null && auto.getPagos()[idxFin].getMonto() > 0) {
-			// System.out.println("En la pos " + idxFin + " se pago " +
-			// auto.getPagos()[idxFin].getMonto());
 			idxFin--;
 		}
 
 		if (idxFin < idxInicio) {
-			// System.out.println("El ciclo se cortó en la pos " + idxFin);
 			aprobado = true;
 		}
 		return aprobado;
 	}
-
-//	private int getIdxDelMesInicio(Fecha fecha) {
-//		int mesInicio = 0;
-//		if (fecha.getAnio() == Fecha.hoy().getAnio()) {
-//			mesInicio = fecha.getMes() - 1;
-//		}
-//		return mesInicio;
-//	}
 
 	/*----------------------------------------------------------------------------*/
 
