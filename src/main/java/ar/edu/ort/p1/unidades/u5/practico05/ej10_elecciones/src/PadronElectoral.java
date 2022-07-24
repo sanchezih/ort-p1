@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src;
 
+import ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src.listasordenadas.ListaDeMesas;
+
 public class PadronElectoral {
 
 	private ListaDeMesas mesas;

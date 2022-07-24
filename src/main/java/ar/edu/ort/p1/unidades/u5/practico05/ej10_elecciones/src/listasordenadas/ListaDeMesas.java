@@ -1,5 +1,6 @@
-package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src;
+package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src.listasordenadas;
 
+import ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src.Mesa;
 import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
 
 public class ListaDeMesas extends ListaOrdenadaNodos<Integer, Mesa> {

@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src;
 
 public class ElectorConMesa extends Elector {
+
 	private int nroMesa;
 
 	public ElectorConMesa(int dni, String apellido, String nombre, int nroMesa) {

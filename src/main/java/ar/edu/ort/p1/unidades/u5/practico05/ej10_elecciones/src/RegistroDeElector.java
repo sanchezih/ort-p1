@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src;
 
 public class RegistroDeElector {
+
 	private int dni;
 	private int nroDeMesa;
 	private int nroDeOrden;

@@ -1,5 +1,8 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src;
 
+import ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src.listasordenadas.ListaElectoresAlfabetica;
+import ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src.listasordenadas.ListaElectoresPorDNI;
+
 public class Mesa {
 
 	private int numero;

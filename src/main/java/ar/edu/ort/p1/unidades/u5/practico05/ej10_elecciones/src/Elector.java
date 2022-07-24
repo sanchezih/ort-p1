@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej10_elecciones.src;
 
 public class Elector {
+	
 	private int dni;
 	private String apellido;
 	private String nombre;
