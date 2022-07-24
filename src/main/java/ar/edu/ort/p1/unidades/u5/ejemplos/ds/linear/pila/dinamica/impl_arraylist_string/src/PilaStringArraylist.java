@@ -8,7 +8,6 @@ public class PilaStringArraylist {
 
 	// Constructor
 	public PilaStringArraylist() {
-		super();
 		this.elementos = new ArrayList<String>();
 	}
 

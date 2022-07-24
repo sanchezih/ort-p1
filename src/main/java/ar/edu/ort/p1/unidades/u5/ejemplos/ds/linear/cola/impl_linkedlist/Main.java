@@ -3,6 +3,12 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.cola.impl_linkedlist;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+/**
+ * https://www.geeksforgeeks.org/queue-linked-list-implementation/?ref=rp
+ * 
+ * @author ihsanch
+ *
+ */
 public class Main {
 
 	static FileReader f = null;

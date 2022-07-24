@@ -2,6 +2,12 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_lista_enlaza
 
 import ar.edu.ort.p1.util.pojo.Empleado;
 
+/**
+ * https://cs.fit.edu/~pkc/classes/ds/java/src/net/datastructures/DoublyLinkedList.java
+ * 
+ * @author ihsanch
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

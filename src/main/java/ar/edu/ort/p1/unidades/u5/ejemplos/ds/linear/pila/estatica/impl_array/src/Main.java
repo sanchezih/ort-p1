@@ -4,16 +4,16 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		PilaEnterosArray pilaDeEnteros = new PilaEnterosArray();
-		pilaDeEnteros.push(10);
-		pilaDeEnteros.push(20);
-		pilaDeEnteros.push(30);
+		Pila elementos = new Pila();
+		elementos.push(10);
+		elementos.push(20);
+		elementos.push(30);
 
 		System.out.println();
 
-		System.out.println(pilaDeEnteros.peek());
-		System.out.println(pilaDeEnteros.pop());
-		System.out.println(pilaDeEnteros.peek());
+		System.out.println(elementos.peek());
+		System.out.println(elementos.pop());
+		System.out.println(elementos.peek());
 
 	}
 }

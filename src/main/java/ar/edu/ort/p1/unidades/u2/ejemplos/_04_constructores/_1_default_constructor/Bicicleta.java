@@ -6,10 +6,9 @@ package ar.edu.ort.p1.unidades.u2.ejemplos._04_constructores._1_default_construc
 
 public class Bicicleta {
 
-	/* Constructor default */
+	// Constructor
 	Bicicleta() {
 		System.out.println("La bicicleta fue creada");
 	}
-
 
 }

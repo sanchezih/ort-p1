@@ -6,13 +6,13 @@ package ar.edu.ort.p1.unidades.u2.ejemplos._04_constructores._3_constructor_para
  * @author ihsanch
  *
  */
-public class Student4 {
+public class Estudiante {
 
 	int id;
 	String name;
 
 	// creating a parameterized constructor
-	Student4(int i, String n) {
+	Estudiante(int i, String n) {
 		id = i;
 		name = n;
 	}

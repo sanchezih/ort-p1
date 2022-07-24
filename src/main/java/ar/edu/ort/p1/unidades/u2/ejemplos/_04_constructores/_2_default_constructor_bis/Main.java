@@ -17,12 +17,14 @@ package ar.edu.ort.p1.unidades.u2.ejemplos._04_constructores._2_default_construc
 public class Main {
 
 	public static void main(String args[]) {
+		
 		// creating objects
-		Student3 s1 = new Student3();
-		Student3 s2 = new Student3();
+		Estudiante e1 = new Estudiante();
+		Estudiante e2 = new Estudiante();
+	
 		// displaying values of the object
-		s1.display();
-		s2.display();
+		e1.mostrar();
+		e2.mostrar();
 	}
 
 }

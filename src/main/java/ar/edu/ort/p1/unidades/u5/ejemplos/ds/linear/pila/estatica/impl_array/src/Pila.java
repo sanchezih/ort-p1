@@ -2,16 +2,22 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.estatica.impl_array.sr
 
 import java.util.Arrays;
 
-public class PilaEnterosArray {
+public class Pila {
 
-	private static final int MAX = 10;
+	private static final int MAX = 2;
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
 
-	public PilaEnterosArray() {
+	// Constructor
+	public Pila() {
 		top = -1;
 	}
 
+	/**
+	 * 
+	 * @param elemento
+	 * @return
+	 */
 	public boolean push(int elemento) {
 		boolean res = false;
 		if (top >= (MAX - 1)) {
@@ -50,7 +56,7 @@ public class PilaEnterosArray {
 
 	@Override
 	public String toString() {
-		return "PilaEnterosArray [top=" + top + ", tamanioMaximo=" + Arrays.toString(tamanioMaximo) + "]";
+		return "Pila [top=" + top + ", tamanioMaximo=" + Arrays.toString(tamanioMaximo) + "]";
 	}
 
 }

@@ -13,17 +13,17 @@ public enum Continente {
 	OCEANIA(27000000, 8720710), //
 	ANTARTIDA(1000, 13720000);
 
-	/* Atributos */
+	// Atributos
 	private long cantHabitantes;
 	private double superficie;
 
-	/* Constructor private para evitar que se haga new */
+	// Constructor private para evitar que se haga new
 	private Continente(long cantHabitantes, double superficie) {
 		this.cantHabitantes = cantHabitantes;
 		this.superficie = superficie;
 	}
 
-	/* Metodos */
+	// Metodos
 	public double densidadPoblacion() {
 		return this.cantHabitantes / this.superficie;
 	}

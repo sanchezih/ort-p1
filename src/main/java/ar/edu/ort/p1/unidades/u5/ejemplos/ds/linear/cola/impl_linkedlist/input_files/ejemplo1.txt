@@ -1,2 +1,3 @@
-ejemplo1-verde
-ejemplo1-azul
+verde
+azul
+violeta

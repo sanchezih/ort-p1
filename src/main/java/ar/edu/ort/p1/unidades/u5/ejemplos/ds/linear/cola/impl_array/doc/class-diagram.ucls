@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.estatica.impl_array.src.Pila" 
+  <class id="1" language="java" name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.cola.impl_array.src.Queue" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/pila/estatica/impl_array/src/Pila.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/cola/impl_array/src/Queue.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="309" x="41" y="37"/>    
+    <position height="-1" width="-1" x="245" y="192"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
