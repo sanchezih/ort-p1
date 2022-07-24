@@ -40,15 +40,15 @@ public class Fecha {
 	}
 
 	public void setDia(int dia) {
-		dia = dia;
+		this.dia = dia;
 	}
 
 	public void setMes(int mes) {
-		mes = mes;
+		this.mes = mes;
 	}
 
 	public void setAnio(int anio) {
-		anio = anio;
+		this.anio = anio;
 	}
 
 	/**
