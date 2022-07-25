@@ -2,45 +2,75 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylis
 
 import java.util.ArrayList;
 
-public class Pila<T> {
+import ar.edu.ort.tp1.u5.tda.Pila;
+
+public class PilaGenerica<T> implements Pila<T> {
 
 	private ArrayList<T> elementos;
 	private int top = -1;
 	private int tamanio;
 
 	// Constructores
-	public Pila() {
+	public PilaGenerica() {
 		this.tamanio = 0;
 		this.elementos = new ArrayList<T>(tamanio);
 	}
 
-	public Pila(int tamanio) {
+	public PilaGenerica(int tamanio) {
 		this.tamanio = tamanio;
 		this.elementos = new ArrayList<T>(tamanio);
 	}
 
-	/**
-	 * 
-	 * @param elemento
-	 */
-	public void push(T elemento) {
+	@Override
+	public boolean isEmpty() {
+		return top == -1;
+	}
+
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void checkEmptiness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkFullness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void push(T element) {
 		if (top + 1 == tamanio) {
 			System.out.println("Stack Overflow");
 		} else {
 			top = top + 1;
 			if (elementos.size() > top) {
-				elementos.set(top, elemento);
+				elementos.set(top, element);
 			} else {
-				elementos.add(elemento);
+				elementos.add(element);
 			}
 		}
 	}
 
-	/**
-	 * To return topmost element of stack
-	 * 
-	 * @return
-	 */
+	@Override
+	public T pop() {
+		if (top == -1) { // If stack is empty
+			System.out.println("Stack Underflow");
+		} else {
+
+			// Delete the last element by decrementing the top
+			top--;
+		}
+		return null; // TODO: ver el tipo de dato de retorno
+	}
+
+	@Override
 	public T peek() {
 		T elemento = null;
 		// If stack is empty
@@ -54,23 +84,6 @@ public class Pila<T> {
 			elemento = elementos.get(top);
 		}
 		return elemento;
-	}
-
-	/**
-	 * To delete last element of stack
-	 */
-	public void pop() {
-		if (top == -1) { // If stack is empty
-			System.out.println("Stack Underflow");
-		} else {
-
-			// Delete the last element by decrementing the top
-			top--;
-		}
-	}
-
-	public boolean isEmpty() {
-		return top == -1;
 	}
 
 	@Override

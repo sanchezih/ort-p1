@@ -40,13 +40,11 @@ public class PilaConArray implements Pila<Integer> {
 
 	@Override
 	public void push(Integer element) {
-		boolean res = false;
 		if (top >= (MAX - 1)) {
 			System.out.println("Stack Overflow");
 		} else {
 			tamanioMaximo[++top] = element;
 			System.out.println("Push " + element);
-			res = true;
 		}
 	}
 

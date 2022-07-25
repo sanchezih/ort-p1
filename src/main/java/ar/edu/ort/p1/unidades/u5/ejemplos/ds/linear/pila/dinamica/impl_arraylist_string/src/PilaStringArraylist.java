@@ -2,7 +2,9 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylis
 
 import java.util.ArrayList;
 
-public class PilaStringArraylist {
+import ar.edu.ort.tp1.u5.tda.Pila;
+
+public class PilaStringArraylist implements Pila<String> {
 
 	private ArrayList<String> elementos;
 
@@ -11,11 +13,36 @@ public class PilaStringArraylist {
 		this.elementos = new ArrayList<String>();
 	}
 
-	// Metodos
-	public void push(String elemento) {
-		elementos.add(elemento);
+	@Override
+	public boolean isEmpty() {
+		return elementos.isEmpty();
 	}
 
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void checkEmptiness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkFullness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void push(String element) {
+		elementos.add(element);
+
+	}
+
+	@Override
 	public String pop() {
 		String res = null;
 		if (!elementos.isEmpty()) {
@@ -25,6 +52,7 @@ public class PilaStringArraylist {
 		return res;
 	}
 
+	@Override
 	public String peek() {
 		String res = null;
 		if (!elementos.isEmpty()) {
@@ -35,10 +63,6 @@ public class PilaStringArraylist {
 
 	public int size() {
 		return elementos.size();
-	}
-
-	public boolean isEmpty() {
-		return elementos.isEmpty();
 	}
 
 	@Override
