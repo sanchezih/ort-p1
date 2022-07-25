@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		Pila elementos = new Pila();
+		PilaConArray elementos = new PilaConArray();
 		elementos.push(10);
 		elementos.push(20);
 		elementos.push(30);

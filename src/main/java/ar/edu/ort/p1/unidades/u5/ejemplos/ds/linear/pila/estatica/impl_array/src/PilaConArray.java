@@ -2,35 +2,56 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.estatica.impl_array.sr
 
 import java.util.Arrays;
 
-public class Pila {
+import ar.edu.ort.tp1.u5.tda.Pila;
+
+public class PilaConArray implements Pila<Integer> {
 
 	private static final int MAX = 2;
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
 
 	// Constructor
-	public Pila() {
+	public PilaConArray() {
 		top = -1;
 	}
 
-	/**
-	 * 
-	 * @param elemento
-	 * @return
-	 */
-	public boolean push(int elemento) {
+	@Override
+	public boolean isEmpty() {
+		return (top < 0);
+	}
+
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void checkEmptiness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkFullness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void push(Integer element) {
 		boolean res = false;
 		if (top >= (MAX - 1)) {
 			System.out.println("Stack Overflow");
 		} else {
-			tamanioMaximo[++top] = elemento;
-			System.out.println("Push " + elemento);
+			tamanioMaximo[++top] = element;
+			System.out.println("Push " + element);
 			res = true;
 		}
-		return res;
 	}
 
-	public int pop() {
+	@Override
+	public Integer pop() {
 		int res = 0;
 		if (top < 0) {
 			System.out.println("Stack Underflow");
@@ -40,7 +61,8 @@ public class Pila {
 		return res;
 	}
 
-	public int peek() {
+	@Override
+	public Integer peek() {
 		int res = 0;
 		if (top < 0) {
 			System.out.println("Stack Underflow");
@@ -48,10 +70,6 @@ public class Pila {
 			res = tamanioMaximo[top];
 		}
 		return res;
-	}
-
-	public boolean isEmpty() {
-		return (top < 0);
 	}
 
 	@Override
