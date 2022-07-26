@@ -5,7 +5,6 @@ import java.util.Arrays;
 import ar.edu.ort.tp1.u5.tda.Pila;
 
 public class PilaConArray implements Pila<Integer> {
-
 	private static final int MAX = 2;
 	private int top;
 	private int tamanioMaximo[] = new int[MAX]; // Tamanio maximo de la pila
@@ -13,6 +12,12 @@ public class PilaConArray implements Pila<Integer> {
 	// Constructor
 	public PilaConArray() {
 		top = -1;
+	}
+
+	@Override
+	public int count() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
@@ -46,6 +51,7 @@ public class PilaConArray implements Pila<Integer> {
 			tamanioMaximo[++top] = element;
 			System.out.println("Push " + element);
 		}
+
 	}
 
 	@Override

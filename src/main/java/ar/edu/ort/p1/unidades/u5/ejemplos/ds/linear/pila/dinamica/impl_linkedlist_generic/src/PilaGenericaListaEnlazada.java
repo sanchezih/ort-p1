@@ -4,13 +4,17 @@ import ar.edu.ort.tp1.u5.tda.Pila;
 import ar.edu.ort.tp1.u5.tda.nodos.Nodo;
 
 public class PilaGenericaListaEnlazada<T> implements Pila<T> {
-
 	private Nodo<T> end;
 	private int tamanio;
 
 	public PilaGenericaListaEnlazada() {
 		end = null;
 		tamanio = 0;
+	}
+
+	@Override
+	public int count() {
+		return tamanio;
 	}
 
 	@Override
@@ -46,7 +50,6 @@ public class PilaGenericaListaEnlazada<T> implements Pila<T> {
 			end = nuevoNodo;
 		}
 		tamanio++;
-
 	}
 
 	@Override
@@ -67,10 +70,6 @@ public class PilaGenericaListaEnlazada<T> implements Pila<T> {
 		return null;
 	}
 
-	public int size() {
-		return tamanio;
-	}
-
 	public T end() {
 		T res = null;
 		if (end != null) {
@@ -78,5 +77,4 @@ public class PilaGenericaListaEnlazada<T> implements Pila<T> {
 		}
 		return res;
 	}
-
 }

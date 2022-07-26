@@ -6,12 +6,18 @@
 	<artifactId>ort-p1</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
+	
 	<dependencies>
+		
 		<dependency>
 			<groupId>com.github.sanchezih</groupId>
 			<artifactId>ort-tp1</artifactId>
 			<version>main-SNAPSHOT</version>
 		</dependency>
+		
+		
+		
+		
 	</dependencies>
 
 	<repositories>

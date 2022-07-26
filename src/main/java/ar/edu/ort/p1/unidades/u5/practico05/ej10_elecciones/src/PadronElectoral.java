@@ -13,10 +13,10 @@ public class PadronElectoral {
 	public RegistroDeElector generarRegistroDeElector(int dni) {
 		int pos = 0;
 		RegistroDeElector registro = null;
-		while (pos < mesas.size() && !mesas.get(pos).tieneEnLista(dni)) {
+		while (pos < mesas.count() && !mesas.get(pos).tieneEnLista(dni)) {
 			pos++;
 		}
-		if (pos < mesas.size()) {
+		if (pos < mesas.count()) {
 			registro = mesas.get(pos).generarRegistroDeElector(dni);
 		}
 		return registro;

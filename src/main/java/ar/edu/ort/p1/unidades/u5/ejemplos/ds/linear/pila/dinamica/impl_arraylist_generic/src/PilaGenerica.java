@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import ar.edu.ort.tp1.u5.tda.Pila;
 
 public class PilaGenerica<T> implements Pila<T> {
-
 	private ArrayList<T> elementos;
 	private int top = -1;
 	private int tamanio;
+	
 
 	// Constructores
 	public PilaGenerica() {
@@ -19,6 +19,12 @@ public class PilaGenerica<T> implements Pila<T> {
 	public PilaGenerica(int tamanio) {
 		this.tamanio = tamanio;
 		this.elementos = new ArrayList<T>(tamanio);
+	}
+
+	@Override
+	public int count() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
@@ -35,13 +41,13 @@ public class PilaGenerica<T> implements Pila<T> {
 	@Override
 	public void checkEmptiness() throws RuntimeException {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void checkFullness() throws RuntimeException {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
@@ -56,6 +62,7 @@ public class PilaGenerica<T> implements Pila<T> {
 				elementos.add(element);
 			}
 		}
+		
 	}
 
 	@Override
@@ -85,7 +92,6 @@ public class PilaGenerica<T> implements Pila<T> {
 		}
 		return elemento;
 	}
-
 	@Override
 	public String toString() {
 		String res = "";

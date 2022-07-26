@@ -14,6 +14,11 @@ public class PilaStringArraylist implements Pila<String> {
 	}
 
 	@Override
+	public int count() {
+		return elementos.size();
+	}
+
+	@Override
 	public boolean isEmpty() {
 		return elementos.isEmpty();
 	}
@@ -39,7 +44,6 @@ public class PilaStringArraylist implements Pila<String> {
 	@Override
 	public void push(String element) {
 		elementos.add(element);
-
 	}
 
 	@Override
@@ -60,14 +64,8 @@ public class PilaStringArraylist implements Pila<String> {
 		}
 		return res;
 	}
-
-	public int size() {
-		return elementos.size();
-	}
-
 	@Override
 	public String toString() {
 		return "PilaStringArraylist [listaDeElementos=" + elementos + "]";
 	}
-
 }

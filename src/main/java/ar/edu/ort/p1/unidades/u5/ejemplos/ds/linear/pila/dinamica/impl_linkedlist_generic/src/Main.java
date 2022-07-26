@@ -23,7 +23,7 @@ public class Main {
 		ls.push("como");
 		ls.push("estas");
 
-		System.out.println(ls.size());
+		System.out.println(ls.count());
 		System.out.println(ls.pop());
 		System.out.println(ls.pop());
 		System.out.println(ls.pop());

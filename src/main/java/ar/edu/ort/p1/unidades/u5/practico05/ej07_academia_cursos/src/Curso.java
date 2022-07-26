@@ -70,11 +70,11 @@ public class Curso {
 		double acum = 0;
 		double promedio = 0;
 
-		if (listaDeAlumnosPorEdad.size() > 0) {
+		if (listaDeAlumnosPorEdad.count() > 0) {
 			for (Alumno alumno : this.listaDeAlumnosPorEdad) {
 				acum += alumno.getEdad();
 			}
-			promedio = acum / this.listaDeAlumnosPorEdad.size();
+			promedio = acum / this.listaDeAlumnosPorEdad.count();
 		}
 		return promedio;
 	}
@@ -92,7 +92,7 @@ public class Curso {
 		ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 		int idx = 0;
 
-		while (idx < this.listaDeAlumnosPorEdad.size() && idx < CINCO) {
+		while (idx < this.listaDeAlumnosPorEdad.count() && idx < CINCO) {
 			alumnos.add(this.listaDeAlumnosPorEdad.get(idx));
 			idx++;
 		}
