@@ -3,8 +3,8 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_lista_enlaza
 public class SinglyLinkedList<E> {
 
 	// instance variables of the SinglyLinkedList
-	private Node<E> head = null; // head node of the list (or null if empty)
-	private Node<E> tail = null; // last node of the list (or null if empty)
+	private Nodo<E> head = null; // head node of the list (or null if empty)
+	private Nodo<E> tail = null; // last node of the list (or null if empty)
 	private int size = 0; // number of nodes in the list
 
 	public SinglyLinkedList() {
@@ -33,14 +33,14 @@ public class SinglyLinkedList<E> {
 
 	// update methods
 	public void addFirst(E e) { // adds element e to the front of the list
-		head = new Node<>(e, head); // create and link a new node
+		head = new Nodo<>(e, head); // create and link a new node
 		if (size == 0)
 			tail = head; // special case: new node becomes tail also
 		size++;
 	}
 
 	public void addLast(E e) { // adds element e to the end of the list
-		Node<E> newest = new Node<>(e, null); // node will eventually be the tail
+		Nodo<E> newest = new Nodo<>(e, null); // node will eventually be the tail
 		if (isEmpty())
 			head = newest; // special case: previously empty list
 		else
@@ -66,7 +66,7 @@ public class SinglyLinkedList<E> {
 	@Override
 	public String toString() {
 		String resString = "[ ";
-		Node<E> X = head;
+		Nodo<E> X = head;
 
 		if (X == null) {
 			return resString + " ]";

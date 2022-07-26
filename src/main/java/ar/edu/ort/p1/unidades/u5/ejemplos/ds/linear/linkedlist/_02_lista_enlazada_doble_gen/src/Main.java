@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_lista_enlazada_doble_gen.src;
 
-import ar.edu.ort.p1.util.pojo.Empleado;
+import ar.edu.ort.p1.util.pojo.Persona;
 
 /**
  * https://cs.fit.edu/~pkc/classes/ds/java/src/net/datastructures/DoublyLinkedList.java
@@ -21,10 +21,10 @@ public class Main {
 		listaDeEnteros.addLast(57);
 		listaDeEnteros.printNodes();
 
-		DoublyLinkedList<Empleado> listaDeEmpleados = new DoublyLinkedList<Empleado>();
+		DoublyLinkedList<Persona> listaDeEmpleados = new DoublyLinkedList<Persona>();
 		System.out.println("\nlistaDeEmpleados...");
-		listaDeEmpleados.addLast(new Empleado("Ignacio", 36));
-		listaDeEmpleados.addLast(new Empleado("Noelia", 36));
+		listaDeEmpleados.addLast(new Persona("Ignacio", 36));
+		listaDeEmpleados.addLast(new Persona("Noelia", 36));
 		listaDeEmpleados.printNodes();
 
 	}

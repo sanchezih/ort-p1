@@ -13,8 +13,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.util.pojo.Empleado" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/pojo/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="ar.edu.ort.p1.util.pojo.Persona" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/pojo/Persona.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="207" width="137" x="447" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -22,43 +22,6 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" 
-    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_lista_enlazada_simple_gen.src.Node" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/linkedlist/_01_lista_enlazada_simple_gen/src/Node.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="225" y="440"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <association id="4">    
-    <bendpoint x="337" y="318"/>    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="tail"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="7">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="8" name="head"/>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="10">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="11" name="next"/>      
-      <multiplicity id="12" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

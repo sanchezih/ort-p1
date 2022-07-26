@@ -51,7 +51,6 @@ public class PilaConArray implements Pila<Integer> {
 			tamanioMaximo[++top] = element;
 			System.out.println("Push " + element);
 		}
-
 	}
 
 	@Override
