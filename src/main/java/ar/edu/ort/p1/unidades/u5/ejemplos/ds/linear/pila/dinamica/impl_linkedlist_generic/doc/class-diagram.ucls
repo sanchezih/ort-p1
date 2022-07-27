@@ -2,11 +2,11 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" 
-    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedlist_generic.src.PilaGenericaListaEnlazada" 
+    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedlist_generic.src.StackUsingLinkedlist" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/pila/dinamica/impl_linkedlist_generic/src/PilaGenericaListaEnlazada.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/pila/dinamica/impl_linkedlist_generic/src/StackUsingLinkedlist.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="222" y="154"/>    
+    <position height="-1" width="-1" x="216" y="353"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,9 +14,9 @@
     </display>  
   </class>  
   <class id="2" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.Nodo" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-2020c2-g41e77b9-2/ort-tp1-main-2020c2-g41e77b9-2.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="661" y="154"/>    
+    <position height="-1" width="-1" x="565" y="353"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,9 +24,9 @@
     </display>  
   </class>  
   <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.Pila" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-2020c2-g41e77b9-2/ort-tp1-main-2020c2-g41e77b9-2.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="222" y="452"/>    
+    <position height="-1" width="-1" x="565" y="112"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,47 +34,73 @@
     </display>  
   </interface>  
   <class id="4" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.PilaNodos" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-2020c2-g41e77b9-2/ort-tp1-main-2020c2-g41e77b9-2.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="661" y="452"/>    
+    <position height="-1" width="-1" x="859" y="353"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="5">    
+  <class id="5" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.TdaNodos" project="ort-p1" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-2020c2-g41e77b9-2/ort-tp1-main-2020c2-g41e77b9-2.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="565" y="682"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="6">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="7">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="6" name="end">        
-        <position height="0" width="0" x="810" y="-373"/>      
+      <attribute id="8" name="end">        
+        <position height="0" width="0" x="870" y="-748"/>      
       </attribute>      
-      <multiplicity id="7" minimum="0" maximum="1">        
-        <position height="0" width="0" x="810" y="-373"/>      
+      <multiplicity id="9" minimum="0" maximum="1">        
+        <position height="0" width="0" x="870" y="-748"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="8">    
+  <realization id="10">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
-  <dependency id="9">    
+  <generalization id="11">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <dependency id="12">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <realization id="10">    
+  <generalization id="13">    
     <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <association id="11">    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="14">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="12" name="next">        
-        <position height="0" width="0" x="810" y="-373"/>      
+      <attribute id="15" name="next">        
+        <position height="0" width="0" x="870" y="-748"/>      
       </attribute>      
-      <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="810" y="-373"/>      
+      <multiplicity id="16" minimum="0" maximum="1">        
+        <position height="0" width="0" x="870" y="-748"/>      
       </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="17">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="18" name="first"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

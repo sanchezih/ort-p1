@@ -1,17 +1,17 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_lista_enlazada_simple_gen.src;
+package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src;
 
 import ar.edu.ort.p1.util.pojo.Persona;
 
 public class Main {
-	
+
 	public static void main(String[] args) {
-		
+
 		SinglyLinkedList<Integer> listaDeEnteros = new SinglyLinkedList<Integer>();
 
 		System.out.println("listaDeEnteros...");
 
-		listaDeEnteros.addLast(100);
-		listaDeEnteros.addLast(200);
+		listaDeEnteros.addFirst(100);
+		listaDeEnteros.addFirst(200);
 		listaDeEnteros.addLast(300);
 		System.out.println(listaDeEnteros);
 

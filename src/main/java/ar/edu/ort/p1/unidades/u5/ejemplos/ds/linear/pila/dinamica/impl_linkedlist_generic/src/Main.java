@@ -17,16 +17,21 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		PilaGenericaListaEnlazada<String> ls = new PilaGenericaListaEnlazada<String>();
+		StackUsingLinkedlist<String> ls = new StackUsingLinkedlist<String>();
 
 		ls.push("hola");
 		ls.push("como");
 		ls.push("estas");
 
+		ls.display();
+
 		System.out.println(ls.count());
 		System.out.println(ls.pop());
 		System.out.println(ls.pop());
+		ls.display();
 		System.out.println(ls.pop());
+		ls.display();
+
 		System.out.println(ls.pop());
 
 	}

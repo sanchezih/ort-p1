@@ -2,20 +2,11 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" 
-    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_lista_enlazada_simple_gen.src.SinglyLinkedList" 
+    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._03_doblemente_enlazada.src.DoublyLinkedList" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/linkedlist/_01_lista_enlazada_simple_gen/src/SinglyLinkedList.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/linkedlist/_03_doblemente_enlazada/src/DoublyLinkedList.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="366" x="41" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.util.pojo.Persona" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/pojo/Persona.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="137" x="447" y="37"/>    
+    <position height="297" width="377" x="128" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
