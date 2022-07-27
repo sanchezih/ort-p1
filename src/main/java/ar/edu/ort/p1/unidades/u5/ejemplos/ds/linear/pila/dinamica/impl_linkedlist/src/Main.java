@@ -11,7 +11,7 @@
  * 
 */
 
-package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedlist_generic.src;
+package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedlist.src;
 
 public class Main {
 
