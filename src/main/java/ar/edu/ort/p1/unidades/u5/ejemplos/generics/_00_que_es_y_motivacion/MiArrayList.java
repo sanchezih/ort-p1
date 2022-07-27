@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._01_que_es_y_motivacion;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_que_es_y_motivacion;
 
 /**
  * Simulamos que no disponemos de la clase ArrayList, entonces la creamos

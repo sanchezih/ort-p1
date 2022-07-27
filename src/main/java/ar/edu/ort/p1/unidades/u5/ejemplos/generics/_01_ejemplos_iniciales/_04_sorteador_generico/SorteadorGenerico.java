@@ -1,20 +1,20 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._03_sorteador_objects;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._01_ejemplos_iniciales._04_sorteador_generico;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class SorteadorDeObjects {
+public class SorteadorGenerico<T> {
 
-	private ArrayList<Object> elementos;
+	private ArrayList<T> elementos;
 	private Random random;
 
 	// Constructor
-	public SorteadorDeObjects() {
-		this.elementos = new ArrayList<Object>();
+	public SorteadorGenerico() {
+		this.elementos = new ArrayList<T>();
 		this.random = new Random();
 	}
 
-	public void add(Object elemento) {
+	public void add(T elemento) {
 		this.elementos.add(elemento);
 	}
 
@@ -22,7 +22,7 @@ public class SorteadorDeObjects {
 		return this.elementos.isEmpty();
 	}
 
-	public Object remove() {
+	public T remove() {
 		return this.elementos.remove(posRandom());
 	}
 

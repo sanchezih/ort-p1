@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.generics._00_ejemplos_iniciales._02_sorteador_bolillas.src;
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._01_ejemplos_iniciales._02_sorteador_bolillas.src;
 
 public class Main {
 

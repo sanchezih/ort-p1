@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import ar.edu.ort.tp1.u5.tda.Pila;
 
 public class PilaGenerica<T> implements Pila<T> {
+
 	private ArrayList<T> elementos;
 	private int top = -1;
 	private int tamanio;
-	
 
 	// Constructores
 	public PilaGenerica() {
@@ -41,13 +41,13 @@ public class PilaGenerica<T> implements Pila<T> {
 	@Override
 	public void checkEmptiness() throws RuntimeException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void checkFullness() throws RuntimeException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -62,26 +62,26 @@ public class PilaGenerica<T> implements Pila<T> {
 				elementos.add(element);
 			}
 		}
-		
 	}
 
 	@Override
 	public T pop() {
-		if (top == -1) { // If stack is empty
+		T res = null;
+		if (isEmpty()) {
 			System.out.println("Stack Underflow");
 		} else {
-
+			res = elementos.get(top);
 			// Delete the last element by decrementing the top
 			top--;
 		}
-		return null; // TODO: ver el tipo de dato de retorno
+		return res;
 	}
 
 	@Override
 	public T peek() {
 		T elemento = null;
 		// If stack is empty
-		if (top == -1) {
+		if (isEmpty()) {
 			// Display message when there are no elements in the stack
 			System.out.println("Stack Underflow");
 		}
@@ -92,6 +92,7 @@ public class PilaGenerica<T> implements Pila<T> {
 		}
 		return elemento;
 	}
+
 	@Override
 	public String toString() {
 		String res = "";
