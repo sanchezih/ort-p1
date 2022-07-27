@@ -2,8 +2,6 @@ package ar.edu.ort.p1.examenes.ds.empresa_constructora.src;
 
 import java.util.ArrayList;
 
-import ar.edu.ort.p1.unidades.u5.practico05.ej06_facturas_edificio.src.TipoFactura;
-
 public class EmpresaConstructora {
 
 	/*
@@ -74,7 +72,7 @@ public class EmpresaConstructora {
 			for (int j = 0; j < matriz[i].length; j++) {
 				System.out.println(matriz[i][j]);
 			}
-			
+
 		}
 	}
 }
