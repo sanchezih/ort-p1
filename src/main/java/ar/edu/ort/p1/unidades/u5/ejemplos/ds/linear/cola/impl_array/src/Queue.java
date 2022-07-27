@@ -25,7 +25,7 @@ public class Queue {
 	 * 
 	 * @param data
 	 */
-	void queueEnqueue(int data) {
+	public void queueEnqueue(int data) {
 		// check queue is full or not
 		if (capacity == rear) {
 			System.out.printf("\nQueue is full\n");
@@ -43,7 +43,7 @@ public class Queue {
 	/**
 	 * Function to delete an element from the front of the queue
 	 */
-	void queueDequeue() {
+	public void queueDequeue() {
 		// if queue is empty
 		if (front == rear) {
 			System.out.printf("\nQueue is empty\n");
