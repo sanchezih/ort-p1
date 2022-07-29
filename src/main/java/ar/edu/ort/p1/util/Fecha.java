@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.util;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
@@ -150,5 +151,12 @@ public class Fecha {
 		sb.append("-");
 		sb.append(anio);
 		return sb.toString();
+	}
+	
+	public static long aniosHastaHoy(int anio) {
+		LocalDate pdate = LocalDate.of(anio, 01, 01);
+		LocalDate now = LocalDate.now();
+		Period diff = Period.between(pdate, now);
+		return diff.getYears();
 	}
 }
