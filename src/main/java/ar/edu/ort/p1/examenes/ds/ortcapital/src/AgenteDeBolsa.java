@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.examenes.ds.ortcapital.src;
 
+import ar.edu.ort.p1.util.pojo.Persona;
+
 public class AgenteDeBolsa extends Persona {
 
 	private final static int CANT_MAX_SOLICITUDES = 3;

@@ -2,7 +2,7 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.estatica.impl_array.sr
 
 import java.util.Arrays;
 
-import ar.edu.ort.tp1.u5.tda.Pila;
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class PilaConArray implements Pila<Integer> {
 	private static final int MAX = 2;
@@ -12,12 +12,6 @@ public class PilaConArray implements Pila<Integer> {
 	// Constructor
 	public PilaConArray() {
 		top = -1;
-	}
-
-	@Override
-	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override

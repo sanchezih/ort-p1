@@ -29,7 +29,7 @@ public class Mesa {
 	}
 
 	public int obtenerNroDeOrden(int dni) {
-		int pos = electoresAlfa.count() - 1;
+		int pos = electoresAlfa.size() - 1;
 		while (pos > -1 && electoresAlfa.get(pos).getDni() != dni)
 			pos--;
 		return pos + 1;

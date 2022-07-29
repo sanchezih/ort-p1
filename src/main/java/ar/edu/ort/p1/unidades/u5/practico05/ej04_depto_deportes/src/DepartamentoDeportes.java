@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-import ar.edu.ort.tp1.u5.tda.Pila;
-import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.impl.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class DepartamentoDeportes {
 

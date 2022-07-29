@@ -2,7 +2,7 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylis
 
 import java.util.ArrayList;
 
-import ar.edu.ort.tp1.u5.tda.Pila;
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class PilaGenerica<T> implements Pila<T> {
 
@@ -19,12 +19,6 @@ public class PilaGenerica<T> implements Pila<T> {
 	public PilaGenerica(int tamanio) {
 		this.tamanio = tamanio;
 		this.elementos = new ArrayList<T>(tamanio);
-	}
-
-	@Override
-	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override

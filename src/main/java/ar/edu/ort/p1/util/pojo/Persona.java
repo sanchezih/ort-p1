@@ -3,6 +3,8 @@ package ar.edu.ort.p1.util.pojo;
 public class Persona {
 
 	private String nombre;
+	private String apellido;
+	private String dni;
 	private int edad;
 
 	public Persona(String nombre, int edad) {
@@ -10,6 +12,13 @@ public class Persona {
 		this.nombre = nombre;
 		this.edad = edad;
 
+	}
+
+	public Persona(String nombre, String apellido, String dni) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.dni = dni;
 	}
 
 	public String getNombre() {
@@ -32,5 +41,10 @@ public class Persona {
 	public String toString() {
 		return nombre;
 	}
+	
+//	@Override
+//	public String toString() {
+//		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + "]";
+//	}
 
 }

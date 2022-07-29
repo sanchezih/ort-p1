@@ -4,7 +4,7 @@
   <enumeration id="1" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.TipoTitulo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/TipoTitulo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1154" y="1063"/>    
+    <position height="-1" width="-1" x="166" y="126"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.Titulo" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/Titulo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="279" width="201" x="345" y="953"/>    
+    <position height="-1" width="-1" x="166" y="583"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.ColaDeSolicitudes" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/ColaDeSolicitudes.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="674" y="385"/>    
+    <position height="-1" width="-1" x="373" y="346"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.SolicitudDeVenta" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/SolicitudDeVenta.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="853" y="994"/>    
+    <position height="-1" width="-1" x="428" y="842"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,159 +44,151 @@
   <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.AgenteDeBolsa" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/AgenteDeBolsa.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="976" y="118"/>    
+    <position height="-1" width="-1" x="578" y="126"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.Persona" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/Persona.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="973" y="697"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.SolicitudDeCompra" project="ort-p1" 
+  <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.SolicitudDeCompra" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/SolicitudDeCompra.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="264" x="41" y="953"/>    
+    <position height="-1" width="-1" x="728" y="842"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.Solicitud" project="ort-p1" 
+  <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.Solicitud" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/Solicitud.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="598" y="701"/>    
+    <position height="-1" width="-1" x="578" y="583"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.ProcesadorBursatil" project="ort-p1" 
+  <class id="8" language="java" name="ar.edu.ort.p1.examenes.ds.ortcapital.src.ProcesadorBursatil" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/ProcesadorBursatil.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="345" y="92"/>    
+    <position height="-1" width="-1" x="1148" y="126"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" 
+  <class id="9" language="java" 
     name="ar.edu.ort.p1.examenes.ds.ortcapital.src.ListaOrdenadaDeSolicitudesPorPrecioOfertado" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/ortcapital/src/ListaOrdenadaDeSolicitudesPorPrecioOfertado.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="318" y="411"/>    
+    <position height="-1" width="-1" x="1148" y="583"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <dependency id="12">    
-    <bendpoint x="1077" y="495"/>    
-    <bendpoint x="1077" y="616"/>    
-    <bendpoint x="1077" y="953"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="13">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
+  <class id="10" language="java" name="ar.edu.ort.p1.util.pojo.Persona" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/pojo/Persona.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="880" y="413"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="11">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="12" name="tipoTitulo">        
+        <position height="0" width="0" x="143" y="-1938"/>      
+      </attribute>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="143" y="-1938"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="14">    
-    <end type="SOURCE" refId="8" navigable="false">      
+    <end type="SOURCE" refId="7" navigable="false">      
       <attribute id="15" name="titulo">        
-        <position height="0" width="0" x="48" y="-361"/>      
+        <position height="0" width="0" x="52" y="-971"/>      
       </attribute>      
       <multiplicity id="16" minimum="0" maximum="1">        
-        <position height="0" width="0" x="48" y="-361"/>      
+        <position height="0" width="0" x="52" y="-971"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="17">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="18" name="tipoTitulo">        
-        <position height="0" width="0" x="127" y="-597"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="127" y="-597"/>      
-      </multiplicity>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="18" name="solicitante"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="20">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="8"/>  
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
   </generalization>  
-  <dependency id="21">    
+  <generalization id="21">    
     <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
   <dependency id="22">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="8"/>  
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
   </dependency>  
-  <association id="23">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="24" name="agentes">        
-        <position height="0" width="0" x="77" y="-562"/>      
+  <dependency id="23">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="24">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="25" name="agentes">        
+        <position height="0" width="0" x="178" y="-859"/>      
       </attribute>      
-      <multiplicity id="25" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="77" y="-562"/>      
+      <multiplicity id="26" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="178" y="-859"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
+  <dependency id="27">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
   </dependency>  
-  <association id="27">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="28" name="solicitante">        
-        <position height="0" width="0" x="9" y="-377"/>      
-      </attribute>      
-      <multiplicity id="29" minimum="0" maximum="1">        
-        <position height="0" width="0" x="9" y="-377"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
   <association id="30">    
     <end type="SOURCE" refId="5" navigable="false">      
       <attribute id="31" name="colaDeSolicitudes">        
-        <position height="0" width="0" x="-47" y="17"/>      
+        <position height="0" width="0" x="-17" y="-253"/>      
       </attribute>      
       <multiplicity id="32" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-47" y="17"/>      
+        <position height="0" width="0" x="-17" y="-253"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="33">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="6"/>  
-  </generalization>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

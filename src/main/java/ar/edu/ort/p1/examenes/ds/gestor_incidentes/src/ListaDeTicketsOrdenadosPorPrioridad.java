@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.examenes.ds.gestor_incidentes.src;
 
-import ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos;
+import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 
 public class ListaDeTicketsOrdenadosPorPrioridad extends ListaOrdenadaNodos<Prioridad, Ticket> {
 

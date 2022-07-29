@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_simplemente_enlazada_circular.src;
 
-import ar.edu.ort.tp1.u5.tda.Tda;
-import ar.edu.ort.tp1.u5.tda.nodos.Nodo;
+import ar.edu.ort.tp1.u5.tda.impl.Nodo;
+import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
 
 public class CircularlyLinkedList<T> implements Tda {
 
@@ -127,11 +127,6 @@ public class CircularlyLinkedList<T> implements Tda {
 			}
 			System.out.print("n" + i + ".[ " + tail.getElement() + " ]" + " ->  ");
 		}
-	}
-
-	@Override
-	public int count() {
-		return size;
 	}
 
 	@Override

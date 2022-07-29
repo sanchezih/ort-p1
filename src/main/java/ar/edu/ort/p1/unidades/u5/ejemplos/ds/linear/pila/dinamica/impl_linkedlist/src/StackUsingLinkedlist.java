@@ -2,9 +2,9 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedli
 
 import static java.lang.System.exit;
 
-import ar.edu.ort.tp1.u5.tda.Pila;
-import ar.edu.ort.tp1.u5.tda.nodos.Nodo;
-import ar.edu.ort.tp1.u5.tda.nodos.TdaNodos;
+import ar.edu.ort.tp1.u5.tda.impl.Nodo;
+import ar.edu.ort.tp1.u5.tda.impl.TdaNodos;
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class StackUsingLinkedlist<T> extends TdaNodos<T> implements Pila<T> {
 
@@ -14,11 +14,6 @@ public class StackUsingLinkedlist<T> extends TdaNodos<T> implements Pila<T> {
 	public StackUsingLinkedlist() {
 		end = null;
 		tamanio = 0;
-	}
-
-	@Override
-	public int count() {
-		return tamanio;
 	}
 
 	@Override

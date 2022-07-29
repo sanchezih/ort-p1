@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._03_doblemente_enlazada.src;
 
-import ar.edu.ort.tp1.u5.tda.nodos.Nodo;
-import ar.edu.ort.tp1.u5.tda.nodos.NodoLista;
+import ar.edu.ort.tp1.u5.tda.impl.Nodo;
+import ar.edu.ort.tp1.u5.tda.impl.NodoLista;
 
 public class DoublyLinkedList<T> {
 

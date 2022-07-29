@@ -25,7 +25,6 @@ public class Main {
 
 		ls.display();
 
-		System.out.println(ls.count());
 		System.out.println(ls.pop());
 		System.out.println(ls.pop());
 		ls.display();

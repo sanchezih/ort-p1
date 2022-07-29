@@ -2,17 +2,10 @@ package ar.edu.ort.p1.util.tda;
 
 import java.util.ArrayList;
 
-import ar.edu.ort.tp1.u5.tda.Pila;
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class PilaGenericaAL<T> implements Pila<T> {
-
 	private ArrayList<T> elementos = new ArrayList<T>();
-
-	@Override
-	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 	@Override
 	public boolean isEmpty() {
@@ -21,6 +14,7 @@ public class PilaGenericaAL<T> implements Pila<T> {
 
 	@Override
 	public boolean isFull() {
+		// TODO Auto-generated method stub
 		return false;
 	}
 
@@ -30,7 +24,6 @@ public class PilaGenericaAL<T> implements Pila<T> {
 			throw new RuntimeException(
 					String.format(ERR_ESTRUCTURA_VACIA, this.getClass().getInterfaces()[0].getSimpleName()));
 		}
-
 	}
 
 	@Override
@@ -42,7 +35,6 @@ public class PilaGenericaAL<T> implements Pila<T> {
 	@Override
 	public void push(T element) {
 		elementos.add(element);
-
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src;
 
-import ar.edu.ort.tp1.u5.tda.Tda;
-import ar.edu.ort.tp1.u5.tda.nodos.Nodo;
+import ar.edu.ort.tp1.u5.tda.impl.Nodo;
+import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
 
 public class SinglyLinkedList<T> implements Tda {
 
@@ -93,11 +93,6 @@ public class SinglyLinkedList<T> implements Tda {
 		resString += String.valueOf(X.getElement());
 
 		return resString + " ]";
-	}
-
-	@Override
-	public int count() {
-		return size;
 	}
 
 	@Override

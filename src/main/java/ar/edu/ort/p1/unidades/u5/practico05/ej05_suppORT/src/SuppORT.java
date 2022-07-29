@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej05_suppORT.src;
 
-import ar.edu.ort.tp1.u5.tda.Cola;
-import ar.edu.ort.tp1.u5.tda.nodos.ColaNodos;
+import ar.edu.ort.tp1.u5.tda.impl.ColaNodos;
+import ar.edu.ort.tp1.u5.tda.interfaces.Cola;
 
 public class SuppORT {
 

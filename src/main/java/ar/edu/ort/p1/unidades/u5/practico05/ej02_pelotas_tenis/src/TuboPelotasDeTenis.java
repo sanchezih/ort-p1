@@ -1,7 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej02_pelotas_tenis.src;
 
-import ar.edu.ort.tp1.u5.tda.Pila;
-import ar.edu.ort.tp1.u5.tda.nodos.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.impl.PilaNodos;
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class TuboPelotasDeTenis extends PilaNodos<PelotaDeTenis> {
 
@@ -13,7 +13,7 @@ public class TuboPelotasDeTenis extends PilaNodos<PelotaDeTenis> {
 
 	public boolean hayAlgunaPelotaUsada() {
 		boolean hayAlguna = false;
-		
+
 		Pila<PelotaDeTenis> pilaAux; // Recordar trabajar con interfaces
 		pilaAux = new PilaNodos<PelotaDeTenis>(); // Instanciar clases concretas
 
