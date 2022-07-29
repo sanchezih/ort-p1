@@ -15,10 +15,12 @@ m1=1
 -alto: int
 --</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>676</x><y>155</y><w>140</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--tamanio</panel_attributes><additional_attributes>120;20;10;20;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>496</x><y>45</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+-tamanio</panel_attributes><additional_attributes>120;20;10;20;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>496</x><y>45</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 /Dibujable/
--
-/+dibujar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>596</x><y>105</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>846</x><y>395</y><w>210</w><h>110</h></coordinates><panel_attributes>Etiqueta
+--
+
+--
+/+dibujar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>596</x><y>125</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>846</x><y>395</y><w>210</w><h>110</h></coordinates><panel_attributes>Etiqueta
 -
 -fuente: String
 -
@@ -42,15 +44,17 @@ m1=1
 -chequearCursorActivo(Componente): boolean
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>226</x><y>295</y><w>400</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;380;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>176</x><y>235</y><w>340</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
--componentes</panel_attributes><additional_attributes>320;20;10;20;10;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>46</x><y>575</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+-componentes</panel_attributes><additional_attributes>320;20;10;20;10;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>46</x><y>575</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 Estado
--
+--
 _+MINIMIZADA_
 _+MAXIMIZADA_
 _+CERRADA_
-_+ABIERTA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>156</x><y>495</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+_+ABIERTA_
+--
++Estado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>156</x><y>495</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--estado</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>286</x><y>575</y><w>210</w><h>110</h></coordinates><panel_attributes>VentanaDeError
+-estado</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>286</x><y>575</y><w>210</w><h>130</h></coordinates><panel_attributes>VentanaDeError
 --
 
 -

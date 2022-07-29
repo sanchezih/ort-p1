@@ -18,7 +18,7 @@ public class Main {
 
 		ProcesadorBursatil procesadorBursatil = new ProcesadorBursatil();
 
-		/* Test Ejercicio B */
+		// Test Ejercicio B
 		procesadorBursatil.ingresar(new SolicitudDeVenta(001, 2, 55, al29, personaSolicitante01));
 		procesadorBursatil.ingresar(new SolicitudDeCompra(001, 2, 249, al29, personaSolicitante02));
 		procesadorBursatil.ingresar(new SolicitudDeVenta(001, 2, 55, al29, personaSolicitante01));
@@ -31,11 +31,10 @@ public class Main {
 		procesadorBursatil.ingresar(new SolicitudDeVenta(001, 2, 55, al29, personaSolicitante01));
 		procesadorBursatil.ingresar(new SolicitudDeVenta(001, 2, 55, al29, personaSolicitante01));
 
-
-		/* Test Ejercicio C */
+		// Test Ejercicio C
 		procesadorBursatil.mostrarCantSolicitudesPorAgenteyTipoDeTitulo();
 
-		/* Test Ejercicio D */
+		// Test Ejercicio D
 		procesadorBursatil.mostrarListaOrdenadaDeSolicitudesPorPrecioOfertado();
 
 	}

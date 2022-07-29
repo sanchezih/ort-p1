@@ -68,6 +68,17 @@ public class Estacionamiento {
 		return nivel >= 0 && nivel < CANT_PISOS && espacio >= 0 && espacio < CANT_LUGARES;
 	}
 
+	/**
+	 * Comentario hecho en clase: Este metodo se resolvia directamente preguntando
+	 * si el mes anterior al actual es nulo ya que se indico que los pagos son
+	 * consecutivos por ende si pago enero y febrero y junio en realidad se va a
+	 * aplicar de la siguiente manera, quedaran pagos enero, febrero y marzo por lo
+	 * tanto mayo seguira teniendo deuda entonces con simplemente preguntar por el
+	 * mes anterior != null ya alcanzaria.
+	 * 
+	 * @param auto
+	 * @return
+	 */
 	private boolean validarHistorialDePagos(Auto auto) {
 		boolean aprobado = false;
 		int idxInicio = (auto.getFechaIngreso().getAnio() == Fecha.hoy().getAnio())

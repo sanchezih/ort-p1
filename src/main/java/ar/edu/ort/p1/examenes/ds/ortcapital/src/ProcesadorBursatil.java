@@ -23,7 +23,7 @@ public class ProcesadorBursatil {
 	public boolean ingresar(Solicitud solicitud) {
 		boolean sePudoIngresar = false;
 		if (solicitud.sePuedeConcretar()) {
-			asignar(solicitud);   // validar esto
+			asignar(solicitud); // validar esto
 			sePudoIngresar = true;
 		}
 		return sePudoIngresar;

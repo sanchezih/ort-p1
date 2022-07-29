@@ -2,6 +2,8 @@ package ar.edu.ort.p1.examenes.oop.examenes_conducir.src;
 
 import java.util.ArrayList;
 
+import ar.edu.ort.p1.util.pojo.Persona;
+
 public class ExamenDeMoto extends Examen {
 
 	private final static int TOPE_CILINDRADA = 150;

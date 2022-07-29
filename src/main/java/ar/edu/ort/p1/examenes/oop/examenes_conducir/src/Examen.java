@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.examenes.oop.examenes_conducir.src;
 
+import ar.edu.ort.p1.util.pojo.Persona;
+
 public abstract class Examen implements Evaluable {
 
 	private Persona persona;

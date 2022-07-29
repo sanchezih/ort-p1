@@ -27,15 +27,15 @@ _-CANT_PAGOS: int = 12_
 +Pago(double, String)
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>270</y><w>210</w><h>160</h></coordinates><panel_attributes>Fecha
 --
--dia:int
--mes:int
--anio:int
+-dia: int
+-mes: int
+-anio: int
 --
 +Fecha(int, int, int)
-+hoy():Fecha
-+getDia():int
-+getMes():int
-+getAnio():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>220</y><w>200</w><h>110</h></coordinates><panel_attributes>-autos
++hoy(): Fecha
++getDia(): int
++getMes(): int
++getAnio(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>220</y><w>200</w><h>110</h></coordinates><panel_attributes>-autos
 lt=&lt;-
 m1=[CANT_PISOS][CANT_LUGARES]</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>350</y><w>140</w><h>50</h></coordinates><panel_attributes>-pagos
 lt=&lt;-
