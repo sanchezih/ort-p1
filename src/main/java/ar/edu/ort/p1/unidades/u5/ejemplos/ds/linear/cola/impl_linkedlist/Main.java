@@ -17,7 +17,7 @@ public class Main {
 	public static void main(String args[]) {
 
 		String line = null;
-		ColaListaEnlazada<String> cola = new ColaListaEnlazada<String>();
+		QueueLinkedList<String> cola = new QueueLinkedList<String>();
 
 		if (args.length < 2) {
 			System.err.println("Please invoke the program like this:" + "\\tLinkedQueue file1 file2");

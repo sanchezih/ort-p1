@@ -3,13 +3,13 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.cola.impl_linkedlist;
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.interfaces.Cola;
 
-public class ColaListaEnlazada<T> implements Cola<T> {
+public class QueueLinkedList<T> implements Cola<T> {
 
 	private Nodo<T> first;
 	private Nodo<T> last;
 	private int size;
 
-	public ColaListaEnlazada() {
+	public QueueLinkedList() {
 		last = null;
 		size = 0;
 	}

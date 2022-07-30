@@ -17,7 +17,7 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		StackUsingLinkedlist<String> ls = new StackUsingLinkedlist<String>();
+		StackLinkedList<String> ls = new StackLinkedList<String>();
 
 		ls.push("hola");
 		ls.push("como");

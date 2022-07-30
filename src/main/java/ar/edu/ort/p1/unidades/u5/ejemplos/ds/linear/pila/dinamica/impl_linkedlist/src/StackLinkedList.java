@@ -6,12 +6,13 @@ import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.impl.TdaNodos;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
-public class StackUsingLinkedlist<T> extends TdaNodos<T> implements Pila<T> {
+public class StackLinkedList<T> extends TdaNodos<T> implements Pila<T> {
 
 	private Nodo<T> end;
 	private int tamanio;
 
-	public StackUsingLinkedlist() {
+	// Constructores
+	public StackLinkedList() {
 		end = null;
 		tamanio = 0;
 	}

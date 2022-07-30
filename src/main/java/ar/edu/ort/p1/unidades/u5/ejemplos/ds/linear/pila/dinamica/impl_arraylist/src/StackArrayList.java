@@ -3,20 +3,21 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylis
 import java.util.ArrayList;
 
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
+import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
 
-public class PilaGenerica<T> implements Pila<T> {
+public class StackArrayList<T> implements Pila<T> {
 
 	private ArrayList<T> elementos;
 	private int top = -1;
 	private int tamanio;
 
 	// Constructores
-	public PilaGenerica() {
+	public StackArrayList() {
 		this.tamanio = 0;
 		this.elementos = new ArrayList<T>(tamanio);
 	}
 
-	public PilaGenerica(int tamanio) {
+	public StackArrayList(int tamanio) {
 		this.tamanio = tamanio;
 		this.elementos = new ArrayList<T>(tamanio);
 	}

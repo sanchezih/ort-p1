@@ -1,19 +1,19 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.estatica.impl_array.src;
 
+import ar.edu.ort.p1.util.pojo.Persona;
+
 public class Main {
 
 	public static void main(String args[]) {
 
-		PilaConArray elementos = new PilaConArray();
-		elementos.push(10);
-		elementos.push(20);
-		elementos.push(30);
-
-		System.out.println();
-
-		System.out.println(elementos.peek());
-		System.out.println(elementos.pop());
-		System.out.println(elementos.peek());
+		StackArray<Persona> s = new StackArray<>(Persona.class, 2);
+		s.push(new Persona("Maira", 39));
+		System.out.println(s.peek());
+		s.push(new Persona("Felipe", 34));
+		s.pop();
+		System.out.println(s.peek());
+		s.push(new Persona("Felipe", 34));
+		System.out.println(s.peek());
 
 	}
 }
