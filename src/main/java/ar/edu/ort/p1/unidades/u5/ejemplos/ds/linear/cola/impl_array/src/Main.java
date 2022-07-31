@@ -10,35 +10,63 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Create a queue of capacity 4
-		QueueArray q = new QueueArray(4);
+		ColaArray<Integer> colaDeEnteros = new ColaArray<>(Integer.class, 4);
 
-//		// print Queue elements
-//		q.queueDisplay();
-//
-//		// inserting elements in the queue
-//		q.queueEnqueue(20);
-//		q.queueEnqueue(30);
-//		q.queueEnqueue(40);
-//		q.queueEnqueue(50);
-//
-//		// print Queue elements
-//		q.queueDisplay();
-//
-//		// insert element in the queue
-//		q.queueEnqueue(60);
-//
-//		// print Queue elements
-//		q.queueDisplay();
-//
-//		q.queueDequeue();
-//		q.queueDequeue();
-//		System.out.printf("\n\nafter two node deletion\n\n");
-//
-//		// print Queue elements
-//		q.queueDisplay();
-//
-//		// print front of the queue
-//		q.queueFront();
+		System.out.println("Paso 1: Agrego el numero 2");
+		colaDeEnteros.add(2);
+		System.out.println();
+
+		System.out.println("Paso 2: Muestro lo que tiene la cola");
+		colaDeEnteros.mostrar();
+		System.out.println();
+
+		System.out.println("Paso 3: Agrego el numero 15");
+		colaDeEnteros.add(15);
+		System.out.println();
+
+		System.out.println("Paso 4: Muestro lo que tiene la cola");
+		colaDeEnteros.mostrar();
+		System.out.println();
+
+		System.out.println("Paso 5: Agrego el numero 26");
+		colaDeEnteros.add(26);
+		System.out.println();
+
+		System.out.println("Paso 6: Muestro lo que tiene la cola");
+		colaDeEnteros.mostrar();
+		System.out.println();
+
+		System.out.println("Paso 7: Veo el elemento que esta primero en la cola");
+		System.out.println(colaDeEnteros.get());
+		System.out.println();
+
+		System.out.println("Paso 8: Saco un elemento de la cola");
+		System.out.println(colaDeEnteros.remove());
+		System.out.println();
+
+		System.out.println("Paso 9: Muestro lo que tiene la cola");
+		colaDeEnteros.mostrar();
+		System.out.println();
+
+		System.out.println("Paso 10: Veo el elemento que esta primero en la cola");
+		System.out.println(colaDeEnteros.get());
+		System.out.println();
+
+		System.out.println("Paso 11: Saco un elemento de la cola");
+		System.out.println(colaDeEnteros.remove());
+		System.out.println();
+
+		System.out.println("Paso 12: Muestro lo que tiene la cola");
+		colaDeEnteros.mostrar();
+		System.out.println();
+
+		System.out.println("Paso 13: Saco un elemento de la cola");
+		System.out.println(colaDeEnteros.remove());
+		System.out.println();
+
+		System.out.println("Paso 14: Muestro lo que tiene la cola");
+		colaDeEnteros.mostrar();
+		System.out.println();
+
 	}
 }

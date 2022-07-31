@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		StackArrayList<Integer> pilaDeEnteros = new StackArrayList<Integer>(3);
+		PilaArrayList<Integer> pilaDeEnteros = new PilaArrayList<Integer>(3);
 
 		pilaDeEnteros.push(10);
 		pilaDeEnteros.push(20);
@@ -16,7 +16,7 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		StackArrayList<String> pilaDeStrings = new StackArrayList<String>(3);
+		PilaArrayList<String> pilaDeStrings = new PilaArrayList<String>(3);
 
 		pilaDeStrings.push("hello");
 		pilaDeStrings.push("world");
@@ -28,7 +28,7 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		StackArrayList<Float> pilaDeFloats = new StackArrayList<Float>(2);
+		PilaArrayList<Float> pilaDeFloats = new PilaArrayList<Float>(2);
 
 		pilaDeFloats.push(100.0f);
 		pilaDeFloats.push(200.0f);

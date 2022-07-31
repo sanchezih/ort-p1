@@ -5,19 +5,19 @@ import java.util.ArrayList;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
 
-public class StackArrayList<T> implements Pila<T> {
+public class PilaArrayList<T> implements Pila<T> {
 
 	private ArrayList<T> elementos;
 	private int top = -1;
 	private int tamanio;
 
 	// Constructores
-	public StackArrayList() {
+	public PilaArrayList() {
 		this.tamanio = 0;
 		this.elementos = new ArrayList<T>(tamanio);
 	}
 
-	public StackArrayList(int tamanio) {
+	public PilaArrayList(int tamanio) {
 		this.tamanio = tamanio;
 		this.elementos = new ArrayList<T>(tamanio);
 	}
@@ -75,12 +75,10 @@ public class StackArrayList<T> implements Pila<T> {
 	@Override
 	public T peek() {
 		T elemento = null;
-		// If stack is empty
 		if (isEmpty()) {
 			// Display message when there are no elements in the stack
 			System.out.println("Stack Underflow");
 		}
-
 		// else elements are present so return the topmost element
 		else {
 			elemento = elementos.get(top);

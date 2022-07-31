@@ -1,83 +1,67 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src;
 
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
-import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
+import ar.edu.ort.tp1.u5.tda.impl.TdaNodos;
 
-public class SinglyLinkedList<T> implements Tda {
+public class SinglyLinkedList<T> extends TdaNodos<T> {
 
-	private Nodo<T> head = null; // head node of the list (or null if empty)
-	private Nodo<T> tail = null; // last node of the list (or null if empty)
-	private int size = 0; // number of nodes in the list
+	private Nodo<T> head = null;
+	private Nodo<T> tail = null;
+	// private int size = 0; // number of nodes in the list
 
-	// Constructor
+	// Constructores
 	public SinglyLinkedList() {
+		super();
+	}
+
+	public SinglyLinkedList(int tope) {
+		super(tope);
 	}
 
 	// Metodos
-	public boolean isEmpty() {
-		return size == 0;
-	}
-
-	/**
-	 * Returns (but does not remove) the first element
-	 * 
-	 * @return
-	 */
-	public T first() {
-		return (isEmpty()) ? null : this.head.getElement();
-	}
-
-	/**
-	 * Returns (but does not remove) the last element
-	 * 
-	 * @return
-	 */
-	public T last() {
-		return (isEmpty()) ? null : this.tail.getElement();
-	}
-
-	public void addFirst(T elemento) { // adds element e to the front of the list
-		// head = new Nodo<>(e, head); // create and link a new node
+	public void addFirst(T elemento) {
 		Nodo<T> nuevoNodo = new Nodo<T>(elemento);
-		if (size == 0) {
-			this.tail = this.head = nuevoNodo; // special case: new node becomes tail also
+		if (getCurrentSize() == 0) {
+			this.tail = this.head = nuevoNodo;
 		} else {
 			nuevoNodo.next(this.head);
 			this.head = nuevoNodo;
 		}
-		this.size++;
+		incrementSize();
 	}
 
-	/**
-	 * Adds element e to the end of the list
-	 * 
-	 * @param elemento
-	 */
 	public void addLast(T elemento) {
-		Nodo<T> newest = new Nodo<>(elemento); // node will eventually be the tail
+		Nodo<T> newest = new Nodo<>(elemento);
 		if (isEmpty()) {
-			head = newest; // special case: previously empty list
+			head = newest;
 		} else {
-			this.tail.next(newest); // new node after existing tail
+			this.tail.next(newest);
 		}
-		tail = newest; // new node becomes the tail
-		size++;
+		tail = newest;
+		incrementSize();
 	}
 
-	public T removeFirst() { // removes and returns the first element
-		if (isEmpty())
-			return null; // nothing to remove
+	public T removeFirst() {
+		if (isEmpty()) {
+			return null;
+		}
 		T answer = head.getElement();
-		head = head.next(); // will become null if list had only one node
-		size--;
-		if (size == 0)
-			tail = null; // special case as list is now empty
+		head = head.next();
+		decrementSize();
+		if (getCurrentSize() == 0) {
+			tail = null;
+		}
 		return answer;
 	}
 
-	/**
-	 * Prints out the list in an array format
-	 */
+	public T getFirst() {
+		return (isEmpty()) ? null : this.head.getElement();
+	}
+
+	public T getLast() {
+		return (isEmpty()) ? null : this.tail.getElement();
+	}
+
 	@Override
 	public String toString() {
 		String resString = "[ ";
@@ -95,22 +79,4 @@ public class SinglyLinkedList<T> implements Tda {
 		return resString + " ]";
 	}
 
-	@Override
-	public boolean isFull() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public void checkEmptiness() throws RuntimeException {
-		if (isEmpty()) {
-			throw new RuntimeException(
-					String.format(ERR_ESTRUCTURA_VACIA, this.getClass().getInterfaces()[0].getSimpleName()));
-		}
-	}
-
-	@Override
-	public void checkFullness() throws RuntimeException {
-		// TODO Auto-generated method stub
-	}
 }

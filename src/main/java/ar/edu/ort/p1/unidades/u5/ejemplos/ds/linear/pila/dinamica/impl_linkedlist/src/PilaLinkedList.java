@@ -1,51 +1,48 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.estatica.impl_array.src;
+package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedlist.src;
 
-import java.lang.reflect.Array;
-
+import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src.SinglyLinkedList;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
-public class StackArray<T> implements Pila<T> {
+public class PilaLinkedList<T> implements Pila<T> {
 
-	// Declaration of the Data Type to be used
-	private T container[];
-	private int currentSize;
+	private SinglyLinkedList<T> elementos;
 
 	// Constructores
-	public StackArray(Class<T> tipo, int limite) {
-		this.currentSize = 0;
-		container = (T[]) Array.newInstance(tipo, limite);
+	public PilaLinkedList() {
+		this.elementos = new SinglyLinkedList<T>();
 	}
 
+	public PilaLinkedList(int tamanio) {
+		this.elementos = new SinglyLinkedList<T>(tamanio);
+	}
+
+	// Metodos
 	@Override
 	public void push(T elemento) {
 		checkFullness();
-		container[currentSize] = elemento;
-		currentSize++;
+		elementos.addFirst(elemento);
 	}
 
 	@Override
 	public T pop() {
-		T res = null;
 		checkEmptiness();
-		res = container[currentSize - 1];
-		currentSize--;
-		return res;
+		return elementos.removeFirst();
 	}
 
 	@Override
 	public T peek() {
 		checkEmptiness();
-		return container[currentSize - 1];
+		return elementos.getFirst();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		return currentSize == 0;
+		return elementos.isEmpty();
 	}
 
 	@Override
 	public boolean isFull() {
-		return currentSize == container.length ? true : false;
+		return elementos.isFull();
 	}
 
 	@Override
@@ -62,5 +59,9 @@ public class StackArray<T> implements Pila<T> {
 			throw new RuntimeException(
 					String.format(ERR_ESTRUCTURA_LLENA, this.getClass().getInterfaces()[0].getSimpleName()));
 		}
+	}
+
+	public void mostrar() {
+		System.out.println(this.elementos.toString());
 	}
 }

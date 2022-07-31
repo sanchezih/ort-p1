@@ -17,7 +17,7 @@ public class Main {
 	public static void main(String args[]) {
 
 		String line = null;
-		QueueLinkedList<String> cola = new QueueLinkedList<String>();
+		ColaLinkedList<String> colaDeStrings = new ColaLinkedList<String>();
 
 		if (args.length < 2) {
 			System.err.println("Please invoke the program like this:" + "\\tLinkedQueue file1 file2");
@@ -27,7 +27,7 @@ public class Main {
 					f = new FileReader(args[i]);
 					reader = new BufferedReader(f);
 					while ((line = reader.readLine()) != null) {
-						cola.add(line);
+						colaDeStrings.add(line);
 					}
 				} catch (Exception e) {
 					System.err.println("File not found " + args[i]);
@@ -35,10 +35,6 @@ public class Main {
 				}
 			}
 		}
-
-		while ((line = (String) cola.remove()) != null) {
-			System.out.println(line);
-		}
+		colaDeStrings.mostrar();
 	}
-
 }
