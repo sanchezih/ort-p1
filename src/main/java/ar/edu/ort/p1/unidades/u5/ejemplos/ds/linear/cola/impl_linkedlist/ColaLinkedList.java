@@ -1,15 +1,15 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.cola.impl_linkedlist;
 
-import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src.SinglyLinkedList;
+import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src.ListaSimplementeEnlazada;
 import ar.edu.ort.tp1.u5.tda.interfaces.Cola;
 
 public class ColaLinkedList<T> implements Cola<T> {
 
-	private SinglyLinkedList<T> elementos;
+	private ListaSimplementeEnlazada<T> elementos;
 
 	// Constructores
 	public ColaLinkedList() {
-		this.elementos = new SinglyLinkedList<T>();
+		this.elementos = new ListaSimplementeEnlazada<T>();
 	}
 
 	// Metodos

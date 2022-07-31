@@ -14,8 +14,8 @@ public class MiArrayList {
 	private int contador = 0;
 
 	// Constructor
-	public MiArrayList(int z) {
-		elementos = new Object[z];
+	public MiArrayList(int cantidadDeElementos) {
+		this.elementos = new Object[cantidadDeElementos];
 	}
 
 	/**
@@ -25,11 +25,11 @@ public class MiArrayList {
 	 * @return
 	 */
 	public Object getElemento(int i) {
-		return elementos[i];
+		return this.elementos[i];
 	}
 
 	public void addElemento(Object o) {
-		elementos[contador] = o;
-		contador++;
+		this.elementos[contador] = o;
+		this.contador++;
 	}
 }

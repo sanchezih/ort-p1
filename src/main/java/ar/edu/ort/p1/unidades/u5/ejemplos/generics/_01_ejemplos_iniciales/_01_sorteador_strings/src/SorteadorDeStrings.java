@@ -27,6 +27,6 @@ public class SorteadorDeStrings {
 	}
 
 	private int posRandom() {
-		return random.nextInt(this.elementos.size());
+		return this.random.nextInt(this.elementos.size());
 	}
 }

@@ -3,7 +3,7 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._03_doblemente_e
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.impl.NodoLista;
 
-public class DoublyLinkedList<T> {
+public class ListaDoblementeEnlazada<T> {
 
 	private NodoLista<T> head;
 	private NodoLista<T> tail;
@@ -13,11 +13,7 @@ public class DoublyLinkedList<T> {
 		return (head == null);
 	}
 
-	/**
-	 * Used to insert a node at the start of linked list
-	 * 
-	 * @param data
-	 */
+	
 	public void insertFirst(T data) {
 		NodoLista<T> newNode = new NodoLista<>(data);
 		newNode.next(head);
@@ -32,11 +28,6 @@ public class DoublyLinkedList<T> {
 		size++;
 	}
 
-	/**
-	 * Used to insert a node at the start of linked list
-	 * 
-	 * @param data
-	 */
 	public void insertLast(T data) {
 		NodoLista<T> newNode = new NodoLista<>(data);
 		newNode.next(null);

@@ -3,13 +3,13 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_simplemente_
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
 
-public class CircularlyLinkedList<T> implements Tda {
+public class ListaSimplementeEnlazadaCircular<T> implements Tda {
 
-	private Nodo<T> tail = null; // we store tail (but not head)
-	private int size = 0; // number of nodes in the list
+	private Nodo<T> tail = null;
+	private int size = 0;
 
 	// Constructor
-	public CircularlyLinkedList() {
+	public ListaSimplementeEnlazadaCircular() {
 	}
 
 	// Metodos
@@ -97,7 +97,7 @@ public class CircularlyLinkedList<T> implements Tda {
 			return resString + " ]";
 		}
 		while (X.next() != null) {
-			resString += String.valueOf(X.getElement()) + " -> ";
+			resString += String.valueOf(X.getElement()) + " - ";
 			X = X.next();
 		}
 		resString += String.valueOf(X.getElement());
@@ -108,24 +108,17 @@ public class CircularlyLinkedList<T> implements Tda {
 	/**
 	 * Mustra en pantalla los elementos de la lista.
 	 */
-	public void listar() {
-		// Verifica si la lista contiene elementos.
+	public void mostrar() {
 		if (!isEmpty()) {
-			// Crea una copia de la lista.
 			Nodo aux = tail.next();
-			// Posicion de los elementos de la lista.
 			int i = 0;
 			System.out.print("-> ");
-			// Recorre la lista hasta llegar nuevamente al incio de la lista.
 			while (aux != tail) {
-				// Imprime en pantalla el valor del nodo.
-				System.out.print("n" + i + ".[ " + aux.getElement() + " ]" + " ->  ");
-				// Avanza al siguiente nodo.
+				System.out.print("[" + aux.getElement() + "]" + " -> ");
 				aux = aux.next();
-				// Incrementa el contador de la posión.
 				i++;
 			}
-			System.out.print("n" + i + ".[ " + tail.getElement() + " ]" + " ->  ");
+			System.out.print("[" + tail.getElement() + "]" + " -> ");
 		}
 	}
 

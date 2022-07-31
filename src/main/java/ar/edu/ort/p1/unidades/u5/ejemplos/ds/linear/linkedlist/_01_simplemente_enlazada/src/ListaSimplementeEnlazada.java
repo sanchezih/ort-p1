@@ -3,18 +3,17 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.impl.TdaNodos;
 
-public class SinglyLinkedList<T> extends TdaNodos<T> {
+public class ListaSimplementeEnlazada<T> extends TdaNodos<T> {
 
 	private Nodo<T> head = null;
 	private Nodo<T> tail = null;
-	// private int size = 0; // number of nodes in the list
 
 	// Constructores
-	public SinglyLinkedList() {
+	public ListaSimplementeEnlazada() {
 		super();
 	}
 
-	public SinglyLinkedList(int tope) {
+	public ListaSimplementeEnlazada(int tope) {
 		super(tope);
 	}
 
@@ -54,6 +53,10 @@ public class SinglyLinkedList<T> extends TdaNodos<T> {
 		return answer;
 	}
 
+	public int getCantidadElementos() {
+		return this.getCurrentSize();
+	}
+
 	public T getFirst() {
 		return (isEmpty()) ? null : this.head.getElement();
 	}
@@ -64,19 +67,17 @@ public class SinglyLinkedList<T> extends TdaNodos<T> {
 
 	@Override
 	public String toString() {
-		String resString = "[ ";
-		Nodo<T> X = head;
+		String resString = "";
+		Nodo<T> primerElemento = head;
 
-		if (X == null) {
-			return resString + " ]";
+		if (primerElemento != null) {
+			while (primerElemento.next() != null) {
+				resString += String.valueOf("[" + primerElemento.getElement()) + "] -> ";
+				primerElemento = primerElemento.next();
+			}
+			resString += String.valueOf("[" + primerElemento.getElement() + "]");
 		}
-		while (X.next() != null) {
-			resString += String.valueOf(X.getElement()) + " -> ";
-			X = X.next();
-		}
-		resString += String.valueOf(X.getElement());
-
-		return resString + " ]";
+		return resString;
 	}
 
 }

@@ -3,18 +3,23 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_simplemente_
 public class Main {
 
 	public static void main(String[] args) {
+		
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                     LISTA SIMPLEMENTE ENLAZADA CIRCULAR                      |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
 
-		CircularlyLinkedList<Integer> listaDeEnteros = new CircularlyLinkedList<Integer>();
+		ListaSimplementeEnlazadaCircular<Integer> listaDeEnteros = new ListaSimplementeEnlazadaCircular<Integer>();
 		listaDeEnteros.addLast(190);
 		listaDeEnteros.addFirst(141);
 		listaDeEnteros.addLast(2);
-		listaDeEnteros.listar();
+		listaDeEnteros.mostrar();
 		listaDeEnteros.rotate();
 //		listaDeEnteros.addLast(3);
 //		listaDeEnteros.addLast(4);
 
 		System.out.println();
-		listaDeEnteros.listar();
+		listaDeEnteros.mostrar();
 
 	}
 

@@ -1,19 +1,19 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedlist.src;
 
-import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src.SinglyLinkedList;
+import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src.ListaSimplementeEnlazada;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class PilaLinkedList<T> implements Pila<T> {
 
-	private SinglyLinkedList<T> elementos;
+	private ListaSimplementeEnlazada<T> elementos;
 
 	// Constructores
 	public PilaLinkedList() {
-		this.elementos = new SinglyLinkedList<T>();
+		this.elementos = new ListaSimplementeEnlazada<T>();
 	}
 
 	public PilaLinkedList(int tamanio) {
-		this.elementos = new SinglyLinkedList<T>(tamanio);
+		this.elementos = new ListaSimplementeEnlazada<T>(tamanio);
 	}
 
 	// Metodos

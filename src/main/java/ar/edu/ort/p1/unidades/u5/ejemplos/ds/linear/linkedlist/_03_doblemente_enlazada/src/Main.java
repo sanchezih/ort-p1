@@ -4,22 +4,27 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		DoublyLinkedList myLinkedlist = new DoublyLinkedList();
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                           LISTA DOBLEMENTE ENLAZADA                          |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
 
-		myLinkedlist.insertLast(1);
-		myLinkedlist.insertLast(2);
-		myLinkedlist.insertLast(3);
+		ListaDoblementeEnlazada lista = new ListaDoblementeEnlazada();
+
+		lista.insertLast(1);
+		lista.insertLast(2);
+		lista.insertLast(3);
 //		myLinkedlist.insertFirst(1);
-		myLinkedlist.insertLast(4);
-		myLinkedlist.insertLast(5);
+		lista.insertLast(4);
+		lista.insertLast(5);
 
-		myLinkedlist.printLinkedListForward();
-		myLinkedlist.printLinkedListBackward();
+		lista.printLinkedListForward();
+		lista.printLinkedListBackward();
 
-		myLinkedlist.deleteFirst();
+		lista.deleteFirst();
 
-		myLinkedlist.printLinkedListForward();
-		myLinkedlist.printLinkedListBackward();
+		lista.printLinkedListForward();
+		lista.printLinkedListBackward();
 
 		System.out.println("================");
 		// Doubly Linked list will be

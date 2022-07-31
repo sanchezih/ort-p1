@@ -2,51 +2,17 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" 
-    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_simplemente_enlazada_circular.src.CircularlyLinkedList" 
+    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_simplemente_enlazada_circular.src.ListaSimplementeEnlazadaCircular" 
     project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/linkedlist/_02_simplemente_enlazada_circular/src/CircularlyLinkedList.java" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/linkedlist/_02_simplemente_enlazada_circular/src/ListaSimplementeEnlazadaCircular.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="319" width="158" x="41" y="37"/>    
+    <position height="319" width="244" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.Nodo" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-2020c2-g41e77b9-2/ort-tp1-main-2020c2-g41e77b9-2.jar" 
-    binary="true" corner="BOTTOM_RIGHT">    
-    <position height="171" width="123" x="41" y="396"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <association id="3">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="4" name="next">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="5" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="6">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="7" name="tail">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="8" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

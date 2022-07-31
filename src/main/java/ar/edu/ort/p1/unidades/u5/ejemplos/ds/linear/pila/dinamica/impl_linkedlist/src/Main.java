@@ -25,63 +25,68 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_linkedli
 public class Main {
 
 	public static void main(String args[]) {
-		
-		PilaLinkedList<Integer> pilaDeEnteros = new PilaLinkedList<>();
 
-		System.out.println("Paso 1: Agrego el numero 2");
-		pilaDeEnteros.push(2);
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|             PILA IMPLEMENTADA CON UNA LISTA SIMPLEMENTE ENLAZADA             |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
+
+		PilaLinkedList<String> pilaDeStrings = new PilaLinkedList<String>();
+
+		System.out.println("Paso 1: Agrego Queen");
+		pilaDeStrings.push("Queen");
 		System.out.println();
 
 		System.out.println("Paso 2: Muestro lo que tiene la pila");
-		pilaDeEnteros.mostrar();
+		pilaDeStrings.mostrar();
 		System.out.println();
 
-		System.out.println("Paso 3: Agrego el numero 15");
-		pilaDeEnteros.push(15);
+		System.out.println("Paso 3: Agrego Rush");
+		pilaDeStrings.push("Rush");
 		System.out.println();
 
 		System.out.println("Paso 4: Muestro lo que tiene la pila");
-		pilaDeEnteros.mostrar();
+		pilaDeStrings.mostrar();
 		System.out.println();
 
-		System.out.println("Paso 5: Agrego el numero 26");
-		pilaDeEnteros.push(26);
+		System.out.println("Paso 5: Agrego Van Halen");
+		pilaDeStrings.push("Van Halen");
 		System.out.println();
 
 		System.out.println("Paso 6: Muestro lo que tiene la pila");
-		pilaDeEnteros.mostrar();
+		pilaDeStrings.mostrar();
 		System.out.println();
 
 		System.out.println("Paso 7: Veo el elemento que esta primero en la pila");
-		System.out.println(pilaDeEnteros.peek());
+		System.out.println(pilaDeStrings.peek());
 		System.out.println();
 
 		System.out.println("Paso 8: Saco un elemento de la pila");
-		System.out.println(pilaDeEnteros.pop());
+		System.out.println(pilaDeStrings.pop());
 		System.out.println();
 
 		System.out.println("Paso 9: Muestro lo que tiene la pila");
-		pilaDeEnteros.mostrar();
+		pilaDeStrings.mostrar();
 		System.out.println();
 
 		System.out.println("Paso 10: Veo el elemento que esta primero en la pila");
-		System.out.println(pilaDeEnteros.peek());
+		System.out.println(pilaDeStrings.peek());
 		System.out.println();
 
 		System.out.println("Paso 11: Saco un elemento de la pila");
-		System.out.println(pilaDeEnteros.pop());
+		System.out.println(pilaDeStrings.pop());
 		System.out.println();
 
 		System.out.println("Paso 12: Muestro lo que tiene la pila");
-		pilaDeEnteros.mostrar();
+		pilaDeStrings.mostrar();
 		System.out.println();
 
 		System.out.println("Paso 13: Saco un elemento de la pila");
-		System.out.println(pilaDeEnteros.pop());
+		System.out.println(pilaDeStrings.pop());
 		System.out.println();
 
 		System.out.println("Paso 14: Muestro lo que tiene la pila");
-		pilaDeEnteros.mostrar();
+		pilaDeStrings.mostrar();
 		System.out.println();
 
 	}

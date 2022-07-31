@@ -44,8 +44,8 @@ public class UtilArrays {
 	 */
 	public static boolean isPalindromo(char[] elementos) {
 
-		int length = elementos.length;
 		boolean isPalindromo = true;
+		int length = elementos.length;
 		for (int i = 0; i < elementos.length; i++) {
 			if (isPalindromo) {
 				int start = elementos[i];

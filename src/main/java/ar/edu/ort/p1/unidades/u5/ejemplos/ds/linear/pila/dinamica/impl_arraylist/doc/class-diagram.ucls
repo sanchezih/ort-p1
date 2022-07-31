@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="java.util.ArrayList" project="ort-p1" 
     file="C:/Program Files/Java/jdk-11.0.15/lib/jrt-fs.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="184" width="282" x="41" y="481"/>    
+    <position height="184" width="282" x="231" y="481"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
     name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylist.src.PilaArrayList" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/pila/dinamica/impl_arraylist/src/PilaArrayList.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="265" width="135" x="135" y="176"/>    
+    <position height="265" width="135" x="274" y="176"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1" 
     file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="189" width="193" x="310" y="176"/>    
+    <position height="189" width="193" x="41" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <interface id="4" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Pila" project="ort-p1" 
     file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="117" width="140" x="363" y="481"/>    
+    <position height="117" width="140" x="51" y="481"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,29 +44,29 @@
   <interface id="5" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1" 
     file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="99" width="140" x="310" y="37"/>    
+    <position height="99" width="140" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <association id="6">    
+  <generalization id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="7">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="7" name="elementos">        
+      <attribute id="8" name="elementos">        
         <position height="0" width="0" x="482" y="-76"/>      
       </attribute>      
-      <multiplicity id="8" minimum="0" maximum="1">        
+      <multiplicity id="9" minimum="0" maximum="1">        
         <position height="0" width="0" x="482" y="-76"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="9">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
   <generalization id="10">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
