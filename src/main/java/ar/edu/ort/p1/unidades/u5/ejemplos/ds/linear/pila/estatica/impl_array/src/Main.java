@@ -6,16 +6,16 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		PilaArray<Persona> s = new PilaArray<>(Persona.class, 2);
-		s.push(new Persona("Maira", 39));
-		System.out.println(s.peek());
-		s.push(new Persona("Felipe", 34));
-		s.pop();
-		System.out.println(s.peek());
-		s.push(new Persona("Julia", 34));
-		System.out.println(s.peek());
-		s.pop();
-		System.out.println(s.peek());
+		PilaArray<Persona> pila = new PilaArray<>(Persona.class, 2);
+		pila.push(new Persona("Maira", 39));
+		System.out.println(pila.peek());
+		pila.push(new Persona("Felipe", 34));
+		pila.pop();
+		System.out.println(pila.peek());
+		pila.push(new Persona("Julia", 34));
+		System.out.println(pila.peek());
+		pila.pop();
+		System.out.println(pila.peek());
 
 	}
 }
