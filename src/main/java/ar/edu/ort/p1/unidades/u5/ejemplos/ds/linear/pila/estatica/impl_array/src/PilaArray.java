@@ -6,7 +6,7 @@ import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class PilaArray<T> implements Pila<T> {
 
-	private T pila[];
+	private T pila[] = null;
 	private int currentSize;
 
 	// Constructores
