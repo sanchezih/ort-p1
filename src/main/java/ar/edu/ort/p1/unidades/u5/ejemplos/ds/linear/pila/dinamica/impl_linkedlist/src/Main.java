@@ -26,12 +26,9 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		System.out.println("+------------------------------------------------------------------------------+");
-		System.out.println("|             PILA IMPLEMENTADA CON UNA LISTA SIMPLEMENTE ENLAZADA             |");
-		System.out.println("+------------------------------------------------------------------------------+");
-		System.out.println();
-
 		PilaLinkedList<String> pilaDeStrings = new PilaLinkedList<String>();
+
+		pilaDeStrings.mostrarTitulo();
 
 		System.out.println("Paso 1: Agrego Queen");
 		pilaDeStrings.push("Queen");

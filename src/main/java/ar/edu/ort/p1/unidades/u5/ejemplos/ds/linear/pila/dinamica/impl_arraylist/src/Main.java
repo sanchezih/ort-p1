@@ -4,6 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                      PILA IMPLEMENTADA CON UN ARRAYLIST                      |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
+
 		PilaArrayList<Integer> pilaDeEnteros = new PilaArrayList<Integer>(3);
 
 		pilaDeEnteros.push(10);

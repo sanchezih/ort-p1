@@ -1,143 +1,159 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._02_simplemente_enlazada_circular.src;
 
+import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist.LinkedList;
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
-import ar.edu.ort.tp1.u5.tda.interfaces.Tda;
+import ar.edu.ort.tp1.u5.tda.impl.TdaNodos;
 
-public class ListaSimplementeEnlazadaCircular<T> implements Tda {
+public class ListaSimplementeEnlazadaCircular<T> extends TdaNodos<T> implements LinkedList<T> {
 
-	private Nodo<T> tail = null;
-	private int size = 0;
+	private Nodo<T> last;
 
 	// Constructor
 	public ListaSimplementeEnlazadaCircular() {
+		this.first = null;
+		this.last = null;
 	}
 
 	// Metodos
-	public boolean isEmpty() {
-		return size == 0;
+	@Override
+	public int getCantidadElementos() {
+		return this.getCurrentSize();
 	}
 
-	/**
-	 * Returns (but does not remove) the first element
-	 * 
-	 * @return
-	 */
-	public T first() {
+	@Override
+	public void addFirst(T element) {
+		Nodo<T> newNode = new Nodo<T>(element);
 		if (isEmpty()) {
-			return null;
-		}
-		return tail.next().getElement(); // the head is *after* the tail
-	}
-
-	/**
-	 * Returns (but does not remove) the last element
-	 * 
-	 * @return
-	 */
-	public T last() {
-		if (isEmpty())
-			return null;
-		return tail.getElement();
-	}
-
-	public void rotate() { // rotate the first element to the back of the list
-		if (tail != null) // if empty, do nothing
-			tail = tail.next(); // the old head becomes the new tail
-	}
-
-	/**
-	 * Adds element e to the front of the list
-	 * 
-	 * @param e
-	 */
-	public void addFirst(T e) {
-
-		if (size == 0) {
-			this.tail = new Nodo<>(e);
-			this.tail.next(this.tail); // link to itself circularly
+			first = newNode;
+			last = newNode;
+			newNode.next(first);
+			incrementSize();
 		} else {
-			// Nodo<E> newest = new Nodo<>(e, tail.getNext());
-			// tail.next(newest);
-
-			Nodo<T> nuevoNodo = new Nodo<T>(e);
-			nuevoNodo.next(this.tail.next());
-			this.tail.next(nuevoNodo);
+			Nodo<T> temp = first;
+			newNode.next(temp);
+			first = newNode;
+			last.next(first);
+			incrementSize();
 		}
-		size++;
 	}
 
-	public void addLast(T e) { // adds element e to the end of the list
-		addFirst(e); // insert new element at front of list
-		tail = tail.next(); // now new element becomes the tail
-	}
-
-	public T removeFirst() { // removes and returns the first element
-		if (isEmpty())
-			return null; // nothing to remove
-		Nodo<T> head = tail.next();
-		if (head == tail) {
-			tail = null; // must be the only node left
-		} else {
-			tail.next(head.next()); // removes "head" from the list
-			// tail.setNext(head.getNext()); // removes "head" from the list
-		}
-		size--;
-		return head.getElement();
-	}
-
-	/**
-	 * Prints out the list in an array format
-	 */
 	@Override
-	public String toString() {
-		String resString = "[ ";
-		Nodo<T> X = tail;
-
-		if (X == null) {
-			return resString + " ]";
+	public void addLast(T element) {
+		Nodo<T> newNode = new Nodo<T>(element);
+		if (isEmpty()) {
+			first = newNode;
+			last = newNode;
+			newNode.next(first);
+			incrementSize();
+		} else {
+			last.next(newNode);
+			last = newNode;
+			last.next(first);
+			incrementSize();
 		}
-		while (X.next() != null) {
-			resString += String.valueOf(X.getElement()) + " - ";
-			X = X.next();
-		}
-		resString += String.valueOf(X.getElement());
-
-		return resString + " ]";
 	}
 
-	/**
-	 * Mustra en pantalla los elementos de la lista.
-	 */
-	public void mostrar() {
+	@Override
+	public T getFirst() {
+		checkEmptiness();
+		return this.first.getElement();
+	}
+
+	@Override
+	public T getLast() {
+		checkEmptiness();
+		return this.last.getElement();
+	}
+
+	@Override
+	public T removeFirst() {
+		T firstElement = null;
 		if (!isEmpty()) {
-			Nodo aux = tail.next();
-			int i = 0;
-			System.out.print("-> ");
-			while (aux != tail) {
-				System.out.print("[" + aux.getElement() + "]" + " -> ");
-				aux = aux.next();
-				i++;
+			firstElement = first.getElement();
+			if (this.first == this.last) {
+				this.first = null;
+				this.last = null;
+			} else {
+				this.first = first.next();
+				this.last.next(first);
 			}
-			System.out.print("[" + tail.getElement() + "]" + " -> ");
+			decrementSize();
+		}
+		return firstElement;
+	}
+
+	@Override
+	public T removeLast() {
+		T lastElement = null;
+		if (!isEmpty()) {
+			// Si la lista tiene solo 1 elemento
+			if (this.first == this.last) {
+				lastElement = this.first.getElement();
+				this.first = null;
+				this.last = null;
+			} else {
+				// Si la lista tiene mas de 1 elemento
+				Nodo<T> temp = first;
+				Nodo<T> anteultimo = null;
+				while (temp.next() != first) {
+					anteultimo = temp;
+					temp = temp.next();
+				}
+				lastElement = anteultimo.next().getElement();
+				anteultimo.next(first);
+				this.last = anteultimo;
+			}
+			decrementSize();
+		}
+		return lastElement;
+	}
+
+	@Override
+	public void addAt(T elemento, int pos) {
+		Nodo<T> temp = first;
+		int i;
+
+		if (isEmpty() || (pos - 1) > getCantidadElementos()) {
+			System.out.println("Index is greater than size of the list");
+		} else {
+			Nodo<T> newNode = new Nodo<T>(elemento);
+			for (i = 1; i < pos - 1; i++) {
+				temp = temp.next();
+			}
+			newNode.next(temp.next());
+			temp.next(newNode);
+			incrementSize();
 		}
 	}
 
 	@Override
-	public boolean isFull() {
-		// TODO Auto-generated method stub
-		return false;
+	public void rotar() {
+		if (getCurrentSize() > 1) {
+			first = first.next();
+			last = last.next();
+		}
 	}
 
 	@Override
-	public void checkEmptiness() throws RuntimeException {
-		// TODO Auto-generated method stub
-
+	public void print() {
+		if (!isEmpty()) {
+			Nodo<T> temp = first;
+			do {
+				System.out.print("->[" + temp.getElement() + "]");
+				temp = temp.next();
+			} while (temp != first);
+			System.out.printf("->\n");
+		}
 	}
 
-	@Override
-	public void checkFullness() throws RuntimeException {
-		// TODO Auto-generated method stub
-
+	/**
+	 * 
+	 */
+	public void mostrarTitulo() {
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                     LISTA SIMPLEMENTE ENLAZADA CIRCULAR                      |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
 	}
 
 }

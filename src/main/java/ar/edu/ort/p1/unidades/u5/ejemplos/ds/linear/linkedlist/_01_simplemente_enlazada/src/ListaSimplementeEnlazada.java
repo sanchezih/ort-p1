@@ -1,12 +1,12 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._01_simplemente_enlazada.src;
 
+import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist.LinkedList;
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.impl.TdaNodos;
 
-public class ListaSimplementeEnlazada<T> extends TdaNodos<T> {
+public class ListaSimplementeEnlazada<T> extends TdaNodos<T> implements LinkedList<T> {
 
-	private Nodo<T> head = null;
-	private Nodo<T> tail = null;
+	private Nodo<T> last = null;
 
 	// Constructores
 	public ListaSimplementeEnlazada() {
@@ -18,66 +18,120 @@ public class ListaSimplementeEnlazada<T> extends TdaNodos<T> {
 	}
 
 	// Metodos
-	public void addFirst(T elemento) {
-		Nodo<T> nuevoNodo = new Nodo<T>(elemento);
-		if (getCurrentSize() == 0) {
-			this.tail = this.head = nuevoNodo;
-		} else {
-			nuevoNodo.next(this.head);
-			this.head = nuevoNodo;
-		}
-		incrementSize();
-	}
-
-	public void addLast(T elemento) {
-		Nodo<T> newest = new Nodo<>(elemento);
-		if (isEmpty()) {
-			head = newest;
-		} else {
-			this.tail.next(newest);
-		}
-		tail = newest;
-		incrementSize();
-	}
-
-	public T removeFirst() {
-		if (isEmpty()) {
-			return null;
-		}
-		T answer = head.getElement();
-		head = head.next();
-		decrementSize();
-		if (getCurrentSize() == 0) {
-			tail = null;
-		}
-		return answer;
-	}
-
+	@Override
 	public int getCantidadElementos() {
 		return this.getCurrentSize();
 	}
 
-	public T getFirst() {
-		return (isEmpty()) ? null : this.head.getElement();
-	}
-
-	public T getLast() {
-		return (isEmpty()) ? null : this.tail.getElement();
+	@Override
+	public void addFirst(T elemento) {
+		checkFullness();
+		Nodo<T> nuevoNodo = new Nodo<T>(elemento);
+		if (getCurrentSize() == 0) {
+			this.last = this.first = nuevoNodo;
+		} else {
+			nuevoNodo.next(this.first);
+			this.first = nuevoNodo;
+		}
+		incrementSize();
 	}
 
 	@Override
-	public String toString() {
-		String resString = "";
-		Nodo<T> primerElemento = head;
+	public void addLast(T elemento) {
+		checkFullness();
+		Nodo<T> newest = new Nodo<>(elemento);
+		if (isEmpty()) {
+			first = newest;
+		} else {
+			this.last.next(newest);
+		}
+		last = newest;
+		incrementSize();
+	}
 
-		if (primerElemento != null) {
+	@Override
+	public T getFirst() {
+		checkEmptiness();
+		return this.first.getElement();
+	}
+
+	@Override
+	public T getLast() {
+		checkEmptiness();
+		return this.last.getElement();
+	}
+
+	@Override
+	public T removeFirst() {
+		T firstElement = null;
+		if (!isEmpty()) {
+			firstElement = first.getElement();
+			if (this.first == this.last) {
+				this.first = null;
+			} else {
+				this.first = first.next();
+			}
+			decrementSize();
+		}
+		return firstElement;
+	}
+
+	@Override
+	public T removeLast() {
+		T lastElement = null;
+		if (!isEmpty()) {
+			if (this.first == this.last) {
+				lastElement = this.first.getElement();
+				this.first = null;
+			} else {
+				Nodo<T> lastNode = first;
+				Nodo<T> anteultimo = null;
+				while (lastNode.next() != null) {
+					anteultimo = lastNode;
+					lastNode = lastNode.next();
+				}
+				lastElement = anteultimo.next().getElement();
+				anteultimo.next(null);
+				this.last = anteultimo;
+			}
+			decrementSize();
+		}
+		return lastElement;
+	}
+
+	@Override
+	public void addAt(T elemento, int posicion) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void rotar() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void print() {
+		if (!isEmpty()) {
+			String resString = "";
+			Nodo<T> primerElemento = first;
 			while (primerElemento.next() != null) {
-				resString += String.valueOf("[" + primerElemento.getElement()) + "] -> ";
+				resString += String.valueOf("[" + primerElemento.getElement()) + "]->";
 				primerElemento = primerElemento.next();
 			}
 			resString += String.valueOf("[" + primerElemento.getElement() + "]");
+			System.out.println(resString);
 		}
-		return resString;
 	}
 
+	/**
+	 * 
+	 */
+	public void mostrarTitulo() {
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                          LISTA SIMPLEMENTE ENLAZADA                          |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
+	}
 }

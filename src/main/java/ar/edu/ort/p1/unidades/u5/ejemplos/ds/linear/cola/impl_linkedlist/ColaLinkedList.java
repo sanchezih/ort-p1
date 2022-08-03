@@ -14,9 +14,9 @@ public class ColaLinkedList<T> implements Cola<T> {
 
 	// Metodos
 	@Override
-	public void add(T element) {
+	public void add(T elemento) {
 		checkFullness();
-		elementos.addLast(element);
+		elementos.addLast(elemento);
 	}
 
 	@Override

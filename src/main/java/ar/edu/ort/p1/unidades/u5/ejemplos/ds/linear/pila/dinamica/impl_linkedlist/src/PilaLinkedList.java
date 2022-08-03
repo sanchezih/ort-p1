@@ -64,4 +64,11 @@ public class PilaLinkedList<T> implements Pila<T> {
 	public void mostrar() {
 		System.out.println(this.elementos.toString());
 	}
+
+	public void mostrarTitulo() {
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|             PILA IMPLEMENTADA CON UNA LISTA SIMPLEMENTE ENLAZADA             |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
+	}
 }
