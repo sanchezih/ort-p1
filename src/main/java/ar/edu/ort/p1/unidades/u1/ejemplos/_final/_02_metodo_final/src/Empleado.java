@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.unidades.u1.ejemplos._final._02_metodo_final.src;
 
+import ar.edu.ort.p1.util.pojo.Persona;
+
 public class Empleado extends Persona {
 	
 	protected int sueldo;

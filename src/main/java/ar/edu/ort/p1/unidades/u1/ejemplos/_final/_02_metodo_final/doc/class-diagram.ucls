@@ -5,18 +5,16 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_final/_02_metodo_final/src/Empleado.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="275" x="41" y="230"/>    
+    <position height="-1" width="-1" x="280" y="493"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.unidades.u1.ejemplos._final._02_metodo_final.src.Persona" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_final/_02_metodo_final/src/Persona.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="275" x="41" y="37"/>    
+  <class id="2" language="java" name="ar.edu.ort.p1.util.pojo.Persona" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/pojo/Persona.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="280" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

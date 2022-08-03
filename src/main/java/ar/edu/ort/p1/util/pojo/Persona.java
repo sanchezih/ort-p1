@@ -2,6 +2,8 @@ package ar.edu.ort.p1.util.pojo;
 
 public class Persona {
 
+	private static final int LIMITE_MENOR_EDAD = 18;
+
 	private String nombre;
 	private String apellido;
 	private String dni;
@@ -35,6 +37,19 @@ public class Persona {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
+	}
+
+	public void imprimirDatosPersonales() {
+		System.out.println("Nombre:" + nombre);
+		System.out.println("Edad:" + edad);
+	}
+
+	public final boolean esMayor() {
+		boolean esMayor = false;
+		if (edad >= LIMITE_MENOR_EDAD) {
+			esMayor = true;
+		}
+		return esMayor;
 	}
 
 	@Override

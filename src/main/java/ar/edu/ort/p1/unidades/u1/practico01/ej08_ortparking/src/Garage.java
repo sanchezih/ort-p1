@@ -128,7 +128,7 @@ public class Garage {
 
 	/*----------------------------------------------------------------------------*/
 
-	/* Metodos complementarios */
+	// Metodos complementarios
 
 	/**
 	 * Registra un vehiculo en el arraylist para validar la condicion

@@ -6,6 +6,10 @@ public class Tablero {
 
 	private ArrayList<Llave> llaves;
 
+	public Tablero() {
+		this.llaves = new ArrayList<Llave>();
+	}
+
 	/**
 	 * El tablero cuenta con el metodo devolverLlave(...) (ya desarrollado) que
 	 * devuelve la llave correcta a partir de la patente. De no encontrarla devuelve

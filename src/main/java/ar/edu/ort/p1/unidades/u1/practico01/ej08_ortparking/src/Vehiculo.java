@@ -19,7 +19,16 @@ public class Vehiculo {
 
 	/*----------------------------------------------------------------------------*/
 
-	public boolean esPersonaAutorizada(String p) {
+	public boolean esPersonaAutorizada(String dni) {
+		int i=0;
+		boolean estaAutorizada=false;
+		Persona aux;
+		
+		while(i < this.autorizados.size() && !estaAutorizada) {
+			aux=this.autorizados.get(i);
+		//	estaAutorizada=aux.getDni() == DNI
+		}
+		
 		return false; // Para test devuelve siempre false
 	}
 
