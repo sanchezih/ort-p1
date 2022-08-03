@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u3.ejemplos._03_polimorfismo_basado_herencia.seleccion.src;
+package ar.edu.ort.p1.unidades.u3.ejemplos._03_polimorfismo_basado_en_herencia.seleccion.src;
 
 import java.util.ArrayList;
 

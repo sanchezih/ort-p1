@@ -1,5 +1,5 @@
 
-package ar.edu.ort.p1.unidades.u3.ejemplos._03_polimorfismo_basado_herencia.profesores.src;
+package ar.edu.ort.p1.unidades.u3.ejemplos._03_polimorfismo_basado_en_herencia.profesores.src;
 
 /**
  * ProfesorTitular lo hemos dejado con escaso contenido porque aqui lo usamos
