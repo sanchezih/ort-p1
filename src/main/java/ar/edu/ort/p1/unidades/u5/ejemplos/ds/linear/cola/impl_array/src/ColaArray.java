@@ -77,4 +77,11 @@ public class ColaArray<T> implements Cola<T> {
 		return;
 	}
 
+	public void mostrarTitulo() {
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                        COLA IMPLEMENTADA CON UN ARRAY                        |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
+	}
+	
 }

@@ -6,6 +6,12 @@ public class Main {
 
 		Estacionamiento estacionamiento = new Estacionamiento();
 
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|   Para probar este ejercicio, tener en cuenta los pagos en funcion del mes   |");
+		System.out.println("|   en el que se ejecuta.                                                      |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
+
 		/*----------------------------------------------------------------------------*/
 
 		/**

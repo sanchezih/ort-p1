@@ -19,6 +19,8 @@ public class Main {
 		String line = null;
 		ColaLinkedList<String> colaDeStrings = new ColaLinkedList<String>();
 
+		colaDeStrings.mostrarTitulo();
+
 		if (args.length < 2) {
 			System.err.println("Please invoke the program like this:" + "\\tLinkedQueue file1 file2");
 		} else {

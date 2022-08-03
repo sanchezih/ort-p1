@@ -58,7 +58,14 @@ public class ColaLinkedList<T> implements Cola<T> {
 	}
 
 	public void mostrar() {
-		System.out.println(this.elementos.toString());
+		this.elementos.printForward();
+	}
+
+	public void mostrarTitulo() {
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|             COLA IMPLEMENTADA CON UNA LISTA SIMPLEMENTE ENLAZADA             |");
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println();
 	}
 
 }

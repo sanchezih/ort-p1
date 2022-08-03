@@ -145,7 +145,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -162,7 +162,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -179,7 +179,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -196,7 +196,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -213,7 +213,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -247,7 +247,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -264,7 +264,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -281,7 +281,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov
@@ -298,7 +298,7 @@ public class Estacionamiento {
 				new Pago(90, "11111111"), // May
 				new Pago(90, "11111111"), // Jun
 				new Pago(90, "11111111"), // Jul
-				null, // Ago
+				new Pago(90, "11111111"), // Ago
 				null, // Sep
 				null, // Oct
 				null, // Nov

@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/* Modelo una matriz creando un array de arrays */
+		// Modelo una matriz creando un array de arrays
 		char[][] matLetras = { { 'D', 'E', 'B', 'O' }, { 'U', 'S', 'A', 'R' }, { 'G', 'U', 'I', 'A' } };
 
 		dibujar(matLetras);
@@ -19,7 +19,13 @@ public class Main {
 
 	}
 
-	// Busqueda en matriz
+	/**
+	 * Busqueda en matriz
+	 * 
+	 * @param matLetras
+	 * @param letra
+	 * @return
+	 */
 	public static boolean existeLetra(char[][] matLetras, char letra) {
 		int i = 0;
 		boolean existe = false;
@@ -36,7 +42,11 @@ public class Main {
 		return existe;
 	}
 
-	// Dibujar
+	/**
+	 * Dibujar
+	 * 
+	 * @param matLetras
+	 */
 	public static void dibujar(char[][] matLetras) {
 		System.out.println("*** MATRIZ DE EJEMPLO ***");
 		for (int i = 0; i < matLetras.length; i++) {
@@ -48,7 +58,11 @@ public class Main {
 		System.out.println();
 	}
 
-	// Recorrer todos los elementos usando ciclo for
+	/**
+	 * Recorrer todos los elementos usando ciclo for
+	 * 
+	 * @param matLetras
+	 */
 	public static void recorrerConFor(char[][] matLetras) {
 		System.out.println("\nRecorrer todos los elementos usando ciclo for");
 
@@ -60,7 +74,11 @@ public class Main {
 
 	}
 
-	// Recorrer todos los elementos usando ciclo for each
+	/**
+	 * Recorrer todos los elementos usando ciclo for each
+	 * 
+	 * @param matLetras
+	 */
 	public static void recorrerConForEach(char[][] matLetras) {
 		System.out.println("\n\nRecorrer todos los elementos usando ciclo for each");
 		for (char[] vecLetras : matLetras) {
@@ -70,7 +88,11 @@ public class Main {
 		}
 	}
 
-	// Recorrer todos los elementos en zigzag
+	/**
+	 * Recorrer todos los elementos en zigzag
+	 * 
+	 * @param matLetras
+	 */
 	public static void recorrerEnZigZag(char[][] matLetras) {
 		System.out.println("\n\nRecorrer todos los elementos en zigzag");
 		for (int i = 0; i < matLetras.length; i++) {
@@ -86,8 +108,12 @@ public class Main {
 		}
 	}
 
-	// Recorrer todos los elementos en espiral (Todas las filas deben tener el mismo
-	// length)
+	/**
+	 * Recorrer todos los elementos en espiral (Todas las filas deben tener el mismo
+	 * length
+	 * 
+	 * @param arr
+	 */
 	public static void recorrerEsEspiral(char[][] arr) {
 		System.out.println("\n\nRecorrer todos los elementos en espiral (Todas las filas deben tener el mismo length)");
 		int rows = arr.length;

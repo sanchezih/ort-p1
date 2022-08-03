@@ -12,6 +12,8 @@ public class Main {
 
 		ColaArray<Integer> colaDeEnteros = new ColaArray<>(Integer.class, 4);
 
+		colaDeEnteros.mostrarTitulo();
+
 		System.out.println("Paso 1: Agrego el numero 2");
 		colaDeEnteros.add(2);
 		System.out.println();
