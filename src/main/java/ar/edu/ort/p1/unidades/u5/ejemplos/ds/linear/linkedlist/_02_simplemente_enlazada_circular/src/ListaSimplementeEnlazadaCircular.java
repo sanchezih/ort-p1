@@ -135,7 +135,7 @@ public class ListaSimplementeEnlazadaCircular<T> extends TdaNodos<T> implements 
 	}
 
 	@Override
-	public void print() {
+	public void printForward() {
 		if (!isEmpty()) {
 			Nodo<T> temp = first;
 			do {

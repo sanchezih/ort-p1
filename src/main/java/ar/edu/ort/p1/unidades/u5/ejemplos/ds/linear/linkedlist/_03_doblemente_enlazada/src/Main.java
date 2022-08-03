@@ -4,49 +4,41 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("+------------------------------------------------------------------------------+");
-		System.out.println("|                           LISTA DOBLEMENTE ENLAZADA                          |");
-		System.out.println("+------------------------------------------------------------------------------+");
+		ListaDoblementeEnlazada<String> listaDeStrings = new ListaDoblementeEnlazada<String>();
+
+		listaDeStrings.mostrarTitulo();
+
+		System.out.println("Paso 1: Agrego Guitarra al comienzo");
+		listaDeStrings.addFirst("Guitarra");
+		listaDeStrings.printForward();
 		System.out.println();
 
-		ListaDoblementeEnlazada lista = new ListaDoblementeEnlazada();
+		System.out.println("Paso 2: Agrego Bajo al comienzo");
+		listaDeStrings.addFirst("Bajo");
+		listaDeStrings.printForward();
+		System.out.println();
 
-		lista.insertLast(1);
-		lista.insertLast(2);
-		lista.insertLast(3);
-//		myLinkedlist.insertFirst(1);
-		lista.insertLast(4);
-		lista.insertLast(5);
+		System.out.println("Paso 3: Agrego Bateria al comienzo");
+		listaDeStrings.addFirst("Bateria");
+		listaDeStrings.printForward();
+		System.out.println();
 
-		lista.printLinkedListForward();
-		lista.printLinkedListBackward();
+		listaDeStrings.printBackward();
+		System.out.println();
 
-		lista.deleteFirst();
+		System.out.println("Paso 4: Miro el primer elemento de la lista: " + listaDeStrings.getFirst());
+		System.out.println();
 
-		lista.printLinkedListForward();
-		lista.printLinkedListBackward();
+		System.out.println("Paso 5: Miro el ultimo elemento de la lista: " + listaDeStrings.getLast());
+		System.out.println();
 
-		System.out.println("================");
-		// Doubly Linked list will be
-		// 1 -> 7 -> 6 -> 5 -> 2
+		System.out.println("Paso 6: Elimino el primer elemento de la lista: " + listaDeStrings.removeFirst());
+		listaDeStrings.printForward();
+		System.out.println();
 
-		// NodoLista node = new NodoLista<>(1);
-//		node.data = 1;
-
-		// myLinkedlist.deleteAfter(node);
-//		myLinkedlist.printLinkedListForward();
-//		myLinkedlist.printLinkedListBackward();
-//		// After deleting node after 1,doubly Linked list will be
-//		// 2 -> 1 -> 6 -> 5
-//		System.out.println("================");
-//		myLinkedlist.deleteFirst();
-//		myLinkedlist.deleteLast();
-//
-//		// After performing above operation, doubly Linked list will be
-//		// 6 -> 5
-//		myLinkedlist.printLinkedListForward();
-//		myLinkedlist.printLinkedListBackward();
-
+		System.out.println("Paso 7: Elimino el ultimo elemento de la lista: " + listaDeStrings.removeLast());
+		listaDeStrings.printForward();
+		System.out.println();
 	}
 
 }

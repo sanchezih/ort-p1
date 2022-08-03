@@ -1,23 +1,55 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist._03_doblemente_enlazada.src;
 
+import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist.LinkedList;
 import ar.edu.ort.tp1.u5.tda.impl.Nodo;
 import ar.edu.ort.tp1.u5.tda.impl.NodoLista;
 
-public class ListaDoblementeEnlazada<T> {
-
+public class ListaDoblementeEnlazada<T> implements LinkedList<T> {
 	private NodoLista<T> head;
 	private NodoLista<T> tail;
-	int size;
+	int currentSize;
 
-	public boolean isEmpty() {
-		return (head == null);
+	// Constructor
+	public ListaDoblementeEnlazada() {
+		this.head = null;
+		this.tail = null;
+		this.currentSize = 0;
 	}
 
-	
-	public void insertFirst(T data) {
-		NodoLista<T> newNode = new NodoLista<>(data);
+	@Override
+	public boolean isEmpty() {
+		return this.currentSize == 0;
+	}
+
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void checkEmptiness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkFullness() throws RuntimeException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int getCantidadElementos() {
+		return currentSize;
+	}
+
+	@Override
+	public void addFirst(T elemento) {
+		NodoLista<T> newNode = new NodoLista<>(elemento);
 		newNode.next(head);
 		newNode.previous(null);
+
 		if (head != null) {
 			head.previous(newNode);
 		}
@@ -25,89 +57,87 @@ public class ListaDoblementeEnlazada<T> {
 		if (tail == null) {
 			tail = newNode;
 		}
-		size++;
+		currentSize++;
 	}
 
-	public void insertLast(T data) {
-		NodoLista<T> newNode = new NodoLista<>(data);
-		newNode.next(null);
-		newNode.previous(tail);
-		if (tail != null) {
-			tail.next(newNode);
-		}
-		tail = newNode;
-		if (head == null)
-			head = newNode;
-		size++;
+	@Override
+	public void addLast(T elemento) {
+
 	}
 
-	/**
-	 * Used to delete node from start of Doubly linked list
-	 * 
-	 * @return
-	 */
-	public NodoLista<T> deleteFirst() {
+	@Override
+	public T getFirst() {
+		return this.head.getElement();
+	}
 
-		if (size == 0)
+	@Override
+	public T getLast() {
+		return this.tail.getElement();
+	}
+
+	@Override
+	public T removeFirst() {
+		if (currentSize == 0) {
 			throw new RuntimeException("Doubly linked list is already empty");
-
+		}
 		NodoLista<T> temp = head;
 		head = (NodoLista<T>) head.next();
 		head.previous(null);
-		size--;
-		return temp;
+		currentSize--;
+		return temp.getElement();
 	}
 
-	// used to delete node from last of Doubly linked list
-	public NodoLista<T> deleteLast() {
+	@Override
+	public T removeLast() {
 		NodoLista<T> temp = tail;
 		tail = tail.previous();
 		tail.next(null);
-		size--;
-		return temp;
+		currentSize--;
+		return temp.getElement();
 	}
 
-//
-//	// Use to delete node after particular node
-//	public void deleteAfter(Nodo after) {
-//		Nodo temp = head;
-//		while (temp.next != null && temp.data != after.data) {
-//			temp = temp.next;
-//		}
-//		if (temp.next != null)
-//			temp.next.next.prev = temp;
-//		temp.next = temp.next.next;
-//
-//	}
-//
-	/**
-	 * For printing Doubly Linked List forward
-	 */
-	public void printLinkedListForward() {
-		System.out.println("Printing Doubly LinkedList (head --> tail) ");
+	@Override
+	public void addAt(T elemento, int posicion) {
+		// TODO Auto-generated method stub
 
-		// Nodo current = head;
+	}
+
+	@Override
+	public void rotar() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void printForward() {
+		System.out.println("Se imprime la lista desde head->tail");
+		String res = "";
 		Nodo<T> current = head;
-
 		while (current != null) {
-			System.out.println("{ " + current.getElement() + " } ");
+			res += "<-[" + current.getElement() + "]->";
 			current = current.next();
 		}
-		System.out.println();
+		System.out.println(res);
+	}
+
+	public void printBackward() {
+		System.out.println("Se imprime la lista desde tail->head");
+		String res = "";
+		NodoLista<T> current = tail;
+		while (current != null) {
+			res += "<-[" + current.getElement() + "]->";
+			current = current.previous();
+		}
+		System.out.println(res);
 	}
 
 	/**
-	 * For printing Doubly Linked List forward
+	 * 
 	 */
-	public void printLinkedListBackward() {
-		System.out.println("Printing Doubly LinkedList (tail --> head) ");
-		NodoLista<T> current = tail;
-		while (current != null) {
-			System.out.println("{ " + current.getElement() + " } ");
-			// current.displayNodeData();
-			current = current.previous();
-		}
+	public void mostrarTitulo() {
+		System.out.println("+------------------------------------------------------------------------------+");
+		System.out.println("|                           LISTA DOBLEMENTE ENLAZADA                          |");
+		System.out.println("+------------------------------------------------------------------------------+");
 		System.out.println();
 	}
-
 }

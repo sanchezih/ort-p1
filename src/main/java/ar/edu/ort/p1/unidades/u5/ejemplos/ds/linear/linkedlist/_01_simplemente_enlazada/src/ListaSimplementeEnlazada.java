@@ -112,7 +112,7 @@ public class ListaSimplementeEnlazada<T> extends TdaNodos<T> implements LinkedLi
 	}
 
 	@Override
-	public void print() {
+	public void printForward() {
 		if (!isEmpty()) {
 			String resString = "";
 			Nodo<T> primerElemento = first;

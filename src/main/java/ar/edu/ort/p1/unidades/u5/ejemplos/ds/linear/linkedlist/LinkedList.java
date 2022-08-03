@@ -22,6 +22,6 @@ public interface LinkedList<T> extends Tda {
 
 	void rotar();
 
-	void print();
+	void printForward();
 
 }
