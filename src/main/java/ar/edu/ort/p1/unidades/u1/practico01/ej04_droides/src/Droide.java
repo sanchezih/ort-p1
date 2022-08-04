@@ -45,11 +45,6 @@ public class Droide {
 		return this.obtenerResultadoReparacion(encontreAlMenosUnaPieza);
 	}
 
-	private void reemplazarPieza(Pieza piezaNoOperativa, Pieza piezaOperativa) {
-		this.piezasNoOperativas.remove(piezaNoOperativa);
-		this.piezasOperativas.add(piezaOperativa);
-	}
-
 	private Pieza buscarPiezaOperativa(String nombrePieza) {
 		int i = 0;
 		Droide droide;
@@ -75,6 +70,11 @@ public class Droide {
 			}
 		}
 		return piezaEncontrada;
+	}
+
+	private void reemplazarPieza(Pieza piezaNoOperativa, Pieza piezaOperativa) {
+		this.piezasNoOperativas.remove(piezaNoOperativa);
+		this.piezasOperativas.add(piezaOperativa);
 	}
 
 	private ResultadoReparacion obtenerResultadoReparacion(boolean encontreAlMenosUnaPieza) {

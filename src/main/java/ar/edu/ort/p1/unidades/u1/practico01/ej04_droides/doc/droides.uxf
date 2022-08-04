@@ -1,26 +1,30 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>40</y><w>350</w><h>190</h></coordinates><panel_attributes>Droide
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>100</x><y>60</y><w>370</w><h>190</h></coordinates><panel_attributes>Droide
 --
 
 --
-- autoRepararse(): ResultadoReparacion
-- buscarPiezaOperativa(String):Pieza
-- obtenerPiezaOperativa(String): Pieza
-- reemplazarPieza(Pieza, Pieza): void
-- obtenerResultadoReparacion(boolean): ResultadoReparacion
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>40</y><w>210</w><h>190</h></coordinates><panel_attributes>Pieza
++Droide()
+-autoRepararse(): ResultadoReparacion
+-buscarPiezaOperativa(String):Pieza
+-obtenerPiezaOperativa(String): Pieza
+-reemplazarPieza(Pieza, Pieza): void
+-obtenerResultadoReparacion(boolean): ResultadoReparacion
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>60</y><w>210</w><h>110</h></coordinates><panel_attributes>Pieza
 --
 - nombre:String
-
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>70</y><w>390</w><h>50</h></coordinates><panel_attributes>- piezasOperativas
++Pieza()
++getNombre(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>90</y><w>190</w><h>50</h></coordinates><panel_attributes>-piezasOperativas
 lt=&lt;-
-m1=*</panel_attributes><additional_attributes>370;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>150</y><w>390</w><h>180</h></coordinates><panel_attributes>- droidesFueraDeServicio
+m1=*</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>170</y><w>270</w><h>130</h></coordinates><panel_attributes>-droidesFueraDeServicio
 lt=&lt;-
-m1=*</panel_attributes><additional_attributes>150;10;240;10;240;160;10;160;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>100</y><w>390</w><h>50</h></coordinates><panel_attributes>- piezasNoOperativas
+m1=*</panel_attributes><additional_attributes>170;10;230;10;230;110;10;110;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>120</y><w>190</w><h>50</h></coordinates><panel_attributes>-piezasNoOperativas
 lt=&lt;-
-m1=*</panel_attributes><additional_attributes>370;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>360</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+m1=*</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>320</y><w>330</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 ResultadoReparacion
 --
-+ COMPLETAMENTE_OPERATIVO
-+ REPARACION_PARCIAL
-+ REPARACION_IMPOSIBLE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>220</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element></diagram>
++COMPLETAMENTE_OPERATIVO: ResultadoReparacion
++REPARACION_PARCIAL: ResultadoReparacion
++REPARACION_IMPOSIBLE: ResultadoReparacion
+--
++ResultadoReparacion()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>240</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>

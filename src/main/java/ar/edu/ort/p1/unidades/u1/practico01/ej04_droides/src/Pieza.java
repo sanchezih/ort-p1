@@ -6,5 +6,4 @@ public class Pieza {
 	public String getNombre() {
 		return nombre;
 	}
-
 }

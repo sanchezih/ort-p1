@@ -4,7 +4,7 @@
   <class id="1" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej04_droides.src.Droide" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej04_droides/src/Droide.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="318" x="272" y="37"/>    
+    <position height="-1" width="-1" x="269" y="153"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="ar.edu.ort.p1.unidades.u1.practico01.ej04_droides.src.Pieza" project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej04_droides/src/Pieza.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="700" y="404"/>    
+    <position height="-1" width="-1" x="680" y="153"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -25,52 +25,52 @@
     project="ort-p1" 
     file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/practico01/ej04_droides/src/ResultadoReparacion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="286" x="41" y="258"/>    
+    <position height="-1" width="-1" x="269" y="385"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <dependency id="4">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <association id="5">    
-    <bendpoint x="435" y="405"/>    
+  <association id="4">    
+    <bendpoint x="490" y="91"/>    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="6" name="piezasOperativas">        
-        <position height="0" width="0" x="906" y="-76"/>      
+      <attribute id="5" name="piezasOperativas">        
+        <position height="0" width="0" x="886" y="-357"/>      
       </attribute>      
-      <multiplicity id="7" minimum="0" maximum="1">        
-        <position height="0" width="0" x="906" y="-76"/>      
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="886" y="-357"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
   <association id="8">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="9" name="piezasNoOperativas">        
-        <position height="0" width="0" x="906" y="-76"/>      
+      <attribute id="9" name="droidesFueraDeServicio">        
+        <position height="0" width="0" x="-166" y="31"/>      
       </attribute>      
       <multiplicity id="10" minimum="0" maximum="1">        
-        <position height="0" width="0" x="906" y="-76"/>      
+        <position height="0" width="0" x="-166" y="31"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="11">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="12" name="droidesFueraDeServicio">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <attribute id="12" name="piezasNoOperativas">        
+        <position height="0" width="0" x="886" y="-357"/>      
       </attribute>      
       <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="886" y="-357"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
