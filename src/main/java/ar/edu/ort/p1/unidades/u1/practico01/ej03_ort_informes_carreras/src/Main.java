@@ -21,7 +21,6 @@ public class Main {
 		facundo.agregarMateria(orgEmpresarialAprobada);
 		luis.agregarMateria(orgEmpresarialAprobada);
 
-
 		// Creo las carreras
 		Carrera analistaDeSistemas = new Carrera();
 		Carrera biotecnologia = new Carrera();

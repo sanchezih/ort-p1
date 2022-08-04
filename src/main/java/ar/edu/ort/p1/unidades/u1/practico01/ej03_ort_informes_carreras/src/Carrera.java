@@ -37,7 +37,7 @@ public class Carrera {
 		for (Alumno alumno : this.alumnos) {
 			if (alumno.cantAprobadas() == maxCantAprobadas) {
 				AlumnoSimplificado as = new AlumnoSimplificado(alumno.getNombre(), alumno.getMail());
-				informe.agregarAlumnoSimplificado(as);
+				informe.addAlumnoSimplificado(as);
 			}
 		}
 		return informe;

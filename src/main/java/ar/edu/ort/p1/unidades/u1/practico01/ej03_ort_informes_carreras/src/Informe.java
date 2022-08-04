@@ -12,7 +12,7 @@ public class Informe {
 		this.alumnos = new ArrayList<AlumnoSimplificado>();
 	}
 
-	public void agregarAlumnoSimplificado(AlumnoSimplificado as) {
+	public void addAlumnoSimplificado(AlumnoSimplificado as) {
 		this.alumnos.add(as);
 	}
 
