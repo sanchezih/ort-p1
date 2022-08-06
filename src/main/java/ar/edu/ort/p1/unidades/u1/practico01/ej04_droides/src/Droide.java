@@ -1,11 +1,27 @@
 package ar.edu.ort.p1.unidades.u1.practico01.ej04_droides.src;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import com.google.gson.Gson;
 
 public class Droide {
+	static int count = 0;
+	static int cantFS = 0;
+	private String id;
 	private ArrayList<Pieza> piezasOperativas;
 	private ArrayList<Pieza> piezasNoOperativas;
 	private ArrayList<Droide> droidesFueraDeServicio;
+
+	public Droide(String id) {
+		super();
+		this.id = id;
+		this.piezasOperativas = new ArrayList<Pieza>();
+		this.piezasNoOperativas = new ArrayList<Pieza>();
+		this.droidesFueraDeServicio = new ArrayList<Droide>();
+		inicializar();
+	}
 
 	/*----------------------------------------------------------------------------*/
 
@@ -26,7 +42,7 @@ public class Droide {
 	 * 
 	 * @return
 	 */
-	private ResultadoReparacion autoRepararse() {
+	public ResultadoReparacion autoRepararse() {
 		int i = 0;
 		Pieza pieza;
 		Pieza piezaOperativa;
@@ -87,6 +103,47 @@ public class Droide {
 			}
 		}
 		return resultado;
+	}
+
+	@Override
+	public String toString() {
+		return "Droide [id=" + id + ", piezasOperativas=" + piezasOperativas + ", piezasNoOperativas="
+				+ piezasNoOperativas + ", droidesFueraDeServicio=" + droidesFueraDeServicio + "]";
+	}
+
+	public String mostrar() {
+		Gson gson = new Gson();
+		return "Droide: " + gson.toJson(this, Droide.class);
+	}
+
+	private void inicializar() {
+
+		ArrayList<Pieza> piezas = new ArrayList<Pieza>(List.of( //
+				new Pieza("Bateria de litio"), //
+				new Pieza("Sensor de proximidad"), //
+				new Pieza("Sensor de temperatura"), //
+				new Pieza("Sensor de humedad"), //
+				new Pieza("Antena"), //
+				new Pieza("Visor nocturno")));
+
+		Random random = new Random();
+
+		for (Pieza pieza : piezas) {
+			if (random.nextBoolean()) {
+				this.piezasOperativas.add(pieza);
+			} else {
+				this.piezasNoOperativas.add(pieza);
+			}
+		}
+
+		count = count + 1;
+		if (count <= 1) {
+			cantFS = (int) (Math.random() * 3 + 1);
+			for (int i = 0; i < cantFS; i++) {
+				this.droidesFueraDeServicio.add(new Droide(null));
+			}
+		}
+
 	}
 
 }
