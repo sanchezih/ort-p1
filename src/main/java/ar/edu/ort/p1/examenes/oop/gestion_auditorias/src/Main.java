@@ -29,7 +29,7 @@ public class Main {
 		Area areaLegales = new Area("Legales", 12, new Empleado("Fernanda", "Jimenez", 69822));
 		Area areaCompras = new Area("Compras", 4, new Empleado("Marcelo", "Gonzalez", 12114));
 
-		// Se agregab las observaciones a los areas
+		// Se agregan las observaciones a los areas
 		areaLegales.agregarObservacion(oe01);
 		areaLegales.agregarObservacion(oi01);
 
