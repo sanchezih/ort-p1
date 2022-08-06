@@ -6,8 +6,8 @@ public class Main {
 
 		TerminalAutoServicio terminal = new TerminalAutoServicio();
 
-		/* Test Ejercicio B */
-		
+		// Test Ejercicio B
+
 		// Se puede depositar
 		terminal.depositar(new BilleteNacional(2000004, 'A', 2011, Estado.BUENO, Valor.CIEN));
 
@@ -16,12 +16,12 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		/* Test Ejercicio C */
+		// Test Ejercicio C
 		terminal.cantBilletesPorEstadoYValor();
-		
+
 		/*----------------------------------------------------------------------------*/
 
-		/* Test Ejercicio D */
+		// Test Ejercicio D
 		terminal.listarBilletesOrdenadosPorValor();
 
 	}
