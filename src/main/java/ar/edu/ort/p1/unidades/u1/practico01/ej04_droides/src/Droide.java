@@ -111,10 +111,9 @@ public class Droide {
 				+ piezasNoOperativas + ", droidesFueraDeServicio=" + droidesFueraDeServicio + "]";
 	}
 
-	public String mostrar() {
-		Gson gson = new Gson();
-		return "Droide: " + gson.toJson(this, Droide.class);
-	}
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
 
 	private void inicializar() {
 
@@ -144,6 +143,11 @@ public class Droide {
 			}
 		}
 
+	}
+
+	public String mostrar() {
+		Gson gson = new Gson();
+		return "Droide: " + gson.toJson(this, Droide.class);
 	}
 
 }
