@@ -22,26 +22,29 @@ public class Main {
 
 		h1.setCliente(c1);
 
+		/*----------------------------------------------------------------------------*/
+
 		// Test ejercicio C
-		System.out.println("calcularTotal");
-		System.out.println("-> Total para la habitacion 101: " + h1.calcularTotal());
-		System.out.println("-> Total para la habitacion 102: " + h2.calcularTotal());
+		System.out.println("Ejercicio C: calcularTotal de la Habitacion");
+		System.out.println("\tTotal para la habitacion 101: " + h1.calcularTotal());
+		System.out.println("\tTotal para la habitacion 102: " + h2.calcularTotal());
 
 		System.out.println();
 
 		// Test ejercicio D: Muestro cuales son las habitaciones disponibles al momento
-		System.out.println("-> Muestro cuales son las habitaciones disponibles al momento");
+		System.out.println("Ejercicio D: Muestro cuales son las habitaciones disponibles al momento");
 		UtilArraylist.listarElementos(hotel.obtenerHabitacionesDisponibles());
 
 		System.out.println();
 
 		// Test ejercicio E: Realizo los checkout
-		System.out.println("-> Hago checkout de la habitacion 101. Debe abonar $" + hotel.realizarCheckout(101));
+		System.out.println(
+				"Ejercicio E: Hago checkout de la habitacion 101. Debe abonar $" + hotel.realizarCheckout(101));
 
 		System.out.println();
 
 		// Muestro nuevamente cuales son las habitaciones disponibles al momento
-		System.out.println("-> Muestro cuales son las habitaciones disponibles al momento");
+		System.out.println("Ejercicio D: Muestro cuales son las habitaciones disponibles al momento");
 		UtilArraylist.listarElementos(hotel.obtenerHabitacionesDisponibles());
 	}
 
