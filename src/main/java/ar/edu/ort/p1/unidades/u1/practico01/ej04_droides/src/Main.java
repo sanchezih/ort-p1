@@ -10,6 +10,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		System.out.println("PARA ESTE EJERCICIO SE ASUME");
+		System.out.println("\t1. Cada Droide tiene 6 piezas");
+		System.out.println("\t2. Cada Droide puede tener como maximo 3 Droides fuera de servicio\n");
+
 		Droide a10 = new Droide("A10");
 		Droide h91 = new Droide("H91");
 		Droide x25 = new Droide("X25");

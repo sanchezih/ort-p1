@@ -12,7 +12,7 @@ public class Empleado extends Persona {
 	}
 
 	public void imprimirSueldo() {
-		System.out.println("El sueldo es:" + sueldo);
+		System.out.println("El sueldo es: " + sueldo);
 	}
 
 	/**

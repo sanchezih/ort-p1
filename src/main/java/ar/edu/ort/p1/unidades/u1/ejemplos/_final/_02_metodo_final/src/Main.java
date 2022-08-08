@@ -15,6 +15,8 @@ public class Main {
 			System.out.println("No es mayor de edad");
 		}
 
+		System.out.println();
+		
 		Empleado empleado1 = new Empleado("Carlos", 22, 10000);
 		empleado1.imprimirDatosPersonales();
 		empleado1.imprimirSueldo();

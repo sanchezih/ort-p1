@@ -39,6 +39,8 @@ public class Main {
 		ortdemy.agregarUsuario(usuarioFelipe);
 		ortdemy.agregarUsuario(autorCarlos);
 
+		System.out.println("Intento suscribir a las siguientes personas a los siguientes cursos:\n");
+
 		ortdemy.mostrarResultadoAlSuscribirseACurso("victoria", "cu01");
 		ortdemy.mostrarResultadoAlSuscribirseACurso("victoria", "cu01");
 		ortdemy.mostrarResultadoAlSuscribirseACurso("martin", "cu01");

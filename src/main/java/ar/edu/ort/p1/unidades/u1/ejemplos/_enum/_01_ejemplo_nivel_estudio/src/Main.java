@@ -29,21 +29,21 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		/* Metodos utiles */
+		// Metodos utiles
 
-		/* ordinal devuelve un int indicando en que orden se enumero esa constante */
+		// ordinal devuelve un int indicando en que orden se enumero esa constante
 		System.out.println(NivelDeEstudio.PRIMARIO.ordinal());
 		System.out.println(NivelDeEstudio.UNIVERSITARIO.ordinal());
 		System.out.println();
 
-		/* Metodos para obtener el enum como cadena */
+		// Metodos para obtener el enum como cadena
 		System.out.println(NivelDeEstudio.PRIMARIO.name());
 		System.out.println(NivelDeEstudio.PRIMARIO.toString());
 		System.out.println();
 
 		/*----------------------------------------------------------------------------*/
 
-		/* Metodo estatico values, el cual devuelve un array del enum */
+		// Metodo estatico values, el cual devuelve un array del enum
 		NivelDeEstudio[] niveles = NivelDeEstudio.values();
 
 		for (int i = 0; i < niveles.length; i++) {

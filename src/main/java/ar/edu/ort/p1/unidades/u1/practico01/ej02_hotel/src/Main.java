@@ -39,7 +39,7 @@ public class Main {
 
 		// Test ejercicio E: Realizo los checkout
 		System.out.println(
-				"Ejercicio E: Hago checkout de la habitacion 101. Debe abonar $" + hotel.realizarCheckout(101));
+				"Ejercicio E: Hago checkout de la habitacion 101. Se debe abonar $" + hotel.realizarCheckout(101));
 
 		System.out.println();
 

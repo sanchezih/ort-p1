@@ -6,13 +6,17 @@ public class Main {
 
 		Puerto puertoParana = new Puerto();
 
+		System.out.println(puertoParana.mostrar());
+
+		System.out.println();
+
 		// Test ejercicio B
 		System.out.println(
-				"La cantidad de embarcaciones que abonan un importe mayor al indicado en concepto de alquiler de su amarra es: "
+				"Ejercicio B: La cantidad de embarcaciones que abonan un importe mayor a $50 en concepto de alquiler de su amarra es: "
 						+ puertoParana.barcosConAlquilerMayorA(50));
 
 		// Test ejercicio C
-		System.out.println("\nEl barco deportivo (de lujo o no) de mayor consumo en todo el puerto es: "
+		System.out.println("\nEjercicio C: El barco deportivo (de lujo o no) de mayor consumo en todo el puerto es: "
 				+ puertoParana.barcoConMayorConsumo());
 
 	}

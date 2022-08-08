@@ -40,4 +40,9 @@ public class Amarra {
 		return this.embarcacion == null;
 	}
 
+	@Override
+	public String toString() {
+		return "Amarra [numero=" + numero + ", ubicacion=" + ubicacion + ", embarcacion=" + embarcacion + "]";
+	}
+
 }

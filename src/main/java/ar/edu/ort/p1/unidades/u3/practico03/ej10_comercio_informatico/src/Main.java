@@ -13,11 +13,12 @@ public class Main {
 		historial.agregarFacturable(new ServicioDeReparacion(1, 8));
 
 		// Test ejercicio B
-		System.out.println("El monto total facturado es: $" + historial.montoTotalFacturado());
+		System.out.println("Ejercicio B: El monto total facturado es: $" + historial.montoTotalFacturado());
 
 		// Test ejercicio C
-		System.out.println("\nLa cantidad de servicios de reparacion con nivel de dificultad menor a 2 es: "
-				+ historial.cantServiciosSimples());
+		System.out
+				.println("\nEjercicio C: La cantidad de servicios de reparacion con nivel de dificultad menor a 2 es: "
+						+ historial.cantServiciosSimples());
 
 	}
 

@@ -3,7 +3,7 @@ package ar.edu.ort.p1.unidades.u1.ejemplos._enum._02_enums_con_atributos_y_metod
 public enum Continente {
 
 	/*
-	 * Cada uno es un objeto de tipo Continente. Se llamara al constructor con
+	 * Cada enum es un objeto de tipo Continente. Se llamara al constructor con
 	 * parametros long y double.
 	 */
 	AMERICA(910000000, 42330000), // public static final Continente AMERICA = new Continente(910000000, 42330000);

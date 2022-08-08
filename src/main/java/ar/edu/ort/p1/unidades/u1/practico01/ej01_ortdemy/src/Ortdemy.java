@@ -7,23 +7,31 @@ public class Ortdemy {
 	private ArrayList<Usuario> usuarios;
 	private ArrayList<Categoria> categorias;
 
+	// Contructor
 	public Ortdemy() {
 		this.usuarios = new ArrayList<Usuario>();
 		this.categorias = new ArrayList<Categoria>();
 	}
 
-	/*-
-	 * Ejercicio B: La explotacion del metodo suscribirseACurso el cual recibe
-	 * un ID de usuario y un ID de curso y debe retornar alguno de los
-	 * siguientes resultados:
-		- CURSO_INEX: El curso no existe.
-		- USUARIO_INEX: El usuario no existe.
-		- YA_SUSCRIPTO: El usuario ya estaba suscripto en el curso.
-		- ES_AUTOR: El usuario que intenta suscribirse es el autor del curso.
-		- MAX_BECADOS: El usuario es becado y el curso ya cuenta con el maximo
-		de becados posible.
-		- SUSCRIPTO_OK: El usuario se suscribio exitosamente al curso. Debe
-		guardarse en la lista de suscriptos.
+	/**
+	 * Ejercicio B: La explotacion del metodo suscribirseACurso el cual recibe un ID
+	 * de usuario y un ID de curso y debe retornar alguno de los siguientes
+	 * resultados:
+	 * 
+	 * - CURSO_INEX: El curso no existe.
+	 * 
+	 * - USUARIO_INEX: El usuario no existe.
+	 * 
+	 * - YA_SUSCRIPTO: El usuario ya estaba suscripto en el curso.
+	 * 
+	 * - ES_AUTOR: El usuario que intenta suscribirse es el autor del curso.
+	 * 
+	 * - MAX_BECADOS: El usuario es becado y el curso ya cuenta con el maximo de
+	 * becados posible.
+	 * 
+	 * - SUSCRIPTO_OK: El usuario se suscribio exitosamente al curso. Debe guardarse
+	 * en la lista de suscriptos.
+	 * 
 	 * @param idUsuario
 	 * @param idCurso
 	 * @return
@@ -95,6 +103,6 @@ public class Ortdemy {
 	// Metodos complementarios
 
 	public void mostrarResultadoAlSuscribirseACurso(String idUsuario, String idCurso) {
-		System.out.println(idUsuario + " en curso " + idCurso + " => " + suscribirseACurso(idUsuario, idCurso));
+		System.out.println(idUsuario + " en curso " + idCurso + " -> " + suscribirseACurso(idUsuario, idCurso));
 	}
 }
