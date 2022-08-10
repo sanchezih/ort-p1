@@ -1,47 +1,48 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>26</x><y>70</y><w>290</w><h>190</h></coordinates><panel_attributes>Aplicacion
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>60</y><w>290</w><h>120</h></coordinates><panel_attributes>Aplicacion
 --
-- nombre: String
+-nombre: String
 --
-+ borrarUsuario(String): Usuario
-+ primeras5Canciones(String): ArrayList&lt;Cancion&gt;
-+mostrarDuracionPromedio(String): String
-- buscarArtista(String): Artista
-- buscarUsuario(String): Usuario
-- borrarUsuarioDeListaDeArtistas(Usuario): void
-- borrarUsuarioDeLista(String): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>26</x><y>380</y><w>260</w><h>190</h></coordinates><panel_attributes>Artista
++borrarUsuario(String): Usuario
+-borrarUsuarioDeLista(String): Usuario
+-buscarUsuario(String): Usuario
+-borrarUsuarioDeListaDeArtistas(Usuario): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>260</y><w>290</w><h>190</h></coordinates><panel_attributes>Artista
 --
-- ID: String
-- nombre: String
+-id: String
+-nombre: String
 --
-+ esFanDestacado(Usuario): boolean
-+ mostrarDuracionPromedio(): void
-+ primeras5Canciones(): ArrayList&lt;Cancion&gt;
-+ borrarUsuarioDeLista(Usuario): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>426</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>Cancion
++esFanDestacado(Usuario): boolean
++mostrarDuracionPromedio(): void
++primeras5Canciones(): ArrayList&lt;Cancion&gt;
++borrarUsuarioDeLista(Usuario): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>260</y><w>210</w><h>190</h></coordinates><panel_attributes>Cancion
 --
-- ID: String
-- nombre: String
-- duracion: double
+-id: String
+-nombre: String
+-duracion: double
 --
-+ borrarLiker(Usuario): void
-+ dioLike(Usuario): boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>426</x><y>70</y><w>210</w><h>190</h></coordinates><panel_attributes>Usuario
++borrarLiker(Usuario): void
++dioLike(Usuario): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>60</y><w>210</w><h>120</h></coordinates><panel_attributes>Usuario
 --
-- userName: String
+-userName: String
 --
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>746</x><y>70</y><w>140</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
-EstadoUsuario
++Usuario(String, Estado)
++getUserName(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>60</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Estado
 --
-+ HABILITADO
-+ PRUEBA_GRATIS
-+ SUSPENDIDO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>116</x><y>250</y><w>70</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+_+HABILITADO: Estado_
+_+PRUEBA_GRATIS: Estado_
+_+SUSPENDIDO: Estado_
+--
++Estado()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>170</y><w>70</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- artistas</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>470</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-artistas</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>350</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- canciones</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>306</x><y>140</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-canciones</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>130</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- usuarios</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>526</x><y>250</y><w>60</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+-usuarios</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>170</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- likers</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>626</x><y>110</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-likers</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>100</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
-- miEstado</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>220</y><w>170</w><h>220</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;10;90;10;90;200;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>302</x><y>250</y><w>140</w><h>160</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>120;140;10;10</additional_attributes></element></diagram>
+-estado</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>170</y><w>230</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>210;10;210;50;10;50;10;90</additional_attributes></element></diagram>
