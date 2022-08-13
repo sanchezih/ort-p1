@@ -20,7 +20,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.sanchezih</groupId>
-			<artifactId>ort-tp1</artifactId>
+			<artifactId>ort-p1-lib</artifactId>
 			<version>main-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
