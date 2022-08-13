@@ -1,5 +1,6 @@
 Enunciado
-La comision “Guardianes del Cambio Climatico” nos pide confeccionar un prototipo
+
+La comision "Guardianes del Cambio Climatico" nos pide confeccionar un prototipo
 para el monitoreo de algunos datos recopilados.
 
 Por ahora se cuenta con un solo centro de monitoreo que agrupa informacion sobre
