@@ -1,9 +1,0 @@
-1) Indicar el tipo de relacion (has-a o is-a) de cada par de entidades:
-A) Casa		is-a	Inmueble
-B) Auto		has-a	Motor
-C) Auto		is-a	Vehiculo 
-D) Persona	has-a	Domicilio
-E) Celular	has-a	Pantalla
-F) Servidor	is-a	Computadora
-G) Curso	has-a	Catedra
-H) Java		is-a	Lenguaje
