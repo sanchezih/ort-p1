@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u3.practico03.ej07_admin_de_personal.src;
+package ar.edu.ort.p1.unidades.u3.practico03.ej08_admin_de_personal.src;
 
 public class Main {
 
