@@ -1,320 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.ListaOrdenesPorMonto" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/ListaOrdenesPorMonto.java" binary="false" 
+  <class id="1" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Orden" project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Orden.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="117" width="189" x="600" y="747"/>    
+    <position height="-1" width="-1" x="769" y="258"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.OrdenRetiroSucursal" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/OrdenRetiroSucursal.java" binary="false" 
+  <interface id="2" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Entregable" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Entregable.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="301" x="672" y="1475"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="3" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Entregable" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Entregable.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="99" width="189" x="443" y="1475"/>    
+    <position height="-1" width="-1" x="555" y="510"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.OrdenPuertaAPuerta" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/OrdenPuertaAPuerta.java" binary="false" 
+  <class id="3" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.OrdenPuertaAPuerta" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/OrdenPuertaAPuerta.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1250" y="258"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.OrdenRetiroSucursal" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/OrdenRetiroSucursal.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="354" y="258"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Usuario" project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Usuario.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="341" x="62" y="1475"/>    
+    <position height="-1" width="-1" x="1250" y="732"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.SucursalCorreo" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/SucursalCorreo.java" binary="false" 
+  <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Domicilio" project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Domicilio.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="189" x="592" y="1686"/>    
+    <position height="-1" width="-1" x="769" y="732"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.ColaOrdenes" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/ColaOrdenes.java" binary="false" 
+  <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.SucursalCorreo" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/SucursalCorreo.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="189" x="371" y="747"/>    
+    <position height="-1" width="-1" x="354" y="732"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Orden" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Orden.java" binary="false" 
+  <class id="8" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.ListaOrdenesPorMonto" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/ListaOrdenesPorMonto.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1250" y="-142"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.TodoLibre" project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/TodoLibre.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="351" width="230" x="672" y="1084"/>    
+    <position height="-1" width="-1" x="769" y="-142"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Usuario" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Usuario.java" binary="false" 
+  <class id="10" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.ColaOrdenes" project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/ColaOrdenes.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="279" width="189" x="826" y="1686"/>    
+    <position height="-1" width="-1" x="348" y="-142"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.TodoLibre" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/TodoLibre.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="243" width="295" x="113" y="356"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="ar.edu.ort.p1.examenes.ds.todolibre_t1.src.Domicilio" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/examenes/ds/todolibre_t1/src/Domicilio.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="297" width="189" x="513" y="2005"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.ColaNodos" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
-    binary="true" corner="BOTTOM_RIGHT">    
-    <position height="171" width="123" x="448" y="356"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.ListaOrdenadaNodos" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
-    binary="true" corner="BOTTOM_RIGHT">    
-    <position height="351" width="178" x="611" y="356"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="13" language="java" name="ar.edu.ort.tp1.u5.tda.nodos.TdaNodos" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
-    binary="true" corner="BOTTOM_RIGHT">    
-    <position height="279" width="135" x="611" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="14" language="java" name="ar.edu.ort.tp1.u5.tda.Tda" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
-    binary="true" corner="BOTTOM_RIGHT">    
-    <position height="225" width="193" x="829" y="356"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <interface id="15" language="java" name="ar.edu.ort.tp1.u5.tda.ListaOrdenada" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-8b378f9218-1/ort-tp1-main-8b378f9218-1.jar" 
-    binary="true" corner="BOTTOM_RIGHT">    
-    <position height="297" width="207" x="829" y="747"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <association id="16">    
-    <bendpoint x="1003" y="1475"/>    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="17" name="comprador">        
-        <position height="0" width="0" x="388" y="411"/>      
-      </attribute>      
-      <multiplicity id="18" minimum="0" maximum="1">        
-        <position height="0" width="0" x="388" y="411"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="19">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="15"/>  
-  </realization>  
-  <generalization id="20">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <generalization id="21">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="12"/>  
-  </generalization>  
-  <dependency id="22">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <generalization id="23">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <association id="24">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="25" name="colaOrdenes">        
-        <position height="0" width="0" x="-602" y="-169"/>      
-      </attribute>      
-      <multiplicity id="26" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-602" y="-169"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="27">    
-    <bendpoint x="1024" y="1475"/>    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="28" name="vendedor">        
-        <position height="0" width="0" x="388" y="411"/>      
-      </attribute>      
-      <multiplicity id="29" minimum="0" maximum="1">        
-        <position height="0" width="0" x="388" y="411"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="7"/>  
-  </generalization>  
-  <dependency id="31">    
-    <bendpoint x="296" y="1686"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <dependency id="32">    
-    <bendpoint x="31" y="747"/>    
-    <bendpoint x="31" y="1084"/>    
-    <bendpoint x="31" y="1475"/>    
-    <bendpoint x="31" y="1686"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <dependency id="33">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="11"/>  
-  </generalization>  
-  <association id="35">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="36" name="domicilio">        
-        <position height="0" width="0" x="99" y="-115"/>      
-      </attribute>      
-      <multiplicity id="37" minimum="0" maximum="1">        
-        <position height="0" width="0" x="99" y="-115"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="39" name="domicilio">        
-        <position height="0" width="0" x="99" y="-115"/>      
-      </attribute>      
-      <multiplicity id="40" minimum="0" maximum="1">        
-        <position height="0" width="0" x="99" y="-115"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="41">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="42" name="sucursalCorreo">        
-        <position height="0" width="0" x="-144" y="198"/>      
-      </attribute>      
-      <multiplicity id="43" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-144" y="198"/>      
-      </multiplicity>    
+  <association id="11">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="12" name="vendedor"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="44">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="7"/>  
+  <association id="14">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="15" name="sucursalCorreo"/>      
+      <multiplicity id="16" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <dependency id="18">    
+    <bendpoint x="343" y="59"/>    
+    <bendpoint x="702" y="58"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
   </dependency>  
-  <realization id="45">    
-    <end type="SOURCE" refId="7"/>    
+  <association id="19">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="20" name="domicilio"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="24">    
+    <bendpoint x="437" y="324"/>    
+    <bendpoint x="441" y="619"/>    
+    <bendpoint x="648" y="620"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="25">    
+    <bendpoint x="942" y="10"/>    
+    <bendpoint x="1250" y="13"/>    
+    <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="26">    
+    <bendpoint x="940" y="43"/>    
+    <bendpoint x="941" y="513"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="27">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="28">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="29" name="domicilio"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="31">    
+    <bendpoint x="552" y="394"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
   </realization>  
-  <dependency id="46">    
+  <dependency id="32">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="33">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="34" name="colaOrdenes"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="36">    
+    <bendpoint x="714" y="522"/>    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="8"/>  
+    <end type="TARGET" refId="6"/>  
   </dependency>  
-  <dependency id="47">    
-    <bendpoint x="340" y="747"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <realization id="48">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="14"/>  
-  </realization>  
-  <dependency id="49">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="50">    
-    <bendpoint x="97" y="747"/>    
-    <bendpoint x="97" y="1084"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="51">    
-    <bendpoint x="1045" y="1475"/>    
-    <bendpoint x="1045" y="1686"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <generalization id="52">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="7"/>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="53">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
+  <dependency id="38">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="39">    
+    <bendpoint x="237" y="335"/>    
+    <bendpoint x="225" y="894"/>    
+    <bendpoint x="1240" y="902"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="40">    
+    <bendpoint x="1035" y="415"/>    
+    <bendpoint x="1159" y="545"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="41" name="comprador"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="43">    
+    <bendpoint x="1189" y="-43"/>    
+    <bendpoint x="1188" y="138"/>    
+    <bendpoint x="919" y="134"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

@@ -5,11 +5,11 @@
 - monto: double
 --
 +getDomicilioOrigen(): Domicilio
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>370</y><w>210</w><h>80</h></coordinates><panel_attributes>OrdenPuertaPuerta
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>370</y><w>210</w><h>80</h></coordinates><panel_attributes>OrdenPuertaAPuerta
 --
 -envioGratis: boolean
 --
-+getDomicilioEntrega():Domicilio
++getDomicilioEntrega(): Domicilio
 +hasEnvioGratis(): boolean
 
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>370</y><w>210</w><h>80</h></coordinates><panel_attributes>OrdenRetiroSucursal
