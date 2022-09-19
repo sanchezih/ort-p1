@@ -1,0 +1,72 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>280</y><w>330</w><h>80</h></coordinates><panel_attributes>OrtLand
+--
+--
++ obtenerDisponibilidadJuegos(): ArrayList&lt;InformeJuegos&gt;
++ acomodarJugador(String, int, String): Resultado </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>500</y><w>280</w><h>190</h></coordinates><panel_attributes>Mesa
+--
+_- CANT_CARTAS_CADA_UNO: int = 4_
+- numero: int
+- cantParticipantesMax: int
+--
++ dameLugaresDisp(): int
++ repartirCartas(): boolean
+- hayParticipantesSuficientes(): boolean
+- hayCartasSuficientes(): boolean
++ efectuarReparticion(): void
++ agregarParticipante(Participante): void
++ cantParticipantes(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>280</y><w>250</w><h>100</h></coordinates><panel_attributes>Juego
+--
+- nombre: String
+--
++ dameLugaresDisp(): int
++ acomodarJugador(String, int): Resultado 
++ mesaConMasParticipantes(): Mesa
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>370</y><w>70</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- mesas</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>330</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- juegos</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>610</y><w>210</w><h>100</h></coordinates><panel_attributes>Participante
+--
+- nombre: String
+- edad: int
+--
++ Participante(nombre, edad)
++ darCarta(Carta): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>630</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- participantes</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>800</y><w>150</w><h>50</h></coordinates><panel_attributes>Carta
+--
+- numero: int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>680</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- mazo</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>800</y><w>210</w><h>50</h></coordinates><panel_attributes>Mazo
+--
+--
++ proximaCarta(): Carta
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>810</y><w>240</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- cartas</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>790</y><w>110</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Palo
+--
+_+ ORO_
+_+ BASTO_
+_+ ESPADA_
+_+ COPAS_
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>810</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- palo</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>700</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- cartasEnMano</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>450</y><w>160</w><h>90</h></coordinates><panel_attributes>InformeJuegos
+--
+- nombreDelJuego: String
+- cantLugaresDisp: int
+--
++ InformeJuegos(String, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>350</y><w>30</w><h>280</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;260;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>370</y><w>240</w><h>260</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;240;10;210;90;210;90;60;220;60;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>350</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>140</y><w>200</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Resultado
+--
+_+ SIN_DISPONIBILIDAD_
+_+ JUEGO_NO_ENCONTRADO_
+_+ ASIGNACION_OK_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>230</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>180</y><w>220</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;200;10;200;100</additional_attributes></element></diagram>
