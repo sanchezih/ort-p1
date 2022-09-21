@@ -1,0 +1,105 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>480</x><y>40</y><w>350</w><h>140</h></coordinates><panel_attributes>Area
+--
+-nombre: String
+-cantEmpleados: int
+--
++Area(String, int, Empleado)
++obtenerCantObservacionesExternas(): int
++obtenerObservacionesVencidas(): ArrayList&lt;Observacion&gt;
++mostrarObservacionesCriticas(): void
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>250</y><w>350</w><h>150</h></coordinates><panel_attributes>/Observacion/
+--
+_-NIVEL_CRITICO: int = 1_
+-titulo: String
+-descripción: String
+--
+/+estaVencida(): boolean/
++esCritica(): boolean
++mostrar(): void
+#buscarCompromisoVencido(): Compromiso
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>170</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-observaciones</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>490</y><w>220</w><h>120</h></coordinates><panel_attributes>ObservacionInterna
+--
+_-CANT_DIAS_MAX: int = 90_
+-enRevision: boolean
+--
++estaVencida(): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>490</y><w>220</w><h>120</h></coordinates><panel_attributes>ObservacionExterna
+--
+_-CANT_DIAS_MAX: int = 60_
+-nombreConsultora: String
+--
++estaVencida(): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>390</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>390</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>490</y><w>210</w><h>120</h></coordinates><panel_attributes>Compromiso
+--
+-descripcion: String
+--
++Compromiso(String, Fecha)
++getFechaCompromiso(): Fecha
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>370</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..*
+-compromisos</panel_attributes><additional_attributes>10;120;10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>150</y><w>220</w><h>110</h></coordinates><panel_attributes>Empleado
+--
+-nombre: String
+-apellido: String
+-legajo: int
+--
++mostrar(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>90</y><w>310</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-responsable</panel_attributes><additional_attributes>10;60;10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>200</y><w>290</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-auditor</panel_attributes><additional_attributes>10;20;270;20;270;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1090</x><y>290</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Auditable
+--
+
+--
++getNivelCriticidad(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>490</y><w>220</w><h>120</h></coordinates><panel_attributes>Sistema
+--
+_-MAX_CANT_USUARIOS: int = 500_
+-nombre: String
+-poseeDatosClientes: boolean
+-cantUsuarios: int
+--
++getNivelCriticidad(): int
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>490</y><w>220</w><h>120</h></coordinates><panel_attributes>Proceso
+--
+_-MAX_CANT_ACTIVIDADES: int = 7_
+-codigo: String
+-cantActividades: int
+-impactaCliente: boolean
+-afectaPatrimonioCompania: boolean
+--
++getNivelCriticidad(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1060</x><y>390</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;140;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1190</x><y>390</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60;130;60;130;100</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>330</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-auditable</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>290</y><w>220</w><h>110</h></coordinates><panel_attributes>Fecha
+--
+-dia: int
+-mes: int
+-anio: int
+--
++getCantidadDiasHastaHoy(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>310</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fechaAlta</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>390</y><w>140</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fechaCompromiso</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>390</y><w>280</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>260;10;260;40;10;40;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>390</y><w>640</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>620;10;620;40;10;40;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>600</y><w>270</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;50;250;50;250;10</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>390</y><w>460</w><h>320</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;300;440;300;440;220</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>390</y><w>640</w><h>320</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;300;620;300;620;220</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>600</y><w>450</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;50;430;50;430;10</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>100</y><w>60</w><h>410</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>40;390;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>210</y><w>810</w><h>540</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;10;10;520;790;520;790;400</additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>210</y><w>630</w><h>540</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;10;10;520;610;520;610;400</additional_attributes></element></diagram>
