@@ -1,0 +1,47 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>88</x><y>242</y><w>253</w><h>165</h></coordinates><panel_attributes>Menu
+--
+-titulo: String
+--
++Menu(String)
++setTitulo(String): void
++ejecutar(): void
+-buscarOpcion(char): OpcionDeMenu
++mostrar(): void
++registrar(OpcionDeMenu): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>242</y><w>253</w><h>165</h></coordinates><panel_attributes>/OpcionDeMenu/
+--
+-descripcion: String
+-caracter: char
+--
++OpcionDeMenu(String, char)
++mostrar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>297</x><y>484</y><w>275</w><h>132</h></coordinates><panel_attributes>OpcionDeSalida
+--
+_-DESCRIPCION_PREDEF: String = "SALIR"_
+_+CARACTER_PREDEF: char = 'X'_
+--
++OpcionDeSalida()
++ejecutar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>88</x><y>66</y><w>253</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Mostrable
+--
+
+--
++mostrar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>66</y><w>253</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Ejecutable
+--
+
+--
++ejecutar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>319</y><w>154</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+-opciones
+m1=*</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>429</x><y>396</y><w>187</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>583</x><y>396</y><w>198</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;160;50;160;80</additional_attributes></element><element><id>Relation</id><coordinates><x>583</x><y>165</y><w>33</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>198</x><y>165</y><w>33</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>209</x><y>396</y><w>198</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-opcionDeSalida
+m1=1</panel_attributes><additional_attributes>150;80;150;50;10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>396</y><w>627</w><h>275</h></coordinates><panel_attributes>lt=&lt;-
+-subMenu
+m1=1</panel_attributes><additional_attributes>10;10;10;230;550;230;550;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>616</x><y>484</y><w>275</w><h>132</h></coordinates><panel_attributes>OpcionAccesoAMenu
+--
+
+
+--
++OpcionAccesoAMenu(String, char, Menu)
++setSubMenu(Menu): void
++ejecutar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>198</x><y>165</y><w>286</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;160;40;240;100</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>165</y><w>286</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>240;10;240;40;90;40;10;100</additional_attributes></element></diagram>
