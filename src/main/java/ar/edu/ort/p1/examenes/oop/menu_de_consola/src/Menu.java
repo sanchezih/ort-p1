@@ -12,6 +12,11 @@ public class Menu implements Mostrable, Ejecutable {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * Ejercicio C: Implementar el constructor de la clase Menu
+	 * 
+	 * @param titulo
+	 */
 	public Menu(String titulo) {
 		this.setTitulo(titulo);
 		this.opciones = new ArrayList<>();
@@ -26,6 +31,34 @@ public class Menu implements Mostrable, Ejecutable {
 
 	/**
 	 * 
+	 */
+	@Override
+	public void mostrar() {
+		System.out.println("-- " + this.titulo + " --");
+
+		for (OpcionDeMenu opcionDeMenu : opciones) {
+			opcionDeMenu.mostrar();
+		}
+		this.opcionDeSalida.mostrar();
+
+	}
+
+	/**
+	 * Ejercicio Da: Metodo registrar(...) de Menu
+	 * 
+	 * @param op
+	 * @return
+	 */
+	public boolean registrar(OpcionDeMenu op) {
+		// Solo agrego cosas que NO sean OpcionDeSalida ya que este se guarda aparte
+		if (!(op instanceof OpcionDeSalida)) {
+			this.opciones.add(op);
+		}
+		return !(op instanceof OpcionDeSalida);
+	}
+
+	/**
+	 * Ejercicio Db: Metodo ejecutar(...) de Menu
 	 */
 	@Override
 	public void ejecutar() {
@@ -70,33 +103,6 @@ public class Menu implements Mostrable, Ejecutable {
 			}
 		}
 		return result;
-	}
-
-	/**
-	 * 
-	 */
-	@Override
-	public void mostrar() {
-		System.out.println("-- " + this.titulo + " --");
-
-		for (OpcionDeMenu opcionDeMenu : opciones) {
-			opcionDeMenu.mostrar();
-		}
-		this.opcionDeSalida.mostrar();
-
-	}
-
-	/**
-	 * 
-	 * @param op
-	 * @return
-	 */
-	public boolean registrar(OpcionDeMenu op) {
-		// Solo agrego cosas que NO sean OpcionDeSalida ya que este se guarda aparte
-		if (!(op instanceof OpcionDeSalida)) {
-			this.opciones.add(op);
-		}
-		return !(op instanceof OpcionDeSalida);
 	}
 
 }

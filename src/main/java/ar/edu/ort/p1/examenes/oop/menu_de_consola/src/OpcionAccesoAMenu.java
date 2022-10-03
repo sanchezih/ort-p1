@@ -4,10 +4,21 @@ public class OpcionAccesoAMenu extends OpcionDeMenu {
 
 	private Menu subMenu;
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * Ejercicio B: Implementar el constructor de la clase OpcionAccesoAMenu
+	 * 
+	 * @param descripcion
+	 * @param caracter
+	 * @param subMenu
+	 */
 	public OpcionAccesoAMenu(String descripcion, char caracter, Menu subMenu) {
 		super(descripcion, caracter);
 		setSubMenu(subMenu);
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public void setSubMenu(Menu subMenu) {
 		if (subMenu == null)
