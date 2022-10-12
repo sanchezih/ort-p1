@@ -3,6 +3,7 @@ package ar.edu.ort.p1.unidades.u4.ejemplos.ds.linear.array.posicionamientoindire
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Vendedor v1 = new Vendedor("L5233", "Pedro");
 		Vendedor v2 = new Vendedor("L5234", "Julieta");
 		Vendedor v3 = new Vendedor("L5235", "Maria");

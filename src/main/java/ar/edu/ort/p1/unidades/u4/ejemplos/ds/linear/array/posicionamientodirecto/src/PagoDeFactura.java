@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u4.ejemplos.ds.linear.array.posicionamientodirecto.src;
 
 public class PagoDeFactura {
+
 	private double importe;
 	private String empresa;
 	private int mes;
