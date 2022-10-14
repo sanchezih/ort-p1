@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej01_libros_dvds.src.Libro" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej01_libros_dvds/src/Libro.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="251" x="258" y="832"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej01_libros_dvds.src.DVD" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej01_libros_dvds/src/DVD.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="251" x="621" y="832"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej01_libros_dvds.src.PilaDeLibros" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej01_libros_dvds/src/PilaDeLibros.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="251" x="41" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej01_libros_dvds.src.Empleado" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej01_libros_dvds/src/Empleado.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="251" x="475" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej01_libros_dvds.src.PilaDeDVDs" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej01_libros_dvds/src/PilaDeDVDs.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="251" x="766" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ar.edu.ort.p1.util.tda.PilaGenericaAL" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/util/tda/PilaGenericaAL.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="143" x="549" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

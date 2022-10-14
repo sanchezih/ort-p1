@@ -9,6 +9,7 @@ public class Bolillero<T> {
 	private Random r;
 	private int capacidadMaxima;
 
+	// Constructor
 	public Bolillero(int capacidadMaxima) {
 		this.elementos = new ArrayList<T>();
 		this.r = new Random();

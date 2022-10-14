@@ -1,80 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="java.util.ArrayList" project="ort-p1" 
-    file="C:/Program Files/Java/jdk-11.0.15/lib/jrt-fs.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="184" width="282" x="231" y="481"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="false" package="false" protected="false" private="false" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" 
-    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylist.src.PilaArrayList" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/pila/dinamica/impl_arraylist/src/PilaArrayList.java" 
+  <class id="1" language="java" 
+    name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.pila.dinamica.impl_arraylist.src.PilaArrayList" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/pila/dinamica/impl_arraylist/src/PilaArrayList.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="265" width="135" x="274" y="176"/>    
-    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+    <position height="295" width="325" x="41" y="174"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
+  <interface id="2" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Pila" project="ort-p1-private" 
+    file="/home/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-10fae5ec09-1/ort-p1-lib-main-10fae5ec09-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="189" width="193" x="41" y="176"/>    
+    <position height="115" width="139" x="224" y="509"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="4" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Pila" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
+  <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1-private" 
+    file="/home/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-10fae5ec09-1/ort-p1-lib-main-10fae5ec09-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="117" width="140" x="51" y="481"/>    
+    <position height="187" width="204" x="406" y="174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="5" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
+  <interface id="4" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1-private" 
+    file="/home/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-10fae5ec09-1/ort-p1-lib-main-10fae5ec09-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="99" width="140" x="41" y="37"/>    
+    <position height="97" width="139" x="406" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
+  <realization id="5">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
   <generalization id="6">    
     <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="TARGET" refId="4"/>  
   </generalization>  
-  <association id="7">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="8" name="elementos">        
-        <position height="0" width="0" x="482" y="-76"/>      
-      </attribute>      
-      <multiplicity id="9" minimum="0" maximum="1">        
-        <position height="0" width="0" x="482" y="-76"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="4"/>    
+  <generalization id="7">    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <realization id="11">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

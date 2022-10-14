@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/* Creo una serie de empleados para luego mostrarlos de diferentes maneras. */
+		// Creo una serie de empleados para luego mostrarlos de diferentes maneras
 
 		Automovil a1 = new Automovil("Ford", "2018");
 		Automovil a2 = new Automovil("Nissan", "2017");

@@ -2,40 +2,40 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.cola.impl_array.src.ColaArray" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/cola/impl_array/src/ColaArray.java" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/ds/linear/cola/impl_array/src/ColaArray.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="279" width="276" x="41" y="176"/>    
+    <position height="295" width="275" x="285" y="174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="2" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Cola" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
+  <interface id="2" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Cola" project="ort-p1-private" 
+    file="/home/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-10fae5ec09-1/ort-p1-lib-main-10fae5ec09-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="117" width="140" x="199" y="495"/>    
+    <position height="115" width="139" x="163" y="509"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
+  <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1-private" 
+    file="/home/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-10fae5ec09-1/ort-p1-lib-main-10fae5ec09-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="189" width="193" x="357" y="176"/>    
+    <position height="97" width="139" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="4" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-tp1/main-d0903af99d-1/ort-tp1-main-d0903af99d-1.jar" 
+  <interface id="4" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1-private" 
+    file="/home/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-10fae5ec09-1/ort-p1-lib-main-10fae5ec09-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="99" width="140" x="357" y="37"/>    
+    <position height="187" width="204" x="41" y="174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,11 +44,11 @@
   </interface>  
   <generalization id="5">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="TARGET" refId="4"/>  
   </generalization>  
   <generalization id="6">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </generalization>  
   <realization id="7">    
     <end type="SOURCE" refId="1"/>    

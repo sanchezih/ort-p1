@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear.linkedlist.lista_ordenada;
 
 public class Empleado {
+
 	private String nombre;
 	private int edad;
 	private Automovil automovil;
