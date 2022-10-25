@@ -1,7 +1,5 @@
 package ar.edu.ort.p1.examenes.ds.ortcapital.src;
 
-import ar.edu.ort.p1.util.pojo.Persona;
-
 public abstract class Solicitud {
 
 	private long nroSolicitud;

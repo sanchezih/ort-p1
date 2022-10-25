@@ -1,6 +1,5 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos.generics._02_clases_genericas_propias;
 
-import ar.edu.ort.p1.util.pojo.Persona;
 
 /**
  * https://www.youtube.com/watch?v=-KRz46_gGoM

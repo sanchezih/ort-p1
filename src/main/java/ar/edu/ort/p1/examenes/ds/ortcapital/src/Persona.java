@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.util.pojo;
+package ar.edu.ort.p1.examenes.ds.ortcapital.src;
 
 public class Persona {
 

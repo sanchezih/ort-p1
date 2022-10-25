@@ -1,7 +1,5 @@
 package ar.edu.ort.p1.examenes.oop.examenes_conducir.src;
 
-import ar.edu.ort.p1.util.pojo.Persona;
-
 public class ExamenDeAuto extends Examen {
 
 	private final static int TIEMPO_MAXIMO_PERMITIDO = 90;
