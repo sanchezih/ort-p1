@@ -1,0 +1,51 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>360</x><y>60</y><w>240</w><h>170</h></coordinates><panel_attributes>Estacionamiento
+--
+_CANT_PISOS: int = 8_
+_CANT_LUGARES: int = 6_
+--
++Estacionamiento()
++retirar(int): Auto
+-existeUbicacion(int, int): boolean
+-validarHistorialDePagos(Auto): boolean
++autosMasMorososPorPiso(): Auto[]
+-autoMasMorosoPorPiso(Auto[]): Auto</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>60</y><w>210</w><h>120</h></coordinates><panel_attributes>Registro
+--
+-patente: String
+-fechaRetiro: Fecha
+--
++Registro(String, Fecha)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>310</y><w>210</w><h>120</h></coordinates><panel_attributes>Auto
+--
+_-CANT_PAGOS: int = 12_
+-patente: String
+--
++Auto(String, Pago[], Fecha)
++getMesesImpagos(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>310</y><w>210</w><h>120</h></coordinates><panel_attributes>Pago
+--
+-monto: double
+-dni: String
+--
++Pago(double, String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>270</y><w>210</w><h>160</h></coordinates><panel_attributes>Fecha
+--
+-dia: int
+-mes: int
+-anio: int
+--
++Fecha(int, int, int)
++hoy(): Fecha
++getDia(): int
++getMes(): int
++getAnio(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>220</y><w>200</w><h>110</h></coordinates><panel_attributes>-autos
+lt=&lt;-
+m1=[CANT_PISOS][CANT_LUGARES]</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>350</y><w>140</w><h>50</h></coordinates><panel_attributes>-pagos
+lt=&lt;-
+m1=[CANT_PAGOS]</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>110</y><w>160</w><h>50</h></coordinates><panel_attributes>-registros
+lt=&lt;-
+m1=*
+</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>350</y><w>160</w><h>50</h></coordinates><panel_attributes>-fechaIngreso
+lt=&lt;-
+m1=1
+</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>170</y><w>100</w><h>120</h></coordinates><panel_attributes>-fechaRetiro
+lt=&lt;-
+m1=1
+</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>120</y><w>210</w><h>210</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;190;10;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>200</y><w>210</w><h>90</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>190;70;190;10;10;10</additional_attributes></element></diagram>
