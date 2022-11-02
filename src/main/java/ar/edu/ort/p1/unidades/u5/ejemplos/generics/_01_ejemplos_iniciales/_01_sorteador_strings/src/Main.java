@@ -1,0 +1,25 @@
+package ar.edu.ort.p1.unidades.u5.ejemplos.generics._01_ejemplos_iniciales._01_sorteador_strings.src;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		SorteadorDeStrings sorteador = new SorteadorDeStrings();
+
+		System.out.println("El sorteador de Strings esta vacio? -> " + sorteador.isEmpty());
+
+		sorteador.add("Perro");
+		sorteador.add("Lechuza");
+		sorteador.add("Caballo");
+		sorteador.add("Gato");
+
+		System.out.println("El sorteador de Strings esta vacio? -> " + sorteador.isEmpty());
+
+		while (!sorteador.isEmpty()) {
+			System.out.println(sorteador.remove().toUpperCase());
+		}
+
+		System.out.println("El sorteador de Strings esta vacio? -> " + sorteador.isEmpty());
+	}
+
+}

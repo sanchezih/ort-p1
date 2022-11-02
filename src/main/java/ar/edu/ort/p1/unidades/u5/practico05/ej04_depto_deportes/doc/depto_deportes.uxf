@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>165</x><y>506</y><w>231</w><h>88</h></coordinates><panel_attributes>Pelota
+--
+-codigo: String
+--
++getCodigo(): String
++getTipo(): TipoPelota</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>396</y><w>231</w><h>99</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoPelota
+--
+_+FUTBOL_
+_+BASQUET_
+_+VOLEY_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>88</x><y>154</y><w>341</w><h>187</h></coordinates><panel_attributes>DepartamentoDeportes
+--
+_-CANT_PILAS: int = 3_
+_-PELOTAS_X_PILA: int = 5_
+--
++DepartamentoDeportes()
++agregarPelota(Pelota): boolean
++verPelotasEnTopes(): void
++buscarPelota(String): Pelota
++pelotasPorTipo(): int[][]
+-buscarPelotaEnPila(String, PilaDePelotas): Pelota
+-cantPelotasPorTipo(PilaDePelotas): int[]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>440</y><w>143</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>110;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>176</y><w>154</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_PILAS
+-pilas</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>154</y><w>231</w><h>154</h></coordinates><panel_attributes>PilaDePelotas
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>330</y><w>33</w><h>198</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>319</y><w>143</w><h>99</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;70;110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>297</y><w>440</w><h>275</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;230;380;220;340;10</additional_attributes></element></diagram>

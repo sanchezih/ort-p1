@@ -1,0 +1,39 @@
+Enunciado
+
+La Municipalidad de la Ciudad de General Pico, La Pampa, nos encarga un sistema
+para emitir estadisticas sobre los contactos sobre solicitudes de servicio.
+
+Cada uno de los contactos atendidos dia a dia se almacenan de forma que el
+ultimo ingresado sea facilmente visualizado, cada uno contiene informacion sobre
+el dni del ciudadano, un indicador que muestra si el contacto fue concluido y la
+solicitud asociada al contacto.
+
+Para esta version, solo se piden estadisticas de dos tipos de solicitudes,
+Reparacion de vereda y Poda.  Como las solicitudes tienen un costo de ejecucion
+son Valorables, debiendo indicar su costo (double). Ademas, cada solicitud debe
+poder indicar si esta o no vencida. Todas las solicitudes poseen la fecha en la
+que fueron generadas, del tipo Fecha*. Las solicitudes de Poda vencen tras 180
+dias de generadas, mientras las de reparacion de veredas no vencen.
+
+El costo de las solicitudes se calcula como la multiplicacion entre su costo
+base (atributo comun para todas las solicitudes) y una constante que para la
+poda es de 7 y para reparacion de vereda es de 10.
+
+* Asumir que la clase Fecha fue provista. No debe ser desarrollada pero si
+plasmada en el UML junto a sus dependencias. Toda fecha sera capaz de indicar su
+mes (como enumerado) y cuantos dias transcurrieron desde tal hasta el dia de hoy
+(entero).
+
+Basado en el enunciado descripto, realiza:
+	A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
+	metodos.
+	B) El metodo informeCostoAcumPorMesTipo() que debe devolver (no mostrar por
+	consola) el costo acumulado de todas las solicitudes agrupadas por mes de
+	solicitud y tipo.
+	C) Los metodos vencido() y costo() de las clases que considere necesario.
+	D) El metodo cantidadPodaNoVencida() que debe devolver (no mostrar por
+	consola) la cantidad de solicitudes que tuvieron contactos del tipo poda que
+	aun no vencieron.
+	E) El metodo contactosPorDocumento() que debe devolver (no mostrar por
+	consola) un listado de contactos ordenados por el documento de quien se
+	contacto.

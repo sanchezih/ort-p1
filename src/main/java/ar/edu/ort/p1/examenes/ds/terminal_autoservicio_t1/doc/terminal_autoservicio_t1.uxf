@@ -1,0 +1,63 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>550</x><y>390</y><w>210</w><h>130</h></coordinates><panel_attributes>/Billete/
+--
+_-NUM_BILLETE_LIMITE: long = 2000000_
+-numero: long
+-letraSerie: char
+-anio: int
+--
++getAnio():int
++getLetraSerie():char
++cumpleRequisito(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>160</y><w>390</w><h>190</h></coordinates><panel_attributes>TerminalAutoServicio
+--
++cantBilletesPorEstadoYValor(): int[][]
+-llenarMatriz(int[][], Billete): void
++listarBilletesOrdenadosPorValor(): ListaBilletesOrdenadosPorValor
++depositar(Billete): boolean
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>160</y><w>210</w><h>190</h></coordinates><panel_attributes>PilaDeBilletes
+--
++push(Billete): void
++pop(): Billete
++peek(): Billete
++isEmpty(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>250</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=
+-pilaDeBilletes</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>430</y><w>140</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+_+BUENO_
+_+REGULAR_
+_+MALO_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>450</y><w>90</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+m1=</panel_attributes><additional_attributes>70;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>340</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>580</y><w>200</w><h>130</h></coordinates><panel_attributes>BilleteNacional
+--
+_-ANIO_LIMITE: int = 2010_
+--
++cumpleRequisito():boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>420</y><w>270</w><h>130</h></coordinates><panel_attributes>ListaBilletesOrdenadosPorValor
+--
++compare(Billete, Billete): int
++compareByKey(Integer, Billete): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>580</y><w>250</w><h>130</h></coordinates><panel_attributes>BilleteDolar
+--
+-bandaSeguridad3D: String
+_-LETRA_INHABILITADA: char = 'D'_
+--
++cumpleRequisito():boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>511</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;70</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>511</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>341</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>471</y><w>310</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>290;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>590</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Verificable
+--
+/+cumpleRequisito():boolean/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>510</y><w>280</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;100;260;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>310</y><w>140</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Valor
+--
+_+10_
+_+50_
+_+100_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>360</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=</panel_attributes><additional_attributes>70;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>0</y><w>300</w><h>130</h></coordinates><panel_attributes>TDAUtil
+--
+_+pasarElementos(PilaDeBilletes, PilaDeBilletes): void_
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>90</y><w>100</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;70</additional_attributes></element></diagram>

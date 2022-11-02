@@ -1,0 +1,54 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>410</x><y>150</y><w>100</w><h>40</h></coordinates><panel_attributes>Computadora
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>270</y><w>150</w><h>140</h></coordinates><panel_attributes>Archivo
+--
+-nombre : String
+-peso : double
+-localizacion : String
+-abierto : boolean
+--
++abrir(): void
++cerrar(): void
++mover(String): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>270</y><w>160</w><h>100</h></coordinates><panel_attributes>/ArchivoMultimedia/
+--
+-duracion: int
+-reproduciendo: boolean
+--
++reproducir():boolean
++parar():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>480</y><w>120</w><h>70</h></coordinates><panel_attributes>ArchivoTexto
+--
+- codificacion: String
+--
++ cifrar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>320</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>400</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>150</y><w>100</w><h>70</h></coordinates><panel_attributes>ArchivoAudio
+--
+-artista: String
+-album: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>410</y><w>120</w><h>50</h></coordinates><panel_attributes>ArchivoVideo
+--
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>360</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>180</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- archivos</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>160</y><w>90</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+FormatoAudio
+--
+_+MP3_
+_+WAV_
+_+OGG_
+_+FLAC_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>210</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>390</y><w>90</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+FormatoVideo
+--
+_+MP4_
+_+MKV_
+_+MPG_
+_+FLV_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>420</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- formato</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>540</y><w>120</w><h>70</h></coordinates><panel_attributes>Dimension
+--
+- alto: int
+- ancho: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>450</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- dimension</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>180</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- formato</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element></diagram>

@@ -1,0 +1,41 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>280</y><w>120</w><h>50</h></coordinates><panel_attributes>Institucion
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>240</y><w>260</w><h>230</h></coordinates><panel_attributes>Comision
+--
+- codigo: String
+- cantAlumnos: int
+- cantClases: int
+- asistencia: char[][]
+--
++ mostrarAptosParaFinal(): void
++ llegadasTardeTotales(): int
++ cantClasesPerfectas(): int
++ porcPresentismoXClase(): double[]
++ mostrarDesertores(): void
+- cantFaltas(char[]): double
+- esClaseConAsistenciaPerfecta(int): boolean
+- cantPresentes(int): int
+- esDesertor(char[]): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>290</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-comisiones
+m1=*</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>560</y><w>130</w><h>100</h></coordinates><panel_attributes>Alumno
+--
+- legajo: String
+- apellido: String
+- edad: int
+--
++ getters</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>460</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+- alumnos
+m1=[cantAlumnos]</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>250</y><w>240</w><h>160</h></coordinates><panel_attributes>Constantes
+--
+_+ PRESENTE: char = 'P'_
+_+ TARDE: char = 'T'_
+_+ AUSENTE: char = 'A'_
+_+ FALTA_COMPLETA: double = 1_
+_+ MEDIA_FALTA: double = 0.5_
+_+ PORC_MIN_FINAL : double = 75_
+_+ CANT_AUSENTES_DESERTOR: int = 5_
+--
+- Constantes()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>483</x><y>330</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>130</y><w>230</w><h>50</h></coordinates><panel_attributes>Matematica
+--
+--
+_+ getPorcentaje(double, double): double_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>353</x><y>170</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>
