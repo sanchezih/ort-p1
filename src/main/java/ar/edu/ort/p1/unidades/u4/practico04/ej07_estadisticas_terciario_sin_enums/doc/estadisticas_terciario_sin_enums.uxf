@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>60</y><w>260</w><h>260</h></coordinates><panel_attributes>Comision
+--
+-codigo: String
+-cantAlumnos: int
+-cantClases: int
+-asistencia: char[][]
+--
++mostrarAlumnosAptosParaFinal(): void
+-cantFaltas(char[]): double
++llegadasTardeTotalesParaElPeriodo(): int
++cantClasesAsistenciaPerfectas(): int
+-esClaseConAsistenciaPerfecta(int): boolean
++porcPresentismoXClase(): double[]
+-cantPresentes(int): int
++mostrarDesertores(): void
+-esDesertor(char[]): boolean
+-buscarPresenteEnRango(char[], int, int): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>410</y><w>260</w><h>100</h></coordinates><panel_attributes>Alumno
+--
+-legajo: String
+-apellido: String
+-edad: int
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>310</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-alumnos
+m1=[cantAlumnos]</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>60</y><w>260</w><h>260</h></coordinates><panel_attributes>Constantes
+--
+_+PRESENTE: char = 'P'_
+_+TARDE: char = 'T'_
+_+AUSENTE: char = 'A'_
+_+FALTA_COMPLETA: double = 1_
+_+MEDIA_FALTA: double = 0.5_
+_+PORC_MIN_FINAL: double = 75_
+_+CANT_AUSENTES_DESERTOR: int = 5_
+--
++Constantes()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>160</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element></diagram>
