@@ -1,7 +1,5 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej02_pelotas_tenis.src;
 
-import java.util.Random;
-
 import ar.edu.ort.tp1.u5.tda.impl.PilaNodos;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
@@ -36,10 +34,10 @@ public class TuboPelotasDeTenis extends PilaNodos<PelotaDeTenis> {
 	// Metodos complementarios
 
 	private void inicializar() {
-
 		int cant = (int) (Math.random() * 4 + 0);
-		System.out.println("Creo un tubo con " + cant + " pelotas");
-		for (int i = 0; i < cant; i++) {
+	System.out.println("Creo un tubo con " + cant + " pelotas");
+
+	for (int i = 0; i < cant; i++) {
 			PelotaDeTenis p = new PelotaDeTenis();
 			int usos = (int) (Math.random() * 11 + 0);
 

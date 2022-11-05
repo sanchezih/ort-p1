@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.u5.practico05.ej03_impresora.src;
 
 public class Impresora {
+
 	private boolean estaEncendida;
 	private int cantHojasDisp;
 	private ColaDeDocumentos colaDocs;
@@ -51,6 +52,7 @@ public class Impresora {
 	 * @return
 	 */
 	public boolean imprimir() {
+		System.out.println("Comienza el proceso de impresion...");
 		boolean puedeImprimir;
 		puedeImprimir = this.estaEncendida() && hayHojasSuficientes();
 
@@ -69,11 +71,15 @@ public class Impresora {
 
 		while (!this.colaDocs.isEmpty()) {
 			docActual = this.colaDocs.remove();
-			System.out.println("Impreso: " + docActual);
+			System.out.println("\t->Se imprimio: " + docActual);
 			this.cantHojasDisp -= cantHojasNecesarias(docActual);
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	private boolean hayHojasSuficientes() {
 		Documento docCent;
 		Documento docActual;

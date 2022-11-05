@@ -18,10 +18,11 @@ public class Main {
 		impresora.agregarDocumento(doc1);
 		impresora.agregarDocumento(doc2);
 		impresora.agregarDocumento(doc3);
+
 		System.out.println();
 
 		// Test ejercicio C
-		System.out.println((impresora.imprimir() ? "IMPRESORA: Pudo imprimir" : "IMPRESORA: No pudo imprimir"));
+		System.out.println((impresora.imprimir() ? "IMPRESORA: Pudo imprimir OK!" : "IMPRESORA: No pudo imprimir"));
 		System.out.println();
 
 		System.out.println("Al momento, la impresora tiene " + impresora.getCantHojasDisp() + " hojas disponibles");
