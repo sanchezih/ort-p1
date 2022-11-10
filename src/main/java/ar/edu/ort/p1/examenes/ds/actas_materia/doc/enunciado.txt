@@ -1,0 +1,42 @@
+Enunciado
+
+Al finalizar un cuatrimestre, el instituto debe generar las actas con los alumnos que pueden rendir examen en cada materia. 
+
+El Acta es una planilla que prepara la secretaría del instituto por cada examen y le entrega a los profesores donde figuran los alumnos que están habilitados para rendir cada examen.
+
+Para cumplir con las tareas solicitadas, nos proporcionan la siguiente información.
+
+Cada materia tendrá:
+
+Su nombre.
+3 actas, una por cada tipo de examen a rendir (RECUPERATORIO, FINAL TEÓRICO o FINAL PRÁCTICO). (Estas actas inicialmente están vacías).
+La materia además tendrá de todos los alumnos inscriptos en la misma y organizados por orden de inscripción, los siguientes datos: 
+
+DNI (numérico);
+Nombre completo.
+Curso (Entero 1 a 10)
+Nota final de cursada.
+Nos dicen también que entre estos alumnos hay alumnos que cursaron el cuatrimestre actual (regulares) y otros que cursaron en cuatrimestres anteriores (libres). En el caso de los primeros nos informan también un valor booleano que indica si tuvieron encendida la cámara durante las clases y en el caso de alumnos libres, la cantidad de veces que rindieron el final.
+
+Las actas tendrán:
+
+La categoría del examen (RECUPERATORIO, FINAL TEÓRICO o FINAL PRÁCTICO);
+La colección de alumnos acreditados para rendir el examen ordenados por nombre.
+
+Al momento de agregar un alumno inscripto en la materia a una de las actas se deben tener en consideración las siguientes reglas preestablecidas para determinar a qué acta debe agregarse:
+
+Si pertenece a un cuatrimestre anterior (alumno libre) le corresponde el acta de FINAL PRÁCTICO sin importar la nota porque si cursó en otro cuatrimestre y permanece inscripto en la materia es porque ya la tiene aprobada.
+Si es del cuatrimestre en curso...
+Si la nota de final de cursada es mayor o igual que siete (7) y tuvo la cámara encendida durante las clases, le corresponde el acta FINAL TEÓRICO;
+Si la nota es mayor o igual que 4 pero menor a 7 o mayor o igual a 7 pero no tuvo la cámara encendida durante las clases, le corresponde el acta FINAL PRÁCTICO;
+En cualquier otro caso le corresponde el acta RECUPERATORIO.
+
+Actualmente se está desarrollando una herramienta que permitirá automatizar todo el proceso y como parte del equipo de trabajo nos solicitan desarrollar algunos métodos que se detallarán a continuación.
+
+
+Se pide:
+
+Diseniar el diagrama UML completo que resuelva el problema propuesto agregando lo que consideres necesario a lo previamente enunciado.
+Desarrollar en NS+ los siguientes puntos (incluyendo los métodos derivados):
+El método asignarActas(), el cual debe asignar los alumnos inscriptos en una materia a sus actas correspondientes según las reglas anteriormente mencionadas.
+El método informarActaXCurso que informe (muestre por pantalla) para cada curso cuántos alumnos hay en cada acta.
