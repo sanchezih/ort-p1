@@ -2,7 +2,8 @@ package ar.edu.ort.p1.examenes.ds.actas_materia.src;
 
 public class Materia {
 
-	private static final int CANT_ACTAS = CategoriaExamen.values().length;
+	private final static int CANT_CURSOS = 10;
+	private final static int CANT_ACTAS = CategoriaExamen.values().length;
 	private ColaDeAlumnos alumnos;
 	private Acta[] actas;
 	private String nombre;
@@ -63,7 +64,7 @@ public class Materia {
 	public void informarActaXCurso() {
 		Alumno alumno;
 		Alumno centinela = new AlumnoRegular(-1, "", 1, 1, false);
-		int[][] matriz = new int[CANT_ACTAS][Alumno.CANT_CURSOS];
+		int[][] matriz = new int[CANT_ACTAS][CANT_CURSOS];
 
 		this.alumnos.add(centinela);
 		alumno = this.alumnos.remove();

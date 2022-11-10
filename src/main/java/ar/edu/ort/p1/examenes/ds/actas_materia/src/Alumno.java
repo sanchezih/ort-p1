@@ -2,7 +2,6 @@ package ar.edu.ort.p1.examenes.ds.actas_materia.src;
 
 public abstract class Alumno {
 
-	public final static int CANT_CURSOS = 10;
 	public final static int NOTA_APR = 4;
 	public final static int NOTA_FT = 7;
 
