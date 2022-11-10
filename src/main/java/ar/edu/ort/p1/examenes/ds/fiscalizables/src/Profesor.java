@@ -5,7 +5,7 @@ public class Profesor extends Empleado {
 	private final static int TURNOS = 3;
 	private final static int DIAS_SEMANA = 5;
 	private Nivel titulo;
-	private Cargo[][] cargos = new Cargo[DIAS_SEMANA][TURNOS];;
+	private Cargo[][] cargos = new Cargo[DIAS_SEMANA][TURNOS];
 
 	/*----------------------------------------------------------------------------*/
 
