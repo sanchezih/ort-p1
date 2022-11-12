@@ -14,6 +14,10 @@ public class Acta {
 
 	/*----------------------------------------------------------------------------*/
 
+	public ListaAlumnosPorNombre getAlumnos() {
+		return alumnos;
+	}
+
 	public void asignar(Alumno alumno) {
 		this.alumnos.add(alumno);
 	}

@@ -59,9 +59,11 @@ public class Materia {
 	 * Ejercicio C: El metodo informarActaXCurso que informe (muestre por pantalla)
 	 * para cada curso cuantos alumnos hay en cada acta.
 	 * 
+	 * Genero la matriz en base a la cola
+	 * 
 	 * @return
 	 */
-	public void informarActaXCurso() {
+	public void informarActaXCursoDesdeCola() {
 		Alumno alumno;
 		Alumno centinela = new AlumnoRegular(-1, "", 1, 1, false);
 		int[][] matriz = new int[CANT_ACTAS][CANT_CURSOS];
@@ -73,6 +75,19 @@ public class Materia {
 			contarEnMatriz(matriz, alumno);
 			this.alumnos.add(alumno);
 			alumno = this.alumnos.remove();
+		}
+		mostarMatrizActaXCurso(matriz);
+	}
+
+	/**
+	 * Genero la matriz en base a la lista
+	 */
+	public void informarActaXCursoDesdeLista() {
+		int[][] matriz = new int[CANT_ACTAS][CANT_CURSOS];
+		for (int i = 0; i < this.actas.length; i++) {
+			for (Alumno alumno : this.actas[i].getAlumnos()) {
+				contarEnMatriz(matriz, alumno);
+			}
 		}
 		mostarMatrizActaXCurso(matriz);
 	}

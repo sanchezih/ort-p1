@@ -36,7 +36,9 @@ public class Main {
 		System.out.println();
 
 		// Test ejercicio C
-		p1.informarActaXCurso();
+		// Se hacen 2 implementaciones para este ejercicio
+		p1.informarActaXCursoDesdeCola();
+		p1.informarActaXCursoDesdeLista();
 	}
 
 }
