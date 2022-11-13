@@ -1,17 +1,25 @@
-package ar.edu.ort.p1.examenes.ds.terminal_autoservicio_t1.src;
+package ar.edu.ort.p1.examenes.ds.terminales_de_autoservicio.src;
 
 public class BilleteNacional extends Billete {
 
 	private final static int ANIO_LIMITE = 2010;
 
+	/*----------------------------------------------------------------------------*/
+
 	public BilleteNacional(long numero, char letraSerie, int anio, Estado estado, Valor valor) {
 		super(numero, letraSerie, anio, estado, valor);
-		// TODO Auto-generated constructor stub
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	@Override
 	public boolean cumpleRequisito() {
 		return super.cumpleRequisito() && getAnio() >= ANIO_LIMITE;
+	}
+
+	@Override
+	public String toString() {
+		return "BilleteNacional [" + super.toString() + "]";
 	}
 
 }

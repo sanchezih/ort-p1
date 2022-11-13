@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.examenes.ds.terminal_autoservicio_t1.src;
+package ar.edu.ort.p1.examenes.ds.terminales_de_autoservicio.src;
 
 import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 

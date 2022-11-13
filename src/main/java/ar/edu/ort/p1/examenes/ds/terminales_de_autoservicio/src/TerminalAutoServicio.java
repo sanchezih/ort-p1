@@ -1,12 +1,19 @@
-package ar.edu.ort.p1.examenes.ds.terminal_autoservicio_t1.src;
+package ar.edu.ort.p1.examenes.ds.terminales_de_autoservicio.src;
+
+import ar.edu.ort.p1.examenes.ds.actas_materia.src.CategoriaExamen;
+import ar.edu.ort.p1.examenes.ds.fiscalizables.src.Empleado;
 
 public class TerminalAutoServicio {
 
 	private PilaDeBilletes pilaDeBilletes;
 
+	/*----------------------------------------------------------------------------*/
+
 	public TerminalAutoServicio() {
 		this.pilaDeBilletes = new PilaDeBilletes();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio B: El metodo depositar, que recibe un Billete como parametro y debe
@@ -23,6 +30,8 @@ public class TerminalAutoServicio {
 		}
 		return sePuedeDepositar;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio C: El metodo cantBilletesPorEstadoYValor que debe devolver (no
@@ -57,6 +66,8 @@ public class TerminalAutoServicio {
 		matriz[fila][columna]++;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * Ejercicio D: El metodo listarBilletesOrdenadosPorValor que debe devolver (no
 	 * mostrar por consola) una lista de todos los billetes almacenados en la
@@ -81,6 +92,45 @@ public class TerminalAutoServicio {
 		}
 
 		return listaOrdenada;
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	// Metodos complementarios
+
+	/**
+	 * 
+	 * @param matriz
+	 */
+	public void mostarMatriz() {
+
+		int[][] matriz = cantBilletesPorEstadoYValor();
+
+		System.out.println("Ejercicio C: Muestro cantBilletesPorEstadoYValor");
+		System.out.println("\t" + Estado.MALO + "\t" + Estado.REGULAR.toString().substring(0, 4) + "\t"
+				+ Estado.BUENO.toString().substring(0, 4));
+
+		for (int i = 0; i < matriz.length; i++) {
+			System.out.print(((Valor.values()[i]).toString().substring(0, 4)) + "\t");
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.print(matriz[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+
+	/**
+	 * 
+	 */
+	public void mostrarBilletes() {
+
+		System.out.println("Ejercicio D: Muestro una lista de todos los billetes ordenados por valor");
+
+		ListaBilletesOrdenadosPorValor lista = listarBilletesOrdenadosPorValor();
+		for (Billete b : lista) {
+			System.out.println("\t-> " + b.toString());
+		}
 	}
 
 }

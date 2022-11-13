@@ -1,13 +1,16 @@
-package ar.edu.ort.p1.examenes.ds.terminal_autoservicio_t1.src;
+package ar.edu.ort.p1.examenes.ds.terminales_de_autoservicio.src;
 
 public abstract class Billete implements Verificable {
 
 	private final static long NUM_BILLETE_LIMITE = 2000000;
+
 	private long numero;
 	private char letraSerie;
 	private int anio;
 	private Estado estado;
 	private Valor valor;
+
+	/*----------------------------------------------------------------------------*/
 
 	public Billete(long numero, char letraSerie, int anio, Estado estado, Valor valor) {
 		super();
@@ -17,6 +20,8 @@ public abstract class Billete implements Verificable {
 		this.estado = estado;
 		this.valor = valor;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public int getAnio() {
 		return anio;
@@ -36,6 +41,12 @@ public abstract class Billete implements Verificable {
 
 	public boolean cumpleRequisito() {
 		return numero > NUM_BILLETE_LIMITE;
+	}
+
+	@Override
+	public String toString() {
+		return "numero=" + numero + ", letraSerie=" + letraSerie + ", anio=" + anio + ", estado=" + estado + ", valor="
+				+ valor;
 	}
 
 }
