@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		PilaDeLibros pilaDeLibros = new PilaDeLibros();
+		PilaDeLibros pilaDeLibros = new PilaDeLibros(Libro.class);
 		pilaDeLibros.push(new Libro("978-987-86-4331-1", 319));
 		pilaDeLibros.push(new Libro("978-987-3832-50-5", 285));
 		pilaDeLibros.push(new Libro("978-987-1949-68-7", 292));

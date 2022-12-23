@@ -52,7 +52,7 @@ public class Empleado {
 	 */
 	public double paginasPromedio(PilaDeLibros pilaLibros) {
 
-		PilaDeLibros pilaAux = new PilaDeLibros();
+		PilaDeLibros pilaAux = new PilaDeLibros(Libro.class);
 		int cantLibros = 0;
 		int acuPaginas = 0;
 		double promedio = 0;

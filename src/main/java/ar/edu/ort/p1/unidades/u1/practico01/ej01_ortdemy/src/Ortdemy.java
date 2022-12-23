@@ -7,11 +7,14 @@ public class Ortdemy {
 	private ArrayList<Usuario> usuarios;
 	private ArrayList<Categoria> categorias;
 
-	// Contructor
+	/*----------------------------------------------------------------------------*/
+
 	public Ortdemy() {
 		this.usuarios = new ArrayList<Usuario>();
 		this.categorias = new ArrayList<Categoria>();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Ejercicio B: La explotacion del metodo suscribirseACurso el cual recibe un ID

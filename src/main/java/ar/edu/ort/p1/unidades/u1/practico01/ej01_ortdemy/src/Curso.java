@@ -14,6 +14,16 @@ public class Curso {
 	private Usuario autor;
 	private ArrayList<Usuario> suscriptores;
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * 
+	 * @param id
+	 * @param titulo
+	 * @param precio
+	 * @param valoracion
+	 * @param autor
+	 */
 	public Curso(String id, String titulo, double precio, int valoracion, Usuario autor) {
 		super();
 		this.id = id;
@@ -24,6 +34,8 @@ public class Curso {
 		this.autor = autor;
 		this.suscriptores = new ArrayList<Usuario>();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public String getId() {
 		return id;
@@ -37,6 +49,10 @@ public class Curso {
 		return this.suscriptores.contains(usuario);
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean cupoBecadosLleno() {
 
 		int i = 0;
