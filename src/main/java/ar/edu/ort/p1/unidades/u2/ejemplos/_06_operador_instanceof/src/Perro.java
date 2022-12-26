@@ -4,7 +4,9 @@ class Perro extends Animal {
 
 	public static void downCast(Animal animal) {
 		if (animal instanceof Perro) {
-			((Perro) animal).ladrar(); // Downcasting
+
+			Perro perro = (Perro) animal; // Downcasting
+			perro.ladrar();
 		}
 	}
 

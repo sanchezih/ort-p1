@@ -6,6 +6,12 @@ public class PagoDeFactura {
 	private String empresa;
 	private int mes;
 
+	/**
+	 * 
+	 * @param importe
+	 * @param empresa
+	 * @param mes
+	 */
 	public PagoDeFactura(double importe, String empresa, int mes) {
 		this.importe = importe;
 		this.empresa = empresa;

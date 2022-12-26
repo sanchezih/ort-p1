@@ -1,10 +1,24 @@
 package ar.edu.ort.p1.unidades.u4.ejemplos.ds.linear.array.posicionamientodirecto.src;
 
-public class Historial {
-	
-	private double[] gastosMensuales = new double[12];
+import ar.edu.ort.p1.util.UtilArrays;
 
-	public void acumularGasto(PagoDeFactura unPago) {
-		this.gastosMensuales[unPago.getMes() - 1] += unPago.getImporte(); // Acumulo
+public class Historial {
+
+	private final static int CANT_MESES = 12;
+	private double[] gastosMensuales = new double[CANT_MESES];
+
+	/**
+	 * 
+	 * @param pagoDeFactura
+	 */
+	public void acumularGasto(PagoDeFactura pagoDeFactura) {
+		this.gastosMensuales[pagoDeFactura.getMes() - 1] += pagoDeFactura.getImporte(); // Acumulo
+	}
+
+	/**
+	 * 
+	 */
+	public void mostrarGastosMensuales() {
+		UtilArrays.mostrar(this.gastosMensuales);
 	}
 }

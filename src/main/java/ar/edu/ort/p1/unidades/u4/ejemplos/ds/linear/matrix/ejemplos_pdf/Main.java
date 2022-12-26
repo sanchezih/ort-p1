@@ -49,6 +49,7 @@ public class Main {
 	 */
 	public static void dibujar(char[][] matLetras) {
 		System.out.println("*** MATRIZ DE EJEMPLO ***");
+
 		for (int i = 0; i < matLetras.length; i++) {
 			for (int j = 0; j < matLetras[i].length; j++) {
 				System.out.print(matLetras[i][j] + " ");

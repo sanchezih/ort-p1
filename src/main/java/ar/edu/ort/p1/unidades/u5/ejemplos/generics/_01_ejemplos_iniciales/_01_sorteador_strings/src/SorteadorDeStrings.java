@@ -8,11 +8,14 @@ public class SorteadorDeStrings {
 	private ArrayList<String> elementos;
 	private Random random;
 
-	// Constructor
+	/*----------------------------------------------------------------------------*/
+
 	public SorteadorDeStrings() {
 		this.elementos = new ArrayList<String>();
 		this.random = new Random();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public void add(String elemento) {
 		this.elementos.add(elemento);

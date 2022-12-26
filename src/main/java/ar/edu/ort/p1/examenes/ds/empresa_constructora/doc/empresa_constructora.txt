@@ -1,0 +1,44 @@
+Enunciado - SEGUNDO EXAMEN PARCIAL 13/6/2022
+
+Una empresa constructora necesita un sistema que le ayude a gestionar sus obras.
+
+La empresa realiza obras civiles y viales, las cuales pueden ser rutas o
+    puentes.
+
+Una de las funcionalidades del sistema requerido es poder estimar la duracion de
+    cada tipo de obra medido en meses (enteros).
+
+Las obras tienen un responsable (del cual se conoce su nombre) y una dificultad,
+que posee un indice segun se describe a continuacion:
+    - Dificultad Baja - indice 1
+    - Dificultad Media - indice 3
+    - Dificultad Alta - indice 6
+
+La duracion de la obra depende de su tipo, pero en todos los casos se
+    multiplicara por el indice de dificultad.
+
+De las obras civiles se conoce exactamente cuantos meses duraran y el nombre de
+    la ciudad donde se realizaran.
+
+En las obras viales se registra cuantos kilometros de longitud tendra la ruta o
+    el puente y un indicador que muestra si pasara por una unica provincia o por
+    mas de una.
+
+De las rutas conocemos cuantos carriles posee y una coleccion con los puentes
+    que poseera, en orden de construccion. La duracion de las rutas es la
+    multiplicacion de su longitud por la cantidad de carriles que posea, mas la
+    duracion de cada uno de los puentes que posea.
+
+Los puentes son de un determinado tipo (Viga, Arco o Colgante). La duracion de
+    los puentes se calcula como la multiplicacion de su longitud por un valor
+    que depende del tipo de puente, para los de viga ese valor es 10, para los
+    de arco sera 20 y para el restante 30.
+
+Basado en el enunciado descripto, realiza:
+    A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
+    metodos.
+    B) El metodo estimar(), de la clase que corresponda, que debe devolver (no
+    mostrar por consola) el tiempo estimado de cada obra.
+    C) El metodo tipoDeObraPorDificultad() de la clase que corresponda, que debe
+    devolver (no mostrar por consola) la cantidad de obras que hay registradas
+    para realizar en funcion de su tipo y dificultad.

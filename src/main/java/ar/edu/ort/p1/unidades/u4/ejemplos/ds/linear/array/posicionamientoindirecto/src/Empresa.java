@@ -1,12 +1,10 @@
 package ar.edu.ort.p1.unidades.u4.ejemplos.ds.linear.array.posicionamientoindirecto.src;
 
 public class Empresa {
-	
-	private Vendedor[] vendedores = new Vendedor[8];
 
-	public Vendedor[] getVendedores() {
-		return vendedores;
-	}
+	private final static int CANT_EMPLEADOS = 8;
+
+	private Vendedor[] vendedores = new Vendedor[CANT_EMPLEADOS];
 
 	public void setVendedores(Vendedor[] vendedores) {
 		this.vendedores = vendedores;

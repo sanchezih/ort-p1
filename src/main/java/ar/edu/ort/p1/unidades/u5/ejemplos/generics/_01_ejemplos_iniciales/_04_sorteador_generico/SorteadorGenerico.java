@@ -29,4 +29,8 @@ public class SorteadorGenerico<T> {
 	private int posRandom() {
 		return random.nextInt(this.elementos.size());
 	}
+
+	public void isVacio() {
+		System.out.println("El sorteador esta vacio? " + this.isEmpty());
+	}
 }

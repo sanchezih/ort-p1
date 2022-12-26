@@ -4,6 +4,7 @@ import ar.edu.ort.p1.unidades.u5.ejemplos.ds.linear._04_lista_ordenada.Empleado;
 import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 
 public class ListaEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Empleado> {
+
 	/**
 	 * 
 	 */
@@ -11,6 +12,7 @@ public class ListaEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Empleado>
 	public int compare(Empleado empleado1, Empleado emeplado2) {
 		return empleado1.getEdad() - emeplado2.getEdad();
 	}
+
 	/**
 	 * 
 	 */

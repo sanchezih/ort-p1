@@ -3,20 +3,23 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.generics._01_ejemplos_iniciales._02_s
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Bolillero<T> {
+public class Bolillero {
 
-	private ArrayList<T> elementos;
-	private Random r;
+	private ArrayList<Bolilla> elementos;
+	private Random random;
 	private int capacidadMaxima;
 
-	// Constructor
+	/*----------------------------------------------------------------------------*/
+
 	public Bolillero(int capacidadMaxima) {
-		this.elementos = new ArrayList<T>();
-		this.r = new Random();
+		this.elementos = new ArrayList<Bolilla>();
+		this.random = new Random();
 		this.capacidadMaxima = capacidadMaxima;
 	}
 
-	public void add(T elemento) {
+	/*----------------------------------------------------------------------------*/
+
+	public void add(Bolilla elemento) {
 		if (this.elementos.size() < capacidadMaxima) {
 			this.elementos.add(elemento);
 		} else {
@@ -28,11 +31,11 @@ public class Bolillero<T> {
 		return this.elementos.isEmpty();
 	}
 
-	public T remove() {
+	public Bolilla remove() {
 		return this.elementos.remove(posRandom());
 	}
 
 	private int posRandom() {
-		return r.nextInt(this.elementos.size());
+		return random.nextInt(this.elementos.size());
 	}
 }

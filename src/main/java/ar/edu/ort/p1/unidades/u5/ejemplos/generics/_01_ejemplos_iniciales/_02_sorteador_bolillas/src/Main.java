@@ -3,7 +3,8 @@ package ar.edu.ort.p1.unidades.u5.ejemplos.generics._01_ejemplos_iniciales._02_s
 public class Main {
 
 	private static int CANT_MAX_BOLILLAS = 5;
-	private static Bolillero<Bolilla> bolillero = new Bolillero<Bolilla>(CANT_MAX_BOLILLAS);
+
+	private static Bolillero bolillero = new Bolillero(CANT_MAX_BOLILLAS);
 
 	public static void main(String[] args) {
 		isVacio();
@@ -16,6 +17,7 @@ public class Main {
 	private static void llenarBolillero() {
 		for (int i = 0; i < CANT_MAX_BOLILLAS; i++) {
 			bolillero.add(new Bolilla(i));
+			// bolillero.add("Azul"); // No puedo agregar elementos que no sean bolillas
 		}
 		System.out.println("Se lleno el bolillero con " + CANT_MAX_BOLILLAS + " bolillas");
 	}

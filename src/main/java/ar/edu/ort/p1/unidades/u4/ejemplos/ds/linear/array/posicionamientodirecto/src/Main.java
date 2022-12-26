@@ -3,14 +3,22 @@ package ar.edu.ort.p1.unidades.u4.ejemplos.ds.linear.array.posicionamientodirect
 public class Main {
 
 	public static void main(String[] args) {
-		
-		PagoDeFactura pago1 = new PagoDeFactura(1200, "Movistar", 5);
-		PagoDeFactura pago2 = new PagoDeFactura(750, "Telecom", 5);
-		
+
 		Historial historial = new Historial();
-		
-		historial.acumularGasto(pago1);
-		historial.acumularGasto(pago2);
+
+		// Pagos de enero
+		historial.acumularGasto(new PagoDeFactura(5000, "Fibertel", 1));
+		historial.acumularGasto(new PagoDeFactura(3000, "Netflix", 1));
+
+		// Pagos de febrero
+		historial.acumularGasto(new PagoDeFactura(5000, "Fibertel", 2));
+		historial.acumularGasto(new PagoDeFactura(3000, "Netflix", 2));
+
+		// Pagos de marzo
+		historial.acumularGasto(new PagoDeFactura(6500, "Fibertel", 3));
+		historial.acumularGasto(new PagoDeFactura(3200, "Netflix", 3));
+
+		historial.mostrarGastosMensuales();
 
 	}
 

@@ -2,61 +2,64 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" 
-    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.Masajista" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/Masajista.java" 
+    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.IntegranteDeSeleccion" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/IntegranteDeSeleccion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="195" width="211" x="538" y="398"/>    
-    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+    <position height="351" width="334" x="415" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="2" language="java" 
-    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.IntegranteDeSeleccion" 
-    project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/IntegranteDeSeleccion.java" 
+    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.Masajista" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/Masajista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="321" width="229" x="286" y="37"/>    
-    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+    <position height="225" width="334" x="41" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="3" language="java" 
-    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.Entrenador" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/Entrenador.java" 
+    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.Entrenador" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/Entrenador.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="159" width="205" x="41" y="398"/>    
-    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+    <position height="189" width="334" x="789" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="4" language="java" 
-    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.Futbolista" project="ort-p1" 
-    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/Futbolista.java" 
+    name="ar.edu.ort.p1.unidades.u2.ejemplos._01_herencia._02_seleccion.src.seleccion.Futbolista" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u2/ejemplos/_01_herencia/_02_seleccion/src/seleccion/Futbolista.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="213" width="212" x="286" y="398"/>    
-    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+    <position height="243" width="334" x="415" y="428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <generalization id="5">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="6">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="7">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

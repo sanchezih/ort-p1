@@ -4,49 +4,48 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("--> Utilizo el sorteador generico para sortear objetos de tipo String");
+		System.out.println("-> Utilizo el sorteador generico para sortear objetos de tipo String");
 
-		SorteadorGenerico<String> sorteadorParaStrings = new SorteadorGenerico<String>();
+		SorteadorGenerico<String> sorteadorDeStrings = new SorteadorGenerico<String>();
 
-		System.out.println("El sorteador esta vacio? " + sorteadorParaStrings.isEmpty());
+		sorteadorDeStrings.isVacio();
 
 		System.out.println("Agrego elementos...");
-		sorteadorParaStrings.add("Perro");
-		sorteadorParaStrings.add("Lechuza");
-		sorteadorParaStrings.add("Caballo");
-		sorteadorParaStrings.add("Gato");
+		sorteadorDeStrings.add("Perro");
+		sorteadorDeStrings.add("Lechuza");
+		sorteadorDeStrings.add("Caballo");
+		sorteadorDeStrings.add("Gato");
 
-		System.out.println("El sorteador esta vacio? " + sorteadorParaStrings.isEmpty());
+		sorteadorDeStrings.isVacio();
 
-		while (!sorteadorParaStrings.isEmpty()) {
-			System.out.println("Muesto elemento: " + sorteadorParaStrings.remove()); // toUpperCase() no podria ser sin
-																						// castear a String
+		while (!sorteadorDeStrings.isEmpty()) {
+			System.out.println("Muesto elemento: " + sorteadorDeStrings.remove()); // toUpperCase() no podria ser sin
+																					// castear a String
 		}
 
-		System.out.println("El sorteador esta vacio? " + sorteadorParaStrings.isEmpty());
+		sorteadorDeStrings.isVacio();
 
 		/*----------------------------------------------------------------------------*/
 
-		System.out.println("\n--> Utilizo el sorteador generico para sortear objetos de tipo Integer");
+		System.out.println("\n-> Utilizo el sorteador generico para sortear objetos de tipo Integer");
 
-		SorteadorGenerico<Integer> sorteadorParaIntegers = new SorteadorGenerico<Integer>();
+		SorteadorGenerico<Integer> sorteadorDeIntegers = new SorteadorGenerico<Integer>();
 
-		System.out.println("El sorteador esta vacio? " + sorteadorParaIntegers.isEmpty());
+		sorteadorDeIntegers.isVacio();
 
 		System.out.println("Agrego elementos...");
-		sorteadorParaIntegers.add(104);
-		sorteadorParaIntegers.add(933);
-		sorteadorParaIntegers.add(061);
-		sorteadorParaIntegers.add(822);
+		sorteadorDeIntegers.add(104);
+		sorteadorDeIntegers.add(933);
+		sorteadorDeIntegers.add(061);
+		sorteadorDeIntegers.add(822);
 
-		System.out.println("El sorteador esta vacio? " + sorteadorParaIntegers.isEmpty());
-
-		while (!sorteadorParaIntegers.isEmpty()) {
-			System.out.println("Muesto elemento: " + sorteadorParaIntegers.remove()); // toUpperCase() no podria ser sin
-																						// castear a String
+		sorteadorDeIntegers.isVacio();
+		while (!sorteadorDeIntegers.isEmpty()) {
+			System.out.println("Muesto elemento: " + sorteadorDeIntegers.remove()); // toUpperCase() no podria ser sin
+																					// castear a String
 		}
 
-		System.out.println("El sorteador esta vacio? " + sorteadorParaIntegers.isEmpty());
+		sorteadorDeIntegers.isVacio();
 	}
 
 }

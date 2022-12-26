@@ -5,7 +5,6 @@ public class Bolilla {
 	private int numero;
 
 	public Bolilla(int numero) {
-		super();
 		this.numero = numero;
 	}
 
