@@ -1,0 +1,30 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>60</y><w>260</w><h>140</h></coordinates><panel_attributes>Pyme
+--
+
+--
++Pyme()
++altaDeEmpleado(String, String, double): int
++bajaDeEmpleado(String): Empleado
++cantVacantes(): int
++sueldoTotal(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>290</y><w>260</w><h>110</h></coordinates><panel_attributes>Empleado
+--
+-dni: String
+-apellido: String
+-sueldo: double
+--
++Empleado(String, String, double)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>190</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_EMP_MAX
+-empleados</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>60</y><w>260</w><h>140</h></coordinates><panel_attributes>NominaDeEmpleados
+--
+_-CANT_EMP_MAX: int = 665_
+--
++NominaDeEmpleados()
++altaDeEmpleado(Empleado): int
++bajaDeEmpleado(String): Empleado
++cantVacantes(): int
++sueldoTotal(): double
+-idxPrimerNull(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>120</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-nomina</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>190</y><w>260</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>240;160;10;160;10;10</additional_attributes></element></diagram>

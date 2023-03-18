@@ -1,0 +1,23 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>60</y><w>290</w><h>110</h></coordinates><panel_attributes>Taller
+--
+
+--
++cantServiciosPosibles(ArrayList&lt;Bicicleta&gt;): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>220</y><w>290</w><h>110</h></coordinates><panel_attributes>Bicicleta
+--
+_-KM_MAX_PERMITIDO: int = 2000_
+-marca: String
+-modelo: String
+-kilometraje: double
+--
++isReparable(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>380</y><w>290</w><h>110</h></coordinates><panel_attributes>BicicletaElectrica
+--
+_-POTENCIA_MAX_PERMITIDA: int = 250_
+-potencia: double
+--
++isReparable(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>320</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>160</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>460</x><y>60</y><w>320</w><h>140</h></coordinates><panel_attributes>Nota: Este ejercicio, tal como esta planteado,
+no indica la necesidad de tener clases abstractas.
+El taller no tiene la necesidad de conocer a las
+bicicletas electricas, por tal motivo las recibe como
+parametro en vez de tener que tener una lista de
+bicicletas.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>

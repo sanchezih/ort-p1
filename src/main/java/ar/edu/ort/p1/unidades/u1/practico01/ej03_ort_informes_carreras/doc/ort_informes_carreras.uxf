@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Sp}ace for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>340</x><y>220</y><w>210</w><h>100</h></coordinates><panel_attributes>ORT
+--
+
+--
++ORT()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>350</y><w>210</w><h>110</h></coordinates><panel_attributes>Alumno
+--
+-nombre: String
+-mail: String
+--
++cantAprobadas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>310</y><w>230</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-alumnos</panel_attributes><additional_attributes>10;90;210;90;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>450</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-materias</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>540</y><w>210</w><h>110</h></coordinates><panel_attributes>Materia
+--
+-nombre: String
+-cuatrimestre: String
+--
++Materia(String, String, Estado)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>570</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-estado</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>540</y><w>230</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Estado
+--
+_+EN_CURSO: Estado_
+_+REPROBADA: Estado_
+_+APROBADA: Estado_
+--
++Estado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>80</y><w>310</w><h>80</h></coordinates><panel_attributes>Informe
+--
+-cant: int
+--
++Informe(int)
++addAlumnoSimplificado(AlumnoSimplificado): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>150</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>220</y><w>230</w><h>100</h></coordinates><panel_attributes>Carrera
+--
+
+--
++getInformeMaxMaterias(): Informe
+-maxCantMateriasAprobadas(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>250</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-carreras</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>110</y><w>190</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-alumnos</panel_attributes><additional_attributes>160;110;160;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>220</y><w>210</w><h>100</h></coordinates><panel_attributes>AlumnoSimplificado
+--
+-nombre: String
+-mail: String
+--
++AlumnoSimplificado(String, String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>270</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>440</y><w>230</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>210;100;210;10;10;10</additional_attributes></element></diagram>
