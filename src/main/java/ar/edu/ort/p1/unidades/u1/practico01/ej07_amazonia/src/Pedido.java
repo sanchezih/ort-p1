@@ -68,11 +68,17 @@ public class Pedido {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * 
+	 */
 	public void confirmar() {
 		descontarStock();
 		this.estado = Estado.CONFIRMADO;
 	}
 
+	/**
+	 * 
+	 */
 	private void descontarStock() {
 		for (ItemPedido item : this.items) {
 			item.descontarStock();
