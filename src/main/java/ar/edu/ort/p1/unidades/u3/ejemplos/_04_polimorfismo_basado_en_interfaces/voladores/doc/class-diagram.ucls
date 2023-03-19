@@ -112,39 +112,39 @@
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <realization id="11">    
+  <generalization id="11">    
     <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <generalization id="12">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="13">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="14">    
+  <realization id="12">    
     <bendpoint x="313" y="287"/>    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <generalization id="15">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <realization id="16">    
+  <realization id="13">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <realization id="17">    
+  <generalization id="14">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="15">    
     <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <realization id="16">    
+    <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="5"/>  
   </realization>  
-  <generalization id="18">    
+  <generalization id="17">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="6"/>  
   </generalization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

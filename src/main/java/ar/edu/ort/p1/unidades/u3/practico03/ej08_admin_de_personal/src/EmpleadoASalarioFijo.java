@@ -8,6 +8,13 @@ public class EmpleadoASalarioFijo extends Empleado {
 	private static final double SALARIO_AD_6_A_10 = 0.1;
 	private static final double SALARIO_AD_MAS_DE_10 = 0.15;
 
+	/**
+	 * 
+	 * @param dni
+	 * @param nombre
+	 * @param apellido
+	 * @param anioIngreso
+	 */
 	public EmpleadoASalarioFijo(String dni, String nombre, String apellido, int anioIngreso) {
 		super(dni, nombre, apellido, anioIngreso);
 	}

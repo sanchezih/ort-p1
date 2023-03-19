@@ -2,11 +2,10 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" 
-    name="ar.edu.ort.p1.unidades.u3.ejemplos._01_clases_abstractas.cuentas_bancarias.src.CuentaCorriente" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_01_clases_abstractas/cuentas_bancarias/src/CuentaCorriente.java" 
+    name="ar.edu.ort.p1.unidades.u3.ejemplos._01_clases_abstractas.cuentas_bancarias.src.CajaDeAhorro" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_01_clases_abstractas/cuentas_bancarias/src/CajaDeAhorro.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="352" x="433" y="284"/>    
+    <position height="153" width="352" x="41" y="284"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -15,8 +14,8 @@
   </class>  
   <class id="2" language="java" 
     name="ar.edu.ort.p1.unidades.u3.ejemplos._01_clases_abstractas.cuentas_bancarias.src.CuentaBancaria" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_01_clases_abstractas/cuentas_bancarias/src/CuentaBancaria.java" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_01_clases_abstractas/cuentas_bancarias/src/CuentaBancaria.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="207" width="352" x="237" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -26,11 +25,11 @@
     </display>  
   </class>  
   <class id="3" language="java" 
-    name="ar.edu.ort.p1.unidades.u3.ejemplos._01_clases_abstractas.cuentas_bancarias.src.CajaDeAhorro" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_01_clases_abstractas/cuentas_bancarias/src/CajaDeAhorro.java" 
+    name="ar.edu.ort.p1.unidades.u3.ejemplos._01_clases_abstractas.cuentas_bancarias.src.CuentaCorriente" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u3/ejemplos/_01_clases_abstractas/cuentas_bancarias/src/CuentaCorriente.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="352" x="41" y="284"/>    
+    <position height="171" width="352" x="433" y="284"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

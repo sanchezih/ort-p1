@@ -17,8 +17,8 @@ public class Empresa {
 	 * consola el nombre completo de cada empleado junto a su salario.
 	 */
 	public void mostrarSalarios() {
-		for (Empleado e : this.empleados) {
-			e.mostrarDatos();
+		for (Empleado empleado : this.empleados) {
+			empleado.mostrarDatos();
 		}
 	}
 
