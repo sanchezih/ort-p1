@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>280</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>280</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 Usuario
 --
 -id: String
@@ -41,9 +41,9 @@ Leccion
 +Leccion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>470</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 TipoDeLeccion
 --
-_+TEXTO_
-_+VIDEO_
-_+RECURSO_
+_+TEXTO: TipoDeLeccion_
+_+VIDEO: TipoDeLeccion_
+_+RECURSO: TipoDeLeccion_
 --
 +TipoDeLeccion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>400</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
 -lecciones
@@ -64,12 +64,12 @@ m1=1
 </panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>30</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 Resultado
 --
-_+CURSO_INEX_
-_+USUARIO_INEX_
-_+YA_SUSCRIPTO_
-_+ES_AUTOR_
-_+MAX_BECADOS_
-_+SUSCRIPTO_OK_
+_+CURSO_INEX: Resultado_
+_+USUARIO_INEX: Resultado_
+_+YA_SUSCRIPTO: Resultado_
+_+ES_AUTOR: Resultado_
+_+MAX_BECADOS: Resultado_
+_+SUSCRIPTO_OK: Resultado_
 --
 +Resultado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>350</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
 -suscriptores

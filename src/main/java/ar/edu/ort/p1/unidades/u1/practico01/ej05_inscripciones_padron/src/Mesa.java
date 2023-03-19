@@ -55,6 +55,10 @@ public class Mesa {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * 
+	 * @param padronMesas
+	 */
 	public void obtenerPadronMesa(ArrayList<PadronMesa> padronMesas) {
 		int orden = 0;
 		for (Persona persona : this.personas) {

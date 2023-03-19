@@ -2,8 +2,8 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="ar.edu.ort.p1.unidades.u1.ejemplos._enum._01_ejemplo_nivel_estudio.src.Empresa" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_enum/_01_ejemplo_nivel_estudio/src/Empresa.java" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_enum/_01_ejemplo_nivel_estudio/src/Empresa.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="117" width="318" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -13,9 +13,8 @@
     </display>  
   </class>  
   <enumeration id="2" language="java" 
-    name="ar.edu.ort.p1.unidades.u1.ejemplos._enum._01_ejemplo_nivel_estudio.src.NivelDeEstudio" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_enum/_01_ejemplo_nivel_estudio/src/NivelDeEstudio.java" 
+    name="ar.edu.ort.p1.unidades.u1.ejemplos._enum._01_ejemplo_nivel_estudio.src.NivelDeEstudio" project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_enum/_01_ejemplo_nivel_estudio/src/NivelDeEstudio.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="189" width="318" x="41" y="387"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -25,8 +24,8 @@
     </display>  
   </enumeration>  
   <class id="3" language="java" name="ar.edu.ort.p1.unidades.u1.ejemplos._enum._01_ejemplo_nivel_estudio.src.Persona" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_enum/_01_ejemplo_nivel_estudio/src/Persona.java" 
+    project="ort-p1" 
+    file="/ort-p1/src/main/java/ar/edu/ort/p1/unidades/u1/ejemplos/_enum/_01_ejemplo_nivel_estudio/src/Persona.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="153" width="318" x="41" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

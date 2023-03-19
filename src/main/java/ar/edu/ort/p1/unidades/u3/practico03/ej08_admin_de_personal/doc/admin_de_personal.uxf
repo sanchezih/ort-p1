@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>377</x><y>299</y><w>338</w><h>208</h></coordinates><panel_attributes>/Empleado/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>560</x><y>280</y><w>260</w><h>160</h></coordinates><panel_attributes>/Empleado/
 --
 -dni: String
 -nombre: String
@@ -9,7 +9,7 @@
 +getAniosAntiguedad(): int
 +mostrarDatos(): void
 /+getSalario(): double/
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>182</x><y>585</y><w>338</w><h>208</h></coordinates><panel_attributes>EmpleadoASalarioFijo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>500</y><w>260</w><h>160</h></coordinates><panel_attributes>EmpleadoASalarioFijo
 --
 _-SALARIO_BASICO: double = 18000_
 _-SALARIO_AD_M2: double = 0_
@@ -18,7 +18,7 @@ _-SALARIO_AD_6_A_10: double = 0.1_
 _-SALARIO_AD_MAS_DE_10: double = 0.15_
 --
 -porcSegunAntiguedad(): double
-+getSalario(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>572</x><y>585</y><w>338</w><h>208</h></coordinates><panel_attributes>EmpleadoComision
++getSalario(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>500</y><w>260</w><h>160</h></coordinates><panel_attributes>EmpleadoComision
 --
 _-SALARIO_MINIMO: double = 20000_
 _-MONTO_A_COBRAR_X_CLIENTE: double = ?_
@@ -27,12 +27,14 @@ _-MONTO_A_COBRAR_X_CLIENTE: double = ?_
 +getCantClientesCaptados(): int
 +getSalario(): double
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>338</x><y>494</y><w>234</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;160;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>533</x><y>494</y><w>247</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;170;40;170;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>377</x><y>52</y><w>338</w><h>143</h></coordinates><panel_attributes>Empresa
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>430</y><w>180</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;160;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>430</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;170;40;170;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>90</y><w>260</w><h>110</h></coordinates><panel_attributes>Empresa
 --
 
 --
 +Empresa()
 +mostrarSalarios(): void
-+empleadoConMasClientes(): Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>533</x><y>182</y><w>117</w><h>143</h></coordinates><panel_attributes>lt=&lt;-
++empleadoConMasClientes(): Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>190</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
--empleados</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element></diagram>
+-empleados</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1000</x><y>500</y><w>260</w><h>70</h></coordinates><panel_attributes>El valor de MONTO_A_COBRAR_X_CLIENTE
+es arbitrario
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>

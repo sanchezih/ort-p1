@@ -7,7 +7,7 @@ import java.util.Random;
 import com.google.gson.Gson;
 
 public class Droide {
-	
+
 	static int count = 0;
 	static int cantFS = 0;
 
@@ -63,6 +63,11 @@ public class Droide {
 		return this.obtenerResultadoReparacion(encontreAlMenosUnaPieza);
 	}
 
+	/**
+	 * 
+	 * @param nombrePieza
+	 * @return
+	 */
 	private Pieza buscarPiezaOperativa(String nombrePieza) {
 		int i = 0;
 		Droide droide;
@@ -75,6 +80,11 @@ public class Droide {
 		return piezaEncontrada;
 	}
 
+	/**
+	 * 
+	 * @param nombrePieza
+	 * @return
+	 */
 	private Pieza obtenerPiezaOperativa(String nombrePieza) {
 		int i = 0;
 		Pieza pieza;
@@ -90,11 +100,21 @@ public class Droide {
 		return piezaEncontrada;
 	}
 
+	/**
+	 * 
+	 * @param piezaNoOperativa
+	 * @param piezaOperativa
+	 */
 	private void reemplazarPieza(Pieza piezaNoOperativa, Pieza piezaOperativa) {
 		this.piezasNoOperativas.remove(piezaNoOperativa);
 		this.piezasOperativas.add(piezaOperativa);
 	}
 
+	/**
+	 * 
+	 * @param encontreAlMenosUnaPieza
+	 * @return
+	 */
 	private ResultadoReparacion obtenerResultadoReparacion(boolean encontreAlMenosUnaPieza) {
 		ResultadoReparacion resultado = ResultadoReparacion.REPARACION_IMPOSIBLE;
 		if (this.piezasNoOperativas.isEmpty()) {
@@ -139,7 +159,7 @@ public class Droide {
 		}
 
 		count = count + 1;
-		
+
 		if (count <= 1) {
 			cantFS = (int) (Math.random() * 3 + 1);
 			for (int i = 0; i < cantFS; i++) {
@@ -149,6 +169,10 @@ public class Droide {
 
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String mostrar() {
 		Gson gson = new Gson();
 		return "Droide: " + gson.toJson(this, Droide.class);
