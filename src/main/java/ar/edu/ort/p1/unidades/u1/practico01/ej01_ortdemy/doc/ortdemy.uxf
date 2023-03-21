@@ -1,0 +1,84 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>280</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Usuario
+--
+-id: String
+-nombre: String
+-email: String
+-esBecado: boolean
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>30</y><w>310</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Ortdemy
+--
+
+--
++suscribirseACurso(String, String): Resultado
+-buscarCurso(): Curso
+-buscarUsuario(String): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>180</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-usuarios
+m1=*
+
+</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>30</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Categoria
+--
+-id: String
+-nombre: String
+--
++buscarCurso(String): Curso</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>250</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Curso
+--
+_-MAX_BECADOS: int = 5_
+-id: String
+-titulo: String
+-precio: double
+-valoracion: int
+--
++cupoBecadosLleno(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>470</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Leccion
+--
+-nombre: String
+-duracion: double
+--
++Leccion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>470</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+TipoDeLeccion
+--
+_+TEXTO: TipoDeLeccion_
+_+VIDEO: TipoDeLeccion_
+_+RECURSO: TipoDeLeccion_
+--
++TipoDeLeccion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>400</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+-lecciones
+m1=*
+
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>110</y><w>120</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+-categorias
+m1=*
+
+</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>180</y><w>70</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+-cursos
+m1=*
+
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>500</y><w>180</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+-tipo
+m1=1
+
+</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>30</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Resultado
+--
+_+CURSO_INEX: Resultado_
+_+USUARIO_INEX: Resultado_
+_+YA_SUSCRIPTO: Resultado_
+_+ES_AUTOR: Resultado_
+_+MAX_BECADOS: Resultado_
+_+SUSCRIPTO_OK: Resultado_
+--
++Resultado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>350</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+-suscriptores
+m1=*
+
+
+</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>120</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>310</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+-autor
+m1=1
+
+
+</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>180</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>130;100;10;100;10;10</additional_attributes></element></diagram>
