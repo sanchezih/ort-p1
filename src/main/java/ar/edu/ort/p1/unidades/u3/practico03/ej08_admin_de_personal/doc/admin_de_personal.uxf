@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>560</x><y>280</y><w>260</w><h>160</h></coordinates><panel_attributes>/Empleado/
+--
+-dni: String
+-nombre: String
+-apellido: String
+-anioIngreso: int
+--
++getNombreCompleto() String
++getAniosAntiguedad(): int
++mostrarDatos(): void
+/+getSalario(): double/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>500</y><w>260</w><h>160</h></coordinates><panel_attributes>EmpleadoASalarioFijo
+--
+_-SALARIO_BASICO: double = 18000_
+_-SALARIO_AD_M2: double = 0_
+_-SALARIO_AD_2_A_5: double = 0.05_
+_-SALARIO_AD_6_A_10: double = 0.1_
+_-SALARIO_AD_MAS_DE_10: double = 0.15_
+--
+-porcSegunAntiguedad(): double
++getSalario(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>500</y><w>260</w><h>160</h></coordinates><panel_attributes>EmpleadoAComision
+--
+_-SALARIO_MINIMO: double = 20000_
+_-MONTO_A_COBRAR_X_CLIENTE: double = ?_
+-cantClientesCaptados: int
+--
++getCantClientesCaptados(): int
++getSalario(): double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>430</y><w>180</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;160;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>430</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;170;40;170;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>90</y><w>260</w><h>110</h></coordinates><panel_attributes>Empresa
+--
+
+--
++Empresa()
++mostrarSalarios(): void
++empleadoConMasClientes(): Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>190</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-empleados</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1000</x><y>500</y><w>260</w><h>70</h></coordinates><panel_attributes>El valor de MONTO_A_COBRAR_X_CLIENTE
+es arbitrario
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
