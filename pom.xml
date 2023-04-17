@@ -6,13 +6,11 @@
 	<artifactId>ort-p1</artifactId>
 	<version>2023.1</version>
 	<packaging>jar</packaging>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 	</properties>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
@@ -27,7 +25,6 @@
 		</dependency>
 	</dependencies>
 	<repositories>
-
 		<repository>
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
