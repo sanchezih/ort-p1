@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>570</x><y>40</y><w>210</w><h>150</h></coordinates><panel_attributes>/Carta/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>570</x><y>40</y><w>210</w><h>150</h></coordinates><panel_attributes>/Carta/
 --
 -tapada: boolean
 --
@@ -30,18 +30,18 @@
 +getRepresentacion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>180</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;50;10;50;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>240</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 Palo
 --
-_+CORAZON(Color.ROJO)_
-_+DIAMANTE(Color.ROJO)_
-_+PICA(Color.NEGRO)_
-_+TREBOL(Color.NEGRO)_
+_+CORAZON: Palo_
+_+DIAMANTE: Palo_
+_+PICA: Palo_
+_+TREBOL: Palo_
 --
 -Palo(Color)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>300</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
 -palo</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>440</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 Color
 --
-_+ROJO_
-_+NEGRO_
+_+ROJO: Color_
+_+NEGRO: Color_
 --
 +Color()
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>360</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
