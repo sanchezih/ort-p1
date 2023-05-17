@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.1"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>154</x><y>294</y><w>350</w><h>196</h></coordinates><panel_attributes>Empresa
+--
+_-CANT_CAMIONES: int = 10_
+_-CANT_CHOFERES: int = 20_
+--
++obtenerCostosDeViajes(): double[]
+-getIdxChofer(String): int
+
++obtenerViajesPorChoferCamion(): int[][]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>658</x><y>532</y><w>294</w><h>196</h></coordinates><panel_attributes>Camion
+--
+-id: int
+-costoPorKm: double
+--
++Camion(int, double)
++getCostoPorKm(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>658</x><y>56</y><w>294</w><h>196</h></coordinates><panel_attributes>Chofer
+--
+-id: String
+-nombre: String
+-pagoPorViaje: double
+--
++Chofer(String, String, double)
++getId(): String
++getPagoPorViaje(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>378</y><w>196</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-viajes</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>140</y><w>378</w><h>182</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CHOFERES
+-choferes</panel_attributes><additional_attributes>250;20;10;20;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>658</x><y>294</y><w>294</w><h>196</h></coordinates><panel_attributes>Viaje
+--
+-idCamion: int
+-idChofer: String
+-kms: double
+--
++Viaje(int, String, double)
++getIdCamion(): int
++getIdChofer(): String
++getKms(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>476</y><w>378</w><h>196</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CAMIONES
+-camiones</panel_attributes><additional_attributes>250;110;10;110;10;10</additional_attributes></element></diagram>
