@@ -91,7 +91,7 @@ public class Empresa {
 			int idChofer = getIdxChofer(viaje.getIdChofer());
 			int idCamion = viaje.getIdCamion();
 
-			matrizViajesXChofer[idChofer][idCamion]++; // cantidades[idChofer][idCamion] = cantidades[idChofer][idCamion] + 1
+			matrizViajesXChofer[idChofer][idCamion]++; // matrizViajesXChofer[idChofer][idCamion] = matrizViajesXChofer[idChofer][idCamion] + 1
 		}
 		return matrizViajesXChofer;
 	}
