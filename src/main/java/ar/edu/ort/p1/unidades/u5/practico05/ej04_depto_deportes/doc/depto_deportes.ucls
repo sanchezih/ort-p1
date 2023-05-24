@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej04_depto_deportes.src.PilaDePelotas" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej04_depto_deportes/src/PilaDePelotas.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="194" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej04_depto_deportes.src.Pelota" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej04_depto_deportes/src/Pelota.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="267" x="62" y="495"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej04_depto_deportes.src.DepartamentoDeportes" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej04_depto_deportes/src/DepartamentoDeportes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="573" y="195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="4" language="java" name="ar.edu.ort.p1.unidades.u5.practico05.ej04_depto_deportes.src.TipoPelota" 
+    project="ort-p1-private" 
+    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/practico05/ej04_depto_deportes/src/TipoPelota.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="573" y="581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <association id="5">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="6" name="tipo">        
+        <position height="0" width="0" x="111" y="-192"/>      
+      </attribute>      
+      <multiplicity id="7" minimum="0" maximum="1">        
+        <position height="0" width="0" x="111" y="-192"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="8">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="9" name="pilas">        
+        <position height="0" width="0" x="20" y="-209"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="20" y="-209"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
