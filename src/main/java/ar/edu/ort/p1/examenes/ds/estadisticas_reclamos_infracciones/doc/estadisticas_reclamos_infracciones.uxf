@@ -1,0 +1,98 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>560</x><y>300</y><w>150</w><h>110</h></coordinates><panel_attributes>/Infraccion/
+--
+-valorUnidad: double
+--
+/+valorInfraccion(): double/
+#verFecha(): Fecha
+#getValorUnidad(): double
++mes(): Mes
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>310</y><w>140</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interfaz&gt;&gt;
+/Caducable/
+--
++caducada(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>330</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>310</y><w>180</w><h>80</h></coordinates><panel_attributes>Fecha
+--
+--
++cantidadDiasHastaHoy(): int
++mes():Mes</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>350</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fecha</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>460</y><w>160</w><h>80</h></coordinates><panel_attributes>ExcesoVelocidad
+--
+_CANT_UNIDADES:int = 10_
+--
++caducada(): boolean
++valorInfraccion(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>400</y><w>210</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>440</y><w>160</w><h>130</h></coordinates><panel_attributes>MalEstacionamiento
+--
+_CANT_UNIDADES:int = 7_
+_DIAS_CADUCIDAD:int= 365_
+--
++caducada(): boolean
++valorInfraccion(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>400</y><w>90</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>0</y><w>350</w><h>150</h></coordinates><panel_attributes>DireccionGeneralTransito
+--
+_CANT_TIPO_INFRACCION:int=2_
+--
++informeReclamadasPorMesTipo(): int[][]
++cantidadMalEstacionamientoCaducadas(): int
++infraccionesReclamadasPorValor(): ListaOrdenadaPorValor
+-procesarReclamo(Reclamo, int[][]):void
+-calcularColumna(Infraccion):int
+-procesarReclamo(Reclamo): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>100</y><w>160</w><h>100</h></coordinates><panel_attributes>Reclamo
+--
+-dni: String
+-aceptado: boolean
+--
++getInfraccion(): Infraccion</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>190</y><w>130</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-infraccionReclamada</panel_attributes><additional_attributes>20;110;20;60;100;60;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>20</y><w>200</w><h>140</h></coordinates><panel_attributes>ColaNodos&lt;Ciudadano&gt;
+--
+--
++ ColaNodos()
++ ColaNodos(int)
++ add(T): void
++ get(): T
++ remove(): T
++ isEmpty(): boolean
++ isFull(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>60</y><w>160</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;40;10;10;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>90</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>30;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>30</y><w>240</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-reclamosAtendidos</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>300</y><w>130</w><h>230</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Mes
+--
+_ENERO_
+_FEBRERO_
+_MARZO_
+_ABRIL_
+_MAYO_
+_JUNIO_
+_JULIO_
+_AGOSTO_
+_SEPTIEMBRE_
+_OCTUBRE_
+_NOVIEMBRE_
+_DICIEMBRE_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>190</y><w>260</w><h>70</h></coordinates><panel_attributes>ListaOrdenadaPorValor&lt;Double, Infraccion&gt;
+--
+--
++ compare(T,T): int
++ compareByKey(K,T): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>140</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>250</y><w>90</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>70;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>140</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>260</w><h>260</h></coordinates><panel_attributes>/ListaOrdenadaNodos&lt;K,T&gt;/
+--
+--
++ ListaOrdenadaNodos()
++ ListaOrdenadaNodos(int)
++ add(T): void
++ get(int): T
++ remove(T): boolean
++ removeAt(int): T
++ removeByKey(K): T
++ isEmpty(): boolean
++ isFull(): boolean
++ exists(K): boolean
++ iterator(): Iterator&lt;T&gt;
++ search(K): T
++ size(): int
+/+ compare(T,T): int/
+/+ compareByKey(K,T): int/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>220</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element></diagram>
