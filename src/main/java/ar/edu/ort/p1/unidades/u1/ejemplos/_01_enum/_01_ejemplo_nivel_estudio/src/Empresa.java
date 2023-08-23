@@ -2,6 +2,11 @@ package ar.edu.ort.p1.unidades.u1.ejemplos._01_enum._01_ejemplo_nivel_estudio.sr
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author ihsanch
+ *
+ */
 public class Empresa {
 
 	private ArrayList<Persona> personas;
@@ -14,6 +19,10 @@ public class Empresa {
 		this.personas.add(persona);
 	}
 
+	/**
+	 * 
+	 * @param nivelEstudio
+	 */
 	public void mostrarPorNivel(NivelDeEstudio nivelEstudio) {
 		for (Persona persona : personas) {
 			if (persona.getNivelDeEstudio() == nivelEstudio) {

@@ -2,7 +2,7 @@ package ar.edu.ort.p1.unidades.u1.ejemplos._02_final._01_clase_final.src;
 
 /**
  * En Java podemos sellar una clase para evitar que otras clases hereden de la
- * misma mediante la palabra clave 'final' previo a la declaración de la clase:
+ * misma mediante la palabra clave 'final' previo a la declaracion de la clase:
  * 
  * public final class [Nombre de la clase] { }
  * 
@@ -34,6 +34,6 @@ public final class Punto {
 		else if (x > 0 && y < 0)
 			System.out.println("Se encuentra en el cuarto cuadrante.");
 		else
-			System.out.println("El punto no está en un cuadrante.");
+			System.out.println("El punto no esta en un cuadrante.");
 	}
 }
