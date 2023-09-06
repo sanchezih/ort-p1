@@ -5,7 +5,7 @@ public class EjemploPrivate {
 	private String unAtributoPrivado; // Este atributo es privado
 	private int contador = 0; // Contador de registro
 
-	/*------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Si un atributo es privado podemos crear metodo get y set para este y permitir

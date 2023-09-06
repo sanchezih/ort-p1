@@ -8,7 +8,7 @@ public class Vehiculo {
 	private Color color;
 	private final int numSerie; // Una vez grabado el nro de serie de un vehiculo, no se deberia modificar
 
-	/*------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Constructor
@@ -21,7 +21,7 @@ public class Vehiculo {
 		this.numSerie = numSerie;
 	}
 
-	/*------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
 	public Color getColor() {
 		return color;

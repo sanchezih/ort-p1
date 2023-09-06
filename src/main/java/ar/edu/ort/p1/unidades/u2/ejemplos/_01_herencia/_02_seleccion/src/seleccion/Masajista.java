@@ -5,7 +5,7 @@ public class Masajista extends IntegranteDeSeleccion {
 	private String titulo;
 	private int aniosExperiencia;
 
-	/*------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * 
@@ -28,7 +28,7 @@ public class Masajista extends IntegranteDeSeleccion {
 		this.aniosExperiencia = aniosExperiencia;
 	}
 
-	/*------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
 	public void darMasaje() {
 		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy dando un masaje...");

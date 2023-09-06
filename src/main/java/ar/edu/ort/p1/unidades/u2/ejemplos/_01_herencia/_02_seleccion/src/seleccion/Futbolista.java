@@ -5,8 +5,8 @@ public class Futbolista extends IntegranteDeSeleccion {
 	private int dorsal;
 	private String demarcacion;
 
-	/*------------------------------------------------------------------------*/
-
+	/*----------------------------------------------------------------------------*/
+	
 	/**
 	 * 
 	 */
@@ -29,7 +29,7 @@ public class Futbolista extends IntegranteDeSeleccion {
 		this.demarcacion = demarcacion;
 	}
 
-	/*------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
 	public void jugarPartido() {
 		System.out.println("\tSoy " + this.getNombre() + " " + this.getApellido() + " y estoy jugando un partido...");
