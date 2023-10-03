@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.examenes.oop.estadisticas_carritos_compras.src;
 
+import ar.edu.ort.p1.util.Fecha;
+
 public class TransferenciaBancaria extends MetodoDePago {
 
 	private final static double REC = 0.05;

@@ -2,6 +2,8 @@ package ar.edu.ort.p1.examenes.oop.estadisticas_carritos_compras.src;
 
 import java.util.ArrayList;
 
+import ar.edu.ort.p1.util.Fecha;
+
 public class Main {
 
 	public static void main(String[] args) {

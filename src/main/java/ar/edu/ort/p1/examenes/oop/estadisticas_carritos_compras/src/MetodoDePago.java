@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.examenes.oop.estadisticas_carritos_compras.src;
 
+import ar.edu.ort.p1.util.Fecha;
+
 public abstract class MetodoDePago {
 
 	private CarritoDeCompra carritoDeCompra;
@@ -20,7 +22,7 @@ public abstract class MetodoDePago {
 	 * @return
 	 */
 	public int getDiasDeDemoraDePago() {
-		return Fecha.diasTranscurridos(carritoDeCompra.getFechaDeCompra(), fechaDePago);
+		return Fecha.diasTranscurridosEntreFechas(carritoDeCompra.getFechaDeCompra(), fechaDePago);
 	}
 
 	/**
