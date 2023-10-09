@@ -1,0 +1,43 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>270</y><w>250</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Empresa
+--
+_-CANT_CAMIONES: int = 10_
+_-CANT_CHOFERES: int = 20_
+
+--
++Empresa()
++obtenerCostosDeViajes(): double[]
+-getIdxChofer(String): int
++obtenerViajesPorChoferCamion(): int[][]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>470</y><w>210</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Camion
+--
+-id: int
+-costoPorKm: double
+--
++Camion(int, double)
++getCostoPorKm(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>70</y><w>210</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Chofer
+--
+-id: String
+-nombre: String
+-pagoPorViaje: double
+--
++Chofer(String, String, double)
++getId(): String
++getPagoPorViaje(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>340</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-viajes</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>130</y><w>240</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CHOFERES
+-choferes</panel_attributes><additional_attributes>220;20;10;20;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>270</y><w>210</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Viaje
+--
+-idCamion: int
+-idChofer: String
+-kms: double
+--
++Viaje(int, String, double)
++getIdCamion(): int
++getIdChofer(): String
++getKms(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>430</y><w>240</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CAMIONES
+-camiones</panel_attributes><additional_attributes>220;110;10;110;10;10</additional_attributes></element></diagram>

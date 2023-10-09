@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>60</y><w>320</w><h>240</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+CicloDeCharlas
+--
+_-LIMITE_EXPECTADORES: int = 50_
+_-CANT_TANDAS: int = 2_
+_-MAX_CHARLAS: int = 5_
+_-DIAS_ENTRE_TANDAS: int = 10_
+-titulo: String
+-cantEspectadores: int
+--
++CicloDeCharlas(String, Pelicula[], Fecha, int)
+-validarDatos(Pelicula[],int): void
+-crearCharlas(Pelicula[], Fecha, int): Charla[][]
++registrarEspectadorEnCharla(Espectador, int): Ticket
++verCartelera(): void
+-mostrarCharlas(int): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>240</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Fecha
+--
+-dia: int
+-mes: int
+-anio: int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>440</y><w>250</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Charla
+--
+-numero: int
+-cantVacantes: int
+--
++Charla(Fecha, int, Pelicula, int)
++getTitulo(): String
++agregarEspectador(Espectador): boolean
+-reducirVacantes(): void
++mostrar(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>290</y><w>210</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1= [CANT_TANDAS][MAX_CHARLAS]
+-charlas</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>350</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fecha</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>60</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Ticket
+--
+-titulo: String
+-nombreEspectador: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>150</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fecha</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>440</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Pelicula
+--
+-titulo: String
+--
++Pelicula(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>470</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-pelicula</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>570</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Espectador
+--
+-nombre: String
+--
++Espectador(String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>570</y><w>310</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=cantVacantes
+-expectadores</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>250</y><w>210</w><h>340</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>190;320;190;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>260</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>110</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element></diagram>
