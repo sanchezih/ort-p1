@@ -2,9 +2,9 @@ package ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada;
 
 import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Automovil;
 import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Empleado;
-import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaEmpleadosPorEdad;
-import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaEmpleadosPorModeloAutomovilDesc;
-import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaEmpleadosPorNombreDesc;
+import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorEdad;
+import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorModeloAutomovilDesc;
+import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorNombreDesc;
 
 public class Main {
 
@@ -26,13 +26,13 @@ public class Main {
 
 		System.out.println("Muestro a los empleados por edad (ASC)");
 
-		ListaEmpleadosPorEdad listaEmpleadosPorEdadAsc = new ListaEmpleadosPorEdad();
-		listaEmpleadosPorEdadAsc.add(e1);
-		listaEmpleadosPorEdadAsc.add(e2);
-		listaEmpleadosPorEdadAsc.add(e3);
-		listaEmpleadosPorEdadAsc.add(e4);
+		ListaDeEmpleadosPorEdad listaDeEmpleadosPorEdadAsc = new ListaDeEmpleadosPorEdad();
+		listaDeEmpleadosPorEdadAsc.add(e1);
+		listaDeEmpleadosPorEdadAsc.add(e2);
+		listaDeEmpleadosPorEdadAsc.add(e3);
+		listaDeEmpleadosPorEdadAsc.add(e4);
 
-		for (Empleado empleado : listaEmpleadosPorEdadAsc) {
+		for (Empleado empleado : listaDeEmpleadosPorEdadAsc) {
 			System.out.println("\t-> " + empleado.toString());
 		}
 
@@ -41,13 +41,13 @@ public class Main {
 		System.out.println();
 		System.out.println("Muestro a los empleados por modelo de automovil (DESC)");
 
-		ListaEmpleadosPorModeloAutomovilDesc listaEmpleadosPorModeloAutomovilDesc = new ListaEmpleadosPorModeloAutomovilDesc();
-		listaEmpleadosPorModeloAutomovilDesc.add(e1);
-		listaEmpleadosPorModeloAutomovilDesc.add(e2);
-		listaEmpleadosPorModeloAutomovilDesc.add(e3);
-		listaEmpleadosPorModeloAutomovilDesc.add(e4);
+		ListaDeEmpleadosPorModeloAutomovilDesc listaDeEmpleadosPorModeloAutomovilDesc = new ListaDeEmpleadosPorModeloAutomovilDesc();
+		listaDeEmpleadosPorModeloAutomovilDesc.add(e1);
+		listaDeEmpleadosPorModeloAutomovilDesc.add(e2);
+		listaDeEmpleadosPorModeloAutomovilDesc.add(e3);
+		listaDeEmpleadosPorModeloAutomovilDesc.add(e4);
 
-		for (Empleado empleado : listaEmpleadosPorModeloAutomovilDesc) {
+		for (Empleado empleado : listaDeEmpleadosPorModeloAutomovilDesc) {
 			System.out.println("\t-> " + empleado.toString());
 		}
 
@@ -56,13 +56,13 @@ public class Main {
 		System.out.println();
 		System.out.println("Muestro a los empleados alfabeticamente (DESC)");
 
-		ListaEmpleadosPorNombreDesc listaEmpleadosPorAlfabeticaDesc = new ListaEmpleadosPorNombreDesc();
-		listaEmpleadosPorAlfabeticaDesc.add(e1);
-		listaEmpleadosPorAlfabeticaDesc.add(e2);
-		listaEmpleadosPorAlfabeticaDesc.add(e3);
-		listaEmpleadosPorAlfabeticaDesc.add(e4);
+		ListaDeEmpleadosPorNombreDesc listaDeEmpleadosPorAlfabeticaDesc = new ListaDeEmpleadosPorNombreDesc();
+		listaDeEmpleadosPorAlfabeticaDesc.add(e1);
+		listaDeEmpleadosPorAlfabeticaDesc.add(e2);
+		listaDeEmpleadosPorAlfabeticaDesc.add(e3);
+		listaDeEmpleadosPorAlfabeticaDesc.add(e4);
 
-		for (Empleado empleado : listaEmpleadosPorAlfabeticaDesc) {
+		for (Empleado empleado : listaDeEmpleadosPorAlfabeticaDesc) {
 			System.out.println("\t-> " + empleado.toString());
 		}
 
@@ -71,19 +71,19 @@ public class Main {
 		System.out.println();
 		System.out.println("Busco empleados");
 
-		System.out.println("\t-> Alberto: \t" + listaEmpleadosPorAlfabeticaDesc.search("Alberto"));
-		System.out.println("\t-> noexiste: \t" + listaEmpleadosPorAlfabeticaDesc.search("noexiste"));
-		System.out.println("\t-> Cristian: \t" + listaEmpleadosPorAlfabeticaDesc.search("Cristian"));
+		System.out.println("\t-> Alberto: \t" + listaDeEmpleadosPorAlfabeticaDesc.search("Alberto"));
+		System.out.println("\t-> noexiste: \t" + listaDeEmpleadosPorAlfabeticaDesc.search("noexiste"));
+		System.out.println("\t-> Cristian: \t" + listaDeEmpleadosPorAlfabeticaDesc.search("Cristian"));
 
 		/*----------------------------------------------------------------------------*/
 
 		System.out.println();
 		System.out.println("Busco autos por anio");
 
-		System.out.println("\t-> 2018: \t" + listaEmpleadosPorModeloAutomovilDesc.search("2018"));
-		System.out.println("\t-> 2009: \t" + listaEmpleadosPorModeloAutomovilDesc.search("2009"));
-		System.out.println("\t-> 2003: \t" + listaEmpleadosPorModeloAutomovilDesc.search("2003"));
-		System.out.println("\t-> 2020: \t" + listaEmpleadosPorModeloAutomovilDesc.search("2020"));
+		System.out.println("\t-> 2018: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2018"));
+		System.out.println("\t-> 2009: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2009"));
+		System.out.println("\t-> 2003: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2003"));
+		System.out.println("\t-> 2020: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2020"));
 
 	}
 

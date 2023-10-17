@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.pojo;
+package ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.entidades;
 
 public class Persona {
 

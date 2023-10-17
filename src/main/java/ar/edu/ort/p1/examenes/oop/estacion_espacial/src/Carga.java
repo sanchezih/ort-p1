@@ -5,11 +5,14 @@ public class Carga implements Manifestable {
 	private String descripcion;
 	private double volumen;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Carga(String descripcion, double volumen) {
-		super();
 		this.descripcion = descripcion;
 		this.volumen = volumen;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	@Override
 	public void imprimirManifiesto() {

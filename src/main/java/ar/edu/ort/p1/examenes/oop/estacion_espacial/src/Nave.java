@@ -6,11 +6,15 @@ public abstract class Nave implements Manifestable {
 	private String ultimoPlanetaVisitado;
 	private int cantTripulantes;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Nave(String planetaOrigen, String ultimoPlanetaVisitado, int cantTripulantes) {
 		this.planetaOrigen = planetaOrigen;
 		this.ultimoPlanetaVisitado = ultimoPlanetaVisitado;
 		this.cantTripulantes = cantTripulantes;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public int getCantTripulantes() {
 		return cantTripulantes;
@@ -26,6 +30,6 @@ public abstract class Nave implements Manifestable {
 	}
 
 	public abstract void completarManifiesto();
-	
+
 	public abstract boolean sePuedeEstacionar();
 }

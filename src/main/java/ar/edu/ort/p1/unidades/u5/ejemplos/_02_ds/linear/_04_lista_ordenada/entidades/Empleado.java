@@ -6,11 +6,15 @@ public class Empleado {
 	private int edad;
 	private Automovil automovil;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Empleado(String nombre, int edad, Automovil automovil) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.automovil = automovil;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public String getNombre() {
 		return nombre;

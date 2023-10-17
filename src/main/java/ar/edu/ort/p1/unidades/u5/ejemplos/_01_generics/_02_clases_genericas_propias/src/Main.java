@@ -2,8 +2,8 @@ package ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_pro
 
 import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.clases_generias_propias.MiGenerica1;
 import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.clases_generias_propias.MiGenerica2;
-import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.pojo.Automovil;
-import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.pojo.Persona;
+import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.entidades.Automovil;
+import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._02_clases_genericas_propias.src.entidades.Persona;
 
 /**
  * https://www.youtube.com/watch?v=-KRz46_gGoM

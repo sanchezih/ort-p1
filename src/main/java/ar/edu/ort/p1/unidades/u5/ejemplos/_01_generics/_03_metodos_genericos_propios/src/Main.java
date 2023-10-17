@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._03_metodos_genericos_propios.src;
 
-import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._03_metodos_genericos_propios.src.pojo.Persona;
+import ar.edu.ort.p1.unidades.u5.ejemplos._01_generics._03_metodos_genericos_propios.src.entidades.Persona;
 
 /**
  * https://www.youtube.com/watch?v=7Ip_N1fbOmQ

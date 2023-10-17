@@ -3,17 +3,23 @@ package ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.list
 import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Empleado;
 import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 
-public class ListaEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Empleado> {
+public class ListaDeEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Empleado> {
 
 	/**
-	 * Metodo utilizado para comparar dos elementos entre si. Es invocado al momento
-	 * de insertar un elemento en la lista.
+	 * Este metodo es utilizado para comparar dos elementos entre si.
 	 * 
-	 * Premisas: El 1er parametro, es el elemento nuevo, el que se quiere insertar.
+	 * Es invocado al momento de insertar un elemento en la lista.
+	 * 
+	 * Premisas:
+	 * 
+	 * El 1er parametro, es el elemento nuevo, el que se quiere insertar en la
+	 * lista.
+	 * 
 	 * El 2do parametro, es el elemento que extraigo de la estructura.
 	 * 
-	 * Si trabajo con una lista ordenada ASC: param1 - param2. Si trabajo con una
-	 * lista ordenada DESC: param2 - param1
+	 * Si trabajo con una lista ordenada ASC: param1 - param2.
+	 * 
+	 * Si trabajo con una lista ordenada DESC: param2 - param1
 	 * 
 	 * Si el metodo devuelve...
 	 * 

@@ -3,7 +3,7 @@ package ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.list
 import ar.edu.ort.p1.unidades.u5.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Empleado;
 import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 
-public class ListaEmpleadosPorModeloAutomovilDesc extends ListaOrdenadaNodos<String, Empleado> {
+public class ListaDeEmpleadosPorModeloAutomovilDesc extends ListaOrdenadaNodos<String, Empleado> {
 
 	/**
 	 * 

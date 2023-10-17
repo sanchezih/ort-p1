@@ -14,6 +14,7 @@ public class ColaArray<T> extends TdaArray<T> implements Cola<T> {
 	public ColaArray(Class<T> tipo, int tope) {
 		super(tipo, tope);
 	}
+
 	/*----------------------------------------------------------------------------*/
 
 	@Override

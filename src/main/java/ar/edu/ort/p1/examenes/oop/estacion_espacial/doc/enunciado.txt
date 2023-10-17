@@ -1,21 +1,35 @@
-La estacion espacial Atlantis dispone de puntos de atraque que alquila a naves espaciales de distinto tipo. Cada uno de estos puntos de atraque puede "enganchar" solo una nave, de las cuales por ahora hay dos tipos principales:
+La estacion espacial Atlantis dispone de puntos de atraque que alquila a naves
+espaciales de distinto tipo. Cada uno de estos puntos de atraque puede
+"enganchar" solo una nave, de las cuales por ahora hay dos tipos principales:
 
-Las naves de tipo Cargo, dedicadas al transporte de mercaderia, guardan la informacion de su carga: descripcion y volumen en metros cuadrados. Las naves de tipo Cruiser, que transportan pasajeros, guardan la cantidad actual de pasajeros. Ambas naves, por ser comerciales, guardan el nombre de la compania naviera.
+Las naves de tipo Cargo, dedicadas al transporte de mercaderia, guardan la
+informacion de su carga: descripcion y volumen en metros cuadrados. Las naves de
+tipo Cruiser, que transportan pasajeros, guardan la cantidad actual de pasajeros.
+Ambas naves, por ser comerciales, guardan el nombre de la compania naviera.
 
-Antes de atracar, todas las naves deben informar un "manifiesto" que en todos los casos consta de datos que hay guardados en cada una de ellas:
+Antes de atracar, todas las naves deben informar un "manifiesto" que en todos
+los casos consta de datos que hay guardados en cada una de ellas:
 	- El nombre del planeta de origen de la nave.
 	- El nombre del ultimo planeta visitado.
 	- La cantidad de tripulantes.
 
 Cada tipo de nave agrega datos particulares al manifiesto:
 	- Cargo: el detalle de la carga con formato: "descripcion (volumen m3)".
-	- Cruiser: El porcentaje de seres a bordo que son pasajeros, respecto al total (pasajeros + tripulantes).
+	- Cruiser: El porcentaje de seres a bordo que son pasajeros, respecto al
+	total (pasajeros + tripulantes).
 
 Se pide:
-Diseñar el diagrama UML completo que resuelva el problema propuesto agregando lo que consideres necesario a lo previamente enunciado.
-Desarrollar en NS+ los siguientes puntos (incluyendo los metodos derivados que utilices):
-	- Ejercicio A: imprimirManifiestos(), que muestre por consola los manifiestos de todas las naves que haya estacionadas.
-	- Ejercicio B: estacionarNave(...), que reciba una nave y la intente estacionar en el primer punto de atraque libre, siempre que la nave este en condiciones de estacionarse:
-		- Las naves Cargo pueden estacionarse si y solo si el volumen de carga no supera 100 m3.
+Diseñar el diagrama UML completo que resuelva el problema propuesto agregando lo
+que consideres necesario a lo previamente enunciado.
+
+Desarrollar en NS+ los siguientes puntos (incluyendo los metodos derivados que
+utilices):
+	- Ejercicio A: imprimirManifiestos(), que muestre por consola los
+	manifiestos de todas las naves que haya estacionadas.
+	- Ejercicio B: estacionarNave(...), que reciba una nave y la intente
+	estacionar en el primer punto de atraque libre, siempre que la nave este en
+	condiciones de estacionarse:
+		- Las naves Cargo pueden estacionarse si y solo si el volumen de carga
+		no supera 100 m3.
 		- Las naves Cruiser pueden estacionarse si y solo si hay pasajeros.
 	Devuelve si se pudo estacionar o no.
