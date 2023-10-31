@@ -52,13 +52,13 @@ De los empleados sabemos su nombre y apellido y el numero de legajo. Los
 empleados deberan resolver los tickets que les sean asignados en el orden en el
 cual les fueron asignados.
 
-Basado en el enunciado descripto, realiza:
-	A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
-	metodos.
-    B) El metodo reporteTiempoPromedioPorPrioridad(), de la clase que
-    corresponda, que en base a las tareas ingresadas y no asignadas debe
-    calcular y devolver (no mostrar por consola) el tiempo promedio estimado
-    para cada prioridad.
-    C) El metodo asignarTickets() de la clase que corresponda, que debe asignar
-    a los empleados todos los tickets disponibles, dejando la estructura vacia.
-    La asignacion debe hacerse como se indico anteriormente.
+Se pide:
+	A. El diagrama de clases que lo modelice, con sus relaciones, atributos y
+	   metodos.
+    B. El metodo reporteTiempoPromedioPorPrioridad(), de la clase que
+       corresponda, que en base a las tareas ingresadas y no asignadas debe
+       calcular y devolver (no mostrar por consola) el tiempo promedio estimado
+       para cada prioridad.
+    C. El metodo asignarTickets() de la clase que corresponda, que debe asignar
+       a los empleados todos los tickets disponibles, dejando la estructura
+       vacia. La asignacion debe hacerse como se indico anteriormente.

@@ -6,8 +6,6 @@ public class Medico extends Persona {
 
 	/*----------------------------------------------------------------------------*/
 
-	// Constructores
-
 	/**
 	 * 
 	 * @param dni

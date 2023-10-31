@@ -7,6 +7,19 @@ public class Bug extends Error {
 
 	private int tiempoEstimado;
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * 
+	 * @param nombreCliente
+	 * @param unidadNegocio
+	 * @param fechaCarga
+	 * @param titulo
+	 * @param empleadoQueLoReporto
+	 * @param descripcion
+	 * @param nombrePersonaQueLoDetecto
+	 * @param tiempoEstimado
+	 */
 	public Bug(String nombreCliente, String unidadNegocio, String fechaCarga, String titulo,
 			Empleado empleadoQueLoReporto, String descripcion, String nombrePersonaQueLoDetecto, int tiempoEstimado) {
 		super(nombreCliente, unidadNegocio, fechaCarga, titulo, empleadoQueLoReporto, descripcion,
@@ -14,6 +27,11 @@ public class Bug extends Error {
 		this.tiempoEstimado = tiempoEstimado;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * 
+	 */
 	@Override
 	public Prioridad calcularPrioridad() {
 		int tiempoEstimado = obtenerTiempoDeResolucion();

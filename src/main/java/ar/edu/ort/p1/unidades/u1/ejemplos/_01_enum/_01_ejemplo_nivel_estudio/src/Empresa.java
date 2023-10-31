@@ -11,9 +11,13 @@ public class Empresa {
 
 	private ArrayList<Persona> personas;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Empresa() {
 		this.personas = new ArrayList<>();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public void agregarPersona(Persona persona) {
 		this.personas.add(persona);

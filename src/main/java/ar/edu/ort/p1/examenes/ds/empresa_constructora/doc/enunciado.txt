@@ -35,10 +35,10 @@ Los puentes son de un determinado tipo (Viga, Arco o Colgante). La duracion de
     de arco sera 20 y para el restante 30.
 
 Basado en el enunciado descripto, realiza:
-    A) El diagrama de clases que lo modelice, con sus relaciones, atributos y
-    metodos.
-    B) El metodo estimar(), de la clase que corresponda, que debe devolver (no
-    mostrar por consola) el tiempo estimado de cada obra.
-    C) El metodo tipoDeObraPorDificultad() de la clase que corresponda, que debe
-    devolver (no mostrar por consola) la cantidad de obras que hay registradas
-    para realizar en funcion de su tipo y dificultad.
+    A. El diagrama de clases que lo modelice, con sus relaciones, atributos y 
+       metodos.
+    B. El metodo estimar(), de la clase que corresponda, que debe devolver (no
+       mostrar por consola) el tiempo estimado de cada obra.
+    C. El metodo tipoDeObraPorDificultad() de la clase que corresponda, que debe
+       devolver (no mostrar por consola) la cantidad de obras que hay
+       registradas para realizar en funcion de su tipo y dificultad.

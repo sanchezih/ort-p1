@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.examenes.ds.actas_materia.src;
+package ar.edu.ort.p1.examenes.ds.generador_de_actas_para_finales.src;
 
 import ar.edu.ort.tp1.u5.tda.impl.ColaNodos;
 

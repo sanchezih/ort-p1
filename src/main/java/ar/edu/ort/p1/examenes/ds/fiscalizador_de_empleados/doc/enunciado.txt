@@ -21,16 +21,17 @@ considerar alguna  irregularidad en algun empleado particular:
 	-Profesores: Cuando poseen algun cargo de mayor nivel que sus estudios** o
 	si tienen mas de 3 cargos nocturnos.
 
-* Asumi que contas con la clase Fecha y un metodo estatico anioActual() ya
+* Asumi que contas con la clase Fecha y un metodo estatico getAnioActual() ya
 implementado que retorna el anio actual para calcular la antiguedad.
 
 ** Por ejemplo, si el profesor tiene un cargo de posgrado pero su titulo es de
 menor nivel (terciario o universitario)
 
-Basado en el enunciado descripto, realiza:
-	1. El diagrama de clases que lo modelice, con sus relaciones, atributos y
+Se pide:
+	A. El diagrama de clases que lo modelice, con sus relaciones, atributos y
 	metodos.
-	2. El metodo empleadosEnFalta(), de la clase que corresponda, que debe
+	
+	B. El metodo empleadosEnFalta(), de la clase que corresponda, que debe
 	devolver (no mostrar por consola) a los empleados que hayan presentado
 	alguna irregularidad, en una coleccion que permita accederlos rapidamente
 	conociendo su DNI. Deben desarrollarse tambien los metodos asociados que se

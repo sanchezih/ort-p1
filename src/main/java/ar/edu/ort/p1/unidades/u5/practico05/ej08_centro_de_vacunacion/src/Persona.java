@@ -12,8 +12,6 @@ public class Persona implements Vacunable {
 
 	/*----------------------------------------------------------------------------*/
 
-	// Constructores
-
 	/**
 	 * 
 	 * @param dni

@@ -11,7 +11,6 @@ public class Proceso implements Auditable {
 	/*----------------------------------------------------------------------------*/
 
 	public Proceso(String codigo, int cantActividades, boolean impactaCliente, boolean afectaPatrimonioCompania) {
-		super();
 		this.codigo = codigo;
 		this.cantActividades = cantActividades;
 		this.impactaCliente = impactaCliente;

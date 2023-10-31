@@ -88,8 +88,8 @@ public class CentroDeVacunacion {
 		}
 	}
 
-	public void agregarEnCola(int nroDeCola, Persona persona) {
-		this.colasDePersonas[nroDeCola].add(persona);
+	public void agregarPersonaEnCola(int colaNumero, Persona persona) {
+		this.colasDePersonas[colaNumero].add(persona);
 	}
 
 	public void mostrarColaPorPrioridadYOrden() {

@@ -17,6 +17,8 @@ public enum Continente {
 	private long cantHabitantes;
 	private double superficie;
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * Constructor private para evitar que se haga new
 	 * 
@@ -27,6 +29,8 @@ public enum Continente {
 		this.cantHabitantes = cantHabitantes;
 		this.superficie = superficie;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * 

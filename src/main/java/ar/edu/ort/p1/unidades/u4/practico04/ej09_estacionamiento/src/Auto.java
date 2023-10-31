@@ -47,7 +47,7 @@ public class Auto {
 	 */
 	public int getMesesImpagos() {
 		int cantMesesImpagos = -1;
-		int idxMesBajo = (this.fechaIngreso.getAnio() < Fecha.anioActual()) ? 0 : this.fechaIngreso.getMes();
+		int idxMesBajo = (this.fechaIngreso.getAnio() < Fecha.getAnioActual()) ? 0 : this.fechaIngreso.getMes();
 		int idxMesAlto = Fecha.hoy().getMes();
 
 		for (int i = idxMesAlto; i >= idxMesBajo; i--) {

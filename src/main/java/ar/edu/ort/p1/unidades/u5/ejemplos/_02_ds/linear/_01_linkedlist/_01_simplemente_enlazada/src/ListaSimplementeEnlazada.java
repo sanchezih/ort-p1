@@ -10,10 +10,17 @@ public class ListaSimplementeEnlazada<T> extends TdaNodos<T> implements LinkedLi
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * 
+	 */
 	public ListaSimplementeEnlazada() {
 		super();
 	}
 
+	/**
+	 * 
+	 * @param limite
+	 */
 	public ListaSimplementeEnlazada(int limite) {
 		super(limite);
 	}

@@ -10,7 +10,6 @@ public class Compromiso {
 	/*----------------------------------------------------------------------------*/
 
 	public Compromiso(String descripcion, Fecha fechaCompromiso) {
-		super();
 		this.descripcion = descripcion;
 		this.fechaCompromiso = fechaCompromiso;
 	}

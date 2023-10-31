@@ -1,4 +1,4 @@
-package ar.edu.ort.p1.examenes.ds.actas_materia.src;
+package ar.edu.ort.p1.examenes.ds.generador_de_actas_para_finales.src;
 
 public class Acta {
 

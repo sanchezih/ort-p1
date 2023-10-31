@@ -11,6 +11,9 @@ public class ListaDoblementeEnlazada<T> implements LinkedList<T> {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * 
+	 */
 	public ListaDoblementeEnlazada() {
 		this.head = null;
 		this.tail = null;

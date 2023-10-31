@@ -6,7 +6,7 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/_02_ds/linear/_01_linkedlist/_01_simplemente_enlazada/src/ListaSimplementeEnlazada.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="406" x="62" y="338"/>    
+    <position height="315" width="406" x="62" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,9 +14,9 @@
     </display>  
   </class>  
   <interface id="2" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1-private" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-7eaf1931a1-1/ort-p1-lib-main-7eaf1931a1-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="189" width="193" x="508" y="338"/>    
+    <position height="-1" width="-1" x="661" y="510"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,9 +24,9 @@
     </display>  
   </interface>  
   <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1-private" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-7eaf1931a1-1/ort-p1-lib-main-7eaf1931a1-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="99" width="140" x="508" y="37"/>    
+    <position height="-1" width="-1" x="972" y="491"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,9 +34,9 @@
     </display>  
   </interface>  
   <class id="4" language="java" name="ar.edu.ort.tp1.u5.tda.impl.TdaNodos" project="ort-p1-private" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-7eaf1931a1-1/ort-p1-lib-main-7eaf1931a1-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="261" width="135" x="62" y="37"/>    
+    <position height="-1" width="-1" x="452" y="546"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,9 +44,9 @@
     </display>  
   </class>  
   <class id="5" language="java" name="ar.edu.ort.tp1.u5.tda.impl.Nodo" project="ort-p1-private" 
-    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-7eaf1931a1-1/ort-p1-lib-main-7eaf1931a1-1.jar" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="171" width="121" x="41" y="675"/>    
+    <position height="-1" width="-1" x="155" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,65 +57,56 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/u5/ejemplos/_02_ds/linear/_01_linkedlist/LinkedList.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="273" x="285" y="675"/>    
+    <position height="-1" width="-1" x="830" y="179"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <association id="7">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="8" name="next">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="9" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="10">    
+  <dependency id="7">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <realization id="11">    
+  </dependency>  
+  <dependency id="8">    
     <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <generalization id="12">    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="9">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <realization id="13">    
+  <realization id="10">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </realization>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="15">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="16" name="last">        
-        <position height="0" width="0" x="0" y="0"/>      
+  <association id="11">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="12" name="first">        
+        <position height="0" width="0" x="54" y="-253"/>      
       </attribute>      
-      <multiplicity id="17" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="54" y="-253"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="18">    
-    <bendpoint x="31" y="338"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="19" name="first">        
-        <position height="0" width="0" x="0" y="0"/>      
+  <dependency id="14">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="15">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="16">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="17" name="next">        
+        <position height="0" width="0" x="54" y="-253"/>      
       </attribute>      
-      <multiplicity id="20" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="54" y="-253"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    

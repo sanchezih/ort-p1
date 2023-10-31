@@ -11,6 +11,8 @@ public class Persona {
 	private String apellido;
 	private NivelDeEstudio nivelDeEstudio;
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * 
 	 * @param nombre
@@ -22,6 +24,8 @@ public class Persona {
 		this.apellido = apellido;
 		this.nivelDeEstudio = nivelDeEstudio;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public NivelDeEstudio getNivelDeEstudio() {
 		return nivelDeEstudio;

@@ -8,17 +8,20 @@ public class Automovil {
 	private double precio;
 	private static double descuento;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Automovil() {
 	}
 
 	public Automovil(String marca, String patente, String color, double precio) {
-		super();
 		this.marca = marca;
 		this.patente = patente;
 		this.color = color;
 		this.precio = precio;
 		Automovil.descuento = 10; // De esta manera se referencia a una variable de clase
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * Desde un metodo de instancia, puedo trabajar con una variable de clase. Lo

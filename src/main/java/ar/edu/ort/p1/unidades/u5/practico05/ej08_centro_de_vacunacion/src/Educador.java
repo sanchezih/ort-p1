@@ -6,8 +6,6 @@ public class Educador extends Persona {
 
 	/*----------------------------------------------------------------------------*/
 
-	// Constructores
-	
 	/**
 	 * 
 	 * @param dni
@@ -27,7 +25,7 @@ public class Educador extends Persona {
 	@Override
 	public int getPrioridad() {
 		int prioridad = PRIORIDAD_MEDIA;
-		
+
 		if ((super.getPrioridad() == PRIORIDAD_MAXIMA) || this.nivelDeEducacion == NivelDeEducacion.INICIAL) {
 			prioridad = PRIORIDAD_MAXIMA;
 		}
