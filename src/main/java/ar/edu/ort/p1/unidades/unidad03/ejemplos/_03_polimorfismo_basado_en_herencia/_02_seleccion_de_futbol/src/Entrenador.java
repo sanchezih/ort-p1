@@ -4,6 +4,8 @@ public class Entrenador extends IntegranteDeSeleccion {
 
 	private int idFederacion;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Entrenador() {
 		super();
 	}
@@ -12,6 +14,8 @@ public class Entrenador extends IntegranteDeSeleccion {
 		super(id, nombre, apellido, edad);
 		this.idFederacion = idFederacion;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	@Override
 	public void participarEnEntrenamiento() {

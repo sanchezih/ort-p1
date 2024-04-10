@@ -6,7 +6,7 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad03/ejemplos/_03_polimorfismo_basado_en_herencia/_01_profesores_universitarios/src/Profesor.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="193" width="180" x="89" y="288"/>    
+    <position height="-1" width="-1" x="407" y="358"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -18,7 +18,7 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad03/ejemplos/_03_polimorfismo_basado_en_herencia/_01_profesores_universitarios/src/ProfesorTitular.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="85" width="209" x="41" y="521"/>    
+    <position height="-1" width="-1" x="590" y="528"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad03/ejemplos/_03_polimorfismo_basado_en_herencia/_01_profesores_universitarios/src/ProfesorSuplente.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="157" width="268" x="290" y="521"/>    
+    <position height="157" width="268" x="41" y="485"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -42,7 +42,7 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad03/ejemplos/_03_polimorfismo_basado_en_herencia/_01_profesores_universitarios/src/Persona.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="211" width="147" x="89" y="37"/>    
+    <position height="-1" width="-1" x="499" y="134"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -54,37 +54,37 @@
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad03/ejemplos/_03_polimorfismo_basado_en_herencia/_01_profesores_universitarios/src/Universidad.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="121" width="208" x="290" y="37"/>    
+    <position height="-1" width="-1" x="174" y="99"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="6">    
+  <generalization id="6">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="8">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="7" name="profesores">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <attribute id="9" name="profesores">        
+        <position height="0" width="0" x="137" y="1"/>      
       </attribute>      
-      <multiplicity id="8" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
+      <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="137" y="1"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="9">    
+  <generalization id="11">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <dependency id="11">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
   <generalization id="12">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  

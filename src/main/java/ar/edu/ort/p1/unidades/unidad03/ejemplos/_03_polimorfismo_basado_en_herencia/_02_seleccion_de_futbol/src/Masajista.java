@@ -5,6 +5,8 @@ public class Masajista extends IntegranteDeSeleccion {
 	private String posicion;
 	private int aniosExperiencia;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Masajista() {
 		super();
 	}
@@ -14,6 +16,8 @@ public class Masajista extends IntegranteDeSeleccion {
 		this.posicion = posicion;
 		this.aniosExperiencia = aniosExperiencia;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	@Override
 	public void participarEnEntrenamiento() {

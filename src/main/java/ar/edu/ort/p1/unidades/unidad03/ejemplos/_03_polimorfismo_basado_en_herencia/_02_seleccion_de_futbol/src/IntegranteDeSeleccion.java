@@ -7,6 +7,8 @@ public abstract class IntegranteDeSeleccion {
 	protected String apellido;
 	protected int edad;
 
+	/*----------------------------------------------------------------------------*/
+
 	public IntegranteDeSeleccion() {
 	}
 
@@ -16,6 +18,8 @@ public abstract class IntegranteDeSeleccion {
 		this.apellido = apellido;
 		this.edad = edad;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public String getNombre() {
 		return nombre;

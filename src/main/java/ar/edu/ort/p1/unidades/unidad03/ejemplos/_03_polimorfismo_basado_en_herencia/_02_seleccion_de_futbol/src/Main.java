@@ -1,10 +1,11 @@
 package ar.edu.ort.p1.unidades.unidad03.ejemplos._03_polimorfismo_basado_en_herencia._02_seleccion_de_futbol.src;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
-	public static ArrayList<IntegranteDeSeleccion> integrantes = new ArrayList<IntegranteDeSeleccion>();
+	public static List<IntegranteDeSeleccion> integrantes = new ArrayList<IntegranteDeSeleccion>();
 
 	public static void main(String[] args) {
 
@@ -13,7 +14,7 @@ public class Main {
 		 * instanciarlo como un descendiente de dicha clase.
 		 */
 
-		// Hago upcasting. Ver video https://www.youtube.com/watch?v=UG3n-GZtnZk
+		// Hago upcasting
 		IntegranteDeSeleccion gallarre = new Entrenador(1, "Luis", "Gallarre", 41, 52418);
 		IntegranteDeSeleccion aguirre = new Futbolista(2, "Francisco", "Aguirre", 34, 5, "Volante");
 		IntegranteDeSeleccion perez = new Masajista(3, "Juan", "Perez", 47, "Licenciado en Fisioterapia", 23);
@@ -49,8 +50,7 @@ public class Main {
 		/*----------------------------------------------------------------------------*/
 
 		/**
-		 * En los siguientes 3 metodos es necesario hacer downcasting. Ver video:
-		 * https://www.youtube.com/watch?v=nzPC7dk_nmg
+		 * En los siguientes 3 metodos es necesario hacer downcasting
 		 */
 		// Planificar un entrenamiento
 		System.out.println(

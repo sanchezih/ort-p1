@@ -114,34 +114,34 @@
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <realization id="11">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <realization id="12">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <realization id="13">    
     <bendpoint x="313" y="287"/>    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="5"/>  
   </realization>  
-  <realization id="14">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
-  <generalization id="15">    
+  <generalization id="12">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="9"/>  
   </generalization>  
-  <generalization id="16">    
+  <realization id="13">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="14">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="9"/>  
   </generalization>  
-  <generalization id="17">    
+  <realization id="15">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="16">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
+  <realization id="17">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
   <realization id="18">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="7"/>  
