@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>710</x><y>290</y><w>240</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Gestor
+--
+
+--
++eliminarTicket(int): Ticket
++cantTicketsXSectorPrioridad(): int[][]
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>470</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Ticket
+-
+-id: int
+-fecha: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>190</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-colaDeTickets
+m1=1</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>240</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ColaDeTickets
+--
+
+--
++ColaDeTickets()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>660</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Prioridad
+--
+_+BAJA: Prioridad_
+_+MEDIA: Prioridad_
+_+ALTA: Prioridad_
+--
++Prioridad()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>470</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Sector
+--
+_+RRHH: Sector_
+_+INSTITUTO: Sector_
+_+ESCUELA: Sector_
+_+DIRECCION: Sector_
+--
++Sector()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>520</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-sector</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>590</y><w>270</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-prioridad</panel_attributes><additional_attributes>250;140;10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>70</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ColaNodos&lt;T&gt;
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>70</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Cola&lt;T&gt;
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>160</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>190</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>330</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>360</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>380</y><w>220</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>400</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>380</y><w>80</w><h>370</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;350;60;350;60;10;40;10</additional_attributes></element></diagram>
