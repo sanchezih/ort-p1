@@ -1,0 +1,69 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>290</y><w>270</w><h>180</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Curso
+--
+_-CINCO: int=5_
+-codigo: String
+-titulo: String
+-hsDuracion: int
+--
++top5AlumnosMasLongevos(): List&lt;Alumno&gt;
++calcularPromedio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1180</x><y>540</y><w>240</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaDeCursosPorCodigo
+--
+
+--
++compare(Curso, Curso): int
++compareByKey(String, Curso): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>210</y><w>170</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-listaDecursosPorCodigo</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>110</y><w>410</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Academia
+--
+
+--
++obtenerEstadistica(String): Estadistica
++listadoDeCursosPorNivel(): ListaOrdenadaNodos&lt;NivelCurso, Curso&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>110</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+NivelCurso
+--
+_+BASICO: NivelCurso_
+_+INTERMEDIO: NivelCurso_
+_+AVANZADO: NivelCurso_
+--
++NivelCurso()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>210</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-nivel</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>540</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Alumno
+--
+-dni: String
+-nombre: String
+-edad: Integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>540</y><w>240</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaDeAlumnosPorEdad
+--
+
+--
++compare(Alumno, Alumno): int
++compareByKey(Integer, Alumno): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>370</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-listaDeAlumnosPorEdad</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>110</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Estadistica
+--
+-nombre: String
+-promedioEdad: double
+--
++Estadistica(String, double)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>160</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>540</y><w>240</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaDeCursosPorNivel
+--
+
+--
++compare(Curso, Curso): int
++compareByKey(NivelCurso, Curso): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>210</y><w>160</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-listaDeCursosPorNivel</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>330</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaOrdenadaNodos&lt;K, T&gt;
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>420</y><w>290</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;270;70;270;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>420</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>420</y><w>290</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>270;10;270;70;10;70;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>330</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+ListaOrdenada&lt;K, T&gt;
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>440</y><w>360</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>340;100;340;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>460</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>590</y><w>300</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>380</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>210</y><w>530</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;510;100;510;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>150</y><w>980</w><h>570</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>100;10;10;10;10;550;960;550;960;490</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>60</y><w>780</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10;760;10;760;50</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>460</y><w>890</w><h>230</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;210;870;210;870;180</additional_attributes></element><element><id>Relation</id><coordinates><x>1240</x><y>160</y><w>120</w><h>400</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>100;380;100;10;10;10</additional_attributes></element></diagram>
