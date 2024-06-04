@@ -4,18 +4,18 @@ public class OrdenPuertaAPuerta extends Orden {
 
 	private boolean envioGratis;
 
+	/*----------------------------------------------------------------------------*/
+
 	public OrdenPuertaAPuerta(long numero, String fecha, double monto, Usuario vendedor, Usuario comprador,
 			boolean envioGratis) {
 		super(numero, fecha, monto, vendedor, comprador);
 		this.envioGratis = envioGratis;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public boolean hasEnvioGratis() {
 		return envioGratis;
-	}
-
-	public void setEnvioGratis(boolean envioGratis) {
-		this.envioGratis = envioGratis;
 	}
 
 	@Override

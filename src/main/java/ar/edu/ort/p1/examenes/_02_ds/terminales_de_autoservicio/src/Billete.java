@@ -13,7 +13,6 @@ public abstract class Billete implements Verificable {
 	/*----------------------------------------------------------------------------*/
 
 	public Billete(long numero, char letraSerie, int anio, Estado estado, Valor valor) {
-		super();
 		this.numero = numero;
 		this.letraSerie = letraSerie;
 		this.anio = anio;

@@ -1,5 +1,6 @@
 package ar.edu.ort.p1.unidades.unidad05.practico05.ej01_libros_dvds.src;
 
+import ar.edu.ort.tp1.u5.tda.impl.PilaNodos;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class Empleado {
@@ -23,7 +24,7 @@ public class Empleado {
 	 */
 	public int cantDVDsRayados(Pila<DVD> pilaDVDs) {
 
-		Pila<DVD> pilaAux = new PilaDeDVDs();
+		Pila<DVD> pilaAux = new PilaNodos<>();
 		int cantRayados = 0;
 
 		while (!pilaDVDs.isEmpty()) {
@@ -49,7 +50,7 @@ public class Empleado {
 	 */
 	public double paginasPromedio(Pila<Libro> pilaLibros) {
 
-		Pila<Libro> pilaAux = new PilaDeLibros();
+		Pila<Libro> pilaAux = new PilaNodos<>();
 		int cantLibros = 0;
 		int acuPaginas = 0;
 		double promedio = 0;

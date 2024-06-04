@@ -5,11 +5,14 @@ public class SucursalCorreo {
 	private String nombre;
 	private Domicilio domicilio;
 
+	/*----------------------------------------------------------------------------*/
+
 	public SucursalCorreo(String nombre, Domicilio domicilio) {
-		super();
 		this.nombre = nombre;
 		this.domicilio = domicilio;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public Domicilio getDomicilio() {
 		return domicilio;

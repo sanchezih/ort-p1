@@ -1,87 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.ort.p1.unidades.unidad05.practico05.ej03_impresora.src.ColaDeDocumentos" 
-    project="ort-p1-private" 
-    file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad05/practico05/ej03_impresora/src/ColaDeDocumentos.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="190" y="486"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="ar.edu.ort.p1.unidades.unidad05.practico05.ej03_impresora.src.Documento" 
+  <class id="1" language="java" name="ar.edu.ort.p1.unidades.unidad05.practico05.ej03_impresora.src.Documento" 
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad05/practico05/ej03_impresora/src/Documento.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="720" y="461"/>    
+    <position height="-1" width="-1" x="316" y="700"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ar.edu.ort.p1.unidades.unidad05.practico05.ej03_impresora.src.Impresora" 
+  <class id="2" language="java" name="ar.edu.ort.p1.unidades.unidad05.practico05.ej03_impresora.src.Impresora" 
     project="ort-p1-private" 
     file="/ort-p1-private/src/main/java/ar/edu/ort/p1/unidades/unidad05/practico05/ej03_impresora/src/Impresora.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="718" y="166"/>    
+    <position height="-1" width="-1" x="694" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ar.edu.ort.tp1.u5.tda.impl.ColaNodos" project="ort-p1-private" 
+  <class id="3" language="java" name="ar.edu.ort.tp1.u5.tda.impl.ColaNodos" project="ort-p1-private" 
     file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="170" y="160"/>    
+    <position height="-1" width="-1" x="306" y="221"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="5" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Cola" project="ort-p1-private" 
+  <interface id="4" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Cola" project="ort-p1-private" 
     file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
     binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="379" y="156"/>    
+    <position height="-1" width="-1" x="307" y="475"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <dependency id="6">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="7">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <generalization id="8">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <association id="9">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="10" name="colaDocs"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
+  <association id="5">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="6" name="colaDocs">        
+        <position height="0" width="0" x="60" y="-168"/>      
+      </attribute>      
+      <multiplicity id="7" minimum="0" maximum="1">        
+        <position height="0" width="0" x="60" y="-168"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="12">    
+  <realization id="8">    
     <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </dependency>  
-  <realization id="13">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

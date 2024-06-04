@@ -1,19 +1,20 @@
 package ar.edu.ort.p1.unidades.unidad05.practico05.ej01_libros_dvds.src;
 
+import ar.edu.ort.tp1.u5.tda.impl.PilaNodos;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Pila<Libro> pilaDeLibros = new PilaDeLibros();
+		Pila<Libro> pilaDeLibros = new PilaNodos<>();
 		pilaDeLibros.push(new Libro("978-987-86-4331-1", 319));
 		pilaDeLibros.push(new Libro("978-987-3832-50-5", 285));
 		pilaDeLibros.push(new Libro("978-987-1949-68-7", 292));
 
 		/*----------------------------------------------------------------------------*/
 
-		Pila<DVD> pilaDeDVDs = new PilaDeDVDs();
+		Pila<DVD> pilaDeDVDs = new PilaNodos<>();
 		pilaDeDVDs.push(new DVD("Verbatim", true));
 		pilaDeDVDs.push(new DVD("Sony", false));
 		pilaDeDVDs.push(new DVD("TDK", true));

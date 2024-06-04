@@ -1,5 +1,6 @@
 package ar.edu.ort.p1.unidades.unidad05.practico05.ej03_impresora.src;
 
+import ar.edu.ort.tp1.u5.tda.impl.ColaNodos;
 import ar.edu.ort.tp1.u5.tda.interfaces.Cola;
 
 public class Impresora {
@@ -18,7 +19,7 @@ public class Impresora {
 	public Impresora(boolean estaEncendida, int cantHojasDisp) {
 		this.estaEncendida = estaEncendida;
 		this.cantHojasDisp = cantHojasDisp;
-		this.colaDocs = new ColaDeDocumentos();
+		this.colaDocs = new ColaNodos<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

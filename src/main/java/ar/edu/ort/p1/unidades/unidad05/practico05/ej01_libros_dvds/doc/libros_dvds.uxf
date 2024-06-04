@@ -1,32 +1,22 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>670</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>460</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 DVD
 --
 -marca: String
 -rayado: boolean
 --
-+isRayado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>470</y><w>250</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
++isRayado(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>260</y><w>250</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 Empleado
 --
 -nombre: String
 --
 +cantDVDsRayados(Pila&lt;DVD&gt;): int 
-+paginasPromedio(Pila&lt;Libro&gt;): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>470</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
-PilaDeDVDs
---
-
---
-+PilaDeDVDs()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>580</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>670</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
++paginasPromedio(Pila&lt;Libro&gt;): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>370</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>460</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 Libro
 --
 -ISBN: String
 -nroPaginas: int
 --
-+getNroPaginas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>580</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>530</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>530</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>470</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
-PilaDeLibros
---
-
---
-+PilaDeLibros()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>580</y><w>110</w><h>160</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;140;10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>580</y><w>100</w><h>160</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;140;80;140;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>50</y><w>210</w><h>150</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
++getNroPaginas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>370</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>60</y><w>250</w><h>150</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 PilaNodos&lt;T&gt;
 --
 
@@ -36,11 +26,11 @@ PilaNodos&lt;T&gt;
 +peek(): T
 +pop(): T
 +push(T): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>150</y><w>210</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;10;10;320</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>150</y><w>220</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;200;10;200;320</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>270</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>60</y><w>250</w><h>150</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 Pila&lt;T&gt;
 --
 
 --
 +peek(): T
 +pop(): T
-+push(T): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>380</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>190</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>
++push(T): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>200</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>140</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>200</y><w>260</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>240;10;240;130;10;130</additional_attributes></element></diagram>
