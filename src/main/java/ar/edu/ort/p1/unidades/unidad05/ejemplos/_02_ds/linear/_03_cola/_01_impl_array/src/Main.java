@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._03_cola._01_impl_array.src;
 
 import ar.edu.ort.p1.util.UtilCola;
+import ar.edu.ort.tp1.u5.tda.interfaces.Cola;
 
 /**
  * https://www.geeksforgeeks.org/array-implementation-of-queue-simple
@@ -18,7 +19,7 @@ public class Main {
 		System.out.println();
 
 		System.out.println("COLA CON LIMITE");
-		ColaArray<Integer> colaConLimite = new ColaArray<>(Integer.class, 4);
+		Cola<Integer> colaConLimite = new ColaArray<>(Integer.class, 4);
 
 		System.out.println("Paso 1: Agrego el numero 2");
 		colaConLimite.add(2);
@@ -79,7 +80,7 @@ public class Main {
 		/*----------------------------------------------------------------------------*/
 
 		System.out.println("COLA SIN LIMITE");
-		ColaArray<String> colaSinLimite = new ColaArray<>(String.class);
+		Cola<String> colaSinLimite = new ColaArray<>(String.class);
 		colaSinLimite.add("Primero");
 		colaSinLimite.add("Segundo");
 		colaSinLimite.add("Tercero");

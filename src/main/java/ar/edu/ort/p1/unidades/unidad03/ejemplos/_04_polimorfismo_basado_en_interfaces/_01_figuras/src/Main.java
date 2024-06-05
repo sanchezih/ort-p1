@@ -28,7 +28,7 @@ public class Main {
 		Figura rectangulo2 = new Rectangulo(12f, 3f);
 
 		List<Figura> listaDeFiguras; // Declaro una variable de tipo Figura (Interface)
-		listaDeFiguras = new ArrayList<Figura>(); // Inicializo la variable
+		listaDeFiguras = new ArrayList<>(); // Inicializo la variable
 
 		listaDeFiguras.add(cuadrado1);
 		listaDeFiguras.add(cuadrado2);

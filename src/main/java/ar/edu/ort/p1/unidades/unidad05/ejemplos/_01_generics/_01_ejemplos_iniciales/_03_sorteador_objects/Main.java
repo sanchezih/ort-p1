@@ -72,7 +72,7 @@ public class Main {
 		 * Declarar un ArrayList de String y querer agregarle un int nos dara un error
 		 * en tiempo de copilacion, mas no en tiempo de ejecucion
 		 */
-		List<String> palabras = new ArrayList<String>();
+		List<String> palabras = new ArrayList<>();
 		palabras.add("Hola");
 		// palabras.add(2);
 	}

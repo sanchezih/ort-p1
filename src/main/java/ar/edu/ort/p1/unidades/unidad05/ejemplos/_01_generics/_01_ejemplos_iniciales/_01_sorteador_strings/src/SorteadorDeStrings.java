@@ -12,7 +12,7 @@ public class SorteadorDeStrings {
 	/*----------------------------------------------------------------------------*/
 
 	public SorteadorDeStrings() {
-		this.elementos = new ArrayList<String>();
+		this.elementos = new ArrayList<>();
 		this.random = new Random();
 	}
 

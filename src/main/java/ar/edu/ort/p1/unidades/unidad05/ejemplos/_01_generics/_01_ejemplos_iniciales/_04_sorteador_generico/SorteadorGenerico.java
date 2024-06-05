@@ -12,7 +12,7 @@ public class SorteadorGenerico<T> {
 	/*----------------------------------------------------------------------------*/
 
 	public SorteadorGenerico() {
-		this.elementos = new ArrayList<T>();
+		this.elementos = new ArrayList<>();
 		this.random = new Random();
 	}
 

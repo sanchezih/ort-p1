@@ -17,7 +17,7 @@ public class Bolillero {
 	 * @param capacidadMaxima
 	 */
 	public Bolillero(int capacidadMaxima) {
-		this.elementos = new ArrayList<Bolilla>();
+		this.elementos = new ArrayList<>();
 		this.random = new Random();
 		this.capacidadMaxima = capacidadMaxima;
 	}

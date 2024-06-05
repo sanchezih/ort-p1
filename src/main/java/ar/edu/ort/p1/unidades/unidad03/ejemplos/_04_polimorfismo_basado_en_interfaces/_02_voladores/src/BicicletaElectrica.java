@@ -4,8 +4,6 @@ public class BicicletaElectrica extends Bicicleta implements Recargable {
 
 	@Override
 	public void recargar() {
-		// TODO Auto-generated method stub
-
 	}
 
 }

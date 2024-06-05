@@ -17,7 +17,7 @@ public class Main {
 		/**
 		 * Entre <> se debe indicar que tipo va a manejar la clase. En este caso, String
 		 */
-		MiGenerica1<String> genericaString = new MiGenerica1<String>();
+		MiGenerica1<String> genericaString = new MiGenerica1<>();
 		genericaString.setPrimerAtributo("Un String...");
 		System.out.println(genericaString.getPrimerAtributo());
 
@@ -25,7 +25,7 @@ public class Main {
 		 * Entre <> se debe indicar que tipo va a manejar la clase. En este caso,
 		 * Persona
 		 */
-		MiGenerica1<Persona> genericaPersona = new MiGenerica1<Persona>();
+		MiGenerica1<Persona> genericaPersona = new MiGenerica1<>();
 		genericaPersona.setPrimerAtributo(new Persona("Veronica", 42));
 		System.out.println(genericaPersona.getPrimerAtributo().toString());
 
@@ -33,7 +33,7 @@ public class Main {
 		 * Entre <> se debe indicar que tipo va a manejar la clase. En este caso,
 		 * Automovil
 		 */
-		MiGenerica1<Automovil> genericaAutomovil = new MiGenerica1<Automovil>();
+		MiGenerica1<Automovil> genericaAutomovil = new MiGenerica1<>();
 		genericaAutomovil.setPrimerAtributo(new Automovil("Volvo", "S60"));
 		System.out.println(genericaAutomovil.getPrimerAtributo().toString());
 

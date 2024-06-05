@@ -28,10 +28,10 @@ implementado que retorna el anio actual para calcular la antiguedad.
 menor nivel (terciario o universitario)
 
 Se pide:
-	A. El diagrama de clases que lo modelice, con sus relaciones, atributos y
+    A. El diagrama de clases que lo modelice, con sus relaciones, atributos y
 	metodos.
 	
-	B. El metodo empleadosEnFalta(), de la clase que corresponda, que debe
+    B. El metodo empleadosEnFalta(), de la clase que corresponda, que debe
 	devolver (no mostrar por consola) a los empleados que hayan presentado
 	alguna irregularidad, en una coleccion que permita accederlos rapidamente
 	conociendo su DNI. Deben desarrollarse tambien los metodos asociados que se

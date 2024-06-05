@@ -14,7 +14,7 @@ public class Main {
 		System.out.println("UTILIZO EL SORTEADOR GENERICO PARA SORTEAR OBJETOS DE TIPO STRING");
 		System.out.println();
 
-		SorteadorGenerico<String> sorteadorDeStrings = new SorteadorGenerico<String>();
+		SorteadorGenerico<String> sorteadorDeStrings = new SorteadorGenerico<>();
 
 		sorteadorDeStrings.isVacio();
 
@@ -42,7 +42,7 @@ public class Main {
 		System.out.println("UTILIZO EL SORTEADOR GENERICO PARA SORTEAR OBJETOS DE TIPO INTEGER");
 		System.out.println();
 
-		SorteadorGenerico<Integer> sorteadorDeIntegers = new SorteadorGenerico<Integer>();
+		SorteadorGenerico<Integer> sorteadorDeIntegers = new SorteadorGenerico<>();
 
 		sorteadorDeIntegers.isVacio();
 

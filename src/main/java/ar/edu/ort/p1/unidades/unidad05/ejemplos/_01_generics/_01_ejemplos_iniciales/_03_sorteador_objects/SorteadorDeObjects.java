@@ -17,7 +17,7 @@ public class SorteadorDeObjects {
 	/*----------------------------------------------------------------------------*/
 
 	public SorteadorDeObjects() {
-		this.elementos = new ArrayList<Object>();
+		this.elementos = new ArrayList<>();
 		this.random = new Random();
 	}
 

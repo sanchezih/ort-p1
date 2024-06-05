@@ -1,5 +1,7 @@
 package ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._02_pila._01_impl_array.src;
 
+import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
+
 public class Main {
 
 	public static void main(String args[]) {
@@ -10,7 +12,7 @@ public class Main {
 		System.out.println();
 
 		System.out.println("PILA SIN LIMITE");
-		PilaArray<String> pilaSinLimite = new PilaArray<>(String.class);
+		Pila<String> pilaSinLimite = new PilaArray<>(String.class);
 
 		System.out.println("Le inserto elementos...");
 		pilaSinLimite.push("Azul");
@@ -36,7 +38,7 @@ public class Main {
 		/*----------------------------------------------------------------------------*/
 
 		System.out.println("PILA CON LIMITE");
-		PilaArray<String> pilaConLimite = new PilaArray<>(String.class, 3);
+		Pila<String> pilaConLimite = new PilaArray<>(String.class, 3);
 
 		pilaConLimite.push("Magenta");
 		System.out.println(pilaConLimite.peek());
