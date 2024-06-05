@@ -17,7 +17,7 @@ public class Vehiculo {
 	 */
 	public Vehiculo(String patente) {
 		this.patente = patente;
-		this.autorizados = new ArrayList<Persona>();
+		this.autorizados = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

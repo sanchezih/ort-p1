@@ -35,9 +35,9 @@ public class Curso {
 		this.titulo = titulo;
 		this.precio = precio;
 		this.valoracion = valoracion;
-		this.lecciones = new ArrayList<Leccion>();
+		this.lecciones = new ArrayList<>();
 		this.autor = autor;
-		this.suscriptores = new ArrayList<Usuario>();
+		this.suscriptores = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

@@ -19,7 +19,7 @@ public class Alumno {
 	public Alumno(String nombre, String mail) {
 		this.nombre = nombre;
 		this.mail = mail;
-		this.materias = new ArrayList<Materia>();
+		this.materias = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

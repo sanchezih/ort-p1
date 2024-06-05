@@ -12,7 +12,7 @@ public class Informe {
 
 	public Informe(int maxCantAprobadas) {
 		this.cant = maxCantAprobadas;
-		this.alumnos = new ArrayList<AlumnoSimplificado>();
+		this.alumnos = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

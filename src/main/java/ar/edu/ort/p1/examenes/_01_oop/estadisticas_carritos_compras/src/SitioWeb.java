@@ -13,7 +13,7 @@ public class SitioWeb {
 	 * 
 	 */
 	public SitioWeb() {
-		this.carritosVendidos = new ArrayList<CarritoDeCompra>();
+		this.carritosVendidos = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

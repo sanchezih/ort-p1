@@ -14,8 +14,8 @@ public class Portal {
 	 * 
 	 */
 	public Portal() {
-		this.clientes = new ArrayList<Cliente>();
-		this.productos = new ArrayList<Producto>();
+		this.clientes = new ArrayList<>();
+		this.productos = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -39,11 +39,11 @@ public class Portal {
 	 */
 	public List<Producto> procesarPedido(Cliente cliente) {
 
-		List<Producto> lista = new ArrayList<Producto>();
+		List<Producto> lista = new ArrayList<>();
 		Pedido pedidoPendiente;
 
 		pedidoPendiente = cliente.getPedidoPendiente(); // Obtengo el pedido pendiente
-		
+
 		if (pedidoPendiente != null && !pedidoPendiente.hayStockSuficiente()) {
 			lista = pedidoPendiente.dameListaProductosFaltantes();
 		}

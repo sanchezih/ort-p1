@@ -16,11 +16,13 @@ public class Droide {
 	private List<Pieza> piezasNoOperativas;
 	private List<Droide> droidesFueraDeServicio;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Droide(String id) {
 		this.id = id;
-		this.piezasOperativas = new ArrayList<Pieza>();
-		this.piezasNoOperativas = new ArrayList<Pieza>();
-		this.droidesFueraDeServicio = new ArrayList<Droide>();
+		this.piezasOperativas = new ArrayList<>();
+		this.piezasNoOperativas = new ArrayList<>();
+		this.droidesFueraDeServicio = new ArrayList<>();
 		inicializar();
 	}
 
@@ -139,7 +141,7 @@ public class Droide {
 	private void inicializar() {
 
 		// Array de 6 piezas
-		ArrayList<Pieza> piezas = new ArrayList<Pieza>(List.of( //
+		ArrayList<Pieza> piezas = new ArrayList<>(List.of( //
 				new Pieza("Bateria de litio"), //
 				new Pieza("Sensor de proximidad"), //
 				new Pieza("Sensor de temperatura"), //

@@ -32,7 +32,7 @@ public class Habitacion {
 	public Habitacion(int numero, double precioXDia) {
 		this.numero = numero;
 		this.precio = precioXDia;
-		this.adicionales = new ArrayList<Adicional>(); // Que pasa si no se inicializa?
+		this.adicionales = new ArrayList<>(); // Que pasa si no se inicializa?
 	}
 
 	/*----------------------------------------------------------------------------*/

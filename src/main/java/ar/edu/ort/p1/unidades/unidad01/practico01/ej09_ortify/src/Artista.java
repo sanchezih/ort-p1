@@ -1,17 +1,18 @@
 package ar.edu.ort.p1.unidades.unidad01.practico01.ej09_ortify.src;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Artista {
 
 	private String id;
 	private String nombre;
-	private ArrayList<Cancion> canciones;
+	private List<Cancion> canciones;
 
 	public Artista(String id, String nombre) {
 		this.id = id;
 		this.nombre = nombre;
-		this.canciones = new ArrayList<Cancion>();
+		this.canciones = new ArrayList<>();
 	}
 
 	/**
@@ -78,8 +79,8 @@ public class Artista {
 	 * 
 	 * @return
 	 */
-	public ArrayList<Cancion> primeras5Canciones() {
-		ArrayList<Cancion> lista = new ArrayList<Cancion>();
+	public List<Cancion> primeras5Canciones() {
+		List<Cancion> lista = new ArrayList<>();
 		int i = 0;
 		while (i < this.canciones.size() && lista.size() < 5) {
 			lista.add(this.canciones.get(i));

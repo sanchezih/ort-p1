@@ -15,7 +15,7 @@ public class OrtParking {
 	/*----------------------------------------------------------------------------*/
 
 	public OrtParking() {
-		this.garages = new ArrayList<Garage>();
+		this.garages = new ArrayList<>();
 
 	}
 
@@ -30,7 +30,7 @@ public class OrtParking {
 	 */
 	public List<InformeGarage> obtenerInformeEstadoGarages() {
 
-		List<InformeGarage> lista = new ArrayList<InformeGarage>();
+		List<InformeGarage> lista = new ArrayList<>();
 
 		for (Garage garage : this.garages) {
 			lista.add(garage.getInforme());

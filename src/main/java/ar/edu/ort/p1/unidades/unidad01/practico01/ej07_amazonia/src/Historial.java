@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.unidad01.practico01.ej07_amazonia.src;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Para tener un modelo desacoplado y con responsabiliades bien delimitadas, se
@@ -12,13 +13,17 @@ import java.util.ArrayList;
  */
 public class Historial {
 
-	private ArrayList<Pedido> pedidos;
+	private List<Pedido> pedidos;
+
+	/*----------------------------------------------------------------------------*/
 
 	public Historial() {
-		this.pedidos = new ArrayList<Pedido>();
+		this.pedidos = new ArrayList<>();
 	}
 
-	public ArrayList<Pedido> getPedidos() {
+	/*----------------------------------------------------------------------------*/
+
+	public List<Pedido> getPedidos() {
 		return pedidos;
 	}
 

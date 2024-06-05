@@ -5,11 +5,14 @@ public class Usuario {
 	private String userName;
 	private Estado estado;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Usuario(String userName, Estado estado) {
-		super();
 		this.userName = userName;
 		this.estado = estado;
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public String getUserName() {
 		return userName;

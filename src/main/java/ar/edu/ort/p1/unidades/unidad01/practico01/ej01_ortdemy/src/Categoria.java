@@ -24,7 +24,7 @@ public class Categoria {
 	public Categoria(String id, String nombre) {
 		this.id = id;
 		this.nombre = nombre;
-		this.cursos = new ArrayList<Curso>();
+		this.cursos = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

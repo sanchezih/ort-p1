@@ -16,7 +16,7 @@ public class Restaurant {
 
 	public Restaurant() {
 		inicializarRestaurant();
-		this.pedidos = new ArrayList<Pedido>();
+		this.pedidos = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

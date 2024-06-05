@@ -2,10 +2,11 @@ package ar.edu.ort.p1.unidades.unidad03.ejemplos._03_polimorfismo_basado_en_here
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Universidad {
 
-	private ArrayList<Profesor> profesores;
+	private List<Profesor> profesores;
 
 	/**
 	 * En el constructor se crea un ArrayList de profesores (titulares y suplentes).
@@ -14,7 +15,7 @@ public class Universidad {
 	 * es una clase abstracta, no instanciable.
 	 */
 	public Universidad() {
-		this.profesores = new ArrayList<Profesor>();
+		this.profesores = new ArrayList<>();
 	}
 
 	public void addProfesor(Profesor profesor) {

@@ -30,11 +30,11 @@ public class Main {
 		portal.agregarCliente(omar);
 
 		// Creo los pedidos
-		List<ItemPedido> pedidoEstefania01 = new ArrayList<ItemPedido>();
+		List<ItemPedido> pedidoEstefania01 = new ArrayList<>();
 		pedidoEstefania01.add(new ItemPedido(1, dune));
 		pedidoEstefania01.add(new ItemPedido(1, romeoYJulieta));
 
-		List<ItemPedido> pedidoEstefania02 = new ArrayList<ItemPedido>();
+		List<ItemPedido> pedidoEstefania02 = new ArrayList<>();
 		pedidoEstefania02.add(new ItemPedido(3, fahrenheit451));
 
 		// Asigno los pedidos a los clientes

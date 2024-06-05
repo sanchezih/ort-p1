@@ -9,7 +9,6 @@ public class Producto {
 	/*----------------------------------------------------------------------------*/
 
 	public Producto(String nombre, double precioUnitario, int cantEnStock) {
-		super();
 		this.nombre = nombre;
 		this.precioUnitario = precioUnitario;
 		this.cantEnStock = cantEnStock;

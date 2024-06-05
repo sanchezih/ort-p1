@@ -1,13 +1,16 @@
 package ar.edu.ort.p1.unidades.unidad01.practico01.ej09_ortify.src;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Cancion {
 
 	private String id;
 	private String nombre;
 	private double duracion;
-	private ArrayList<Usuario> likers;
+	private List<Usuario> likers;
+
+	/*----------------------------------------------------------------------------*/
 
 	/**
 	 * 
@@ -16,12 +19,13 @@ public class Cancion {
 	 * @param duracion
 	 */
 	public Cancion(String id, String nombre, double duracion) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.duracion = duracion;
-		this.likers = new ArrayList<Usuario>();
+		this.likers = new ArrayList<>();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public double getDuracion() {
 		return duracion;

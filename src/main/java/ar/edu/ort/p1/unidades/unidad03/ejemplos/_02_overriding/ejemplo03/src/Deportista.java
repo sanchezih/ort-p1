@@ -4,6 +4,8 @@ public class Deportista extends Persona {
 
 	private int numeroDeAfiliado;
 
+	/*----------------------------------------------------------------------------*/
+
 	/**
 	 * 
 	 * @param nombre
@@ -15,8 +17,10 @@ public class Deportista extends Persona {
 		this.numeroDeAfiliado = numeroDeAfiliado;
 	}
 
+	/*----------------------------------------------------------------------------*/
+
 	public void mostrar(String mensaje) {
-		System.out.println("El mensaje recibido por parametro es: "+mensaje);
+		System.out.println("El mensaje recibido por parametro es: " + mensaje);
 		System.out.println("numeroDeAfiliado=" + numeroDeAfiliado);
 	}
 }

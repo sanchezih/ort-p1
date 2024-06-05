@@ -11,8 +11,8 @@ public class Ortdemy {
 	/*----------------------------------------------------------------------------*/
 
 	public Ortdemy() {
-		this.usuarios = new ArrayList<Usuario>();
-		this.categorias = new ArrayList<Categoria>();
+		this.usuarios = new ArrayList<>();
+		this.categorias = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/

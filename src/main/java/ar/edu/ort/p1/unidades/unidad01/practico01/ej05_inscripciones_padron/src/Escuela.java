@@ -13,7 +13,7 @@ public class Escuela {
 
 	public Escuela(String nombre) {
 		this.nombre = nombre;
-		this.mesas = new ArrayList<Mesa>();
+		this.mesas = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -73,7 +73,7 @@ public class Escuela {
 	 */
 	public List<PadronMesa> obtenerInforme() {
 
-		List<PadronMesa> padronMesas = new ArrayList<PadronMesa>();
+		List<PadronMesa> padronMesas = new ArrayList<>();
 
 		for (Mesa mesa : this.mesas) {
 			mesa.obtenerPadronMesa(padronMesas);

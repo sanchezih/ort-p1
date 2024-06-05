@@ -14,7 +14,7 @@ public class Hotel {
 	public Hotel(String nombre, String direccion) {
 		this.nombre = nombre;
 		this.direccion = direccion;
-		this.habitaciones = new ArrayList<Habitacion>();
+		this.habitaciones = new ArrayList<>();
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -28,7 +28,7 @@ public class Hotel {
 	 */
 	public List<Habitacion> obtenerHabitacionesDisponibles() {
 
-		List<Habitacion> listaDeHabitaciones = new ArrayList<Habitacion>();
+		List<Habitacion> listaDeHabitaciones = new ArrayList<>();
 
 		for (Habitacion habitacion : this.habitaciones) {
 			if (!habitacion.estaOcupada()) {

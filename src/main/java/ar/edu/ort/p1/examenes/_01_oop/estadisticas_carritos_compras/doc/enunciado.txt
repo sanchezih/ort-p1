@@ -13,9 +13,11 @@ De todos los medios de pago se sabe su fecha de pago (dia, mes y anio) y existen
 los siguientes:
     - En efectivo: Se guarda si se trato de un consumidor final o no. Se obtiene
     un 10% de descuento. 15% para los consumidores finales.
+  
     - Por transferencia bancaria: donde se guarda el CBU (String) y el precio
     del carrito sera un 5% mas caro. Si pasaron mas de 10 dias desde la compra
     hasta la fecha de pago, sera otro 5% adicional (10% en total).
+    
     - Con tarjeta de credito: donde se guarda con cuantas cuotas se abono y,
     entonces, el precio del carrito aumenta un 15% por cada cuota.
 

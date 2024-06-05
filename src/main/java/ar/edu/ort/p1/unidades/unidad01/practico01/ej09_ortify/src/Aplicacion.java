@@ -1,6 +1,7 @@
 package ar.edu.ort.p1.unidades.unidad01.practico01.ej09_ortify.src;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Aplicacion {
 
@@ -8,35 +9,26 @@ public class Aplicacion {
 	private ArrayList<Artista> artistas;
 	private ArrayList<Usuario> usuarios;
 
+	/*----------------------------------------------------------------------------*/
+
 	public Aplicacion(String nombre) {
-		super();
 		this.nombre = nombre;
-		this.artistas = new ArrayList<Artista>();
-		this.usuarios = new ArrayList<Usuario>();
+		this.artistas = new ArrayList<>();
+		this.usuarios = new ArrayList<>();
 	}
+
+	/*----------------------------------------------------------------------------*/
 
 	public String getNombre() {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public ArrayList<Artista> getArtistas() {
+	public List<Artista> getArtistas() {
 		return artistas;
 	}
 
-	public void setArtistas(ArrayList<Artista> artistas) {
-		this.artistas = artistas;
-	}
-
-	public ArrayList<Usuario> getUsuarios() {
+	public List<Usuario> getUsuarios() {
 		return usuarios;
-	}
-
-	public void setUsuarios(ArrayList<Usuario> usuarios) {
-		this.usuarios = usuarios;
 	}
 
 	/*----------------------------------------------------------------------------*/

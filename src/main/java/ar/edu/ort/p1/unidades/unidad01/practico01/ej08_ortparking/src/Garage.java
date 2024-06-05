@@ -15,8 +15,8 @@ public class Garage {
 	public Garage(String codigo, Tablero tablero) {
 		this.codigo = codigo;
 		this.tablero = tablero;
-		this.retirados = new ArrayList<Vehiculo>();
-		this.estacionados = new ArrayList<Vehiculo>();
+		this.retirados = new ArrayList<>();
+		this.estacionados = new ArrayList<>();
 		inicializar();
 	}
 

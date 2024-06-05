@@ -53,8 +53,8 @@ public class Pedido {
 	 */
 	public List<Producto> dameListaProductosFaltantes() {
 
-		List<Producto> productosFaltantes = new ArrayList<Producto>();
-		List<ItemPedido> itemsConStock = new ArrayList<ItemPedido>();
+		List<Producto> productosFaltantes = new ArrayList<>();
+		List<ItemPedido> itemsConStock = new ArrayList<>();
 
 		for (ItemPedido item : this.items) {
 			if (!item.hayStockSuficiente()) {

@@ -13,7 +13,7 @@ public class Mesa {
 
 	public Mesa(int numero) {
 		this.numero = numero;
-		this.personas = new ArrayList<Persona>();
+		this.personas = new ArrayList<>();
 		this.presidente = null;
 	}
 
