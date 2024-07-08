@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ar.edu.ort</groupId>
 	<artifactId>ort-p1</artifactId>
-	<version>2023.1</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,6 +21,11 @@
 		<dependency>
 			<groupId>com.github.sanchezih</groupId>
 			<artifactId>ort-p1-lib</artifactId>
+			<version>main-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.sanchezih</groupId>
+			<artifactId>ihs-java-util</artifactId>
 			<version>main-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
