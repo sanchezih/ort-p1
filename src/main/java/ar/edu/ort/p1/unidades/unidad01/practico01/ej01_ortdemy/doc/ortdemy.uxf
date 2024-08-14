@@ -1,0 +1,95 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>350</y><w>280</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Usuario
+--
+-id: String
+-nombre: String
+-email: String
+-esBecado: boolean
+--
++Usuario(String, String, String, boolean)
++getId(): String
++esBecado(): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>70</y><w>280</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Ortdemy
+--
+
+--
++Ortdemy()
++suscribirseACurso(String, String): Resultado
+-buscarCurso(String): Curso
+-buscarUsuario(String): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>220</y><w>80</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+-usuarios
+m1=*
+
+</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>70</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Categoria
+--
+-id: String
+-nombre: String
+--
++Categoria(String, String)
++buscarCurso(String): Curso
++agregarCurso(Curso): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>290</y><w>210</w><h>220</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Curso
+--
+_-MAX_BECADOS: int = 5_
+-id: String
+-titulo: String
+-precio: double
+-valoracion: int
+--
++getId(): String
++getAutor(): Autor
++estaSuscripto(Usuario): boolean
++cupoBecadosLleno(): boolean
++suscribir(Usuario): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>580</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Leccion
+--
+-nombre: String
+-duracion: double
+--
++Leccion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>580</y><w>280</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+TipoDeLeccion
+--
+_+TEXTO: TipoDeLeccion_
+_+VIDEO: TipoDeLeccion_
+_+RECURSO: TipoDeLeccion_
+--
++TipoDeLeccion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>500</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+-lecciones
+m1=*
+
+</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>150</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+-categorias
+m1=*
+
+</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>220</y><w>70</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+-cursos
+m1=*
+
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>610</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+-tipo
+m1=1
+
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Resultado
+--
+_+CURSO_INEX: Resultado_
+_+USUARIO_INEX: Resultado_
+_+YA_SUSCRIPTO: Resultado_
+_+ES_AUTOR: Resultado_
+_+MAX_BECADOS: Resultado_
+_+SUSCRIPTO_OK: Resultado_
+--
++Resultado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>460</y><w>150</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+-suscriptores
+m1=*
+
+
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>390</y><w>150</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+-autor
+m1=1
+
+
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>140</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>220</y><w>180</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>160;100;10;100;10;10</additional_attributes></element></diagram>
