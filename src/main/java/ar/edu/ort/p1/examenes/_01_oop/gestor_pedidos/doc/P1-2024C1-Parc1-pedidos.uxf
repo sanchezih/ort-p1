@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>80</y><w>140</w><h>100</h></coordinates><panel_attributes>/Item/
+--
+-nombre: String 
+--
++Item(String)
+/+obtenerPeso(): int/
+/+obtenerPrecio(): float/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>250</y><w>160</w><h>140</h></coordinates><panel_attributes>Combo
+--
+-descuento: float
+-pesoAcumulado: int
+-precioAcumulado: float
+--
++Combo(String, float)
++obtenerPeso(): int
++obtenerPrecio(): float
++agregarItem(Item): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>110</y><w>220</w><h>220</h></coordinates><panel_attributes>lt=&lt;-
+-items
+m1=2..*</panel_attributes><additional_attributes>10;10;170;10;170;200;130;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>250</y><w>170</w><h>110</h></coordinates><panel_attributes>/Producto/
+--
+-precioBase: float
+-peso: int
+--
++Producto(String, float, int)
+#getPrecioBase(): float
++obtenerPeso(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>170</y><w>130</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;110;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>430</y><w>210</w><h>90</h></coordinates><panel_attributes>Bebida
+--
+_-PESO_X_CM3: int = 53_
+--
++Bebida(String, float, int, Tamaño)
++obtenerPrecio(): float
++obtenerPeso(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>430</y><w>260</w><h>110</h></coordinates><panel_attributes>Comida
+--
+_-COEF_COCIDA: float=1.08_
+-cocida: boolean
+-cantIngredientes: int
+--
++Comida(String, float, int, int, boolean)
++obtenerPrecio(): float
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>350</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>170</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>350</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>430</y><w>150</w><h>170</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Tamaño
+--
+_+GRANDE(130, 2)_
+_+MEDIANA(100, 1.5)_
+_+PEQUEÑA(80, 1)_
+-capacidadCM3: int
+-coefPrecio: float
+--
+-Tamaño(int, float)
++getCapacidadCM3(): int
++getCoefPrecio(): float
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>460</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tamaño</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>80</y><w>180</w><h>80</h></coordinates><panel_attributes>Pedido
+--
+--
++agregarItem(Item): void
++evaluar():InfoVenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>110</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-items
+m1=*</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>150</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>200</y><w>180</w><h>80</h></coordinates><panel_attributes>InfoVenta
+--
+-precio: float
+-peso: int
+--
++InfoVenta(float, int)
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
