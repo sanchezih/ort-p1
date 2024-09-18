@@ -1,0 +1,75 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>520</x><y>130</y><w>290</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Obra/
+--
+-nombre: String
+-duracion: int
+-cantLocalidades: int
+-cantEspectadores: int
+
+--
++ingresar(Espectactor): void
++puedeIngresar(Espectador): boolean
+#getEspectadoresPremiables(): List&lt;Espectador&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>580</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Infantil
+--
+_-TIEMPO_VESTIMENTA: int = 10_
+-cantPersonajes: int
+
+--
++getDuracion(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>390</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Dramatica
+--
+_-ENTRADAS_ADICIONALES: int = 2_
+-basadaEnLibro: boolean
+
+--
++asignarPremio(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>390</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Musical/
+--
+_-OBERTURA: int = 5_
+- orquestaVivo: boolean
+
+--
++getDuracion(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>130</y><w>280</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Teatro
+--
+-nombre: String
+-direccion: String
+
+--
++ingreso(List&lt;Espectador&gt; espectadores): void
++otorgarPremio(int): void
+-buscarObra(String): Obra
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>210</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-obras
+m1=*</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>580</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Cinematografico
+--
+-nombreDirector: String
+
+--
++asignarPremio(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>500</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;130;50;130;80</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>500</y><w>160</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;140;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>310</y><w>220</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>200;10;200;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>310</y><w>220</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;200;50;200;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>990</x><y>130</y><w>240</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Espectador
+--
+-dni: String
+-nombreObra: String
+-acompanante: boolean
+
+--
++getCantLocalidadesRequeridas(): int
++tieneTiempoDisponible(int): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>210</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-espectadores
+m1=*</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>990</x><y>390</y><w>240</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Critico
+--
+-tiempoDisponible: int
+
+--
++tieneTiempoDisponible(int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>310</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>80</y><w>880</w><h>70</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>860;50;860;10;10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>580</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Premiable/
+--
+
+--
++asignarPremio(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>630</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>500</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>
