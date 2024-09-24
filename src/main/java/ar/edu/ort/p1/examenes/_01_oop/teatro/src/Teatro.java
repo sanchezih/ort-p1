@@ -60,6 +60,11 @@ public class Teatro {
 		}
 	}
 
+	/**
+	 * 
+	 * @param nombre
+	 * @return
+	 */
 	private Obra buscarObra(String nombre) {
 
 		Obra obraBuscada = null;
