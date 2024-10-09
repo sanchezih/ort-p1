@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="ar.edu.ort.tp1.u5.tda.impl.NodoLista" project="ort-p1-private" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="135" width="165" x="274" y="258"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Tda" project="ort-p1-private" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="189" width="193" x="41" y="258"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="ar.edu.ort.tp1.u5.tda.interfaces.Checkable" project="ort-p1-private" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="99" width="140" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="ar.edu.ort.tp1.u5.tda.impl.Nodo" project="ort-p1-private" 
+    file="C:/Users/ihsanch/.m2/repository/com/github/sanchezih/ort-p1-lib/main-f55e4fac22-1/ort-p1-lib-main-f55e4fac22-1.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="171" width="121" x="274" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="5">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <association id="6">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="7" name="previous">        
+        <position height="0" width="0" x="156" y="94"/>      
+      </attribute>      
+      <multiplicity id="8" minimum="0" maximum="1">        
+        <position height="0" width="0" x="156" y="94"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="9">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="10" name="next">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="11" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
