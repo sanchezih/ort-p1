@@ -6,7 +6,7 @@ import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 public class ListaDeEmpleadosPorNombreDesc extends ListaOrdenadaNodos<String, Empleado> {
 
 	/**
-	 * 
+	 * 2do - 1ero
 	 */
 	@Override
 	public int compare(Empleado empleado1, Empleado empleado2) {
@@ -18,13 +18,16 @@ public class ListaDeEmpleadosPorNombreDesc extends ListaOrdenadaNodos<String, Em
 	}
 
 	/**
-	 * 
+	 * 2do - 1ero
 	 */
 	@Override
 	public int compareByKey(String nombre, Empleado empleado) {
-		String nombreEmpleado = empleado.getNombre();
-		int res = nombreEmpleado.compareTo(nombre);
-		return res;
+
+		String nombreDelEmpleado = empleado.getNombre();
+
+		int resultado = nombreDelEmpleado.compareTo(nombre);
+
+		return resultado;
 	}
 
 }

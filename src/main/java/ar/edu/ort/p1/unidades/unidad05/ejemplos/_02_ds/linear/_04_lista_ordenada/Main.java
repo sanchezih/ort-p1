@@ -2,7 +2,7 @@ package ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenad
 
 import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Automovil;
 import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Empleado;
-import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorEdad;
+import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorEdadAsc;
 import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorModeloAutomovilDesc;
 import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.listas.ListaDeEmpleadosPorNombreDesc;
 
@@ -26,7 +26,7 @@ public class Main {
 
 		System.out.println("Muestro a los empleados por edad (ASC)");
 
-		ListaDeEmpleadosPorEdad listaDeEmpleadosPorEdadAsc = new ListaDeEmpleadosPorEdad();
+		ListaDeEmpleadosPorEdadAsc listaDeEmpleadosPorEdadAsc = new ListaDeEmpleadosPorEdadAsc();
 		listaDeEmpleadosPorEdadAsc.add(e1);
 		listaDeEmpleadosPorEdadAsc.add(e2);
 		listaDeEmpleadosPorEdadAsc.add(e3);

@@ -3,7 +3,7 @@ package ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenad
 import ar.edu.ort.p1.unidades.unidad05.ejemplos._02_ds.linear._04_lista_ordenada.entidades.Empleado;
 import ar.edu.ort.tp1.u5.tda.impl.ListaOrdenadaNodos;
 
-public class ListaDeEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Empleado> {
+public class ListaDeEmpleadosPorEdadAsc extends ListaOrdenadaNodos<Integer, Empleado> {
 
 	/**
 	 * Este metodo es utilizado para comparar dos elementos entre si.
@@ -43,7 +43,9 @@ public class ListaDeEmpleadosPorEdad extends ListaOrdenadaNodos<Integer, Emplead
 	}
 
 	/**
-	 * 
+	 * Tener en cuenta: Como la lista es ascendente, la implementacion del
+	 * compareByKey la hago clave-claveDelObjeto. Si hubiese sido descendente,
+	 * deberia haber hecho claveDelObjeto-clave
 	 */
 	@Override
 	public int compareByKey(Integer clave, Empleado empleado) {
