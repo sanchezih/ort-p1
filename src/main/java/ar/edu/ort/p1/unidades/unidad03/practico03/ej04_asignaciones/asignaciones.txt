@@ -1,0 +1,6 @@
+Seniala cuales de las asignaciones seria incorrecta desde el punto de vista conceptual:
+A) TelefonoMovil tm <- new Dispositivo()
+B) Electrodomestico e <- new Licuadora()
+C) Publicacion p <- new Publicacion()
+D) Motocicleta m <- new Bicicleta()
+E) LocalComercial lc <- new Inmueble()
