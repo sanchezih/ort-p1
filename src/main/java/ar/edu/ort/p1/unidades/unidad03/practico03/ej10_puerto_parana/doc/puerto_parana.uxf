@@ -1,0 +1,77 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>60</y><w>240</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Puerto
+--
+
+--
++Puerto()
++barcosConAlquilerMayorA(double): int
++barcoConMayorConsumo(): Deportivo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>60</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Amarra
+--
+-numero: int
+
+--
++estaDisponible(): boolean
++getMontoAlquiler(): double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>270</y><w>210</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Embarcacion/
+--
+-matricula: String
+-eslora: double
+-anioFabricacion: int
+-duenio: String
+-valorBase: double
+-valorAdicional: double
+--
+-getPrecioBase(): double
+/+getPrecioAdicional(): double/
++getMontoAlquiler(): double
++getValorAdicional(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>110</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-amarras
+m1=*
+</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>530</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Velero
+--
+-cantMastiles: int
+
+--
++getPrecioAdicional(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>530</y><w>280</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Deportivo
+--
+_-INDICE_CALC_POTENCIA: double = 0.35_
+-potenciaMotor: int
+-factorAerodinamico: int
+--
++getPotenciaMotor(): int
++getPrecioAdicional(): double
++calcularConsumo(): double
+_+GET_INDICE_CALCULO_POTENCIA(): double_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>530</y><w>210</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Yate
+--
+-camarotes: int
+
+--
++getPrecioAdicional(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>460</y><w>300</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>280;10;280;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>460</y><w>270</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;250;40;250;70</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>460</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>740</y><w>280</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+DeportivoLujo
+--
+
+--
++calcularConsumo(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>680</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>170</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+-embarcacion</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>170</y><w>30</w><h>380</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;360;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>170</y><w>170</w><h>220</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;200;10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>60</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Ubicacion
+--
+_+NORTE: Ubicacion_
+_+ESTE: Ubicacion_
+--
++Ubicacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>110</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-ubicacion
+m1=1
+</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>720</x><y>280</y><w>230</w><h>100</h></coordinates><panel_attributes>Nota: La administracion del puerto
+define para cada embarcacion dos
+valores: valorBase y valorAdicional.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
