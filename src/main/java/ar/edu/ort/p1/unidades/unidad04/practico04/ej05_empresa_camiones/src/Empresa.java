@@ -8,7 +8,7 @@ public class Empresa {
 
 	private static int CANT_CAMIONES = 10;
 	private static int CANT_CHOFERES = 20;
-
+	
 	private List<Viaje> viajes;
 	private Chofer[] choferes = new Chofer[CANT_CHOFERES];
 	private Camion[] camiones = new Camion[CANT_CAMIONES];
@@ -78,11 +78,34 @@ public class Empresa {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * Ejercicio C: La explotacion del metodo obtenerViajesXChoferCamion que
+	 * devuelva (no muestre por consola) la cantidad de viajes que realizo cada
+	 * chofer con cada camion.
+	 * 
+	 * @return
+	 */
+	public int[][] obtenerViajesPorChoferCamion() {
+
+		int[][] matrizViajesXChofer = new int[this.choferes.length][this.camiones.length];
+
+		for (Viaje viaje : this.viajes) {
+			int idChofer = getIdxChofer(viaje.getIdChofer());
+			int idCamion = viaje.getIdCamion();
+
+			matrizViajesXChofer[idChofer][idCamion]++; // matrizViajesXChofer[idChofer][idCamion] =
+														// matrizViajesXChofer[idChofer][idCamion] + 1
+		}
+		return matrizViajesXChofer;
+	}
+
+	/*----------------------------------------------------------------------------*/
+
 	// Metodos complementarios
 
 	private void inicializarEmpresa() {
 
-		final int CANT_VIAJES = 6;
+		final int CANT_VIAJES = 20;
 		final int LIMITE_KMS = 100;
 
 		System.out.println(
