@@ -105,7 +105,7 @@ public class Empresa {
 
 	private void inicializarEmpresa() {
 
-		final int CANT_VIAJES = 20;
+		final int CANT_VIAJES = 6;
 		final int LIMITE_KMS = 100;
 
 		System.out.println(

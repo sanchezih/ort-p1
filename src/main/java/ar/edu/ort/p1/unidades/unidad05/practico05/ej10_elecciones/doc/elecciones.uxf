@@ -1,0 +1,61 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>49</x><y>300</y><w>210</w><h>70</h></coordinates><panel_attributes>ListaDeMesas
+--
+--
++ compare(Mesa, Mesa): int
++ compareByKey(Integer, Mesa): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>299</x><y>470</y><w>290</w><h>70</h></coordinates><panel_attributes>PadronElectoral
+--
+--
++ generarRegistroDeElector(int): RegistroDeElector
++ registrarEnMesa(ElectorConMesa)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>149</x><y>360</y><w>230</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- mesas</panel_attributes><additional_attributes>10;10;10;90;210;90;210;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>299</x><y>280</y><w>290</w><h>160</h></coordinates><panel_attributes>Mesa
+--
+- numero: int
+--
++ Mesa(int)
++ agregarElector(Elector)
++ getNumero(): int
++ obtenerNroDeOrden(int): int
++ tieneEnLista(int): boolean
++ tieneEnLista(String): boolean
++ generarRegistroDeElector(int): RegistroDeElector</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>449</x><y>430</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>249</x><y>330</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>179</x><y>130</y><w>230</w><h>70</h></coordinates><panel_attributes>ListaElectoresPorDNI
+--
+--
++ compare(Elector, Elector): int
++ compareByKey(Integer, Elector): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>190</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- electoresDni</panel_attributes><additional_attributes>10;10;10;100;20;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>229</x><y>30</y><w>240</w><h>70</h></coordinates><panel_attributes>MesaElectoral
+--
+--
++ agregarElector(int, String, String, int)
++ generarPadron(): PadronElectoral</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>129</x><y>70</y><w>120</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- electores
+</panel_attributes><additional_attributes>50;100;10;100;10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>29</x><y>40</y><w>450</w><h>570</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>430;500;430;550;10;550;10;10;200;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>619</x><y>300</y><w>180</w><h>130</h></coordinates><panel_attributes>Elector
+--
+- dni; int
+- apellido: String
+- nombre: String
+--
++ Elector(int, String, String)
++ getDni(): int
++ getNombreCompleto(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>579</x><y>340</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>619</x><y>470</y><w>230</w><h>100</h></coordinates><panel_attributes>ElectorConMesa
+--
+- nroMesa; int
+--
++ ElectorConMesa(int, String, String, int)
++ generarElectorSinMesa(): Elector
++ getNroMesa(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>709</x><y>420</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>40</y><w>380</w><h>450</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>360;430;360;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>579</x><y>500</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>70</y><w>320</w><h>250</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>300;230;300;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>559</x><y>420</y><w>110</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;10;90;30;10;30;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>509</x><y>130</y><w>230</w><h>70</h></coordinates><panel_attributes>ListaElectoresAlfabetica
+--
+--
++ compare(Elector, Elector): int
++ compareByKey(String, Elector): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>559</x><y>190</y><w>110</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- electoresAlfa</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>79</x><y>460</y><w>180</w><h>110</h></coordinates><panel_attributes>RegistroDeElector
+--
+- dni: int
+- nroMesa: int
+- nroDeOrden: int
+--
++ RegistroDeElector(int, int, int)
++ toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>249</x><y>500</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>379</x><y>190</y><w>290</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>270;110;270;70;10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>669</x><y>190</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>

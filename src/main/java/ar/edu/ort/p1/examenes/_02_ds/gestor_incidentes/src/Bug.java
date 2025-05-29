@@ -1,0 +1,56 @@
+package ar.edu.ort.p1.examenes._02_ds.gestor_incidentes.src;
+
+public class Bug extends Error {
+
+	private static final int HS_ALTA = 12;
+	private static final int HS_MEDIA = 36;
+
+	private int tiempoEstimado;
+
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * 
+	 * @param nombreCliente
+	 * @param unidadNegocio
+	 * @param fechaCarga
+	 * @param titulo
+	 * @param empleadoQueLoReporto
+	 * @param descripcion
+	 * @param nombrePersonaQueLoDetecto
+	 * @param tiempoEstimado
+	 */
+	public Bug(String nombreCliente, String unidadNegocio, String fechaCarga, String titulo,
+			Empleado empleadoQueLoReporto, String descripcion, String nombrePersonaQueLoDetecto, int tiempoEstimado) {
+		super(nombreCliente, unidadNegocio, fechaCarga, titulo, empleadoQueLoReporto, descripcion,
+				nombrePersonaQueLoDetecto);
+		this.tiempoEstimado = tiempoEstimado;
+	}
+
+	/*----------------------------------------------------------------------------*/
+
+	/**
+	 * 
+	 */
+	@Override
+	public Prioridad calcularPrioridad() {
+		int tiempoEstimado = obtenerTiempoDeResolucion();
+		Prioridad prioridad;
+		if (tiempoEstimado <= HS_ALTA) {
+			prioridad = Prioridad.ALTA;
+		} else {
+			if (tiempoEstimado <= HS_MEDIA) {
+				prioridad = Prioridad.MEDIA;
+			} else {
+				prioridad = Prioridad.BAJA;
+			}
+		}
+		return prioridad;
+	}
+
+	@Override
+	public int obtenerTiempoDeResolucion() {
+		return this.tiempoEstimado;
+	}
+
+}
