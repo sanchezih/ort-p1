@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>25</x><y>390</y><w>250</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Portal
+--
+
+--
++Portal()
++procesarPedido(Cliente): List&lt;Producto&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>110</y><w>210</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Cliente
+--
+-nombre: String
+-apellido: String
+-direccion: String
+-email: String
+-telefono: String
+--
++getPedidoPendiente(): Pedido
++confirmarPedido(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>620</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Producto
+--
+-nombre: String
+-precioUnitario: double
+-cantEnStock: int
+--
++descontarDelStock(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>395</x><y>390</y><w>320</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Pedido
+--
+-fechaHora: String
+--
++hayStockSuficiente(): boolean
++getListaDeProductosFaltantes(): List&lt;Producto&gt;
++confirmar(): void
+-descontarStock(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>145</x><y>270</y><w>80</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-clientes</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>145</x><y>510</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-productos</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>180</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-historial</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>455</x><y>130</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Historial
+--
+
+--
++Historial()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>230</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-pedidos</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>815</x><y>390</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Estado
+--
+_+PENDIENTE: Estado_
+_+CONFIRMADO: Estado_
+_+EN_CAMINO: Estado_
+_+ENTREGADO: Estado_
+--
+-Estado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>705</x><y>440</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-estado</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>510</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-items</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>455</x><y>620</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ItemPedido
+--
+-cant: int
+--
++ItemPedido(int, Producto)
++hayStockSuficiente(): boolean
++descontarStock(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>670</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-producto</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>250</y><w>200</w><h>160</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>180;140;180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>265</x><y>450</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>510</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;180;130;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>145</x><y>60</y><w>790</w><h>350</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>770;330;770;10;10;10;10;50</additional_attributes></element></diagram>
