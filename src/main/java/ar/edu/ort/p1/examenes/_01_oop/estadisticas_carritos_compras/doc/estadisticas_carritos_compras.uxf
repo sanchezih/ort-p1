@@ -1,0 +1,82 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>140</x><y>240</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+SitioWeb
+--
+
+--
++idDelCarritoMasCaro(): String
++nroCuotasPromedio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>240</y><w>210</w><h>180</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+CarritoDeCompra
+--
+-id: String
+--
++getPrecio(): double
++pagoConTarjeta(): boolean
++getNroDeCuotas(): int
++getFechaDeCompra(): Fecha
+-precioDeProductos(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>290</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-carritosVendidos</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>410</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-metodoDePago</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>720</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Efectivo
+--
+_-DCTO: double = 0.1_
+_-DCTO_CONS_FINAL: double = 0.15_
+-consumidorFinal: boolean
+--
++getDctoORecargo(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>720</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+TransferenciaBancaria
+--
+_-REC: double = 0.05_
+_-REC_DEMORA: double = 0.05_
+_-DIAS_DEMORA: int = 10_
+-cbu: String
+--
++getDctoORecargo(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>630</y><w>290</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>270;10;270;50;10;50;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>630</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>630</y><w>290</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;270;50;270;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>240</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Item
+--
+-cant: int
+--
++getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>50</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Producto
+--
+-id: String
+-precio: double
+--
++getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>290</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-items
+m1=*</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>150</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-producto</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>50</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Valuable
+--
+
+--
++getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>150</y><w>240</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60;220;60;220;90</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>150</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>100</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>370</y><w>240</w><h>370</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>220;350;220;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>510</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/MetodoDePago/
+--
+
+--
++getDiasDeDemoraDePago(): int
+/+getDctoORecargo(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>720</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+TarjetaDeCredito
+--
+_-REC_X_CUOTA: double = 0.15_
+-nroDeCuotas: int
+--
++getDctoORecargo(): double
++getNroDeCuotas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>510</y><w>230</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Fecha
+--
+-dia: int
+-mes: int
+-año: int
+--
+_+diasTranscurridos(Fecha, Fecha): int_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>540</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fechaDePago</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>380</y><w>280</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fechaDeCompra</panel_attributes><additional_attributes>10;130;10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>410</y><w>70</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-carrito</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element></diagram>
