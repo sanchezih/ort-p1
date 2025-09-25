@@ -1,10 +1,10 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>480</x><y>100</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>752</x><y>185</y><w>294</w><h>182</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 Empresa
 --
 
 --
 +recaudacionTotal(): double
-+cantVecesRecorrida(Estacion): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>100</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
++cantVecesRecorrida(Estacion): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>262</x><y>185</y><w>294</w><h>182</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 Reserva
 --
 -codigo: String
@@ -12,9 +12,9 @@ Reserva
 --
 +getPrecio(): double
 +cantVecesRecorrida(Estacion): int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>150</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>542</x><y>255</y><w>238</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
--reservas</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>310</y><w>210</w><h>180</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+-reservas</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>262</x><y>479</y><w>294</w><h>252</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
 Recorrido
 --
 _-PRECIO_X_ESTACION: double = 50_
@@ -25,7 +25,7 @@ _-DCTO: double = 0.2_
 -cantEstacionesRecorridas(): int
 -fueCompleto(): boolean
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>310</y><w>210</w><h>180</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>752</x><y>479</y><w>294</w><h>252</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
 Estacion
 --
 _ +BUENOS_AIRES: Estacion_
@@ -36,10 +36,10 @@ _ +CHIVILCOY: Estacion_
 _ +ALBERTI: Estacion_
 _ +BRAGADO: Estacion_
 --
-+Estacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>360</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-Estacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>542</x><y>549</y><w>238</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--estDestino</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>410</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-estDestino</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>542</x><y>619</y><w>238</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--estPartida</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>220</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-estPartida</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>353</y><w>112</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--recorrido</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>220</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>220</y><w>270</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>250;90;250;50;10;50;10;10</additional_attributes></element></diagram>
+-recorrido</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>892</x><y>353</y><w>42</w><h>154</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>353</y><w>378</w><h>154</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>250;90;250;50;10;50;10;10</additional_attributes></element></diagram>
