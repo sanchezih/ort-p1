@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>530</x><y>410</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Pelota
+--
+-codigo: String
+--
++getCodigo(): String
++getTipo(): TipoPelota</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>410</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+TipoPelota
+--
+_+FUTBOL: TipoPelota_
+_+BASQUET: TipoPelota_
+_+VOLEY: TipoPelota_
+--
++TipoPelota()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>150</y><w>280</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+DepartamentoDeDeportes
+--
+_-CANT_PILAS: int = 3_
+_-PELOTAS_X_PILA: int = 5_
+--
++DepartamentoDeportes()
++verPelotasEnTopes(): void
++agregarPelota(Pelota): boolean
++buscarPelota(String): Pelota
+-buscarPelotaEnPila(String, Pila&lt;Pelota&gt;): Pelota
++pelotasPorTipo(): int[][]
+-cantidadDePelotasPorTipo(Pila&lt;Pelota&gt;): int[]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>460</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>210</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_PILAS
+-pilas</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>410</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+PilaDePelotas
+--
+
+--
++PilaDePelotas()
++PilaDePelotas(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>320</y><w>250</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>470</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>960</x><y>340</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>150</y><w>210</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+Pila&lt;T&gt;
+--
+
+--
++push(T): void
++pop(): T
++peek(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>150</y><w>210</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+PilaNodos&lt;T&gt;
+--
+
+--
++push(T): void
++pop(): T
++peek(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>220</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>260</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>290</y><w>510</w><h>140</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;120;10;10;490;10</additional_attributes></element></diagram>
