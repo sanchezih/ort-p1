@@ -1,0 +1,42 @@
+Enunciado
+
+La compania Terminales Argentinas S.A. nos pide desarrollar un sistema para sus
+terminales de autoservicio.
+
+Estas terminales tienen la capacidad de permitir el deposito de billetes. Estos
+billetes son escaneados por la terminal reconociendo su numero, anio, letra de
+serie, valor (10, 50, 100) y estado ("BUENO", "REGULAR", "MALO") y, si cumple
+con una serie de requisitos, se almacenan uno arriba de otro. Todo billete debe
+poder ser verificable por la terminal. Los dolares, a diferencia de los pesos,
+tienen ademas una banda de seguridad 3D que indica tambien el valor del billete.
+
+Los billetes pueden ser Nacionales (Pesos) o Dolares.
+
+En el caso de los billetes nacionales, para cumplir con los requisitos de
+verificacion, el anio del billete debe ser posterior al 2010.
+
+En el caso de los dolares, los requisitos de verificacion implican que la letra
+de serie no puede ser 'C' y ademas el valor de la banda de seguridad 3D debe
+coincidir con el valor del billete.
+
+En ambos casos, sean dolares o pesos, el numero del billete debe ser superior a
+2.000.000.
+
+Basado en el enunciado descripto, realiza:
+	A. El diagrama de clases que lo modelice, con sus relaciones, atributos y
+	metodos.
+	
+	B. El metodo depositar, que recibe un Billete como parametro y debe devolver
+	si el mismo logro almacenarse en la terminal o no.
+	
+	C. El metodo cantBilletesPorEstadoYValor que debe devolver (no mostrar por
+	consola) la cantidad de billetes que hay almacenados en la terminal
+	agrupados por estado y valor.
+	
+	D. El metodo listarBilletesOrdenadosPorValor que debe devolver (no mostrar
+	por consola) una lista de todos los billetes almacenados en la terminal
+	ordenados por valor.
+
+IMPORTANTE: En cada caso en el que se necesite recorrer la estructura donde se
+almacenan los billetes la estructura de datos donde se almacenan los billetes
+debe quedar en el orden original.

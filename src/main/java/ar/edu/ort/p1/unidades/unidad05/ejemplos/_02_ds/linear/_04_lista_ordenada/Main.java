@@ -24,6 +24,11 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
+		System.out.println("+-----------------------------------------------------------------------------+");
+		System.out.println("|                  Recorro las listas y muestro su contenido                  |");
+		System.out.println("+-----------------------------------------------------------------------------+");
+		System.out.println();
+
 		System.out.println("Muestro a los empleados por edad (ASC)");
 
 		ListaDeEmpleadosPorEdadAsc listaDeEmpleadosPorEdadAsc = new ListaDeEmpleadosPorEdadAsc();
@@ -56,34 +61,39 @@ public class Main {
 		System.out.println();
 		System.out.println("Muestro a los empleados alfabeticamente (DESC)");
 
-		ListaDeEmpleadosPorNombreDesc listaDeEmpleadosPorAlfabeticaDesc = new ListaDeEmpleadosPorNombreDesc();
-		listaDeEmpleadosPorAlfabeticaDesc.add(e1);
-		listaDeEmpleadosPorAlfabeticaDesc.add(e2);
-		listaDeEmpleadosPorAlfabeticaDesc.add(e3);
-		listaDeEmpleadosPorAlfabeticaDesc.add(e4);
+		ListaDeEmpleadosPorNombreDesc listaDeEmpleadosPorNombreDesc = new ListaDeEmpleadosPorNombreDesc();
+		listaDeEmpleadosPorNombreDesc.add(e1);
+		listaDeEmpleadosPorNombreDesc.add(e2);
+		listaDeEmpleadosPorNombreDesc.add(e3);
+		listaDeEmpleadosPorNombreDesc.add(e4);
 
-		for (Empleado empleado : listaDeEmpleadosPorAlfabeticaDesc) {
+		for (Empleado empleado : listaDeEmpleadosPorNombreDesc) {
 			System.out.println("\t-> " + empleado.toString());
 		}
 
 		/*----------------------------------------------------------------------------*/
 
 		System.out.println();
-		System.out.println("Busco empleados");
-
-		System.out.println("\t-> Alberto: \t" + listaDeEmpleadosPorAlfabeticaDesc.search("Alberto"));
-		System.out.println("\t-> noexiste: \t" + listaDeEmpleadosPorAlfabeticaDesc.search("noexiste"));
-		System.out.println("\t-> Cristian: \t" + listaDeEmpleadosPorAlfabeticaDesc.search("Cristian"));
-
-		/*----------------------------------------------------------------------------*/
+		System.out.println("+-----------------------------------------------------------------------------+");
+		System.out.println("|                Pruebo los metodos que invocan a compareByKey                |");
+		System.out.println("|                usando la lista listaDeEmpleadosPorNombreDesc                |");
+		System.out.println("+-----------------------------------------------------------------------------+");
 
 		System.out.println();
-		System.out.println("Busco autos por anio");
+		System.out.println("1. Pruebo el metodo \"exists\"");
+		System.out.println("\t-> Existe Alberto?: \t" + listaDeEmpleadosPorNombreDesc.exists("Alberto"));
+		System.out.println("\t-> Existe fake?: \t" + listaDeEmpleadosPorNombreDesc.exists("fake"));
+		System.out.println("\t-> Existe Cristian?: \t" + listaDeEmpleadosPorNombreDesc.exists("Cristian"));
 
-		System.out.println("\t-> 2018: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2018"));
-		System.out.println("\t-> 2009: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2009"));
-		System.out.println("\t-> 2003: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2003"));
-		System.out.println("\t-> 2020: \t" + listaDeEmpleadosPorModeloAutomovilDesc.search("2020"));
+		System.out.println();
+		System.out.println("2. Pruebo el metodo \"removeByKey\"");
+		System.out.println("\t-> Intento remover a Alberto: \t" + listaDeEmpleadosPorNombreDesc.removeByKey("Alberto"));
+
+		System.out.println();
+		System.out.println("3. Pruebo el metodo \"search\"");
+		System.out.println("\t-> Alberto: \t" + listaDeEmpleadosPorNombreDesc.search("Alberto"));
+		System.out.println("\t-> fake: \t" + listaDeEmpleadosPorNombreDesc.search("fake"));
+		System.out.println("\t-> Cristian: \t" + listaDeEmpleadosPorNombreDesc.search("Cristian"));
 
 	}
 

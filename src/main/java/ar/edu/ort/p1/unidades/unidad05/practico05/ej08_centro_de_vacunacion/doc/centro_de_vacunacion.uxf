@@ -1,0 +1,109 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>310</x><y>40</y><w>520</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+CentroDeVacunacion
+--
+_-CANT_COLAS: int = 3_
+-
++obtenerColaPorPrioridadYOrden(): Cola&lt;Persona&gt;
+-cargarLista(ListaOrdenada&lt;PrioridadYOrden, PersonaEnCola&gt;): void
+-cargarLista(ListaOrdenada&lt;PrioridadYOrden, PersonaEnCola&gt;, Cola&lt;Persona&gt;): void
+-pasarListaACola(ListaOrdenada&lt;PrioridadYOrden, PersonaEnCola&gt;, Cola&lt;Persona&gt;): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>590</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Medico
+--
+-matricula: String
+--
++getPrioridad(): int
+-setMatricula(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>590</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+NivelDeEducacion
+--
+_+INICIAL: NivelDeEducacion_
+_+PRIMARIO: NivelDeEducacion_
+_+SECUNDARIO: NivelDeEducacion_
+--
+-NivelDeEducacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>590</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Educador
+--
+
+--
++getPrioridad(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>280</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+PrioridadYOrden
+-
+-prioridad: int
+-orden: int
+-
++PrioridadYOrden(int, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Persona
+--
+_-EDAD_MINIMA: int= 30_
+_-EDAD_MAXIMA: int= 60_
+
+-dni: String
+-nombre: String
+-edad: int
+-esPacienteDeRiesgo: boolean
+-
++getPrioridad(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1230</x><y>400</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Vacunable
+--
+_+PRIORIDAD_MINIMA: int= 2_
+_+PRIORIDAD_MEDIA: int= 1_
+_+PRIORIDAD_MAXIMA: int= 0_
+-
++getPrioridad(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>160</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ColaDePersonas
+--
+
+--
++ColaDePersonas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>420</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+PersonaEnCola
+--
+
+--
++PersonaEnCola(Persona, int, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>420</y><w>320</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaDePersonasPorPrioridadYOrden
+--
+
+--
++compare(PersonaEnCola, PersonaEnCola): int
++compareByKey(PrioridadYOrden, PersonaEnCola): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>640</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-nivelDeEducacion</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>510</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>330</y><w>180</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-prioridadYOrden</panel_attributes><additional_attributes>10;20;160;20;160;90</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>460</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-persona</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>200</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>200</y><w>190</w><h>210</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>170;190;10;190;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1050</x><y>240</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>70</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_COLAS
+-colasDePersonas</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>70</y><w>180</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;40;10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>440</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1230</x><y>310</y><w>210</w><h>70</h></coordinates><panel_attributes>Las constantes de la interface
+son (y deben ser) publicas, por
+ende, sus implementaciones las
+heredan
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>490</y><w>320</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>300;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>370</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>100;10;100;90;10;90</additional_attributes></element><element><id>UMLNote</id><coordinates><x>580</x><y>240</y><w>160</w><h>70</h></coordinates><panel_attributes>PrioridadYOrden es una
+clase que representa la
+key a utilizar por la lista
+ordenada
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>280</y><w>210</w><h>100</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+/ListaOrdenadaNodos&lt;K, T&gt;/
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>370</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>110</y><w>210</w><h>100</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+ListaOrdenada&lt;K,T&gt;
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>200</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>200</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>40</y><w>210</w><h>90</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+Cola&lt;T&gt;
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>170</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1230</x><y>160</y><w>210</w><h>90</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+ColaNodos&lt;T&gt;
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>200</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>80</y><w>200</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;180;10;180;80</additional_attributes></element><element><id>Relation</id><coordinates><x>1050</x><y>510</y><w>160</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;140;50;140;80</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>200</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element></diagram>
