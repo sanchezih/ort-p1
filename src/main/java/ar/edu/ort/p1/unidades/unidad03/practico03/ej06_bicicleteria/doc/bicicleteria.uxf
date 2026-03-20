@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>90</y><w>260</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Taller
+--
+
+--
++cantServiciosPosibles(List&lt;Bicicleta&gt;): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>90</y><w>260</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Bicicleta
+--
+_-KM_MAX_PERMITIDO: int = 2000_
+-marca: String
+-modelo: String
+-kilometraje: double
+--
++isReparable(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>290</y><w>260</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+BicicletaElectrica
+--
+_-POTENCIA_MAX_PERMITIDA: int = 250_
+-potencia: double
+--
++isReparable(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>210</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>150</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>780</x><y>90</y><w>320</w><h>130</h></coordinates><panel_attributes>Nota: Este ejercicio, tal como esta planteado,
+no indica la necesidad de tener clases abstractas.
+El taller no tiene la necesidad de conocer a las
+bicicletas electricas, por tal motivo las recibe como
+parametro en vez de tener que tener una lista de
+bicicletas.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>210</y><w>240</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>220;160;10;160;10;10</additional_attributes></element></diagram>
