@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>324</x><y>564</y><w>252</w><h>156</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Cliente
+--
+-apellido: String
+-nombre: String
+-telefono: String
+-email: String
+--
++notificar(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>624</x><y>564</y><w>252</w><h>156</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Inmobiliaria
+--
+-nombre: String
+-email: String
+-porcentajeDeComision: String
+--
++notificar(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>444</x><y>36</y><w>300</w><h>216</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Inmueble
+--
+-domicilio: String
+-superficieEnM2: String
+-cantidadDeAmbientes: int
+-precio: double
+--
++Inmueble(String, String, int, double)
++setPrecio(double): void
+-armarMensaje(double, double): String
++agregarInteresado(Notificable): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>444</x><y>360</y><w>300</w><h>108</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Notificable
+--
+
+--
++notificar(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>444</x><y>456</y><w>180</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>130;10;130;50;10;50;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>456</y><w>192</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;140;50;140;90</additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>240</y><w>120</w><h>144</h></coordinates><panel_attributes>lt=&lt;-
+-interesados
+m1=*</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>732</x><y>168</y><w>180</w><h>420</h></coordinates><panel_attributes>lt=&lt;-
+-inmuebles
+m1=*</panel_attributes><additional_attributes>10;10;70;10;70;330</additional_attributes></element></diagram>
