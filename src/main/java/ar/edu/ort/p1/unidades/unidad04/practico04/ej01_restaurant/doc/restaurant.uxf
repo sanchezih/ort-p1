@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>360</x><y>320</y><w>250</w><h>180</h></coordinates><panel_attributes>Restaurant
+--
+_-CANT_CAJEROS: int = 5_
+_-CANT_ROBOTS: int = 8_
+--
++Restaurant()
++montosPorCajero(): double[]
++informeDePedidos(): InfoPedido[]
+-buscarRobot(String): Robot
+-idxRobot(String): int
++mostrarPedidosConMasRiesgo(): void
+-robotConMenorBateria(): Robot
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>100</y><w>210</w><h>130</h></coordinates><panel_attributes>Cajero
+--
+-id: int
+-apellido: String
+-antiguedad: int
+--
++Cajero(int, String, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>580</y><w>210</w><h>90</h></coordinates><panel_attributes>Robot
+--
+-codigo: String
+-nivelBateria: int
+--
++Robot(String, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>450</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-pedidos</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>490</y><w>110</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_ROBOTS
+-robots</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>440</y><w>210</w><h>160</h></coordinates><panel_attributes>Pedido
+--
+-nombreCliente: String
+-idCajero: int
+-codRobot: String
+-monto: double
+--
++Pedido(String, int, String, double)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>220</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_CAJEROS
+-cajeros</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>260</y><w>210</w><h>150</h></coordinates><panel_attributes>InfoPedido
+--
+-monto: double
+-apellidoCajero: String
+-bateriaRobot: int
+--
++InfoPedido(double, String, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>350</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element></diagram>

@@ -1,0 +1,36 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>270</x><y>130</y><w>210</w><h>50</h></coordinates><panel_attributes>Aerolinea
+--
+--
++ asignar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>260</y><w>120</w><h>100</h></coordinates><panel_attributes>Reserva
+--
+- ID: String
+- DNI: String
+- nroAsiento: int
+--
++ getters...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>160</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- reservas</panel_attributes><additional_attributes>10;100;10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>330</y><w>290</w><h>140</h></coordinates><panel_attributes>Avion
+--
+_-FILAS: int = 16_
+_-ASIENTOS_X_FILA: int = 6_
+- marca: String
+--
++ reservar(int): void
++ asientosLibresConVentanilla(): int
+- cantAsientosEnColumnaPorEstado(int, Estado): int
+- esAsientoValido(int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>170</y><w>70</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- elAvion</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>540</y><w>140</w><h>70</h></coordinates><panel_attributes>Asiento
+--
+- numero: int
+--
++ reservar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>380</y><w>130</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+_+ LIBRE_
+_+ RESERVADO_
+_+ OCUPADO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>460</y><w>170</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- estado</panel_attributes><additional_attributes>10;10;10;120;150;120</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>460</y><w>180</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=[FILAS][ASIENTOS_X_FILA]
+- asientos</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>410</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element></diagram>
