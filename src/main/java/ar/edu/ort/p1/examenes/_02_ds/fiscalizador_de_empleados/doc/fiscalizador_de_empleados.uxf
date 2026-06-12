@@ -1,0 +1,91 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>540</x><y>180</y><w>210</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+Cola&lt;T&gt;
+--
+
+--
++add(T): void
++remove(): T
++get(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>530</y><w>270</w><h>150</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Profesor
+--
+_-TURNOS: int = 3_
+_-DIAS_SEMANA: int = 5_
+--
++hayIrregularidad(): boolean
+-cargosValidosSegunNivel(): boolean
+-cargosValidosSegunNivel(Cargo[]): boolean
+-cumpleCantCargos(int, int): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>780</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Cargo
+--
+-nombreInstitucion: String
+-cantHoras: int
+--
++Cargo(String, int, Nivel)
++getTipo(): Nivel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>780</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Nivel
+--
+_+TERCIARIO: Nivel_
+_+UNIVERSITARIO: Nivel_
+_+POSGRADO: Nivel_
+--
++Nivel()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>820</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tipo</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>580</y><w>240</w><h>220</h></coordinates><panel_attributes>lt=&lt;-
+m1=[DIAS_SEMANA][TURNOS]
+-cargos</panel_attributes><additional_attributes>10;200;10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>670</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-titulo</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>530</y><w>210</w><h>150</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Auxiliar
+--
+_-MAX_HS_SEMANALES: int = 20_
+_-MAX_ANTIGUEDAD: int = 10_
+-cantHorasSemanales: int
+--
++hayIrregularidad(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>360</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Empleado/
+--
+-dni: String
+-anioDeIngreso: int
+--
++getAntiguedad(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>180</y><w>310</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Instituto
+--
+-codigo: String
+--
++empleadosEnFalta(): ListaDeEmpleadosPorDniAsc</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>450</y><w>160</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;140;50;140;80</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>450</y><w>170</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>240</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-empleados</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>180</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Fiscalizable
+--
+
+--
++hayIrregularidad(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>360</y><w>210</w><h>100</h></coordinates><panel_attributes>bg=Orange
+&lt;&lt;Class&gt;&gt;
+Fecha
+-
+
+-
+_+getAnioActual(): int_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>410</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>360</y><w>310</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaDeEmpleadosPorDniAsc
+--
+
+--
++compare(Empleado, Empleado): int
++compareByKey(String, Empleado): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1060</x><y>290</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>410</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>290</y><w>300</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;40;280;40;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>290</y><w>260</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;240;40;240;70</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>250</y><w>520</w><h>490</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;430;10;470;500;470;500;10;460;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>20</y><w>210</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+ColaNodos&lt;T&gt;
+--
+
+--
++add(T): void
++remove(): T
++get(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>80</y><w>350</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;330;10;330;100</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>130</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>530</y><w>210</w><h>150</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+/ListaOrdenadaNodos&lt;K, T&gt;/
+--
+
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1060</x><y>450</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>

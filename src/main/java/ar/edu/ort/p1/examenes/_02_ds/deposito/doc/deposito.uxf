@@ -1,0 +1,127 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>643</x><y>60</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Deposito
+--
+_-CANT_RACKS: int = 10_
+--
++Empresa()
++getInformeDePrioridades(): int[]
++ingresarProducto(Producto): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>213</x><y>60</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Rack/
+--
+-pesoMaximoSoportado: int
+--
++Rack()
++getPesoMaximoSoportado(): int
+/+ingresarProducto(Producto): boolean/
+/+esProductoValido(Producto): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>443</x><y>110</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=CANT_RACKS
+-racks</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>343</x><y>300</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Industrial
+--
+_-CANT_MAX_X_PAIS: int = 8_
+--
++Industrial(int)
++ingresarProducto(Producto): boolean
++esProductoValido(Producto): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>73</x><y>300</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Compacto
+--
+_-CANT_MAX_X_PAIS: int = 5_
+-tieneRefrigeracion: boolean
+--
++Compacto(int, boolean)
++ingresarProducto(Producto): boolean
++esProductoValido(Producto): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>453</x><y>420</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-productos</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>183</x><y>420</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-productos</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>643</x><y>450</y><w>240</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Producto
+--
+-nombre: String
+-paisDeFabricacion: String
+-peso: int
+--
++Producto(String, String, int)
++getNombre(): String
++getPaisDeFabricacion(): String
++getPeso(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>973</x><y>450</y><w>240</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ItemPedido
+--
+-cantidad: int
+--
++ItemPedido(int, Producto)
++getCantidad(): int
++getProducto(): Producto
++getNombreProducto(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>873</x><y>520</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-producto</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>973</x><y>660</y><w>240</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ListaItemsPorNombreAsc
+--
+
+--
++ListaItemsPorNombreAsc()
++compare(ItemPedido, ItemPedido): int
++compareByKey(String, ItemPedido): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>973</x><y>270</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Pedido
+--
+-empresaSolicitante: String
+--
++sumarPrioridades(int[]): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>833</x><y>180</y><w>160</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-pedidos</panel_attributes><additional_attributes>140;170;10;170;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>973</x><y>60</y><w>240</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Prioridad
+--
+_+BAJA: Prioridad_
+_+NORMAL: Prioridad_
+_+ALTA: Prioridad_
+
+--
++Prioridad()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1083</x><y>180</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-prioridad</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>73</x><y>510</y><w>240</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+Pila&lt;T&gt;
+--
+
+--
++push(T): void
++pop(): T
++peek(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>343</x><y>510</y><w>240</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+Cola&lt;T&gt;
+--
+
+--
++add(T): void
++remove(): T
++get(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>183</x><y>180</y><w>170</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;80;10;80;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>323</x><y>180</y><w>160</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;140;80;140;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1263</x><y>450</y><w>240</w><h>160</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Interface&gt;&gt;
+ListaOrdenada&lt;K, T&gt;
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1203</x><y>330</y><w>210</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-items</panel_attributes><additional_attributes>180;120;180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1263</x><y>660</y><w>240</w><h>120</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+/ListaOrdenadaNodos&lt;K, T&gt;/
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1373</x><y>600</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1203</x><y>720</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>73</x><y>690</y><w>240</w><h>110</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+PilaNodos&lt;T&gt;
+--
+
+--
++push(T): void
++pop(): T
++peek: T</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>343</x><y>690</y><w>240</w><h>110</h></coordinates><panel_attributes>bg=orange
+&lt;&lt;Class&gt;&gt;
+ColaNodos&lt;T&gt;
+--
+
+--
++add(T): void
++remove(): T
++get(): T</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>453</x><y>620</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>183</x><y>620</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>873</x><y>120</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1083</x><y>390</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1083</x><y>600</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>753</x><y>180</y><w>30</w><h>290</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;270;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>393</x><y>180</y><w>330</w><h>290</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>310;270;310;50;10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>573</x><y>360</y><w>60</w><h>410</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;390;40;390;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>33</x><y>360</y><w>60</w><h>410</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>40;390;10;390;10;10;40;10</additional_attributes></element></diagram>

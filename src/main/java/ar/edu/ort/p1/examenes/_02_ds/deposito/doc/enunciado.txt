@@ -1,0 +1,38 @@
+Enunciado
+
+Un deposito nos solicita un desarrollo para organizar mejor sus almacenes y para
+hacer un analisis de los pedidos que recibe.
+
+El deposito cuenta con 10 racks, de 2 tipos, industriales y compactos. Si bien
+todo rack posee un peso maximo en Kg que puede soportar, hay diferencias entre
+ellos. Los racks industriales se cargan por su parte trasera y se descargan por
+su parte delantera, mientras que los compactos, al tener su parte trasera
+sellada, se cargan y descargan por su parte delantera. Estos, ademas, pueden
+tener o no un equipo de aire acondicionado instalado.
+
+Ademas, por cuestiones de logistica y de organizacion interna, los racks
+industriales pueden almacenar hasta 8 productos del mismo pais de fabricacion al
+mismo tiempo, mientras que los compactos 5.
+
+De cada producto que se almacena en los racks del deposito, se sabe su nombre,
+su peso en Kg y su pais de fabricacion.
+
+Por otro lado, la empresa mantiene un registro de todos los pedidos que fue
+recibiendo desde su apertura. De cada pedido se conoce su nivel de prioridad
+(Baja, Normal, Alta), el nombre de la empresa solicitante y la lista de
+productos solicitados, especificando su cantidad y ordenados alfabeticamente.
+ 
+Se pide:
+    A. Diseniar el diagrama UML.
+    
+    B. Desarrollar los metodos de ordenamiento de las listas ordenadas modeladas
+    (de existir).
+
+    C. El metodo getInformeDePrioridades(), en la clase que corresponda, que
+    retorne la cantidad total de productos (No de items) que historiacamente se
+    pidieron, segun el nivel de prioridad del pedido al que pertenecen.
+
+    D. El metodo ingresarProducto(...), en la clase que corresponda, que reciba
+    por parametro un producto y lo ingrese en el primer rack que lo pueda
+    contener. En caso de no encontrar un rack disponible, se debera mostrar un
+    mensaje de error con la leyenda "El producto no puede ser ingresado".
