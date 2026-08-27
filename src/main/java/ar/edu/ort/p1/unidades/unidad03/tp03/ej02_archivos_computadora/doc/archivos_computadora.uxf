@@ -1,0 +1,69 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>847</x><y>44</y><w>231</w><h>176</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Computadora
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>44</y><w>231</w><h>176</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Archivo
+--
+-nombre: String
+-peso: double
+-localizacion: String
+-estaAbierto: boolean
+--
++abrir(): void
++cerrar(): void
++mover(String): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>319</x><y>286</y><w>231</w><h>121</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/ArchivoMultimedia/
+--
+-duracion: int
+-reproduciendo: boolean
+--
++reproducir(): boolean
++parar(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>286</y><w>231</w><h>121</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ArchivoTexto
+--
+-codificacion: String
+--
++cifrar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>429</x><y>209</y><w>198</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;160;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>209</y><w>198</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;160;40;160;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>187</x><y>473</y><w>231</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ArchivoAudio
+--
+-artista: String
+-album: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>473</y><w>231</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ArchivoVideo
+--
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>429</x><y>396</y><w>176</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;140;40;140;70</additional_attributes></element><element><id>Relation</id><coordinates><x>715</x><y>110</y><w>154</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-archivos</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>187</x><y>649</y><w>231</w><h>143</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+FormatoAudio
+--
+_+MP3: FormatoAudio_
+_+WAV: FormatoAudio_
+_+OGG: FormatoAudio_
+_+FLAC: FormatoAudio_
+--
+-FormatoAudio()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>396</y><w>165</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;40;10;40;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>649</y><w>231</w><h>143</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+FormatoVideo
+--
+_+MP4: FormatoVideo_
+_+MKV: FormatoVideo_
+_+MPG: FormatoVideo_
+_+FLV: FormatoVideo_
+--
+-FormatoVideo()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>572</x><y>561</y><w>88</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-formato</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>836</x><y>473</y><w>231</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Dimension
+--
+-alto: int
+-ancho: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>682</x><y>506</y><w>176</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-dimension</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>561</y><w>88</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-formato</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>
