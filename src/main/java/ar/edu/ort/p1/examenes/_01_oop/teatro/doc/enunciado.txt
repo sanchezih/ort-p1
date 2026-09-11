@@ -1,0 +1,24 @@
+Enunciado
+Un teatro nos solicita un sistema para automatizar el registro de ingreso de los espectadores a las obras que ofrece.
+
+El teatro, identificado por su nombre y direccion, gestiona obras teatrales con ciertas caracteristicas: cada obra tiene un nombre, una duracion expresada en minutos (Ej: 30, 90, 120, etc.) y un numero de localidades disponibles. Las obras suelen ser dramaticas o musicales. De las obras dramaticas, se registra si estan basadas en otras obras literarias o no, mientras que de las obras musicales se especifica si cuentan con orquesta en vivo.
+
+Actualmente, el teatro solo ofrece dos tipos de obras musicales: las infantiles, cuya cantidad de personajes varia segun la obra y las basadas en peliculas, que registran el nombre del director.
+
+Cada obra mantiene un registro de todos los espectadores que asisten a ella. Se debe registrar el DNI de cada espectador (alfanumerico), el nombre de la obra a la cual asistieron y si fueron acompaniados. En caso de asistir con un acompaniante, se contabilizan dos localidades, ya que el acompaniante tambien ocupa un asiento. Ademas, las obras tambien reciben criticos de teatros, quienes tambien se los considera espectadores, pero con la particularidad de que conoce el tiempo disponible (en minutos) que tienen para ver la obra dado que su tiempo suele ser mas limitado.
+
+Cabe destacar que, periodicamente, el teatro realiza sorteos ofreciendo entradas gratuitas a los espectadores de las obras. Estos premios se otorgan unicamente a los espectadores de obras dramaticas y de musicales basadas en peliculas.
+ 
+Se pide:
+
+    -Diseniar el diagrama UML completo que resuelva el problema propuesto agregando lo que consideres necesario a lo previamente enunciado.
+
+    -Desarrollar en NS+ los siguientes puntos (incluyendo los metodos derivados):
+        -El metodo ingreso(...), en la clase Teatro, que recibe una lista de espectadores y los asigna a las obras correspondientes. Un espectador podra ingresar a la obra si hay localidades disponibles en la misma y, en el caso de los criticos, si ademas el tiempo que tienen disponible es mayor o igual a la duracion de la obra. Tener en cuenta que:
+            -En el caso de las obras musicales, a la duracion total de la obra hay que sumarle 5 minutos adicionales de la obertura.
+            -En el caso de las obras infantiles, ademas, a la duracion total de la obra hay que sumarle el tiempo de cambio de los personajes que representa 10 minutos por la cantidad de personajes que tenga la obra.
+        Si el espectador no puede ingresar a la obra, se debe imprimir un mensaje “El espectador no puede ingresar”
+
+        -El metodo otorgarPremio(...), en la clase Teatro, que recibe por parametro una cantidad de entradas a regalar a todos los espectadores que ingresaron a una obra dramatica o basada en peliculas. Este metodo debera imprimir por cada espectador un mensaje del estilo: “El espectador con DNI <dni> recibe <cantidad> de entradas”
+            -Los espectadores de las obras basadas en peliculas reciben exactamente la cantidad de entradas especificadas por parametro.
+            -Los espectadores de las obras dramaticas reciben 2 entradas mas adicionales a las especificadas por parametro  (Ej: si el parametro indica 3 entradas, los espectadores de obras dramaticas recibiran 5).
