@@ -1,0 +1,64 @@
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>912</x><y>264</y><w>288</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+EstacionEspacial
+--
+
+--
++imprimirManifiestos(): void
++estacionarNave(Nave): boolean
+-buscarAtraqueLibre(): PuntoDeAtraque
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>564</x><y>12</y><w>252</w><h>144</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+PuntoDeAtraque
+--
+
+--
++imprimirManifiesto(): void
++estaDisponible(): boolean
++estacionar(Nave): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>564</x><y>264</y><w>252</w><h>204</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Nave/
+--
+-planetaOrigen: String
+-ultimoPlanetaVisitado: String
+-cantTripulantes: int
+--
++getCantTripulantes(): int
++imprimirManifiesto(): void
+/+completarManifiesto(): void/
+/+sePuedeEstacionar(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>804</x><y>84</y><w>276</w><h>204</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-atraques</panel_attributes><additional_attributes>10;20;210;20;210;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>720</y><w>336</w><h>156</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+NaveCargo
+--
+_+VOL_MAX_ESTACIONAR: double = 100_
+--
++completarManifiesto(): void
++sePuedeEstacionar(): boolean
+-volumenDeCargaSuperiorA(double): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>564</x><y>516</y><w>252</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/NaveComercial/
+--
+-companiaNaviera: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>720</y><w>252</w><h>156</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+NaveCruiser
+--
+-cantPasajeros: int
+--
++completarManifiesto(): void
++sePuedeEstacionar(): boolean
+-getPorcPasajeros(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>456</y><w>36</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>624</y><w>228</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;170;50;170;80</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>624</y><w>228</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;170;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>144</y><w>156</w><h>144</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+-naveEnganchada</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>96</x><y>480</y><w>276</w><h>156</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Carga
+--
+-descripcion: String
+-volumen: double
+--
++imprimirManifiesto(): void
++volumenSuperiorA(double): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>624</y><w>120</w><h>204</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-carga</panel_attributes><additional_attributes>10;10;10;150;80;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>264</y><w>252</w><h>108</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Manifestable
+--
+
+--
++imprimirManifiesto(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>312</y><w>240</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>360</y><w>36</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>804</x><y>348</y><w>132</w><h>36</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>96</y><w>360</w><h>192</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;140;10;10;280;10</additional_attributes></element></diagram>
