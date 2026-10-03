@@ -1,0 +1,85 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>310</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Vehiculo/
+--
+-id: String
+-costoBasePorKm: double
+--
++Vehiculo(String, double)
+/+getAdicional(): double/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>330</y><w>260</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Moto
+--
+_-ADICIONAL_SIN_CASCO: double = -1000.0_
+-incluyeCasco: boolean
+
+--
++Moto(String, double, boolean)
++getAdicional(): double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>260</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;170;40;10;40;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>330</y><w>300</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+/Auto/
+--
+-tieneAC: boolean
+
+--
++Auto(String, double, boolean, TipoCombustible)
++esEcologico(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>260</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;140;40;140;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>550</y><w>350</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+AutoCompacto
+--
+_-ADICIONAL_POR_PORTAEQUIPAJE: double = 500.0_
+-tienePortaEquipajes: boolean
+--
++AutoCompacto(String, double, boolean, TipoCombustible)
++getAdicional(): double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>550</y><w>310</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+AutoPremium
+--
+_-MIN_ANTIGUEDAD: int = 2_
+_-ADICIONAL_POR_ANTIGUEDAD: int= 2500_
+_-TIENE_AC: boolean= true_
+-antiguedad: int
+
+--
++AutoPremium(String, double, TipoCombustible, int)
++getAdicional(): double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>480</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;170;40;170;70</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>480</y><w>200</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>180;10;180;40;10;40;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>340</y><w>210</w><h>150</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+TipoCombustible
+--
+_+NAFTA: TipoCombustible_
+_+DIESEL: TipoCombustible_
+_+HIBRIDO: TipoCombustible_
+_+ELECTRICO: TipoCombustible_
+
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>400</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tipoCombustible</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Cliente
+--
+-numero: int
+
+--
++promedioCostoDeViajes(): double
++cantidadViajesPremium(): int
++cantidadViajesAutoConAA(): int
++hizoViajeEcologico(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>180</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-viajesRealizados</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Viaje
+--
+-km: double
+
+--
++getCosto(): double
++esViajePremium(): boolean
++esEnVehiculoConAC(): boolean
++esEnVehiculoEcologico: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>180</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-vehiculo</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element></diagram>
