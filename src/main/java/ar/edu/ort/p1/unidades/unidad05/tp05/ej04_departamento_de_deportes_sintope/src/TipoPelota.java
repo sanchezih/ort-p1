@@ -1,0 +1,5 @@
+package ar.edu.ort.p1.unidades.unidad05.tp05.ej04_departamento_de_deportes_sintope.src;
+
+public enum TipoPelota {
+	FUTBOL, BASQUET, VOLEY
+}
